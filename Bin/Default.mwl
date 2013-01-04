@@ -1,0 +1,27 @@
+<MapWindowLayout>
+  <Paper Name="Letter" Landscape="True" Margins="100, 100, 100, 100" />
+  <Element Name="Rectangle 1" RectangleX="102.768166" RectangleY="99.56749" RectangleWidth="900.173" RectangleHeight="654.671265" ResizeStyle="HandledInternally">
+    <Rectangle Color="Black" BackColor="Transparent" OutlineWidth="2" />
+  </Element>
+  <Element Name="DateCreated" RectangleX="112.283737" RectangleY="721.8858" RectangleWidth="319.723175" RectangleHeight="24.7404785" ResizeStyle="HandledInternally">
+    <Text TextHint="AntiAliasGridFit" Color="Black" Font="Arial, 10pt" ContentAlignment="TopLeft" Text="Created on: 27-Jun-11 13:48:04" />
+  </Element>
+  <Element Name="ProjectName" RectangleX="102.768166" RectangleY="99.56749" RectangleWidth="464.359863" RectangleHeight="49.4809723" ResizeStyle="HandledInternally">
+    <Text TextHint="AntiAliasGridFit" Color="Black" Font="Arial Black, 27.75pt, style=Bold" ContentAlignment="TopLeft" Text="United States" />
+  </Element>
+  <Element Name="Scale Bar 1" RectangleX="513.8408" RectangleY="691.436" RectangleWidth="284.371338" RectangleHeight="58.996582" ResizeStyle="HandledInternally">
+    <ScaleBar TextHint="AntiAliasGridFit" Color="Black" Font="Arial, 10pt" BreakBeforeZero="False" NumberOfBreaks="4" Unit="Kilometers" UnitText="km" Map="7" />
+  </Element>
+  <Element Name="North Arrow 1" RectangleX="445.746765" RectangleY="685.4672" RectangleWidth="66.32065" RectangleHeight="64.28766" ResizeStyle="HandledInternally">
+    <NorthArrow Color="Black" Style="Default" Rotation="0" />
+  </Element>
+  <Element Name="MapWindowLogo" RectangleX="797.837463" RectangleY="103.503479" RectangleWidth="200.547791" RectangleHeight="36.0006256" ResizeStyle="StretchToFit">
+    <Bitmap Filename="C:\dev\MapWindow4Dev\MapWindow\Resources\Logo.png" PreserveAspectRatio="True" Draft="False" Brightness="0" Contrast="0" />
+  </Element>
+  <Element Name="Legend 1" RectangleX="799.3077" RectangleY="143.137238" RectangleWidth="201.730164" RectangleHeight="605.392334" ResizeStyle="NoScaling">
+    <Legend TextHint="AntiAliasGridFit" Color="Black" Font="Arial, 10pt" Map="7" Layers="0|1|2|3|4|5|" NumColumns="1" />
+  </Element>
+  <Element Name="Map1" RectangleX="110.380608" RectangleY="145.501755" RectangleWidth="683.2179" RectangleHeight="530.709045" ResizeStyle="NoScaling">
+    <Map EnvelopeXmin="-94.973695381196023" EnvelopeYmin="35.485804839579096" EnvelopeXmax="-87.791308489027827" EnvelopeYmax="41.064929327347166" />
+  </Element>
+</MapWindowLayout>

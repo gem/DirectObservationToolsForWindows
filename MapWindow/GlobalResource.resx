@@ -1,0 +1,1092 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="msgLegend_LayerVisibleChanged.Text" xml:space="preserve">
+    <value>Dynamic visibility is enabled for this layer. Do you want to disable it and show this layer?</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="documentation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\documentation.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgShortcutsCtrlP.Text" xml:space="preserve">
+    <value>Ctrl-P - Open the Print Preview window</value>
+  </data>
+  <data name="table_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\table_edit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgCustomProjection.Text" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="mnuBookmarksManager.Text" xml:space="preserve">
+    <value>Bookmarks Manager</value>
+  </data>
+  <data name="set_map_scale" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\set-map-scale.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgBadUsernamePassword.Text" xml:space="preserve">
+    <value>The submission failed.
+ The username or password is invalid. Please double-check it.</value>
+  </data>
+  <data name="print" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\print.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuRemoveGroup.Text" xml:space="preserve">
+    <value>Remove Group</value>
+  </data>
+  <data name="mnuBookmarkedViews.Text" xml:space="preserve">
+    <value>Bookmarked Views</value>
+  </data>
+  <data name="imgWelcome" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AppSetting.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgPlugin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\plugin.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuLegendEditor.Text" xml:space="preserve">
+    <value>Legend Editor</value>
+  </data>
+  <data name="imgTableEditor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\table.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="charts_properties" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\charts-properties.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icoLayerClear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\layer_clear.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuZoomOut.Text" xml:space="preserve">
+    <value>Zoom Out</value>
+  </data>
+  <data name="msgModulesInfo.Text" xml:space="preserve">
+    <value>Module Info:  </value>
+  </data>
+  <data name="msgRemoveGroup.Text" xml:space="preserve">
+    <value>Are you sure you want to remove the selected group and its layer(s)?</value>
+  </data>
+  <data name="mnuPanels.Text" xml:space="preserve">
+    <value>&amp;Panels</value>
+  </data>
+  <data name="layer-symbology16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\layer-symbology16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgShortcutsCtrlC.Text" xml:space="preserve">
+    <value>Ctrl-C - Copy a map snapshot to the clipboard.</value>
+  </data>
+  <data name="msgScriptNotExists.Text" xml:space="preserve">
+    <value>Nonexistant Script Passed</value>
+  </data>
+  <data name="mnuCopyMap.Text" xml:space="preserve">
+    <value>Map</value>
+  </data>
+  <data name="msgShortcutsCtrlS.Text" xml:space="preserve">
+    <value>Ctrl-S - Save the project.</value>
+  </data>
+  <data name="mnuSave.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="icoZoomLayer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\zoom_to_layer.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuSaveNorthArrow.Text" xml:space="preserve">
+    <value>North Arrow</value>
+  </data>
+  <data name="imgPrinter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\printer.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paypal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\paypal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgHelp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\help.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgShortcutsTitle.Text" xml:space="preserve">
+    <value>The following keyboard shortcuts are available:</value>
+  </data>
+  <data name="recent_maps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\recent-maps.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgMapScale" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\map_scale.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DisableDynamicVis.Text" xml:space="preserve">
+    <value>Dynamic visibility is enabled for this layer. Do you want to disable it and show this layer?</value>
+  </data>
+  <data name="msgHelpfileDoesNotExist.Text" xml:space="preserve">
+    <value>Help file does not exist.</value>
+  </data>
+  <data name="quit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\quit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuLayerLabels.Text" xml:space="preserve">
+    <value>Labels properties</value>
+  </data>
+  <data name="imgBookmarkAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\bookmark_add.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgLayerRemove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\layer_remove.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgShortcutsPageDown.Text" xml:space="preserve">
+    <value>Page-Down - Pan Down (50% of View)</value>
+  </data>
+  <data name="LegendName.Text" xml:space="preserve">
+    <value>Legend</value>
+  </data>
+  <data name="mnuCopyScaleBar.Text" xml:space="preserve">
+    <value>Scale Bar</value>
+  </data>
+  <data name="imgUpdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\file_update.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgPluginEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\plugin_edit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgChangeLanguage.Text" xml:space="preserve">
+    <value>The change of language to {0} will take effect after restarting MapWindow</value>
+  </data>
+  <data name="msgFileName.Text" xml:space="preserve">
+    <value>File Name: </value>
+  </data>
+  <data name="msgShortcutsCtrlShiftP.Text" xml:space="preserve">
+    <value>Ctrl-Shift-P - Enter Pan mode.</value>
+  </data>
+  <data name="project" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\project.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuNew.Text" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="titleClearLayers.Text" xml:space="preserve">
+    <value>Confirm remove all layers</value>
+  </data>
+  <data name="imgExpandAll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\expand_all.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgTotalUserModeCpuTime.Text" xml:space="preserve">
+    <value>   CPU-Time by user: </value>
+  </data>
+  <data name="mnuPlugins.Text" xml:space="preserve">
+    <value>Plug-ins</value>
+  </data>
+  <data name="msgErrorSavingImage.Text" xml:space="preserve">
+    <value>There were errors saving the image</value>
+  </data>
+  <data name="mnuNextZoom.Text" xml:space="preserve">
+    <value>Next Zoom</value>
+  </data>
+  <data name="msgShortcutsCtrlHome.Text" xml:space="preserve">
+    <value>Ctrl-Home - Zoom to Selected Layer</value>
+  </data>
+  <data name="save_as" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\save-as.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icoLayerAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\layer_add.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuCheckUpdates.Text" xml:space="preserve">
+    <value>&amp;Check for Updates</value>
+  </data>
+  <data name="msgShortcutsCtrlShiftO.Text" xml:space="preserve">
+    <value>Ctrl-Shift-O - Enter Zoom Out mode.</value>
+  </data>
+  <data name="msgShortcutsDel.Text" xml:space="preserve">
+    <value>Del - Remove the currently selected layer.</value>
+  </data>
+  <data name="msgFileNotFound.Text" xml:space="preserve">
+    <value>File {0} not found</value>
+  </data>
+  <data name="msgShortcutsMinus.Text" xml:space="preserve">
+    <value>Minus - Zoom out on center of map (25% of View)</value>
+  </data>
+  <data name="msgError.Text" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="selectNew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\selectNew.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgLayerAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\layer_add.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zoom-extentNew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\zoom-extentNew.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgPanelArea.Text" xml:space="preserve">
+    <value>Area:</value>
+  </data>
+  <data name="table-editor16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\table-editor16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuUpdatePreviewFull.Text" xml:space="preserve">
+    <value>Update using Full Extents</value>
+  </data>
+  <data name="zoom-selectionNew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\zoom-selectionNew.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="scale-bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\scale-bar.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgGroupRemove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\group_remove.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuBookmarkDelete.Text" xml:space="preserve">
+    <value>Delete Bookmarked View</value>
+  </data>
+  <data name="titleHelpfileDoesNotExist.Text" xml:space="preserve">
+    <value>Helpfile is missing</value>
+  </data>
+  <data name="msgDropMissingLayer.Text" xml:space="preserve">
+    <value>One of the layers in the project was not found. The file that couldn't be located is: 
+{0} 
+Would you like to locate this file?
+
+No will simply drop the layer from the project, Cancel will drop all missing layers.</value>
+  </data>
+  <data name="msgSaveProject2.Text" xml:space="preserve">
+    <value>this project?</value>
+  </data>
+  <data name="mnuView.Text" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="mnuZoomToLayer.Text" xml:space="preserve">
+    <value>Zoom to Layer</value>
+  </data>
+  <data name="msgNewLayerProjection.Text" xml:space="preserve">
+    <value>New Layer: </value>
+  </data>
+  <data name="bookmarks_view" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\bookmarks-view.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgShortcutsArrowUp.Text" xml:space="preserve">
+    <value>Up Arrow - Pan Up (25% of View)</value>
+  </data>
+  <data name="mnuLayerRemove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\mnuLayerRemove.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgIgnoreScript.Text" xml:space="preserve">
+    <value>Warning: Ignoring the script name provided on the command line because it doesn't exist.</value>
+  </data>
+  <data name="msgSaveCurrentScript.Text" xml:space="preserve">
+    <value>Do you wish to save your current script first?</value>
+  </data>
+  <data name="layer-properties" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\layer-properties.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgSubmittedSuccessfully.Text" xml:space="preserve">
+    <value>The submission succeeded. Thank you!</value>
+  </data>
+  <data name="mnuClearPreview.Text" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="imgCopyLegend" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\copy_legend.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgShortcutsCtrlH.Text" xml:space="preserve">
+    <value>Ctrl-H - Shape Selection/Highlight Mode</value>
+  </data>
+  <data name="layer-symbology" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\layer-symbology.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="layer-categories16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\layer-categories16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="layer-save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\layer-save.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="projections_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\projections-edit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgGroupAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\group_add.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgShortcutsIns.Text" xml:space="preserve">
+    <value>Ins - Add a layer.</value>
+  </data>
+  <data name="msgProjectReadOnly.Text" xml:space="preserve">
+    <value>The project file could not be saved because it is read-only
+
+Please have your system administrator grant write access to the file:
+{0}</value>
+  </data>
+  <data name="imgZoomIn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ZoomIn.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgZoomExtent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ZoomFullExtent.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgFindTutorials.Text" xml:space="preserve">
+    <value>You don't appear to have an active internet connection. We have tutorials available at this URL:
+
+http://www.MapWindow.org/tutorials/</value>
+  </data>
+  <data name="sbContextMenu_ChooseForecolor.Text" xml:space="preserve">
+    <value>Choose Text Color</value>
+  </data>
+  <data name="imgPluginSub" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\plugin_go.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuLayer.Text" xml:space="preserve">
+    <value>Layer</value>
+  </data>
+  <data name="msgProjectInsufficientAccess.Title" xml:space="preserve">
+    <value>Insufficient Access</value>
+  </data>
+  <data name="map_export" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\map-export.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="layer-remove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\layer-remove.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="layer_query" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\layer-query.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgLayerClear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\layer_clear.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgZoomOut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ZoomOut.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zoom-inNew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\zoom-inNew.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgShortcutsCtrlArrows.Text" xml:space="preserve">
+    <value>Ctrl-Up, Ctrl-Down: Switch selected layer in legend</value>
+  </data>
+  <data name="mnuUpdatePreview.Text" xml:space="preserve">
+    <value>Update preview</value>
+  </data>
+  <data name="mnuCopyLegend.Text" xml:space="preserve">
+    <value>Legend</value>
+  </data>
+  <data name="mnuQueryLayer.Text" xml:space="preserve">
+    <value>Build query</value>
+  </data>
+  <data name="layer_add_ecwp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\layer-add-ecwp.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PluginPropertyBuildDate.Text" xml:space="preserve">
+    <value>Build Date: </value>
+  </data>
+  <data name="WarningNoProjectionOnLayer.Text" xml:space="preserve">
+    <value>Warning: No Projection on Layer</value>
+  </data>
+  <data name="group_expand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\group_expand.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="titleErrorSavingImage.Text" xml:space="preserve">
+    <value>Error Saving image</value>
+  </data>
+  <data name="label_reload" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\label-reload.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgSave" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\save.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgMetadata" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\metadata.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuLayerAttributeTable.Text" xml:space="preserve">
+    <value>Attribute Table</value>
+  </data>
+  <data name="tableNew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\tableNew.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuSetScale.Text" xml:space="preserve">
+    <value>Set Map Scale</value>
+  </data>
+  <data name="icoZoomOut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\zoom_out.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Chart.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuZoomIn.Text" xml:space="preserve">
+    <value>Zoom In</value>
+  </data>
+  <data name="mnuSaveGeorefMapImage.Text" xml:space="preserve">
+    <value>Georeferenced Map</value>
+  </data>
+  <data name="imgFlash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\lightning.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="deselect_all" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\deselect-all.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zoom-nextNew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\zoom-nextNew.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgShortcutsHome.Text" xml:space="preserve">
+    <value>Home - Zoom to Full Extents</value>
+  </data>
+  <data name="scale-bar-add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\scale-bar-add.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgDistanceStartOver.Text" xml:space="preserve">
+    <value>Click next point. Right-click to start over.</value>
+  </data>
+  <data name="layer_categories" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\layer-categories.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgShortcutsCtrlEnter.Text" xml:space="preserve">
+    <value>Ctrl-Enter - Layer Properties</value>
+  </data>
+  <data name="PluginPropertyName.Text" xml:space="preserve">
+    <value>Name:  </value>
+  </data>
+  <data name="msgAreaDrawnPolygon.Text" xml:space="preserve">
+    <value>Area of the drawn polygon: </value>
+  </data>
+  <data name="msgTotalCpuTime.Text" xml:space="preserve">
+    <value>   CPU-Time: </value>
+  </data>
+  <data name="ToolStripMenuItem6.Text" xml:space="preserve">
+    <value>Zoom to Layer</value>
+  </data>
+  <data name="mnuPreview.Text" xml:space="preserve">
+    <value>Preview Map</value>
+  </data>
+  <data name="imgBookmarkDelete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\bookmark_delete.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuOpen.Text" xml:space="preserve">
+    <value>Open Project</value>
+  </data>
+  <data name="mnuScript.Text" xml:space="preserve">
+    <value>Scripts</value>
+  </data>
+  <data name="mnuLayerClear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\mnuLayerClear.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="table_editor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\table-editor.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuFile.Text" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="imgPluginDisabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\plugin_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuShortcuts.Text" xml:space="preserve">
+    <value>Keyboard Shortcuts</value>
+  </data>
+  <data name="bookmark_manager" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\bookmark-manager.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuLayerCategories.Text" xml:space="preserve">
+    <value>Shapefile categories</value>
+  </data>
+  <data name="mnuSaveMapImage.Text" xml:space="preserve">
+    <value>Map</value>
+  </data>
+  <data name="msgGarbledServerResponse.Text" xml:space="preserve">
+    <value>The response from the server was not understood. Please try submitting again.</value>
+  </data>
+  <data name="mnuWelcomeScreen.Text" xml:space="preserve">
+    <value>Welcome Screen</value>
+  </data>
+  <data name="label_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\label_edit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuProject.Text" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="northArrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\northArrow1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgOpenGroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\file_newgroup.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgExport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\export.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgProjectReadOnly.Title" xml:space="preserve">
+    <value>Read-Only Project File</value>
+  </data>
+  <data name="mnuEditPlugins.Text" xml:space="preserve">
+    <value>Edit Plug-ins</value>
+  </data>
+  <data name="SymbologyManager" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\SymbologyManager.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icoFullExtent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\zoom_full_extent.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgKeyboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Keyboard.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgNew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\file_new.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WarningProjectionMismatch.Text" xml:space="preserve">
+    <value>Warning: Projection Mismatch</value>
+  </data>
+  <data name="sbContextMenu_LowerRight.Text" xml:space="preserve">
+    <value>Place in Lower Right</value>
+  </data>
+  <data name="imgLabel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\label_setup.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuBookmarks.Text" xml:space="preserve">
+    <value>Bookmarks</value>
+  </data>
+  <data name="filter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\filter.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuLayerProperties.Text" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="mnuLayerRelabel.Text" xml:space="preserve">
+    <value>Relabel Shapefile</value>
+  </data>
+  <data name="imgDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\down.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="project-settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\project-settings.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgDataSubmitted.Text" xml:space="preserve">
+    <value>Thank you! The data has been submitted.</value>
+  </data>
+  <data name="msgShortcutsCtrlShiftI.Text" xml:space="preserve">
+    <value>Ctrl-Shift-I - Enter Zoom In mode.</value>
+  </data>
+  <data name="mnuExit.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="msgReprojectedGridDoesNotExists.Text" xml:space="preserve">
+    <value>Error: The reprojected grid file doesn't exist! Check for an errorlog.txt. Aborting layer add.</value>
+  </data>
+  <data name="mnuShowPreviewMap.Text" xml:space="preserve">
+    <value>&amp;Preview Map</value>
+  </data>
+  <data name="msgProjectInsufficientAccess.Text" xml:space="preserve">
+    <value>The project file could not be saved due to insufficient access
+
+Please have your system administrator grant access to the file:
+{0}</value>
+  </data>
+  <data name="zoom-layerNew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\zoom-layerNew.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuSaveLegend.Text" xml:space="preserve">
+    <value>Legend</value>
+  </data>
+  <data name="welcome" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\welcome.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuZoomToGroup.Text" xml:space="preserve">
+    <value>Zoom to group</value>
+  </data>
+  <data name="msgHandleShortcutKeys.Text" xml:space="preserve">
+    <value>Are you sure you wish to remove the currently selected layer?</value>
+  </data>
+  <data name="group_open" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\group-open.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgRelabel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\label_relabel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgClearLayers.Text" xml:space="preserve">
+    <value>Are you sure you want to remove all layers?</value>
+  </data>
+  <data name="icoZoom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\zoom.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="panels" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\panels.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuAboutMapWindow.Text" xml:space="preserve">
+    <value>About MapWindow</value>
+  </data>
+  <data name="mnuDocs.Text" xml:space="preserve">
+    <value>MapWindow Help</value>
+  </data>
+  <data name="mnuLayerAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\mnuLayerAdd.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgIncomplete.Text" xml:space="preserve">
+    <value>All fields are required; please make sure to enter something in every field.</value>
+  </data>
+  <data name="mnuClearAllSelection.Text" xml:space="preserve">
+    <value>Clear Selection of all layers</value>
+  </data>
+  <data name="imgFolder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\folder.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgOverwriteCurrentlyLoadedScript.Text" xml:space="preserve">
+    <value>The currently loaded script will be overwritten. Do you want to continue?</value>
+  </data>
+  <data name="mnuShowLegend.Text" xml:space="preserve">
+    <value>&amp;Legend</value>
+  </data>
+  <data name="pan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\pan.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="application_view_tile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\application_view_tile.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgPanelAreaClick.Text" xml:space="preserve">
+    <value>Click on the vertices; right-click to finish</value>
+  </data>
+  <data name="zoom-outNew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\zoom-outNew.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuUpdatePreviewCurr.Text" xml:space="preserve">
+    <value>Update using Current View</value>
+  </data>
+  <data name="titleRemoveGroup.Text" xml:space="preserve">
+    <value>Remove Group?</value>
+  </data>
+  <data name="msgSaveInMemoryLayer.Text" xml:space="preserve">
+    <value>Layer {0} is in memory. Do you want to save it?</value>
+  </data>
+  <data name="sbContextMenu_LowerLeft.Text" xml:space="preserve">
+    <value>Place in Lower Left</value>
+  </data>
+  <data name="mnuClearSelectedShapes.Text" xml:space="preserve">
+    <value>Clear Selected Shapes on current layer</value>
+  </data>
+  <data name="mnuSaveScaleBar.Text" xml:space="preserve">
+    <value>Scale Bar</value>
+  </data>
+  <data name="mnuLayerCharts.Text" xml:space="preserve">
+    <value>Charts properties</value>
+  </data>
+  <data name="PluginPropertyDescription.Text" xml:space="preserve">
+    <value>Description:  </value>
+  </data>
+  <data name="export_georeferenced" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\export-georeferenced.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sbContextMenu_UpperLeft.Text" xml:space="preserve">
+    <value>Place in Upper Left</value>
+  </data>
+  <data name="imgProperties" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\properties.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgShortcutsArrowLeft.Text" xml:space="preserve">
+    <value>Left Arrow - Pan Left (25% of View)</value>
+  </data>
+  <data name="mnuExport.Text" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="open" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\open.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuOfflineDocs.Text" xml:space="preserve">
+    <value>MapWindow Documentation (Offline)</value>
+  </data>
+  <data name="imgCopy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Copy.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgMapPreview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\map_preview.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuAddLayer.Text" xml:space="preserve">
+    <value>Add Layer</value>
+  </data>
+  <data name="remove-all-layers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\remove-all-layers.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgShortcutsPlus.Text" xml:space="preserve">
+    <value>Plus - Zoom in on center of map (25% of View)</value>
+  </data>
+  <data name="titleNoConnection.Text" xml:space="preserve">
+    <value>No Internet Connection</value>
+  </data>
+  <data name="group_collapse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\group_collapse.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgChangeLanguage.Title" xml:space="preserve">
+    <value>Change Language</value>
+  </data>
+  <data name="mnuShowScaleBar.Text" xml:space="preserve">
+    <value>Show Floating Scale Bar</value>
+  </data>
+  <data name="msgPanelDistance.Text" xml:space="preserve">
+    <value>Distance:</value>
+  </data>
+  <data name="imgScripts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\scripts.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuCopy.Text" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="about" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\about.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuPrint.Text" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="label_properties" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\label-properties.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgPerformanceInfo.Text" xml:space="preserve">
+    <value>Performance Info: (bytes)</value>
+  </data>
+  <data name="mnuContents.Text" xml:space="preserve">
+    <value>Contents</value>
+  </data>
+  <data name="icoLayerRemove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\layer_remove.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgPrivateMemory.Text" xml:space="preserve">
+    <value>  Private Memory:  </value>
+  </data>
+  <data name="msgShortcutsCtrlI.Text" xml:space="preserve">
+    <value>Ctrl-I - Feature Identifier Mode</value>
+  </data>
+  <data name="imgSettings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\settings.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgProjection.Text" xml:space="preserve">
+    <value>Projection: </value>
+  </data>
+  <data name="saveNew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\saveNew.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuSaveAs.Text" xml:space="preserve">
+    <value>Save As</value>
+  </data>
+  <data name="mnuRemoveLayer.Text" xml:space="preserve">
+    <value>Remove Layer</value>
+  </data>
+  <data name="PluginPropertyVersion.Text" xml:space="preserve">
+    <value>Version:  </value>
+  </data>
+  <data name="msgShortcutsPageUp.Text" xml:space="preserve">
+    <value>Page-Up - Pan Up (50% of View)</value>
+  </data>
+  <data name="mnuProjectSettings.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="msgHttpStatusCodeNotFound.Text" xml:space="preserve">
+    <value>Content could not be read. URL not accessible. Status Code={0}.</value>
+  </data>
+  <data name="mantis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\mantis.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgDelete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\delete.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgVersion.Text" xml:space="preserve">
+    <value>   Version:  </value>
+  </data>
+  <data name="sbContextMenu_UpperRight.Text" xml:space="preserve">
+    <value>Place in Upper Right</value>
+  </data>
+  <data name="layer-add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\layer-add.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgHistory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\History.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgNoConnection.Text" xml:space="preserve">
+    <value>You don't appear to have an active internet connection.
+
+Please check your internet connection and try again.</value>
+  </data>
+  <data name="msgShortcutsCtrlF4.Text" xml:space="preserve">
+    <value>Ctrl-F4 - Close the current project.</value>
+  </data>
+  <data name="msgShortcutsArrowRight.Text" xml:space="preserve">
+    <value>Right Arrow - Pan Right (25% of View)</value>
+  </data>
+  <data name="msgShortcutsCtrlSpace.Text" xml:space="preserve">
+    <value>Ctrl-Spacebar: Toggle visibility on layer</value>
+  </data>
+  <data name="icoSave" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\save.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgModuleName.Text" xml:space="preserve">
+    <value>   Module Name:  </value>
+  </data>
+  <data name="msgScriptError.Text" xml:space="preserve">
+    <value>Script Error</value>
+  </data>
+  <data name="imgAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgBookmarkView" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\bookmark_view.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgClose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\file_close.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuOnlineDocs.Text" xml:space="preserve">
+    <value>MapWindow Documentation (Online)</value>
+  </data>
+  <data name="imgMap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\map.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgSaveProject1.Text" xml:space="preserve">
+    <value>Do you want to save the changes to </value>
+  </data>
+  <data name="PluginPropertyAuthor.Text" xml:space="preserve">
+    <value>Author:  </value>
+  </data>
+  <data name="script_code" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\script_code.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgHttpStatusCodeElse.Text" xml:space="preserve">
+    <value>Content could not be read. Status Code={0}.</value>
+  </data>
+  <data name="mnuRecentProjects.Text" xml:space="preserve">
+    <value>Recent Projects</value>
+  </data>
+  <data name="imgSaveAs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\file_saveas.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgHttpStatusCodeRedirect.Text" xml:space="preserve">
+    <value>Content could not be read. URL was changed. Status Code={0}.</value>
+  </data>
+  <data name="msgVirtualMemory.Text" xml:space="preserve">
+    <value>   Virtual Memory:  </value>
+  </data>
+  <data name="mnuZoomToFullExtents.Text" xml:space="preserve">
+    <value>Zoom to Full Extents</value>
+  </data>
+  <data name="CustomProjection.Text" xml:space="preserve">
+    <value>Custom Projection</value>
+  </data>
+  <data name="sbContextMenu_ChooseBackcolor.Text" xml:space="preserve">
+    <value>Choose Background Color</value>
+  </data>
+  <data name="mnuCopyNorthArrow.Text" xml:space="preserve">
+    <value>North Arrow</value>
+  </data>
+  <data name="mnuZoomToPreviewExtents.Text" xml:space="preserve">
+    <value>Zoom to Preview Map Extents</value>
+  </data>
+  <data name="imgScale" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\scale_bar.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icoZoomIn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\zoom_in.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sbContextMenu_ChangeUnits.Text" xml:space="preserve">
+    <value>Change Display Units</value>
+  </data>
+  <data name="icoNew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\new.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="legend" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\legend.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgShortcutsArrowDown.Text" xml:space="preserve">
+    <value>Down Arrow - Pan Down (25% of View)</value>
+  </data>
+  <data name="mnuAddECWPLayer.Text" xml:space="preserve">
+    <value>Add ECWP Layer</value>
+  </data>
+  <data name="length-measure" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\length-measure.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgDropMissingLayer.Title" xml:space="preserve">
+    <value>Missing Layer {0}</value>
+  </data>
+  <data name="UserDefined.Text" xml:space="preserve">
+    <value>User Defined</value>
+  </data>
+  <data name="imgUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\up.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgPath.Text" xml:space="preserve">
+    <value>   Path:  </value>
+  </data>
+  <data name="msgShortcutsCtrlO.Text" xml:space="preserve">
+    <value>Ctrl-O - Open a project.</value>
+  </data>
+  <data name="zoom-lastNew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\zoom-lastNew.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgClickNextPoint.Text" xml:space="preserve">
+    <value>Click next point.</value>
+  </data>
+  <data name="export_map" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\export-map.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuPreviousZoom.Text" xml:space="preserve">
+    <value>Previous Zoom</value>
+  </data>
+  <data name="mnuEdit.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="msgFindDocumentation.Text" xml:space="preserve">
+    <value>You don't appear to have an active internet connection. Our documentation is available online at this URL:
+
+http://www.MapWindow.org/wiki/</value>
+  </data>
+  <data name="imgMapExtents" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\map_extents.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="deselect" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\deselect.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuOpenProjectIntoGroup.Text" xml:space="preserve">
+    <value>Open Project Into New Group</value>
+  </data>
+  <data name="msgSaveInMemoryLayer.Title" xml:space="preserve">
+    <value>Save Layer</value>
+  </data>
+  <data name="imgInfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\info.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgZoomToLayer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\zoom_to_layer.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgProjectProjection.Text" xml:space="preserve">
+    <value>Project Projection: </value>
+  </data>
+  <data name="mnuClose.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="tutorials" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\tutorials.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgCollapseAll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\collapse_all.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuRestoreMenu.Text" xml:space="preserve">
+    <value>&amp;Panels</value>
+  </data>
+  <data name="mnuOptionsManager.Text" xml:space="preserve">
+    <value>Symbology manager...</value>
+  </data>
+  <data name="mnuClearLayer.Text" xml:space="preserve">
+    <value>Clear Layers</value>
+  </data>
+  <data name="mnuHelp.Text" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="msgLegendLayerDoubleClick.Text" xml:space="preserve">
+    <value>No properties available for this layer type.</value>
+  </data>
+  <data name="msgUpdateToolNotFound.Text" xml:space="preserve">
+    <value>The Update Check tool could not be located; all updates will need to be manually downloaded. {0} Open the Downloads page now?</value>
+  </data>
+  <data name="mnuBookmarkView.Text" xml:space="preserve">
+    <value>Add Bookmarked View</value>
+  </data>
+  <data name="layer-properties16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\layer-properties16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

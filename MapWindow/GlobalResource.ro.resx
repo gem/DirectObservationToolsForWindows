@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="mnuFile.Text" xml:space="preserve">
+    <value>Fisier</value>
+  </data>
+  <data name="mnuNew.Text" xml:space="preserve">
+    <value>Nou</value>
+  </data>
+  <data name="mnuOpen.Text" xml:space="preserve">
+    <value>Deschide Proiect</value>
+  </data>
+  <data name="mnuOpenProjectIntoGroup.Text" xml:space="preserve">
+    <value>Deschide Proiect Intr-un Nou Grup</value>
+  </data>
+  <data name="mnuSave.Text" xml:space="preserve">
+    <value>Salveaza</value>
+  </data>
+  <data name="mnuSaveAs.Text" xml:space="preserve">
+    <value>Salveaza Ca</value>
+  </data>
+  <data name="mnuPrint.Text" xml:space="preserve">
+    <value>Tiparire</value>
+  </data>
+  <data name="mnuProjectSettings.Text" xml:space="preserve">
+    <value>Setari</value>
+  </data>
+  <data name="mnuRecentProjects.Text" xml:space="preserve">
+    <value>Proiecte Recente</value>
+  </data>
+  <data name="mnuCheckUpdates.Text" xml:space="preserve">
+    <value>&amp;Verifica Pentru Actualizari</value>
+  </data>
+  <data name="mnuClose.Text" xml:space="preserve">
+    <value>Inchide</value>
+  </data>
+  <data name="mnuExit.Text" xml:space="preserve">
+    <value>Iesire</value>
+  </data>
+  <data name="mnuEdit.Text" xml:space="preserve">
+    <value>Editeaza</value>
+  </data>
+  <data name="mnuCopy.Text" xml:space="preserve">
+    <value>Copiaza</value>
+  </data>
+  <data name="mnuCopyMap.Text" xml:space="preserve">
+    <value>Harta</value>
+  </data>
+  <data name="mnuCopyLegend.Text" xml:space="preserve">
+    <value>Legenda</value>
+  </data>
+  <data name="mnuCopyScaleBar.Text" xml:space="preserve">
+    <value>Scara Grafica</value>
+  </data>
+  <data name="mnuCopyNorthArrow.Text" xml:space="preserve">
+    <value>Directia Nord</value>
+  </data>
+  <data name="mnuExport.Text" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="mnuSaveMapImage.Text" xml:space="preserve">
+    <value>Harta</value>
+  </data>
+  <data name="mnuSaveGeorefMapImage.Text" xml:space="preserve">
+    <value>Harta Georeferentiata</value>
+  </data>
+  <data name="mnuSaveScaleBar.Text" xml:space="preserve">
+    <value>Scara Grafica</value>
+  </data>
+  <data name="mnuSaveNorthArrow.Text" xml:space="preserve">
+    <value>Directia Nord</value>
+  </data>
+  <data name="mnuSaveLegend.Text" xml:space="preserve">
+    <value>Legenda</value>
+  </data>
+  <data name="mnuPreview.Text" xml:space="preserve">
+    <value>Previzualizare Harta</value>
+  </data>
+  <data name="mnuUpdatePreviewFull.Text" xml:space="preserve">
+    <value>Actualizeaza Folosind Vizualizarea Completa</value>
+  </data>
+  <data name="mnuUpdatePreviewCurr.Text" xml:space="preserve">
+    <value>Actualizeaza Folosind Vizualizarea Curenta</value>
+  </data>
+  <data name="mnuClearPreview.Text" xml:space="preserve">
+    <value>Sterge</value>
+  </data>
+  <data name="mnuView.Text" xml:space="preserve">
+    <value>Vizualizare</value>
+  </data>
+  <data name="mnuAddLayer.Text" xml:space="preserve">
+    <value>Adauga Strat</value>
+  </data>
+  <data name="mnuRemoveLayer.Text" xml:space="preserve">
+    <value>Sterge Strat</value>
+  </data>
+  <data name="mnuClearLayer.Text" xml:space="preserve">
+    <value>Sterge Strate</value>
+  </data>
+  <data name="mnuClearSelectedShapes.Text" xml:space="preserve">
+    <value>Sterge Formele Selectate</value>
+  </data>
+  <data name="mnuSetScale.Text" xml:space="preserve">
+    <value>Seteaza Scara Hartii</value>
+  </data>
+  <data name="mnuShowScaleBar.Text" xml:space="preserve">
+    <value>Arata Scara Grafica Flotoare</value>
+  </data>
+  <data name="mnuZoomIn.Text" xml:space="preserve">
+    <value>Mareste</value>
+  </data>
+  <data name="mnuZoomOut.Text" xml:space="preserve">
+    <value>Micsoreaza</value>
+  </data>
+  <data name="mnuZoomToFullExtents.Text" xml:space="preserve">
+    <value>Dimensioneaza Pentru Vizualizare Completa</value>
+  </data>
+  <data name="mnuZoomToPreviewExtents.Text" xml:space="preserve">
+    <value>Dimensioneaza la Previzualizarea Completa</value>
+  </data>
+  <data name="mnuPreviousZoom.Text" xml:space="preserve">
+    <value>Previzualizare Dimensionare</value>
+  </data>
+  <data name="mnuNextZoom.Text" xml:space="preserve">
+    <value>Urmatoarea Dimensionare</value>
+  </data>
+  <data name="mnuBookmarkView.Text" xml:space="preserve">
+    <value>Adauga Vizualizare Memorata</value>
+  </data>
+  <data name="mnuBookmarkDelete.Text" xml:space="preserve">
+    <value>Sterge Vizualizarea Memorata</value>
+  </data>
+  <data name="mnuBookmarkedViews.Text" xml:space="preserve">
+    <value>Vizualizari Memorate</value>
+  </data>
+  <data name="mnuRestoreMenu.Text" xml:space="preserve">
+    <value>&amp;Liste</value>
+  </data>
+  <data name="mnuPanels.Text" xml:space="preserve">
+    <value>&amp;Liste</value>
+  </data>
+  <data name="mnuShowLegend.Text" xml:space="preserve">
+    <value>Arata &amp;Legenda</value>
+  </data>
+  <data name="mnuShowPreviewMap.Text" xml:space="preserve">
+    <value>Arata &amp;Previzualizarea Harta</value>
+  </data>
+  <data name="mnuPlugins.Text" xml:space="preserve">
+    <value>Plug-ins</value>
+  </data>
+  <data name="DisableDynamicVis.Text" xml:space="preserve">
+    <value>Acest strat are dinamica vizibila accesibila. Doriti ca aceasta sa fie dezactivata si sa fie aratat stratul?</value>
+  </data>
+  <data name="mnuEditPlugins.Text" xml:space="preserve">
+    <value>Editeaza Plug-ins</value>
+  </data>
+  <data name="mnuScript.Text" xml:space="preserve">
+    <value>Scripturi...</value>
+  </data>
+  <data name="mnuHelp.Text" xml:space="preserve">
+    <value>Ajutor</value>
+  </data>
+  <data name="mnuContents.Text" xml:space="preserve">
+    <value>Continuturi</value>
+  </data>
+  <data name="mnuOnlineDocs.Text" xml:space="preserve">
+    <value>Documentatia MapWindow (Online)</value>
+  </data>
+  <data name="mnuOfflineDocs.Text" xml:space="preserve">
+    <value>Documentatia MapWindow (Offline)</value>
+  </data>
+  <data name="mnuShortcuts.Text" xml:space="preserve">
+    <value>Scurtaturi Tastatura</value>
+  </data>
+  <data name="mnuWelcomeScreen.Text" xml:space="preserve">
+    <value>Ecran de Bun Venit</value>
+  </data>
+  <data name="mnuAboutMapWindow.Text" xml:space="preserve">
+    <value>Despre</value>
+  </data>
+  <data name="mnuRemoveGroup.Text" xml:space="preserve">
+    <value>Sterge Grup</value>
+  </data>
+  <data name="mnuZoomToGroup.Text" xml:space="preserve">
+    <value>Dimensioneaza Pentru Vizualizare Grup</value>
+  </data>
+  <data name="sbContextMenu_ChangeUnits.Text" xml:space="preserve">
+    <value>Schimba Unitatile de Afisare</value>
+  </data>
+  <data name="sbContextMenu_UpperLeft.Text" xml:space="preserve">
+    <value>Plaseaza in Stanga Sus</value>
+  </data>
+  <data name="sbContextMenu_UpperRight.Text" xml:space="preserve">
+    <value>Plaseaza in dreapta Sus</value>
+  </data>
+  <data name="sbContextMenu_LowerLeft.Text" xml:space="preserve">
+    <value>Plaseaza in Stanga Jos</value>
+  </data>
+  <data name="sbContextMenu_LowerRight.Text" xml:space="preserve">
+    <value>Plaseaza in Dreapta Jos</value>
+  </data>
+  <data name="sbContextMenu_ChooseForecolor.Text" xml:space="preserve">
+    <value>Alegeti Culoarea Textului</value>
+  </data>
+  <data name="sbContextMenu_ChooseBackcolor.Text" xml:space="preserve">
+    <value>Alegeti Culoarea Fundalului</value>
+  </data>
+  <data name="msgErrorSavingImage.Text" xml:space="preserve">
+    <value>S-au inregistrat erori la salvarea imaginii</value>
+  </data>
+  <data name="msgClearLayers.Text" xml:space="preserve">
+    <value>Sunteti sigur ca doriti stergerea tuturor stratelor?</value>
+  </data>
+  <data name="msgRemoveGroup.Text" xml:space="preserve">
+    <value>Sunteti sigur ca doriti stergerea grupului selectat si a stratelor acestuia?</value>
+  </data>
+  <data name="msgLegendLayerDoubleClick.Text" xml:space="preserve">
+    <value>Acest strat nu are proprietati disponibile.</value>
+  </data>
+  <data name="msgError.Text" xml:space="preserve">
+    <value>Eroare</value>
+  </data>
+  <data name="msgSaveProject1.Text" xml:space="preserve">
+    <value>Doriti sa salvati modificarile la </value>
+  </data>
+  <data name="msgSaveProject2.Text" xml:space="preserve">
+    <value>acest proiect??</value>
+  </data>
+  <data name="msgHandleShortcutKeys.Text" xml:space="preserve">
+    <value>Cu siguranta doriti stergerea curent selectat?</value>
+  </data>
+  <data name="msgUpdateToolNotFound.Text" xml:space="preserve">
+    <value>Butonul de Verificare Actualizare nu poate fi localizat; toate actualizarile vor trebui incarcate manual. {1}Deschideti acum pagina de Descarcare?</value>
+  </data>
+  <data name="msgAreaDrawnPolygon.Text" xml:space="preserve">
+    <value>Aria poligonului desenat: </value>
+  </data>
+  <data name="msgPanelArea.Text" xml:space="preserve">
+    <value>Aria: </value>
+  </data>
+  <data name="msgPanelAreaClick.Text" xml:space="preserve">
+    <value>Click pe vertices; click-dreapta pentru finalizare</value>
+  </data>
+  <data name="msgPanelDistance.Text" xml:space="preserve">
+    <value>Distanta:</value>
+  </data>
+  <data name="msgClickNextPoint.Text" xml:space="preserve">
+    <value>Faceti click in punctul urmator.</value>
+  </data>
+  <data name="msgDistanceStartOver.Text" xml:space="preserve">
+    <value>Click in punctul urmator. Click-dreapta pentro a o lua de la capat.</value>
+  </data>
+  <data name="msgShortcutsTitle.Text" xml:space="preserve">
+    <value>Urmatoarele scurtaturi de la tastatura sunt disponibile:</value>
+  </data>
+  <data name="msgShortcutsDel.Text" xml:space="preserve">
+    <value>Del -Sterge Stratul curent selectat.</value>
+  </data>
+  <data name="msgShortcutsIns.Text" xml:space="preserve">
+    <value>Ins - Adauga strat.</value>
+  </data>
+  <data name="msgShortcutsCtrlS.Text" xml:space="preserve">
+    <value>Ctrl-S - Salveaza Proiectul.</value>
+  </data>
+  <data name="msgShortcutsCtrlShiftI.Text" xml:space="preserve">
+    <value>Ctrl-Shift-I -Mod de Marire.</value>
+  </data>
+  <data name="msgShortcutsCtrlShiftO.Text" xml:space="preserve">
+    <value>Ctrl-Shift-O -Mod de Micsorare.</value>
+  </data>
+  <data name="msgShortcutsCtrlShiftP.Text" xml:space="preserve">
+    <value>Ctrl-Shift-P -Mod de Mutare..</value>
+  </data>
+  <data name="msgShortcutsCtrlO.Text" xml:space="preserve">
+    <value>Ctrl-O - Deschide Proiect.</value>
+  </data>
+  <data name="msgShortcutsCtrlC.Text" xml:space="preserve">
+    <value>Ctrl-C - Copiaza un instantaneu al hartii in clipboard.</value>
+  </data>
+  <data name="msgShortcutsCtrlP.Text" xml:space="preserve">
+    <value>Ctrl-P - Deschide fereastra de previzualizare a tiparirii</value>
+  </data>
+  <data name="msgShortcutsCtrlF4.Text" xml:space="preserve">
+    <value>Ctrl-F4 - Inchide Proiectul Curent.</value>
+  </data>
+  <data name="msgShortcutsHome.Text" xml:space="preserve">
+    <value>Home - Dimensioneaza pentru vizualizare completa.</value>
+  </data>
+  <data name="msgShortcutsCtrlHome.Text" xml:space="preserve">
+    <value>Ctrl-Home - Dimensioneaza la nivelul stratului selectat</value>
+  </data>
+  <data name="msgShortcutsPlus.Text" xml:space="preserve">
+    <value>Plus - Mareste in centrul hartii (25% din vizualizare)</value>
+  </data>
+  <data name="msgShortcutsMinus.Text" xml:space="preserve">
+    <value>Minus - Micsoreaza in centrul hartii (25% din vizualizare)</value>
+  </data>
+  <data name="msgShortcutsPageUp.Text" xml:space="preserve">
+    <value>Page-Up - Muta in sus (50% din vizualizare)</value>
+  </data>
+  <data name="msgShortcutsPageDown.Text" xml:space="preserve">
+    <value>Page-Down - Muta in jos (50% din vizualizare)</value>
+  </data>
+  <data name="msgShortcutsArrowUp.Text" xml:space="preserve">
+    <value>Sageata Sus - Muta Sus (25% din Vizualizare)</value>
+  </data>
+  <data name="msgShortcutsCtrlSpace.Text" xml:space="preserve">
+    <value>Ctrl-Spacebar: Schimba vizibilitatea stratulu.i</value>
+  </data>
+  <data name="msgShortcutsCtrlArrows.Text" xml:space="preserve">
+    <value>Ctrl-Sus, Ctrl-Jos: Schimba stratul selectat in legenda</value>
+  </data>
+  <data name="msgShortcutsArrowDown.Text" xml:space="preserve">
+    <value>Sageata Jos - Muta in jos (25% din Vizualizare)</value>
+  </data>
+  <data name="msgShortcutsArrowLeft.Text" xml:space="preserve">
+    <value>Sageata Stanga - Muta Stanga (25% din Vizualizare)</value>
+  </data>
+  <data name="msgShortcutsArrowRight.Text" xml:space="preserve">
+    <value>Sageata Dreapta - Muta Dreapta (25% din Vizualizare)</value>
+  </data>
+  <data name="msgHelpfileDoesNotExist.Text" xml:space="preserve">
+    <value>Nu exista fisier de ajutor.</value>
+  </data>
+  <data name="msgShortcutsCtrlEnter.Text" xml:space="preserve">
+    <value>Ctrl-Enter - Proprietatile stratului</value>
+  </data>
+  <data name="titleClearLayers.Text" xml:space="preserve">
+    <value>Confirmati Stergerea tuturor stratelor</value>
+  </data>
+  <data name="titleRemoveGroup.Text" xml:space="preserve">
+    <value>Stergeti Grup?</value>
+  </data>
+  <data name="LegendName.Text" xml:space="preserve">
+    <value>Legenda</value>
+  </data>
+  <data name="ToolStripMenuItem6.Text" xml:space="preserve">
+    <value>Dimensionare la nivel de strat</value>
+  </data>
+  <data name="msgShortcutsCtrlI.Text" xml:space="preserve">
+    <value>Ctrl-I - Mod de Identificare a Caracteristicii</value>
+  </data>
+  <data name="msgShortcutsCtrlH.Text" xml:space="preserve">
+    <value>Ctrl-H - Selectare Forma/Highlight Mode</value>
+  </data>
+  <data name="msgDataSubmitted.Text" xml:space="preserve">
+    <value>Multumim! Datele au fost trimise.</value>
+  </data>
+  <data name="msgHttpStatusCodeElse.Text" xml:space="preserve">
+    <value>Continutul nu poate fi citit. Status Code={0}.</value>
+  </data>
+  <data name="msgHttpStatusCodeNotFound.Text" xml:space="preserve">
+    <value>Continutul nu poate fi citit. URL inaccesibil. Status Code={0}.</value>
+  </data>
+  <data name="msgHttpStatusCodeRedirect.Text" xml:space="preserve">
+    <value>Continutul nu poate fi citit.Adresa URL a fost schimbata. Status Code={0}.</value>
+  </data>
+  <data name="msgModuleName.Text" xml:space="preserve">
+    <value>   Nume Modul:  </value>
+  </data>
+  <data name="msgModulesInfo.Text" xml:space="preserve">
+    <value>Info Modul:  </value>
+  </data>
+  <data name="msgPath.Text" xml:space="preserve">
+    <value>   Calea:  </value>
+  </data>
+  <data name="msgPerformanceInfo.Text" xml:space="preserve">
+    <value>Info Performanta: (bytes)</value>
+  </data>
+  <data name="msgPrivateMemory.Text" xml:space="preserve">
+    <value>  Memoria Privata:  </value>
+  </data>
+  <data name="msgTotalCpuTime.Text" xml:space="preserve">
+    <value>   CPU-Timp: </value>
+  </data>
+  <data name="msgTotalUserModeCpuTime.Text" xml:space="preserve">
+    <value>   CPU-Timp pe utilizator: </value>
+  </data>
+  <data name="msgVersion.Text" xml:space="preserve">
+    <value>   Versiune:  </value>
+  </data>
+  <data name="msgVirtualMemory.Text" xml:space="preserve">
+    <value>   Memorie Virtuala:  </value>
+  </data>
+  <data name="msgNoConnection.Text" xml:space="preserve">
+    <value>Nu apareti a fi conectat la internet.</value>
+  </data>
+  <data name="msgOverwriteCurrentlyLoadedScript.Text" xml:space="preserve">
+    <value>Noul script va fi scris peste cel curent. Doriti sa continuati?</value>
+  </data>
+  <data name="msgBadUsernamePassword.Text" xml:space="preserve">
+    <value>Subscrierea a fost eronata.
+ The username or password is invalid. Please double-check it.</value>
+  </data>
+  <data name="msgSubmittedSuccessfully.Text" xml:space="preserve">
+    <value>Sunscrierea a reusit. Multumim!</value>
+  </data>
+  <data name="msgGarbledServerResponse.Text" xml:space="preserve">
+    <value>Raspunsul serverului nu a fost inteles. Va rugam subscrieti din nou.</value>
+  </data>
+  <data name="msgIncomplete.Text" xml:space="preserve">
+    <value>Toate campurile sunt obligatorii; va rugam sa fiti sigur(a) ca introduceti informatie in fiecare camp.</value>
+  </data>
+  <data name="PluginPropertyName.Text" xml:space="preserve">
+    <value>Nume:  </value>
+  </data>
+  <data name="PluginPropertyVersion.Text" xml:space="preserve">
+    <value>Versiune:  </value>
+  </data>
+  <data name="PluginPropertyBuildDate.Text" xml:space="preserve">
+    <value>Data crearii: </value>
+  </data>
+  <data name="PluginPropertyAuthor.Text" xml:space="preserve">
+    <value>Autor:  </value>
+  </data>
+  <data name="PluginPropertyDescription.Text" xml:space="preserve">
+    <value>Descriere:  </value>
+  </data>
+  <data name="UserDefined.Text" xml:space="preserve">
+    <value>Utilizator Definit</value>
+  </data>
+  <data name="CustomProjection.Text" xml:space="preserve">
+    <value>Particularizeaza Proiectia</value>
+  </data>
+  <data name="WarningProjectionMismatch.Text" xml:space="preserve">
+    <value>Avertisment: Proiectia lipseste</value>
+  </data>
+  <data name="msgReprojectedGridDoesNotExists.Text" xml:space="preserve">
+    <value>Eroare: Fisierul grid reproiectat nu exista! Verificati fisierul errorlog.txt. Abandonarea adaugarii stratului.</value>
+  </data>
+  <data name="WarningNoProjectionOnLayer.Text" xml:space="preserve">
+    <value>Avertisment: Strat fata Proiectie</value>
+  </data>
+  <data name="msgFileName.Text" xml:space="preserve">
+    <value>Nume Fisier: </value>
+  </data>
+  <data name="msgProjection.Text" xml:space="preserve">
+    <value>Proiectia: </value>
+  </data>
+  <data name="msgProjectProjection.Text" xml:space="preserve">
+    <value>Proiectia Proiectului: </value>
+  </data>
+  <data name="msgNewLayerProjection.Text" xml:space="preserve">
+    <value>Strat Nou: </value>
+  </data>
+  <data name="msgCustomProjection.Text" xml:space="preserve">
+    <value>Particularizeaza</value>
+  </data>
+  <data name="msgScriptError.Text" xml:space="preserve">
+    <value>Eroarea Script</value>
+  </data>
+  <data name="msgSaveCurrentScript.Text" xml:space="preserve">
+    <value>Doriti intai salvarea scriptului?</value>
+  </data>
+  <data name="msgIgnoreScript.Text" xml:space="preserve">
+    <value>Avertisment: Ignorarea numelui scriptului furnizat in linia de comanda datorita inexistentei acestuia</value>
+  </data>
+  <data name="msgScriptNotExists.Text" xml:space="preserve">
+    <value>Neexistenta trecere a scriptului</value>
+  </data>
+  <data name="titleNoConnection.Text" xml:space="preserve">
+    <value>Fara Conexiune Internet</value>
+  </data>
+  <data name="msgFindTutorials.Text" xml:space="preserve">
+    <value>Nu apareti a fi conectat la internet. Avem tutoriale disponibile la acest URL:
+
+http://www.MapWindow.org/tutorials/</value>
+  </data>
+  <data name="msgFindDocumentation.Text" xml:space="preserve">
+    <value>Nu apareti ca avand o conexiune activa la internet. Documentatia noastra este disponibila online la acest URL:
+
+http://www.MapWindow.org/wiki/</value>
+  </data>
+  <data name="msgChangeLanguage.Text" xml:space="preserve">
+    <value>Pentru a schimba limba la {0} va avea efect doar dupa restartarea MapWindow</value>
+  </data>
+  <data name="msgChangeLanguage.Title" xml:space="preserve">
+    <value>Schimba Limba</value>
+  </data>
+</root>

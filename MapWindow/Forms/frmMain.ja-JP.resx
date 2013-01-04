@@ -1,0 +1,633 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ilsToolbar.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAm
+        HQAAAk1TRnQBSQFMAgEBGAEAAR0BAAEEAQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        AwABQAMAAYADAAEBAQABCAYAASAYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
+        AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
+        AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
+        AWYDAAGZAwABzAIAATMDAAIzAgABMwFmAgABMwGZAgABMwHMAgABMwH/AgABZgMAAWYBMwIAAmYCAAFm
+        AZkCAAFmAcwCAAFmAf8CAAGZAwABmQEzAgABmQFmAgACmQIAAZkBzAIAAZkB/wIAAcwDAAHMATMCAAHM
+        AWYCAAHMAZkCAALMAgABzAH/AgAB/wFmAgAB/wGZAgAB/wHMAQABMwH/AgAB/wEAATMBAAEzAQABZgEA
+        ATMBAAGZAQABMwEAAcwBAAEzAQAB/wEAAf8BMwIAAzMBAAIzAWYBAAIzAZkBAAIzAcwBAAIzAf8BAAEz
+        AWYCAAEzAWYBMwEAATMCZgEAATMBZgGZAQABMwFmAcwBAAEzAWYB/wEAATMBmQIAATMBmQEzAQABMwGZ
+        AWYBAAEzApkBAAEzAZkBzAEAATMBmQH/AQABMwHMAgABMwHMATMBAAEzAcwBZgEAATMBzAGZAQABMwLM
+        AQABMwHMAf8BAAEzAf8BMwEAATMB/wFmAQABMwH/AZkBAAEzAf8BzAEAATMC/wEAAWYDAAFmAQABMwEA
+        AWYBAAFmAQABZgEAAZkBAAFmAQABzAEAAWYBAAH/AQABZgEzAgABZgIzAQABZgEzAWYBAAFmATMBmQEA
+        AWYBMwHMAQABZgEzAf8BAAJmAgACZgEzAQADZgEAAmYBmQEAAmYBzAEAAWYBmQIAAWYBmQEzAQABZgGZ
+        AWYBAAFmApkBAAFmAZkBzAEAAWYBmQH/AQABZgHMAgABZgHMATMBAAFmAcwBmQEAAWYCzAEAAWYBzAH/
+        AQABZgH/AgABZgH/ATMBAAFmAf8BmQEAAWYB/wHMAQABzAEAAf8BAAH/AQABzAEAApkCAAGZATMBmQEA
+        AZkBAAGZAQABmQEAAcwBAAGZAwABmQIzAQABmQEAAWYBAAGZATMBzAEAAZkBAAH/AQABmQFmAgABmQFm
+        ATMBAAGZATMBZgEAAZkBZgGZAQABmQFmAcwBAAGZATMB/wEAApkBMwEAApkBZgEAA5kBAAKZAcwBAAKZ
+        Af8BAAGZAcwCAAGZAcwBMwEAAWYBzAFmAQABmQHMAZkBAAGZAswBAAGZAcwB/wEAAZkB/wIAAZkB/wEz
+        AQABmQHMAWYBAAGZAf8BmQEAAZkB/wHMAQABmQL/AQABzAMAAZkBAAEzAQABzAEAAWYBAAHMAQABmQEA
+        AcwBAAHMAQABmQEzAgABzAIzAQABzAEzAWYBAAHMATMBmQEAAcwBMwHMAQABzAEzAf8BAAHMAWYCAAHM
+        AWYBMwEAAZkCZgEAAcwBZgGZAQABzAFmAcwBAAGZAWYB/wEAAcwBmQIAAcwBmQEzAQABzAGZAWYBAAHM
+        ApkBAAHMAZkBzAEAAcwBmQH/AQACzAIAAswBMwEAAswBZgEAAswBmQEAA8wBAALMAf8BAAHMAf8CAAHM
+        Af8BMwEAAZkB/wFmAQABzAH/AZkBAAHMAf8BzAEAAcwC/wEAAcwBAAEzAQAB/wEAAWYBAAH/AQABmQEA
+        AcwBMwIAAf8CMwEAAf8BMwFmAQAB/wEzAZkBAAH/ATMBzAEAAf8BMwH/AQAB/wFmAgAB/wFmATMBAAHM
+        AmYBAAH/AWYBmQEAAf8BZgHMAQABzAFmAf8BAAH/AZkCAAH/AZkBMwEAAf8BmQFmAQAB/wKZAQAB/wGZ
+        AcwBAAH/AZkB/wEAAf8BzAIAAf8BzAEzAQAB/wHMAWYBAAH/AcwBmQEAAf8CzAEAAf8BzAH/AQAC/wEz
+        AQABzAH/AWYBAAL/AZkBAAL/AcwBAAJmAf8BAAFmAf8BZgEAAWYC/wEAAf8CZgEAAf8BZgH/AQAC/wFm
+        AQABIQEAAaUBAANfAQADdwEAA4YBAAOWAQADywEAA7IBAAPXAQAD3QEAA+MBAAPqAQAD8QEAA/gBAAHw
+        AfsB/wEAAaQCoAEAA4ADAAH/AgAB/wMAAv8BAAH/AwAB/wEAAf8BAAL/AgAD//8A/wD/AP8A/wD/AP8A
+        /wAeAAXsPwAB7DsAA6cBAAHsBgADIAUAA/kqAAOnAQAC7AYAAyAEAAIgAvkqAAOtAQAB7AgAAiACAAUg
+        BAAMBxoAA60BAAbsBAAIIBAAAQcZAAOtBgAB7AUABiAGAAtHAQABBxQABq0EzwK0AQAB7AYABSAGAAtq
+        AQABBxQAA60Dzwa0AQAB7AUABSAIAAuxAQABBxMAA88JtAEAAewFAAHpBSAIAAu3AQABBxcAA7QKAAbp
+        AiATAAEHFwADtAEAAewIAAXpAgAC6SoAA7oBAALsBgAF6QQAA+kpAAPbAQAB7AgAA+kFAAPpKAAD2wEA
+        AewSAAHpUgAO7AMAAQcJEgEHBAAN9wMAC/cGAAEKBQADCgEVAgAB7AMAAQcJAAEHAwAN6gH3AgAB9wsT
+        AfcEAAIJBAoD9gEKAhkBAAHsBAABBwEAAvYB9AIbAQABBxAAAeoB9wEAAfcBEwX/AhkB3AHbARMBrQET
+        AfcDAAIJBAoD9gEKAgkBAAHsAwABBwEAAv8C9gH0AhsBAAEHBAAK/wEAAeoB9wEADRMB3AETAfcCAAIJ
+        BAoD9gEKAgkBAAHsAgABBwEABP8C9gH0AhsBAAEHAwAK/wEAAeoB9wEAARMB9AMZAQkC3APbAbkDEwH3
+        AgACuwgKAgkBAAHsAgABBwEABf8C9gH0ARsBAAEHAwAK/wEAAeoB9wEAARMB/wH0AxkBCQLcA9sBEwEZ
+        ARMB9wIADLsBAAHsAgABBwEAAf8BAAT/AvYB9AEAAQcDAAr/AQAB6gH3AQANEwHcARkBEwIABroGuwEA
+        AewCAAEHAQAB/wEABf8C9gEAAQcDAAr/AQAB6gH3AQABEwX/AhkB3ALbARMB8AETAdwBEwIAArQIFAK6
+        AQAB7AQAAf8BAAX/AQAB9gEAAQcDAAr/AQAB6gH3AgAKEwGtARMB/wITAgACtAEUBPYC/wEUArQBAAHs
+        BgAD/wEAAf8BAAH2BQAK/wEAAeoB9wMAARMI8QETAfABEwHwARMCAAK0ARQE9gL/ARQCtAEAAewGAAH/
+        AQAB/wEAAf8HAAr/AQAB6gH3BAABEwH/BRMB8QQTAwACswEUBPYC/wEUArQBAAHsBgAB/wEAAf8JAAr/
+        AQAB6gH3BAABEwP/BfEBEwUAApABFAT2Av8BFAKzAQAB7AYAAf8LAAf/BAAB6gH3BQABEwH/BRMB8QET
+        BQACiwEUBPYC/wEUApABAAHsBgAB/wsAB/8BAAH/AQAC9wYAARME/wTxARMYAAH/CwAH/wIAAfcJAAkT
+        LAAB9yIAAe8BAAHvEAAQBwwAAvcOAAHvEwADBwsPAgcBAAz3DgAB7wMAAe8QAAMHAQAJvAEAAgcLFQH3
+        DgAB7w0AAQoBZgYAAwcBAAn/AQACBwEVCf8B9wMAAfcFAATvAQAB7wYABIYDpwP+A4YDpwMHAQAJ/wEA
+        AgcBFQT/BBUB/wMAAvcDAAHvAfcDFAEVAe8HAAFmAu8CBwGnAuID/gGGA8IBpwMHAQAJ/wEAAgcBFQL/
+        AhUE9wMAAfcBFQH3AgAB7wIUAfQB/wH0Af8CFAEAAe8EAAFmA+8BBwGGAf8C4gL+AWYBCALCAacDBwEA
+        Cf8BAAIHARUC/wEVAfcC9AL/AfcBAAH3Af8BFQH3AgAB9wEUAvQBAAFtAv8BFQHvBQABZQTvAYYC/wPi
+        AWYCCAHCAYYDBwEACf8BAAIHARUB/wEVAfcB8wL0A/MB9wEVAf8BFQH3AQAB7wEUA/QBAAFtAfQC8wEU
+        Ae8EAAENAfcE7wFmA/8BAAQIAYYDBwEACf8BAAIHARUB/wEVAfcG8wH3ARUB/wEVAfcBAAHvARQB9AHq
+        AW0BAAFtAeoBbQEZARQB9wQAAQoC9wTvAWYBCgFmAQcECAGGAwcBAAn/AQACBwEVAf8BFQH3BPMCGQH3
+        ARUB/wEVAfcBAAHvARQB9AYAARkBFAHvBAACCgENAWUBZgPvBAcBCAFlAmYDBwEABv8D7wEAAgcBFQH/
+        ARUB9wMZAwkB9wEVAf8BFQH3AQAB7wEVAfMCGQEAAW0BGQIJARQB9wQAAQ4D+wFlBO8CBwFmAYYCGwFm
+        AwcBAAb/AQABFAEAAUMCBwEVAv8BFQH3ARkBCQLcAfcBFQL/ARUB9wIAAe8BFAIZAQABbQEJAdwBFAHv
+        BQABZgEOAgoBDQFlBO8BDgEKAWYChgEAAwcBAAb/AQABvAEQAwcBFQL/AhUE9wIVAv8BFQH3AgAB9wEU
+        ARUCCQLcAhQB7wsAAQ8BZQGGAacGAAMHAQAG8QEAAQ8EBwEVBP8EFQT/ARUB9wMAAu8EFALvFgADBwgO
+        BQcBFQz/ARUB9wUAAe8B9wHvAfcYABAHDhUCAAkUFwAB7BwAAe8BAAHvARQH/wEUDAAB7AUEAewEAAHs
+        GwAB7wMAARQB/wUHAf8BFAsACQQDAAHsGgAB7wMAAe8BFAf/ARQKAAIEAfwBBAL/AewEBAIAAewZAAHv
+        BQABFAH/BAcB/wsAAewBBAH8AQQB/AL/AewB/AMEAewBAAHsEwAE7wEAAe8GAAEUBf8BAALzAgACvQUA
+        AQQB/AEEAfwBBAP8AQQB/AMEAQAB7AMAAewNAAHvAfcBFAEVAhQB7wcAARQB/wIHAf8EAAQbAQABlwMA
+        A/wBBAH8Av8B7AH8AQQB/AIEAQAB7AQAAewLAAHvAhQB9AH/AvQCFAEAAe8EAAEUA/8BAATzAQADGwEA
+        AZ4DAAb8Av8B7AH8AQQB/AEECAAC7AgAAfcBFAT0Av8BFAHvBQABFAH/BwAE8wEAAQgDAAT8AewC/AL/
+        AQQB/AIECgAB7AYAAe8BFAb0AvMBFAHvBAABFAEAAxsBAAP0AQAD8wEAAfMDAAT8Av8B/AL/AfwBBAH8
+        AQQEAAH/DAAB7wEVAfQB6gFtAeoBbQHqAW0BGQEUAfcEAAEUAf8CAALzAgAC8wL0BgAB7AP8AewD/wHs
+        AQQB/AEEAewFAAL/CAAB/wEAAe8BFAH0BgABGQEUAe8EAAEUAf8BBwH/DwAE/APsAvwCBAgAAv8FAAH/
+        AgAB7wEUAfMFGQIJARQB9wQAARQH/wEUCwAH/AIECwAC/wIAAf8EAAHvARQCGQMJAdwBFAHvBQAJFAwA
+        AewE/ALsDwAB/wUAAfcCFAIJAtwBFAEVAe83AALvBBQC7zoAAe8B9wHvAfcIAAQcCJkCnwKgAWwIcQJ3
+        BVUGAAbvFAABkgIAARwCAAGZAgABmQIAAZkCAAGfAWwCAAFxAgABcQIAAXECAAFVAgABVQUAAe8BEgRt
+        ARIB7xMAAZICAAEcAgABHAIAAZkCAAGZAgABmQFsAgABcQIAAXECAAFxAgABdwIAAVUEAAHvAW0C7wH/
+        Ae8B/wHvARQB7xIAAe0EkgQcB5kBiwNsCHEDdwFVAwAB7wFtAe8F/wHzAesB7wQACQMFAAGRBQABHAIA
+        ARwCAAGZAgABmQGLAgABbAIAAXECAAFxAgABcQIAAXcCAAHvARQB7wf/Ae8BFAHvAgAB+wEACQMEAAGR
+        AwACmgMAARwCAAGZAgABmQGLAgABbAIABkYBcQIAAXcBAAHvARQB7wn/AW0B7wIAAf8B+wEACQMDAAOR
+        AQABmgEAAfsBAAGSBRwCmQSLA2wFRgRxAQAB6wFtCv8B9AEUAe8BAAH7Af8B+wEACQMCAAGuAgABkQEA
+        A/sBAAGSAgABHAIAARwBhgIAAYsCAAFsAQAERgFxAgABcQHrAW0B9AH/AfIJ/wEUAe8BAAH/AfsB/wH7
+        CwABrgIAAZECAAP7AwABHAIAARwBhgIAAYsCAAGLBUYBcQIAAXEBFAHyAf8BBwFtAfII/wEUAe8BAAH7
+        Af8B+wH/AfsB/wH7Af8B+wYAAYsDrgKRAQAD+wEAA5ICHAOGA4sDRgFsAkYEcQEUAfEBBwEQARQB8QEH
+        Av8BBwL/AW0B/wHyARQBAAH/AfsB/wH7Af8B+wH/AfsB/wYAAYsCAAGuAgABkQEAA/sBAAGSAgABkgGG
+        AgABhgEAA0YBAAFsAQABRgFxAgABcQEAARQCEAEHAfIBbQL/AW0B/wH0AW0B8AH/ARQBAAH7Af8B+wwA
+        AYsCAAGLAgABrgIAAfsBAAEgAwABkgGGAgABhgNGAgABiwIAAWwCAAFxAQAC7wEQAQcB8gFtAfEB8gFt
+        AfIB8QEUAe8B/wEUEAAGiwOuAQADIAEAAu0DhgNGAYYEiwRsAXEDAAHwAfQB7wEUAvIBFALyARQBEAEH
+        ARQQAAGGAgABiwIAAYsCAAGuAQABIAMAAZEBhgEAA0YBAAGGAgABiwIAAWwCAAFsAgABEAG8AfIBEAEU
+        AvIBFALyARQBAAEQEQABpwIAAYsCAAGLAgABrgIAAZECAAGRAYYCAAFGAgABhgIAAYsCAAGLAgABbAYA
+        ARQC8gMUFAADpwGGB4sDrgKRAacJhgWLAWwGAAEUHAABcAIGA4oFxwIABBwImQKfAqADAAFwAgYDigXH
+        AgAEHAiZAp8CoAMAAXABAAFwAQABigEAAYoBAAHHAQABxwIAAZICAAEcAgABmQIAAZkCAAGZAgABnwMA
+        AXABAAFwAQABigEAAYoBAAHHAQABxwIAAZICAAEcAgABmQIAAZkCAAGZAgABnwMAAVQDcAIGA4oCxwIA
+        AZICAAEcAgABHAIAA/sBmQIAAZkDAAFUA3ACBgOKAscCAAGSAgABHAIAARwCAAGZAgABmQIAAZkDAAFU
+        AQABVAEAAXABAAEGAQABigEAAYoCAAHtA5IEHAX7A5kDAAFUAQABVAEAAXABAAEGAQABigEAAYoCAAHt
+        A5IFHAEABpkDAARUBHABBgKKAgABkQIAAZICAAEcAQAF+wIAAZkDAARUBHABBgKKAgABkQIAAZICAAEc
+        AgABdQIAAZkCAAGZAwAB+gEAAVQBAAFUAQABcAEAAXABAAEGAgABkQIAAe0CAAGSAQAF+wIAAZkDAAH6
+        AQABVAEAAVQBAAFwAQABcAEAAQYCAAGRAQAB+QHtAgABkgIAAlMBAAGZAgABmQMAA/oFVANwAgAEkQLt
+        A5ID+wIcApkDAAP6BVQDcAIAAZEC+QGRAu0BAAL/AQABUwFNAQABHAKZEAABrgIAAZECAAHtAgABkgIA
+        ARwCAAEcEAABrgL5AZEDAAP/AQACTQIAARwQAAGuAgAD+wGRAgABkgIAARwCAAEcEAABrgP5AQABdQFT
+        AQAB/wEAAk0CRwEAARwBOgM5AR0BAAEdAgAB0wHNAqwBxwKnAYsBrgX7ApEC7QOSAhwBOgM5AR0BAAEd
+        AgAB0wHNAqwBxwKnAYsD+QEAA1MBAAJNAkcBAAIcAToBAAE6AwABHQIAAdMBAAHNAQABrAEAAacBiwEA
+        BfsCAAGRAgABkgIAAZIBOgEAAToDAAEdAgAB0wEAAc0BAAGsAQABpwGLAQAC+QEAAlMDTQJHAwABkgM6
+        AQADOQIAA9MBzQKsAccBiwEABfsCAAGRAgAB7QIAAZIDOgEAAzkCAAPTAc0CrAHHAYsCAAL5AQACTQQA
+        Ae0CAAGSATsBAAE6AQABOgEAATkGAAHNAQABrAOLA/sDrgWRAu0BOwEAAToBAAE6AQABOQYAAc0BAAGs
+        BosBAAFNAkcBAAGRAQABkQLtAzsEOgIAAtkD0wHNAawBhgIAAYsCAAGLAgABrgIAAZECAAGRAzsEOgIA
+        AtkD0wHNAawBhgIAAYsCAAGLAQABRwMAAZECAAGRAfsBAAE7AQABOgEAAToCAAHZAQAB2QEAAdMBAAHN
+        AacCAAGLAgABiwIAAa4CAAGRAgABkQH7AQABOwEAAToBAAE6AgAB2QEAAdkBAAHTAQABzQGnAgABiwIA
+        AYsCAAGuAgABkQIAAZED+wI7AjoCAAH+A9kD0wOnAYYHiwOuApED+wI7AjoCAAH+A9kD0wOnAYYHiwOu
+        ApEBQgFNAT4HAAE+AwABKAMAAUADAAGAAwABAQEAAQEGAAEEFgAD//8AAgAC/wH4AT8E/wH+Af8B8AI/
+        AR8C/wH8AX8B8AE/AQ4BDwL/AfgBPwHwAR8BBgEHAv8B8AEfAfgBHwHAAQcBAAEPAeABDwH4AQAB4AEH
+        AQABBwHAAQcBgAEAAfABDwEAAQMB8AE/AYABAAH4AQ8BAAEDAfABKwGAAQAB8AEfAYABAQHwAT8BgAEA
+        AfABDwHAAQAB8AEvAYABAQHgAQcB4AEAAfABPwH8AQ8B4AEBAv8B8AEvAfwBBwHgAWEE/wH+AQcB8AFw
+        Av8B/gGvAf4BBwL4BP8B/gEPBP8BwAEAAeABAwHAAQEBwAEHAYABAAHgAQMBgAEBAYABAwGAAQAB8AEH
+        AYABAQEAAQEBgAEAAeABAwGAAQECAAGAAQABwAEBAYABAQIAAYABAAHAAQEBgAEBAgABgAEAAcABAQGA
+        AQECAAGAAQABwAEBAYABAQIAAYABAAHgAQEBgAEBAYABAAGAAQAB8AEDAYABAQHAAQABgAEAAfgBBwGA
+        AQEB4AEBAYABAAH4AR8BgAEBAeABBwGAAQAB+AF/AYABAQHwAQcBgAEAAfgB/wGAAQMB8AEDAYABAQH4
+        Af8BgAEPAfgBAwL/Af0B/wGAAR8D/wH4Av8CAAH/AfAB/wHwAv8CAAGAAQAB/wHgAv8DAAEBAf8BwwH+
+        AT8DAAEBAfABhwUAAQEBwAEPBQABAQGAAQ8FAAEBAYABHwUAAQEBAAEPBQABAQEAAQ8FAAEBAQABDwUA
+        AQEBAAEPBQABAQGAAR8BAAEBAwABAQGAAR8B/AE/AwABAQHAAT8C/wMAAQEB8AP/AwABAwEAAX8C/wF/
+        Av8B+AEAAX8B+AEPAT8C/wHwAQABfwHwAQcBPwL/AeABAAF/AeABAwEfAv8BwwEAAQYBwAEBAR8B/wHw
+        AYcCAAHAAQEBBwHfAcABDwIAAcABAQEDAc8BgAEPAgABwAEBAYABRwGAAR8CAAHAAQEBwAEDAQABDwIA
+        AcABAQHAAQEBAAEPAgABwAEBAeACAAEPAQABDgHgAQMB8AEBAQABDwEAAX8B8AEHAfwBAwGAAR8BAAF/
+        AfgBDwH/AQcBgAEfBf8BzwHAAT8F/wHfAfAB/wQAAfwBDwL/AW0BtgFtAbYB+AEHAv8BbQG2AW0BtgHw
+        AQMBAAEfBAAB4AEDAQABDwFhAbYBbQG2AcABAQEAAQcBYQG2AWwBBgGAAQEBAAEDBAABgAIAAQEBYAE2
+        AW0BBgQAAWgBNgFsAQYDAAEfBwABHwFsAQYBaAGmAwABHwFtAQYBYQG2AYABAAGPAfEEAAHAAQAB/wH5
+        AW0BhgFFAbYBwAEFAf8BdQFtAaYBbQG2AeABDwH/AY8EAAH8AX8C/wHgAQMCAAHgAQMCAAHqAasBbQG2
+        AeoBqwFtAbYB4AEDAW0BhgHgAQMBbQG2AeoBqwIAAeoBqwIAAeABAwFtAQYB4AEDAW0BFgHqAasBbQEG
+        AeoBqwFMAQYB4AEDAgAB4AEDAgAB+AH/AW0BtgH4Af8BCAECAfwB/wFhAbYB/AH/AwABgAMAAYACAAFV
+        AaoBQQG2AVUBqgFAAQYBAQEAAUEBtgEBAQABYAEGAVQBCgIAAVQBCgIAAQEBAAFtAbYBAQEAAWwBBgFV
+        AaoBbQG2AVUBqgFtATYBAQGAAgABAQGAAgAL
+</value>
+  </data>
+  <data name="MapPreview.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAARgAAAAIB
+        AAAAAQAAAAAAAAAAAAAAADEAAAAAAAMArBQAADIMAAAAAAAA////AHsUrkfhepQ/AAAzMzMzMzPTPwAA
+        AAAAFAAAAAEACw==
+</value>
+  </data>
+  <data name="MapMain.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAARgAAAAIB
+        AAAAAQAAAAAAAAAAAAAAADEAAAAAAAMAyyQAAFcsAAAAAAAA////AHsUrkfhepQ/AAAzMzMzMzPTPwAA
+        AAAAFAAAAAEACw==
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Global Earthquake Model: Direct Observation Tools</value>
+  </data>
+  <data name="mnuFile.Text" xml:space="preserve">
+    <value>ファイル</value>
+  </data>
+  <data name="mnuNew.Text" xml:space="preserve">
+    <value>新規プロジェクト</value>
+  </data>
+  <data name="mnuOpen.Text" xml:space="preserve">
+    <value>プロジェクトを開く</value>
+  </data>
+  <data name="mnuSave.Text" xml:space="preserve">
+    <value>プロジェクトを保存</value>
+  </data>
+  <data name="mnuSaveAs.Text" xml:space="preserve">
+    <value>プロジェクトを名前を付けて保存</value>
+  </data>
+  <data name="mnuPrint.Text" xml:space="preserve">
+    <value>印刷</value>
+  </data>
+  <data name="mnuProjectSettings.Text" xml:space="preserve">
+    <value>プロジェクトの設定</value>
+  </data>
+  <data name="mnuRecentProjects.Text" xml:space="preserve">
+    <value>最近開いたプロジェクト</value>
+  </data>
+  <data name="mnuClose.Text" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="mnuExit.Text" xml:space="preserve">
+    <value>終了</value>
+  </data>
+  <data name="mnuEdit.Text" xml:space="preserve">
+    <value>編集</value>
+  </data>
+  <data name="mnuCopyMap.Text" xml:space="preserve">
+    <value>地図</value>
+  </data>
+  <data name="mnuCopyLegend.Text" xml:space="preserve">
+    <value>凡例</value>
+  </data>
+  <data name="mnuUpdatePreview.Text" xml:space="preserve">
+    <value>全体図更新</value>
+  </data>
+  <data name="mnuClearPreview.Text" xml:space="preserve">
+    <value>全体図クリア</value>
+  </data>
+  <data name="mnuView.Text" xml:space="preserve">
+    <value>ビュー</value>
+  </data>
+  <data name="mnuAddLayer.Text" xml:space="preserve">
+    <value>レイヤ追加</value>
+  </data>
+  <data name="mnuRemoveLayer.Text" xml:space="preserve">
+    <value>レイヤ削除</value>
+  </data>
+  <data name="mnuClearLayer.Text" xml:space="preserve">
+    <value>全レイヤ消去</value>
+  </data>
+  <data name="mnuPlugins.Text" xml:space="preserve">
+    <value>プラグイン</value>
+  </data>
+  <data name="mnuEditPlugins.Text" xml:space="preserve">
+    <value>プラグインの編集</value>
+  </data>
+  <data name="mnuScript.Text" xml:space="preserve">
+    <value>スクリプト</value>
+  </data>
+  <data name="mnuHelp.Text" xml:space="preserve">
+    <value>ヘルプ</value>
+  </data>
+  <data name="mnuContents.Text" xml:space="preserve">
+    <value>コンテンツ</value>
+  </data>
+  <data name="mnuWelcomeScreen.Text" xml:space="preserve">
+    <value>起動時画面</value>
+  </data>
+  <data name="mnuAboutMapWindow.Text" xml:space="preserve">
+    <value>バージョン情報</value>
+  </data>
+  <data name="mnuRemoveGroup.Text" xml:space="preserve">
+    <value>グループ削除</value>
+  </data>
+  <data name="mnuZoomToGroup.Text" xml:space="preserve">
+    <value>グループの拡大</value>
+  </data>
+  <data name="mnuSaveMapImage.Text" xml:space="preserve">
+    <value>地図</value>
+  </data>
+  <data name="mnuSaveGeorefMapImage.Text" xml:space="preserve">
+    <value>参照地図</value>
+  </data>
+  <data name="mnuSaveNorthArrow.Text" xml:space="preserve">
+    <value>方位記号</value>
+  </data>
+  <data name="mnuSaveScaleBar.Text" xml:space="preserve">
+    <value>スケールバー</value>
+  </data>
+  <data name="mnuCopyScaleBar.Text" xml:space="preserve">
+    <value>スケールバー</value>
+  </data>
+  <data name="mnuCopyNorthArrow.Text" xml:space="preserve">
+    <value>方位記号</value>
+  </data>
+  <data name="msgSaveProject1.Text" xml:space="preserve">
+    <value>プロジェクトを保存しますか？  </value>
+  </data>
+  <data name="msgSaveProject2.Text" xml:space="preserve">
+    <value>本当によろしいですか?</value>
+  </data>
+  <data name="msgClearLayers.Text" xml:space="preserve">
+    <value>全レイヤを消去しますか?</value>
+  </data>
+  <data name="titleClearLayers.Text" xml:space="preserve">
+    <value>全レイヤ削除の確認</value>
+  </data>
+  <data name="msgErrorSavingImage.Text" xml:space="preserve">
+    <value>イメージを保存中にエラーが発生しました</value>
+  </data>
+  <data name="msgRemoveGroup.Text" xml:space="preserve">
+    <value>選択したグループとそのレイヤを本当に削除しますか?</value>
+  </data>
+  <data name="titleRemoveGroup.Text" xml:space="preserve">
+    <value>グループの削除</value>
+  </data>
+  <data name="msgLegendLayerDoubleClick.Text" xml:space="preserve">
+    <value>このレイヤタイプはプロパティが有効でありません</value>
+  </data>
+  <data name="msgError.Text" xml:space="preserve">
+    <value>エラー</value>
+  </data>
+  <data name="msgLegend_LayerVisibleChanged.Text" xml:space="preserve">
+    <value>このレイヤは動的表示を使っています。このプロパティをセットは、動的表示機能を使用不可にします。あなたは、この特徴をオフにしたいですか？（注：あなたは、凡例エディタを使って動的表示を回復させることができます。）</value>
+  </data>
+  <data name="mnuCopy.Text" xml:space="preserve">
+    <value>コピー</value>
+  </data>
+  <data name="mnuExport.Text" xml:space="preserve">
+    <value>エクスポート</value>
+  </data>
+  <data name="mnuPreview.Text" xml:space="preserve">
+    <value>全体図</value>
+  </data>
+  <data name="ToolStripMenuItem11.Text" xml:space="preserve">
+    <value>グループを展開</value>
+  </data>
+  <data name="ToolStripMenuItem12.Text" xml:space="preserve">
+    <value>全部を展開</value>
+  </data>
+  <data name="ToolStripMenuItem13.Text" xml:space="preserve">
+    <value>グループをたたむ</value>
+  </data>
+  <data name="ToolStripMenuItem14.Text" xml:space="preserve">
+    <value>全部をたたむ</value>
+  </data>
+  <data name="ToolStripMenuItem15.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ToolStripMenuItem16.Text" xml:space="preserve">
+    <value>&amp;プロパティ</value>
+  </data>
+  <data name="ToolStripMenuItem2.Text" xml:space="preserve">
+    <value>グループ追加</value>
+  </data>
+  <data name="ToolStripMenuItem3.Text" xml:space="preserve">
+    <value>レイヤ追加</value>
+  </data>
+  <data name="ToolStripMenuItem30.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ToolStripMenuItem4.Text" xml:space="preserve">
+    <value>レイヤ削除</value>
+  </data>
+  <data name="ToolStripMenuItem5.Text" xml:space="preserve">
+    <value>全レイヤ消去</value>
+  </data>
+  <data name="ToolStripMenuItem6.Text" xml:space="preserve">
+    <value>レイヤ拡大</value>
+  </data>
+  <data name="ToolStripMenuItem8.Text" xml:space="preserve">
+    <value>メタデータ表示</value>
+  </data>
+  <data name="ToolStripMenuItem9.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="mnuBtnAdd.Text" xml:space="preserve">
+    <value>レイヤ追加</value>
+  </data>
+  <data name="mnuBtnClear.Text" xml:space="preserve">
+    <value>全レイヤ消去</value>
+  </data>
+  <data name="mnuBtnRemove.Text" xml:space="preserve">
+    <value>レイヤ削除</value>
+  </data>
+  <data name="mnuOfflineDocs.Text" xml:space="preserve">
+    <value>ドキュメント (オフライン)</value>
+  </data>
+  <data name="mnuOnlineDocs.Text" xml:space="preserve">
+    <value>ドキュメント (オンライン)</value>
+  </data>
+  <data name="mnuShortcuts.Text" xml:space="preserve">
+    <value>キーボード・ショートカット</value>
+  </data>
+  <data name="mnuTableEditorLaunch.Text" xml:space="preserve">
+    <value>属性テーブル表示</value>
+  </data>
+  <data name="mnuZoomLayer.Text" xml:space="preserve">
+    <value>レイヤ</value>
+  </data>
+  <data name="mnuZoomMax.Text" xml:space="preserve">
+    <value>全体表示</value>
+  </data>
+  <data name="mnuZoomNext.Text" xml:space="preserve">
+    <value>次へ</value>
+  </data>
+  <data name="mnuZoomPrevious.Text" xml:space="preserve">
+    <value>前に</value>
+  </data>
+  <data name="mnuZoomSelected.Text" xml:space="preserve">
+    <value>選択済み</value>
+  </data>
+  <data name="mnuZoomShape.Text" xml:space="preserve">
+    <value>シェープ</value>
+  </data>
+  <data name="tbbMeasure.ToolTipText" xml:space="preserve">
+    <value>距離計測</value>
+  </data>
+  <data name="tbbNew.ToolTipText" xml:space="preserve">
+    <value>新規プロジェクト</value>
+  </data>
+  <data name="tbbOpen.ToolTipText" xml:space="preserve">
+    <value>プロジェクトを開く</value>
+  </data>
+  <data name="tbbPan.ToolTipText" xml:space="preserve">
+    <value>移動</value>
+  </data>
+  <data name="tbbPrint.ToolTipText" xml:space="preserve">
+    <value>印刷</value>
+  </data>
+  <data name="tbbSave.ToolTipText" xml:space="preserve">
+    <value>プロジェクトを保存</value>
+  </data>
+  <data name="tbbSelect.ToolTipText" xml:space="preserve">
+    <value>選択</value>
+  </data>
+  <data name="tbbZoom.ToolTipText" xml:space="preserve">
+    <value>ズーム</value>
+  </data>
+  <data name="tbbZoomIn.ToolTipText" xml:space="preserve">
+    <value>拡大</value>
+  </data>
+  <data name="tbbZoomOut.ToolTipText" xml:space="preserve">
+    <value>縮小</value>
+  </data>
+  <data name="MessagefrmMain001.Text" xml:space="preserve">
+    <value>現在選択されているレイヤを本当に削除しますか？</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="MessagefrmMain002.Text" xml:space="preserve">
+    <value>現在のレイヤーを削除しますか？</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="MessagefrmMain003.Text" xml:space="preserve">
+    <value>イメージの保存でエラーが発生しました。</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="MessagefrmMain004.Text" xml:space="preserve">
+    <value>保存できません</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="MessagefrmMain005.Text" xml:space="preserve">
+    <value>ヘルプファイルがありません。</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="MessagefrmMain006.Text" xml:space="preserve">
+    <value>ヘルプファイルが見つかりません</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="MessagefrmMain007.Text" xml:space="preserve">
+    <value>次のキーボード・ショートカットが使えます。</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="MessagefrmMain008.Text" xml:space="preserve">
+    <value>Del - 現在選択しているレイヤを削除</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="MessagefrmMain009.Text" xml:space="preserve">
+    <value>Ins - レイヤ追加</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="MessagefrmMain010.Text" xml:space="preserve">
+    <value>Ctrl-S - プロジェクトの保存</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="MessagefrmMain011.Text" xml:space="preserve">
+    <value>Ctrl-O - プロジェクトを開く</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="MessagefrmMain012.Text" xml:space="preserve">
+    <value>Ctrl-C - 地図のスナップショットをクリップボードにコピー</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="MessagefrmMain013.Text" xml:space="preserve">
+    <value>Ctrl-P - 印刷プレビュー画面を開く</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="MessagefrmMain014.Text" xml:space="preserve">
+    <value>Ctrl-F4 - 現在のプロジェクトを閉じる</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="MessagefrmMain015.Text" xml:space="preserve">
+    <value>Home - 全体を表示</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="MessagefrmMain016.Text" xml:space="preserve">
+    <value>Ctrl-Home - 選択したレイヤを拡大</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="MessagefrmMain017.Text" xml:space="preserve">
+    <value>Plus - 地図を25%拡大</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="MessagefrmMain018.Text" xml:space="preserve">
+    <value>Minus - 地図を25%縮小</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="MessagefrmMain019.Text" xml:space="preserve">
+    <value>Page-Up - 上に移動（ビューの50%）</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="MessagefrmMain020.Text" xml:space="preserve">
+    <value>Page-Down - 下に移動（ビューの50%）</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="MessagefrmMain021.Text" xml:space="preserve">
+    <value>Up Arrow - 上に移動（ビューの25%）</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="MessagefrmMain022.Text" xml:space="preserve">
+    <value>Down Arrow -  下に移動（ビューの25%）</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="MessagefrmMain023.Text" xml:space="preserve">
+    <value>Left Arrow - 左へ移動（ビューの25%）</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="MessagefrmMain024.Text" xml:space="preserve">
+    <value>Right Arrow - 右へ移動（ビューの25%）</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="MessagefrmMain025.Text" xml:space="preserve">
+    <value>キーボード・ショートカット</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="MessagefrmMain026.Text" xml:space="preserve">
+    <value>ロードできません</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="MessagefrmMain027.Text" xml:space="preserve">
+    <value>最近のプロジェクト</value>
+    <comment>frmMain.vb</comment>
+  </data>
+</root>

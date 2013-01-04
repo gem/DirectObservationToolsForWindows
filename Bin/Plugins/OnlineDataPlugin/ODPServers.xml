@@ -1,0 +1,14 @@
+<ServerList>
+  <Server address="wms.globexplorer.com" name="GlobeXplorer Data" />
+  <Server address="http%3A%2F%2Fhazards.fema.gov%2Fwmsconnector%2Fwmsconnector%2FServlet%2FNFHL%3FREQUEST%3DGetCapabilities%26SERVICE%3DWMS" name="FEMA Hazards Map" />
+  <Server address="www.geographynetwork.com" name="ESRI Geography Network" />
+  <Server address="gis.ncdc.noaa.gov" name="NOAA National Climatic Data Center" />
+  <Server address="gis1.msc.fema.gov" name="FEMA GIS Data" />
+  <Server address="njgin.state.nj.us" name="New Jersey Geographic Information Network" />
+  <Server address="gisdata.usgs.gov" name="USGS GIS Data Sources Mirror 2" />
+  <Server address="imsortho.cr.usgs.gov" name="ESGS EROS Support Server" />
+  <Server address="http://wms.globexplorer.com/gexservlets/wms?" name="GlobeXplorer WMS" />
+  <Server address="http://demo.cubewerx.com/demo/cubeserv/cubeserv.cgi?SERVICE=wms&amp;VERSION=1.1.0&amp;REQUEST=GetCapabilities" name="CubeWerx" />
+  <Server address="http://www.geoland.at/geolandWMS/service.aspx?Name=geoland_at_wms&amp;Service=WMS&amp;Version=1.1.1&amp;Request=GetCapabilities" name="Geolan" />
+  <Server address="http://mapbender.wheregroup.com/cgi-bin/mapserv?map=/data/umn/osm/osm_basic.map&amp;VERSION=1.1.1&amp;REQUEST=GetCapabilities&amp;SERVICE=WMS" name="OpenStreetMap" />
+</ServerList>

@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="mnuFile.Text" xml:space="preserve">
+    <value>Αρχείο</value>
+  </data>
+  <data name="mnuNew.Text" xml:space="preserve">
+    <value>Νέο</value>
+  </data>
+  <data name="mnuOpen.Text" xml:space="preserve">
+    <value>Άνοιγμα</value>
+  </data>
+  <data name="mnuSave.Text" xml:space="preserve">
+    <value>Αποθήκευση</value>
+  </data>
+  <data name="mnuSaveAs.Text" xml:space="preserve">
+    <value>Αποθήκευση ως</value>
+  </data>
+  <data name="mnuPrint.Text" xml:space="preserve">
+    <value>Εκτύπωση</value>
+  </data>
+  <data name="mnuProjectSettings.Text" xml:space="preserve">
+    <value>Ιδιότητες χάρτη</value>
+  </data>
+  <data name="mnuRecentProjects.Text" xml:space="preserve">
+    <value>Πρόσφατοι χάρτες</value>
+  </data>
+  <data name="mnuClose.Text" xml:space="preserve">
+    <value>Κλείσιμο</value>
+  </data>
+  <data name="mnuExit.Text" xml:space="preserve">
+    <value>Έξοδος</value>
+  </data>
+  <data name="mnuEdit.Text" xml:space="preserve">
+    <value>Επεξεργασία</value>
+  </data>
+  <data name="mnuCopy.Text" xml:space="preserve">
+    <value>Αντιγραφή</value>
+  </data>
+  <data name="mnuExport.Text" xml:space="preserve">
+    <value>Εξαγωγή</value>
+  </data>
+  <data name="mnuPreview.Text" xml:space="preserve">
+    <value>Χάρτης προεπισκόπηση</value>
+  </data>
+  <data name="mnuCopyMap.Text" xml:space="preserve">
+    <value>Αντιγραφή</value>
+  </data>
+  <data name="mnuCopyLegend.Text" xml:space="preserve">
+    <value>Υπόμνημα</value>
+  </data>
+  <data name="mnuUpdatePreview.Text" xml:space="preserve">
+    <value>Ανανέωση</value>
+  </data>
+  <data name="mnuClearPreview.Text" xml:space="preserve">
+    <value>Καθαρισμός</value>
+  </data>
+  <data name="mnuView.Text" xml:space="preserve">
+    <value>Προβολή</value>
+  </data>
+  <data name="mnuAddLayer.Text" xml:space="preserve">
+    <value>Προσθήκη θεματικού επιπέδου</value>
+  </data>
+  <data name="mnuRemoveLayer.Text" xml:space="preserve">
+    <value>Αφαίρεση θεματικού επιπέδου</value>
+  </data>
+  <data name="mnuClearLayer.Text" xml:space="preserve">
+    <value>Αφαίρεση όλων των θεματικών επιπέδων</value>
+  </data>
+  <data name="mnuZoomIn.Text" xml:space="preserve">
+    <value>Zoom In</value>
+  </data>
+  <data name="mnuZoomOut.Text" xml:space="preserve">
+    <value>Zoom Out</value>
+  </data>
+  <data name="mnuZoomToFullExtents.Text" xml:space="preserve">
+    <value>Εστίαση στην μέγιστη έκταση</value>
+  </data>
+  <data name="mnuZoomToPreviewExtents.Text" xml:space="preserve">
+    <value>Εστίαση στα πλαίσια του χάρτη προεπισκόπησης</value>
+  </data>
+  <data name="mnuPreviousZoom.Text" xml:space="preserve">
+    <value>Προηγούμενη εστίαση</value>
+  </data>
+  <data name="mnuNextZoom.Text" xml:space="preserve">
+    <value>Επόμενη εστίαση</value>
+  </data>
+  <data name="mnuPlugins.Text" xml:space="preserve">
+    <value>Εργαλεία</value>
+  </data>
+  <data name="mnuEditPlugins.Text" xml:space="preserve">
+    <value>Επιλογές εργαλείων</value>
+  </data>
+  <data name="mnuHelp.Text" xml:space="preserve">
+    <value>Βοήθεια</value>
+  </data>
+  <data name="mnuContents.Text" xml:space="preserve">
+    <value>Περιεχόμενα</value>
+  </data>
+  <data name="mnuWelcomeScreen.Text" xml:space="preserve">
+    <value>Οθόνη καλωσορίσματος</value>
+  </data>
+  <data name="mnuAboutMapWindow.Text" xml:space="preserve">
+    <value>Σχετικά</value>
+  </data>
+  <data name="mnuRemoveGroup.Text" xml:space="preserve">
+    <value>Αφαίρεση ομάδας</value>
+  </data>
+  <data name="mnuZoomToGroup.Text" xml:space="preserve">
+    <value>Εστίαση στην ομάδα</value>
+  </data>
+  <data name="mnuSaveMapImage.Text" xml:space="preserve">
+    <value>Χάρτης</value>
+  </data>
+  <data name="mnuSaveGeorefMapImage.Text" xml:space="preserve">
+    <value>Χάρτης (γεωδιορθωμένος)</value>
+  </data>
+  <data name="mnuSaveNorthArrow.Text" xml:space="preserve">
+    <value>Σύμβολο Βορρά</value>
+  </data>
+  <data name="mnuSaveScaleBar.Text" xml:space="preserve">
+    <value>Κλίμακα</value>
+  </data>
+  <data name="mnuCopyScaleBar.Text" xml:space="preserve">
+    <value>Κλίμακα</value>
+  </data>
+  <data name="mnuCopyNorthArrow.Text" xml:space="preserve">
+    <value>Σύμβολο Βορρά</value>
+  </data>
+  <data name="msgSaveProject1.Text" xml:space="preserve">
+    <value>Θέλετε να αποθηκεύσετε τις αλλαγές </value>
+  </data>
+  <data name="msgSaveProject2.Text" xml:space="preserve">
+    <value>στον χάρτη;</value>
+  </data>
+  <data name="msgClearLayers.Text" xml:space="preserve">
+    <value>Είστε σίγουρος ότι θέλετε να αφαιρέσετε όλα τα θεματικά επίπεδα από τον χάρτη;</value>
+  </data>
+  <data name="titleClearLayers.Text" xml:space="preserve">
+    <value>Αφαίρεση θεματικών επιπέδων</value>
+  </data>
+  <data name="msgErrorSavingImage.Text" xml:space="preserve">
+    <value>Des erreurs sont apparues en sauvant l'image</value>
+  </data>
+  <data name="msgRemoveGroup.Text" xml:space="preserve">
+    <value>Είστε σίγουρος ότι θέλετε να αφαιρέσετε την επιλεγμένη ομάδα και τα θεματικά της επίπεδα;</value>
+  </data>
+  <data name="titleRemoveGroup.Text" xml:space="preserve">
+    <value>Αφαίρεση θεματικής ομάδας?</value>
+  </data>
+  <data name="msgLegendLayerDoubleClick.Text" xml:space="preserve">
+    <value>Aucune propriété disponible pour ce type de couche.</value>
+  </data>
+  <data name="msgError.Text" xml:space="preserve">
+    <value>Σφάλμα</value>
+  </data>
+  <data name="msgLegend_LayerVisibleChanged.Text" xml:space="preserve">
+    <value>Αυτό το θεματικό επίπεδο χρησιμοποιεί δυναμική ορατότητα.Εμφανίζοντας αυτό το θεματικό επίπεδο θα απενεργοποιηθεί η δυναμική ορατότητα.Θέλετε να εμφανίσετε το θεματικό επίπεδο;</value>
+  </data>
+  <data name="mnuOpenProjectIntoGroup.Text" xml:space="preserve">
+    <value>Άνοιγμα χάρτη σε νέα ομάδα</value>
+  </data>
+  <data name="mnuCheckUpdates.Text" xml:space="preserve">
+    <value>Έλεγχος για ενημερώση του λογισμικού</value>
+  </data>
+  <data name="mnuUpdatePreviewFull.Text" xml:space="preserve">
+    <value>Ενημέρωση στην μέγιστη έκταση</value>
+  </data>
+  <data name="mnuUpdatePreviewCurr.Text" xml:space="preserve">
+    <value>Ενημέρωση στην τρέχουσα προβολή</value>
+  </data>
+  <data name="mnuSetScale.Text" xml:space="preserve">
+    <value>Καθορισμός κλίμακας</value>
+  </data>
+  <data name="mnuShowScaleBar.Text" xml:space="preserve">
+    <value>Προβολή κλίμακας</value>
+  </data>
+  <data name="mnuClearSelectedShapes.Text" xml:space="preserve">
+    <value>Καθαρισμός επιλεγμένων αντικειμένων</value>
+  </data>
+  <data name="mnuOnlineDocs.Text" xml:space="preserve">
+    <value>Online Οδηγίες</value>
+  </data>
+  <data name="mnuOfflineDocs.Text" xml:space="preserve">
+    <value>Offline Οδηγίες</value>
+  </data>
+  <data name="mnuShortcuts.Text" xml:space="preserve">
+    <value>Συντομεύσεις πληκτρολογίου</value>
+  </data>
+  <data name="mnuScript.Text" xml:space="preserve">
+    <value>Scripts...</value>
+  </data>
+  <data name="mnuPanels.Text" xml:space="preserve">
+    <value>Πλαίσια</value>
+  </data>
+  <data name="mnuShowLegend.Text" xml:space="preserve">
+    <value>Υπόμνημα</value>
+  </data>
+  <data name="mnuShowPreviewMap.Text" xml:space="preserve">
+    <value>Χάρτης Προεπισκόπησης</value>
+  </data>
+  <data name="ToolStripMenuItem6.Text" xml:space="preserve">
+    <value>Εστίαση στο θεματικό επίπεδο</value>
+  </data>
+  <data name="msgShortcutsTitle.Text" xml:space="preserve">
+    <value>Οι παρακάτω συντομεύσεις πληκτρολογίου είναι διαθέσιμες:</value>
+  </data>
+  <data name="msgShortcutsDel.Text" xml:space="preserve">
+    <value>Del - Αφαίρεση του επιλεγμένου θεματικού επιπέδου.</value>
+  </data>
+  <data name="msgShortcutsIns.Text" xml:space="preserve">
+    <value>Ins - Προσθήκη θεματικού επιπέδου.</value>
+  </data>
+  <data name="msgShortcutsCtrlS.Text" xml:space="preserve">
+    <value>Ctrl-S - Αποθήκευση του χάρτη.</value>
+  </data>
+  <data name="msgShortcutsCtrlO.Text" xml:space="preserve">
+    <value>Ctrl-O - Άνοιγμα του χάρτη.</value>
+  </data>
+  <data name="msgShortcutsCtrlC.Text" xml:space="preserve">
+    <value>Ctrl-C - Αντιγραφή του χάρτη (στιγμιότυπο) στο πληκτρολόγιο</value>
+  </data>
+  <data name="msgShortcutsCtrlP.Text" xml:space="preserve">
+    <value>Ctrl-P - Άνοιγμα της προεπισκόπησης εκτύπωσης</value>
+  </data>
+  <data name="msgShortcutsCtrlF4.Text" xml:space="preserve">
+    <value>Ctrl-F4 - Κλείσιμο του τρέχοντος χάρτη.</value>
+  </data>
+  <data name="msgShortcutsHome.Text" xml:space="preserve">
+    <value>Home - Εστίαση στην μέγιστη έκταση.</value>
+  </data>
+  <data name="msgShortcutsCtrlHome.Text" xml:space="preserve">
+    <value>Ctrl-Home - Εστίαση στον θεματικό επίπεδο.</value>
+  </data>
+  <data name="msgShortcutsPlus.Text" xml:space="preserve">
+    <value>Plus - Zoom In στο κέντρο του χάρτη (κατά 25% της προβολής).</value>
+  </data>
+  <data name="msgShortcutsMinus.Text" xml:space="preserve">
+    <value>Minus - Zoom Out στο κέντρο του χάρτη (κατά 25% της προβολής)</value>
+  </data>
+  <data name="msgShortcutsPageUp.Text" xml:space="preserve">
+    <value>Page-Up - Μετακίνηση προς τα πάνω (κατά 50% της προβολής).</value>
+  </data>
+  <data name="msgShortcutsPageDown.Text" xml:space="preserve">
+    <value>Page-Down - Μετακίνηση προς τα κάτω (κατά 50% της προβολής).</value>
+  </data>
+  <data name="msgShortcutsArrowUp.Text" xml:space="preserve">
+    <value>Up Arrow - Μετακίνηση προς τα πάνω (κατά 25% της προβολής).</value>
+  </data>
+  <data name="msgShortcutsArrowDown.Text" xml:space="preserve">
+    <value>Down Arrow - Μετακίνηση προς τα κάτω (κατά 25% της προβολής).</value>
+  </data>
+  <data name="msgShortcutsArrowLeft.Text" xml:space="preserve">
+    <value>Left Arrow - Μετακίνηση προς τα αριστερά (κατά 25% της προβολής).</value>
+  </data>
+  <data name="msgShortcutsArrowRight.Text" xml:space="preserve">
+    <value>Right Arrow - Μετακίνηση προς τα δεξιά (κατά 25% της προβολής).</value>
+  </data>
+  <data name="PluginPropertyName.Text" xml:space="preserve">
+    <value>Όνομα: </value>
+  </data>
+  <data name="PluginPropertyVersion.Text" xml:space="preserve">
+    <value>Έκδοση: </value>
+  </data>
+  <data name="PluginPropertyBuildDate.Text" xml:space="preserve">
+    <value>Ημερομηνία: </value>
+  </data>
+  <data name="PluginPropertyAuthor.Text" xml:space="preserve">
+    <value>Ανάπτυξη: </value>
+  </data>
+  <data name="PluginPropertyDescription.Text" xml:space="preserve">
+    <value>Περιγραφή: </value>
+  </data>
+  <data name="UserDefined.Text" xml:space="preserve">
+    <value>Παραμετροποιημένη προβολή</value>
+  </data>
+  <data name="CustomProjection.Text" xml:space="preserve">
+    <value>Παραμετροποιημένη προβολή</value>
+  </data>
+  <data name="WarningProjectionMismatch.Text" xml:space="preserve">
+    <value>Προειδοποίηση: Τα προβολικά συστήματα δεν συμπίπτουν</value>
+  </data>
+  <data name="WarningNoProjectionOnLayer.Text" xml:space="preserve">
+    <value>Προειδοποίηση: Κανένα προβολικό σύστημα για το θεματικό επίπεδο</value>
+  </data>
+  <data name="mnuZoomToLayer.Text" xml:space="preserve">
+    <value>Εστίαση στο θεματικό επίπεδο</value>
+  </data>
+</root>

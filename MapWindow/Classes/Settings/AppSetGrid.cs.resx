@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BackgroundColor" xml:space="preserve">
+    <value>Výchozí barva pozadí</value>
+  </data>
+  <data name="BackgroundColorDescription" xml:space="preserve">
+    <value>Barva pozadí mapy</value>
+  </data>
+  <data name="DebugLog" xml:space="preserve">
+    <value>Logovací soubor</value>
+  </data>
+  <data name="DebugLogCategory" xml:space="preserve">
+    <value>Logovací soubor</value>
+  </data>
+  <data name="DebugLogDescription" xml:space="preserve">
+    <value>Do logovacího souboru jsou ukládána chybová hlášení a zprávy o průběhu výpočtů a dalších operací v MapWindow.</value>
+  </data>
+  <data name="DisplayOptionsCategory" xml:space="preserve">
+    <value>Možnosti zobrazení</value>
+  </data>
+  <data name="DisplayWelcome" xml:space="preserve">
+    <value>Ukázat úvodní obrazovku?</value>
+  </data>
+  <data name="DisplayWelcomeDescription" xml:space="preserve">
+    <value>Zobrazení úvodní obrazovky při startu MapWindow.</value>
+  </data>
+  <data name="ESRIBehavior" xml:space="preserve">
+    <value>Otevírání souborů ArcInfo (ESRI) Grid</value>
+  </data>
+  <data name="ESRIBehaviorDescription" xml:space="preserve">
+    <value>Způsob otevření souboru ve formátu ArcInfo (ESRI) Grid  (jako obrázek, nebo jako grid)</value>
+  </data>
+  <data name="FileFormatCategory" xml:space="preserve">
+    <value>Formáty souborů</value>
+  </data>
+  <data name="GeoTIFFAndImgBehavior" xml:space="preserve">
+    <value>Otevírání souborů TIFF, IMG, a DEM</value>
+  </data>
+  <data name="GeoTIFFAndImgBehaviorDescription" xml:space="preserve">
+    <value>Způsob otevření souboru ve formátu TIFF, IMG a DEM (jako obrázek, nebo jako grid)</value>
+  </data>
+  <data name="LabelsUseProjectLevel" xml:space="preserve">
+    <value>Popisky na úrovni projektu</value>
+  </data>
+  <data name="LabelsUseProjectLevelDescription" xml:space="preserve">
+    <value>Způsob uložení popisků. Popisky mohou být uloženy na úrovni projektu nebo zvlášť pro každou mapovou vrstvu (shapefile). Při volbě "uložení popisků na úrovni projektu" jsou popisky uloženy  v novém podadresáři se stejným názvem, jako název projektu.</value>
+  </data>
+  <data name="LanguageSettingsCategory" xml:space="preserve">
+    <value>Nastavení jazyka</value>
+  </data>
+  <data name="Locale" xml:space="preserve">
+    <value>Jazyk</value>
+  </data>
+  <data name="LocaleDescription" xml:space="preserve">
+    <value>Uživatelský jazyk (může být jiný než výchozí nastavení jazyka). Pro změnu jazyka je nutné restartovat MapWindow.</value>
+  </data>
+  <data name="MapBehaviorCategory" xml:space="preserve">
+    <value>Vzhled mapy</value>
+  </data>
+  <data name="MouseWheelZoom" xml:space="preserve">
+    <value>Zvětšování kolečkem myši</value>
+  </data>
+  <data name="MouseWheelZoomDescription" xml:space="preserve">
+    <value>Zvětšování nebo zmenšování mapy při použití kolečka myši</value>
+  </data>
+  <data name="OverrideSystemLocale" xml:space="preserve">
+    <value>Nastavit uživatelský jazyk</value>
+  </data>
+  <data name="OverrideSystemLocaleDescription" xml:space="preserve">
+    <value>Použít pro práci s MapWindow vybraný jazyk. Pro změnu jazyka je nutné restartovat MapWindow.</value>
+  </data>
+  <data name="ResizeBehavior" xml:space="preserve">
+    <value>Změna velikosti mapového okna</value>
+  </data>
+  <data name="ResizeBehaviorDescription" xml:space="preserve">
+    <value>Přizpůsobení obsahu mapy při změně mapového okna</value>
+  </data>
+  <data name="SaveShapeSettings" xml:space="preserve">
+    <value>Barevné schéma a legenda vrstev</value>
+  </data>
+  <data name="SaveShapeSettingsDescription" xml:space="preserve">
+    <value>Uložit barevné schéma a legendu mapových vrstev v projektu, nebo ve speciálních souborech.</value>
+  </data>
+  <data name="TransparentSelection" xml:space="preserve">
+    <value>Výběr objektů v mapě</value>
+  </data>
+  <data name="TransparentSelectionDescription" xml:space="preserve">
+    <value>Při výběru objektů v mapě označit objekty jako průhledné.</value>
+  </data>
+  <data name="WelcomeScreenCategory" xml:space="preserve">
+    <value>Úvodní obrazovka</value>
+  </data>
+</root>

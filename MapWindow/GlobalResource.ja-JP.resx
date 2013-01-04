@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="mnuFile.Text" xml:space="preserve">
+    <value>ファイル</value>
+  </data>
+  <data name="mnuNew.Text" xml:space="preserve">
+    <value>新規プロジェクト</value>
+  </data>
+  <data name="mnuOpen.Text" xml:space="preserve">
+    <value>プロジェクトを開く</value>
+  </data>
+  <data name="mnuSave.Text" xml:space="preserve">
+    <value>プロジェクトを保存</value>
+  </data>
+  <data name="mnuSaveAs.Text" xml:space="preserve">
+    <value>プロジェクトを名前を付けて保存</value>
+  </data>
+  <data name="mnuPrint.Text" xml:space="preserve">
+    <value>印刷</value>
+  </data>
+  <data name="mnuProjectSettings.Text" xml:space="preserve">
+    <value>プロジェクトの設定</value>
+  </data>
+  <data name="mnuRecentProjects.Text" xml:space="preserve">
+    <value>最近開いたプロジェクト</value>
+  </data>
+  <data name="mnuClose.Text" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="mnuExit.Text" xml:space="preserve">
+    <value>終了</value>
+  </data>
+  <data name="mnuEdit.Text" xml:space="preserve">
+    <value>編集</value>
+  </data>
+  <data name="mnuCopyMap.Text" xml:space="preserve">
+    <value>地図</value>
+  </data>
+  <data name="mnuCopyLegend.Text" xml:space="preserve">
+    <value>凡例</value>
+  </data>
+  <data name="mnuUpdatePreview.Text" xml:space="preserve">
+    <value>全体図更新</value>
+  </data>
+  <data name="mnuClearPreview.Text" xml:space="preserve">
+    <value>全体図クリア</value>
+  </data>
+  <data name="mnuView.Text" xml:space="preserve">
+    <value>ビュー</value>
+  </data>
+  <data name="mnuAddLayer.Text" xml:space="preserve">
+    <value>レイヤ追加</value>
+  </data>
+  <data name="mnuRemoveLayer.Text" xml:space="preserve">
+    <value>レイヤ削除</value>
+  </data>
+  <data name="mnuClearLayer.Text" xml:space="preserve">
+    <value>全レイヤ消去</value>
+  </data>
+  <data name="mnuZoomIn.Text" xml:space="preserve">
+    <value>拡大</value>
+  </data>
+  <data name="mnuZoomOut.Text" xml:space="preserve">
+    <value>縮小</value>
+  </data>
+  <data name="mnuZoomToFullExtents.Text" xml:space="preserve">
+    <value>全体を表示</value>
+  </data>
+  <data name="mnuPreviousZoom.Text" xml:space="preserve">
+    <value>前を表示</value>
+  </data>
+  <data name="mnuNextZoom.Text" xml:space="preserve">
+    <value>次を表示</value>
+  </data>
+  <data name="mnuPlugins.Text" xml:space="preserve">
+    <value>プラグイン</value>
+  </data>
+  <data name="mnuEditPlugins.Text" xml:space="preserve">
+    <value>プラグインの編集</value>
+  </data>
+  <data name="mnuScript.Text" xml:space="preserve">
+    <value>スクリプト</value>
+  </data>
+  <data name="mnuHelp.Text" xml:space="preserve">
+    <value>ヘルプ</value>
+  </data>
+  <data name="mnuContents.Text" xml:space="preserve">
+    <value>コンテンツ</value>
+  </data>
+  <data name="mnuWelcomeScreen.Text" xml:space="preserve">
+    <value>起動時画面</value>
+  </data>
+  <data name="mnuAboutMapWindow.Text" xml:space="preserve">
+    <value>バージョン情報</value>
+  </data>
+  <data name="mnuRemoveGroup.Text" xml:space="preserve">
+    <value>グループ削除</value>
+  </data>
+  <data name="mnuZoomToGroup.Text" xml:space="preserve">
+    <value>グループの拡大</value>
+  </data>
+  <data name="mnuSaveMapImage.Text" xml:space="preserve">
+    <value>地図</value>
+  </data>
+  <data name="mnuSaveGeorefMapImage.Text" xml:space="preserve">
+    <value>参照地図</value>
+  </data>
+  <data name="mnuSaveNorthArrow.Text" xml:space="preserve">
+    <value>方位記号</value>
+  </data>
+  <data name="mnuSaveScaleBar.Text" xml:space="preserve">
+    <value>スケールバー</value>
+  </data>
+  <data name="mnuCopyScaleBar.Text" xml:space="preserve">
+    <value>スケールバー</value>
+  </data>
+  <data name="mnuCopyNorthArrow.Text" xml:space="preserve">
+    <value>方位記号</value>
+  </data>
+  <data name="ToolStripMenuItem6.Text" xml:space="preserve">
+    <value>レイヤ拡大</value>
+  </data>
+  <data name="msgSaveProject1.Text" xml:space="preserve">
+    <value>プロジェクトを保存しますか？  </value>
+  </data>
+  <data name="msgSaveProject2.Text" xml:space="preserve">
+    <value>本当によろしいですか?</value>
+  </data>
+  <data name="msgClearLayers.Text" xml:space="preserve">
+    <value>全レイヤを消去しますか?</value>
+  </data>
+  <data name="titleClearLayers.Text" xml:space="preserve">
+    <value>全レイヤ削除の確認</value>
+  </data>
+  <data name="msgErrorSavingImage.Text" xml:space="preserve">
+    <value>イメージを保存中にエラーが発生しました</value>
+  </data>
+  <data name="msgRemoveGroup.Text" xml:space="preserve">
+    <value>選択したグループとそのレイヤを本当に削除しますか?</value>
+  </data>
+  <data name="titleRemoveGroup.Text" xml:space="preserve">
+    <value>グループの削除</value>
+  </data>
+  <data name="msgLegendLayerDoubleClick.Text" xml:space="preserve">
+    <value>このレイヤタイプはプロパティが有効でありません</value>
+  </data>
+  <data name="msgError.Text" xml:space="preserve">
+    <value>エラー</value>
+  </data>
+  <data name="msgLegend_LayerVisibleChanged.Text" xml:space="preserve">
+    <value>このレイヤは動的表示を使っています。このプロパティをセットは、動的表示機能を使用不可にします。あなたは、この特徴をオフにしたいですか？（注：あなたは、凡例エディタを使って動的表示を回復させることができます。）</value>
+  </data>
+  <data name="mnuCopy.Text" xml:space="preserve">
+    <value>コピー</value>
+  </data>
+  <data name="mnuExport.Text" xml:space="preserve">
+    <value>エクスポート</value>
+  </data>
+  <data name="mnuPreview.Text" xml:space="preserve">
+    <value>全体図</value>
+  </data>
+  <data name="mnuOfflineDocs.Text" xml:space="preserve">
+    <value>ドキュメント (オフライン)</value>
+  </data>
+  <data name="mnuOnlineDocs.Text" xml:space="preserve">
+    <value>ドキュメント (オンライン)</value>
+  </data>
+  <data name="mnuShortcuts.Text" xml:space="preserve">
+    <value>キーボード・ショートカット</value>
+  </data>
+  <data name="MessagefrmMain001.Text" xml:space="preserve">
+    <value>現在選択されているレイヤを本当に削除しますか？</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="MessagefrmMain002.Text" xml:space="preserve">
+    <value>現在のレイヤーを削除しますか？</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="MessagefrmMain003.Text" xml:space="preserve">
+    <value>イメージの保存でエラーが発生しました。</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="MessagefrmMain004.Text" xml:space="preserve">
+    <value>保存できません</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="MessagefrmMain005.Text" xml:space="preserve">
+    <value>ヘルプファイルがありません。</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="MessagefrmMain006.Text" xml:space="preserve">
+    <value>ヘルプファイルが見つかりません</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="msgShortcutsTitle.Text" xml:space="preserve">
+    <value>次のキーボード・ショートカットが使えます。</value>
+    <comment>frmMain.vb MessagefrmMain007</comment>
+  </data>
+  <data name="msgShortcutsDel.Text" xml:space="preserve">
+    <value>Del - 現在選択しているレイヤを削除</value>
+    <comment>frmMain.vb MessagefrmMain008</comment>
+  </data>
+  <data name="msgShortcutsIns.Text" xml:space="preserve">
+    <value>Ins - レイヤ追加</value>
+    <comment>frmMain.vb MessagefrmMain009</comment>
+  </data>
+  <data name="msgShortcutsCtrlS.Text" xml:space="preserve">
+    <value>Ctrl-S - プロジェクトの保存</value>
+    <comment>frmMain.vb MessagefrmMain010</comment>
+  </data>
+  <data name="msgShortcutsCtrlO.Text" xml:space="preserve">
+    <value>Ctrl-O - プロジェクトを開く</value>
+    <comment>frmMain.vb MessagefrmMain011</comment>
+  </data>
+  <data name="msgShortcutsCtrlC.Text" xml:space="preserve">
+    <value>Ctrl-C - 地図のスナップショットをクリップボードにコピー</value>
+    <comment>frmMain.vb MessagefrmMain012</comment>
+  </data>
+  <data name="msgShortcutsCtrlP.Text" xml:space="preserve">
+    <value>Ctrl-P - 印刷プレビュー画面を開く</value>
+    <comment>frmMain.vb MessagefrmMain013</comment>
+  </data>
+  <data name="msgShortcutsCtrlF4.Text" xml:space="preserve">
+    <value>Ctrl-F4 - 現在のプロジェクトを閉じる</value>
+    <comment>frmMain.vb MessagefrmMain014</comment>
+  </data>
+  <data name="msgShortcutsHome.Text" xml:space="preserve">
+    <value>Home - 全体を表示</value>
+    <comment>frmMain.vb MessagefrmMain015</comment>
+  </data>
+  <data name="msgShortcutsCtrlHome.Text" xml:space="preserve">
+    <value>Ctrl-Home - 選択したレイヤを拡大</value>
+    <comment>frmMain.vb MessagefrmMain016</comment>
+  </data>
+  <data name="msgShortcutsPlus.Text" xml:space="preserve">
+    <value>Plus - 地図を25%拡大</value>
+    <comment>frmMain.vb MessagefrmMain017</comment>
+  </data>
+  <data name="msgShortcutsMinus.Text" xml:space="preserve">
+    <value>Minus - 地図を25%縮小</value>
+    <comment>frmMain.vb MessagefrmMain018</comment>
+  </data>
+  <data name="msgShortcutsPageUp.Text" xml:space="preserve">
+    <value>Page-Up - 上に移動（ビューの50%）</value>
+    <comment>frmMain.vb MessagefrmMain019</comment>
+  </data>
+  <data name="msgShortcutsPageDown.Text" xml:space="preserve">
+    <value>Page-Down - 下に移動（ビューの50%）</value>
+    <comment>frmMain.vb MessagefrmMain020</comment>
+  </data>
+  <data name="msgShortcutsArrowUp.Text" xml:space="preserve">
+    <value>Up Arrow - 上に移動（ビューの25%）</value>
+    <comment>frmMain.vb MessagefrmMain021</comment>
+  </data>
+  <data name="msgShortcutsArrowDown.Text" xml:space="preserve">
+    <value>Down Arrow -  下に移動（ビューの25%）</value>
+    <comment>frmMain.vb MessagefrmMain022</comment>
+  </data>
+  <data name="msgShortcutsArrowLeft.Text" xml:space="preserve">
+    <value>Left Arrow - 左へ移動（ビューの25%）</value>
+    <comment>frmMain.vb MessagefrmMain023</comment>
+  </data>
+  <data name="msgShortcutsArrowRight.Text" xml:space="preserve">
+    <value>Right Arrow - 右へ移動（ビューの25%）</value>
+    <comment>frmMain.vb MessagefrmMain024</comment>
+  </data>
+  <data name="MessagefrmMain025.Text" xml:space="preserve">
+    <value>キーボード・ショートカット</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="MessagefrmMain026.Text" xml:space="preserve">
+    <value>ロードできません</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="MessagefrmMain027.Text" xml:space="preserve">
+    <value>最近のプロジェクト</value>
+    <comment>frmMain.vb</comment>
+  </data>
+  <data name="msgDataSubmitted.Text" xml:space="preserve">
+    <value>Thank you! The data has been submitted.</value>
+  </data>
+  <data name="msgHttpStatusCodeElse.Text" xml:space="preserve">
+    <value>Content could not be read. Status Code={0}.</value>
+  </data>
+  <data name="msgHttpStatusCodeNotFound.Text" xml:space="preserve">
+    <value>Content could not be read. URL not accessible. Status Code={0}.</value>
+  </data>
+  <data name="msgHttpStatusCodeRedirect.Text" xml:space="preserve">
+    <value>Content could not be read. URL was changed. Status Code={0}.</value>
+  </data>
+  <data name="msgModuleName.Text" xml:space="preserve">
+    <value>   Module Name:  </value>
+  </data>
+  <data name="msgModulesInfo.Text" xml:space="preserve">
+    <value>Module Info:  </value>
+  </data>
+  <data name="msgPath.Text" xml:space="preserve">
+    <value>   Path:  </value>
+  </data>
+  <data name="msgPerformanceInfo.Text" xml:space="preserve">
+    <value>Performance Info: (bytes)</value>
+  </data>
+  <data name="msgPrivateMemory.Text" xml:space="preserve">
+    <value>  Private Memory:  </value>
+  </data>
+  <data name="msgTotalCpuTime.Text" xml:space="preserve">
+    <value>   CPU-Time: </value>
+  </data>
+  <data name="msgTotalUserModeCpuTime.Text" xml:space="preserve">
+    <value>   CPU-Time by user: </value>
+  </data>
+  <data name="msgVersion.Text" xml:space="preserve">
+    <value>   Version:  </value>
+  </data>
+  <data name="msgVirtualMemory.Text" xml:space="preserve">
+    <value>   Virtual Memory:  </value>
+  </data>
+  <data name="msgNoConnection.Text" xml:space="preserve">
+    <value>You don't appear to have an active internet connection.
+
+Please check your internet connection and try again.</value>
+  </data>
+  <data name="msgOverwriteCurrentlyLoadedScript.Text" xml:space="preserve">
+    <value>The currently loaded script will be overwritten. Do you want to continue?</value>
+  </data>
+  <data name="MessagefrmOnlineScriptDirectory001.Text" xml:space="preserve">
+    <value>アクティブなインターネット接続がないか、通信の問題があります。</value>
+    <comment>frmOnlineScriptDirectory.vb</comment>
+  </data>
+  <data name="MessagefrmOnlineScriptDirectory002.Text" xml:space="preserve">
+    <value>接続を確認して、再試行してください。</value>
+    <comment>frmOnlineScriptDirectory.vb</comment>
+  </data>
+  <data name="MessagefrmOnlineScriptDirectory003.Text" xml:space="preserve">
+    <value>接続してません</value>
+    <comment>frmOnlineScriptDirectory.vb</comment>
+  </data>
+  <data name="MessagefrmOnlineScriptDirectory004.Text" xml:space="preserve">
+    <value>警告：この操作はロード済スクリプトを上書きします。続けますか？</value>
+    <comment>frmOnlineScriptDirectory.vb</comment>
+  </data>
+  <data name="MessagefrmOnlineScriptDirectory005.Text" xml:space="preserve">
+    <value>ロード済スクリプトの上書きしますか？</value>
+    <comment>frmOnlineScriptDirectory.vb</comment>
+  </data>
+  <data name="MessagefrmOnlineScriptSubmit001.Text" xml:space="preserve">
+    <value>実行を失敗しました。ユーザー名かパスワードが無効です。ダブルチェックしてください。</value>
+    <comment>frmOnlineScriptSubmit.vb</comment>
+  </data>
+  <data name="MessagefrmOnlineScriptSubmit002.Text" xml:space="preserve">
+    <value>ユーザー名かパスワードが間違ってます</value>
+    <comment>frmOnlineScriptSubmit.vb frmOnlineScriptUpdate.vb</comment>
+  </data>
+  <data name="MessagefrmOnlineScriptSubmit003.Text" xml:space="preserve">
+    <value>実行が成功しました。サンクス！</value>
+    <comment>frmOnlineScriptSubmit.vb</comment>
+  </data>
+  <data name="MessagefrmOnlineScriptSubmit004.Text" xml:space="preserve">
+    <value>実行が成功しました</value>
+    <comment>frmOnlineScriptSubmit.vb</comment>
+  </data>
+  <data name="MessagefrmOnlineScriptSubmit005.Text" xml:space="preserve">
+    <value>サーバーからの応答が理解できませんでした。再実行してください。</value>
+    <comment>frmOnlineScriptSubmit.vb</comment>
+  </data>
+  <data name="MessagefrmOnlineScriptSubmit006.Text" xml:space="preserve">
+    <value>意味不明なサーバー応答</value>
+    <comment>frmOnlineScriptSubmit.vb frmOnlineScriptUpdate.vb</comment>
+  </data>
+  <data name="MessagefrmOnlineScriptSubmit007.Text" xml:space="preserve">
+    <value>全フィールドが必要です。必ずそれぞれのフィールドに何かを入れてください。</value>
+    <comment>frmOnlineScriptSubmit.vb frmOnlineScriptUpdate.vb</comment>
+  </data>
+  <data name="MessagefrmOnlineScriptSubmit008.Text" xml:space="preserve">
+    <value>不完全です</value>
+    <comment>frmOnlineScriptSubmit.vb frmOnlineScriptUpdate.vb</comment>
+  </data>
+  <data name="msgBadUsernamePassword.Text" xml:space="preserve">
+    <value>The submission failed.
+ The username or password is invalid. Please double-check it.</value>
+  </data>
+  <data name="msgSubmittedSuccessfully.Text" xml:space="preserve">
+    <value>The submission succeeded. Thank you!</value>
+  </data>
+  <data name="msgGarbledServerResponse.Text" xml:space="preserve">
+    <value>The response from the server was not understood. Please try submitting again.</value>
+  </data>
+  <data name="msgIncomplete.Text" xml:space="preserve">
+    <value>All fields are required; please make sure to enter something in every field.</value>
+  </data>
+  <data name="PluginPropertyName.Text" xml:space="preserve">
+    <value>Name:  </value>
+  </data>
+  <data name="PluginPropertyVersion.Text" xml:space="preserve">
+    <value>Version:  </value>
+  </data>
+  <data name="PluginPropertyBuildDate.Text" xml:space="preserve">
+    <value>Datum: </value>
+  </data>
+  <data name="PluginPropertyAuthor.Text" xml:space="preserve">
+    <value>Author:  </value>
+  </data>
+  <data name="PluginPropertyDescription.Text" xml:space="preserve">
+    <value>Description:  </value>
+  </data>
+  <data name="UserDefined.Text" xml:space="preserve">
+    <value>User Defined</value>
+  </data>
+  <data name="CustomProjection.Text" xml:space="preserve">
+    <value>Custom Projection</value>
+  </data>
+  <data name="WarningProjectionMismatch.Text" xml:space="preserve">
+    <value>Warning: Projection Mismatch</value>
+  </data>
+  <data name="msgReprojectedGridDoesNotExists.Text" xml:space="preserve">
+    <value>Error: The reprojected grid file doesn't exist! Check for an errorlog.txt. Aborting layer add.</value>
+  </data>
+  <data name="WarningNoProjectionOnLayer.Text" xml:space="preserve">
+    <value>Warning: No Projection on Layer</value>
+  </data>
+  <data name="MessagefrmScript002.Text" xml:space="preserve">
+    <value>レイヤー数： </value>
+    <comment>frmScript.vb</comment>
+  </data>
+  <data name="MessagefrmScript003.Text" xml:space="preserve">
+    <value>これはマップ内のロードされたレイヤ数を表示する単純なスクリプト例です。</value>
+    <comment>frmScript.vb</comment>
+  </data>
+  <data name="MessagefrmScript004.Text" xml:space="preserve">
+    <value>注 -- 古いファイルは削除できませんでした。</value>
+    <comment>frmScript.vb</comment>
+  </data>
+  <data name="MessagefrmScript005.Text" xml:space="preserve">
+    <value>プラグインの最新バージョンが呼び出されました。</value>
+    <comment>frmScript.vb</comment>
+  </data>
+  <data name="MessagefrmScript006.Text" xml:space="preserve">
+    <value>新しいプラグインを適切にロードするためにMapWindowを閉じて古いバージョンを削除する必要があるかもしれません。</value>
+    <comment>frmScript.vb</comment>
+  </data>
+  <data name="MessagefrmScript007.Text" xml:space="preserve">
+    <value>プラグインがリネームされました</value>
+    <comment>frmScript.vb</comment>
+  </data>
+  <data name="MessagefrmScript008.Text" xml:space="preserve">
+    <value>スクリプト・エラー</value>
+    <comment>frmScript.vb</comment>
+  </data>
+  <data name="MessagefrmScript009.Text" xml:space="preserve">
+    <value>現在のスクリプトを最初に保存しますか？</value>
+    <comment>frmScript.vb</comment>
+  </data>
+  <data name="MessagefrmScript010.Text" xml:space="preserve">
+    <value>最初に保存しますか？</value>
+    <comment>frmScript.vb</comment>
+  </data>
+  <data name="MessagefrmScript011.Text" xml:space="preserve">
+    <value>警告：コマンドラインで示されたスクリプト名が存在しないのでを無視します。</value>
+    <comment>frmScript.vb</comment>
+  </data>
+  <data name="MessagefrmScript012.Text" xml:space="preserve">
+    <value>存在しないスクリプトをパスしました。</value>
+    <comment>frmScript.vb</comment>
+  </data>
+  <data name="MessagefrmScript013.Text" xml:space="preserve">
+    <value>アクティブなインターネット接続が存在しないか、通信に問題があります。</value>
+    <comment>frmScript.vb</comment>
+  </data>
+  <data name="MessagefrmScript014.Text" xml:space="preserve">
+    <value>接続を確認して、再試行してください。</value>
+    <comment>frmScript.vb</comment>
+  </data>
+  <data name="MessagefrmScript015.Text" xml:space="preserve">
+    <value>接続してません</value>
+    <comment>frmScript.vb</comment>
+  </data>
+  <data name="msgScriptError.Text" xml:space="preserve">
+    <value>Script Error</value>
+  </data>
+  <data name="msgSaveCurrentScript.Text" xml:space="preserve">
+    <value>Do you wish to save your current script first?</value>
+  </data>
+  <data name="msgIgnoreScript.Text" xml:space="preserve">
+    <value>Warning: Ignoring the script name provided on the command line because it doesn't exist.</value>
+  </data>
+  <data name="msgScriptNotExists.Text" xml:space="preserve">
+    <value>Nonexistant Script Passed</value>
+  </data>
+  <data name="titleNoConnection.Text" xml:space="preserve">
+    <value>No Internet Connection</value>
+  </data>
+  <data name="msgFindTutorials.Text" xml:space="preserve">
+    <value>You don't appear to have an active internet connection. We have tutorials available at this URL:
+
+http://www.MapWindow.org/tutorials/</value>
+  </data>
+  <data name="msgFindDocumentation.Text" xml:space="preserve">
+    <value>You don't appear to have an active internet connection. Our documentation is available online at this URL:
+
+http://www.MapWindow.org/wiki/</value>
+  </data>
+  <data name="msgFileNotFound.Text" xml:space="preserve">
+    <value>Could not find {0}</value>
+  </data>
+  <data name="mnuZoomToLayer.Text" xml:space="preserve">
+    <value>レイヤ拡大</value>
+  </data>
+</root>

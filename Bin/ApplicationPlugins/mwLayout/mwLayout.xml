@@ -1,0 +1,377 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+mwLayout
+</name>
+</assembly>
+<members>
+<member name="P:mwLayout.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:mwLayout.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:mwLayout.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:mwLayout.GenerateLegend.#ctor(AxMapWinGIS.AxMap@,LegendControl.Legend@)">
+	<summary>
+ Creates an instance of the legend generator
+ </summary>
+	<param name="axMap">the map to render from</param>
+	<param name="legendControl">the legend control associated with the map</param>
+	<remarks></remarks>
+</member><member name="M:mwLayout.GenerateLegend.Finalize">
+	<summary>
+ Cleans up the shapefiles used
+ </summary>
+	<remarks></remarks>
+</member><member name="M:mwLayout.GenerateLegend.RenderLegendToGraphics(System.Drawing.Size,System.Drawing.Graphics@,System.Drawing.Font,System.Drawing.Color,System.Int32,System.Int32,System.Boolean,System.Boolean,System.Collections.Generic.List{System.Int32},System.Boolean)">
+	<summary>
+ Renders the legend to a specified size
+ </summary>
+	<param name="legendSize">The width and height of the legend in 1/100th of an inch(If the legend doesn't fit in the given space, the bottom will be clipped)</param>
+	<param name="g">The graphics object to draw to. Must be in 1/100 of a inch. 0,0 must be the top left where the scale bar is to be drawn</param>
+	<param name="font">The font to use. (The height of the patches is equal to the height of the font and the width to 2x the height)</param>
+	<param name="numColumns">The number of columns to use when rendering the legend. (Columns after the first will only be used if needed)</param>
+	<param name="PPI">The PPI of the patches</param>
+	<param name="scaleLineThickness">Should line be scaled when rendering the patches</param>
+	<param name="onlyVisible">Only render the legend for visible layers</param>
+	<param name="layerHandles">List of layer handles to make a legend out of</param>
+	<param name="textColor">Color of the text of the legend items</param>
+	<param name="useVector">Indicates if vector rendering should be used instead of bitmap based</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mwLayout.GenerateLegend.RenderPatchToGraphics(System.Int32,System.Int32,System.Drawing.Graphics@,System.Int32,System.Int32,System.Boolean,System.Boolean)">
+	<summary>
+ generates patchs for point line and polygon legends.
+ </summary>
+	<param name="handle">layer to create the patch for</param>
+	<param name="index">the shape to use the symbology of</param>
+	<param name="g">The graphics object to draw to. Must be in 1/100 of a inch. 0,0 must be the top left where the scale bar is to be drawn</param>
+	<param name="patchWidth">The width of the patch in inches</param>
+	<param name="PPI">the PPI to render to the graphics object at</param>
+	<param name="scaleLineThickness">Should line be scaled when rendering the patches</param>
+	<param name="useVector">Indicates if the patch should be rendered as a vector or bitmap</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mwLayout.GenerateLegend.ScaleLines(System.Int32,System.Double)">
+	<summary>
+ Scales all the Lines on the map by a given ration, this does not apply to drawing layers
+ </summary>
+	<param name="ration"></param>
+	<remarks></remarks>
+</member><member name="M:mwLayout.GenerateLegend.applySymbology(System.Int32,System.Int32,System.Int32,System.Int32)">
+	<summary>
+ Applies the specified symbology of one shapefile to the the first shape of another
+ </summary>
+	<param name="srcHandle">Shapefile to apply symbology from </param>
+	<param name="srcIndex">index of the shape to source symbols from</param>
+	<param name="dstHandle">the handle of the shapefily to apply the symbology too</param>
+	<param name="dstIndex">the index of the shape to apply the symbology too</param>
+	<remarks></remarks>
+</member><member name="M:mwLayout.GenerateLegend.CreateShapefile(System.String@,MapWinGIS.Extents@,MapWinGIS.ShpfileType)">
+	<summary>
+ Creates a simple shape in the specified bounds
+ </summary>
+	<param name="extent"></param>
+	<param name="shapefiletype"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mwLayout.GenerateLegend.ExtentToShapefile(System.String,MapWinGIS.Extents@)">
+	<summary>
+ Returns a shapefile with a single shape in it based on an extent
+ </summary>
+	<param name="extent">the extent of the input</param>
+	<returns>A shapefile with a single shape in it</returns>
+	<remarks></remarks>
+</member><member name="M:mwLayout.LayoutPlugin.OpenPrintLayoutWithTemplate(mwLayout.LayoutFormMW4@)">
+	<summary>
+ Checks if a template layout file exist
+ and opens it if it does
+ </summary>
+	<remarks>Paul Meems June 27, 2011</remarks>
+</member><member name="P:mwLayout.LayoutMapMW4.PrintQuality">
+	<summary>
+ Gets or set the quality of the final print out
+ </summary>
+</member><member name="P:mwLayout.LayoutMapMW4.UseVectorRendering">
+	<summary>
+ Indicates to the layout engine that vector based rendering should be used
+ </summary>
+</member><member name="M:mwLayout.LayoutMapMW4.#ctor(mwLayout.LayoutControlMW4)">
+	<summary>
+ Creates a new instance of the map element based on the ocx in the IMapWin interface
+ </summary>
+</member><member name="M:mwLayout.LayoutMapMW4.Draw(System.Drawing.Graphics,System.Boolean)">
+	<summary>
+ Draw the map to the graphics object passed in
+ </summary>
+</member><member name="F:mwLayout.GenerateLayouts.components">
+	<summary>
+ Required designer variable.
+ </summary>
+</member><member name="M:mwLayout.GenerateLayouts.Dispose(System.Boolean)">
+	<summary>
+ Clean up any resources being used.
+ </summary>
+	<param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member><member name="M:mwLayout.GenerateLayouts.InitializeComponent">
+	<summary>
+ Required method for Designer support - do not modify
+ the contents of this method with the code editor.
+ </summary>
+</member><member name="M:mwLayout.ExportMapHQ.#ctor(MapWindow.Interfaces.IMapWin@)">
+	<summary>
+ Creates a new instance of the form
+ </summary>
+	<param name="mapWin"></param>
+	<remarks></remarks>
+</member><member name="M:mwLayout.ExportMapHQ.btnBrowse_Click(System.Object,System.EventArgs)">
+	<summary>
+ Fires when the user clicks the browse button
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:mwLayout.ExportMapHQ.btnExport_Click(System.Object,System.EventArgs)">
+	<summary>
+ Gets called when the export button it pressed
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:mwLayout.GenerateMap.#ctor(AxMapWinGIS.AxMap@,System.String@,System.Windows.Forms.IWin32Window@)">
+	<summary>
+ Creates an instance of the clsGenerateBitmap class
+ </summary>
+	<param name="mapOCX">The ActiveX MapWindowGIS AxMap control</param>
+	<remarks></remarks>
+</member><member name="M:mwLayout.GenerateMap.GetBitmap(System.Double,System.Double,System.Boolean,System.Boolean,System.Boolean@,System.Boolean)">
+	<summary>
+ Generates a bitmap of the current map at the specified size using 96PixelsPerInch, returns null if creating the bitmap failed
+ </summary>
+	<param name="width">The width of the bitmap in inches</param>
+	<param name="height">The height of the bitmap in inches</param>
+	<param name="scaleFontSize">Do we scale the Fonts</param>
+	<param name="scaleLineThickness">Do we scale the Lines</param>
+	<returns>A .Net bitmap containing a rendered image of the map</returns>
+	<param name="cancel">A boolean object passed by reference cancels printing when true</param>
+	<remarks></remarks>
+</member><member name="M:mwLayout.GenerateMap.GetBitmap(MapWinGIS.Point@,System.Double,System.Double,System.Double,System.Int32,System.Boolean,System.Boolean,System.Boolean@,System.Boolean)">
+	<summary>
+ Generates a bitmap based on a center point and bitmap size and PPI
+ </summary>
+	<param name="CenterPoint">Center point of the map to be render in geographic coordinants</param>
+	<param name="scale">1:xxxxx scale of the map</param>
+	<param name="width">The width of the bitmap in inches</param>
+	<param name="height">The height of the bitmap in inches</param>
+	<param name="PPI">The PixelsPerInch to use to render the bitmap</param>
+	<param name="scaleFontSize">Do we scale the Fonts</param>
+	<param name="scaleLineThickness">Do we scale the Lines</param>
+	<param name="cancel">A boolean object passed by reference cancels printing when true</param>
+	<returns>A .Net bitmap containing a rendered image of the map</returns>
+	<remarks></remarks>
+</member><member name="M:mwLayout.GenerateMap.GetBitmap(MapWinGIS.Extents@,System.Double,System.Double,System.Int32,System.Boolean,System.Boolean,System.Boolean@,System.Boolean)">
+	<summary>
+ Generates a bitmap of the extent passed in at a specified PixelsPerInch, returns null if creating the bitmap failed
+ </summary>
+	<param name="Extent">The extent that is to be rendered to the bitmap, its height will be extended or decreased to fit the bitmap size</param>
+	<param name="width">The width of the bitmap in inches</param>
+	<param name="height">The height of the bitmap in inches</param>
+	<param name="PPI">The PixelsPerInch to use to render the bitmap</param>
+	<param name="scaleFontSize">Do we scale the Fonts</param>
+	<param name="scaleLineThickness">Do we scale the Lines</param>
+	<param name="cancel">A boolean object passed by reference cancels printing when true</param>
+	<returns>A .Net bitmap containing a rendered image of the map</returns>
+	<remarks></remarks>
+</member><member name="M:mwLayout.GenerateMap.RenderToGraphics(MapWinGIS.Point@,System.Double,System.Drawing.Size,System.Drawing.Graphics@,System.Boolean,System.Boolean,System.Int32,System.Boolean@,System.Boolean,System.Boolean)">
+	<summary>
+ Generates a bitmap based on a center point and bitmap size and PPI
+ </summary>
+	<param name="CenterPoint">Center point of the map to be render in geographic coordinants</param>
+	<param name="scale">1:xxxxx scale of the made</param>
+	<param name="bitmapSize">The size of the bitmap in Pixels</param>
+	<param name="g">The graphics object to use to do the drawing, it is assumed that the map will be drawn from the origin to the width and height specified, the PPI of the graphics object will be used to calculate the scale</param>
+	<param name="scaleFontSize">Do we scale the Fonts</param>
+	<param name="scaleLineThickness">Do we scale the Lines</param>
+	<param name="PPI">Pixels per inch values above 300 may lead to problems on large prints</param>
+	<param name="cancel">A boolean object passed by reference cancels printing when true</param>
+	<param name="useVector">Indicates if the vector renderer should be used instead of the bitmap based one</param>
+	<returns>A Boolean value indicating if rendering was successful</returns>
+	<remarks></remarks>
+</member><member name="M:mwLayout.GenerateMap.RenderToGraphics(MapWinGIS.Extents@,System.Drawing.Size,System.Drawing.Graphics@,System.Boolean,System.Boolean,System.Int32,System.Boolean@,System.Boolean,System.Boolean)">
+	<summary>
+ Draws a highresolution map to the graphics object passed in.
+ </summary>
+	<param name="Extent">The extent that is to be rendered to the bitmap, its height will be extended or decreased to fit the bitmap size</param>
+	<param name="bitmapSize">The size of the bitmap in Pixels</param>
+	<param name="g">The graphics object to use to do the drawing, it is assumed that the map will be drawn from the origin to the width and height specified, the PPI of the graphics object will be used to calculate the scale</param>
+	<param name="scaleFontSize">Do we scale the Fonts</param>
+	<param name="PPI">Pixels per inch values above 300 may lead to problems on large prints</param>
+	<param name="scaleLineThickness">Do we scale the Lines</param>
+	<param name="cancel">A boolean value passed by reference to cancel printing</param>
+	<param name="useVector">Indicates if the vector renderer should be used instead of the bitmap based one</param>
+	<returns>A Boolean value indicating if rendering was successful</returns>
+	<remarks></remarks>
+</member><member name="M:mwLayout.GenerateMap.resizeBitmap(System.String,System.Drawing.Rectangle,System.IntPtr@)">
+	<summary>
+ Loads a .net compatible bitmap from disk, uses the srcsRectangle to save it to a new smaller .net bitmap on disk
+ </summary>
+	<param name="filename"></param>
+	<param name="srcsRectangle"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mwLayout.GenerateMap.ScaleLines(System.Double)">
+	<summary>
+ Scales all the Lines on the map by a given ration, this does not apply to drawing layers
+ </summary>
+	<param name="ratio"></param>
+	<remarks></remarks>
+</member><member name="M:mwLayout.GenerateMap.ScaleDrawingOptions(MapWinGIS.ShapeDrawingOptions,System.Double)">
+	<summary>
+ Used the scale all the drawing options of a shapefile
+ </summary>
+	<param name="options"></param>
+	<remarks></remarks>
+</member><member name="M:mwLayout.GenerateMap.ScaleFonts(System.Double)">
+	<summary>
+ Scales all the fonts on the map by a given ration, this does not apply to drawing layers
+ </summary>
+	<param name="ratio"></param>
+	<remarks></remarks>
+</member><member name="M:mwLayout.GenerateMap.FindLongestLabel(System.Drawing.Graphics,System.Double)">
+	<summary>
+ Find longest label and return its length in pixels
+ </summary>
+</member><member name="M:mwLayout.GenerateMap.ExtentToShapefile(MapWinGIS.Extents@,System.String)">
+	<summary>
+ Returns a shapefile with a single shape in it based on an extent
+ </summary>
+	<param name="extent">the extent of the input</param>
+	<param name="filename">the filename to use for the temporary shapefile</param>
+	<returns>A shapefile with a single shape in it</returns>
+	<remarks></remarks>
+</member><member name="P:mwLayout.My.Resources.LayoutResources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:mwLayout.My.Resources.LayoutResources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:mwLayout.My.Resources.LayoutResources.LayoutFormTitle">
+	<summary>
+  Looks up a localized string similar to MapWindow Print Layout.
+</summary>
+</member><member name="T:mwLayout.My.Resources.LayoutResources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:mwLayout.LayoutLegendMW4.#ctor(mwLayout.LayoutControlMW4@)">
+	<summary>
+ Creates a new instance of the map element based on the ocx in the IMapWin interface
+ </summary>
+</member><member name="P:mwLayout.LayoutLegendMW4.Layers">
+	<summary>
+ This is a list of layer index based on their position in the stack not their handle
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:mwLayout.LayoutLegendMW4.Map">
+	<summary>
+ Gets or sets the map to use to make the legend
+ </summary>
+</member><member name="F:mwLayout.PrintLayouts.components">
+	<summary>
+ Required designer variable.
+ </summary>
+</member><member name="M:mwLayout.PrintLayouts.Dispose(System.Boolean)">
+	<summary>
+ Clean up any resources being used.
+ </summary>
+	<param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member><member name="M:mwLayout.PrintLayouts.InitializeComponent">
+	<summary>
+ Required method for Designer support - do not modify
+ the contents of this method with the code editor.
+ </summary>
+</member><member name="M:mwLayout.LayoutControlMW4.Initialize(MapWindow.Interfaces.IMapWin@)">
+	<summary>
+ Must be called before the layout control can be used
+ </summary>
+	<param name="MapWin">A reference to the MapWindow plug-in interface</param>
+	<remarks></remarks>
+</member><member name="M:mwLayout.LayoutControlMW4.Initialize(AxMapWinGIS.AxMap@,LegendControl.Legend@,System.String@)">
+	<summary>
+ Must be called before the layout control can be used
+ </summary>
+	<param name="axMap">The map control</param>
+	<param name="legendControl">The legend control, can be null but the legend element will not be drawn</param>
+	<param name="mapUnits">The unit the map is in: meters, feet, kilometers, etc ...</param>
+	<remarks></remarks>
+</member><member name="P:mwLayout.LayoutControlMW4.AxMap">
+	<summary>
+ Gets the ActiveX map control for the layout this is used by the map, legend and scale elements
+ </summary>
+</member><member name="P:mwLayout.LayoutControlMW4.LegendControl">
+	<summary>
+ Gets the LegendControl for the layout this is legend element
+ </summary>
+</member><member name="P:mwLayout.LayoutControlMW4.MapUnits">
+	<summary>
+ Gets the map unites for the layout this is used by scale element
+ </summary>
+</member><member name="M:mwLayout.LayoutControlMW4.CreateMapElement">
+	<summary>
+ Creates an instance of the map element, overloads the default map element
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mwLayout.LayoutFormMW4.#ctor(MapWindow.Interfaces.IMapWin@)">
+	<summary>
+ The constructor
+ </summary>
+	<remarks></remarks>
+</member><member name="P:mwLayout.LayoutFormMW4.LayoutControl">
+	<summary>
+ Gets an instance of the layout control used on this form
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mwLayout.LayoutFormMW4.#ctor(AxMapWinGIS.AxMap@,LegendControl.Legend@,System.String@)">
+	<summary>
+ Creates an instance of the layout form for use with the activeX map control
+ </summary>
+	<param name="axMap">The map control</param>
+	<param name="legendControl">The legend control, can be null but the legend element will not be drawn</param>
+	<param name="mapUnits">The unit the map is in: meters, feet, kilometers, etc ...</param>
+	<remarks></remarks>
+</member><member name="M:mwLayout.LayoutLayerEditor.#ctor">
+	<summary>
+ Creates a new instance of the editor
+ </summary>
+	<remarks></remarks>
+</member><member name="M:mwLayout.LayoutLayerEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+	<summary>
+ Returns the type of UITypeEdirot this creates
+ </summary>
+</member><member name="P:mwLayout.LayoutLayerEditor.IsDropDownResizable">
+	<summary>
+ Indicates if the drop down can be resized
+ </summary>
+</member><member name="M:mwLayout.LayoutLayerEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+	<summary>
+ This gets called when the value is edited
+ </summary>
+</member>
+</members>
+</doc>

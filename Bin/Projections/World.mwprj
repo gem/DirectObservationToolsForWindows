@@ -1,0 +1,82 @@
+<Mapwin name="MapWindow+GIS++-+World*" type="projectfile.2" version="4.8.3">
+  <MapWinGIS OcxVersion="4.8" FileType="MapState" FileVersion="0">
+  <MapState SendMouseMove="1" SendMouseDown="1" SendMouseUp="1" SendSelectBoxFinal="1" TrapRightMouseDown="1" UnitsOfMeasure="0" ShowVersionNumber="1" ExtentsLeft="-144.200732" ExtentsRight="188.169251" ExtentsBottom="-110.247620" ExtentsTop="96.490842" ExtentsPad="0.020000" />
+  <Layers>
+    <Layer LayerType="Shapefile" LayerName="ocean" LayerVisible="1" LayerKey="" Filename="borders\ocean.shp">
+      <ShapefileClass>
+        <DefaultDrawingOptions FillColor="15788754" LineColor="9868950" />
+        <ShapefileCategoriesClass />
+        <LabelsClass Generated="0" Positioning="1" />
+        <ChartsClass ValuesFontName="" />
+      </ShapefileClass>
+    </Layer>
+    <Layer LayerType="Shapefile" LayerName="TM_WORLD_BORDERS-0.3" LayerVisible="1" LayerKey="" Filename="borders\TM_WORLD_BORDERS-0.3.shp">
+      <ShapefileClass>
+        <DefaultDrawingOptions FillColor="13823714" LineColor="9868950" />
+        <ShapefileCategoriesClass />
+        <LabelsClass FontColor="3027590" FontSize="9" FontStyle="1" Generated="1" MaxVisibleScale="144111665.974516" DynamicVisibility="-1" Positioning="1" Expression="[NAME] " />
+        <ChartsClass ValuesFontName="" />
+      </ShapefileClass>
+    </Layer>
+    <Layer LayerType="Shapefile" LayerName="WORLD30" LayerVisible="1" LayerKey="" Filename="borders\WORLD30.SHP">
+      <ShapefileClass>
+        <DefaultDrawingOptions FillColor="14408401" FillVisible="0" LineColor="9868950" />
+        <ShapefileCategoriesClass />
+        <LabelsClass Generated="0" Positioning="1" />
+        <ChartsClass ValuesFontName="" />
+      </ShapefileClass>
+    </Layer>
+  </Layers>
+</MapWinGIS>
+  <MapWindow4 ConfigurationPath="..\..\..\..\Users\Sergei\AppData\Roaming\MapWindow\mapwindow.mwcfg" ProjectProjection="+proj=longlat +datum=WGS84 +no_defs " MapUnits="Lat/Long" StatusBarAlternateCoordsNumDecimals="3" StatusBarCoordsNumDecimals="3" StatusBarAlternateCoordsUseCommas="True" StatusBarCoordsUseCommas="True" ShowFloatingScaleBar="False" FloatingScaleBarPosition="LowerRight" FloatingScaleBarUnit="" FloatingScaleBarForecolor="-16777216" FloatingScaleBarBackcolor="-1" MapResizeBehavior="0" ShowStatusBarCoords_Projected="True" ShowStatusBarCoords_Alternate="(None)" SaveShapeSettings="False" ViewBackColor_UseDefault="True" ViewBackColor="16777215">
+    <Plugins />
+    <ApplicationPlugins PluginDir="..\..\..\..\..\Dev\MapWindow4Dev\Bin\ApplicationPlugins">
+      <Plugin SettingsString="Database=" Key="mwForestry_Classes_ForestryPlugin" />
+      <Plugin SettingsString="" Key="mwSymbology_SymbologyPlugin" />
+      <Plugin SettingsString="Editable=False" Key="mwIdentifier_mwIdentPlugin" />
+      <Plugin SettingsString="" Key="mwTableEditor_mwTableEditorClass" />
+      <Plugin SettingsString="" Key="GISTools_GisToolsPlugin" />
+      <Plugin SettingsString="" Key="mwLayout_LayoutPlugin" />
+    </ApplicationPlugins>
+    <Bookmarks />
+    <PreviewMap dx="0" dy="0" xllcenter="0" yllcenter="0">
+      <Image Type="">
+      </Image>
+    </PreviewMap>
+    <Groups>
+      <Group Name="Data Layers" Expanded="True" Position="0">
+        <Image Type="">
+        </Image>
+      </Group>
+    </Groups>
+    <Layers>
+      <Layer Name="ocean" Tag="" Expanded="True" Handle="0" PositionInGroup="0" GroupIndex="0" GroupName="Data Layers">
+        <CustomObjects>
+          <Object Key="MySettings">
+            <CustomSettings Value="10">
+              <Text>TEXT</Text>
+            </CustomSettings>
+          </Object>
+        </CustomObjects>
+      </Layer>
+      <Layer Name="TM_WORLD_BORDERS-0.3" Tag="" Expanded="True" Handle="1" PositionInGroup="1" GroupIndex="0" GroupName="Data Layers">
+        <CustomObjects>
+          <Object Key="MySettings">
+            <CustomSettings Value="10">
+              <Text>TEXT</Text>
+            </CustomSettings>
+          </Object>
+        </CustomObjects>
+      </Layer>
+      <Layer Name="WORLD30" Tag="" Expanded="True" Handle="2" PositionInGroup="2" GroupIndex="0" GroupName="Data Layers">
+        <CustomObjects>
+          <Object Key="MySettings">
+            <CustomSettings Value="10">
+              <Text>TEXT</Text>
+            </CustomSettings>
+          </Object>
+        </CustomObjects>
+      </Layer>
+    </Layers>
+  </MapWindow4>
+</Mapwin>

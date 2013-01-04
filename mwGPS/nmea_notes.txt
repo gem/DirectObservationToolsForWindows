@@ -1,0 +1,139 @@
+    * $GPGSV - GPS Satellites in View
+    * $GPRMC - Recommended Minimum Specific GPS/TRANSIT Data
+    * $GPVTG - Track Made Good and Ground Speed
+    * $GPZDA - UTC Date/Time and Local Time Zone Offset
+    * $GPGGA - Global Positioning System Fix Data
+    * $GPGSA - GPS DOP and Active Satellites
+
+
+$GPGSV,1,1,02,20,,,27,10,,,27,,,,,,,,*78
+$GPRMC,001840,V,,N,,E,,,010303,,,N*54
+$GPVTG,,T,,M,,N,,K,N*2C
+$GPZDA,001840,01,03,2003,,*46
+$GPGGA,001841,,N,,E,0,00,,,M,,M,,*61
+$GPGSA,A,1,,,,,,,,,,,,,,,*1E
+
+$GPGSV,1,1,00,,,,,,,,,,,,,,,,*79
+$GPRMC,001841,V,,N,,E,,,010303,,,N*55
+$GPVTG,,T,,M,,N,,K,N*2C
+$GPZDA,001841,01,03,2003,,*47
+$GPGGA,001842,,N,,E,0,00,,,M,,M,,*62
+$GPGSA,A,1,,,,,,,,,,,,,,,*1E
+
+
+
+Test String
+$GPGSA,A,1,,,,,,,,,,,,,50.0,50.0,50.0*05
+$GPRMC,225233.990,V,3939.4000,N,10506.4000,W,0.00,51.40,280804,,*35
+$GPGSA,A,3,11,29,07,08,19,28,26,,,,,,2.3,1.2,2.0*30
+$GPRMC,012558.584,A,3939.7000,N,10506.7000,W,0.00,198.07,290804,,*11
+
+Satellites
+03,33,299,49,
+06,06,168,41,
+07,15,175,50,
+09,16,108,48
+14,14,198,38,
+16,02,246,00,
+18,80,349,50,
+19,13,320,00
+21,63,105,52,
+22,53,262,00,
+24,24,112,47,
+26,22,041,51
+
+
+
+
+
+
+$GPGSV,3,1,10,20,78,331,45,01,59,235,47,22,41,069,,13,32,252,45*70 
+Field		              Example	                  Comments
+Sentence ID           $GPGSV 
+No. of messages       3                         No. of messages in complete (1-3)
+Sequence no.          1                         Sequence no. of this entry (1-3)
+Satellites in view    10
+Satellite ID 1        20                        Range is 1-32
+Elevation 1           78                        Elevation in degrees 
+Azimuth 1             331                       Azimuth in degrees 
+SNR 1                 45                        Signal to noise ratio dBHZ (0-99)
+Satellite ID 2        01                        Range is 1-32
+Elevation 2           59                        Elevation in degrees 
+Azimuth 2             235                       Azimuth in degrees
+      .
+      .
+Checksum              *70
+
+
+$GPRMC,092204.999,A,4250.5589,S,14718.5084,E,0.00,89.68,211200,,*25 
+Field		              Example	                  Comments
+Sentence ID           $GPRMC
+UTC Time              092204.999                hhmmss.sss
+Status                A                         A = Valid, V = Invalid
+Latitude              4250.5589                 ddmm.mmmm
+N/S Indicator         S                         N = North, S = South
+Longitude             14718.5084                dddmm.mmmm
+E/W Indicator         E                         E = East, W = West
+Speed over ground     0.00                      Knots
+Course over ground    0.00                      Degrees
+UTC Date              211200                    DDMMYY
+Magnetic variation                              Degrees
+Magnetic variation                              E = East, W = West
+Checksum              *25  
+
+
+
+$GPGSA,A,3,01,20,19,13,,,,,,,,,40.4,24.4,32.2*0A 
+Field		              Example		                Comments 
+Sentence ID           $GPGSA 
+Mode 1                A                         A = Auto 2D/3D
+                                                M = Forced 2D/3D
+Mode 1                3                         1 = No fix, 2 = 2D, 3 = 3D
+Satellite used 1      01                        Satellite used on channel 1
+            .
+            . 
+            .
+Satellite used 12     24                        Satellite used on channel 12
+PDOP                  2.5                       Position dilution of precision
+HDOP                  1.3                       Horizontal dilution of precision
+VDOP                  2.1                       Vertical dilution of precision
+Checksum              *0A
+
+
+
+
+$GPVTG,89.68,T,,M,0.00,N,0.0,K*5F
+Field		              Example	                  Comments 
+Sentence ID           $GPVTG 
+Course                89.68                     Course in degrees
+Reference             89.68                     T = True heading
+Course                                          Course in degrees
+Reference             89.68                     M = Magnetic heading
+Speed                 0.00                      Horizontal speed
+Units                 N                         N = Knots
+Speed                 0.00                      Horizontal speed
+Units                 K                         K = KM/h
+Checksum              *5F  
+
+
+$GPGGA,092204.999,4250.5589,S,14718.5084,E,1,04,24.4,19.7,M,,,,0000*1F
+Field		              Example		                Comments
+Sentence ID	          $GPGGA 
+UTC Time	            092204.999                hhmmss.sss
+Latitude              4250.5589                 ddmm.mmmm
+N/S Indicator         S                         N = North, S = South
+Longitude             14718.5084                dddmm.mmmm
+E/W Indicator         E                         E = East, W = West
+Position Fix          1                         0 = Invalid, 1 = Valid SPS, 
+                                                2 = Valid DGPS, 3 = Valid PPS
+Satellites Used       04                        Satellites being used (0-12)
+HDOP                  24.4                      Horizontal dilution of precision
+Altitude              19.7                      Altitude (WGS-84 ellipsoid)
+Altitude Units        M                         M= Meters
+Geoid Separation                                Geoid separation (WGS-84 ellipsoid)
+Seperation Units                                M= Meters
+Time since DGPS                                 in seconds
+DGPS Station ID  
+Checksum              *1F                       always begin with *
+
+

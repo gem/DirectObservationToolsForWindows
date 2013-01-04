@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="mnuProjectSettings.Text" xml:space="preserve">
+    <value>&amp;Instellingen</value>
+  </data>
+	<data name="mnuRemoveGroup.Text" xml:space="preserve">
+    <value>&amp;Verwijder groep</value>
+  </data>
+	<data name="mnuZoomIn.Text" xml:space="preserve">
+    <value>Zoom &amp;in</value>
+  </data>
+	<data name="mnuZoomOut.Text" xml:space="preserve">
+    <value>Zoom &amp;uit</value>
+  </data>
+	<data name="mnuNextZoom.Text" xml:space="preserve">
+    <value>Vo&amp;lgende Zoom</value>
+  </data>
+	<data name="mnuPreviousZoom.Text" xml:space="preserve">
+    <value>V&amp;orige zoom</value>
+  </data>
+	<data name="mnuCopyMap.Text" xml:space="preserve">
+    <value>&amp;Kopieer kaart</value>
+  </data>
+	<data name="mnuOpen.Text" xml:space="preserve">
+    <value>&amp;Openen</value>
+  </data>
+	<data name="mnuOpenProjectIntoGroup.Text" xml:space="preserve">
+    <value>Open project als nieuwe groep</value>
+  </data>
+	<data name="mnuRemoveLayer.Text" xml:space="preserve">
+    <value>&amp;Verwijder laag</value>
+  </data>
+	<data name="mnuSaveAs.Text" xml:space="preserve">
+    <value>Ops&amp;laan als</value>
+  </data>
+	<data name="mnuWelcomeScreen.Text" xml:space="preserve">
+    <value>Openings&amp;scherm</value>
+  </data>
+	<data name="mnuZoomToFullExtents.Text" xml:space="preserve">
+    <value>Zoom naar &amp;max kaart</value>
+  </data>
+	<data name="mnuRecentProjects.Text" xml:space="preserve">
+    <value>&amp;Recente projecten</value>
+  </data>
+	<data name="mnuView.Text" xml:space="preserve">
+    <value>Bee&amp;ld</value>
+  </data>
+	<data name="mnuPrint.Text" xml:space="preserve">
+    <value>Af&amp;drukken</value>
+  </data>
+	<data name="mnuBookmarkView.Text" xml:space="preserve">
+    <value>Bewaar view</value>
+  </data>
+	<data name="mnuBookmarkDelete.Text" xml:space="preserve">
+    <value>Verwijder opgeslagen view</value>
+  </data>
+	<data name="mnuBookmarkedViews.Text" xml:space="preserve">
+    <value>Opgeslagen views</value>
+  </data>
+	<data name="mnuHelp.Text" xml:space="preserve">
+    <value>&amp;Help</value>
+  </data>
+	<data name="msgHelpfileDoesNotExist.Text" xml:space="preserve">
+    <value>Het helpbestand bestaat niet.</value>
+  </data>
+	<data name="mnuUpdatePreview.Text" xml:space="preserve">
+    <value>&amp;Vernieuw voorbeeld</value>
+  </data>
+	<data name="mnuUpdatePreviewFull.Text" xml:space="preserve">
+    <value>Vernieuw met Full extents</value>
+  </data>
+	<data name="mnuUpdatePreviewCurr.Text" xml:space="preserve">
+    <value>Vernieuw met huidige view</value>
+  </data>
+	<data name="LegendName.Text" xml:space="preserve">
+    <value>Legenda</value>
+  </data>
+	<data name="mnuFile.Text" xml:space="preserve">
+    <value>&amp;Bestand</value>
+  </data>
+	<data name="mnuCopyLegend.Text" xml:space="preserve">
+    <value>Kopieer &amp;legenda</value>
+  </data>
+	<data name="mnuClearPreview.Text" xml:space="preserve">
+    <value>&amp;Wis voorbeeld</value>
+  </data>
+	<data name="mnuClearSelectedShapes.Text" xml:space="preserve">
+    <value>De-selecteer de shapes</value>
+  </data>
+	<data name="mnuSetScale.Text" xml:space="preserve">
+    <value>Stel de map schaal in</value>
+  </data>
+	<data name="mnuShowScaleBar.Text" xml:space="preserve">
+    <value>Toon de 'floating' schaalbalk</value>
+  </data>
+	<data name="mnuZoomToPreviewExtents.Text" xml:space="preserve">
+    <value>Zoom naar de map extents van het voorbeeld</value>
+  </data>
+	<data name="mnuAboutMapWindow.Text" xml:space="preserve">
+    <value>&amp;Info</value>
+  </data>
+	<data name="mnuSave.Text" xml:space="preserve">
+    <value>Opslaan</value>
+  </data>
+	<data name="mnuEditPlugins.Text" xml:space="preserve">
+    <value>&amp;Wijzig plug-ins</value>
+  </data>
+	<data name="mnuNew.Text" xml:space="preserve">
+    <value>&amp;Nieuw</value>
+  </data>
+	<data name="mnuClose.Text" xml:space="preserve">
+    <value>&amp;Sluiten</value>
+  </data>
+	<data name="mnuAddLayer.Text" xml:space="preserve">
+    <value>&amp;Toevoegen laag</value>
+  </data>
+	<data name="mnuEdit.Text" xml:space="preserve">
+    <value>B&amp;ewerken</value>
+  </data>
+	<data name="mnuClearLayer.Text" xml:space="preserve">
+    <value>&amp;Wis laag</value>
+  </data>
+	<data name="mnuExit.Text" xml:space="preserve">
+    <value>&amp;Afsluiten</value>
+  </data>
+	<data name="mnuContents.Text" xml:space="preserve">
+    <value>Inhoud</value>
+  </data>
+	<data name="mnuSaveMapImage.Text" xml:space="preserve">
+    <value>&amp;Sla kaart op als plaatje</value>
+  </data>
+	<data name="mnuSaveGeorefMapImage.Text" xml:space="preserve">
+    <value>S&amp;la kaart op als Georeferenced Map Image</value>
+  </data>
+	<data name="mnuSaveScaleBar.Text" xml:space="preserve">
+    <value>Sl&amp;a schaalbalk op als plaatje</value>
+  </data>
+	<data name="mnuSaveNorthArrow.Text" xml:space="preserve">
+    <value>Sla &amp;de noordpijl op als plaatje</value>
+  </data>
+	<data name="mnuSaveLegend.Text" xml:space="preserve">
+    <value>Sla d&amp;e legenda op als plaatje</value>
+  </data>
+	<data name="mnuCopyScaleBar.Text" xml:space="preserve">
+    <value>Kopieer &amp;schaalbalk</value>
+  </data>
+	<data name="mnuCopyNorthArrow.Text" xml:space="preserve">
+    <value>Kopieer &amp;noordpijl</value>
+  </data>
+	<data name="mnuCopy.Text" xml:space="preserve">
+    <value>&amp;Kopieren</value>
+  </data>
+	<data name="mnuExport.Text" xml:space="preserve">
+    <value>&amp;Exporteren</value>
+  </data>
+	<data name="mnuPreview.Text" xml:space="preserve">
+    <value>&amp;Voorbeeld kaart</value>
+  </data>
+	<data name="msgLegend_LayerVisibleChanged.Text" xml:space="preserve">
+    <value>Deze laag gebruikt Dynamic Visibility.  Als je door gaat zal de Dynamic Visiblity opties worden uitgeschakeld. Weet je zeker dat je dit wilt? (Je kunt de Dynamic Visiblity via de Legenda Editor weer aanzetten.)</value>
+  </data>
+	<data name="msgHandleShortcutKeys.Text" xml:space="preserve">
+    <value>Weet je zeker dat je de geselecteerde laag wilt verwijderen?</value>
+  </data>
+	<data name="msgUpdateToolNotFound.Text" xml:space="preserve">
+    <value>De applicatie om te controleren voor nieuwe updates kon niet worden gevonden. Alle updates moeten handmatig worden gedownload. {0} De downloadspagina nu openen?</value>
+  </data>
+	<data name="msgPanelDistance.Text" xml:space="preserve">
+    <value>Afstand: klik locaties</value>
+  </data>
+	<data name="msgPanelArea.Text" xml:space="preserve">
+    <value>Oppervlakte: </value>
+  </data>
+	<data name="msgPanelAreaClick.Text" xml:space="preserve">
+    <value>Klik locaties, rechtermuisklik om te stoppen</value>
+  </data>
+	<data name="msgAreaDrawnPolygon.Text" xml:space="preserve">
+    <value>Oppervlakte: </value>
+  </data>
+	<data name="msgError.Text" xml:space="preserve">
+    <value>Fout</value>
+  </data>
+	<data name="msgLegendLayerDoubleClick.Text" xml:space="preserve">
+    <value>Er zijn geen eigenschappen beschikbaar voor dit type laag.</value>
+  </data>
+	<data name="msgSaveProject1.Text" xml:space="preserve">
+    <value>Wilt u de wijzigingen opslaan naar </value>
+  </data>
+	<data name="msgSaveProject2.Text" xml:space="preserve">
+    <value>dit project?</value>
+  </data>
+	<data name="titleHelpfileDoesNotExist.Text" xml:space="preserve">
+    <value>Helpbestand ontbreekt</value>
+  </data>
+	<data name="msgClearLayers.Text" xml:space="preserve">
+    <value>Weet je zeker dat je alle lagen wilt verwijderen?</value>
+  </data>
+	<data name="titleErrorSavingImage.Text" xml:space="preserve">
+    <value>Fout bij opslaan plaatje.</value>
+  </data>
+	<data name="mnuCheckUpdates.Text" xml:space="preserve">
+    <value>Controleer op &amp;updates</value>
+  </data>
+	<data name="mnuShowLegend.Text" xml:space="preserve">
+    <value>Toon &amp;legenda</value>
+  </data>
+	<data name="mnuShowPreviewMap.Text" xml:space="preserve">
+    <value>Toon &amp;voorbeeld kaart</value>
+  </data>
+	<data name="mnuOnlineDocs.Text" xml:space="preserve">
+    <value>&amp;MapWindow documentatie (Online)</value>
+  </data>
+	<data name="mnuOfflineDocs.Text" xml:space="preserve">
+    <value>MapWindow &amp;documentatie (Offline)</value>
+  </data>
+	<data name="mnuShortcuts.Text" xml:space="preserve">
+    <value>&amp;Toetsenbord sneltoetsen</value>
+  </data>
+	<data name="msgShortcutsTitle.Text" xml:space="preserve">
+    <value>Onderstaande toetsenbord sneltoetsen zijn beschikbaar:</value>
+  </data>
+	<data name="msgShortcutsDel.Text" xml:space="preserve">
+    <value>Del: Verwijder de huidige laag.</value>
+  </data>
+	<data name="msgShortcutsIns.Text" xml:space="preserve">
+    <value>Ins:  Een laag toevoegen.</value>
+  </data>
+	<data name="msgShortcutsCtrlS.Text" xml:space="preserve">
+    <value>Ctrl-S: Het project opslaan.</value>
+  </data>
+	<data name="msgShortcutsCtrlO.Text" xml:space="preserve">
+    <value>Ctrl-O: Een project openen.</value>
+  </data>
+	<data name="msgShortcutsCtrlC.Text" xml:space="preserve">
+    <value>Ctrl-C: Kopieer de kaart naar het klembord</value>
+  </data>
+	<data name="msgShortcutsCtrlP.Text" xml:space="preserve">
+    <value>Ctrl-P: Open het voorbeeld print scherm</value>
+  </data>
+	<data name="msgShortcutsCtrlF4.Text" xml:space="preserve">
+    <value>Ctrl-F4: Sluit het project.</value>
+  </data>
+	<data name="msgShortcutsHome.Text" xml:space="preserve">
+    <value>Home: Maximaliseer de kaart.</value>
+  </data>
+	<data name="msgShortcutsCtrlHome.Text" xml:space="preserve">
+    <value>Ctrl-Home: Zoom naar de actieve laag.</value>
+  </data>
+	<data name="msgShortcutsPlus.Text" xml:space="preserve">
+    <value>Plus: Zoom in op het middelpunt van de kaart (25% van het beeld).</value>
+  </data>
+	<data name="msgShortcutsMinus.Text" xml:space="preserve">
+    <value>Minus: Zoom uit op het middelpunt van de kaart (25% van het beeld).</value>
+  </data>
+	<data name="msgShortcutsPageUp.Text" xml:space="preserve">
+    <value>Page-Up: Omhoog schuiven (50% van het beeld).</value>
+  </data>
+	<data name="msgShortcutsPageDown.Text" xml:space="preserve">
+    <value>Page-Down: Naar beneden schuiven (50% van het beeld).</value>
+  </data>
+	<data name="msgShortcutsArrowUp.Text" xml:space="preserve">
+    <value>Pijl omhoog: Omhoog schuiven (25% van het beeld).</value>
+  </data>
+	<data name="msgShortcutsArrowDown.Text" xml:space="preserve">
+    <value>Pijl omlaag: Naar beneden schuiven (25% van het beeld).</value>
+  </data>
+	<data name="msgShortcutsArrowLeft.Text" xml:space="preserve">
+    <value>Pijl links: Naar links schuiven (25% van het beeld).</value>
+  </data>
+	<data name="msgShortcutsArrowRight.Text" xml:space="preserve">
+    <value>Pijl rechts: Naar rechts schuiven (25% van het beeld).</value>
+  </data>
+	<data name="titleRemoveGroup.Text" xml:space="preserve">
+    <value>Groep verwijderen?</value>
+  </data>
+	<data name="ToolStripMenuItem6.Text" xml:space="preserve">
+    <value>&amp;Zoom naar laag</value>
+  </data>
+	<data name="msgDataSubmitted.Text" xml:space="preserve">
+    <value>Bedankt! De data is verstuurd.</value>
+  </data>
+	<data name="msgHttpStatusCodeRedirect.Text" xml:space="preserve">
+    <value>Kan de content niet lezen. De URL is verhuist. Status code={0}.</value>
+  </data>
+	<data name="msgHttpStatusCodeNotFound.Text" xml:space="preserve">
+    <value>Kan de content niet lezen. Kan de URL niet vinden. Status code={0}.</value>
+  </data>
+	<data name="msgHttpStatusCodeElse.Text" xml:space="preserve">
+    <value>Kan de content niet lezen. Status code={0}.</value>
+  </data>
+	<data name="msgPerformanceInfo.Text" xml:space="preserve">
+    <value>Prestatie info: (bytes)</value>
+  </data>
+	<data name="msgPrivateMemory.Text" xml:space="preserve">
+    <value>   Intern geheugen:  </value>
+  </data>
+	<data name="msgVirtualMemory.Text" xml:space="preserve">
+    <value>   Virtueel geheugen:  </value>
+  </data>
+	<data name="msgTotalCpuTime.Text" xml:space="preserve">
+    <value>   Totale CPU tijd: </value>
+  </data>
+	<data name="msgTotalUserModeCpuTime.Text" xml:space="preserve">
+    <value>   Totale CPU tijd in gebruikersmode: </value>
+  </data>
+	<data name="msgModulesInfo.Text" xml:space="preserve">
+    <value>Info van de modules:  </value>
+  </data>
+	<data name="msgModuleName.Text" xml:space="preserve">
+    <value>   Module naam:  </value>
+  </data>
+	<data name="msgPath.Text" xml:space="preserve">
+    <value>   Pad:  </value>
+  </data>
+	<data name="msgVersion.Text" xml:space="preserve">
+    <value>   Versie:  </value>
+  </data>
+	<data name="msgNoConnection.Text" xml:space="preserve">
+    <value>Of er is geen internet connectie of er is een ander communicatie probleem.
+
+Controleer de internetverbinding en probeer opnieuw.</value>
+  </data>
+	<data name="msgOverwriteCurrentlyLoadedScript.Text" xml:space="preserve">
+    <value>Let op dit zal je huidige script overschrijven. Weet je zeker dat je verder wilt gaan?</value>
+  </data>
+	<data name="msgBadUsernamePassword.Text" xml:space="preserve">
+    <value>Het toevoegen is mislukt. 
+De gebruikersnaam of het wachtwoord is niet goed.</value>
+  </data>
+	<data name="msgSubmittedSuccessfully.Text" xml:space="preserve">
+    <value>Het toevoegen is gelukt. Bedankt!</value>
+  </data>
+	<data name="msgGarbledServerResponse.Text" xml:space="preserve">
+    <value>Het antwoord van de server kon niet worden begrepen. Probeer het nogmaals.</value>
+  </data>
+	<data name="msgIncomplete.Text" xml:space="preserve">
+    <value>Alle velden zijn verplicht, vul in elk veld iets in.</value>
+  </data>
+	<data name="PluginPropertyName.Text" xml:space="preserve">
+    <value>Naam: </value>
+  </data>
+	<data name="PluginPropertyVersion.Text" xml:space="preserve">
+    <value>Versie: </value>
+  </data>
+	<data name="PluginPropertyBuildDate.Text" xml:space="preserve">
+    <value>Datum: </value>
+  </data>
+	<data name="PluginPropertyAuthor.Text" xml:space="preserve">
+    <value>Auteur: </value>
+  </data>
+	<data name="PluginPropertyDescription.Text" xml:space="preserve">
+    <value>Omschrijving:</value>
+  </data>
+	<data name="UserDefined.Text" xml:space="preserve">
+    <value>User Defined</value>
+  </data>
+	<data name="CustomProjection.Text" xml:space="preserve">
+    <value>Custom projectie</value>
+  </data>
+	<data name="WarningProjectionMismatch.Text" xml:space="preserve">
+    <value>Waarschuwing: Projecties zijn niet gelijk</value>
+  </data>
+	<data name="msgReprojectedGridDoesNotExists.Text" xml:space="preserve">
+    <value>Fout: De reprojected grid bestaat niet! Controleer de errorlog.txt. De laag is niet toegevoegd.</value>
+  </data>
+	<data name="WarningNoProjectionOnLayer.Text" xml:space="preserve">
+    <value>Waarschuwing: Geen projectie voor de laag</value>
+  </data>
+	<data name="msgScriptError.Text" xml:space="preserve">
+    <value>Script fout</value>
+  </data>
+	<data name="msgSaveCurrentScript.Text" xml:space="preserve">
+    <value>Wil je eerst het huidige script opslaan?</value>
+  </data>
+	<data name="msgIgnoreScript.Text" xml:space="preserve">
+    <value>Waarschuwing: Het script dat op de command line is meegegeven is, wordt genegeerd omdat het niet bestaat.</value>
+  </data>
+	<data name="msgScriptNotExists.Text" xml:space="preserve">
+    <value>Het meegegeven script bestaat niet</value>
+  </data>
+	<data name="titleNoConnection.Text" xml:space="preserve">
+    <value>Geen internetverbinding</value>
+  </data>
+	<data name="msgFindTutorials.Text" xml:space="preserve">
+    <value>Het lijkt erop dat er geen actieve internetverbinding is. De handleidingen zijn beschikbaar op URL:
+
+http://www.mapwindow.org/tutorials</value>
+  </data>
+	<data name="msgFindDocumentation.Text" xml:space="preserve">
+    <value>Het lijkt erop dat er geen actieve internetverbinding is. De documentatie is beschikbaar op URL:
+
+http://www.mapwindow.org/wiki/</value>
+  </data>
+	<data name="msgFileNotFound.Text" xml:space="preserve">
+    <value>Kon het bestand {0} niet vinden</value>
+  </data>
+	<data name="mnuZoomToLayer.Text" xml:space="preserve">
+    <value>&amp;Zoom naar laag</value>
+  </data>
+	<data name="msgDropMissingLayer.Text" xml:space="preserve">
+    <value>Een van de lagen in dit project ontbreekt. De ontbrekende laag is: 
+{0} 
+Wil je deze laag opzoeken? 
+
+Bij nee wordt de laag verwijderd uit het project, bij annuleren worden alle ontbrekende lagen verwijderd.</value>
+  </data>
+	<data name="msgDropMissingLayer.Title" xml:space="preserve">
+    <value>Er ontbreekt een laag {0}</value>
+  </data>
+	<data name="msgProjectReadOnly.Text" xml:space="preserve">
+    <value>Het projectbestand kon niet worden opgeslagen omdat het alleen-lezen is
+
+Laat de systeembeheerder je schrijf toegang geven tot het bestand:
+{0}</value>
+  </data>
+	<data name="msgProjectReadOnly.Title" xml:space="preserve">
+    <value>Projectbestand is alleen-lezen</value>
+  </data>
+	<data name="msgProjectInsufficientAccess.Text" xml:space="preserve">
+    <value>Het projectbestand kon niet worden opgeslagen omdat je te weinig rechten hebt.
+
+Laat de systeembeheerder je toegang geven tot het bestand:
+{0}</value>
+  </data>
+	<data name="msgProjectInsufficientAccess.Title" xml:space="preserve">
+    <value>Onvoldoende rechten</value>
+  </data>
+	<data name="msgSaveInMemoryLayer.Text" xml:space="preserve">
+    <value>Laag {0} is nog niet opgeslagen. Wil je het opslaan?</value>
+  </data>
+	<data name="msgSaveInMemoryLayer.Title" xml:space="preserve">
+    <value>Laag opslaan</value>
+  </data>
+	<data name="mnuAddECWPLayer.Text" xml:space="preserve">
+		<value>Voeg ECWP laag toe</value>
+	</data>
+	<data name="mnuRestoreMenu.Text" xml:space="preserve">
+		<value>Panelen</value>
+	</data>
+	<data name="mnuPanels.Text" xml:space="preserve">
+		<value>Panelen</value>
+	</data>
+	<data name="mnuPlugins.Text" xml:space="preserve">
+		<value>Plug-ins</value>
+	</data>
+	<data name="DisableDynamicVis.Text" xml:space="preserve">
+		<value>Deze laag gebruikt Dynamic Visibility.  Als je door gaat zal de Dynamic Visiblity opties worden uitgeschakeld. Weet je zeker dat je dit wilt? (Je kunt de Dynamic Visiblity via de Legenda Editor weer aanzetten.)</value>
+	</data>
+	<data name="mnuScript.Text" xml:space="preserve">
+		<value>Scripts ..</value>
+	</data>
+	<data name="mnuZoomToGroup.Text" xml:space="preserve">
+		<value>Zoom naar groep</value>
+	</data>
+	<data name="sbContextMenu_ChangeUnits.Text" xml:space="preserve">
+		<value>Wijzig scherm units</value>
+	</data>
+	<data name="sbContextMenu_UpperLeft.Text" xml:space="preserve">
+		<value>Bovenkant links</value>
+	</data>
+	<data name="sbContextMenu_UpperRight.Text" xml:space="preserve">
+		<value>Bovenkant rechts</value>
+	</data>
+	<data name="sbContextMenu_LowerLeft.Text" xml:space="preserve">
+		<value>Onderkant links</value>
+	</data>
+	<data name="sbContextMenu_LowerRight.Text" xml:space="preserve">
+		<value>Onderkant rechts</value>
+	</data>
+	<data name="sbContextMenu_ChooseForecolor.Text" xml:space="preserve">
+		<value>Kies tekst kleur</value>
+	</data>
+	<data name="sbContextMenu_ChooseBackcolor.Text" xml:space="preserve">
+		<value>Kies achtergrond kleur</value>
+	</data>
+	<data name="msgErrorSavingImage.Text" xml:space="preserve">
+		<value>Er zijn foutmeldingen tijdens het opslaan van het plaatje</value>
+	</data>
+	<data name="msgRemoveGroup.Text" xml:space="preserve">
+		<value>Weet je zeker dat je de geselecteerde groep en de lagen die er in zitten wilt verwijderen?</value>
+	</data>
+	<data name="msgClickNextPoint.Text" xml:space="preserve">
+		<value>Klik volgende punt.</value>
+	</data>
+	<data name="msgDistanceStartOver.Text" xml:space="preserve">
+		<value>Klik volgende punt. Rechtermuisklik op te stoppen</value>
+	</data>
+	<data name="msgShortcutsCtrlShiftI.Text" xml:space="preserve">
+		<value>Ctrl-Shift-I: Inzoomen</value>
+	</data>
+	<data name="msgShortcutsCtrlShiftO.Text" xml:space="preserve">
+		<value>Ctrl-Shift-O: Uitzoomen</value>
+	</data>
+	<data name="msgShortcutsCtrlShiftP.Text" xml:space="preserve">
+		<value>Ctrl-Shift-P: Verschuiven</value>
+	</data>
+	<data name="msgShortcutsCtrlSpace.Text" xml:space="preserve">
+		<value>Ctrl-Spatiebalk: Wisselen zichtbaarheid laag</value>
+	</data>
+	<data name="msgShortcutsCtrlArrows.Text" xml:space="preserve">
+		<value>Ctrl-Pijl omhoog, Ctrl-Pijl omlaag: Wissel geselecteerde laag in de legenda</value>
+	</data>
+	<data name="msgShortcutsCtrlEnter.Text" xml:space="preserve">
+		<value>Ctrl-Enter: Laag eigenschappen</value>
+	</data>
+	<data name="titleClearLayers.Text" xml:space="preserve">
+		<value>Weet u zeker dat u alle lagen wilt verwijderen?</value>
+	</data>
+	<data name="msgShortcutsCtrlI.Text" xml:space="preserve">
+		<value>Ctrl-I: Identificeren</value>
+	</data>
+	<data name="msgShortcutsCtrlH.Text" xml:space="preserve">
+		<value>Ctrl-H: Selecteren</value>
+	</data>
+	<data name="msgFileName.Text" xml:space="preserve">
+		<value>Bestandsnaam:</value>
+	</data>
+	<data name="msgProjection.Text" xml:space="preserve">
+		<value>Projectie:</value>
+	</data>
+	<data name="msgProjectProjection.Text" xml:space="preserve">
+		<value>Project projectie:</value>
+	</data>
+	<data name="msgNewLayerProjection.Text" xml:space="preserve">
+		<value>Nieuwe laag:</value>
+	</data>
+	<data name="msgCustomProjection.Text" xml:space="preserve">
+		<value>Custom</value>
+	</data>
+	<data name="msgChangeLanguage.Text" xml:space="preserve">
+		<value>De wijziging van de taal naar {0} zal pas na het herstarten van MapWindow effect hebben</value>
+	</data>
+	<data name="msgChangeLanguage.Title" xml:space="preserve">
+		<value>Taal wijzigen</value>
+	</data>
+</root>

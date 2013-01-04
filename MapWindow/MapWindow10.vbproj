@@ -1,0 +1,2455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{77B53F05-5CEF-408E-886E-A842C66A4266}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>Resources\MapWindow_new.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>MapWindow</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>VBScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>MapWindow</RootNamespace>
+    <StartupObject>Sub Main</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\bin\</OutputPath>
+    <DocumentationFile>MapWindow.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>true</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42025,42032,42036,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\Bin\</OutputPath>
+    <DocumentationFile>MapWindow.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>true</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42025,42032,42036,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\bin64\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <DocumentationFile>MapWindow.xml</DocumentationFile>
+    <WarningLevel>1</WarningLevel>
+    <RegisterForComInterop>true</RegisterForComInterop>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42025,42032,42036,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>..\bin64\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <DocumentationFile>MapWindow.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+    <RegisterForComInterop>true</RegisterForComInterop>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42025,42032,42036,42353,42354,42355</NoWarn>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\bin\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <DocumentationFile>MapWindow.xml</DocumentationFile>
+    <WarningLevel>1</WarningLevel>
+    <RegisterForComInterop>true</RegisterForComInterop>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42025,42032,42036,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>..\bin\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <DocumentationFile>MapWindow.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+    <RegisterForComInterop>true</RegisterForComInterop>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42025,42032,42036,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.MapWinGIS, Version=4.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CSharpEditor, Version=1.0.0.21580, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Interop.MapWinGIS, Version=4.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MapWinGeoProc, Version=1.0.2693.21074, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MapWinInterfaces, Version=4.8.2.24248, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MapWinUtility">
+      <Name>MapWinUtility</Name>
+      <HintPath>..\Bin\MapWinUtility.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.2.2864.18696, Culture=neutral, PublicKeyToken=d481317c817cec47, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="MapWindow.Interfaces" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\clsAppInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\clsATCProjection.vb" />
+    <Compile Include="Classes\clsATCTableDBF.vb" />
+    <Compile Include="Classes\clsBarsProperties.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\clsBookmarksManager.vb" />
+    <Compile Include="Classes\clsColoringSchemeTools.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\clsComboBoxItem.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\clsDraw.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\clsDynamicVisibilityClass.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\clsGridUtils.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\clsGroup.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\clsGroups.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\clsIATCTable.vb" />
+    <Compile Include="Classes\clsIdentifiedLayers.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\clsIdentifiedShapes.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\clsLabelClass.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\clsLayer.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\clsLayers.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\clsLegendPanel.vb" />
+    <Compile Include="Classes\clsMenuItem.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\clsMenus.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\clsMWDockPanel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\clsMWProgressStatus.vb" />
+    <Compile Include="Classes\clsPluginInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\clsPluginManager.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\clsPreviewMap.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\clsProject.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\clsProjectionDB.vb" />
+    <Compile Include="Classes\clsProjections.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\clsReports.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\clsSelectedShape.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\clsSelectInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\clsShape.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\clsShapes.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\clsStatusBar.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\clsStatusBarItem.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\clsSuperGrid.vb" />
+    <Compile Include="Classes\clsToolbar.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\clsToolbarButton.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\clsUIPanel.vb" />
+    <Compile Include="Classes\clsUserInteraction.vb" />
+    <Compile Include="Classes\clsView.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\clsXMLLayerFile.vb" />
+    <Compile Include="Classes\clsXmlProjectFile.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\PropertyGridUtils\GlobalizedPropertyAttribute.vb" />
+    <Compile Include="Classes\PropertyGridUtils\GlobalizedTypeAttribute.vb" />
+    <Compile Include="Classes\PropertyGridUtils\GlobalizedTypeConverter.vb" />
+    <Compile Include="Classes\PropertyGridUtils\PropertyAttributes.vb" />
+    <Compile Include="Classes\PropertyGridUtils\PropertyAttributesProviderAttribute.vb" />
+    <Compile Include="Classes\PropertyGridUtils\PropertyDescriptorEx.vb" />
+    <Compile Include="Classes\PropertyGridUtils\PropertyOrderAttribute.vb" />
+    <Compile Include="Classes\clsToolAndMenuStripEx.vb">
+    </Compile>
+    <Compile Include="Forms\AppSetGrid.vb" />
+    <Compile Include="Forms\ErrorDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmBookmarkedViewDelete.Designer.vb">
+      <DependentUpon>frmBookmarkedViewDelete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmBookmarkedViewDelete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmBookmarkManager.Designer.vb">
+      <DependentUpon>frmBookmarkManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmBookmarkManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmBookmarksAddNew.Designer.vb">
+      <DependentUpon>frmBookmarksAddNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmBookmarksAddNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmChooseDisplayUnits.Designer.vb">
+      <DependentUpon>frmChooseDisplayUnits.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmChooseDisplayUnits.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCustomProjection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmErrorDialog-NoSend.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmErrorDialogMoreInfo.Designer.vb">
+      <DependentUpon>frmErrorDialogMoreInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmErrorDialogMoreInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmExport.designer.vb">
+      <DependentUpon>frmExport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmExport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFloatingToolbar.Designer.vb">
+      <DependentUpon>frmFloatingToolbar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmFloatingToolbar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLogo.Designer.vb">
+      <DependentUpon>frmLogo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLogo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmOnlineScriptDirectory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmOnlineScriptSubmit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPlugins.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPrint-SidebarLayout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmProjectionDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmProjMismatch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmScript.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmScriptHelp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSetScale.Designer.vb">
+      <DependentUpon>frmSetScale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSetScale.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmWelcomeScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmYesNoToAll.Designer.vb">
+      <DependentUpon>frmYesNoToAll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmYesNoToAll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PrjSetGrid.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\ProjectSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalResource.cs.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalResource.cs.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalResource.de.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalResource.de.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalResource.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalResource.el.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalResource.el.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalResource.en.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalResource.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalResource.es-ES.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalResource.es-ES.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalResource.fa.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalResource.fa.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalResource.fr.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalResource.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalResource.it.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalResource.it.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalResource.ja-JP.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalResource.ja-JP.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalResource.lt.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalResource.lt.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalResource.nl.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalResource.nl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalResource.pt-BR.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalResource.pt-BR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalResource.pt.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalResource.pt.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalResource.ro.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalResource.ro.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalResource.th.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalResource.th.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalResource.zh-CHS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalResource.zh-CHS.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalResource.zh-CN.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalResource.zh-CN.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Legend Editor\ColoringSchemeViewer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Legend Editor\ColorPickerSingle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legend Editor\ColorPicker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legend Editor\PointImageSchemeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legend Editor\DynamicVisibilityControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Legend Editor\FillStyleControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Legend Editor\frmPaletteEditor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legend Editor\frmSchemeAttributes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legend Editor\GridColoringSchemeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legend Editor\LegendEditorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legend Editor\LegendEditorObjects.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Legend Editor\LineStyleControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Legend Editor\LineWidthControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Legend Editor\PointImageScheme.vb" />
+    <Compile Include="Legend Editor\PointImageSelect.Designer.vb">
+      <DependentUpon>PointImageSelect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Legend Editor\PointImageSelect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legend Editor\PointSizeControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Legend Editor\PointStyleControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Legend Editor\RampDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legend Editor\RangeBar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Legend Editor\SFColoringSchemeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legend Editor\SFFillStippleSchemeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\modApp.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\modMain.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\modNonModalMessageBox.vb" />
+    <Compile Include="Modules\modScaleBarUtils.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Legend Editor\ColorPicker.vi-VN.resx">
+      <DependentUpon>ColorPicker.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\ColorPickerSingle.vi-VN.resx">
+      <DependentUpon>ColorPickerSingle.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\DynamicVisibilityControl.vi-VN.resx">
+      <DependentUpon>DynamicVisibilityControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\frmSchemeAttributes.vi-VN.resx">
+      <DependentUpon>frmSChemeAttributes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\GridColoringSchemeForm.vi-VN.resx">
+      <DependentUpon>GridColoringSchemeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\LegendEditorForm.vi-VN.resx">
+      <DependentUpon>LegendEditorForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\PointImageSchemeForm.vi-VN.resx">
+      <DependentUpon>PointImageSchemeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\PointImageSelect.vi-VN.resx">
+      <DependentUpon>PointImageSelect.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\RampDialog.vi-VN.resx">
+      <DependentUpon>RampDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\SFColoringSchemeForm.vi-VN.resx">
+      <DependentUpon>SFColoringSchemeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ErrorDialog.vi-VN.resx">
+      <DependentUpon>ErrorDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAbout.vi-VN.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBookmarkedViewDelete.vi-VN.resx">
+      <DependentUpon>frmBookmarkedViewDelete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmChooseDisplayUnits.vi-VN.resx">
+      <DependentUpon>frmChooseDisplayUnits.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCustomProjection.vi-VN.resx">
+      <DependentUpon>frmCustomProjection.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmErrorDialog-NoSend.vi-VN.resx">
+      <DependentUpon>frmErrorDialog-NoSend.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmErrorDialogMoreInfo.vi-VN.resx">
+      <DependentUpon>frmErrorDialogMoreInfo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmExport.vi-VN.resx">
+      <DependentUpon>frmExport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.vi-VN.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOnlineScriptDirectory.vi-VN.resx">
+      <DependentUpon>frmOnlineScriptDirectory.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOnlineScriptSubmit.vi-VN.resx">
+      <DependentUpon>frmOnlineScriptSubmit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPlugins.vi-VN.resx">
+      <DependentUpon>frmPlugins.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPrint-SidebarLayout.vi-VN.resx">
+      <DependentUpon>frmPrint-SidebarLayout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProjectionDialog.vi-VN.resx">
+      <DependentUpon>frmProjectionDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProjMismatch.vi-VN.resx">
+      <DependentUpon>frmProjMismatch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmScript.vi-VN.resx">
+      <DependentUpon>frmScript.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmScriptHelp.vi-VN.resx">
+      <DependentUpon>frmScriptHelp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSetScale.vi-VN.resx">
+      <DependentUpon>frmSetScale.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmWelcomeScreen.vi-VN.resx">
+      <DependentUpon>frmWelcomeScreen.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmYesNoToAll.vi-VN.resx">
+      <DependentUpon>frmYesNoToAll.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PrjSetGrid.vi-VN.resx">
+      <DependentUpon>PrjSetGrid.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProjectSettings.vi-VN.resx">
+      <DependentUpon>ProjectSettings.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ErrorDialog.en.resx">
+      <DependentUpon>ErrorDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ErrorDialog.es-ES.resx">
+      <DependentUpon>ErrorDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAbout.es-ES.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmErrorDialog-NoSend.es-ES.resx">
+      <DependentUpon>frmErrorDialog-NoSend.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.es-ES.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPrint-SidebarLayout.es-ES.resx">
+      <DependentUpon>frmPrint-SidebarLayout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmWelcomeScreen.es-ES.resx">
+      <DependentUpon>frmWelcomeScreen.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PrjSetGrid.es-ES.resx">
+      <DependentUpon>PrjSetGrid.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ErrorDialog.fr.resx">
+      <DependentUpon>ErrorDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ErrorDialog.nl.resx">
+      <DependentUpon>ErrorDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ErrorDialog.pt-BR.resx">
+      <DependentUpon>ErrorDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ErrorDialog.pt.resx">
+      <DependentUpon>ErrorDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ErrorDialog.resx">
+      <DependentUpon>ErrorDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCustomProjection.resx">
+      <DependentUpon>frmCustomProjection.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmErrorDialog-NoSend.en.resx">
+      <DependentUpon>frmErrorDialog-NoSend.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmErrorDialog-NoSend.fr.resx">
+      <DependentUpon>frmErrorDialog-NoSend.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmErrorDialog-NoSend.nl.resx">
+      <DependentUpon>frmErrorDialog-NoSend.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmErrorDialog-NoSend.pt-BR.resx">
+      <DependentUpon>frmErrorDialog-NoSend.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmErrorDialog-NoSend.pt.resx">
+      <DependentUpon>frmErrorDialog-NoSend.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmErrorDialog-NoSend.resx">
+      <DependentUpon>frmErrorDialog-NoSend.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAbout.en.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAbout.fr.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAbout.it.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAbout.nl.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAbout.pt-BR.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAbout.pt.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAbout.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmErrorDialogMoreInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmErrorDialogMoreInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFloatingToolbar.resx">
+      <DependentUpon>frmFloatingToolbar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.fr.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.it.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.cs.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.nl.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.pt-BR.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.pt.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.zh-CHS.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.zh-CN.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOnlineScriptDirectory.pt-BR.resx">
+      <DependentUpon>frmOnlineScriptDirectory.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOnlineScriptDirectory.pt.resx">
+      <DependentUpon>frmOnlineScriptDirectory.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOnlineScriptDirectory.resx">
+      <DependentUpon>frmOnlineScriptDirectory.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOnlineScriptSubmit.pt-BR.resx">
+      <DependentUpon>frmOnlineScriptSubmit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOnlineScriptSubmit.pt.resx">
+      <DependentUpon>frmOnlineScriptSubmit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOnlineScriptSubmit.resx">
+      <DependentUpon>frmOnlineScriptSubmit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPlugins.en.resx">
+      <DependentUpon>frmPlugins.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPlugins.es-ES.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPlugins.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPlugins.fr.resx">
+      <DependentUpon>frmPlugins.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPlugins.nl.resx">
+      <DependentUpon>frmPlugins.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPlugins.pt-BR.resx">
+      <DependentUpon>frmPlugins.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPlugins.pt.resx">
+      <DependentUpon>frmPlugins.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPlugins.resx">
+      <DependentUpon>frmPlugins.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPrint-SidebarLayout.en.resx">
+      <DependentUpon>frmPrint-SidebarLayout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPrint-SidebarLayout.fr.resx">
+      <DependentUpon>frmPrint-SidebarLayout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPrint-SidebarLayout.it.resx">
+      <DependentUpon>frmPrint-SidebarLayout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPrint-SidebarLayout.nl.resx">
+      <DependentUpon>frmPrint-SidebarLayout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPrint-SidebarLayout.pt-BR.resx">
+      <DependentUpon>frmPrint-SidebarLayout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPrint-SidebarLayout.pt.resx">
+      <DependentUpon>frmPrint-SidebarLayout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPrint-SidebarLayout.resx">
+      <DependentUpon>frmPrint-SidebarLayout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProjectionDialog.en.resx">
+      <DependentUpon>frmProjectionDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProjectionDialog.nl.resx">
+      <DependentUpon>frmProjectionDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProjectionDialog.pt-BR.resx">
+      <DependentUpon>frmProjectionDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProjectionDialog.pt.resx">
+      <DependentUpon>frmProjectionDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProjectionDialog.resx">
+      <DependentUpon>frmProjectionDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProjMismatch.en.resx">
+      <DependentUpon>frmProjMismatch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProjMismatch.nl.resx">
+      <DependentUpon>frmProjMismatch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProjMismatch.pt-BR.resx">
+      <DependentUpon>frmProjMismatch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProjMismatch.pt.resx">
+      <DependentUpon>frmProjMismatch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProjMismatch.resx">
+      <DependentUpon>frmProjMismatch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmScript.resx">
+      <DependentUpon>frmScript.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmScriptHelp.resx">
+      <DependentUpon>frmScriptHelp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmWelcomeScreen.pt-BR.resx">
+      <DependentUpon>frmWelcomeScreen.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmWelcomeScreen.pt.resx">
+      <DependentUpon>frmWelcomeScreen.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmWelcomeScreen.resx">
+      <DependentUpon>frmWelcomeScreen.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PrjSetGrid.fr.resx">
+      <DependentUpon>PrjSetGrid.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PrjSetGrid.resx">
+      <DependentUpon>PrjSetGrid.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProjectSettings.pt-BR.resx">
+      <DependentUpon>ProjectSettings.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProjectSettings.pt.resx">
+      <DependentUpon>ProjectSettings.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProjectSettings.resx">
+      <DependentUpon>ProjectSettings.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\ColoringSchemeViewer.resx">
+      <DependentUpon>ColoringSchemeViewer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\ColorPickerSingle.resx">
+      <DependentUpon>ColorPickerSingle.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\DynamicVisibilityControl.resx">
+      <DependentUpon>DynamicVisibilityControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\FillStyleControl.resx">
+      <DependentUpon>FillStyleControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\frmPaletteEditor.resx">
+      <DependentUpon>frmPaletteEditor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAbout.fa.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ErrorDialog.fa.resx">
+      <DependentUpon>ErrorDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.fa.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPlugins.fa.resx">
+      <DependentUpon>frmPlugins.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPrint-SidebarLayout.fa.resx">
+      <DependentUpon>frmPrint-SidebarLayout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PrjSetGrid.fa.resx">
+      <DependentUpon>PrjSetGrid.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAbout.el.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmChooseDisplayUnits.el.resx">
+      <DependentUpon>frmChooseDisplayUnits.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCustomProjection.el.resx">
+      <DependentUpon>frmCustomProjection.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmErrorDialog-NoSend.el.resx">
+      <DependentUpon>ErrorDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.th.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.el.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOnlineScriptDirectory.el.resx">
+      <DependentUpon>frmOnlineScriptDirectory.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOnlineScriptSubmit.el.resx">
+      <DependentUpon>frmOnlineScriptSubmit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPlugins.el.resx">
+      <DependentUpon>frmPlugins.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPrint-SidebarLayout.el.resx">
+      <DependentUpon>frmPrint-SidebarLayout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProjectionDialog.el.resx">
+      <DependentUpon>frmProjectionDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProjMismatch.el.resx">
+      <DependentUpon>frmProjMismatch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSetScale.el.resx">
+      <DependentUpon>frmSetScale.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmWelcomeScreen.el.resx">
+      <DependentUpon>frmWelcomeScreen.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PrjSetGrid.el.resx">
+      <DependentUpon>PrjSetGrid.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProjectSettings.el.resx">
+      <DependentUpon>ProjectSettings.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\frmSchemeAttributes.resx">
+      <DependentUpon>frmSchemeAttributes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\GridColoringSchemeForm.resx">
+      <DependentUpon>GridColoringSchemeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\LegendEditorForm.resx">
+      <DependentUpon>LegendEditorForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\LineStyleControl.resx">
+      <DependentUpon>LineStyleControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\LineWidthControl.resx">
+      <DependentUpon>LineWidthControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\PointSizeControl.resx">
+      <DependentUpon>PointSizeControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\PointStyleControl.resx">
+      <DependentUpon>PointStyleControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\RampDialog.resx">
+      <DependentUpon>RampDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\RangeBar.resx">
+      <DependentUpon>RangeBar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\SFColoringSchemeForm.resx">
+      <DependentUpon>SFColoringSchemeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\About Box.bmp" />
+    <EmbeddedResource Include="Resources\ATCprj.dbf" />
+    <EmbeddedResource Include="Resources\splash screen.bmp" />
+    <EmbeddedResource Include="Resources\hand.ico" />
+    <EmbeddedResource Include="Resources\add.ico" />
+    <EmbeddedResource Include="Resources\delete.ico" />
+    <EmbeddedResource Include="Resources\Delete_all_16.ico" />
+    <EmbeddedResource Include="Resources\zoom_preview.ico" />
+    <None Include="app.config" />
+    <None Include="Resources\FOLDER02.ICO" />
+    <EmbeddedResource Include="Resources\measuring.ico" />
+    <EmbeddedResource Include="Resources\zoom_select_16_2.ico" />
+    <EmbeddedResource Include="Resources\select.ico" />
+    <EmbeddedResource Include="Resources\zoom_back_16.ico" />
+    <EmbeddedResource Include="Resources\zoom_fit_16_3.ico" />
+    <EmbeddedResource Include="Resources\zoom_forward_16_2.ico" />
+    <EmbeddedResource Include="Resources\zoom_in_16_2.ico" />
+    <EmbeddedResource Include="Resources\zoom_layer_16_1.ico" />
+    <EmbeddedResource Include="Resources\zoom_layer_16_2.ico" />
+    <EmbeddedResource Include="Resources\zoom_out_16.ico" />
+    <EmbeddedResource Include="Resources\measure_1.ico" />
+    <EmbeddedResource Include="Resources\measure_2.ico" />
+    <None Include="Resources\PeopleGlobe.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\ErrorDialog.th.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ErrorDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAbout.th.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBookmarkedViewDelete.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBookmarkedViewDelete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBookmarkedViewDelete.th.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBookmarkedViewDelete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmChooseDisplayUnits.th.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmChooseDisplayUnits.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCustomProjection.th.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCustomProjection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmErrorDialog-NoSend.th.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmErrorDialog-NoSend.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmErrorDialogMoreInfo.th.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmErrorDialogMoreInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmExport.resx">
+      <DependentUpon>frmExport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmExport.th.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmExport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.de.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.en.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOnlineScriptDirectory.th.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmOnlineScriptDirectory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOnlineScriptSubmit.th.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmOnlineScriptSubmit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPlugins.th.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPlugins.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPrint-SidebarLayout.th.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPrint-SidebarLayout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProjectionDialog.th.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmProjectionDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProjMismatch.th.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmProjMismatch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmScriptHelp.th.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmScriptHelp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSetScale.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSetScale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSetScale.th.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSetScale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmWelcomeScreen.nl.resx">
+      <DependentUpon>frmWelcomeScreen.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmWelcomeScreen.th.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmWelcomeScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmYesNoToAll.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmYesNoToAll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmYesNoToAll.th.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmYesNoToAll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PrjSetGrid.th.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrjSetGrid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProjectSettings.th.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProjectSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\ColoringSchemeViewer.th.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColoringSchemeViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\ColorPicker.resx">
+      <DependentUpon>ColorPicker.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\ColorPicker.th.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColorPicker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\ColorPickerSingle.th.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColorPickerSingle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\DynamicVisibilityControl.th.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DynamicVisibilityControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\frmSchemeAttributes.th.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSchemeAttributes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\GridColoringSchemeForm.th.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GridColoringSchemeForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\LegendEditorForm.th.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LegendEditorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\PointImageSchemeForm.th.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PointImageSchemeForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\PointImageSelect.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PointImageSelect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\PointImageSelect.th.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PointImageSelect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\RampDialog.th.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RampDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\SFColoringSchemeForm.th.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFColoringSchemeForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MapWindowDockTemplate.config" />
+    <EmbeddedResource Include="Forms\frmAbout.ja-JP.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmErrordialog-NoSend.ja-JP.resx">
+      <DependentUpon>frmErrordialog-NoSend.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmErrordialogMoreInfo.ja-JP.resx">
+      <DependentUpon>frmErrordialogMoreInfo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.ja-JP.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOnlineScriptDirectory.ja-JP.resx">
+      <DependentUpon>frmOnlineScriptDirectory.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOnlineScriptSubmit.ja-JP.resx">
+      <DependentUpon>frmOnlineScriptSubmit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPlugins.ja-JP.resx">
+      <DependentUpon>frmPlugins.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPrint-SidebarLayout.ja-JP.resx">
+      <DependentUpon>frmPrint-SidebarLayout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProjectionDialog.ja-JP.resx">
+      <DependentUpon>frmProjectionDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProjMismatch.ja-JP.resx">
+      <DependentUpon>frmProjMismatch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmScriptHelp.ja-JP.resx">
+      <DependentUpon>frmScriptHelp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmWelcomeScreen.ja-JP.resx">
+      <DependentUpon>frmWelcomeScreen.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PrjSetGrid.ja-JP.resx">
+      <DependentUpon>PrjSetGrid.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProjectSettings.ja-JP.resx">
+      <DependentUpon>ProjectSettings.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\ColorPicker.ja-JP.resx">
+      <DependentUpon>ColorPicker.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\DynamicVisibilityControl.ja-JP.resx">
+      <DependentUpon>DynamicVisibilityControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\frmPaletteEditor.ja-JP.resx">
+      <DependentUpon>frmPaletteEditor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\frmSchemeAttributes.ja-JP.resx">
+      <DependentUpon>frmSchemeAttributes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\GridcoloringSchemeForm.ja-JP.resx">
+      <DependentUpon>GridcoloringSchemeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\LegendEditorform.ja-JP.resx">
+      <DependentUpon>LegendEditorform.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\RampDialog.ja-JP.resx">
+      <DependentUpon>RampDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\SFColoringSchemeForm.ja-JP.resx">
+      <DependentUpon>SFColoringSchemeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\SFColoringSchemeForm.es-ES.resx">
+      <DependentUpon>SFColoringSchemeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ErrorDialog.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ErrorDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAbout.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBookmarkedViewDelete.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBookmarkedViewDelete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmChooseDisplayUnits.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmChooseDisplayUnits.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmChooseDisplayUnits.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmChooseDisplayUnits.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCustomProjection.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCustomProjection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmErrorDialog-NoSend.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmErrorDialog-NoSend.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmErrorDialogMoreInfo.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmErrorDialogMoreInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmExport.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmExport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOnlineScriptDirectory.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmOnlineScriptDirectory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOnlineScriptSubmit.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmOnlineScriptSubmit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPlugins.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPlugins.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPrint-SidebarLayout.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPrint-SidebarLayout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProjectionDialog.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmProjectionDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProjMismatch.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmProjMismatch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmScriptHelp.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmScriptHelp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSetScale.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSetScale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmWelcomeScreen.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmWelcomeScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmYesNoToAll.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmYesNoToAll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PrjSetGrid.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrjSetGrid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProjectSettings.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProjectSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\ColoringSchemeViewer.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColoringSchemeViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\ColorPicker.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColorPicker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\ColorPickerSingle.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColorPickerSingle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\DynamicVisibilityControl.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DynamicVisibilityControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\frmSchemeAttributes.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSchemeAttributes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\GridColoringSchemeForm.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GridColoringSchemeForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\LegendEditorForm.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LegendEditorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\PointImageSchemeForm.resx">
+      <DependentUpon>PointImageSchemeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\PointImageSchemeForm.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PointImageSchemeForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\PointImageSelect.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PointImageSelect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\RampDialog.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RampDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\SFColoringSchemeForm.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFColoringSchemeForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GlobalResource.cs.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GlobalResource.cs.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalResource.de.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GlobalResource.de.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalResource.el.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GlobalResource.el.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalResource.en.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GlobalResource.en.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalResource.es-ES.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GlobalResource.es-ES.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalResource.fa.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GlobalResource.fa.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalResource.fr.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GlobalResource.fr.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalResource.it.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GlobalResource.it.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalResource.ja-JP.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GlobalResource.ja-JP.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalResource.nl.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GlobalResource.nl.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalResource.pt-BR.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GlobalResource.pt-BR.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalResource.pt.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GlobalResource.pt.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalResource.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GlobalResource.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalResource.th.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GlobalResource.th.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalResource.zh-CHS.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GlobalResource.zh-CHS.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalResource.zh-CN.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GlobalResource.zh-CN.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\checked.bmp" />
+    <EmbeddedResource Include="Resources\unchecked.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\MapPanel.ico" />
+    <EmbeddedResource Include="Resources\MapWinLegend.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\frmMain.en-US.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSetScale.nl.resx">
+      <DependentUpon>frmSetScale.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\AppSetGrid.cs.resx">
+      <DependentUpon>AppSetGrid.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AppSetGrid.nl.resx">
+      <DependentUpon>AppSetGrid.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AppSetGrid.resx">
+      <DependentUpon>AppSetGrid.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ErrorDialog.de.resx">
+      <DependentUpon>ErrorDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAbout.de.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBookmarkedViewDelete.nl.resx">
+      <DependentUpon>frmBookmarkedViewDelete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmChooseDisplayUnits.de.resx">
+      <DependentUpon>frmChooseDisplayUnits.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmChooseDisplayUnits.nl.resx">
+      <DependentUpon>frmChooseDisplayUnits.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCustomProjection.de.resx">
+      <DependentUpon>frmCustomProjection.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCustomProjection.nl.resx">
+      <DependentUpon>frmCustomProjection.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmErrorDialog-NoSend.de.resx">
+      <DependentUpon>frmErrorDialog-NoSend.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmErrorDialogMoreInfo.de.resx">
+      <DependentUpon>frmErrorDialogMoreInfo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmErrorDialogMoreInfo.nl.resx">
+      <DependentUpon>frmErrorDialogMoreInfo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmExport.nl.resx">
+      <DependentUpon>frmExport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOnlineScriptDirectory.de.resx">
+      <DependentUpon>frmOnlineScriptDirectory.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOnlineScriptDirectory.nl.resx">
+      <DependentUpon>frmOnlineScriptDirectory.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOnlineScriptSubmit.de.resx">
+      <DependentUpon>frmOnlineScriptSubmit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOnlineScriptSubmit.nl.resx">
+      <DependentUpon>frmOnlineScriptSubmit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPlugins.de.resx">
+      <DependentUpon>frmPlugins.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPrint-SidebarLayout.de.resx">
+      <DependentUpon>frmPrint-SidebarLayout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProjectionDialog.de.resx">
+      <DependentUpon>frmProjectionDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProjMismatch.de.resx">
+      <DependentUpon>frmProjMismatch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmScript.cs.resx">
+      <DependentUpon>frmScript.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmScript.de.resx">
+      <DependentUpon>frmScript.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmScript.el.resx">
+      <DependentUpon>frmScript.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmScript.ja-JP.resx">
+      <DependentUpon>frmScript.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmScript.nl.resx">
+      <DependentUpon>frmScript.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmScript.th.resx">
+      <DependentUpon>frmScript.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmScriptHelp.de.resx">
+      <DependentUpon>frmScriptHelp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmScriptHelp.nl.resx">
+      <DependentUpon>frmScriptHelp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSetScale.de.resx">
+      <DependentUpon>frmSetScale.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmWelcomeScreen.de.resx">
+      <DependentUpon>frmWelcomeScreen.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmYesNoToAll.nl.resx">
+      <DependentUpon>frmYesNoToAll.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PrjSetGrid.de.resx">
+      <DependentUpon>PrjSetGrid.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PrjSetGrid.nl.resx">
+      <DependentUpon>PrjSetGrid.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProjectSettings.de.resx">
+      <DependentUpon>ProjectSettings.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProjectSettings.nl.resx">
+      <DependentUpon>ProjectSettings.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\ColorPicker.de.resx">
+      <DependentUpon>ColorPicker.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\ColorPicker.nl.resx">
+      <DependentUpon>ColorPicker.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\ColorPicker.pt-BR.resx">
+      <DependentUpon>ColorPicker.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\ColorPicker.pt.resx">
+      <DependentUpon>ColorPicker.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\ColorPickerSingle.de.resx">
+      <DependentUpon>ColorPickerSingle.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\ColorPickerSingle.nl.resx">
+      <DependentUpon>ColorPickerSingle.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\ColorPickerSingle.pt-BR.resx">
+      <DependentUpon>ColorPickerSingle.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\ColorPickerSingle.pt.resx">
+      <DependentUpon>ColorPickerSingle.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\DynamicVisibilityControl.nl.resx">
+      <DependentUpon>DynamicVisibilityControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\frmSchemeAttributes.de.resx">
+      <DependentUpon>frmSchemeAttributes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\frmSchemeAttributes.nl.resx">
+      <DependentUpon>frmSchemeAttributes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\frmSchemeAttributes.pt-BR.resx">
+      <DependentUpon>frmSchemeAttributes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\frmSchemeAttributes.pt.resx">
+      <DependentUpon>frmSchemeAttributes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\GridColoringSchemeForm.de.resx">
+      <DependentUpon>GridColoringSchemeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\GridColoringSchemeForm.nl.resx">
+      <DependentUpon>GridColoringSchemeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\GridColoringSchemeForm.pt-BR.resx">
+      <DependentUpon>GridColoringSchemeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\GridColoringSchemeForm.pt.resx">
+      <DependentUpon>GridColoringSchemeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\LegendEditorForm.de.resx">
+      <DependentUpon>LegendEditorForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\LegendEditorForm.nl.resx">
+      <DependentUpon>LegendEditorForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\LegendEditorForm.pt-BR.resx">
+      <DependentUpon>LegendEditorForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\LegendEditorForm.pt.resx">
+      <DependentUpon>LegendEditorForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\LegendEditorResource.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\LegendEditorResource.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\PointImageSchemeForm.de.resx">
+      <DependentUpon>PointImageSchemeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\PointImageSchemeForm.nl.resx">
+      <DependentUpon>PointImageSchemeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\PointImageSchemeForm.pt-BR.resx">
+      <DependentUpon>PointImageSchemeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\PointImageSchemeForm.pt.resx">
+      <DependentUpon>PointImageSchemeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\PointImageSelect.de.resx">
+      <DependentUpon>PointImageSelect.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\PointImageSelect.nl.resx">
+      <DependentUpon>PointImageSelect.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\RampDialog.de.resx">
+      <DependentUpon>RampDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\RampDialog.nl.resx">
+      <DependentUpon>RampDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\RampDialog.pt-BR.resx">
+      <DependentUpon>RampDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\RampDialog.pt.resx">
+      <DependentUpon>RampDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\SFColoringSchemeForm.de.resx">
+      <DependentUpon>SFColoringSchemeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\SFColoringSchemeForm.nl.resx">
+      <DependentUpon>SFColoringSchemeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\SFColoringSchemeForm.pt-BR.resx">
+      <DependentUpon>SFColoringSchemeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\SFColoringSchemeForm.pt.resx">
+      <DependentUpon>SFColoringSchemeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MapWindow_new.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\ErrorDialog.ro.resx">
+      <DependentUpon>ErrorDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAbout.ro.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBookmarkedViewDelete.ro.resx">
+      <DependentUpon>frmBookmarkedViewDelete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmChooseDisplayUnits.ro.resx">
+      <DependentUpon>frmChooseDisplayUnits.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCustomProjection.ro.resx">
+      <DependentUpon>frmCustomProjection.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmErrorDialog-NoSend.ro.resx">
+      <DependentUpon>frmErrorDialog-NoSend.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmErrorDialogMoreInfo.ro.resx">
+      <DependentUpon>frmErrorDialogMoreInfo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmExport.ro.resx">
+      <DependentUpon>frmExport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFloatingToolbar.cs.resx">
+      <DependentUpon>frmFloatingToolbar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.ro.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOnlineScriptDirectory.ro.resx">
+      <DependentUpon>frmOnlineScriptDirectory.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOnlineScriptSubmit.ro.resx">
+      <DependentUpon>frmOnlineScriptSubmit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPlugins.ro.resx">
+      <DependentUpon>frmPlugins.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPrint-SidebarLayout.ro.resx">
+      <DependentUpon>frmPrint-SidebarLayout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProjectionDialog.ro.resx">
+      <DependentUpon>frmProjectionDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProjMismatch.ro.resx">
+      <DependentUpon>frmProjMismatch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmScript.ro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmScript.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmScriptHelp.ro.resx">
+      <DependentUpon>frmScriptHelp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSetScale.ro.resx">
+      <DependentUpon>frmSetScale.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmWelcomeScreen.ro.resx">
+      <DependentUpon>frmWelcomeScreen.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmYesNoToAll.ro.resx">
+      <DependentUpon>frmYesNoToAll.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProjectSettings.ro.resx">
+      <DependentUpon>ProjectSettings.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalResource.ro.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GlobalResource.ro.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\ColorPicker.ro.resx">
+      <DependentUpon>ColorPicker.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\ColorPickerSingle.ro.resx">
+      <DependentUpon>ColorPickerSingle.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\DynamicVisibilityControl.ro.resx">
+      <DependentUpon>DynamicVisibilityControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\FillStyleControl.cs.resx">
+      <DependentUpon>FillStyleControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\frmPaletteEditor.cs.resx">
+      <DependentUpon>frmPaletteEditor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\frmSchemeAttributes.ro.resx">
+      <DependentUpon>frmSchemeAttributes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\GridColoringSchemeForm.ro.resx">
+      <DependentUpon>GridColoringSchemeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\LegendEditorForm.ro.resx">
+      <DependentUpon>LegendEditorForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\LineStyleControl.cs.resx">
+      <DependentUpon>LineStyleControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\LineWidthControl.cs.resx">
+      <DependentUpon>LineWidthControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\PointImageSchemeForm.ro.resx">
+      <DependentUpon>PointImageSchemeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\PointImageSelect.ro.resx">
+      <DependentUpon>PointImageSelect.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\RampDialog.ro.resx">
+      <DependentUpon>RampDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\RangeBar.cs.resx">
+      <DependentUpon>RangeBar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\SFColoringSchemeForm.ro.resx">
+      <DependentUpon>SFColoringSchemeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\NorthArrow.gif" />
+    <EmbeddedResource Include="Resources\NorthArrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\about.png" />
+    <None Include="My Project\app.manifest" />
+    <None Include="Resources\add.png" />
+    <Content Include="Resources\AddColorBreak.ico" />
+    <Content Include="Resources\AppSetting.png" />
+    <Content Include="Resources\arrowdown.bmp" />
+    <Content Include="Resources\arrowup.bmp" />
+    <Content Include="Resources\bookmark_add.png" />
+    <Content Include="Resources\bookmark_delete.png" />
+    <Content Include="Resources\bookmark_view.png" />
+    <Content Include="Resources\Close.png" />
+    <None Include="Resources\collapse_all.png" />
+    <Content Include="Resources\ColorSchemeWizard.ico" />
+    <Content Include="Resources\Copy.png" />
+    <Content Include="Resources\copy_legend.png" />
+    <None Include="Resources\expand_all.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\down.png" />
+    <None Include="Resources\csv.ico" />
+    <Content Include="Resources\export.png" />
+    <Content Include="Resources\ExportColorScheme.ico" />
+    <Content Include="Resources\file_close.png" />
+    <Content Include="Resources\file_new.png" />
+    <Content Include="Resources\file_newgroup.png" />
+    <Content Include="Resources\file_open.png" />
+    <Content Include="Resources\file_saveas.png" />
+    <Content Include="Resources\file_update.png" />
+    <Content Include="Resources\folder.png" />
+    <Content Include="Resources\gridfill.ico" />
+    <Content Include="Resources\group_add.png" />
+    <Content Include="Resources\group_remove.png" />
+    <Content Include="Resources\help.png" />
+    <Content Include="Resources\History.png" />
+    <Content Include="Resources\i.ico" />
+    <Content Include="Resources\ico_help.ico" />
+    <Content Include="Resources\ImportColorScheme.ico" />
+    <Content Include="Resources\info.png" />
+    <Content Include="Resources\Keyboard.png" />
+    <Content Include="Resources\label_relabel.png" />
+    <Content Include="Resources\label_setup.png" />
+    <EmbeddedResource Include="Forms\ErrorDialog.lt.resx">
+      <DependentUpon>ErrorDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAbout.lt.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBookmarkedViewDelete.de.resx">
+      <DependentUpon>frmBookmarkedViewDelete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBookmarkedViewDelete.lt.resx">
+      <DependentUpon>frmBookmarkedViewDelete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBookmarkManager.de.resx">
+      <DependentUpon>frmBookmarkManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBookmarkManager.resx">
+      <DependentUpon>frmBookmarkManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBookmarksAddNew.resx">
+      <DependentUpon>frmBookmarksAddNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmChooseDisplayUnits.lt.resx">
+      <DependentUpon>frmChooseDisplayUnits.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCustomProjection.lt.resx">
+      <DependentUpon>frmCustomProjection.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmErrorDialog-NoSend.lt.resx">
+      <DependentUpon>frmErrorDialog-NoSend.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmErrorDialogMoreInfo.lt.resx">
+      <DependentUpon>frmErrorDialogMoreInfo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmExport.de.resx">
+      <DependentUpon>frmExport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmExport.lt.resx">
+      <DependentUpon>frmExport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLogo.resx">
+      <DependentUpon>frmLogo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.lt.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOnlineScriptDirectory.lt.resx">
+      <DependentUpon>frmOnlineScriptDirectory.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOnlineScriptSubmit.lt.resx">
+      <DependentUpon>frmOnlineScriptSubmit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPlugins.lt.resx">
+      <DependentUpon>frmPlugins.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPrint-SidebarLayout.lt.resx">
+      <DependentUpon>frmPrint-SidebarLayout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProjectionDialog.lt.resx">
+      <DependentUpon>frmProjectionDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProjMismatch.lt.resx">
+      <DependentUpon>frmProjMismatch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmScript.lt.resx">
+      <DependentUpon>frmScript.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmScriptHelp.lt.resx">
+      <DependentUpon>frmScriptHelp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSetScale.lt.resx">
+      <DependentUpon>frmSetScale.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmWelcomeScreen.lt.resx">
+      <DependentUpon>frmWelcomeScreen.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmYesNoToAll.de.resx">
+      <DependentUpon>frmYesNoToAll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmYesNoToAll.lt.resx">
+      <DependentUpon>frmYesNoToAll.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProjectSettings.lt.resx">
+      <DependentUpon>ProjectSettings.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalResource.lt.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GlobalResource.lt.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\ColorPicker.lt.resx">
+      <DependentUpon>ColorPicker.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\ColorPickerSingle.lt.resx">
+      <DependentUpon>ColorPickerSingle.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\DynamicVisibilityControl.lt.resx">
+      <DependentUpon>DynamicVisibilityControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\LegendEditorForm.lt.resx">
+      <DependentUpon>LegendEditorForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\LegendEditorResource.de.resx" />
+    <EmbeddedResource Include="Legend Editor\LegendEditorResource.lt.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\PointImageSchemeForm.lt.resx">
+      <DependentUpon>PointImageSchemeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\PointImageSelect.lt.resx">
+      <DependentUpon>PointImageSelect.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\RampDialog.lt.resx">
+      <DependentUpon>RampDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\SFColoringSchemeForm.lt.resx">
+      <DependentUpon>SFColoringSchemeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\SFFillStippleSchemeForm.lt.resx">
+      <DependentUpon>SFFillStippleSchemeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend Editor\SFFillStippleSchemeForm.resx">
+      <DependentUpon>SFFillStippleSchemeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\layer_add.ico" />
+    <Content Include="Resources\layer_add.png" />
+    <EmbeddedResource Include="Resources\layer_clear.ico" />
+    <Content Include="Resources\layer_clear.png" />
+    <EmbeddedResource Include="Resources\layer_remove.ico" />
+    <Content Include="Resources\layer_remove.png" />
+    <None Include="Resources\lightning.png" />
+    <Content Include="Resources\map.png" />
+    <Content Include="Resources\map_extents.png" />
+    <Content Include="Resources\map_preview.png" />
+    <Content Include="Resources\map_scale.png" />
+    <Content Include="Resources\measure_1.gif" />
+    <Content Include="Resources\measure_2.gif" />
+    <Content Include="Resources\metadata.png" />
+    <Content Include="Resources\mnuLayerAdd.png" />
+    <Content Include="Resources\mnuLayerClear.png" />
+    <Content Include="Resources\mnuLayerRemove.png" />
+    <Content Include="Resources\MSGBOX02.ICO" />
+    <Content Include="Resources\new.ico" />
+    <Content Include="Resources\NewPaper16.ico" />
+    <EmbeddedResource Include="Resources\NorthArrow.ico" />
+    <Content Include="Resources\OpenFolder.png" />
+    <Content Include="Resources\panels.png" />
+    <Content Include="Resources\play.ico" />
+    <Content Include="Resources\plugin.ico" />
+    <Content Include="Resources\plugin.png" />
+    <Content Include="Resources\plugin_disabled.png" />
+    <Content Include="Resources\plugin_edit.png" />
+    <Content Include="Resources\plugin_go.png" />
+    <Content Include="Resources\printer.png" />
+    <Content Include="Resources\properties.png" />
+    <Content Include="Resources\RemoveColorBreak.ico" />
+    <Content Include="Resources\save.ico" />
+    <Content Include="Resources\save.png" />
+    <Content Include="Resources\Save_shade_16.ico" />
+    <Content Include="Resources\scale_bar.png" />
+    <Content Include="Resources\scripts.png" />
+    <Content Include="Resources\script_code.png" />
+    <Content Include="Resources\select.png" />
+    <Content Include="Resources\settings.png" />
+    <Content Include="Resources\table.png" />
+    <Content Include="Resources\table_edit.png" />
+    <None Include="Resources\up.png" />
+    <Content Include="Resources\Update.png" />
+    <EmbeddedResource Include="Resources\zoom.ico" />
+    <Content Include="Resources\zoom.png" />
+    <Content Include="Resources\ZoomFullExtent.png" />
+    <Content Include="Resources\ZoomIn.png" />
+    <Content Include="Resources\ZoomOut.png" />
+    <EmbeddedResource Include="Resources\zoom_full_extent.ico" />
+    <EmbeddedResource Include="Resources\zoom_in.ico" />
+    <Content Include="Resources\zoom_in.png" />
+    <EmbeddedResource Include="Resources\zoom_next.ico" />
+    <Content Include="Resources\zoom_next.png" />
+    <EmbeddedResource Include="Resources\zoom_out.ico" />
+    <Content Include="Resources\zoom_out.png" />
+    <Content Include="Resources\zoom_preview.png" />
+    <EmbeddedResource Include="Resources\zoom_to_layer.ico" />
+    <Content Include="Resources\zoom_to_layer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

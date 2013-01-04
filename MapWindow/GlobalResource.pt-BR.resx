@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="mnuFile.Text" xml:space="preserve">
+    <value>Arquivo</value>
+  </data>
+  <data name="mnuNew.Text" xml:space="preserve">
+    <value>Novo</value>
+  </data>
+  <data name="mnuOpen.Text" xml:space="preserve">
+    <value>Abrir</value>
+  </data>
+  <data name="mnuSave.Text" xml:space="preserve">
+    <value>Salvar</value>
+  </data>
+  <data name="mnuSaveAs.Text" xml:space="preserve">
+    <value>Salvar Como</value>
+  </data>
+  <data name="mnuPrint.Text" xml:space="preserve">
+    <value>Imprimir</value>
+  </data>
+  <data name="mnuProjectSettings.Text" xml:space="preserve">
+    <value>Configurar Projeto</value>
+  </data>
+  <data name="mnuRecentProjects.Text" xml:space="preserve">
+    <value>Últimos Projetos</value>
+  </data>
+  <data name="mnuClose.Text" xml:space="preserve">
+    <value>Fechar</value>
+  </data>
+  <data name="mnuExit.Text" xml:space="preserve">
+    <value>Sair</value>
+  </data>
+  <data name="mnuEdit.Text" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="mnuCopyMap.Text" xml:space="preserve">
+    <value>Copiar Mapa</value>
+  </data>
+  <data name="mnuCopyLegend.Text" xml:space="preserve">
+    <value>Legenda</value>
+  </data>
+  <data name="mnuUpdatePreview.Text" xml:space="preserve">
+    <value>Atualizar Preview</value>
+  </data>
+  <data name="mnuClearPreview.Text" xml:space="preserve">
+    <value>Limpar Preview</value>
+  </data>
+  <data name="mnuView.Text" xml:space="preserve">
+    <value>Visualizar</value>
+  </data>
+  <data name="mnuAddLayer.Text" xml:space="preserve">
+    <value>Adicionar Camada</value>
+  </data>
+  <data name="mnuRemoveLayer.Text" xml:space="preserve">
+    <value>Remover Camada</value>
+  </data>
+  <data name="mnuClearLayer.Text" xml:space="preserve">
+    <value>Limpar Camada</value>
+  </data>
+  <data name="mnuZoomIn.Text" xml:space="preserve">
+    <value>Zoom Mais</value>
+  </data>
+  <data name="mnuZoomOut.Text" xml:space="preserve">
+    <value>Zoom Menos</value>
+  </data>
+  <data name="mnuZoomToFullExtents.Text" xml:space="preserve">
+    <value>Zoom todo</value>
+  </data>
+  <data name="mnuPreviousZoom.Text" xml:space="preserve">
+    <value>Zoom Anterior</value>
+  </data>
+  <data name="mnuNextZoom.Text" xml:space="preserve">
+    <value>Zoom Próximo</value>
+  </data>
+  <data name="mnuPlugins.Text" xml:space="preserve">
+    <value>Plugins</value>
+  </data>
+  <data name="mnuEditPlugins.Text" xml:space="preserve">
+    <value>Editar Plugins</value>
+  </data>
+  <data name="mnuHelp.Text" xml:space="preserve">
+    <value>Ajuda</value>
+  </data>
+  <data name="mnuContents.Text" xml:space="preserve">
+    <value>Conteúdo</value>
+  </data>
+  <data name="mnuWelcomeScreen.Text" xml:space="preserve">
+    <value>Tela Bem-vindo</value>
+  </data>
+  <data name="mnuAboutMapWindow.Text" xml:space="preserve">
+    <value>Sobre MapWindow</value>
+  </data>
+  <data name="mnuSaveNorthArrow.Text" xml:space="preserve">
+    <value>Flecha Norte</value>
+  </data>
+  <data name="mnuCopyNorthArrow.Text" xml:space="preserve">
+    <value>Flecha Norte</value>
+  </data>
+  <data name="mnuSaveScaleBar.Text" xml:space="preserve">
+    <value>Barra de Escala</value>
+  </data>
+  <data name="mnuCopyScaleBar.Text" xml:space="preserve">
+    <value>Barra de Escala</value>
+  </data>
+  <data name="mnuSaveGeorefMapImage.Text" xml:space="preserve">
+    <value>Mapa Geo-referenciado</value>
+  </data>
+  <data name="mnuExport.Text" xml:space="preserve">
+    <value>Exportar</value>
+  </data>
+  <data name="mnuSaveMapImage.Text" xml:space="preserve">
+    <value>Mapa</value>
+  </data>
+  <data name="mnuCopy.Text" xml:space="preserve">
+    <value>Copiar</value>
+  </data>
+  <data name="mnuPreview.Text" xml:space="preserve">
+    <value>Visualização do Mapa</value>
+  </data>
+  <data name="mnuCheckUpdates.Text" xml:space="preserve">
+    <value>Procurar Atualizações</value>
+  </data>
+  <data name="mnuOfflineDocs.Text" xml:space="preserve">
+    <value>Ajuda Offline</value>
+  </data>
+  <data name="mnuOnlineDocs.Text" xml:space="preserve">
+    <value>Ajuda Online</value>
+  </data>
+  <data name="mnuPanels.Text" xml:space="preserve">
+    <value>Mostrar Painéis</value>
+  </data>
+  <data name="mnuScript.Text" xml:space="preserve">
+    <value>Script</value>
+  </data>
+  <data name="mnuSetScale.Text" xml:space="preserve">
+    <value>Definir Escala</value>
+  </data>
+  <data name="mnuShortcuts.Text" xml:space="preserve">
+    <value>Atalhos</value>
+  </data>
+  <data name="mnuShowLegend.Text" xml:space="preserve">
+    <value>Mostrar Painel de Legenda</value>
+  </data>
+  <data name="mnuShowPreviewMap.Text" xml:space="preserve">
+    <value>Mostrar Painel de Preview</value>
+  </data>
+  <data name="mnuShowScaleBar.Text" xml:space="preserve">
+    <value>Mostrar Escala</value>
+  </data>
+  <data name="mnuUpdatePreviewCurr.Text" xml:space="preserve">
+    <value>Atualizar Preview Atual</value>
+  </data>
+  <data name="mnuUpdatePreviewFull.Text" xml:space="preserve">
+    <value>Atualizar Preview Completo</value>
+  </data>
+  <data name="mnuZoomToPreviewExtents.Text" xml:space="preserve">
+    <value>Zoom para Preview</value>
+  </data>
+  <data name="ToolStripMenuItem6.Text" xml:space="preserve">
+    <value>Zoom para Camada</value>
+  </data>
+  <data name="msgDataSubmitted.Text" xml:space="preserve">
+    <value>Thank you! The data has been submitted.</value>
+  </data>
+  <data name="msgNoConnection.Text" xml:space="preserve">
+    <value>You don't appear to have an active internet connection.
+
+Please check your internet connection and try again.</value>
+  </data>
+  <data name="msgOverwriteCurrentlyLoadedScript.Text" xml:space="preserve">
+    <value>The currently loaded script will be overwritten. Do you want to continue?</value>
+  </data>
+  <data name="msgBadUsernamePassword.Text" xml:space="preserve">
+    <value>The submission failed.
+ The username or password is invalid. Please double-check it.</value>
+  </data>
+  <data name="msgSubmittedSuccessfully.Text" xml:space="preserve">
+    <value>The submission succeeded. Thank you!</value>
+  </data>
+  <data name="msgGarbledServerResponse.Text" xml:space="preserve">
+    <value>The response from the server was not understood. Please try submitting again.</value>
+  </data>
+  <data name="msgIncomplete.Text" xml:space="preserve">
+    <value>All fields are required; please make sure to enter something in every field.</value>
+  </data>
+  <data name="PluginPropertyName.Text" xml:space="preserve">
+    <value>Name:  </value>
+  </data>
+  <data name="PluginPropertyVersion.Text" xml:space="preserve">
+    <value>Version:  </value>
+  </data>
+  <data name="PluginPropertyBuildDate.Text" xml:space="preserve">
+    <value>Datum: </value>
+  </data>
+  <data name="PluginPropertyAuthor.Text" xml:space="preserve">
+    <value>Author:  </value>
+  </data>
+  <data name="PluginPropertyDescription.Text" xml:space="preserve">
+    <value>Description:  </value>
+  </data>
+  <data name="UserDefined.Text" xml:space="preserve">
+    <value>User Defined</value>
+  </data>
+  <data name="CustomProjection.Text" xml:space="preserve">
+    <value>Projeção Personalizada</value>
+  </data>
+  <data name="WarningProjectionMismatch.Text" xml:space="preserve">
+    <value>Warning: Projection Mismatch</value>
+  </data>
+  <data name="msgReprojectedGridDoesNotExists.Text" xml:space="preserve">
+    <value>Error: The reprojected grid file doesn't exist! Check for an errorlog.txt. Aborting layer add.</value>
+  </data>
+  <data name="WarningNoProjectionOnLayer.Text" xml:space="preserve">
+    <value>Warning: No Projection on Layer</value>
+  </data>
+  <data name="msgScriptError.Text" xml:space="preserve">
+    <value>Script Error</value>
+  </data>
+  <data name="msgSaveCurrentScript.Text" xml:space="preserve">
+    <value>Do you wish to save your current script first?</value>
+  </data>
+  <data name="msgIgnoreScript.Text" xml:space="preserve">
+    <value>Warning: Ignoring the script name provided on the command line because it doesn't exist.</value>
+  </data>
+  <data name="msgScriptNotExists.Text" xml:space="preserve">
+    <value>Nonexistant Script Passed</value>
+  </data>
+  <data name="titleNoConnection.Text" xml:space="preserve">
+    <value>No Internet Connection</value>
+  </data>
+  <data name="msgFindTutorials.Text" xml:space="preserve">
+    <value>You don't appear to have an active internet connection. We have tutorials available at this URL:
+
+http://www.MapWindow.org/tutorials/</value>
+  </data>
+  <data name="msgFindDocumentation.Text" xml:space="preserve">
+    <value>You don't appear to have an active internet connection. Our documentation is available online at this URL:
+
+http://www.MapWindow.org/wiki/</value>
+  </data>
+  <data name="msgFileNotFound.Text" xml:space="preserve">
+    <value>Could not find {0}</value>
+  </data>
+  <data name="mnuZoomToLayer.Text" xml:space="preserve">
+    <value>Zoom para Camada</value>
+  </data>
+</root>

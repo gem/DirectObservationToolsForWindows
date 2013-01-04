@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BackgroundColor" xml:space="preserve">
+    <value>Barva pozadí</value>
+  </data>
+  <data name="BackgroundColor_UseDefault" xml:space="preserve">
+    <value>Použít výchozí barvu pozadí</value>
+  </data>
+  <data name="BackgroundColor_UseDefaultDescription" xml:space="preserve">
+    <value>Chcete-li pro tento projekt použít jinou barvu pozadí než výchozí, nastavte tuto možnost na "False"</value>
+  </data>
+  <data name="BackgroundColorDescription" xml:space="preserve">
+    <value>Barva pozadí mapy</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Kategorie</value>
+  </data>
+  <data name="CategoryDescription" xml:space="preserve">
+    <value>Hlavní kategorie souřadnicových systémů. Zvolte jako první.</value>
+  </data>
+  <data name="CoordinateDisplayCategory" xml:space="preserve">
+    <value>Zeměpisné souřadnice</value>
+  </data>
+  <data name="DataUnits" xml:space="preserve">
+    <value>Délkové jednotky mapy</value>
+  </data>
+  <data name="DataUnitsDescription" xml:space="preserve">
+    <value>Nastavení délkových jednotek použitých v souřadnicovém systému mapy.</value>
+  </data>
+  <data name="DisplayOptionsCategory" xml:space="preserve">
+    <value>Možnosti zobrazení</value>
+  </data>
+  <data name="FileFormatsCategory" xml:space="preserve">
+    <value>Formáty souborů</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>Skupina</value>
+  </data>
+  <data name="GroupDescription" xml:space="preserve">
+    <value>Podkategorie referenčního systému (projekce) pro tento projekt.</value>
+  </data>
+  <data name="MwConfigFileName" xml:space="preserve">
+    <value>Konfigurační soubor</value>
+  </data>
+  <data name="MwConfigFileNameDescription" xml:space="preserve">
+    <value>Název konfiguračního souboru použitého pro tento projekt. V konfiguračním souboru jsou uložena nastavení aplikace.</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Název</value>
+  </data>
+  <data name="NameDescription" xml:space="preserve">
+    <value>Název referenčního systému (projekce) pro tento projekt. </value>
+  </data>
+  <data name="ProjectBehaviorCategory" xml:space="preserve">
+    <value>Možnosti projektu</value>
+  </data>
+  <data name="ProjectProjectionCategory" xml:space="preserve">
+    <value>Referenční systém (projekce)</value>
+  </data>
+  <data name="SaveShapeSettings" xml:space="preserve">
+    <value>Barevné schéma a legenda vrstev</value>
+  </data>
+  <data name="SaveShapeSettingsDescription" xml:space="preserve">
+    <value>Uložit barevné schéma a legendu mapových vrstev v projektu, nebo ve speciálních souborech.</value>
+  </data>
+  <data name="ShowAdditionalUnits" xml:space="preserve">
+    <value>Doplňkové jednotky</value>
+  </data>
+  <data name="ShowAdditionalUnitsDescription" xml:space="preserve">
+    <value>Zobrazit souřadnice aktuální polohy myši v dolním panelu formuláře v doplňkových jednotkách.</value>
+  </data>
+  <data name="ShowDataUnits" xml:space="preserve">
+    <value>Zobrazit souřadnice (hlavní jednotky)</value>
+  </data>
+  <data name="ShowDataUnitsDescription" xml:space="preserve">
+    <value>Zobrazit souřadnice aktuální polohy myši v dolním panelu formuláře</value>
+  </data>
+  <data name="ShowProjectionMismatchWarnings" xml:space="preserve">
+    <value>Zobrazit varování o rozdílném referenčním systému?</value>
+  </data>
+  <data name="ShowProjectionMismatchWarningsDescription" xml:space="preserve">
+    <value>Zobrazí varování, pokud má přidávaná mapová vrstva (shapefile) jiný referenční systém (projekci) než je v nastavení projektu.</value>
+  </data>
+  <data name="StatusAlternateCoordsCommas" xml:space="preserve">
+    <value>Oddělovače tisíců (doplňkové jednotky)</value>
+  </data>
+  <data name="StatusAlternateCoordsCommasDescription" xml:space="preserve">
+    <value>Zobrazit oddělovače tisíců u doplňkových jednotek?</value>
+  </data>
+  <data name="StatusAlternateCoordsRounding" xml:space="preserve">
+    <value>Počet desetinných míst (doplňkové jednotky)</value>
+  </data>
+  <data name="StatusAlternateCoordsRoundingDescription" xml:space="preserve">
+    <value>Počet desetinných míst (doplňkové jednotky)</value>
+  </data>
+  <data name="StatusCoordsCommas" xml:space="preserve">
+    <value>Oddělovače tisíců (hlavní jednotky)</value>
+  </data>
+  <data name="StatusCoordsCommasDescription" xml:space="preserve">
+    <value>Zobrazit oddělovače tisíců?</value>
+  </data>
+  <data name="StatusCoordsRounding" xml:space="preserve">
+    <value>Počet desetinných míst (hlavní jednotky)</value>
+  </data>
+  <data name="StatusCoordsRoundingDescription" xml:space="preserve">
+    <value>Počet desetinných míst (hlavní jednotky)</value>
+  </data>
+  <data name="TransparentSelection" xml:space="preserve">
+    <value>Výběr objektů v mapě</value>
+  </data>
+  <data name="TransparentSelectionDescription" xml:space="preserve">
+    <value>Při výběru objektů v mapě označit objekty jako průhledné.</value>
+  </data>
+  <data name="UseSpecifyProjection" xml:space="preserve">
+    <value>Použít referenční systém projektu?</value>
+  </data>
+  <data name="UseSpecifyProjectionDescription" xml:space="preserve">
+    <value>Použít referenční systém (projekce) aktuálního projektu pro všechny přidávané mapové vrstvy.</value>
+  </data>
+</root>

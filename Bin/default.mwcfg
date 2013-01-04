@@ -1,0 +1,16 @@
+<Mapwin type="configurationfile" version="4.7.909">
+  <AppInfo Name="Global Earthquake Model - Direct Observation Tools [BETA]" Version="4.7.909" BuildDate="" Developer="MapWindow GIS Team" Comments="" HelpFilePath="help\MapWindow.chm" UseSplashScreen="" SplashTime="2" DefaultDir="..\bin" URL="http://www.MapWindow.org" ShowWelcomeScreen="True" WelcomePlugin="" NeverShowProjectionDialog="False" NoPromptToSendErrors="True" LogfilePath="" ShowDynVisWarnings="True" ShowLayerAfterDynVis="True">
+    <WindowIcon>
+      <Image Type="Icon">AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAANAAAAKwAAAFEAAABwAAAAhAAAAIsAAACEAAAAcAAAAFEAAAArAAAADgAAAAIAAAAAAAAAAAAAAAEAAAASAQELQgcFUKkKBm/jDAeA9w0Ihv4MB335CgZl6wYEPc0AAASfAAAAdwAAAD8AAAASAAAAAQAAAAAAAAANBQQ9WAoIiegLCZb/CwmU/wsIkv8LCJD/CwiN/wsIjP8LCIr/Cgd39AICHrwAAACCAAAAPgAAAA0AAAAEBQRTSAoInfQKCKH/DAug/xgXo/8tLKr/MC+q/wwKmf8JB5X/CQeS/wkHkP8IB4b6AgEbugAAAHYAAAAqAQEbFAcHo98ICK3/CAer/wwLq/8/Prz/srHk/2Nix/8aGav/FRSm/yIiqf8fHqX/BwaY/wYFgPMAAAOdAAAATwcJmW8FB7r/BQe4/wUHt/8FB6j/cXK6//////98fdf/MDG+/0JDwv+Rktr/VFXC/xESpv8FBp//AgNHzAAAAHAeIr7CLjLO/1RX1v9cYNj/DhPE/4eIsf//////kJLj/y0xyP+ChMz//////4OF2f9OUcb/T1LE/1pcrfFAQECWHyPF7YWH2//v8Pz/urzx/4WI5/+Zm9//VFaw/7K07/8gJc//gIKv/+vr+v+tr+r/rK7o//T0/P+cnt39KioqliYptP0wMoX/Njh//4OErf/y8vL/c3Xn/wsOm/+ztPH/enzo/7W28f8SFpv/nJyd/6OktP89P5z/IiWn/gAAAIc4O9TsMDPI/yAinf8iI2b/jI2d/ywvyP8HCaD/iovB//f3/v+ho/L/AAOf/xoccv8XGY3/AAOp/wAEs/gAAAByRUfmuURG6/85O93/IiOk/x0fs/8YG87/DhCr/1RVjP/i4uL/V1nu/wAD1P8AA8//AAPT/wAD1/8AAqviAAAAT05P6V1RUvH/Skvx/0BB8P80Nu//KSvu/xocvf8zNHj/mpqx/xkb2f8KDOj/AgTr/wAC6f8AAuX/AAF7pgAAACoAAAACWlv00VhZ9v9QUfX/Rkf1/zs99P8tL9v/HB6k/xwewP8bHd7/Fxnx/w8R8v8GCPH/AALY6AAAC0AAAAANAAAAAF5f8yViY/nrXl/6/1dY+v9OT/n/Rkf5/z4/+f82N/n/LzD4/yco+P8dHvj/EhPu9AQEY1oAAAASAAAAAQAAAAAAAAAAZGT2JGZm+9FkZP3/Xl79/1dX/f9PT/3/R0f9/z4+/f80NP3/Jyfr3xAQiEwAAAANAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAACZWX3XmJi+LheXvzqWVn//U9P++tDQ+/AMjLPcAUFGxMAAAAEAAAAAAAAAAAAAAAA4AMAAMABAACAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAIABAADAAwAA8A8AAA==</Image>
+    </WindowIcon>
+    <SplashPicture>
+      <Image Type="">
+      </Image>
+    </SplashPicture>
+  </AppInfo>
+  <RecentProjects />
+  <View LabelsUseProjectLevel="False" TransparentSelection="True" WindowWidth="567" WindowHeight="511" LocationX="132" LocationY="174" WindowState="0" ViewBackColor="16777215" CanUndockPreviewMap="False" CanUndockLegend="False" CanHidePreviewMap="False" CanHideLegend="False" ShowCustomizeContextMenuStrip="" CanPreviewMapDockLeft="False" CanLegendDockLeft="False" CanPreviewMapDockRight="False" CanLegendDockRight="False" LoadTIFFandIMGasgrid="LoadAsImage" LoadESRIAsGrid="LoadAsGrid" MouseWheelBehavior="WheelUpZoomsIn" />
+  <Plugins />
+  <ApplicationPlugins PluginDir="ApplicationPlugins" />
+  <ColorPalettes />
+</Mapwin>

@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="mnuProjectSettings.Text" xml:space="preserve">
+    <value>Nastavení</value>
+  </data>
+  <data name="mnuShowScaleBar.Text" xml:space="preserve">
+    <value>Zobrazit grafické měřítko</value>
+  </data>
+  <data name="mnuSetScale.Text" xml:space="preserve">
+    <value>Změnit měřítko mapy</value>
+  </data>
+  <data name="mnuRemoveGroup.Text" xml:space="preserve">
+    <value>Odebrat skupinu</value>
+  </data>
+  <data name="mnuZoomOut.Text" xml:space="preserve">
+    <value>Zmenšit</value>
+  </data>
+  <data name="mnuZoomToGroup.Text" xml:space="preserve">
+    <value>Zvětšit podle skupiny</value>
+  </data>
+  <data name="mnuZoomToPreviewExtents.Text" xml:space="preserve">
+    <value>Zvětšit podle přehledové mapy</value>
+  </data>
+  <data name="mnuCopyMap.Text" xml:space="preserve">
+    <value>Mapa</value>
+  </data>
+  <data name="mnuCopyScaleBar.Text" xml:space="preserve">
+    <value>Grafické měřítko</value>
+  </data>
+  <data name="mnuOpen.Text" xml:space="preserve">
+    <value>Otevřít projekt</value>
+  </data>
+  <data name="mnuOpenProjectIntoGroup.Text" xml:space="preserve">
+    <value>Přidat projekt jako novou skupinu</value>
+  </data>
+  <data name="mnuExit.Text" xml:space="preserve">
+    <value>Konec</value>
+  </data>
+  <data name="mnuRemoveLayer.Text" xml:space="preserve">
+    <value>Odstranit vrstvu</value>
+  </data>
+  <data name="mnuSaveGeorefMapImage.Text" xml:space="preserve">
+    <value>Georeferencovaná mapa</value>
+  </data>
+  <data name="mnuSaveAs.Text" xml:space="preserve">
+    <value>Uložit jako</value>
+  </data>
+  <data name="mnuWelcomeScreen.Text" xml:space="preserve">
+    <value>Úvodní obrazovka</value>
+  </data>
+  <data name="mnuBookmarkView.Text" xml:space="preserve">
+    <value>Přidat mapu do záložek</value>
+  </data>
+  <data name="mnuBookmarkDelete.Text" xml:space="preserve">
+    <value>Odstranit záložku</value>
+  </data>
+  <data name="mnuBookmarkedViews.Text" xml:space="preserve">
+    <value>Záložky</value>
+  </data>
+  <data name="mnuSaveNorthArrow.Text" xml:space="preserve">
+    <value>Směrová růžice</value>
+  </data>
+  <data name="mnuRecentProjects.Text" xml:space="preserve">
+    <value>Poslední projekty</value>
+  </data>
+  <data name="mnuOnlineDocs.Text" xml:space="preserve">
+    <value>Nápověda MapWindow (Online)</value>
+  </data>
+  <data name="mnuSave.Text" xml:space="preserve">
+    <value>Uložit</value>
+  </data>
+  <data name="mnuView.Text" xml:space="preserve">
+    <value>Zobrazit</value>
+  </data>
+  <data name="mnuClearSelectedShapes.Text" xml:space="preserve">
+    <value>Zrušit výběr</value>
+  </data>
+  <data name="mnuPrint.Text" xml:space="preserve">
+    <value>Tisk</value>
+  </data>
+  <data name="mnuZoomToFullExtents.Text" xml:space="preserve">
+    <value>Zobrazit maximální rozsah</value>
+  </data>
+  <data name="mnuHelp.Text" xml:space="preserve">
+    <value>Nápověda</value>
+  </data>
+  <data name="mnuCopy.Text" xml:space="preserve">
+    <value>Kopírovat</value>
+  </data>
+  <data name="mnuOfflineDocs.Text" xml:space="preserve">
+    <value>Nápověda MapWindow (Offline)</value>
+  </data>
+  <data name="mnuShortcuts.Text" xml:space="preserve">
+    <value>Klávesové zkratky</value>
+  </data>
+  <data name="mnuZoomIn.Text" xml:space="preserve">
+    <value>Zvětšit</value>
+  </data>
+  <data name="mnuUpdatePreviewFull.Text" xml:space="preserve">
+    <value>Překreslit podle celé mapy</value>
+  </data>
+  <data name="mnuUpdatePreviewCurr.Text" xml:space="preserve">
+    <value>Překreslit podle výřezu mapy</value>
+  </data>
+  <data name="mnuPlugins.Text" xml:space="preserve">
+    <value>Zásuvné moduly</value>
+  </data>
+  <data name="mnuFile.Text" xml:space="preserve">
+    <value>Soubor</value>
+  </data>
+  <data name="mnuCopyNorthArrow.Text" xml:space="preserve">
+    <value>Směrová růžice</value>
+  </data>
+  <data name="mnuCopyLegend.Text" xml:space="preserve">
+    <value>Legenda</value>
+  </data>
+  <data name="mnuSaveLegend.Text" xml:space="preserve">
+    <value>Legenda</value>
+  </data>
+  <data name="mnuClearPreview.Text" xml:space="preserve">
+    <value>Vyčistit</value>
+  </data>
+  <data name="mnuNextZoom.Text" xml:space="preserve">
+    <value>Následující</value>
+  </data>
+  <data name="mnuAboutMapWindow.Text" xml:space="preserve">
+    <value>O programu</value>
+  </data>
+  <data name="mnuEditPlugins.Text" xml:space="preserve">
+    <value>Správce zásuvných modulů</value>
+  </data>
+  <data name="mnuNew.Text" xml:space="preserve">
+    <value>Nový</value>
+  </data>
+  <data name="mnuScript.Text" xml:space="preserve">
+    <value>Skripty..</value>
+  </data>
+  <data name="mnuExport.Text" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="mnuClose.Text" xml:space="preserve">
+    <value>Zavřít</value>
+  </data>
+  <data name="mnuAddLayer.Text" xml:space="preserve">
+    <value>Přidat vrstvu</value>
+  </data>
+  <data name="mnuEdit.Text" xml:space="preserve">
+    <value>Úpravy</value>
+  </data>
+  <data name="mnuClearLayer.Text" xml:space="preserve">
+    <value>Odstranit vrstvy</value>
+  </data>
+  <data name="mnuPreview.Text" xml:space="preserve">
+    <value>Náhled mapy</value>
+  </data>
+  <data name="mnuSaveMapImage.Text" xml:space="preserve">
+    <value>Mapa</value>
+  </data>
+  <data name="mnuPreviousZoom.Text" xml:space="preserve">
+    <value>Předchozí zvětšení</value>
+  </data>
+  <data name="mnuSaveScaleBar.Text" xml:space="preserve">
+    <value>Grafické měřítko</value>
+  </data>
+  <data name="mnuContents.Text" xml:space="preserve">
+    <value>Obsah</value>
+  </data>
+  <data name="mnuCheckUpdates.Text" xml:space="preserve">
+    <value>Zkontrolovat dostupné aktualizace</value>
+  </data>
+  <data name="mnuPanels.Text" xml:space="preserve">
+    <value>Panel</value>
+  </data>
+  <data name="mnuShowLegend.Text" xml:space="preserve">
+    <value>Zobrazit legendu</value>
+  </data>
+  <data name="mnuShowPreviewMap.Text" xml:space="preserve">
+    <value>Zobrazit  přehledovou mapu</value>
+  </data>
+  <data name="sbContextMenu_ChangeUnits.Text" xml:space="preserve">
+    <value>Změnit délkové jednotky</value>
+  </data>
+  <data name="sbContextMenu_UpperLeft.Text" xml:space="preserve">
+    <value>Umístit vlevo nahoře</value>
+  </data>
+  <data name="sbContextMenu_UpperRight.Text" xml:space="preserve">
+    <value>Umístit vpravo nahoře</value>
+  </data>
+  <data name="sbContextMenu_LowerLeft.Text" xml:space="preserve">
+    <value>Umístit vlevo dole</value>
+  </data>
+  <data name="sbContextMenu_LowerRight.Text" xml:space="preserve">
+    <value>Umístit vpravo dole</value>
+  </data>
+  <data name="sbContextMenu_ChooseForecolor.Text" xml:space="preserve">
+    <value>Vyber barvu písma</value>
+  </data>
+  <data name="sbContextMenu_ChooseBackcolor.Text" xml:space="preserve">
+    <value>Vyber barvu pozadí</value>
+  </data>
+  <data name="msgErrorSavingImage.Text" xml:space="preserve">
+    <value>Při ukládání obrázku došlo k chybě</value>
+  </data>
+  <data name="msgClearLayers.Text" xml:space="preserve">
+    <value>Opravdu chcete odstranit všechny vrstvy?</value>
+  </data>
+  <data name="msgRemoveGroup.Text" xml:space="preserve">
+    <value>Opravdu si přejete odstranit vybranou skupinu a všechny její vrstvy?</value>
+  </data>
+  <data name="msgLegendLayerDoubleClick.Text" xml:space="preserve">
+    <value>Pro tuto vrstvu nelze nastavit žádné vlastnosti</value>
+  </data>
+  <data name="msgError.Text" xml:space="preserve">
+    <value>Chyba</value>
+  </data>
+  <data name="msgSaveProject1.Text" xml:space="preserve">
+    <value>Chcete uložit změny v</value>
+  </data>
+  <data name="msgSaveProject2.Text" xml:space="preserve">
+    <value>tomto projektu?</value>
+  </data>
+  <data name="msgHandleShortcutKeys.Text" xml:space="preserve">
+    <value>Opravdu si přejete odstranit vybranou vrstvu?</value>
+  </data>
+  <data name="msgUpdateToolNotFound.Text" xml:space="preserve">
+    <value>Nepodařilo se najít nástroj pro automatické aktualizace. Dostupné aktualizace můžete zkontrolovat ručně. 
+	Přejete si nyní otevřít stránku s aktualizacemi MapWindow?</value>
+  </data>
+  <data name="msgAreaDrawnPolygon.Text" xml:space="preserve">
+    <value>Plocha: </value>
+  </data>
+  <data name="msgPanelAreaClick.Text" xml:space="preserve">
+    <value>Pro nové měření stiskněte pravé tlačítko myši.</value>
+  </data>
+  <data name="msgPanelArea.Text" xml:space="preserve">
+    <value>Plocha: </value>
+  </data>
+  <data name="msgPanelDistance.Text" xml:space="preserve">
+    <value>Vzdálenost:</value>
+  </data>
+  <data name="msgClickNextPoint.Text" xml:space="preserve">
+    <value>Klikněte na další bod.</value>
+  </data>
+  <data name="msgDistanceStartOver.Text" xml:space="preserve">
+    <value> Klikněte na další bod. Pro nové měření stiskněte pravé tlačítko myši.</value>
+  </data>
+  <data name="msgShortcutsTitle.Text" xml:space="preserve">
+    <value>Můžete použít následující klávesové zkratky:</value>
+  </data>
+  <data name="msgShortcutsDel.Text" xml:space="preserve">
+    <value>Del - Odstranit vybranou vrstvu.</value>
+  </data>
+  <data name="msgShortcutsIns.Text" xml:space="preserve">
+    <value>Ins - Přidat mapovou vrstvu.</value>
+  </data>
+  <data name="msgShortcutsCtrlS.Text" xml:space="preserve">
+    <value>Ctrl-S - Uložit projekt.</value>
+  </data>
+  <data name="msgShortcutsCtrlO.Text" xml:space="preserve">
+    <value>Ctrl-O - Otevřít projekt.</value>
+  </data>
+  <data name="msgShortcutsCtrlC.Text" xml:space="preserve">
+    <value>Ctrl-C - Kopírovat mapový výřez do schránky.</value>
+  </data>
+  <data name="msgShortcutsCtrlP.Text" xml:space="preserve">
+    <value>Ctrl-P - Otevřít náhled tisku</value>
+  </data>
+  <data name="msgShortcutsCtrlF4.Text" xml:space="preserve">
+    <value>Ctrl-F4 - Zavřít projekt.</value>
+  </data>
+  <data name="msgShortcutsHome.Text" xml:space="preserve">
+    <value>Home - Zobrazit mapu v maximálním rozsahu</value>
+  </data>
+  <data name="msgShortcutsCtrlHome.Text" xml:space="preserve">
+    <value>Ctrl-Home - Zvětšit podle vybrané vrstvy</value>
+  </data>
+  <data name="msgShortcutsPlus.Text" xml:space="preserve">
+    <value>Plus - Zvětšit (25% mapového výřezu)</value>
+  </data>
+  <data name="msgShortcutsMinus.Text" xml:space="preserve">
+    <value>Minus - Zmenšit (25% mapového výřezu)</value>
+  </data>
+  <data name="msgShortcutsPageUp.Text" xml:space="preserve">
+    <value>Page-Up - Posunout nahoru (50% výřezu)</value>
+  </data>
+  <data name="msgShortcutsPageDown.Text" xml:space="preserve">
+    <value>Page-Down - Posunout dolu (50% výřezu)</value>
+  </data>
+  <data name="msgShortcutsArrowUp.Text" xml:space="preserve">
+    <value>Šipka nahoru - Posunout nahoru (25% výřezu)</value>
+  </data>
+  <data name="msgShortcutsCtrlSpace.Text" xml:space="preserve">
+    <value>Ctrl-mezera: Vypnout / zapnout viditelnost vrstvy</value>
+  </data>
+  <data name="msgShortcutsCtrlArrows.Text" xml:space="preserve">
+    <value>Ctrl-Šipka nahoru, Ctrl-Šipka dolu: Změnit výběr vrstvy v legendě</value>
+  </data>
+  <data name="msgShortcutsArrowDown.Text" xml:space="preserve">
+    <value>Šipka dolu - Posunout dolu (25% výřezu)</value>
+  </data>
+  <data name="msgShortcutsArrowLeft.Text" xml:space="preserve">
+    <value>Šipka vlevo - Posunout doleva (25% výřezu)</value>
+  </data>
+  <data name="msgShortcutsArrowRight.Text" xml:space="preserve">
+    <value>Šipka vpravo - Posunout doprava (25% výřezu)</value>
+  </data>
+  <data name="msgHelpfileDoesNotExist.Text" xml:space="preserve">
+    <value>Soubor s nápovědou neexistuje.</value>
+  </data>
+  <data name="msgShortcutsCtrlEnter.Text" xml:space="preserve">
+    <value>Ctrl-Enter - Vlastnosti mapové vrstvy</value>
+  </data>
+  <data name="titleClearLayers.Text" xml:space="preserve">
+    <value>Potvrdit odstranění všech vrstev</value>
+  </data>
+  <data name="titleRemoveGroup.Text" xml:space="preserve">
+    <value>Odstranit skupinu vrstev?</value>
+  </data>
+  <data name="titleErrorSavingImage.Text" xml:space="preserve">
+    <value>Chyba při ukládání obrázku</value>
+  </data>
+  <data name="LegendName.Text" xml:space="preserve">
+    <value>Legenda</value>
+  </data>
+  <data name="ToolStripMenuItem6.Text" xml:space="preserve">
+    <value>Zvětšit podle vrstvy</value>
+  </data>
+  <data name="msgDataSubmitted.Text" xml:space="preserve">
+    <value>Děkujeme! Data byla odeslána</value>
+  </data>
+  <data name="msgNoConnection.Text" xml:space="preserve">
+    <value>Nepodařilo se připojit k Internetu.</value>
+  </data>
+  <data name="msgOverwriteCurrentlyLoadedScript.Text" xml:space="preserve">
+    <value>Poslední skript bude přepsán. Pokračovat?</value>
+  </data>
+  <data name="msgBadUsernamePassword.Text" xml:space="preserve">
+    <value>Odeslání se nezdařilo. 
+ Zadali jste chybné uživatelské jméno nebo heslo.</value>
+  </data>
+  <data name="msgSubmittedSuccessfully.Text" xml:space="preserve">
+    <value>Odeslání proběhlo úspěšně. Děkujeme!</value>
+  </data>
+  <data name="msgGarbledServerResponse.Text" xml:space="preserve">
+    <value>Nepodařilo se kontaktovat server. Zkuste prosím odeslat skript znovu.</value>
+  </data>
+  <data name="msgIncomplete.Text" xml:space="preserve">
+    <value>Vyplňte prosím všechna pole.</value>
+  </data>
+  <data name="PluginPropertyName.Text" xml:space="preserve">
+    <value>Název:  </value>
+  </data>
+  <data name="PluginPropertyVersion.Text" xml:space="preserve">
+    <value>Verze:  </value>
+  </data>
+  <data name="PluginPropertyBuildDate.Text" xml:space="preserve">
+    <value>Datum: </value>
+  </data>
+  <data name="PluginPropertyAuthor.Text" xml:space="preserve">
+    <value>Autor:  </value>
+  </data>
+  <data name="PluginPropertyDescription.Text" xml:space="preserve">
+    <value>Popis:  </value>
+  </data>
+  <data name="UserDefined.Text" xml:space="preserve">
+    <value>Uživatelsky definované</value>
+  </data>
+  <data name="CustomProjection.Text" xml:space="preserve">
+    <value>Vlastní projekce</value>
+  </data>
+  <data name="WarningProjectionMismatch.Text" xml:space="preserve">
+    <value>Varování: Rozdílné mapové projekce</value>
+  </data>
+  <data name="msgFileName.Text" xml:space="preserve">
+    <value>Název souboru: </value>
+  </data>
+  <data name="msgProjection.Text" xml:space="preserve">
+    <value>Projekce: </value>
+  </data>
+  <data name="msgProjectProjection.Text" xml:space="preserve">
+    <value>Projekce projektu: </value>
+  </data>
+  <data name="msgNewLayerProjection.Text" xml:space="preserve">
+    <value>Projekce nové vrstvy: </value>
+  </data>
+  <data name="msgCustomProjection.Text" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="msgReprojectedGridDoesNotExists.Text" xml:space="preserve">
+    <value>Chyba: Reprojekce gridu se nezdařila! Zkontrolujte prosím soubor errorlog.txt. Vrstvu nelze přidat.</value>
+  </data>
+  <data name="WarningNoProjectionOnLayer.Text" xml:space="preserve">
+    <value>Varování: Nejsou nastaveny informace o mapové projekci</value>
+  </data>
+  <data name="msgScriptError.Text" xml:space="preserve">
+    <value>Chyba ve skriptu</value>
+  </data>
+  <data name="msgSaveCurrentScript.Text" xml:space="preserve">
+    <value>Chcete nejprve uložit změny ve Vašem skriptu?</value>
+  </data>
+  <data name="msgIgnoreScript.Text" xml:space="preserve">
+    <value>Varování: Ignoring the script name provided on the command line because it doesn't exist.</value>
+  </data>
+  <data name="msgScriptNotExists.Text" xml:space="preserve">
+    <value>Skript neexistuje</value>
+  </data>
+  <data name="titleNoConnection.Text" xml:space="preserve">
+    <value>Internetové připojení</value>
+  </data>
+  <data name="msgFindTutorials.Text" xml:space="preserve">
+    <value>Pravděpodobně nemáte zapnuté připojení k internetu. Uživatelské příručky můžete získat na stránkách:
+
+http://www.MapWindow.org/tutorials/</value>
+  </data>
+  <data name="msgFindDocumentation.Text" xml:space="preserve">
+    <value>Pravděpodobně nemáte zapnuté připojení k internetu. Dokumentaci můžete získat na stránkách:
+
+http://www.MapWindow.org/wiki/</value>
+  </data>
+  <data name="msgFileNotFound.Text" xml:space="preserve">
+    <value>Nepodařilo se najít {0}</value>
+  </data>
+  <data name="mnuZoomToLayer.Text" xml:space="preserve">
+    <value>Zvětšit podle vrstvy</value>
+  </data>
+</root>

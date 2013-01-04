@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="mnuFile.Text" xml:space="preserve">
+    <value>文件</value>
+  </data>
+  <data name="mnuNew.Text" xml:space="preserve">
+    <value>新建</value>
+  </data>
+  <data name="mnuOpen.Text" xml:space="preserve">
+    <value>打开</value>
+  </data>
+  <data name="mnuSave.Text" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="mnuSaveAs.Text" xml:space="preserve">
+    <value>另存为</value>
+  </data>
+  <data name="mnuPrint.Text" xml:space="preserve">
+    <value>打印</value>
+  </data>
+  <data name="mnuProjectSettings.Text" xml:space="preserve">
+    <value>项目设置</value>
+  </data>
+  <data name="mnuRecentProjects.Text" xml:space="preserve">
+    <value>近期项目</value>
+  </data>
+  <data name="mnuClose.Text" xml:space="preserve">
+    <value>关闭项目</value>
+  </data>
+  <data name="mnuExit.Text" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="mnuEdit.Text" xml:space="preserve">
+    <value>编辑</value>
+  </data>
+  <data name="mnuCopyMap.Text" xml:space="preserve">
+    <value>地图</value>
+  </data>
+  <data name="mnuCopyLegend.Text" xml:space="preserve">
+    <value>图符</value>
+  </data>
+  <data name="mnuUpdatePreview.Text" xml:space="preserve">
+    <value>更新预览</value>
+  </data>
+  <data name="mnuClearPreview.Text" xml:space="preserve">
+    <value>清除预览</value>
+  </data>
+  <data name="mnuView.Text" xml:space="preserve">
+    <value>视图</value>
+  </data>
+  <data name="mnuAddLayer.Text" xml:space="preserve">
+    <value>添加图层</value>
+  </data>
+  <data name="mnuRemoveLayer.Text" xml:space="preserve">
+    <value>删除图层</value>
+  </data>
+  <data name="mnuClearLayer.Text" xml:space="preserve">
+    <value>清除所有图层</value>
+  </data>
+  <data name="mnuZoomIn.Text" xml:space="preserve">
+    <value>放大</value>
+  </data>
+  <data name="mnuZoomOut.Text" xml:space="preserve">
+    <value>缩小</value>
+  </data>
+  <data name="mnuZoomToFullExtents.Text" xml:space="preserve">
+    <value>缩放至全屏</value>
+  </data>
+  <data name="mnuPreviousZoom.Text" xml:space="preserve">
+    <value>前次缩放</value>
+  </data>
+  <data name="mnuNextZoom.Text" xml:space="preserve">
+    <value>后次缩放</value>
+  </data>
+  <data name="mnuPlugins.Text" xml:space="preserve">
+    <value>插件</value>
+  </data>
+  <data name="mnuEditPlugins.Text" xml:space="preserve">
+    <value>编辑插件</value>
+  </data>
+  <data name="mnuHelp.Text" xml:space="preserve">
+    <value>帮助</value>
+  </data>
+  <data name="mnuContents.Text" xml:space="preserve">
+    <value>帮助内容</value>
+  </data>
+  <data name="mnuWelcomeScreen.Text" xml:space="preserve">
+    <value>欢迎界面</value>
+  </data>
+  <data name="mnuAboutMapWindow.Text" xml:space="preserve">
+    <value>关于...</value>
+  </data>
+  <data name="mnuRemoveGroup.Text" xml:space="preserve">
+    <value>删除组</value>
+  </data>
+  <data name="mnuZoomToGroup.Text" xml:space="preserve">
+    <value>缩放至组</value>
+  </data>
+  <data name="mnuSaveMapImage.Text" xml:space="preserve">
+    <value>地图</value>
+  </data>
+  <data name="mnuSaveGeorefMapImage.Text" xml:space="preserve">
+    <value>地理引用的地图</value>
+  </data>
+  <data name="mnuSaveNorthArrow.Text" xml:space="preserve">
+    <value>方向针</value>
+  </data>
+  <data name="mnuSaveScaleBar.Text" xml:space="preserve">
+    <value>范围条</value>
+  </data>
+  <data name="mnuCopyScaleBar.Text" xml:space="preserve">
+    <value>范围条</value>
+  </data>
+  <data name="mnuCopyNorthArrow.Text" xml:space="preserve">
+    <value>方向针</value>
+  </data>
+  <data name="msgSaveProject1.Text" xml:space="preserve">
+    <value>Do you want to save the changes to </value>
+  </data>
+  <data name="msgSaveProject2.Text" xml:space="preserve">
+    <value>本项目?</value>
+  </data>
+  <data name="msgClearLayers.Text" xml:space="preserve">
+    <value>你确定要删除所有图层吗?</value>
+  </data>
+  <data name="titleClearLayers.Text" xml:space="preserve">
+    <value>确认删除所有图层</value>
+  </data>
+  <data name="msgErrorSavingImage.Text" xml:space="preserve">
+    <value>保存为图层时发生错误</value>
+  </data>
+  <data name="msgRemoveGroup.Text" xml:space="preserve">
+    <value>你确定要删除选定组的所有图层吗?</value>
+  </data>
+  <data name="titleRemoveGroup.Text" xml:space="preserve">
+    <value>删除组?</value>
+  </data>
+  <data name="msgLegendLayerDoubleClick.Text" xml:space="preserve">
+    <value>该图层类型没有属性选项.</value>
+  </data>
+  <data name="msgError.Text" xml:space="preserve">
+    <value>错误</value>
+  </data>
+  <data name="msgLegend_LayerVisibleChanged.Text" xml:space="preserve">
+    <value>该图层使用动态可视性.设定该属性会失去动态可视性.  你想要关闭该特性吗? (备注: 你可以使用图幅编辑器来恢复动态可实行.)</value>
+  </data>
+  <data name="mnuCopy.Text" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="mnuExport.Text" xml:space="preserve">
+    <value>输出</value>
+  </data>
+  <data name="mnuPreview.Text" xml:space="preserve">
+    <value>预览地图</value>
+  </data>
+  <data name="ToolStripMenuItem6.Text" xml:space="preserve">
+    <value>缩放到图层</value>
+  </data>
+  <data name="mnuZoomToLayer.Text" xml:space="preserve">
+    <value>缩放到图层</value>
+  </data>
+</root>

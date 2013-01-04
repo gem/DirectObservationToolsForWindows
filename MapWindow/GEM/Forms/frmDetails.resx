@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="GEMOBJECTBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>136, 17</value>
+  </metadata>
+  <metadata name="GEMDataset.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="DICMATERIALTYPEBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>530, 17</value>
+  </metadata>
+  <metadata name="DICMATERIALTECHNOLOGYBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>676, 134</value>
+  </metadata>
+  <metadata name="DICMASONARYMORTARTYPEBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>306, 173</value>
+  </metadata>
+  <metadata name="DICMASONRYREINFORCEMENTBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 212</value>
+  </metadata>
+  <metadata name="DICSTEELCONNECTIONTYPEBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>630, 212</value>
+  </metadata>
+  <metadata name="DICSTRUCTURALIRREGULARITYBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>312, 251</value>
+  </metadata>
+  <metadata name="DICSTRUCTURALHORIZIRREGBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 290</value>
+  </metadata>
+  <metadata name="DICSTRUCTURALVERTIRREGBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>609, 290</value>
+  </metadata>
+  <metadata name="DICSTEELCONNECTIONTYPEBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>627, 368</value>
+  </metadata>
+  <metadata name="DICMASONRYREINFORCEMENTBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>316, 368</value>
+  </metadata>
+  <metadata name="DICMASONARYMORTARTYPEBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 368</value>
+  </metadata>
+  <metadata name="DICMATERIALTECHNOLOGYBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>549, 329</value>
+  </metadata>
+  <metadata name="DICMATERIALTYPEBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>310, 329</value>
+  </metadata>
+  <metadata name="DICSTRUCTURALVERTIRREGBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>315, 407</value>
+  </metadata>
+  <metadata name="DICSTRUCTURALHORIZIRREGBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 407</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <metadata name="DICNONSTRUCTURALEXTERIORWALLSBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>293, 641</value>
+  </metadata>
+  <metadata name="DICFOUNDATIONSYSTEMBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>699, 602</value>
+  </metadata>
+  <metadata name="DICFLOORTYPEBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>266, 602</value>
+  </metadata>
+  <metadata name="DICFLOORMATERIALBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>531, 563</value>
+  </metadata>
+  <metadata name="DICROOFSHAPEBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 485</value>
+  </metadata>
+  <metadata name="DICROOFSYSTEMTYPEBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 563</value>
+  </metadata>
+  <metadata name="DICROOFSYSTEMMATERIALBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>303, 524</value>
+  </metadata>
+  <metadata name="DICROOFCOVERMATERIALBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>459, 485</value>
+  </metadata>
+  <metadata name="DICLLRSDUCTILITYBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>669, 446</value>
+  </metadata>
+  <metadata name="DICLLRSBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 446</value>
+  </metadata>
+  <metadata name="DICLLRSDUCTILITYBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>199, 446</value>
+  </metadata>
+  <metadata name="DICLLRSBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>605, 407</value>
+  </metadata>
+  <metadata name="DICOCCUPANCYDETAILBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>697, 56</value>
+  </metadata>
+  <metadata name="DICOCCUPANCYBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>254, 56</value>
+  </metadata>
+  <metadata name="DICPLANSHAPEBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>727, 719</value>
+  </metadata>
+  <metadata name="DICPOSITIONBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 719</value>
+  </metadata>
+  <metadata name="DICHEIGHTQUALIFIERBindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 836</value>
+  </metadata>
+  <metadata name="DICHEIGHTQUALIFIERBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>721, 797</value>
+  </metadata>
+  <metadata name="DICHEIGHTQUALIFIERBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>217, 797</value>
+  </metadata>
+  <metadata name="DICYEARBUILTQUALBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>369, 680</value>
+  </metadata>
+  <metadata name="CONSEQUENCESBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>235, 134</value>
+  </metadata>
+  <metadata name="DICDAMAGEBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>659, 758</value>
+  </metadata>
+  <metadata name="GEDBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>425, 719</value>
+  </metadata>
+  <metadata name="DICCURRENCYBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>238, 758</value>
+  </metadata>
+  <metadata name="DICMEDIATYPEBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>694, 95</value>
+  </metadata>
+  <metadata name="MEDIADETAILBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>282, 95</value>
+  </metadata>
+  <metadata name="GEM_OBJECTTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>333, 17</value>
+  </metadata>
+  <metadata name="DIC_MATERIAL_TYPETableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
+  </metadata>
+  <metadata name="DIC_OCCUPANCYTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>476, 56</value>
+  </metadata>
+  <metadata name="DIC_OCCUPANCY_DETAILTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 95</value>
+  </metadata>
+  <metadata name="MEDIA_DETAILTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>488, 95</value>
+  </metadata>
+  <metadata name="DIC_MEDIA_TYPETableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 134</value>
+  </metadata>
+  <metadata name="CONSEQUENCESTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>458, 134</value>
+  </metadata>
+  <metadata name="DIC_MATERIAL_TECHNOLOGYTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 173</value>
+  </metadata>
+  <metadata name="DIC_MASONARY_MORTAR_TYPETableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>599, 173</value>
+  </metadata>
+  <metadata name="DIC_MASONRY_REINFORCEMENTTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>321, 212</value>
+  </metadata>
+  <metadata name="DIC_STEEL_CONNECTION_TYPETableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 251</value>
+  </metadata>
+  <metadata name="DIC_STRUCTURAL_IRREGULARITYTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>614, 251</value>
+  </metadata>
+  <metadata name="DIC_STRUCTURAL_HORIZ_IRREGTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>308, 290</value>
+  </metadata>
+  <metadata name="DIC_STRUCTURAL_VERT_IRREGTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 329</value>
+  </metadata>
+  <metadata name="DIC_LLRSTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>781, 407</value>
+  </metadata>
+  <metadata name="DIC_LLRS_DUCTILITYTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>432, 446</value>
+  </metadata>
+  <metadata name="DIC_ROOF_SHAPETableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>236, 485</value>
+  </metadata>
+  <metadata name="DIC_ROOF_COVER_MATERIALTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 524</value>
+  </metadata>
+  <metadata name="DIC_ROOF_SYSTEM_MATERIALTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>585, 524</value>
+  </metadata>
+  <metadata name="DIC_ROOF_SYSTEM_TYPETableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>269, 563</value>
+  </metadata>
+  <metadata name="DIC_FLOOR_MATERIALTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 602</value>
+  </metadata>
+  <metadata name="DIC_FLOOR_TYPETableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>480, 602</value>
+  </metadata>
+  <metadata name="DIC_FOUNDATION_SYSTEMTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 641</value>
+  </metadata>
+  <metadata name="DIC_NONSTRUCTURAL_EXTERIOR_WALLSTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 680</value>
+  </metadata>
+  <metadata name="DIC_YEAR_BUILT_QUALTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>610, 680</value>
+  </metadata>
+  <metadata name="DIC_POSITIONTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>221, 719</value>
+  </metadata>
+  <metadata name="GEDTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>579, 719</value>
+  </metadata>
+  <metadata name="DIC_PLAN_SHAPETableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 758</value>
+  </metadata>
+  <metadata name="DIC_CURRENCYTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>449, 758</value>
+  </metadata>
+  <metadata name="DIC_DAMAGETableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 797</value>
+  </metadata>
+  <metadata name="DIC_HEIGHT_QUALIFIERTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>467, 797</value>
+  </metadata>
+  <metadata name="mnuRow.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>763, 17</value>
+  </metadata>
+</root>

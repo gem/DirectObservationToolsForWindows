@@ -1,0 +1,3 @@
+<OnlineDataPlugin WriterVersion="3.02">
+  <ConfigData ActionTimeout="20000" PreviewMaxFeatures="50" MaxFieldValueLength="50" StatusScreenUpdateInterval="2000" ProxyServer="" ProxyPort="80" ProxyPassword="" ProxyUsername="" />
+</OnlineDataPlugin>

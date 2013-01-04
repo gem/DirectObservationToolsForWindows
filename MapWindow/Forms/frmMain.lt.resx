@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="StripDocker.BottomToolStripPanel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panel1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="StripDocker.ContentPanel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="StripDocker.LeftToolStripPanel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="StripDocker.RightToolStripPanel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="StripDocker.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tbbNew.ToolTipText" xml:space="preserve">
+    <value>Naujas projektas</value>
+  </data>
+  <data name="tbbOpen.ToolTipText" xml:space="preserve">
+    <value>Atidaryti projektą</value>
+  </data>
+  <data name="tbbSave.ToolTipText" xml:space="preserve">
+    <value>Saugoti projektą</value>
+  </data>
+  <data name="tbbPrint.ToolTipText" xml:space="preserve">
+    <value>Spausdinti</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="mnuBtnAdd.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>162, 22</value>
+  </data>
+  <data name="mnuBtnAdd.Text" xml:space="preserve">
+    <value>Pridėti sluoksnį</value>
+  </data>
+  <data name="mnuBtnRemove.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>162, 22</value>
+  </data>
+  <data name="mnuBtnRemove.Text" xml:space="preserve">
+    <value>Šalinti sluoksnį</value>
+  </data>
+  <data name="mnuBtnClear.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>162, 22</value>
+  </data>
+  <data name="mnuBtnClear.Text" xml:space="preserve">
+    <value>Šalinti visus sluoksnius</value>
+  </data>
+  <data name="mnuLayerButton.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>163, 70</value>
+  </data>
+  <data name="mnuLayerButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tbbAddRemove.ToolTipText" xml:space="preserve">
+    <value>Pridėti/šalinti/šalinti visus sluoksnius</value>
+  </data>
+  <data name="tbbPan.ToolTipText" xml:space="preserve">
+    <value>Perstumti</value>
+  </data>
+  <data name="tbbSelect.ToolTipText" xml:space="preserve">
+    <value>Pažymėti</value>
+  </data>
+  <data name="tbbMeasure.ToolTipText" xml:space="preserve">
+    <value>Matuoti atstumą</value>
+  </data>
+  <data name="tbbMeasureArea.ToolTipText" xml:space="preserve">
+    <value>Matuoti plotą</value>
+  </data>
+  <data name="tbbZoomIn.ToolTipText" xml:space="preserve">
+    <value>Didinti vaizdą</value>
+  </data>
+  <data name="tbbZoomOut.ToolTipText" xml:space="preserve">
+    <value>Sumažinti vaizdą</value>
+  </data>
+  <data name="mnuZoomPrevious.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>198, 22</value>
+  </data>
+  <data name="mnuZoomPrevious.Text" xml:space="preserve">
+    <value>Ankstesnis vaizdo dydis</value>
+  </data>
+  <data name="mnuZoomNext.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>198, 22</value>
+  </data>
+  <data name="mnuZoomNext.Text" xml:space="preserve">
+    <value>Sekantis vaizdo dydis</value>
+  </data>
+  <data name="ToolStripMenuItem30.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>195, 6</value>
+  </data>
+  <data name="mnuZoomPreviewMap.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>198, 22</value>
+  </data>
+  <data name="mnuZoomPreviewMap.Text" xml:space="preserve">
+    <value>Žemėlapio ribų peržiūra</value>
+  </data>
+  <data name="mnuZoomMax.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>198, 22</value>
+  </data>
+  <data name="mnuZoomMax.Text" xml:space="preserve">
+    <value>Pilnos žemėlapio ribos</value>
+  </data>
+  <data name="mnuZoomLayer.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>198, 22</value>
+  </data>
+  <data name="mnuZoomLayer.Text" xml:space="preserve">
+    <value>Sluoksnis</value>
+  </data>
+  <data name="mnuZoomSelected.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>198, 22</value>
+  </data>
+  <data name="mnuZoomSelected.Text" xml:space="preserve">
+    <value>Pažymėta</value>
+  </data>
+  <data name="mnuZoomShape.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>198, 22</value>
+  </data>
+  <data name="mnuZoomShape.Text" xml:space="preserve">
+    <value>Forma</value>
+  </data>
+  <data name="mnuZoom.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>199, 164</value>
+  </data>
+  <data name="mnuZoom.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tbbZoom.ToolTipText" xml:space="preserve">
+    <value>Keisti vaizdo dydį</value>
+  </data>
+  <data name="tlbMain.Location" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>3, 24</value>
+  </data>
+  <data name="tlbMain.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MenuStrip1.Location" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </data>
+  <data name="MenuStrip1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="StripDocker.TopToolStripPanel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>221, 22</value>
+  </data>
+  <data name="ToolStripMenuItem2.Text" xml:space="preserve">
+    <value>Pridėti grupę</value>
+  </data>
+  <data name="ToolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>221, 22</value>
+  </data>
+  <data name="ToolStripMenuItem3.Text" xml:space="preserve">
+    <value>Pridėti sluoksnį</value>
+  </data>
+  <data name="ToolStripMenuItem4.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>221, 22</value>
+  </data>
+  <data name="ToolStripMenuItem4.Text" xml:space="preserve">
+    <value>Šalinti sluoksnį</value>
+  </data>
+  <data name="ToolStripMenuItem5.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>221, 22</value>
+  </data>
+  <data name="ToolStripMenuItem5.Text" xml:space="preserve">
+    <value>Šalinti visus sluoksnius</value>
+  </data>
+  <data name="ToolStripMenuItem6.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>221, 22</value>
+  </data>
+  <data name="ToolStripMenuItem6.Text" xml:space="preserve">
+    <value>Pritraukti vaizdą iki sluoksnio</value>
+  </data>
+  <data name="ToolStripMenuBreak1.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>218, 6</value>
+  </data>
+  <data name="ToolStripMenuItem8.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>221, 22</value>
+  </data>
+  <data name="ToolStripMenuItem8.Text" xml:space="preserve">
+    <value>Rodyti metaduomenis</value>
+  </data>
+  <data name="mnuTableEditorLaunch.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>221, 22</value>
+  </data>
+  <data name="mnuTableEditorLaunch.Text" xml:space="preserve">
+    <value>Atributų lentelės redaktorius</value>
+  </data>
+  <data name="ToolStripMenuLabelSetup.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>221, 22</value>
+  </data>
+  <data name="ToolStripMenuLabelSetup.Text" xml:space="preserve">
+    <value>Anotacijos sąranka...</value>
+  </data>
+  <data name="ToolStripMenuRelabel.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>221, 22</value>
+  </data>
+  <data name="ToolStripMenuRelabel.Text" xml:space="preserve">
+    <value>Pakeisti sluoksnio anotaciją</value>
+  </data>
+  <data name="ToolStripMenuItem9.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>218, 6</value>
+  </data>
+  <data name="ToolStripMenuItem11.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>221, 22</value>
+  </data>
+  <data name="ToolStripMenuItem11.Text" xml:space="preserve">
+    <value>Išskleisti grupes</value>
+  </data>
+  <data name="ToolStripMenuItem12.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>221, 22</value>
+  </data>
+  <data name="ToolStripMenuItem12.Text" xml:space="preserve">
+    <value>Išskleisti viską</value>
+  </data>
+  <data name="ToolStripMenuItem13.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>221, 22</value>
+  </data>
+  <data name="ToolStripMenuItem13.Text" xml:space="preserve">
+    <value>Suskleisti grupes</value>
+  </data>
+  <data name="ToolStripMenuItem14.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>221, 22</value>
+  </data>
+  <data name="ToolStripMenuItem14.Text" xml:space="preserve">
+    <value>Suskleisti viską</value>
+  </data>
+  <data name="ToolStripMenuBreak2.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>218, 6</value>
+  </data>
+  <data name="ToolStripMenuItem16.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>221, 22</value>
+  </data>
+  <data name="ToolStripMenuItem16.Text" xml:space="preserve">
+    <value>&amp;Savybės</value>
+  </data>
+  <data name="mnuLegend.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>222, 330</value>
+  </data>
+  <data name="mnuLegend.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ProgressBar1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="StatusBar1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MapPreview.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MapMain.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+</root>

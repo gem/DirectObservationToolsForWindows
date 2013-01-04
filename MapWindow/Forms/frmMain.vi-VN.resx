@@ -1,0 +1,2365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tlbMain.Locked" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ToolStripMenuItem4.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ilsToolbar.ImageSize" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>16, 16</value>
+  </data>
+  <data name="tbbMeasure.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="msgLegend_LayerVisibleChanged.Text" xml:space="preserve">
+    <value>Lớp này đang sử dụng khả năng hiển thị động. Thiết lập thuộc tính này sẽ làm mất khả năng của đặc điểm hiển thị động. Bạn có muốn tắt nó không? (Chú ý: Bạn có thể hồi phục khả năng hiển thị động bằng cách sử dụng trình biên soạn chú dẫn.)</value>
+  </data>
+  <data name="sbContextMenu_ChangeUnits.Text" xml:space="preserve">
+    <value>Thay đổi đơn vị hiển thị</value>
+  </data>
+  <data name="sbContextMenu_UpperLeft.Text" xml:space="preserve">
+    <value>Đặt ở góc trên bên trái</value>
+  </data>
+  <data name="sbContextMenu_UpperRight.Text" xml:space="preserve">
+    <value>Đặt ở góc trên bên phải</value>
+  </data>
+  <data name="sbContextMenu_LowerLeft.Text" xml:space="preserve">
+    <value>Đặt ở góc dưới bên trái</value>
+  </data>
+  <data name="sbContextMenu_LowerRight.Text" xml:space="preserve">
+    <value>Đặt ở góc dưới bên phải</value>
+  </data>
+  <data name="sbContextMenu_ChooseForecolor.Text" xml:space="preserve">
+    <value>Chọn màu cho dạng chữ</value>
+  </data>
+  <data name="sbContextMenu_ChooseBackcolor.Text" xml:space="preserve">
+      <value>Chọn màu nền</value>
+  </data>
+  <data name="&gt;&gt;mnuZoomSelected.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="mnuLayerButton.Location" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>127, 17</value>
+  </data>
+  <data name="StatusBar1.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;StatusBar1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusBar, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAGACoDAAAFgAAACgAAAAgAAAAQAAAAAEAGAAAAAAAgAwAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD79/Pz6t3+/f0AAAD+/v/y6OL27+sA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAD9/PjbwZDdxJv07d359eT48+D59OT17eHYuqjJn4n48u8AAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADt3762ghvQrm/8+/D48tn179T2
+        79X279T38tf+/u/Mo46SORfYua4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAADl0p6tcgDKo1T///307c307c/17dD17dD17dD17dD07Mz///nAjHl6EADFl4oA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADq3LG0fQC4hBD48uP1
+        79Dz6sjz68rz68rz68rz68rz68rz68n07sv8+e+ZRy15DgDMopsAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAD59ujAkw+yeQDYu3b8++7w5r7y6MTy6MTy6MTy6MTy6MTy6MTy6MTx
+        58D+/+XOp5x+FgCCHAzp19UAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADdx2y6
+        iQC7iQPz6s728M3x573x5r7w5r3x5r7x5r3x5r3x5r7x5r7x5r7068Ly6N2NMhx7EACmXVcAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD17e3q2drjzMqzexKsbgO3gSLr287p2a3x5rn28MD49cT49MP2
+        8MDz6rzw5rnv5Lfv5Lju4rL+/emmX1F/FwZ/Fw/s3NsAAAAAAAAAAAAAAAAAAAAAAADjzc22e32TOj6R
+        ODyZRkyWQjSMMQ2LLxCQNyiWQEGRNzGSOjSYRD2iWEuzd2PHm37cwZns37D28Lz38r7y6bP9/d+9iYB+
+        FAJ3CQDGmJcAAAAAAAAAAAAAAAAAAAAAAAB2BgtmAADDkpT////////m1oS/lQC7iwDcw3b48tnl0pzc
+        wpXPqoS+i22saVWaST2OMy+MLyyXQzuxc13Qq4T38svOp599EwF5DAStaWkAAAAAAAAAAAAAAAAAAAAA
+        AADbvr+YREh7ExW8hojy5+zeyGq8jgC4hQDex4j28M/s36Tu46rw5qry6q707bDz7K/s36bdwpLElXKe
+        T0CJLCThyafavLJ+FgR7DwegUlEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADNpaeXR0jUsLriz3K8jgC4
+        hQDexofz68bl0orp2p3s36vs3qfr3KPq26Dq25/t4KLx56jx6ans4KD28b7VtKx/FgR7DwegUlIAAADd
+        x2nMqSTl1JD+/vsAAAAAAAAAAAAAAAAAAAAAAADfynq7jgC4hQDbwHvw5bbJpRfKphTTtTzbw2Djzn/n
+        1pTq25/r3KTr3KPq26Hp2Zv38sPPqKR8EgF5CgStamsAAAD8+fDn2JnHoRDQsDHv5LYAAAAAAAAAAAAA
+        AAAAAADs4LC8jwC5hgDSsFr17s7hzXrdxWbVuUXPryrMqRrLqRnNrSPRszTWuknbwlzdxmfx56fBkHmC
+        HQJ6DgHHmpb9/PX7+Oz38tzYvlO+kgDStDYAAAAAAAAAAAAAAAAAAAD7+e/Dmw26iADEmSf69+v07dDv
+        47bm1JDn1pPm1I7izn3dxmjYvVLTtj3PrifNrCHStDC/khG4hQK1gADOrS3StDXRsjPStDbZv1nt4a39
+        /PcAAAAAAAAAAAAAAAAAAAAAAADbwm23hAC4hADz6tYAAAAAAAD17dHjz4Lizn7l0ojl04vl0onk0ITy
+        6cb9+/P38OyROCF+FQCqZVT8+u38+vH+/fsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD69uvA
+        lBGyeQDZvnsAAAAAAAAAAAD69+ro15bgyXHgynTl04v17dEAAAAAAADTsKd9FQCCHA7p19gAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADs3rW0fQC6hhP8+fMAAAAAAAAAAAD9+/Xv
+        47Xz68r+/fkAAAAAAAAAAACcTTN5DgDOpp8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAADm06GucgDPrGMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADHmod7EQDIm48A
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADt4cG4hR3Z
+        vYgAAAAAAAAAAAAAAAAAAAAAAAAAAADVsqGWQRzZu7EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD9+/jdxJbm07T7+PQAAAAAAAAAAAD8+/njzsHP
+        qZX48/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD7+PP79/IAAAAAAAAAAAD8+fj59fIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD////////////////////////////xH///wAf//4AD//8AAf/+AAD//AAAf/wA
+        AH/gAAA/AAAAPwAAAD8AAAA/wAAAIfgAACD4AAAA+AAAAPwwAA/8OBh//hw4//8f8f//j+P//8OH///z
+        n////////////////////////////w==
+</value>
+  </data>
+  <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System" name="System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ToolStripMenuItem5.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="ToolStripMenuItem9.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="ToolStripMenuItem30.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ToolStripMenuItem4.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mnuProjectSettings.Text" xml:space="preserve">
+    <value>Những thiết lập</value>
+  </data>
+  <data name="mnuShowScaleBar.Text" xml:space="preserve">
+    <value>Thể hiện thanh tỉ lệ tự do</value>
+  </data>
+  <data name="mnuSetScale.Text" xml:space="preserve">
+    <value>Thiết lập tỉ lệ bản đồ</value>
+  </data>
+  <data name="mnuRemoveGroup.Text" xml:space="preserve">
+    <value>Xóa nhóm</value>
+  </data>
+  <data name="mnuZoomNext.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="&gt;&gt;tbbZoom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Splitter2.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="StatusBar1.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mnuTableEditorLaunch.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="ToolStripMenuItem6.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="ToolStripMenuItem4.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mnuTableEditorLaunch.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tbbSave.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="mnuZoomOut.Text" xml:space="preserve">
+    <value>Thu nhỏ</value>
+  </data>
+  <data name="mnuZoomToGroup.Text" xml:space="preserve">
+    <value>Phóng tới nhóm</value>
+  </data>
+  <data name="mnuZoomToPreviewExtents.Text" xml:space="preserve">
+    <value>Phóng để hiển thị trước phạm vi bản đồ</value>
+  </data>
+  <data name="mnuZoomToPreviewExtents.Visible" xml:space="preserve">
+    <value>True</value>
+  </data>
+  <data name="mnuZoomToPreviewExtents.Enabled" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="tbbSelect.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="StatusBar1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="ProgressBar1.Location" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>264, 456</value>
+  </data>
+  <data name="&gt;&gt;tbbMeasure.Name" xml:space="preserve">
+    <value>tbbMeasure</value>
+  </data>
+  <data name="tbbBreak3.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;mnuLayerButton.Name" xml:space="preserve">
+    <value>mnuLayerButton</value>
+  </data>
+  <data name="Splitter2.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>3, 427</value>
+  </data>
+  <data name="tbbBreak2.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tbbPrint.ToolTipText" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="Panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="mnuCopyMap.Text" xml:space="preserve">
+    <value>Bản đồ</value>
+  </data>
+  <data name="&gt;&gt;mnuBtnAdd.Name" xml:space="preserve">
+    <value>mnuBtnAdd</value>
+  </data>
+  <data name="StatusBarPanel3.Icon" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="MapMain.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>559, 477</value>
+  </data>
+  <data name="mnuCopyScaleBar.Text" xml:space="preserve">
+    <value>Thanh tỉ lệ</value>
+  </data>
+  <data name="mnuZoomShape.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;StatusBarPanel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusBarPanel, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ilsToolbar.Name" xml:space="preserve">
+    <value>ilsToolbar</value>
+  </data>
+  <data name="&gt;&gt;mnuLegend.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="mnuOpen.Text" xml:space="preserve">
+    <value>Mở dự án</value>
+  </data>
+  <data name="mnuOpenProjectIntoGroup.Text" xml:space="preserve">
+    <value>Mở dự án vào trong nhóm mới</value>
+  </data>
+  <data name="Splitter1.Locked" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tlbMain.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>559, 28</value>
+  </data>
+  <data name="&gt;&gt;MapMain.Name" xml:space="preserve">
+    <value>MapMain</value>
+  </data>
+  <data name="mnuExit.Text" xml:space="preserve">
+    <value>Thoát</value>
+  </data>
+  <data name="ToolStripMenuItem6.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tbbOpen.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ToolStripMenuItem6.ShowShortcut" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;StatusBarPanel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusBarPanel, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Splitter1.Name" xml:space="preserve">
+    <value>Splitter1</value>
+  </data>
+  <data name="StatusBarPanel3.Width" type="System.Int32, mscorlib">
+    <value>181</value>
+  </data>
+  <data name="mnuRemoveLayer.Text" xml:space="preserve">
+    <value>Bỏ lớp</value>
+  </data>
+  <data name="mnuSaveGeorefMapImage.Text" xml:space="preserve">
+    <value>Bản đồ được tham chiếu địa lý</value>
+  </data>
+  <data name="ToolStripMenuItem5.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="ToolStripMenuItem16.Text" xml:space="preserve">
+    <value>&amp;Những thuộc tính</value>
+  </data>
+  <data name="mnuTableEditorLaunch.Text" xml:space="preserve">
+    <value>Hiển thị bảng thuộc tính</value>
+  </data>
+  <data name="MapPreview.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="tbbZoomIn.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;tbbNew.Name" xml:space="preserve">
+    <value>tbbNew</value>
+  </data>
+  <data name="tbbPan.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ToolStripMenuItem11.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Splitter2.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem3.Name" xml:space="preserve">
+    <value>ToolStripMenuItem3</value>
+  </data>
+  <data name="ToolStripMenuItem2.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="&gt;&gt;StatusBar1.Name" xml:space="preserve">
+    <value>StatusBar1</value>
+  </data>
+  <data name="tbbMeasure.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ToolStripMenuItem5.Text" xml:space="preserve">
+    <value>Xóa những lớp</value>
+  </data>
+  <data name="ToolStripMenuItem8.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="ProgressBar1.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>288, 24</value>
+  </data>
+  <data name="mnuSaveAs.Text" xml:space="preserve">
+    <value>Lưu chỉnh sửa (Save As)</value>
+  </data>
+  <data name="tbbPan.ImageIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="Splitter2.Location" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>200, 28</value>
+  </data>
+  <data name="StatusBar1.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ToolStripMenuItem14.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="mnuLegend.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="ToolStripMenuItem3.ShowShortcut" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;mnuBtnClear.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbbBreak2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem9.Name" xml:space="preserve">
+    <value>ToolStripMenuItem9</value>
+  </data>
+  <data name="&gt;&gt;ProgressBar1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="StatusBar1.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;Splitter1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Splitter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="mnuZoom.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="&gt;&gt;mnuLayerButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="mnuWelcomeScreen.Text" xml:space="preserve">
+    <value>Màn hình chào mừng</value>
+  </data>
+  <data name="&gt;&gt;tlbMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Panel1.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>200, 427</value>
+  </data>
+  <data name="tbbBreak1.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="ToolStripMenuItem13.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Splitter1.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;tbbPrint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tlbMain.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="MapPreview.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="tlbMain.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="mnuZoomSelected.Text" xml:space="preserve">
+    <value>Được chọn</value>
+  </data>
+  <data name="ilsToolbar.Location" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>362, 17</value>
+  </data>
+  <data name="ToolStripMenuItem9.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="tbbSave.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="mnuZoom.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="MenuStrip1.Location" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>461, 17</value>
+  </data>
+  <data name="tbbBreak2.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="MapMain.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFpTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0xLjAuNTAw
+        MC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFT
+        eXN0ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAARQAA
+        AAIBAAAAAQAAAAAAAAAAAAAAADAAAAAAAAMAyyQAACIsAAAAAAAA////AHsUrkfhepQ/AAAzMzMzMzPT
+        PwAAAAAAFAAAAAEL
+</value>
+  </data>
+  <data name="tlbMain.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="MapMain.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="tbbPan.ToolTipText" xml:space="preserve">
+    <value>Pan</value>
+  </data>
+  <data name="msgErrorSavingImage.Text" xml:space="preserve">
+    <value>Có những lỗi trong việc lưu ảnh</value>
+  </data>
+  <data name="StatusBar1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="Panel1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="&gt;&gt;tbbOpen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbbBreak1.Name" xml:space="preserve">
+    <value>tbbBreak1</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>MapWindow OSS</value>
+  </data>
+  <data name="Splitter1.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="mnuZoomNext.ShowShortcut" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mnuZoomToPreviewExtents.ShowShortcut" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Splitter1.Location" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 296</value>
+  </data>
+  <data name="&gt;&gt;ToolTip.Name" xml:space="preserve">
+    <value>ToolTip</value>
+  </data>
+  <data name="&gt;&gt;ProgressBar1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ToolStripMenuItem30.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="tbbNew.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ToolStripMenuItem3.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;mnuZoomShape.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="mnuBtnAdd.ShowShortcut" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mnuBtnRemove.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem30.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ToolStripMenuItem9.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tbbNew.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem4.Name" xml:space="preserve">
+    <value>ToolStripMenuItem4</value>
+  </data>
+  <data name="Panel1.Location" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 28</value>
+  </data>
+  <data name="tlbMain.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="MapMain.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="Splitter2.MinSize" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="Panel1.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="&gt;&gt;tbbSave.Name" xml:space="preserve">
+    <value>tbbSave</value>
+  </data>
+  <data name="&gt;&gt;tbbZoomIn.Name" xml:space="preserve">
+    <value>tbbZoomIn</value>
+  </data>
+  <data name="Panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;tbbSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuTableEditorLaunch.Name" xml:space="preserve">
+    <value>mnuTableEditorLaunch</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem16.Name" xml:space="preserve">
+    <value>ToolStripMenuItem16</value>
+  </data>
+  <data name="ToolStripMenuItem8.Text" xml:space="preserve">
+    <value>Hiển thị Metadata</value>
+  </data>
+  <data name="mnuBookmarkView.Text" xml:space="preserve">
+    <value>Thêm cửa sổ hiển thị được đánh dấu</value>
+  </data>
+  <data name="mnuBookmarkDelete.Text" xml:space="preserve">
+    <value>Xóa cửa sổ hiện thị được đánh dấu</value>
+  </data>
+  <data name="mnuBookmarkedViews.Text" xml:space="preserve">
+    <value>Những cửa sổ hiện thị được đánh dấu</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbbMeasure.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Splitter1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;tbbOpen.Name" xml:space="preserve">
+    <value>tbbOpen</value>
+  </data>
+  <data name="tlbMain.Wrappable" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tbbOpen.ToolTipText" xml:space="preserve">
+    <value>Open Project</value>
+  </data>
+  <data name="StatusBarPanel1.ToolTipText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;MapPreview.Name" xml:space="preserve">
+    <value>MapPreview</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="mnuSaveNorthArrow.Text" xml:space="preserve">
+    <value>Mũi tên hướng Bắc</value>
+  </data>
+  <data name="tlbMain.Location" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </data>
+  <data name="Splitter2.Locked" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="MapMain.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="Splitter2.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="mnuZoomShape.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="StatusBarPanel2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;StatusBar1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="StatusBar1.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>559, 22</value>
+  </data>
+  <data name="MapMain.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tbbBreak3.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="tbbPrint.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;tbbBreak3.Name" xml:space="preserve">
+    <value>tbbBreak3</value>
+  </data>
+  <data name="Panel1.Locked" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;Splitter1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ProgressBar1.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="tbbAddRemove.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mnuZoomSelected.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="MapPreview.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFpTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0xLjAuNTAw
+        MC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFT
+        eXN0ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAARQAA
+        AAIBAAAAAQAAAAAAAAAAAAAAADAAAAAAAAMArBQAADsNAAAAAAAA////AHsUrkfhepQ/AAAzMzMzMzPT
+        PwAAAAAAFAAAAAEL
+</value>
+  </data>
+  <data name="ToolStripMenuItem11.Text" xml:space="preserve">
+    <value>Mở rộng những nhóm</value>
+  </data>
+  <data name="Splitter1.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tbbOpen.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tbbBreak2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;StatusBarPanel1.Name" xml:space="preserve">
+    <value>StatusBarPanel1</value>
+  </data>
+  <data name="&gt;&gt;Panel1.Name" xml:space="preserve">
+    <value>Panel1</value>
+  </data>
+  <data name="ToolStripMenuItem5.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tbbOpen.ImageIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem6.Name" xml:space="preserve">
+    <value>ToolStripMenuItem6</value>
+  </data>
+  <data name="Splitter1.MinSize" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="tbbPrint.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.Locked" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tbbZoomIn.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ToolStripMenuItem14.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tbbBreak3.ToolTipText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ToolStripMenuItem6.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="$this.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="MapPreview.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="&gt;&gt;MapMain.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="mnuZoomLayer.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="tlbMain.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="StatusBarPanel2.Width" type="System.Int32, mscorlib">
+    <value>181</value>
+  </data>
+  <data name="MapMain.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="MapPreview.Location" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 299</value>
+  </data>
+  <data name="Splitter2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mnuRecentProjects.Text" xml:space="preserve">
+    <value>Những dự án gần đây</value>
+  </data>
+  <data name="&gt;&gt;MapPreview.Parent" xml:space="preserve">
+    <value>Panel1</value>
+  </data>
+  <data name="&gt;&gt;mnuZoomLayer.Name" xml:space="preserve">
+    <value>mnuZoomLayer</value>
+  </data>
+  <data name="ToolStripMenuItem11.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tlbMain.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="StatusBar1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="mnuBtnClear.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuZoomLayer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Panel1.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="tlbMain.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="mnuOnlineDocs.Text" xml:space="preserve">
+    <value>Tại liệu MapWindow (Trực tuyến)</value>
+  </data>
+  <data name="ToolStripMenuItem2.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mnuSave.Text" xml:space="preserve">
+    <value>Lưu</value>
+  </data>
+  <data name="mnuZoomShape.Text" xml:space="preserve">
+    <value>Hình dạng</value>
+  </data>
+  <data name="mnuZoomPrevious.Text" xml:space="preserve">
+    <value>Về trước</value>
+  </data>
+  <data name="tbbSelect.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="Splitter2.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="$this.AutoScrollMargin" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </data>
+  <data name="mnuView.Text" xml:space="preserve">
+    <value>Cửa sổ hiển thị</value>
+  </data>
+  <data name="tbbBreak2.ToolTipText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tmrMenuTips.Location" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>105, 54</value>
+  </data>
+  <data name="&gt;&gt;mnuZoomSelected.Name" xml:space="preserve">
+    <value>mnuZoomSelected</value>
+  </data>
+  <data name="mnuBtnAdd.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;ilsToolbar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tbbOpen.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="&gt;&gt;Panel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tbbAddRemove.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="StatusBarPanel1.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="&gt;&gt;mnuBtnRemove.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tbbPrint.ImageIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="StatusBar1.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="tbbBreak2.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ToolStripMenuItem13.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="tbbZoomOut.ToolTipText" xml:space="preserve">
+    <value>Zoom Out</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem14.Name" xml:space="preserve">
+    <value>ToolStripMenuItem14</value>
+  </data>
+  <data name="tbbPan.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ToolStripMenuItem9.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="MapPreview.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="tbbZoomOut.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tbbMeasure.ToolTipText" xml:space="preserve">
+    <value>Measure Distance</value>
+  </data>
+  <data name="mnuBtnRemove.Text" xml:space="preserve">
+    <value>Xóa lớp</value>
+  </data>
+  <data name="Panel1.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tbbZoomIn.ImageIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="StatusBarPanel2.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="ToolStripMenuItem16.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="mnuTableEditorLaunch.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ToolStripMenuItem12.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>WindowsDefaultLocation</value>
+  </data>
+  <data name="&gt;&gt;mnuBtnRemove.Name" xml:space="preserve">
+    <value>mnuBtnRemove</value>
+  </data>
+  <data name="StatusBarPanel3.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ToolStripMenuItem12.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="ToolStripMenuItem2.Text" xml:space="preserve">
+    <value>Thêm nhóm</value>
+  </data>
+  <data name="&gt;&gt;mnuZoomPrevious.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="mnuTableEditorLaunch.ShowShortcut" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ToolStripMenuItem13.ShowShortcut" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mnuClearSelectedShapes.Text" xml:space="preserve">
+    <value>Bỏ những đối tượng được chọn</value>
+  </data>
+  <data name="mnuBtnRemove.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="tbbSave.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ToolStripMenuItem15.ShowShortcut" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mnuPrint.Text" xml:space="preserve">
+    <value>In ấn</value>
+  </data>
+  <data name="tbbZoomIn.ToolTipText" xml:space="preserve">
+    <value>Zoom In</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="&gt;&gt;tbbBreak1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Splitter2.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;mnuBtnAdd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ToolStripMenuItem3.Text" xml:space="preserve">
+    <value>Thêm lớp</value>
+  </data>
+  <data name="tbbBreak3.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MapMain.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="tbbSave.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MapPreview.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="MenuStrip1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="mnuZoomToFullExtents.Text" xml:space="preserve">
+    <value>Phóng tới toàn bộ phạm vi</value>
+  </data>
+  <data name="ProgressBar1.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mnuZoomNext.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="mnuZoomToPreviewExtents.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;MapPreview.Type" xml:space="preserve">
+    <value>AxMapWinGIS.AxMap, AxInterop.MapWinGIS, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="Splitter2.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="tbbAddRemove.ToolTipText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Splitter1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem11.Name" xml:space="preserve">
+    <value>ToolStripMenuItem11</value>
+  </data>
+  <data name="tlbMain.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tbbZoomOut.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;tbbPrint.Name" xml:space="preserve">
+    <value>tbbPrint</value>
+  </data>
+  <data name="MapMain.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;mnuLegend.Name" xml:space="preserve">
+    <value>mnuLegend</value>
+  </data>
+  <data name="Splitter1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tlbMain.DropDownArrows" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ToolStripMenuItem30.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="Splitter2.MinExtra" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="ProgressBar1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ProgressBar1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tlbMain.ButtonSize" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>23, 22</value>
+  </data>
+  <data name="ToolStripMenuItem8.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;tbbPan.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="StatusBar1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="mnuBtnAdd.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="tbbZoom.ImageIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="$this.Name" xml:space="preserve">
+    <value>MapWindowForm</value>
+  </data>
+  <data name="ToolStripMenuItem15.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="&gt;&gt;tbbZoomIn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="mnuZoomMax.Text" xml:space="preserve">
+    <value>Toàn bộ phạm vi</value>
+  </data>
+  <data name="msgClearLayers.Text" xml:space="preserve">
+    <value>Bạn có chắc là muốn xóa toàn bộ các lớp không?</value>
+  </data>
+  <data name="ToolTip.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="&gt;&gt;tmrMenuTips.Name" xml:space="preserve">
+    <value>tmrMenuTips</value>
+  </data>
+  <data name="tbbBreak3.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="ToolStripMenuItem14.ShowShortcut" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mnuZoomMax.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;Splitter2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Splitter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="mnuZoomPrevious.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="tbbSelect.ImageIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="ToolStripMenuItem15.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ToolStripMenuItem5.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tbbBreak1.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="MapMain.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="Splitter1.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>200, 3</value>
+  </data>
+  <data name="tlbMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="StatusBarPanel3.MinWidth" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="ProgressBar1.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="&gt;&gt;StatusBarPanel3.Name" xml:space="preserve">
+    <value>StatusBarPanel3</value>
+  </data>
+  <data name="mnuHelp.Text" xml:space="preserve">
+    <value>Giúp đỡ</value>
+  </data>
+  <data name="ToolStripMenuItem3.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;mnuZoom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="StatusBar1.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Splitter1.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="tbbPan.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ToolStripMenuItem16.ShowShortcut" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mnuZoomSelected.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="ToolStripMenuItem6.Text" xml:space="preserve">
+    <value>Phóng tới lớp</value>
+  </data>
+  <data name="Splitter2.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mnuZoomMax.ShowShortcut" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ilsToolbar.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFpTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0xLjAuNTAw
+        MC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZT
+        eXN0ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMA
+        AAAmHQAAAk1TRnQBSQFMAgEBGAEAAR0BAAEEAQABEAEAARABAAT/AQkBEAj/AUIBTQE2AQQGAAE2AQQC
+        AAEoAwABQAMAAYADAAEBAQABCAYAASAYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB
+        3AHAAQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IB
+        AAM5AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8B
+        MwMAAWYDAAGZAwABzAIAATMDAAIzAgABMwFmAgABMwGZAgABMwHMAgABMwH/AgABZgMAAWYBMwIAAmYC
+        AAFmAZkCAAFmAcwCAAFmAf8CAAGZAwABmQEzAgABmQFmAgACmQIAAZkBzAIAAZkB/wIAAcwDAAHMATMC
+        AAHMAWYCAAHMAZkCAALMAgABzAH/AgAB/wFmAgAB/wGZAgAB/wHMAQABMwH/AgAB/wEAATMBAAEzAQAB
+        ZgEAATMBAAGZAQABMwEAAcwBAAEzAQAB/wEAAf8BMwIAAzMBAAIzAWYBAAIzAZkBAAIzAcwBAAIzAf8B
+        AAEzAWYCAAEzAWYBMwEAATMCZgEAATMBZgGZAQABMwFmAcwBAAEzAWYB/wEAATMBmQIAATMBmQEzAQAB
+        MwGZAWYBAAEzApkBAAEzAZkBzAEAATMBmQH/AQABMwHMAgABMwHMATMBAAEzAcwBZgEAATMBzAGZAQAB
+        MwLMAQABMwHMAf8BAAEzAf8BMwEAATMB/wFmAQABMwH/AZkBAAEzAf8BzAEAATMC/wEAAWYDAAFmAQAB
+        MwEAAWYBAAFmAQABZgEAAZkBAAFmAQABzAEAAWYBAAH/AQABZgEzAgABZgIzAQABZgEzAWYBAAFmATMB
+        mQEAAWYBMwHMAQABZgEzAf8BAAJmAgACZgEzAQADZgEAAmYBmQEAAmYBzAEAAWYBmQIAAWYBmQEzAQAB
+        ZgGZAWYBAAFmApkBAAFmAZkBzAEAAWYBmQH/AQABZgHMAgABZgHMATMBAAFmAcwBmQEAAWYCzAEAAWYB
+        zAH/AQABZgH/AgABZgH/ATMBAAFmAf8BmQEAAWYB/wHMAQABzAEAAf8BAAH/AQABzAEAApkCAAGZATMB
+        mQEAAZkBAAGZAQABmQEAAcwBAAGZAwABmQIzAQABmQEAAWYBAAGZATMBzAEAAZkBAAH/AQABmQFmAgAB
+        mQFmATMBAAGZATMBZgEAAZkBZgGZAQABmQFmAcwBAAGZATMB/wEAApkBMwEAApkBZgEAA5kBAAKZAcwB
+        AAKZAf8BAAGZAcwCAAGZAcwBMwEAAWYBzAFmAQABmQHMAZkBAAGZAswBAAGZAcwB/wEAAZkB/wIAAZkB
+        /wEzAQABmQHMAWYBAAGZAf8BmQEAAZkB/wHMAQABmQL/AQABzAMAAZkBAAEzAQABzAEAAWYBAAHMAQAB
+        mQEAAcwBAAHMAQABmQEzAgABzAIzAQABzAEzAWYBAAHMATMBmQEAAcwBMwHMAQABzAEzAf8BAAHMAWYC
+        AAHMAWYBMwEAAZkCZgEAAcwBZgGZAQABzAFmAcwBAAGZAWYB/wEAAcwBmQIAAcwBmQEzAQABzAGZAWYB
+        AAHMApkBAAHMAZkBzAEAAcwBmQH/AQACzAIAAswBMwEAAswBZgEAAswBmQEAA8wBAALMAf8BAAHMAf8C
+        AAHMAf8BMwEAAZkB/wFmAQABzAH/AZkBAAHMAf8BzAEAAcwC/wEAAcwBAAEzAQAB/wEAAWYBAAH/AQAB
+        mQEAAcwBMwIAAf8CMwEAAf8BMwFmAQAB/wEzAZkBAAH/ATMBzAEAAf8BMwH/AQAB/wFmAgAB/wFmATMB
+        AAHMAmYBAAH/AWYBmQEAAf8BZgHMAQABzAFmAf8BAAH/AZkCAAH/AZkBMwEAAf8BmQFmAQAB/wKZAQAB
+        /wGZAcwBAAH/AZkB/wEAAf8BzAIAAf8BzAEzAQAB/wHMAWYBAAH/AcwBmQEAAf8CzAEAAf8BzAH/AQAC
+        /wEzAQABzAH/AWYBAAL/AZkBAAL/AcwBAAJmAf8BAAFmAf8BZgEAAWYC/wEAAf8CZgEAAf8BZgH/AQAC
+        /wFmAQABIQEAAaUBAANfAQADdwEAA4YBAAOWAQADywEAA7IBAAPXAQAD3QEAA+MBAAPqAQAD8QEAA/gB
+        AAHwAfsB/wEAAaQCoAEAA4ADAAH/AgAB/wMAAv8BAAH/AwAB/wEAAf8BAAL/AgAD//8A/wD/AP8A/wD/
+        AP8A/wAeAAXsPwAB7DsAA6cBAAHsBgADIAUAA/kqAAOnAQAC7AYAAyAEAAIgAvkqAAOtAQAB7AgAAiAC
+        AAUgBAAMBxoAA60BAAbsBAAIIBAAAQcZAAOtBgAB7AUABiAGAAtHAQABBxQABq0EzwK0AQAB7AYABSAG
+        AAtqAQABBxQAA60Dzwa0AQAB7AUABSAIAAuxAQABBxMAA88JtAEAAewFAAHpBSAIAAu3AQABBxcAA7QK
+        AAbpAiATAAEHFwADtAEAAewIAAXpAgAC6SoAA7oBAALsBgAF6QQAA+kpAAPbAQAB7AgAA+kFAAPpKAAD
+        2wEAAewSAAHpUgAO7AMAAQcJEgEHBAAN9wMAC/cGAAEKBQADCgEVAgAB7AMAAQcJAAEHAwAN6gH3AgAB
+        9wsTAfcEAAIJBAoD9gEKAhkBAAHsBAABBwEAAvYB9AIbAQABBxAAAeoB9wEAAfcBEwX/AhkB3AHbARMB
+        rQETAfcDAAIJBAoD9gEKAgkBAAHsAwABBwEAAv8C9gH0AhsBAAEHBAAK/wEAAeoB9wEADRMB3AETAfcC
+        AAIJBAoD9gEKAgkBAAHsAgABBwEABP8C9gH0AhsBAAEHAwAK/wEAAeoB9wEAARMB9AMZAQkC3APbAbkD
+        EwH3AgACuwgKAgkBAAHsAgABBwEABf8C9gH0ARsBAAEHAwAK/wEAAeoB9wEAARMB/wH0AxkBCQLcA9sB
+        EwEZARMB9wIADLsBAAHsAgABBwEAAf8BAAT/AvYB9AEAAQcDAAr/AQAB6gH3AQANEwHcARkBEwIABroG
+        uwEAAewCAAEHAQAB/wEABf8C9gEAAQcDAAr/AQAB6gH3AQABEwX/AhkB3ALbARMB8AETAdwBEwIAArQI
+        FAK6AQAB7AQAAf8BAAX/AQAB9gEAAQcDAAr/AQAB6gH3AgAKEwGtARMB/wITAgACtAEUBPYC/wEUArQB
+        AAHsBgAD/wEAAf8BAAH2BQAK/wEAAeoB9wMAARMI8QETAfABEwHwARMCAAK0ARQE9gL/ARQCtAEAAewG
+        AAH/AQAB/wEAAf8HAAr/AQAB6gH3BAABEwH/BRMB8QQTAwACswEUBPYC/wEUArQBAAHsBgAB/wEAAf8J
+        AAr/AQAB6gH3BAABEwP/BfEBEwUAApABFAT2Av8BFAKzAQAB7AYAAf8LAAf/BAAB6gH3BQABEwH/BRMB
+        8QETBQACiwEUBPYC/wEUApABAAHsBgAB/wsAB/8BAAH/AQAC9wYAARME/wTxARMYAAH/CwAH/wIAAfcJ
+        AAkTLAAB9yIAAe8BAAHvEAAQBwwAAvcOAAHvEwADBwsPAgcBAAz3DgAB7wMAAe8QAAMHAQAJvAEAAgcL
+        FQH3DgAB7w0AAQoBZgYAAwcBAAn/AQACBwEVCf8B9wMAAfcFAATvAQAB7wYABIYDpwP+A4YDpwMHAQAJ
+        /wEAAgcBFQT/BBUB/wMAAvcDAAHvAfcDFAEVAe8HAAFmAu8CBwGnAuID/gGGA8IBpwMHAQAJ/wEAAgcB
+        FQL/AhUE9wMAAfcBFQH3AgAB7wIUAfQB/wH0Af8CFAEAAe8EAAFmA+8BBwGGAf8C4gL+AWYBCALCAacD
+        BwEACf8BAAIHARUC/wEVAfcC9AL/AfcBAAH3Af8BFQH3AgAB9wEUAvQBAAFtAv8BFQHvBQABZQTvAYYC
+        /wPiAWYCCAHCAYYDBwEACf8BAAIHARUB/wEVAfcB8wL0A/MB9wEVAf8BFQH3AQAB7wEUA/QBAAFtAfQC
+        8wEUAe8EAAENAfcE7wFmA/8BAAQIAYYDBwEACf8BAAIHARUB/wEVAfcG8wH3ARUB/wEVAfcBAAHvARQB
+        9AHqAW0BAAFtAeoBbQEZARQB9wQAAQoC9wTvAWYBCgFmAQcECAGGAwcBAAn/AQACBwEVAf8BFQH3BPMC
+        GQH3ARUB/wEVAfcBAAHvARQB9AYAARkBFAHvBAACCgENAWUBZgPvBAcBCAFlAmYDBwEABv8D7wEAAgcB
+        FQH/ARUB9wMZAwkB9wEVAf8BFQH3AQAB7wEVAfMCGQEAAW0BGQIJARQB9wQAAQ4D+wFlBO8CBwFmAYYC
+        GwFmAwcBAAb/AQABFAEAAUMCBwEVAv8BFQH3ARkBCQLcAfcBFQL/ARUB9wIAAe8BFAIZAQABbQEJAdwB
+        FAHvBQABZgEOAgoBDQFlBO8BDgEKAWYChgEAAwcBAAb/AQABvAEQAwcBFQL/AhUE9wIVAv8BFQH3AgAB
+        9wEUARUCCQLcAhQB7wsAAQ8BZQGGAacGAAMHAQAG8QEAAQ8EBwEVBP8EFQT/ARUB9wMAAu8EFALvFgAD
+        BwgOBQcBFQz/ARUB9wUAAe8B9wHvAfcYABAHDhUCAAkUFwAB7BwAAe8BAAHvARQH/wEUDAAB7AUEAewE
+        AAHsGwAB7wMAARQB/wUHAf8BFAsACQQDAAHsGgAB7wMAAe8BFAf/ARQKAAIEAfwBBAL/AewEBAIAAewZ
+        AAHvBQABFAH/BAcB/wsAAewBBAH8AQQB/AL/AewB/AMEAewBAAHsEwAE7wEAAe8GAAEUBf8BAALzAgAC
+        vQUAAQQB/AEEAfwBBAP8AQQB/AMEAQAB7AMAAewNAAHvAfcBFAEVAhQB7wcAARQB/wIHAf8EAAQbAQAB
+        lwMAA/wBBAH8Av8B7AH8AQQB/AIEAQAB7AQAAewLAAHvAhQB9AH/AvQCFAEAAe8EAAEUA/8BAATzAQAD
+        GwEAAZ4DAAb8Av8B7AH8AQQB/AEECAAC7AgAAfcBFAT0Av8BFAHvBQABFAH/BwAE8wEAAQgDAAT8AewC
+        /AL/AQQB/AIECgAB7AYAAe8BFAb0AvMBFAHvBAABFAEAAxsBAAP0AQAD8wEAAfMDAAT8Av8B/AL/AfwB
+        BAH8AQQEAAH/DAAB7wEVAfQB6gFtAeoBbQHqAW0BGQEUAfcEAAEUAf8CAALzAgAC8wL0BgAB7AP8AewD
+        /wHsAQQB/AEEAewFAAL/CAAB/wEAAe8BFAH0BgABGQEUAe8EAAEUAf8BBwH/DwAE/APsAvwCBAgAAv8F
+        AAH/AgAB7wEUAfMFGQIJARQB9wQAARQH/wEUCwAH/AIECwAC/wIAAf8EAAHvARQCGQMJAdwBFAHvBQAJ
+        FAwAAewE/ALsDwAB/wUAAfcCFAIJAtwBFAEVAe83AALvBBQC7zoAAe8B9wHvAfcIAAQcCJkCnwKgAWwI
+        cQJ3BVUGAAbvFAABkgIAARwCAAGZAgABmQIAAZkCAAGfAWwCAAFxAgABcQIAAXECAAFVAgABVQUAAe8B
+        EgRtARIB7xMAAZICAAEcAgABHAIAAZkCAAGZAgABmQFsAgABcQIAAXECAAFxAgABdwIAAVUEAAHvAW0C
+        7wH/Ae8B/wHvARQB7xIAAe0EkgQcB5kBiwNsCHEDdwFVAwAB7wFtAe8F/wHzAesB7wQACQMFAAGRBQAB
+        HAIAARwCAAGZAgABmQGLAgABbAIAAXECAAFxAgABcQIAAXcCAAHvARQB7wf/Ae8BFAHvAgAB+wEACQME
+        AAGRAwACmgMAARwCAAGZAgABmQGLAgABbAIABkYBcQIAAXcBAAHvARQB7wn/AW0B7wIAAf8B+wEACQMD
+        AAORAQABmgEAAfsBAAGSBRwCmQSLA2wFRgRxAQAB6wFtCv8B9AEUAe8BAAH7Af8B+wEACQMCAAGuAgAB
+        kQEAA/sBAAGSAgABHAIAARwBhgIAAYsCAAFsAQAERgFxAgABcQHrAW0B9AH/AfIJ/wEUAe8BAAH/AfsB
+        /wH7CwABrgIAAZECAAP7AwABHAIAARwBhgIAAYsCAAGLBUYBcQIAAXEBFAHyAf8BBwFtAfII/wEUAe8B
+        AAH7Af8B+wH/AfsB/wH7Af8B+wYAAYsDrgKRAQAD+wEAA5ICHAOGA4sDRgFsAkYEcQEUAfEBBwEQARQB
+        8QEHAv8BBwL/AW0B/wHyARQBAAH/AfsB/wH7Af8B+wH/AfsB/wYAAYsCAAGuAgABkQEAA/sBAAGSAgAB
+        kgGGAgABhgEAA0YBAAFsAQABRgFxAgABcQEAARQCEAEHAfIBbQL/AW0B/wH0AW0B8AH/ARQBAAH7Af8B
+        +wwAAYsCAAGLAgABrgIAAfsBAAEgAwABkgGGAgABhgNGAgABiwIAAWwCAAFxAQAC7wEQAQcB8gFtAfEB
+        8gFtAfIB8QEUAe8B/wEUEAAGiwOuAQADIAEAAu0DhgNGAYYEiwRsAXEDAAHwAfQB7wEUAvIBFALyARQB
+        EAEHARQQAAGGAgABiwIAAYsCAAGuAQABIAMAAZEBhgEAA0YBAAGGAgABiwIAAWwCAAFsAgABEAG8AfIB
+        EAEUAvIBFALyARQBAAEQEQABpwIAAYsCAAGLAgABrgIAAZECAAGRAYYCAAFGAgABhgIAAYsCAAGLAgAB
+        bAYAARQC8gMUFAADpwGGB4sDrgKRAacJhgWLAWwGAAEUHAABcAIGA4oFxwIABBwImQKfAqADAAFwAgYD
+        igXHAgAEHAiZAp8CoAMAAXABAAFwAQABigEAAYoBAAHHAQABxwIAAZICAAEcAgABmQIAAZkCAAGZAgAB
+        nwMAAXABAAFwAQABigEAAYoBAAHHAQABxwIAAZICAAEcAgABmQIAAZkCAAGZAgABnwMAAVQDcAIGA4oC
+        xwIAAZICAAEcAgABHAIAA/sBmQIAAZkDAAFUA3ACBgOKAscCAAGSAgABHAIAARwCAAGZAgABmQIAAZkD
+        AAFUAQABVAEAAXABAAEGAQABigEAAYoCAAHtA5IEHAX7A5kDAAFUAQABVAEAAXABAAEGAQABigEAAYoC
+        AAHtA5IFHAEABpkDAARUBHABBgKKAgABkQIAAZICAAEcAQAF+wIAAZkDAARUBHABBgKKAgABkQIAAZIC
+        AAEcAgABdQIAAZkCAAGZAwAB+gEAAVQBAAFUAQABcAEAAXABAAEGAgABkQIAAe0CAAGSAQAF+wIAAZkD
+        AAH6AQABVAEAAVQBAAFwAQABcAEAAQYCAAGRAQAB+QHtAgABkgIAAlMBAAGZAgABmQMAA/oFVANwAgAE
+        kQLtA5ID+wIcApkDAAP6BVQDcAIAAZEC+QGRAu0BAAL/AQABUwFNAQABHAKZEAABrgIAAZECAAHtAgAB
+        kgIAARwCAAEcEAABrgL5AZEDAAP/AQACTQIAARwQAAGuAgAD+wGRAgABkgIAARwCAAEcEAABrgP5AQAB
+        dQFTAQAB/wEAAk0CRwEAARwBOgM5AR0BAAEdAgAB0wHNAqwBxwKnAYsBrgX7ApEC7QOSAhwBOgM5AR0B
+        AAEdAgAB0wHNAqwBxwKnAYsD+QEAA1MBAAJNAkcBAAIcAToBAAE6AwABHQIAAdMBAAHNAQABrAEAAacB
+        iwEABfsCAAGRAgABkgIAAZIBOgEAAToDAAEdAgAB0wEAAc0BAAGsAQABpwGLAQAC+QEAAlMDTQJHAwAB
+        kgM6AQADOQIAA9MBzQKsAccBiwEABfsCAAGRAgAB7QIAAZIDOgEAAzkCAAPTAc0CrAHHAYsCAAL5AQAC
+        TQQAAe0CAAGSATsBAAE6AQABOgEAATkGAAHNAQABrAOLA/sDrgWRAu0BOwEAAToBAAE6AQABOQYAAc0B
+        AAGsBosBAAFNAkcBAAGRAQABkQLtAzsEOgIAAtkD0wHNAawBhgIAAYsCAAGLAgABrgIAAZECAAGRAzsE
+        OgIAAtkD0wHNAawBhgIAAYsCAAGLAQABRwMAAZECAAGRAfsBAAE7AQABOgEAAToCAAHZAQAB2QEAAdMB
+        AAHNAacCAAGLAgABiwIAAa4CAAGRAgABkQH7AQABOwEAAToBAAE6AgAB2QEAAdkBAAHTAQABzQGnAgAB
+        iwIAAYsCAAGuAgABkQIAAZED+wI7AjoCAAH+A9kD0wOnAYYHiwOuApED+wI7AjoCAAH+A9kD0wOnAYYH
+        iwOuApEBQgFNAT4HAAE+AwABKAMAAUADAAGAAwABAQEAAQEGAAEEFgAD//8AAgAC/wH4AT8E/wH+Af8B
+        8AI/AR8C/wH8AX8B8AE/AQ4BDwL/AfgBPwHwAR8BBgEHAv8B8AEfAfgBHwHAAQcBAAEPAeABDwH4AQAB
+        4AEHAQABBwHAAQcBgAEAAfABDwEAAQMB8AE/AYABAAH4AQ8BAAEDAfABKwGAAQAB8AEfAYABAQHwAT8B
+        gAEAAfABDwHAAQAB8AEvAYABAQHgAQcB4AEAAfABPwH8AQ8B4AEBAv8B8AEvAfwBBwHgAWEE/wH+AQcB
+        8AFwAv8B/gGvAf4BBwL4BP8B/gEPBP8BwAEAAeABAwHAAQEBwAEHAYABAAHgAQMBgAEBAYABAwGAAQAB
+        8AEHAYABAQEAAQEBgAEAAeABAwGAAQECAAGAAQABwAEBAYABAQIAAYABAAHAAQEBgAEBAgABgAEAAcAB
+        AQGAAQECAAGAAQABwAEBAYABAQIAAYABAAHgAQEBgAEBAYABAAGAAQAB8AEDAYABAQHAAQABgAEAAfgB
+        BwGAAQEB4AEBAYABAAH4AR8BgAEBAeABBwGAAQAB+AF/AYABAQHwAQcBgAEAAfgB/wGAAQMB8AEDAYAB
+        AQH4Af8BgAEPAfgBAwL/Af0B/wGAAR8D/wH4Av8CAAH/AfAB/wHwAv8CAAGAAQAB/wHgAv8DAAEBAf8B
+        wwH+AT8DAAEBAfABhwUAAQEBwAEPBQABAQGAAQ8FAAEBAYABHwUAAQEBAAEPBQABAQEAAQ8FAAEBAQAB
+        DwUAAQEBAAEPBQABAQGAAR8BAAEBAwABAQGAAR8B/AE/AwABAQHAAT8C/wMAAQEB8AP/AwABAwEAAX8C
+        /wF/Av8B+AEAAX8B+AEPAT8C/wHwAQABfwHwAQcBPwL/AeABAAF/AeABAwEfAv8BwwEAAQYBwAEBAR8B
+        /wHwAYcCAAHAAQEBBwHfAcABDwIAAcABAQEDAc8BgAEPAgABwAEBAYABRwGAAR8CAAHAAQEBwAEDAQAB
+        DwIAAcABAQHAAQEBAAEPAgABwAEBAeACAAEPAQABDgHgAQMB8AEBAQABDwEAAX8B8AEHAfwBAwGAAR8B
+        AAF/AfgBDwH/AQcBgAEfBf8BzwHAAT8F/wHfAfAB/wQAAfwBDwL/AW0BtgFtAbYB+AEHAv8BbQG2AW0B
+        tgHwAQMBAAEfBAAB4AEDAQABDwFhAbYBbQG2AcABAQEAAQcBYQG2AWwBBgGAAQEBAAEDBAABgAIAAQEB
+        YAE2AW0BBgQAAWgBNgFsAQYDAAEfBwABHwFsAQYBaAGmAwABHwFtAQYBYQG2AYABAAGPAfEEAAHAAQAB
+        /wH5AW0BhgFFAbYBwAEFAf8BdQFtAaYBbQG2AeABDwH/AY8EAAH8AX8C/wHgAQMCAAHgAQMCAAHqAasB
+        bQG2AeoBqwFtAbYB4AEDAW0BhgHgAQMBbQG2AeoBqwIAAeoBqwIAAeABAwFtAQYB4AEDAW0BFgHqAasB
+        bQEGAeoBqwFMAQYB4AEDAgAB4AEDAgAB+AH/AW0BtgH4Af8BCAECAfwB/wFhAbYB/AH/AwABgAMAAYAC
+        AAFVAaoBQQG2AVUBqgFAAQYBAQEAAUEBtgEBAQABYAEGAVQBCgIAAVQBCgIAAQEBAAFtAbYBAQEAAWwB
+        BgFVAaoBbQG2AVUBqgFtATYBAQGAAgABAQGAGAAL
+</value>
+  </data>
+  <data name="tbbNew.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="mnuBtnClear.Text" xml:space="preserve">
+    <value>Bỏ các lớp</value>
+  </data>
+  <data name="Splitter1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="Splitter1.MinExtra" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="tmrMenuTips.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="tbbPrint.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tlbMain.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;StatusBarPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusBarPanel, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="mnuCopy.Text" xml:space="preserve">
+    <value>Sao chép</value>
+  </data>
+  <data name="$this.Location" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </data>
+  <data name="mnuZoomNext.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="StatusBar1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="mnuZoomLayer.ShowShortcut" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ToolStripMenuItem14.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="msgRemoveGroup.Text" xml:space="preserve">
+    <value>Bạn có chắc là muốn xóa lớp được chọn và những lớp trong nó không?</value>
+  </data>
+  <data name="StatusBarPanel1.MinWidth" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="mnuBtnClear.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="tlbMain.ShowToolTips" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tbbOpen.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="mnuBtnClear.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mnuBtnClear.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="mnuZoomLayer.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mnuZoom.Location" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>261, 17</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem5.Name" xml:space="preserve">
+    <value>ToolStripMenuItem5</value>
+  </data>
+  <data name="mnuBtnRemove.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="MapMain.Locked" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mnuZoomShape.ShowShortcut" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ToolStripMenuItem14.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="ToolStripMenuItem14.Text" xml:space="preserve">
+    <value>Chồng lắp tất cả</value>
+  </data>
+  <data name="mnuOfflineDocs.Text" xml:space="preserve">
+    <value>Tài liệu MapWindow (Không trực tuyến)</value>
+  </data>
+  <data name="mnuShortcuts.Text" xml:space="preserve">
+    <value>Những phím tắt</value>
+  </data>
+  <data name="StatusBarPanel1.Width" type="System.Int32, mscorlib">
+    <value>181</value>
+  </data>
+  <data name="StatusBar1.Location" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 455</value>
+  </data>
+  <data name="MapPreview.Locked" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem15.Name" xml:space="preserve">
+    <value>ToolStripMenuItem15</value>
+  </data>
+  <data name="ToolStripMenuItem8.ShowShortcut" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mnuZoomPrevious.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tbbZoom.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tbbNew.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="ToolStripMenuItem16.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="mnuZoomShape.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.Font" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tbbZoom.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="ToolStripMenuItem11.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="ToolStripMenuItem5.ShowShortcut" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mnuZoomSelected.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mnuBtnAdd.Text" xml:space="preserve">
+    <value>Thêm lớp</value>
+  </data>
+  <data name="mnuZoomIn.Text" xml:space="preserve">
+    <value>Phóng to</value>
+  </data>
+  <data name="mnuBtnRemove.ShowShortcut" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tbbZoomOut.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="tbbMeasure.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="StatusBarPanel1.Alignment" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MapMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="ToolStripMenuItem12.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="StatusBarPanel3.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="mnuUpdatePreviewFull.Text" xml:space="preserve">
+    <value>Cập nhật sử dụng hiển thị toàn phạm vi</value>
+  </data>
+  <data name="mnuUpdatePreviewCurr.Text" xml:space="preserve">
+    <value>Cập nhật sử dụng cửa sổ hiển thị hiện hành</value>
+  </data>
+  <data name="tbbZoom.ToolTipText" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="ProgressBar1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="ToolStripMenuItem16.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ToolTip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbbZoomOut.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Splitter2.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="&gt;&gt;ProgressBar1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Panel1.Font" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="mnuPlugins.Text" xml:space="preserve">
+    <value>Chương trình gắn kèm</value>
+  </data>
+  <data name="ToolStripMenuItem13.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ProgressBar1.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="mnuZoomMax.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="tlbMain.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="MapMain.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ToolStripMenuItem11.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="&gt;&gt;tbbAddRemove.Name" xml:space="preserve">
+    <value>tbbAddRemove</value>
+  </data>
+  <data name="mnuZoomSelected.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="tlbMain.Font" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ToolStripMenuItem8.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mnuZoomNext.Text" xml:space="preserve">
+    <value>Tiếp</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem12.Name" xml:space="preserve">
+    <value>ToolStripMenuItem12</value>
+  </data>
+  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mnuZoomPrevious.ShowShortcut" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="MapPreview.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ToolStripMenuItem4.ShowShortcut" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ProgressBar1.Name" xml:space="preserve">
+    <value>ProgressBar1</value>
+  </data>
+  <data name="MapPreview.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="ToolTip.Location" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 54</value>
+  </data>
+  <data name="&gt;&gt;Splitter2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="StatusBarPanel1.Icon" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="tbbSave.ImageIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="Panel1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="ToolStripMenuItem16.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ToolStripMenuItem9.ShowShortcut" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mnuZoomLayer.Text" xml:space="preserve">
+    <value>Lớp</value>
+  </data>
+  <data name="Panel1.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="StatusBar1.Locked" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ToolStripMenuItem13.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="mnuFile.Text" xml:space="preserve">
+    <value>Tập tin</value>
+  </data>
+  <data name="tbbZoom.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="MapMain.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;tlbMain.Name" xml:space="preserve">
+    <value>tlbMain</value>
+  </data>
+  <data name="StatusBarPanel3.ToolTipText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="mnuCopyNorthArrow.Text" xml:space="preserve">
+    <value>Mũi tên hướng Bắc</value>
+  </data>
+  <data name="&gt;&gt;mnuZoomNext.Name" xml:space="preserve">
+    <value>mnuZoomNext</value>
+  </data>
+  <data name="StatusBar1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;Splitter2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tbbAddRemove.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="mnuCopyLegend.Text" xml:space="preserve">
+    <value>Chú giải</value>
+  </data>
+  <data name="tbbSelect.ToolTipText" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="&gt;&gt;tbbAddRemove.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="StatusBar1.Font" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;Splitter2.Name" xml:space="preserve">
+    <value>Splitter2</value>
+  </data>
+  <data name="&gt;&gt;MapPreview.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Splitter1.Font" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="tbbMeasure.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="ToolStripMenuItem30.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tbbPrint.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="mnuClearPreview.Text" xml:space="preserve">
+    <value>Bỏ</value>
+  </data>
+  <data name="MapMain.Font" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="$this.AutoScrollMinSize" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </data>
+  <data name="mnuZoomPrevious.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Panel1.AutoScrollMargin" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </data>
+  <data name="Splitter2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="tlbMain.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem2.Name" xml:space="preserve">
+    <value>ToolStripMenuItem2</value>
+  </data>
+  <data name="mnuZoomLayer.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="tbbZoomOut.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mnuNextZoom.Text" xml:space="preserve">
+    <value>Phóng tiếp</value>
+  </data>
+  <data name="Panel1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tbbAddRemove.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="mnuZoomLayer.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tbbNew.ToolTipText" xml:space="preserve">
+    <value>New Project</value>
+  </data>
+  <data name="mnuZoomPrevious.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="MapPreview.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;tmrMenuTips.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ToolStripMenuItem2.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="ProgressBar1.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="StatusBarPanel2.Alignment" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="ToolStripMenuItem2.ShowShortcut" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;mnuZoom.Name" xml:space="preserve">
+    <value>mnuZoom</value>
+  </data>
+  <data name="mnuAboutMapWindow.Text" xml:space="preserve">
+    <value>Về</value>
+  </data>
+  <data name="tbbBreak3.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem8.Name" xml:space="preserve">
+    <value>ToolStripMenuItem8</value>
+  </data>
+  <data name="tbbZoom.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ToolStripMenuItem3.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="StatusBarPanel3.Alignment" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="StatusBarPanel2.Icon" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;tlbMain.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="mnuLegend.Location" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </data>
+  <data name="tbbPan.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="Splitter1.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="ToolStripMenuItem30.ShowShortcut" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tbbBreak2.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="Panel1.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;tlbMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MapMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="msgLegendLayerDoubleClick.Text" xml:space="preserve">
+    <value>Không có thuộc tính sẵn có cho dạng lớp này.</value>
+  </data>
+  <data name="mnuEditPlugins.Text" xml:space="preserve">
+    <value>Biên tập những chương trình gắn kèm</value>
+  </data>
+  <data name="ToolStripMenuItem12.ShowShortcut" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Panel1.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mnuNew.Text" xml:space="preserve">
+    <value>Mới</value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </data>
+  <data name="mnuBtnAdd.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="msgSaveProject2.Text" xml:space="preserve">
+    <value>Dự án này à?</value>
+  </data>
+  <data name="MapPreview.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;tbbPan.Name" xml:space="preserve">
+    <value>tbbPan</value>
+  </data>
+  <data name="ProgressBar1.Font" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ToolStripMenuItem13.Text" xml:space="preserve">
+    <value>Những nhóm chồng lắp</value>
+  </data>
+  <data name="&gt;&gt;MapMain.Type" xml:space="preserve">
+    <value>AxMapWinGIS.AxMap, AxInterop.MapWinGIS, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="ToolStripMenuItem30.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="$this.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="Splitter2.Font" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="mnuZoomSelected.ShowShortcut" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ProgressBar1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;tbbBreak2.Name" xml:space="preserve">
+    <value>tbbBreak2</value>
+  </data>
+  <data name="&gt;&gt;tbbNew.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;StatusBarPanel2.Name" xml:space="preserve">
+    <value>StatusBarPanel2</value>
+  </data>
+  <data name="ProgressBar1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="mnuScript.Text" xml:space="preserve">
+    <value>Những bản thảo...</value>
+  </data>
+  <data name="mnuExport.Text" xml:space="preserve">
+    <value>Xuất</value>
+  </data>
+  <data name="mnuZoomMax.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="$this.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;Splitter1.Parent" xml:space="preserve">
+    <value>Panel1</value>
+  </data>
+  <data name="mnuLegend.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="&gt;&gt;mnuBtnClear.Name" xml:space="preserve">
+    <value>mnuBtnClear</value>
+  </data>
+  <data name="mnuClose.Text" xml:space="preserve">
+    <value>Đóng</value>
+  </data>
+  <data name="Panel1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="mnuLayerButton.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="MapMain.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>356, 427</value>
+  </data>
+  <data name="tbbBreak1.ToolTipText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Splitter2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;StatusBar1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tbbZoomOut.Name" xml:space="preserve">
+    <value>tbbZoomOut</value>
+  </data>
+  <data name="tbbBreak1.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="MapMain.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="&gt;&gt;tbbSelect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ProgressBar1.Locked" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ToolStripMenuItem11.ShowShortcut" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="StatusBarPanel2.ToolTipText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ToolStripMenuItem15.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="&gt;&gt;Panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="mnuAddLayer.Text" xml:space="preserve">
+    <value>Thêm lớp</value>
+  </data>
+  <data name="ProgressBar1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="tbbSelect.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;mnuZoomPrevious.Name" xml:space="preserve">
+    <value>mnuZoomPrevious</value>
+  </data>
+  <data name="tbbZoomOut.ImageIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="Splitter1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="tbbBreak1.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;tbbZoom.Name" xml:space="preserve">
+    <value>tbbZoom</value>
+  </data>
+  <data name="titleClearLayers.Text" xml:space="preserve">
+    <value>Xác nhận xóa tất cả các lớp</value>
+  </data>
+  <data name="mnuEdit.Text" xml:space="preserve">
+    <value>Biên tập</value>
+  </data>
+  <data name="mnuClearLayer.Text" xml:space="preserve">
+    <value>Xóa các lớp</value>
+  </data>
+  <data name="ToolStripMenuItem15.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="mnuPreview.Text" xml:space="preserve">
+    <value>Bản đồ hiển thị trước</value>
+  </data>
+  <data name="mnuSaveMapImage.Text" xml:space="preserve">
+    <value>Bản đồ</value>
+  </data>
+  <data name="mnuZoomShape.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="ToolStripMenuItem8.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="tbbSave.ToolTipText" xml:space="preserve">
+    <value>Save Project</value>
+  </data>
+  <data name="ToolStripMenuItem3.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="msgSaveProject1.Text" xml:space="preserve">
+    <value>Bạn muốn lưu lại những thay đổi không?</value>
+  </data>
+  <data name="ToolStripMenuItem12.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="tbbNew.ImageIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="mnuBtnClear.ShowShortcut" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="MapPreview.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="Splitter2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="tlbMain.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="MapPreview.Font" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="tbbZoomIn.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="mnuZoomMax.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ToolStripMenuItem12.Text" xml:space="preserve">
+    <value>Mở rộng tất cả</value>
+  </data>
+  <data name="MapPreview.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="mnuPreviousZoom.Text" xml:space="preserve">
+    <value>Phóng về khu vực trước đó</value>
+  </data>
+  <data name="MapPreview.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="$this.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="MapMain.Location" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>203, 28</value>
+  </data>
+  <data name="$this.AutoScaleBaseSize" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>5, 13</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MapWindowForm</value>
+  </data>
+  <data name="MapMain.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;mnuZoomMax.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ProgressBar1.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="mnuLayerButton.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="&gt;&gt;mnuZoomShape.Name" xml:space="preserve">
+    <value>mnuZoomShape</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem13.Name" xml:space="preserve">
+    <value>ToolStripMenuItem13</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem30.Name" xml:space="preserve">
+    <value>ToolStripMenuItem30</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </data>
+  <data name="ToolStripMenuItem4.Text" xml:space="preserve">
+    <value>Xóa bỏ lớp</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip1.Name" xml:space="preserve">
+    <value>MenuStrip1</value>
+  </data>
+  <data name="tbbAddRemove.ImageIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="MapPreview.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ProgressBar1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="Panel1.AutoScrollMinSize" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tbbSelect.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mnuSaveScaleBar.Text" xml:space="preserve">
+    <value>Thanh tỉ lệ</value>
+  </data>
+  <data name="ToolStripMenuItem6.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ilsToolbar.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="ToolStripMenuItem15.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="MenuStrip1.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="StatusBarPanel2.MinWidth" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="mnuBtnAdd.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ToolStripMenuItem9.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ToolStripMenuItem2.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;tbbBreak3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ToolStripMenuItem4.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="&gt;&gt;tbbSelect.Name" xml:space="preserve">
+    <value>tbbSelect</value>
+  </data>
+  <data name="StatusBarPanel1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="mnuContents.Text" xml:space="preserve">
+    <value>Nội dung</value>
+  </data>
+  <data name="&gt;&gt;mnuZoomMax.Name" xml:space="preserve">
+    <value>mnuZoomMax</value>
+  </data>
+  <data name="MapPreview.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>200, 128</value>
+  </data>
+  <data name="StatusBar1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="Panel1.AutoScroll" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="titleRemoveGroup.Text" xml:space="preserve">
+    <value>Xóa nhóm à?</value>
+  </data>
+  <data name="&gt;&gt;mnuZoomNext.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="mnuZoomNext.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tbbBreak1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Panel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="tbbMeasure.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Splitter1.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mnuBtnRemove.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Splitter1.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="msgError.Text" xml:space="preserve">
+    <value>Lỗi</value>
+  </data>
+  <data name="tbbZoomIn.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tbbMeasureArea.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;tbbMeasureArea.Name" xml:space="preserve">
+    <value>tbbMeasureArea</value>
+  </data>
+  <data name="tbbMeasureArea.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;tbbMeasureArea.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tbbMeasureArea.ToolTipText" xml:space="preserve">
+    <value>Measure Area</value>
+  </data>
+  <data name="tbbMeasureArea.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tbbMeasureArea.Modifiers" type="System.CodeDom.MemberAttributes, System">
+    <value>Assembly</value>
+  </data>
+  <data name="tbbMeasureArea.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="msgHandleShortcutKeys.Text" xml:space="preserve">
+    <value>Bạn chắc muốn xóa những lớp đang được chọn chứ?</value>
+  </data>
+  <data name="msgUpdateToolNotFound.Text" xml:space="preserve">
+    <value>Công cụ kiểm tra cập nhật không thể hoạt động; tất cả những bản cập nhật cần tải xuống bằng tay. {1} Mở trang tải bây giờ không?</value>
+  </data>
+  <data name="msgPanelDistance.Text" xml:space="preserve">
+    <value>Khoảng cách: Bấm điểm đầu</value>
+  </data>
+  <data name="msgPanelArea.Text" xml:space="preserve">
+    <value>Diện tích: Bấm vào vị trí của điểm, bấm chuột phải khi nào xong</value>
+  </data>
+  <data name="msgAreaDrawnPolygon.Text" xml:space="preserve">
+    <value>Diện tích của đa giác được vẽ: {0} {1} Squared</value>
+  </data>
+  <data name="mnuCheckUpdates.Text" xml:space="preserve">
+    <value>&amp;Kiểm tra bản cập nhật</value>
+  </data>
+  <data name="mnuPanels.Text" xml:space="preserve">
+    <value>&amp;Bảng ba nô</value>
+  </data>
+  <data name="mnuShowLegend.Text" xml:space="preserve">
+    <value>Hiển thị &amp;chú giải</value>
+  </data>
+  <data name="mnuShowPreviewMap.Text" xml:space="preserve">
+    <value>Hiển thị &amp;bản đồ hiển thị trước</value>
+  </data>
+
+  <data name="msgShortcutsTitle.Text" xml:space="preserve">
+    <value>Những phím tắt bên dưới là sẵn sàng:</value>
+  </data>
+  <data name="msgShortcutsDel.Text" xml:space="preserve">
+    <value>Del- bỏ lớp đang được chọn.</value>
+  </data>
+  <data name="msgShortcutsIns.Text" xml:space="preserve">
+    <value>Ins - Thêm một lớp.</value>
+  </data>
+  <data name="msgShortcutsCtrlS.Text" xml:space="preserve">
+    <value>Ctrl-S - Lưu dự án.</value>
+  </data>
+  <data name="msgShortcutsCtrlO.Text" xml:space="preserve">
+    <value>Ctrl-O - Mở dự án.</value>
+  </data>
+  <data name="msgShortcutsCtrlC.Text" xml:space="preserve">
+    <value>Ctrl-C - Sao chép bản đồ đến bộ nhớ tạm.</value>
+  </data>
+  <data name="msgShortcutsCtrlP.Text" xml:space="preserve">
+    <value>Ctrl-P - Mở cửa sổ in ấn xem trước</value>
+  </data>
+  <data name="msgShortcutsCtrlF4.Text" xml:space="preserve">
+    <value>Ctrl-F4 - Đóng dự án hiện hành.</value>
+  </data>
+  <data name="msgShortcutsHome.Text" xml:space="preserve">
+    <value>Home - Phóng toàn bộ phạm vi</value>
+  </data>
+  <data name="msgShortcutsCtrlHome.Text" xml:space="preserve">
+    <value>Ctrl-Home - Phóng tới lớp được chọn</value>
+  </data>
+  <data name="msgShortcutsPlus.Text" xml:space="preserve">
+    <value>Plus - Phóng to 25% cửa sổ hiển thị từ tâm</value>
+  </data>
+  <data name="msgShortcutsMinus.Text" xml:space="preserve">
+    <value>Minus - Thu nhỏ 25% cửa sổ hiển thị từ tâm</value>
+  </data>
+  <data name="msgShortcutsPageUp.Text" xml:space="preserve">
+    <value>Page-Up - Kéo màn hình lên 50% cửa sổ hiển thị</value>
+  </data>
+  <data name="msgShortcutsPageDown.Text" xml:space="preserve">
+    <value>Page-Down - Kéo màn hình xuống 50% cửa sổ hiển thị</value>
+  </data>
+  <data name="msgShortcutsArrowUp.Text" xml:space="preserve">
+    <value>Up Arrow - Kéo màn hình lên 25% cửa sổ hiển thị</value>
+  </data>
+  <data name="msgShortcutsCtrlSpace.Text" xml:space="preserve">
+    <value>Control-Spacebar: Đảo khả năng hiển thị trên lớp</value>
+  </data>
+  <data name="msgShortcutsCtrlArrows.Text" xml:space="preserve">
+    <value>Control-Up, Control-Down: Chuyển đổi lớp được chọn trong chú giải</value>
+  </data>
+  <data name="msgShortcutsArrowDown.Text" xml:space="preserve">
+    <value>Down Arrow - Kéo màn hình xuống 25% cửa sổ hiển thị</value>
+  </data>
+  <data name="msgShortcutsArrowLeft.Text" xml:space="preserve">
+    <value>Left Arrow - Kéo màn hình qua trái 25% cửa sổ hiển thị</value>
+  </data>
+  <data name="msgShortcutsArrowRight.Text" xml:space="preserve">
+    <value>Right Arrow - Kéo màn hình qua phải 25% cửa sổ hiển thị</value>
+  </data>
+  <data name="msgHelpfileDoesNotExist.Text" xml:space="preserve">
+    <value>Tập tin hỗ trợ không tồn tại.</value>
+  </data>
+  <data name="msgShortcutsCtrlEnter.Text" xml:space="preserve">
+    <value>Ctrl-Enter - Thuộc tính lớp</value>
+  </data>
+</root>

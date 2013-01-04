@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="mnuFile.Text" xml:space="preserve">
+    <value>Byla</value>
+  </data>
+  <data name="mnuNew.Text" xml:space="preserve">
+    <value>Naujas projektas</value>
+  </data>
+  <data name="mnuOpen.Text" xml:space="preserve">
+    <value>Atidaryti projektą</value>
+  </data>
+  <data name="mnuOpenProjectIntoGroup.Text" xml:space="preserve">
+    <value>Atidaryti projektą į naują grupę</value>
+  </data>
+  <data name="mnuSave.Text" xml:space="preserve">
+    <value>Saugoti projektą</value>
+  </data>
+  <data name="mnuSaveAs.Text" xml:space="preserve">
+    <value>Išsaugoti kaip</value>
+  </data>
+  <data name="mnuPrint.Text" xml:space="preserve">
+    <value>Spausdinti</value>
+  </data>
+  <data name="mnuProjectSettings.Text" xml:space="preserve">
+    <value>Nustatymai</value>
+  </data>
+  <data name="mnuRecentProjects.Text" xml:space="preserve">
+    <value>Naudoti projektai</value>
+  </data>
+  <data name="mnuCheckUpdates.Text" xml:space="preserve">
+    <value>&amp;Ieškoti atnaujinimų</value>
+  </data>
+  <data name="mnuClose.Text" xml:space="preserve">
+    <value>Uždaryti</value>
+  </data>
+  <data name="mnuExit.Text" xml:space="preserve">
+    <value>Išeiti</value>
+  </data>
+  <data name="mnuEdit.Text" xml:space="preserve">
+    <value>Redaguoti</value>
+  </data>
+  <data name="mnuCopy.Text" xml:space="preserve">
+    <value>Kopijuoti</value>
+  </data>
+  <data name="mnuCopyMap.Text" xml:space="preserve">
+    <value>Žemėlapis</value>
+  </data>
+  <data name="mnuCopyLegend.Text" xml:space="preserve">
+    <value>Legenda</value>
+  </data>
+  <data name="mnuCopyScaleBar.Text" xml:space="preserve">
+    <value>Mastelio juosta</value>
+  </data>
+  <data name="mnuCopyNorthArrow.Text" xml:space="preserve">
+    <value>Šiaurės rodyklė</value>
+  </data>
+  <data name="mnuExport.Text" xml:space="preserve">
+    <value>Eksportuoti</value>
+  </data>
+  <data name="mnuSaveMapImage.Text" xml:space="preserve">
+    <value>Žemėlapis</value>
+  </data>
+  <data name="mnuSaveGeorefMapImage.Text" xml:space="preserve">
+    <value>Geografiškai orientuotas žemėlapis</value>
+  </data>
+  <data name="mnuSaveScaleBar.Text" xml:space="preserve">
+    <value>Mastelio juosta</value>
+  </data>
+  <data name="mnuSaveNorthArrow.Text" xml:space="preserve">
+    <value>Šiaurės rodyklė</value>
+  </data>
+  <data name="mnuSaveLegend.Text" xml:space="preserve">
+    <value>Legenda</value>
+  </data>
+  <data name="mnuPreview.Text" xml:space="preserve">
+    <value>Žemėlapio peržiūra</value>
+  </data>
+  <data name="mnuUpdatePreviewFull.Text" xml:space="preserve">
+    <value>Atnaujinti naudojant pilnas ribas</value>
+  </data>
+  <data name="mnuUpdatePreviewCurr.Text" xml:space="preserve">
+    <value>Atnaujinti naudojant esamą vaizdą</value>
+  </data>
+  <data name="mnuClearPreview.Text" xml:space="preserve">
+    <value>Valyti</value>
+  </data>
+  <data name="mnuView.Text" xml:space="preserve">
+    <value>Vaizdas</value>
+  </data>
+  <data name="mnuAddLayer.Text" xml:space="preserve">
+    <value>Pridėti sluoksnį</value>
+  </data>
+  <data name="mnuRemoveLayer.Text" xml:space="preserve">
+    <value>Šalinti sluoksnį</value>
+  </data>
+  <data name="mnuClearLayer.Text" xml:space="preserve">
+    <value>Šalinti visus sluoksnius</value>
+  </data>
+  <data name="mnuClearSelectedShapes.Text" xml:space="preserve">
+    <value>Atžymėti pažymėtas figūras</value>
+  </data>
+  <data name="mnuSetScale.Text" xml:space="preserve">
+    <value>Nustatyti žemėlapio mastelį</value>
+  </data>
+  <data name="mnuShowScaleBar.Text" xml:space="preserve">
+    <value>Rodyti slankiąją mastelio juostą</value>
+  </data>
+  <data name="mnuZoomIn.Text" xml:space="preserve">
+    <value>Padidinti vaizdą</value>
+  </data>
+  <data name="mnuZoomOut.Text" xml:space="preserve">
+    <value>Sumažinti vaizdą</value>
+  </data>
+  <data name="mnuZoomToFullExtents.Text" xml:space="preserve">
+    <value>Pritraukti vaizdą iki žemėlapio ribų</value>
+  </data>
+  <data name="mnuZoomToPreviewExtents.Text" xml:space="preserve">
+    <value>Pritraukti vaizdą žemėlapio ribų peržiūrai</value>
+  </data>
+  <data name="mnuPreviousZoom.Text" xml:space="preserve">
+    <value>Ankstesnis vaizdas</value>
+  </data>
+  <data name="mnuNextZoom.Text" xml:space="preserve">
+    <value>Sekantis vaizdas</value>
+  </data>
+  <data name="mnuBookmarkView.Text" xml:space="preserve">
+    <value>Pridėti vaizdą į sąrašą</value>
+  </data>
+  <data name="mnuBookmarkDelete.Text" xml:space="preserve">
+    <value>Trinti vaizdą iš sąrašo</value>
+  </data>
+  <data name="mnuBookmarkedViews.Text" xml:space="preserve">
+    <value>Vaizdų sąrašas</value>
+  </data>
+  <data name="mnuRestoreMenu.Text" xml:space="preserve">
+    <value>&amp;Skydeliai</value>
+  </data>
+  <data name="mnuPanels.Text" xml:space="preserve">
+    <value>&amp;Skydeliai</value>
+  </data>
+  <data name="mnuShowLegend.Text" xml:space="preserve">
+    <value>Rodyti &amp;legendą</value>
+  </data>
+  <data name="mnuShowPreviewMap.Text" xml:space="preserve">
+    <value>Žemėlapio &amp;peržiūra</value>
+  </data>
+  <data name="mnuPlugins.Text" xml:space="preserve">
+    <value>Papildiniai</value>
+  </data>
+  <data name="DisableDynamicVis.Text" xml:space="preserve">
+    <value>Sluoksniui įjungtas dinaminis matomumas. Ar norite jį išjungti ir rodyti sluoksnį?</value>
+  </data>
+  <data name="mnuEditPlugins.Text" xml:space="preserve">
+    <value>Redaguoti papildinius</value>
+  </data>
+  <data name="mnuScript.Text" xml:space="preserve">
+    <value>Skriptai...</value>
+  </data>
+  <data name="mnuHelp.Text" xml:space="preserve">
+    <value>Pagalba</value>
+  </data>
+  <data name="mnuContents.Text" xml:space="preserve">
+    <value>Turinys</value>
+  </data>
+  <data name="mnuOnlineDocs.Text" xml:space="preserve">
+    <value>MapWindow dokumentacija (internete)</value>
+  </data>
+  <data name="mnuOfflineDocs.Text" xml:space="preserve">
+    <value>MapWindow dokumentacija (atjungta)</value>
+  </data>
+  <data name="mnuShortcuts.Text" xml:space="preserve">
+    <value>Spartieji klavišai</value>
+  </data>
+  <data name="mnuWelcomeScreen.Text" xml:space="preserve">
+    <value>Pasisveikinimo langas</value>
+  </data>
+  <data name="mnuAboutMapWindow.Text" xml:space="preserve">
+    <value>Apie</value>
+  </data>
+  <data name="mnuRemoveGroup.Text" xml:space="preserve">
+    <value>Trinti grupę</value>
+  </data>
+  <data name="mnuZoomToGroup.Text" xml:space="preserve">
+    <value>Pritraukti vaizdą iki grupės</value>
+  </data>
+  <data name="mnuZoomToLayer.Text" xml:space="preserve">
+    <value>Pritraukti vaizdą iki sluoksnio</value>
+  </data>
+  <data name="sbContextMenu_ChangeUnits.Text" xml:space="preserve">
+    <value>Pakeisti vaizdavimo vienetus</value>
+  </data>
+  <data name="sbContextMenu_UpperLeft.Text" xml:space="preserve">
+    <value>Patalpinti viršuje kairėje</value>
+  </data>
+  <data name="sbContextMenu_UpperRight.Text" xml:space="preserve">
+    <value>Patalpinti viršuje dešinėje</value>
+  </data>
+  <data name="sbContextMenu_LowerLeft.Text" xml:space="preserve">
+    <value>Patalpinti apačioje kairėje</value>
+  </data>
+  <data name="sbContextMenu_LowerRight.Text" xml:space="preserve">
+    <value>Patalpinti apačioje kairėje</value>
+  </data>
+  <data name="sbContextMenu_ChooseForecolor.Text" xml:space="preserve">
+    <value>Pasirinkti teksto spalvą</value>
+  </data>
+  <data name="sbContextMenu_ChooseBackcolor.Text" xml:space="preserve">
+    <value>Pasirinkti fono spalvą</value>
+  </data>
+  <data name="msgErrorSavingImage.Text" xml:space="preserve">
+    <value>Buvo klaidų išsaugant paveikslėlį</value>
+  </data>
+  <data name="msgClearLayers.Text" xml:space="preserve">
+    <value>Ar tiktai norite ištrinti visus sluoksnius?</value>
+  </data>
+  <data name="msgRemoveGroup.Text" xml:space="preserve">
+    <value>Ar tikrai norite ištrinti pažymėtą grupę ir jos sluoksnius?</value>
+  </data>
+  <data name="msgLegendLayerDoubleClick.Text" xml:space="preserve">
+    <value>Šis sluoksnio tipas neturi savybių.</value>
+  </data>
+  <data name="msgError.Text" xml:space="preserve">
+    <value>Klaida</value>
+  </data>
+  <data name="msgSaveProject1.Text" xml:space="preserve">
+    <value>Ar norite išsaugoti pakeitimus padarytus </value>
+  </data>
+  <data name="msgSaveProject2.Text" xml:space="preserve">
+    <value>projektui?</value>
+  </data>
+  <data name="msgHandleShortcutKeys.Text" xml:space="preserve">
+    <value>Ar esate tikras, kad norite ištrinti pažymėtą sluoksnį?</value>
+  </data>
+  <data name="msgUpdateToolNotFound.Text" xml:space="preserve">
+    <value>Nerastas atnaujinimo įrankis; atnaujinimus reikės siųstis rankiniu būdu. {1} Atidaryti atnaujinimų tinklapį dabar?</value>
+  </data>
+  <data name="msgAreaDrawnPolygon.Text" xml:space="preserve">
+    <value>Nupiešto poligono sritis: </value>
+  </data>
+  <data name="msgPanelAreaClick.Text" xml:space="preserve">
+    <value>Spauskite ant verteksų; Spauskite dešinį klavišą, kad baigtumėte</value>
+  </data>
+  <data name="msgPanelArea.Text" xml:space="preserve">
+    <value>Sritis:</value>
+  </data>
+  <data name="msgPanelDistance.Text" xml:space="preserve">
+    <value>Atstumas:</value>
+  </data>
+  <data name="msgClickNextPoint.Text" xml:space="preserve">
+    <value>Pažymėkite sekantį tašką.</value>
+  </data>
+  <data name="msgDistanceStartOver.Text" xml:space="preserve">
+    <value>Pažymėkite sekantį tašką. Spauskite dešinį klavišą, kad pradėti iš naujo.</value>
+  </data>
+  <data name="msgShortcutsTitle.Text" xml:space="preserve">
+    <value>Galimi spartieji klavišai:</value>
+  </data>
+  <data name="msgShortcutsDel.Text" xml:space="preserve">
+    <value>Del - Trinti pažymėtąą sluoksnį.</value>
+  </data>
+  <data name="msgShortcutsIns.Text" xml:space="preserve">
+    <value>Ins - Pridėti sluoksnį.</value>
+  </data>
+  <data name="msgShortcutsCtrlS.Text" xml:space="preserve">
+    <value>Ctrl+S - Išsaugoti projektą.</value>
+  </data>
+  <data name="msgShortcutsCtrlShiftI.Text" xml:space="preserve">
+    <value>Ctrl+Shift+I - Pereiti į pritraukimo režimą.</value>
+  </data>
+  <data name="msgShortcutsCtrlShiftO.Text" xml:space="preserve">
+    <value>Ctrl+Shift+O - Pereiti į atitolinimo režimą.</value>
+  </data>
+  <data name="msgShortcutsCtrlShiftP.Text" xml:space="preserve">
+    <value>Ctrl+Shift+P - Pereiti į perstūmimo režimą.</value>
+  </data>
+  <data name="msgShortcutsCtrlO.Text" xml:space="preserve">
+    <value>Ctrl+O - Atidaryti projektą.</value>
+  </data>
+  <data name="msgShortcutsCtrlC.Text" xml:space="preserve">
+    <value>Ctrl+C - Kopjuoti momentinę ekrano kopiją į iškarpinę.</value>
+  </data>
+  <data name="msgShortcutsCtrlP.Text" xml:space="preserve">
+    <value>Ctrl+P - Atidaryti spausdinimo peržiūros langą.</value>
+  </data>
+  <data name="msgShortcutsCtrlF4.Text" xml:space="preserve">
+    <value>Ctrl+F4 - Uždaryti dabartinį projektą.</value>
+  </data>
+  <data name="msgShortcutsHome.Text" xml:space="preserve">
+    <value>Home - Pritraukti vaizdą iki pilnų žemėlapio ribų.</value>
+  </data>
+  <data name="msgShortcutsCtrlHome.Text" xml:space="preserve">
+    <value>Ctrl+Home - Pritraukti vaizdą iki pažymėtoo sluoksnio.</value>
+  </data>
+  <data name="msgShortcutsPlus.Text" xml:space="preserve">
+    <value>Plus - Padidinti vaizdą 25%.</value>
+  </data>
+  <data name="msgShortcutsMinus.Text" xml:space="preserve">
+    <value>Minus - Sumažinti vaizdą 25%.</value>
+  </data>
+  <data name="msgShortcutsPageUp.Text" xml:space="preserve">
+    <value>PageUp - Perstumti matomą vaizdą 50% į viršų.</value>
+  </data>
+  <data name="msgShortcutsPageDown.Text" xml:space="preserve">
+    <value>PageDown - Perstumti matomą vaizdą 50% į apačią.</value>
+  </data>
+  <data name="msgShortcutsArrowUp.Text" xml:space="preserve">
+    <value>Up Arrow - Perstumti matomą vaizdą 25% į viršų.</value>
+  </data>
+  <data name="msgShortcutsCtrlSpace.Text" xml:space="preserve">
+    <value>Ctrl+Spacebar - Perjungti sluoksnio matomumą.</value>
+  </data>
+  <data name="msgShortcutsCtrlArrows.Text" xml:space="preserve">
+    <value>Ctrl+Up, Ctrl+Down - Pasirinkti kitą sluoksnį legendoje.</value>
+  </data>
+  <data name="msgShortcutsArrowDown.Text" xml:space="preserve">
+    <value>Down Arrow - Perstumti matomą vaizdą 25% į apačią.</value>
+  </data>
+  <data name="msgShortcutsArrowLeft.Text" xml:space="preserve">
+    <value>Left Arrow - Perstumti matomą vaizdą 25% į kairę.</value>
+  </data>
+  <data name="msgShortcutsArrowRight.Text" xml:space="preserve">
+    <value>Right Arrow - Perstumti matomą vaizdą 25% į dešinę.</value>
+  </data>
+  <data name="msgHelpfileDoesNotExist.Text" xml:space="preserve">
+    <value>Pagalbos failas neegzistuoja.</value>
+  </data>
+  <data name="msgShortcutsCtrlEnter.Text" xml:space="preserve">
+    <value>Ctrl+Enter - Sluoksnio savybės.</value>
+  </data>
+  <data name="titleClearLayers.Text" xml:space="preserve">
+    <value>Patvirtinti visų sluoksnių trynimą</value>
+  </data>
+  <data name="titleRemoveGroup.Text" xml:space="preserve">
+    <value>Trinti grupę?</value>
+  </data>
+  <data name="LegendName.Text" xml:space="preserve">
+    <value>Legenda</value>
+  </data>
+  <data name="ToolStripMenuItem6.Text" xml:space="preserve">
+    <value>Priartinti vaizdą iki sluoksnio</value>
+  </data>
+  <data name="msgShortcutsCtrlI.Text" xml:space="preserve">
+    <value>Ctrl+I - Ypatybių identifikavimo režimas.</value>
+  </data>
+  <data name="msgShortcutsCtrlH.Text" xml:space="preserve">
+    <value>Ctrl+H - Figūros pažymėjimo/paryškinimo režimas.</value>
+  </data>
+  <data name="msgDataSubmitted.Text" xml:space="preserve">
+    <value>Ačiū! Duomenys buvo išsiųsti.</value>
+  </data>
+  <data name="msgHttpStatusCodeElse.Text" xml:space="preserve">
+    <value>Turinys nenuskaitytas. Būsenos kodas={0}.</value>
+  </data>
+  <data name="msgHttpStatusCodeNotFound.Text" xml:space="preserve">
+    <value>Turinys nenuskaitytas. URL neprieinamas. Būsenos kodas={0}.</value>
+  </data>
+  <data name="msgHttpStatusCodeRedirect.Text" xml:space="preserve">
+    <value>Turinys neprieinamas. URL pasikeitęs. Būsenos kodas={0}.</value>
+  </data>
+  <data name="msgModuleName.Text" xml:space="preserve">
+    <value>   Module Name:  </value>
+  </data>
+  <data name="msgModulesInfo.Text" xml:space="preserve">
+    <value>Module Info:  </value>
+  </data>
+  <data name="msgPath.Text" xml:space="preserve">
+    <value>   Path:  </value>
+  </data>
+  <data name="msgPerformanceInfo.Text" xml:space="preserve">
+    <value>Performance Info: (bytes)</value>
+  </data>
+  <data name="msgPrivateMemory.Text" xml:space="preserve">
+    <value>  Private Memory:  </value>
+  </data>
+  <data name="msgTotalCpuTime.Text" xml:space="preserve">
+    <value>   CPU-Time: </value>
+  </data>
+  <data name="msgTotalUserModeCpuTime.Text" xml:space="preserve">
+    <value>   CPU-Time by user: </value>
+  </data>
+  <data name="msgVersion.Text" xml:space="preserve">
+    <value>   Version:  </value>
+  </data>
+  <data name="msgVirtualMemory.Text" xml:space="preserve">
+    <value>   Virtual Memory:  </value>
+  </data>
+  <data name="msgNoConnection.Text" xml:space="preserve">
+    <value>Jūs ko gero neturite aktyvios interneto prieigos.
+
+Pasitikrinkite interneto prieigą ir bandykite dar kartą.</value>
+  </data>
+  <data name="msgOverwriteCurrentlyLoadedScript.Text" xml:space="preserve">
+    <value>Šiuo metu užkrautas skriptas bus perrašytas. Ar norite tęsti?</value>
+  </data>
+  <data name="msgBadUsernamePassword.Text" xml:space="preserve">
+    <value>Perdavimas nepavyko.
+ Vartotojo vardas ar slaptažodis neteisingas. pasitikrinkite.</value>
+  </data>
+  <data name="msgSubmittedSuccessfully.Text" xml:space="preserve">
+    <value>Perdavimas pavyko. Ačiū!</value>
+  </data>
+  <data name="msgGarbledServerResponse.Text" xml:space="preserve">
+    <value>Nesuprantamas atsakas iš tarnybinės stoties. Bandykite dar kartą.</value>
+  </data>
+  <data name="msgIncomplete.Text" xml:space="preserve">
+    <value>All fields are required; please make sure to enter something in every field.</value>
+  </data>
+  <data name="PluginPropertyName.Text" xml:space="preserve">
+    <value>Pavadinimas:  </value>
+  </data>
+  <data name="PluginPropertyVersion.Text" xml:space="preserve">
+    <value>Versija:  </value>
+  </data>
+  <data name="PluginPropertyBuildDate.Text" xml:space="preserve">
+    <value>Kompiliacijos data: </value>
+  </data>
+  <data name="PluginPropertyAuthor.Text" xml:space="preserve">
+    <value>Autorius:  </value>
+  </data>
+  <data name="PluginPropertyDescription.Text" xml:space="preserve">
+    <value>Aprašymas:  </value>
+  </data>
+  <data name="UserDefined.Text" xml:space="preserve">
+    <value>Apibrėžta vartotojo</value>
+  </data>
+  <data name="CustomProjection.Text" xml:space="preserve">
+    <value>Individualizuota projekcija</value>
+  </data>
+  <data name="WarningProjectionMismatch.Text" xml:space="preserve">
+    <value>Dėmesio: Projekcijų nesutapimas</value>
+  </data>
+  <data name="msgReprojectedGridDoesNotExists.Text" xml:space="preserve">
+    <value>Klaida: Perprojektuoto grid'o failas nerastas! Ieškokite errorlog.txt. Sluoksnio pridėjimas nutraukiamas.</value>
+  </data>
+  <data name="WarningNoProjectionOnLayer.Text" xml:space="preserve">
+    <value>Dėmesio: Ant sluoksnio negali būti projekcijos</value>
+  </data>
+  <data name="msgFileName.Text" xml:space="preserve">
+    <value>Failo pavadinimas: </value>
+  </data>
+  <data name="msgProjection.Text" xml:space="preserve">
+    <value>Projekcija: </value>
+  </data>
+  <data name="msgProjectProjection.Text" xml:space="preserve">
+    <value>Projekto projekcija: </value>
+  </data>
+  <data name="msgNewLayerProjection.Text" xml:space="preserve">
+    <value>Naujas sluoksnis: </value>
+  </data>
+  <data name="msgCustomProjection.Text" xml:space="preserve">
+    <value>Individualizuota</value>
+  </data>
+  <data name="msgScriptError.Text" xml:space="preserve">
+    <value>Skripto klaida</value>
+  </data>
+  <data name="msgSaveCurrentScript.Text" xml:space="preserve">
+    <value>Ar prieš tai norite išsaugoti dabartinį skriptą?</value>
+  </data>
+  <data name="msgIgnoreScript.Text" xml:space="preserve">
+    <value>Dėmesio: Nepaisoma skripto pavadinimo gauto iš komandinės eilutės, nes neegiztuoja.</value>
+  </data>
+  <data name="msgScriptNotExists.Text" xml:space="preserve">
+    <value>Neegzistuojantis skriptas</value>
+  </data>
+  <data name="titleNoConnection.Text" xml:space="preserve">
+    <value>Nėra interneto prieigos</value>
+  </data>
+  <data name="msgFindTutorials.Text" xml:space="preserve">
+    <value>Tikriausiai neturite aktyvio interneto prieigos. Konsultacijų galete rasti adresu:
+
+http://www.MapWindow.org/tutorials/</value>
+  </data>
+  <data name="msgFindDocumentation.Text" xml:space="preserve">
+    <value>Tikriausiai neturite aktyvios interneto prieigos. Mūsų dokumentacija internete prieinama adresu:
+
+http://www.MapWindow.org/wiki/</value>
+  </data>
+  <data name="msgChangeLanguage.Text" xml:space="preserve">
+    <value>Kalbos pakeitimas į {0} įsigalios paleidus MapWindow iš naujo</value>
+  </data>
+  <data name="msgChangeLanguage.Title" xml:space="preserve">
+    <value>Pakeisti kalbą</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="icoFullExtent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\zoom_full_extent.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icoLayerAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\layer_add.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icoLayerClear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\layer_clear.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icoLayerRemove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\layer_remove.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icoNew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\new.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icoSave" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\save.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icoZoom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\zoom.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icoZoomIn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\zoom_in.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icoZoomLayer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\zoom_to_layer.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icoZoomOut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\zoom_out.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgAbout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\about.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgBookmarkAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\bookmark_add.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgBookmarkDelete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\bookmark_delete.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgBookmarkView" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\bookmark_view.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgClose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\file_close.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgCopy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Copy.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgCopyLegend" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\copy_legend.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgExport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\export.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgFolder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\folder.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgGroupAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\group_add.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgGroupRemove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\group_remove.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgHelp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\help.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgHistory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\History.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgInfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\info.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgKeyboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Keyboard.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgLabel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\label_setup.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgLayerAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\layer_add.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgLayerClear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\layer_clear.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgLayerRemove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\layer_remove.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgMap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\map.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgMapExtents" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\map_extents.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgMapPreview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\map_preview.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgMapScale" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\map_scale.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgMetadata" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\metadata.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgNew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\file_new.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgOpenGroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\file_newgroup.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgPanels" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\panels.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgPlugin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\plugin.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgPluginEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\plugin_edit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgPrinter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\printer.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgProperties" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\properties.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgRelabel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\label_relabel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgSave" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\save.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgSaveAs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\file_saveas.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgScale" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\scale_bar.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgScripts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\scripts.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgSettings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\settings.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgTableEditor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\table.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgUpdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\file_update.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgWelcome" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AppSetting.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgZoomExtent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ZoomFullExtent.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgZoomIn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ZoomIn.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgZoomOut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ZoomOut.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgZoomToLayer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\zoom_to_layer.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuLayerAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\mnuLayerAdd.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuLayerClear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\mnuLayerClear.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuLayerRemove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\mnuLayerRemove.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="script_code" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\script_code.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="table_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\table_edit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zoom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\zoom.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zoom_in" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\zoom_in.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zoom_next" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\zoom_next.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zoom_out" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\zoom_out.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zoom_preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\zoom_preview.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgCollapseAll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\collapse_all.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgExpandAll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\expand_all.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgDelete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\delete.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\down.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgFlash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\lightning.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\up.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgPluginDisabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\plugin_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgPluginSub" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\plugin_go.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>
