@@ -6,63 +6,7 @@ mwGPS
 </name>
 </assembly>
 <members>
-<member name="P:mwGPS.My.Resources.Resources.ResourceManager">
-	<summary>
-  Returns the cached ResourceManager instance used by this class.
-</summary>
-</member><member name="P:mwGPS.My.Resources.Resources.Culture">
-	<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
-</summary>
-</member><member name="T:mwGPS.My.Resources.Resources">
-	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
-</summary>
-</member><member name="M:mwGPS.Globals.getShapefileFieldByName(MapWinGIS.Shapefile,System.String)">
-	<summary>
- Gets a field index from a shapefile by its name
- </summary>
-	<param name="sf"></param>
-	<param name="currField"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:mwGPS.Globals.getLayerIndexByPath(System.String)">
-	<summary>
- Gets a layer index by a given path
- </summary>
-	<param name="currPath"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:mwGPS.Globals.getLayerPathByName(System.String)">
-	<summary>
- Function used to get a layer path by its name
- </summary>
-	<param name="strName"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:mwGPS.Globals.getLayerNameByPath(System.String)">
-	<summary>
- Function used to get a layer name by its path
- </summary>
-	<param name="strPath"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:mwGPS.Globals.getLayerIndexByName(System.String)">
-	<summary>
- Function used to get a layer index by its name
- </summary>
-	<param name="strName"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:mwGPS.Globals.layerExists(System.String)">
-	<summary>
- Function used to check if a layer of a given path exists
- </summary>
-	<param name="strPath"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:mwGPS.frmGPSSettings.frmLogManager_Load(System.Object,System.EventArgs)">
+<member name="M:mwGPS.frmGPSSettings.frmLogManager_Load(System.Object,System.EventArgs)">
 	<summary>
  A handler to initialize the log manager form when laoding
  </summary>
@@ -155,6 +99,49 @@ mwGPS
 	<summary>
  Sets the form into a finished mode
  </summary>
+	<remarks></remarks>
+</member><member name="M:mwGPS.Globals.getShapefileFieldByName(MapWinGIS.Shapefile,System.String)">
+	<summary>
+ Gets a field index from a shapefile by its name
+ </summary>
+	<param name="sf"></param>
+	<param name="currField"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mwGPS.Globals.getLayerIndexByPath(System.String)">
+	<summary>
+ Gets a layer index by a given path
+ </summary>
+	<param name="currPath"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mwGPS.Globals.getLayerPathByName(System.String)">
+	<summary>
+ Function used to get a layer path by its name
+ </summary>
+	<param name="strName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mwGPS.Globals.getLayerNameByPath(System.String)">
+	<summary>
+ Function used to get a layer name by its path
+ </summary>
+	<param name="strPath"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mwGPS.Globals.getLayerIndexByName(System.String)">
+	<summary>
+ Function used to get a layer index by its name
+ </summary>
+	<param name="strName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mwGPS.Globals.layerExists(System.String)">
+	<summary>
+ Function used to check if a layer of a given path exists
+ </summary>
+	<param name="strPath"></param>
+	<returns></returns>
 	<remarks></remarks>
 </member><member name="M:mwGPS.clsGPSController.InitializeCom">
 	<summary>
@@ -334,6 +321,19 @@ mwGPS
  Module which handles drawing of the satellite position and signal to noise graphs
  </summary>
 	<remarks></remarks>
+</member><member name="P:mwGPS.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:mwGPS.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:mwGPS.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
 </member><member name="M:mwGPS.mwGPS.Initialize(MapWindow.Interfaces.IMapWin,System.Int32)">
 	<summary>
  Event triggered on execution of the plugin

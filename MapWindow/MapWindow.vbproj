@@ -2611,6 +2611,7 @@
   <PropertyGroup>
     <PreBuildEvent>
     </PreBuildEvent>
-    <PostBuildEvent>xcopy "$(ProjectDir)\GEM\LocalResources\*.*" "$(ProjectDir)$(OutDir)LocalResources" /D /I /E /Y</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
 </Project>
