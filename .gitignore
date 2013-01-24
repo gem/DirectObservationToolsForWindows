@@ -1,5 +1,6 @@
 # Build and Object Folders
 obj/
+[Oo]bj
 
 #User Specific Files
 *.user

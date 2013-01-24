@@ -138,7 +138,7 @@ Module modMain
 
         If Not M_NOLOGO Then
             formLogo.Show()
-            formLogo.lblVersion.Text = App.VersionString & " [BETA]"
+            formLogo.lblVersion.Text = App.VersionString
             Application.DoEvents()
         End If
 
@@ -203,6 +203,9 @@ Module modMain
 
         ' showing the main form
         frmMain.LoadToolStripSettings(frmMain.StripDocker)
+
+        frmMain.AddGPSTools()
+
         frmMain.mapPanel.Show(frmMain.dckPanel)
         frmMain.Show()
         frmMain.Update()

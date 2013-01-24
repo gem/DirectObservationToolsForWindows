@@ -29,7 +29,6 @@ Partial Class frmProjectDetails
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.surveySummary = New System.Windows.Forms.TextBox()
-        Me.btnCancel = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.yourName = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
@@ -37,9 +36,9 @@ Partial Class frmProjectDetails
         'btnCreate
         '
         Me.btnCreate.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCreate.Location = New System.Drawing.Point(96, 338)
+        Me.btnCreate.Location = New System.Drawing.Point(172, 337)
         Me.btnCreate.Name = "btnCreate"
-        Me.btnCreate.Size = New System.Drawing.Size(119, 22)
+        Me.btnCreate.Size = New System.Drawing.Size(136, 22)
         Me.btnCreate.TabIndex = 5
         Me.btnCreate.Text = "Start Survey"
         Me.btnCreate.UseVisualStyleBackColor = True
@@ -100,16 +99,6 @@ Partial Class frmProjectDetails
         Me.surveySummary.Size = New System.Drawing.Size(464, 121)
         Me.surveySummary.TabIndex = 4
         '
-        'btnCancel
-        '
-        Me.btnCancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancel.Location = New System.Drawing.Point(285, 338)
-        Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(119, 22)
-        Me.btnCancel.TabIndex = 6
-        Me.btnCancel.Text = "Cancel"
-        Me.btnCancel.UseVisualStyleBackColor = True
-        '
         'Label4
         '
         Me.Label4.AutoSize = True
@@ -135,7 +124,6 @@ Partial Class frmProjectDetails
         Me.ClientSize = New System.Drawing.Size(493, 371)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.yourName)
-        Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.surveySummary)
         Me.Controls.Add(Me.Label2)
@@ -160,7 +148,6 @@ Partial Class frmProjectDetails
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents surveySummary As System.Windows.Forms.TextBox
-    Friend WithEvents btnCancel As System.Windows.Forms.Button
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents yourName As System.Windows.Forms.TextBox
 End Class

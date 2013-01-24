@@ -41,9 +41,9 @@ Module Globals
 
 #Region "Toolbar Globals"
     Public g_ToolBarName As String = "gpsToolbar"
-    Public g_btnConnect As String = "gpsConnectBtn"
-    Public g_btnDisplay As String = "gpsDisplayBtn"
-    Public g_btnGPSSettings As String = "gpsLogManagerBtn"
+    Public g_btnConnect As String = "Connect GPS"
+    Public g_btnDisplay As String = "Display GPS"
+    Public g_btnGPSSettings As String = "GPS Log"
     Public g_btnDrawPoint As String = "gpsDrawPointBtn"
     Public g_btnDrawArrow As String = "gpsDrawArrowBtn"
     Public g_btnPan As String = "gpsPanBtn"

@@ -248,12 +248,14 @@ Partial Friend Class MapWindowForm
 
         MapToolTipTimer.Interval = 1000
 
+
         Me.KeyPreview = True
     End Sub
 
     ''' <summary>
     ''' Initialize docking panels
     ''' </summary>
+    ''' 
     Public Sub InitializeMapsAndLegends()
 
         Me.Legend = New LegendControl.Legend
@@ -4122,11 +4124,13 @@ Partial Friend Class MapWindowForm
         'Create GEM Database
         If Not fromOpen Then
             DoSaveAs()
+            If gemdb Is Nothing Then Exit Sub
+
             Dim f As New frmProjectDetails
             f.ShowDialog()
 
             If m_Project.ProjectProjection = "" Then
-               m_Project.SetProjectProjectionByDialog()
+                m_Project.SetProjectProjectionByDialog()
                 If m_Project.ProjectProjection = "" Then
                     Exit Sub
                 End If
@@ -5575,6 +5579,12 @@ Partial Friend Class MapWindowForm
         ' End If
     End Sub
 
+
+    Friend Sub AddGPSTools()
+        If Not m_PluginManager.PluginIsLoaded("mwGPS_mwGPS") Then
+            doPluginNameClick("mwGPS_mwGPS")
+        End If
+    End Sub
 
     Friend Sub AddGEMLayerIfNotPresent()
         Dim gemLayerID As Integer = GetGEMLayerID()

@@ -5,10 +5,40 @@ Imports MapWindow
 
 Public Class frmProjectDetails
 
-    Private Sub btnCancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancel.Click
-        Me.DialogResult = Me.DialogResult.Cancel
-        Me.Close()
+    Protected Overrides ReadOnly Property CreateParams() As CreateParams
+        Get
+            Dim param As CreateParams = MyBase.CreateParams
+            param.ClassStyle = param.ClassStyle Or &H200
+            Return param
+        End Get
+    End Property
+
+    Public Sub New()
+
+        ' This call is required by the designer.
+        InitializeComponent()
+
+        ' Add any initialization after the InitializeComponent() call.
+        Me.Icon = frmMain.Icon
     End Sub
+
+    Private Sub frmProjectDetails_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        If gemdb Is Nothing Then
+            Throw New Exception("Unable to load database")
+        End If
+        If gemdb.Dataset Is Nothing Then
+            Throw New Exception("Unable to load database")
+        End If
+
+        yourName.Text = gemdb.getFirstUserFromSettingsTable
+        If Not gemdb.getFirstProjectRecord Is Nothing Then
+            surveyTitle.Text = gemdb.getFirstProjectRecord.PROJ_NAME
+            surveySummary.Text = gemdb.getFirstProjectRecord.PROJ_SUMRY
+            projectDate.Value = gemdb.getFirstProjectRecord.PROJ_DATE
+        End If
+
+    End Sub
+
 
 
     Private Sub btnCreate_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCreate.Click
@@ -39,30 +69,5 @@ Public Class frmProjectDetails
 
     End Sub
 
-    Public Sub New()
-
-        ' This call is required by the designer.
-        InitializeComponent()
-
-        ' Add any initialization after the InitializeComponent() call.
-        Me.Icon = frmMain.Icon
-    End Sub
-
-    Private Sub frmProjectDetails_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        If gemdb Is Nothing Then
-            Throw New Exception("Unable to load database")
-        End If
-        If gemdb.Dataset Is Nothing Then
-            Throw New Exception("Unable to load database")
-        End If
-
-        yourName.Text = gemdb.getFirstUserFromSettingsTable
-        If Not gemdb.getFirstProjectRecord Is Nothing Then
-            surveyTitle.Text = gemdb.getFirstProjectRecord.PROJ_NAME
-            surveySummary.Text = gemdb.getFirstProjectRecord.PROJ_SUMRY
-            projectDate.Value = gemdb.getFirstProjectRecord.PROJ_DATE
-        End If
-
-    End Sub
 
 End Class
