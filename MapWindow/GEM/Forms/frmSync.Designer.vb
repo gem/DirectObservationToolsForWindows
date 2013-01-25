@@ -69,7 +69,7 @@ Partial Class frmSync
         '
         Me.SourceBrowse.Location = New System.Drawing.Point(393, 16)
         Me.SourceBrowse.Name = "SourceBrowse"
-        Me.SourceBrowse.Size = New System.Drawing.Size(51, 22)
+        Me.SourceBrowse.Size = New System.Drawing.Size(84, 22)
         Me.SourceBrowse.TabIndex = 4
         Me.SourceBrowse.Text = "Browse"
         Me.SourceBrowse.UseVisualStyleBackColor = True
@@ -78,16 +78,16 @@ Partial Class frmSync
         '
         Me.TargetBrowse.Location = New System.Drawing.Point(393, 42)
         Me.TargetBrowse.Name = "TargetBrowse"
-        Me.TargetBrowse.Size = New System.Drawing.Size(51, 22)
+        Me.TargetBrowse.Size = New System.Drawing.Size(84, 22)
         Me.TargetBrowse.TabIndex = 5
         Me.TargetBrowse.Text = "Browse"
         Me.TargetBrowse.UseVisualStyleBackColor = True
         '
         'Cancel
         '
-        Me.Cancel.Location = New System.Drawing.Point(336, 81)
+        Me.Cancel.Location = New System.Drawing.Point(306, 81)
         Me.Cancel.Name = "Cancel"
-        Me.Cancel.Size = New System.Drawing.Size(51, 22)
+        Me.Cancel.Size = New System.Drawing.Size(81, 22)
         Me.Cancel.TabIndex = 6
         Me.Cancel.Text = "Cancel"
         Me.Cancel.UseVisualStyleBackColor = True
@@ -96,7 +96,7 @@ Partial Class frmSync
         '
         Me.Ok.Location = New System.Drawing.Point(393, 81)
         Me.Ok.Name = "Ok"
-        Me.Ok.Size = New System.Drawing.Size(51, 22)
+        Me.Ok.Size = New System.Drawing.Size(84, 22)
         Me.Ok.TabIndex = 7
         Me.Ok.Text = "Ok"
         Me.Ok.UseVisualStyleBackColor = True
@@ -109,7 +109,7 @@ Partial Class frmSync
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(453, 112)
+        Me.ClientSize = New System.Drawing.Size(484, 112)
         Me.Controls.Add(Me.Ok)
         Me.Controls.Add(Me.Cancel)
         Me.Controls.Add(Me.TargetBrowse)
@@ -118,7 +118,11 @@ Partial Class frmSync
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TargetDatabase)
         Me.Controls.Add(Me.SourceDatabase)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "frmSync"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Synchronise GEM Databases"
         Me.ResumeLayout(False)
         Me.PerformLayout()

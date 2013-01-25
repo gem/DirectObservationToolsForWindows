@@ -460,6 +460,12 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="GEM\Classes\TempShared.vb" />
+    <Compile Include="GEM\Forms\frmGEM2CSV.Designer.vb">
+      <DependentUpon>frmGEM2CSV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GEM\Forms\frmGEM2CSV.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="GEM\Forms\frmDataManagement.Designer.vb">
       <DependentUpon>frmDataManagement.vb</DependentUpon>
     </Compile>
@@ -667,6 +673,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <None Include="app.config" />
+    <EmbeddedResource Include="GEM\Forms\frmGEM2CSV.resx">
+      <DependentUpon>frmGEM2CSV.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GEM\Forms\frmDataManagement.resx">
       <DependentUpon>frmDataManagement.vb</DependentUpon>
     </EmbeddedResource>

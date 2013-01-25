@@ -12,6 +12,13 @@ Public Class frmGEM2KML
 
     Private counter As Long = 0 ' to ensure and ids as unique
 
+    Private Sub Gem2KML_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.Icon = frmMain.Icon
+        If Not gemdb Is Nothing Then
+            Me.GEMDatabase.Text = gemdb.DatabasePath
+        End If
+        Me.IncludeImages.Checked = True
+    End Sub
 
     Sub MakeKMZ(ByVal strGEMDatabase As String, ByVal kmzFilePath As String)
 
@@ -559,11 +566,6 @@ Public Class frmGEM2KML
 
     End Sub
 
-    Private Sub Gem2KML_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        If Not gemdb Is Nothing Then
-            Me.GEMDatabase.Text = gemdb.DatabasePath
-        End If
-        Me.IncludeImages.Checked = True
-    End Sub
+
 
 End Class

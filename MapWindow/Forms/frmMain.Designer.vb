@@ -84,22 +84,10 @@ Partial Friend Class MapWindowForm
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MapWindowForm))
         Me.StripDocker = New System.Windows.Forms.ToolStripContainer()
         Me.panel1 = New System.Windows.Forms.Panel()
-        Me.tlbZoom = New MapWindow.ToolStripExtensions.ToolStripEx()
+        Me.tlbLayers = New MapWindow.ToolStripExtensions.ToolStripEx()
         Me.ContextToolstrip = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ToggleTextLabelsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ilsToolbar = New System.Windows.Forms.ImageList(Me.components)
-        Me.tbbPan = New System.Windows.Forms.ToolStripButton()
-        Me.tbbZoomIn = New System.Windows.Forms.ToolStripButton()
-        Me.tbbZoomOut = New System.Windows.Forms.ToolStripButton()
-        Me.tbbZoomExtent = New System.Windows.Forms.ToolStripButton()
-        Me.tbbZoomSelected = New System.Windows.Forms.ToolStripButton()
-        Me.tbbZoomPrevious = New System.Windows.Forms.ToolStripButton()
-        Me.tbbZoomNext = New System.Windows.Forms.ToolStripButton()
-        Me.tbbZoomLayer = New System.Windows.Forms.ToolStripButton()
-        Me.tbbAddPoint = New System.Windows.Forms.ToolStripButton()
-        Me.tbbQueryPoint = New System.Windows.Forms.ToolStripButton()
-        Me.tbbExportData = New System.Windows.Forms.ToolStripButton()
-        Me.tlbLayers = New MapWindow.ToolStripExtensions.ToolStripEx()
         Me.tbbAddLayer = New System.Windows.Forms.ToolStripButton()
         Me.tbbRemoveLayer = New System.Windows.Forms.ToolStripButton()
         Me.tbbClearLayers = New System.Windows.Forms.ToolStripButton()
@@ -112,6 +100,18 @@ Partial Friend Class MapWindowForm
         Me.tbbSave = New System.Windows.Forms.ToolStripButton()
         Me.tbbPrint = New System.Windows.Forms.ToolStripButton()
         Me.tbbProjectSettings = New System.Windows.Forms.ToolStripButton()
+        Me.tlbZoom = New MapWindow.ToolStripExtensions.ToolStripEx()
+        Me.tbbPan = New System.Windows.Forms.ToolStripButton()
+        Me.tbbZoomIn = New System.Windows.Forms.ToolStripButton()
+        Me.tbbZoomOut = New System.Windows.Forms.ToolStripButton()
+        Me.tbbZoomExtent = New System.Windows.Forms.ToolStripButton()
+        Me.tbbZoomSelected = New System.Windows.Forms.ToolStripButton()
+        Me.tbbZoomPrevious = New System.Windows.Forms.ToolStripButton()
+        Me.tbbZoomNext = New System.Windows.Forms.ToolStripButton()
+        Me.tbbZoomLayer = New System.Windows.Forms.ToolStripButton()
+        Me.tbbAddPoint = New System.Windows.Forms.ToolStripButton()
+        Me.tbbQueryPoint = New System.Windows.Forms.ToolStripButton()
+        Me.tbbExportData = New System.Windows.Forms.ToolStripButton()
         Me.tlbMain = New MapWindow.ToolStripExtensions.ToolStripEx()
         Me.tbbSelect = New System.Windows.Forms.ToolStripButton()
         Me.tbbDeSelectLayer = New System.Windows.Forms.ToolStripButton()
@@ -157,10 +157,10 @@ Partial Friend Class MapWindowForm
         Me.StripDocker.ContentPanel.SuspendLayout()
         Me.StripDocker.TopToolStripPanel.SuspendLayout()
         Me.StripDocker.SuspendLayout()
-        Me.tlbZoom.SuspendLayout()
-        Me.ContextToolstrip.SuspendLayout()
         Me.tlbLayers.SuspendLayout()
+        Me.ContextToolstrip.SuspendLayout()
         Me.tlbStandard.SuspendLayout()
+        Me.tlbZoom.SuspendLayout()
         Me.tlbMain.SuspendLayout()
         Me.mnuLegend.SuspendLayout()
         Me.mnuLayerButton.SuspendLayout()
@@ -184,25 +184,25 @@ Partial Friend Class MapWindowForm
         resources.ApplyResources(Me.StripDocker.TopToolStripPanel, "StripDocker.TopToolStripPanel")
         Me.StripDocker.TopToolStripPanel.Controls.Add(Me.tlbLayers)
         Me.StripDocker.TopToolStripPanel.Controls.Add(Me.tlbStandard)
-        Me.StripDocker.TopToolStripPanel.Controls.Add(Me.tlbZoom)
         Me.StripDocker.TopToolStripPanel.Controls.Add(Me.tlbMain)
+        Me.StripDocker.TopToolStripPanel.Controls.Add(Me.tlbZoom)
         '
         'panel1
         '
         resources.ApplyResources(Me.panel1, "panel1")
         Me.panel1.Name = "panel1"
         '
-        'tlbZoom
+        'tlbLayers
         '
-        Me.tlbZoom.AllowItemReorder = True
-        Me.tlbZoom.ClickThrough = True
-        Me.tlbZoom.ContextMenuStrip = Me.ContextToolstrip
-        resources.ApplyResources(Me.tlbZoom, "tlbZoom")
-        Me.tlbZoom.ImageList = Me.ilsToolbar
-        Me.tlbZoom.ImageScalingSize = New System.Drawing.Size(24, 24)
-        Me.tlbZoom.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tbbPan, Me.tbbZoomIn, Me.tbbZoomOut, Me.tbbZoomExtent, Me.tbbZoomSelected, Me.tbbZoomPrevious, Me.tbbZoomNext, Me.tbbZoomLayer, Me.tbbAddPoint, Me.tbbQueryPoint, Me.tbbExportData})
-        Me.tlbZoom.Name = "tlbZoom"
-        Me.tlbZoom.SuppressHighlighting = True
+        Me.tlbLayers.AllowItemReorder = True
+        Me.tlbLayers.ClickThrough = True
+        Me.tlbLayers.ContextMenuStrip = Me.ContextToolstrip
+        resources.ApplyResources(Me.tlbLayers, "tlbLayers")
+        Me.tlbLayers.ImageList = Me.ilsToolbar
+        Me.tlbLayers.ImageScalingSize = New System.Drawing.Size(24, 24)
+        Me.tlbLayers.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tbbAddLayer, Me.tbbRemoveLayer, Me.tbbClearLayers, Me.ToolStripSeparator1, Me.tbbSymbologyManager, Me.tbbLayerProperties})
+        Me.tlbLayers.Name = "tlbLayers"
+        Me.tlbLayers.SuppressHighlighting = True
         '
         'ContextToolstrip
         '
@@ -221,92 +221,6 @@ Partial Friend Class MapWindowForm
         resources.ApplyResources(Me.ilsToolbar, "ilsToolbar")
         Me.ilsToolbar.Tag = "Can be removed"
         Me.ilsToolbar.TransparentColor = System.Drawing.Color.Transparent
-        '
-        'tbbPan
-        '
-        Me.tbbPan.ForeColor = System.Drawing.Color.DarkBlue
-        Me.tbbPan.Image = Global.MapWindow.GlobalResource.pan
-        Me.tbbPan.Name = "tbbPan"
-        resources.ApplyResources(Me.tbbPan, "tbbPan")
-        '
-        'tbbZoomIn
-        '
-        resources.ApplyResources(Me.tbbZoomIn, "tbbZoomIn")
-        Me.tbbZoomIn.ForeColor = System.Drawing.Color.DarkBlue
-        Me.tbbZoomIn.Name = "tbbZoomIn"
-        '
-        'tbbZoomOut
-        '
-        Me.tbbZoomOut.ForeColor = System.Drawing.Color.DarkBlue
-        resources.ApplyResources(Me.tbbZoomOut, "tbbZoomOut")
-        Me.tbbZoomOut.Name = "tbbZoomOut"
-        '
-        'tbbZoomExtent
-        '
-        Me.tbbZoomExtent.ForeColor = System.Drawing.Color.DarkBlue
-        Me.tbbZoomExtent.Image = Global.MapWindow.GlobalResource.zoom_extentNew
-        Me.tbbZoomExtent.Name = "tbbZoomExtent"
-        resources.ApplyResources(Me.tbbZoomExtent, "tbbZoomExtent")
-        '
-        'tbbZoomSelected
-        '
-        Me.tbbZoomSelected.ForeColor = System.Drawing.Color.DarkBlue
-        Me.tbbZoomSelected.Image = Global.MapWindow.GlobalResource.zoom_selectionNew
-        Me.tbbZoomSelected.Name = "tbbZoomSelected"
-        resources.ApplyResources(Me.tbbZoomSelected, "tbbZoomSelected")
-        '
-        'tbbZoomPrevious
-        '
-        Me.tbbZoomPrevious.ForeColor = System.Drawing.Color.DarkBlue
-        Me.tbbZoomPrevious.Image = Global.MapWindow.GlobalResource.zoom_lastNew
-        Me.tbbZoomPrevious.Name = "tbbZoomPrevious"
-        resources.ApplyResources(Me.tbbZoomPrevious, "tbbZoomPrevious")
-        '
-        'tbbZoomNext
-        '
-        Me.tbbZoomNext.ForeColor = System.Drawing.Color.DarkBlue
-        Me.tbbZoomNext.Image = Global.MapWindow.GlobalResource.zoom_nextNew
-        Me.tbbZoomNext.Name = "tbbZoomNext"
-        resources.ApplyResources(Me.tbbZoomNext, "tbbZoomNext")
-        '
-        'tbbZoomLayer
-        '
-        Me.tbbZoomLayer.ForeColor = System.Drawing.Color.DarkBlue
-        Me.tbbZoomLayer.Image = Global.MapWindow.GlobalResource.zoom_layerNew
-        Me.tbbZoomLayer.Name = "tbbZoomLayer"
-        resources.ApplyResources(Me.tbbZoomLayer, "tbbZoomLayer")
-        '
-        'tbbAddPoint
-        '
-        Me.tbbAddPoint.CheckOnClick = True
-        Me.tbbAddPoint.ForeColor = System.Drawing.Color.DarkBlue
-        resources.ApplyResources(Me.tbbAddPoint, "tbbAddPoint")
-        Me.tbbAddPoint.Name = "tbbAddPoint"
-        '
-        'tbbQueryPoint
-        '
-        Me.tbbQueryPoint.CheckOnClick = True
-        Me.tbbQueryPoint.ForeColor = System.Drawing.Color.DarkBlue
-        resources.ApplyResources(Me.tbbQueryPoint, "tbbQueryPoint")
-        Me.tbbQueryPoint.Name = "tbbQueryPoint"
-        '
-        'tbbExportData
-        '
-        Me.tbbExportData.ForeColor = System.Drawing.Color.DarkBlue
-        resources.ApplyResources(Me.tbbExportData, "tbbExportData")
-        Me.tbbExportData.Name = "tbbExportData"
-        '
-        'tlbLayers
-        '
-        Me.tlbLayers.AllowItemReorder = True
-        Me.tlbLayers.ClickThrough = True
-        Me.tlbLayers.ContextMenuStrip = Me.ContextToolstrip
-        resources.ApplyResources(Me.tlbLayers, "tlbLayers")
-        Me.tlbLayers.ImageList = Me.ilsToolbar
-        Me.tlbLayers.ImageScalingSize = New System.Drawing.Size(24, 24)
-        Me.tlbLayers.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tbbAddLayer, Me.tbbRemoveLayer, Me.tbbClearLayers, Me.ToolStripSeparator1, Me.tbbSymbologyManager, Me.tbbLayerProperties})
-        Me.tlbLayers.Name = "tlbLayers"
-        Me.tlbLayers.SuppressHighlighting = True
         '
         'tbbAddLayer
         '
@@ -396,6 +310,92 @@ Partial Friend Class MapWindowForm
         Me.tbbProjectSettings.Image = Global.MapWindow.GlobalResource.project_settings
         Me.tbbProjectSettings.Name = "tbbProjectSettings"
         resources.ApplyResources(Me.tbbProjectSettings, "tbbProjectSettings")
+        '
+        'tlbZoom
+        '
+        Me.tlbZoom.AllowItemReorder = True
+        Me.tlbZoom.ClickThrough = True
+        Me.tlbZoom.ContextMenuStrip = Me.ContextToolstrip
+        resources.ApplyResources(Me.tlbZoom, "tlbZoom")
+        Me.tlbZoom.ImageList = Me.ilsToolbar
+        Me.tlbZoom.ImageScalingSize = New System.Drawing.Size(24, 24)
+        Me.tlbZoom.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tbbPan, Me.tbbZoomIn, Me.tbbZoomOut, Me.tbbZoomExtent, Me.tbbZoomSelected, Me.tbbZoomPrevious, Me.tbbZoomNext, Me.tbbZoomLayer, Me.tbbAddPoint, Me.tbbQueryPoint, Me.tbbExportData})
+        Me.tlbZoom.Name = "tlbZoom"
+        Me.tlbZoom.SuppressHighlighting = True
+        '
+        'tbbPan
+        '
+        Me.tbbPan.ForeColor = System.Drawing.Color.DarkBlue
+        Me.tbbPan.Image = Global.MapWindow.GlobalResource.pan
+        Me.tbbPan.Name = "tbbPan"
+        resources.ApplyResources(Me.tbbPan, "tbbPan")
+        '
+        'tbbZoomIn
+        '
+        resources.ApplyResources(Me.tbbZoomIn, "tbbZoomIn")
+        Me.tbbZoomIn.ForeColor = System.Drawing.Color.DarkBlue
+        Me.tbbZoomIn.Name = "tbbZoomIn"
+        '
+        'tbbZoomOut
+        '
+        Me.tbbZoomOut.ForeColor = System.Drawing.Color.DarkBlue
+        resources.ApplyResources(Me.tbbZoomOut, "tbbZoomOut")
+        Me.tbbZoomOut.Name = "tbbZoomOut"
+        '
+        'tbbZoomExtent
+        '
+        Me.tbbZoomExtent.ForeColor = System.Drawing.Color.DarkBlue
+        Me.tbbZoomExtent.Image = Global.MapWindow.GlobalResource.zoom_extentNew
+        Me.tbbZoomExtent.Name = "tbbZoomExtent"
+        resources.ApplyResources(Me.tbbZoomExtent, "tbbZoomExtent")
+        '
+        'tbbZoomSelected
+        '
+        Me.tbbZoomSelected.ForeColor = System.Drawing.Color.DarkBlue
+        Me.tbbZoomSelected.Image = Global.MapWindow.GlobalResource.zoom_selectionNew
+        Me.tbbZoomSelected.Name = "tbbZoomSelected"
+        resources.ApplyResources(Me.tbbZoomSelected, "tbbZoomSelected")
+        '
+        'tbbZoomPrevious
+        '
+        Me.tbbZoomPrevious.ForeColor = System.Drawing.Color.DarkBlue
+        Me.tbbZoomPrevious.Image = Global.MapWindow.GlobalResource.zoom_lastNew
+        Me.tbbZoomPrevious.Name = "tbbZoomPrevious"
+        resources.ApplyResources(Me.tbbZoomPrevious, "tbbZoomPrevious")
+        '
+        'tbbZoomNext
+        '
+        Me.tbbZoomNext.ForeColor = System.Drawing.Color.DarkBlue
+        Me.tbbZoomNext.Image = Global.MapWindow.GlobalResource.zoom_nextNew
+        Me.tbbZoomNext.Name = "tbbZoomNext"
+        resources.ApplyResources(Me.tbbZoomNext, "tbbZoomNext")
+        '
+        'tbbZoomLayer
+        '
+        Me.tbbZoomLayer.ForeColor = System.Drawing.Color.DarkBlue
+        Me.tbbZoomLayer.Image = Global.MapWindow.GlobalResource.zoom_layerNew
+        Me.tbbZoomLayer.Name = "tbbZoomLayer"
+        resources.ApplyResources(Me.tbbZoomLayer, "tbbZoomLayer")
+        '
+        'tbbAddPoint
+        '
+        Me.tbbAddPoint.CheckOnClick = True
+        Me.tbbAddPoint.ForeColor = System.Drawing.Color.DarkBlue
+        resources.ApplyResources(Me.tbbAddPoint, "tbbAddPoint")
+        Me.tbbAddPoint.Name = "tbbAddPoint"
+        '
+        'tbbQueryPoint
+        '
+        Me.tbbQueryPoint.CheckOnClick = True
+        Me.tbbQueryPoint.ForeColor = System.Drawing.Color.DarkBlue
+        resources.ApplyResources(Me.tbbQueryPoint, "tbbQueryPoint")
+        Me.tbbQueryPoint.Name = "tbbQueryPoint"
+        '
+        'tbbExportData
+        '
+        Me.tbbExportData.ForeColor = System.Drawing.Color.DarkBlue
+        resources.ApplyResources(Me.tbbExportData, "tbbExportData")
+        Me.tbbExportData.Name = "tbbExportData"
         '
         'tlbMain
         '
@@ -660,13 +660,13 @@ Partial Friend Class MapWindowForm
         Me.StripDocker.TopToolStripPanel.PerformLayout()
         Me.StripDocker.ResumeLayout(False)
         Me.StripDocker.PerformLayout()
-        Me.tlbZoom.ResumeLayout(False)
-        Me.tlbZoom.PerformLayout()
-        Me.ContextToolstrip.ResumeLayout(False)
         Me.tlbLayers.ResumeLayout(False)
         Me.tlbLayers.PerformLayout()
+        Me.ContextToolstrip.ResumeLayout(False)
         Me.tlbStandard.ResumeLayout(False)
         Me.tlbStandard.PerformLayout()
+        Me.tlbZoom.ResumeLayout(False)
+        Me.tlbZoom.PerformLayout()
         Me.tlbMain.ResumeLayout(False)
         Me.tlbMain.PerformLayout()
         Me.mnuLegend.ResumeLayout(False)

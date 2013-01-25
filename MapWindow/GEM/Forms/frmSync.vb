@@ -124,4 +124,8 @@ Public Class frmSync
 
     End Sub
 
+
+    Private Sub frmSync_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        Me.Icon = frmMain.Icon
+    End Sub
 End Class

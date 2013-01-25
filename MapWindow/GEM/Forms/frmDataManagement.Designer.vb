@@ -22,125 +22,129 @@ Partial Class frmDataManagement
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDataManagement))
         Me.SyncDatabases = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.ExportToKML = New System.Windows.Forms.Button()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.ExportToShapefile = New System.Windows.Forms.Button()
         Me.ExportToCSV = New System.Windows.Forms.Button()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Cancel = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'SyncDatabases
         '
-        Me.SyncDatabases.Location = New System.Drawing.Point(203, 10)
+        Me.SyncDatabases.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SyncDatabases.Location = New System.Drawing.Point(90, 22)
         Me.SyncDatabases.Name = "SyncDatabases"
-        Me.SyncDatabases.Size = New System.Drawing.Size(56, 23)
+        Me.SyncDatabases.Size = New System.Drawing.Size(250, 40)
         Me.SyncDatabases.TabIndex = 0
-        Me.SyncDatabases.Text = "OK"
+        Me.SyncDatabases.Text = "Synchronise GEM databases"
         Me.SyncDatabases.UseVisualStyleBackColor = True
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(33, 15)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(164, 13)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Synchronise two GEM databases"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(40, 44)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(157, 13)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Export a GEM database to KML"
         '
         'ExportToKML
         '
-        Me.ExportToKML.Location = New System.Drawing.Point(203, 39)
+        Me.ExportToKML.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ExportToKML.Location = New System.Drawing.Point(90, 80)
         Me.ExportToKML.Name = "ExportToKML"
-        Me.ExportToKML.Size = New System.Drawing.Size(56, 23)
+        Me.ExportToKML.Size = New System.Drawing.Size(250, 40)
         Me.ExportToKML.TabIndex = 3
-        Me.ExportToKML.Text = "OK"
+        Me.ExportToKML.Text = "Export GEM database to KML file"
         Me.ExportToKML.UseVisualStyleBackColor = True
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(18, 73)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(179, 13)
-        Me.Label3.TabIndex = 4
-        Me.Label3.Text = "Export a GEM database to Shapefile"
         '
         'ExportToShapefile
         '
-        Me.ExportToShapefile.Location = New System.Drawing.Point(203, 68)
+        Me.ExportToShapefile.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ExportToShapefile.Location = New System.Drawing.Point(90, 140)
         Me.ExportToShapefile.Name = "ExportToShapefile"
-        Me.ExportToShapefile.Size = New System.Drawing.Size(56, 23)
+        Me.ExportToShapefile.Size = New System.Drawing.Size(250, 40)
         Me.ExportToShapefile.TabIndex = 5
-        Me.ExportToShapefile.Text = "OK"
+        Me.ExportToShapefile.Text = "Export GEM database to Shapefile"
         Me.ExportToShapefile.UseVisualStyleBackColor = True
         '
         'ExportToCSV
         '
-        Me.ExportToCSV.Location = New System.Drawing.Point(203, 97)
+        Me.ExportToCSV.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ExportToCSV.Location = New System.Drawing.Point(90, 201)
         Me.ExportToCSV.Name = "ExportToCSV"
-        Me.ExportToCSV.Size = New System.Drawing.Size(56, 23)
+        Me.ExportToCSV.Size = New System.Drawing.Size(250, 40)
         Me.ExportToCSV.TabIndex = 6
-        Me.ExportToCSV.Text = "OK"
+        Me.ExportToCSV.Text = "Export GEM database to CSV files"
         Me.ExportToCSV.UseVisualStyleBackColor = True
         '
-        'Label4
+        'PictureBox1
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(18, 102)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(177, 13)
-        Me.Label4.TabIndex = 7
-        Me.Label4.Text = "Export a GEM database to CSV files"
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(26, 22)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(40, 40)
+        Me.PictureBox1.TabIndex = 7
+        Me.PictureBox1.TabStop = False
         '
-        'Cancel
+        'PictureBox2
         '
-        Me.Cancel.Location = New System.Drawing.Point(203, 126)
-        Me.Cancel.Name = "Cancel"
-        Me.Cancel.Size = New System.Drawing.Size(56, 23)
-        Me.Cancel.TabIndex = 8
-        Me.Cancel.Text = "Cancel"
-        Me.Cancel.UseVisualStyleBackColor = True
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(21, 77)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(48, 48)
+        Me.PictureBox2.TabIndex = 8
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(21, 136)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(48, 48)
+        Me.PictureBox3.TabIndex = 9
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
+        Me.PictureBox4.Location = New System.Drawing.Point(21, 198)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(48, 48)
+        Me.PictureBox4.TabIndex = 10
+        Me.PictureBox4.TabStop = False
         '
         'frmDataManagement
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(274, 161)
-        Me.Controls.Add(Me.Cancel)
-        Me.Controls.Add(Me.Label4)
+        Me.ClientSize = New System.Drawing.Size(375, 272)
+        Me.Controls.Add(Me.PictureBox4)
+        Me.Controls.Add(Me.PictureBox3)
+        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.ExportToCSV)
         Me.Controls.Add(Me.ExportToShapefile)
-        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.ExportToKML)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.SyncDatabases)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "frmDataManagement"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "GEM Data Management"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents SyncDatabases As System.Windows.Forms.Button
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents ExportToKML As System.Windows.Forms.Button
-    Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents ExportToShapefile As System.Windows.Forms.Button
     Friend WithEvents ExportToCSV As System.Windows.Forms.Button
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents Cancel As System.Windows.Forms.Button
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
 End Class

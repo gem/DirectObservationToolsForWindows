@@ -61,17 +61,17 @@ Partial Class frmGEM2KML
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(47, 41)
+        Me.Label2.Location = New System.Drawing.Point(20, 41)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(49, 13)
+        Me.Label2.Size = New System.Drawing.Size(75, 13)
         Me.Label2.TabIndex = 5
-        Me.Label2.Text = "KMZ file:"
+        Me.Label2.Text = "KMZ filename:"
         '
         'SourceBrowse
         '
         Me.SourceBrowse.Location = New System.Drawing.Point(446, 13)
         Me.SourceBrowse.Name = "SourceBrowse"
-        Me.SourceBrowse.Size = New System.Drawing.Size(51, 22)
+        Me.SourceBrowse.Size = New System.Drawing.Size(71, 22)
         Me.SourceBrowse.TabIndex = 6
         Me.SourceBrowse.Text = "Browse"
         Me.SourceBrowse.UseVisualStyleBackColor = True
@@ -80,7 +80,7 @@ Partial Class frmGEM2KML
         '
         Me.KMLBrowse.Location = New System.Drawing.Point(446, 41)
         Me.KMLBrowse.Name = "KMLBrowse"
-        Me.KMLBrowse.Size = New System.Drawing.Size(51, 22)
+        Me.KMLBrowse.Size = New System.Drawing.Size(71, 22)
         Me.KMLBrowse.TabIndex = 7
         Me.KMLBrowse.Text = "Browse"
         Me.KMLBrowse.UseVisualStyleBackColor = True
@@ -89,16 +89,16 @@ Partial Class frmGEM2KML
         '
         Me.Ok.Location = New System.Drawing.Point(446, 69)
         Me.Ok.Name = "Ok"
-        Me.Ok.Size = New System.Drawing.Size(51, 22)
+        Me.Ok.Size = New System.Drawing.Size(71, 22)
         Me.Ok.TabIndex = 8
         Me.Ok.Text = "Ok"
         Me.Ok.UseVisualStyleBackColor = True
         '
         'Cancel
         '
-        Me.Cancel.Location = New System.Drawing.Point(389, 69)
+        Me.Cancel.Location = New System.Drawing.Point(370, 69)
         Me.Cancel.Name = "Cancel"
-        Me.Cancel.Size = New System.Drawing.Size(51, 22)
+        Me.Cancel.Size = New System.Drawing.Size(70, 22)
         Me.Cancel.TabIndex = 9
         Me.Cancel.Text = "Cancel"
         Me.Cancel.UseVisualStyleBackColor = True
@@ -121,7 +121,7 @@ Partial Class frmGEM2KML
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(506, 100)
+        Me.ClientSize = New System.Drawing.Size(529, 100)
         Me.Controls.Add(Me.IncludeImages)
         Me.Controls.Add(Me.Cancel)
         Me.Controls.Add(Me.Ok)
@@ -131,7 +131,11 @@ Partial Class frmGEM2KML
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.KMZFilePath)
         Me.Controls.Add(Me.GEMDatabase)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "frmGEM2KML"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Export GEM database to KMZ file"
         Me.ResumeLayout(False)
         Me.PerformLayout()

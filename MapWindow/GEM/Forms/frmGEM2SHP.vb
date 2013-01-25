@@ -10,6 +10,13 @@ Imports System.Data.SQLite
 
 Public Class frmGEM2SHP
 
+    Private Sub Gem2KML_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.Icon = frmMain.Icon
+        If Not gemdb Is Nothing Then
+            Me.GEMDatabase.Text = gemdb.DatabasePath
+        End If
+    End Sub
+
     Sub MakeShapefile(ByVal strGEMDatabase As String, ByVal shpFileFolder As String)
         '
         ' Export Buildings
@@ -119,11 +126,7 @@ Public Class frmGEM2SHP
 
     End Sub
 
-    Private Sub Gem2KML_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        If Not gemdb Is Nothing Then
-            Me.GEMDatabase.Text = gemdb.DatabasePath
-        End If
-    End Sub
+
 
 
 

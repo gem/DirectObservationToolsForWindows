@@ -328,7 +328,7 @@
     <value>tlbLayers</value>
   </data>
   <data name="&gt;&gt;tlbLayers.Type" xml:space="preserve">
-    <value>MapWindow.ToolStripExtensions.ToolStripEx, GEM_DO_Tools, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MapWindow.ToolStripExtensions.ToolStripEx, GEM_DO_Tools, Version=1.1.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;tlbLayers.Parent" xml:space="preserve">
     <value>StripDocker.TopToolStripPanel</value>
@@ -424,13 +424,70 @@
     <value>tlbStandard</value>
   </data>
   <data name="&gt;&gt;tlbStandard.Type" xml:space="preserve">
-    <value>MapWindow.ToolStripExtensions.ToolStripEx, GEM_DO_Tools, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MapWindow.ToolStripExtensions.ToolStripEx, GEM_DO_Tools, Version=1.1.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;tlbStandard.Parent" xml:space="preserve">
     <value>StripDocker.TopToolStripPanel</value>
   </data>
   <data name="&gt;&gt;tlbStandard.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <metadata name="tlbMain.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>132, 17</value>
+  </metadata>
+  <data name="tlbMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="tlbMain.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tbbSelect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 43</value>
+  </data>
+  <data name="tbbSelect.Text" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="tbbSelect.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="tbbSelect.ToolTipText" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="tbbDeSelectLayer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 43</value>
+  </data>
+  <data name="tbbDeSelectLayer.Text" xml:space="preserve">
+    <value>Deselect</value>
+  </data>
+  <data name="tbbDeSelectLayer.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="tbbDeSelectLayer.ToolTipText" xml:space="preserve">
+    <value>Deselect current layer selection</value>
+  </data>
+  <data name="tlbMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 92</value>
+  </data>
+  <data name="tlbMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 46</value>
+  </data>
+  <data name="tlbMain.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="tlbMain.Text" xml:space="preserve">
+    <value>Main</value>
+  </data>
+  <data name="&gt;&gt;tlbMain.Name" xml:space="preserve">
+    <value>tlbMain</value>
+  </data>
+  <data name="&gt;&gt;tlbMain.Type" xml:space="preserve">
+    <value>MapWindow.ToolStripExtensions.ToolStripEx, GEM_DO_Tools, Version=1.1.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tlbMain.Parent" xml:space="preserve">
+    <value>StripDocker.TopToolStripPanel</value>
+  </data>
+  <data name="&gt;&gt;tlbMain.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <metadata name="tlbZoom.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1169, 17</value>
@@ -582,8 +639,8 @@
   <data name="tbbAddPoint.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALBgAA
-        CwYBZDTpJAAABUZJREFUSEu9VXtMU2cUv0Af90JbypvSXlooULQ8SqFbK5OqULRQEFtgylsMe4nLYpyo
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALBQAA
+        CwUByY3ISQAABUZJREFUSEu9VXtMU2cUv0Af90JbypvSXlooULQ8SqFbK5OqULRQEFtgylsMe4nLYpyo
         iLzBx0S3mQ03H8mmZA7m1LHoHy5b9oeZbpnLkpmRGBNj9sjmczFzi4tn53zQUnDbnyP55dxzzu+c3znf
         V+7luP/jT1cscP8EZYGUR/0izsX1t+5IubR1T/6NXW+4gCz5FKe8yibl/60Hm39+UiwWQri8UJuxnj+y
         e6zw3psXSmDyJzd8ctcLF/9cxyz5FKd8ap38CPGpbn6vxwQSnHKOs3JdHYeybk5cLYOz91fCid/KYPTO
@@ -710,22 +767,22 @@
 </value>
   </data>
   <data name="tbbExportData.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 43</value>
+    <value>109, 43</value>
   </data>
   <data name="tbbExportData.Text" xml:space="preserve">
-    <value>Export Data</value>
+    <value>Data Management</value>
   </data>
   <data name="tbbExportData.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageAboveText</value>
   </data>
   <data name="tbbExportData.ToolTipText" xml:space="preserve">
-    <value>Export Data</value>
+    <value>Data Management</value>
   </data>
   <data name="tlbZoom.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 92</value>
   </data>
   <data name="tlbZoom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>539, 46</value>
+    <value>577, 46</value>
   </data>
   <data name="tlbZoom.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -737,69 +794,12 @@
     <value>tlbZoom</value>
   </data>
   <data name="&gt;&gt;tlbZoom.Type" xml:space="preserve">
-    <value>MapWindow.ToolStripExtensions.ToolStripEx, GEM_DO_Tools, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MapWindow.ToolStripExtensions.ToolStripEx, GEM_DO_Tools, Version=1.1.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;tlbZoom.Parent" xml:space="preserve">
     <value>StripDocker.TopToolStripPanel</value>
   </data>
   <data name="&gt;&gt;tlbZoom.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <metadata name="tlbMain.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>132, 17</value>
-  </metadata>
-  <data name="tlbMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="tlbMain.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="tbbSelect.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 43</value>
-  </data>
-  <data name="tbbSelect.Text" xml:space="preserve">
-    <value>Select</value>
-  </data>
-  <data name="tbbSelect.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageAboveText</value>
-  </data>
-  <data name="tbbSelect.ToolTipText" xml:space="preserve">
-    <value>Select</value>
-  </data>
-  <data name="tbbDeSelectLayer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 43</value>
-  </data>
-  <data name="tbbDeSelectLayer.Text" xml:space="preserve">
-    <value>Deselect</value>
-  </data>
-  <data name="tbbDeSelectLayer.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageAboveText</value>
-  </data>
-  <data name="tbbDeSelectLayer.ToolTipText" xml:space="preserve">
-    <value>Deselect current layer selection</value>
-  </data>
-  <data name="tlbMain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 92</value>
-  </data>
-  <data name="tlbMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 46</value>
-  </data>
-  <data name="tlbMain.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="tlbMain.Text" xml:space="preserve">
-    <value>Main</value>
-  </data>
-  <data name="&gt;&gt;tlbMain.Name" xml:space="preserve">
-    <value>tlbMain</value>
-  </data>
-  <data name="&gt;&gt;tlbMain.Type" xml:space="preserve">
-    <value>MapWindow.ToolStripExtensions.ToolStripEx, GEM_DO_Tools, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;tlbMain.Parent" xml:space="preserve">
-    <value>StripDocker.TopToolStripPanel</value>
-  </data>
-  <data name="&gt;&gt;tlbMain.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="&gt;&gt;StripDocker.TopToolStripPanel.Name" xml:space="preserve">
@@ -1142,7 +1142,7 @@
     <value>MenuStrip1</value>
   </data>
   <data name="&gt;&gt;MenuStrip1.Type" xml:space="preserve">
-    <value>MapWindow.ToolStripExtensions.MenuStripEx, GEM_DO_Tools, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MapWindow.ToolStripExtensions.MenuStripEx, GEM_DO_Tools, Version=1.1.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;MenuStrip1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1179,72 +1179,6 @@
   </data>
   <data name="&gt;&gt;ilsToolbar.Type" xml:space="preserve">
     <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbbPan.Name" xml:space="preserve">
-    <value>tbbPan</value>
-  </data>
-  <data name="&gt;&gt;tbbPan.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbbZoomIn.Name" xml:space="preserve">
-    <value>tbbZoomIn</value>
-  </data>
-  <data name="&gt;&gt;tbbZoomIn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbbZoomOut.Name" xml:space="preserve">
-    <value>tbbZoomOut</value>
-  </data>
-  <data name="&gt;&gt;tbbZoomOut.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbbZoomExtent.Name" xml:space="preserve">
-    <value>tbbZoomExtent</value>
-  </data>
-  <data name="&gt;&gt;tbbZoomExtent.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbbZoomSelected.Name" xml:space="preserve">
-    <value>tbbZoomSelected</value>
-  </data>
-  <data name="&gt;&gt;tbbZoomSelected.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbbZoomPrevious.Name" xml:space="preserve">
-    <value>tbbZoomPrevious</value>
-  </data>
-  <data name="&gt;&gt;tbbZoomPrevious.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbbZoomNext.Name" xml:space="preserve">
-    <value>tbbZoomNext</value>
-  </data>
-  <data name="&gt;&gt;tbbZoomNext.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbbZoomLayer.Name" xml:space="preserve">
-    <value>tbbZoomLayer</value>
-  </data>
-  <data name="&gt;&gt;tbbZoomLayer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbbAddPoint.Name" xml:space="preserve">
-    <value>tbbAddPoint</value>
-  </data>
-  <data name="&gt;&gt;tbbAddPoint.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbbQueryPoint.Name" xml:space="preserve">
-    <value>tbbQueryPoint</value>
-  </data>
-  <data name="&gt;&gt;tbbQueryPoint.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbbExportData.Name" xml:space="preserve">
-    <value>tbbExportData</value>
-  </data>
-  <data name="&gt;&gt;tbbExportData.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tbbAddLayer.Name" xml:space="preserve">
     <value>tbbAddLayer</value>
@@ -1310,6 +1244,72 @@
     <value>tbbProjectSettings</value>
   </data>
   <data name="&gt;&gt;tbbProjectSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbbPan.Name" xml:space="preserve">
+    <value>tbbPan</value>
+  </data>
+  <data name="&gt;&gt;tbbPan.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbbZoomIn.Name" xml:space="preserve">
+    <value>tbbZoomIn</value>
+  </data>
+  <data name="&gt;&gt;tbbZoomIn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbbZoomOut.Name" xml:space="preserve">
+    <value>tbbZoomOut</value>
+  </data>
+  <data name="&gt;&gt;tbbZoomOut.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbbZoomExtent.Name" xml:space="preserve">
+    <value>tbbZoomExtent</value>
+  </data>
+  <data name="&gt;&gt;tbbZoomExtent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbbZoomSelected.Name" xml:space="preserve">
+    <value>tbbZoomSelected</value>
+  </data>
+  <data name="&gt;&gt;tbbZoomSelected.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbbZoomPrevious.Name" xml:space="preserve">
+    <value>tbbZoomPrevious</value>
+  </data>
+  <data name="&gt;&gt;tbbZoomPrevious.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbbZoomNext.Name" xml:space="preserve">
+    <value>tbbZoomNext</value>
+  </data>
+  <data name="&gt;&gt;tbbZoomNext.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbbZoomLayer.Name" xml:space="preserve">
+    <value>tbbZoomLayer</value>
+  </data>
+  <data name="&gt;&gt;tbbZoomLayer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbbAddPoint.Name" xml:space="preserve">
+    <value>tbbAddPoint</value>
+  </data>
+  <data name="&gt;&gt;tbbAddPoint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbbQueryPoint.Name" xml:space="preserve">
+    <value>tbbQueryPoint</value>
+  </data>
+  <data name="&gt;&gt;tbbQueryPoint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbbExportData.Name" xml:space="preserve">
+    <value>tbbExportData</value>
+  </data>
+  <data name="&gt;&gt;tbbExportData.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tbbSelect.Name" xml:space="preserve">
