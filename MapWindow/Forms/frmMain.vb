@@ -4315,7 +4315,20 @@ Partial Friend Class MapWindowForm
             SetModified(False)
 
             'GEM - save database
-            gemdb = New GEMDatabase(System.IO.Path.ChangeExtension(ProjInfo.ProjectFileName, ".gemdb"))
+            If gemdb Is Nothing Then
+                'Create new data
+                gemdb = New GEMDatabase(System.IO.Path.ChangeExtension(ProjInfo.ProjectFileName, ".gemdb"))
+            Else
+                'Copy existing data base
+                Dim existingDB As String = gemdb.DatabasePath
+                Dim newDB As String = System.IO.Path.ChangeExtension(ProjInfo.ProjectFileName, ".gemdb")
+                If Not IO.File.Exists(newDB) And IO.File.Exists(existingDB) Then
+                    System.IO.File.Copy(existingDB, newDB)
+                    gemdb = New GEMDatabase(newDB)
+                Else
+                    MessageBox.Show("An error has occured whilst copying the database")
+                End If
+            End If
         End If
     End Sub
 
