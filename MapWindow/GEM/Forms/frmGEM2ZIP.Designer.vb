@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmGEM2KML
+Partial Class frmGEM2ZIP
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class frmGEM2KML
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmGEM2KML))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmGEM2ZIP))
         Me.GEMDatabase = New System.Windows.Forms.TextBox()
         Me.KMZFilePath = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -33,7 +33,6 @@ Partial Class frmGEM2KML
         Me.Cancel = New System.Windows.Forms.Button()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
-        Me.IncludeImages = New System.Windows.Forms.CheckBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -72,9 +71,9 @@ Partial Class frmGEM2KML
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(77, 105)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(92, 16)
+        Me.Label2.Size = New System.Drawing.Size(84, 16)
         Me.Label2.TabIndex = 5
-        Me.Label2.Text = "KMZ filename:"
+        Me.Label2.Text = "Zip filename:"
         '
         'SourceBrowse
         '
@@ -99,17 +98,17 @@ Partial Class frmGEM2KML
         'Ok
         '
         Me.Ok.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Ok.Location = New System.Drawing.Point(113, 206)
+        Me.Ok.Location = New System.Drawing.Point(109, 185)
         Me.Ok.Name = "Ok"
         Me.Ok.Size = New System.Drawing.Size(86, 24)
         Me.Ok.TabIndex = 8
-        Me.Ok.Text = "Convert"
+        Me.Ok.Text = "Package"
         Me.Ok.UseVisualStyleBackColor = True
         '
         'Cancel
         '
         Me.Cancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Cancel.Location = New System.Drawing.Point(227, 206)
+        Me.Cancel.Location = New System.Drawing.Point(227, 185)
         Me.Cancel.Name = "Cancel"
         Me.Cancel.Size = New System.Drawing.Size(86, 24)
         Me.Cancel.TabIndex = 9
@@ -119,17 +118,6 @@ Partial Class frmGEM2KML
         'OpenFileDialog1
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
-        '
-        'IncludeImages
-        '
-        Me.IncludeImages.AutoSize = True
-        Me.IncludeImages.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IncludeImages.Location = New System.Drawing.Point(82, 163)
-        Me.IncludeImages.Name = "IncludeImages"
-        Me.IncludeImages.Size = New System.Drawing.Size(179, 20)
-        Me.IncludeImages.TabIndex = 10
-        Me.IncludeImages.Text = "Embed Photos in KMZ file"
-        Me.IncludeImages.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
@@ -149,14 +137,13 @@ Partial Class frmGEM2KML
         Me.PictureBox2.TabIndex = 14
         Me.PictureBox2.TabStop = False
         '
-        'frmGEM2KML
+        'frmGEM2ZIP
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(420, 246)
+        Me.ClientSize = New System.Drawing.Size(420, 233)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.IncludeImages)
         Me.Controls.Add(Me.Cancel)
         Me.Controls.Add(Me.Ok)
         Me.Controls.Add(Me.KMLBrowse)
@@ -168,9 +155,9 @@ Partial Class frmGEM2KML
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "frmGEM2KML"
+        Me.Name = "frmGEM2ZIP"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
-        Me.Text = "Export GEM database to KMZ file"
+        Me.Text = "Export GEM database to Zip Package"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -187,7 +174,6 @@ Partial Class frmGEM2KML
     Friend WithEvents Cancel As System.Windows.Forms.Button
     Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
     Friend WithEvents SaveFileDialog1 As System.Windows.Forms.SaveFileDialog
-    Friend WithEvents IncludeImages As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
 

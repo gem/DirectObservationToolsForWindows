@@ -159,6 +159,10 @@
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Ionic.Zip.Reduced, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bin\Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
     <Reference Include="MapWindow.Controls, Version=4.8.6.25544, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Bin\MapWindow.Controls.dll</HintPath>
@@ -460,6 +464,12 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="GEM\Classes\TempShared.vb" />
+    <Compile Include="GEM\Forms\frmGEM2ZIP.Designer.vb">
+      <DependentUpon>frmGEM2ZIP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GEM\Forms\frmGEM2ZIP.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="GEM\Forms\frmGEM2CSV.Designer.vb">
       <DependentUpon>frmGEM2CSV.vb</DependentUpon>
     </Compile>
@@ -673,6 +683,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <None Include="app.config" />
+    <EmbeddedResource Include="GEM\Forms\frmGEM2ZIP.resx">
+      <DependentUpon>frmGEM2ZIP.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GEM\Forms\frmGEM2CSV.resx">
       <DependentUpon>frmGEM2CSV.vb</DependentUpon>
     </EmbeddedResource>

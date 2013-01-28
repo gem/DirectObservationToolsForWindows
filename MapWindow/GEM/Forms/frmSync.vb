@@ -9,6 +9,8 @@ Public Class frmSync
     End Sub
 
     Private Sub Ok_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Ok.Click
+        If Me.SourceDatabase.Text = "" Or Me.TargetDatabase.Text = "" Then Exit Sub
+
         Call SyncDatabase(Me.SourceDatabase.Text, Me.TargetDatabase.Text)
         Me.Dispose()
     End Sub

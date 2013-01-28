@@ -32,4 +32,8 @@ Public Class frmDataManagement
     End Sub
 
  
+    Private Sub btnZip_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnZip.Click
+        Dim pForm As New frmGEM2ZIP
+        pForm.ShowDialog()
+    End Sub
 End Class

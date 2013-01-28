@@ -68,6 +68,11 @@ Public Class GEMDatabase
             If CreateNewGEMSQLiteDatabase(strDBPath) = False Then
                 'Error created database
                 Exit Sub
+            Else
+                Dim mediaDIR As String = IO.Path.GetDirectoryName(strDBPath) & "\" & IO.Path.GetFileNameWithoutExtension(strDBPath) & "_gemmedia"
+                If Not IO.Directory.Exists(mediaDIR) Then
+                    IO.Directory.CreateDirectory(mediaDIR)
+                End If
             End If
         End If
 
