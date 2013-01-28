@@ -103,7 +103,7 @@ Partial Class frmGEM2KML
         Me.Ok.Name = "Ok"
         Me.Ok.Size = New System.Drawing.Size(86, 24)
         Me.Ok.TabIndex = 8
-        Me.Ok.Text = "Convert"
+        Me.Ok.Text = "Export"
         Me.Ok.UseVisualStyleBackColor = True
         '
         'Cancel

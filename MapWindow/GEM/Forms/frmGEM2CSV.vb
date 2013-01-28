@@ -97,6 +97,9 @@ Public Class frmGEM2CSV
                 s.Close()
             End If
 
+
+            MessageBox.Show("Export Completed Successfully", "Export Completed", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
         Catch ex As Exception
             MsgBox(ex.ToString)
         End Try

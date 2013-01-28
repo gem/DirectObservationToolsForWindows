@@ -36,7 +36,7 @@ Partial Class frmProjectDetails
         'btnCreate
         '
         Me.btnCreate.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCreate.Location = New System.Drawing.Point(198, 339)
+        Me.btnCreate.Location = New System.Drawing.Point(191, 337)
         Me.btnCreate.Name = "btnCreate"
         Me.btnCreate.Size = New System.Drawing.Size(102, 22)
         Me.btnCreate.TabIndex = 5

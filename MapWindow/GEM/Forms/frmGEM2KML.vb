@@ -558,6 +558,8 @@ Public Class frmGEM2KML
             '
             Call MakeKMZ(Me.GEMDatabase.Text, Me.KMZFilePath.Text)
 
+            MessageBox.Show("Export Completed Successfully", "Export Completed", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
         Catch ex As Exception
             MsgBox(ex.ToString)
         End Try

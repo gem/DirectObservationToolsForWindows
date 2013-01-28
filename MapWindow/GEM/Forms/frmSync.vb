@@ -9,10 +9,17 @@ Public Class frmSync
     End Sub
 
     Private Sub Ok_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Ok.Click
-        If Me.SourceDatabase.Text = "" Or Me.TargetDatabase.Text = "" Then Exit Sub
+        Try
+            If Me.SourceDatabase.Text = "" Or Me.TargetDatabase.Text = "" Then Exit Sub
+            Call SyncDatabase(Me.SourceDatabase.Text, Me.TargetDatabase.Text)
+            MessageBox.Show("Export Completed Successfully", "Export Completed", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Me.Dispose()
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
 
-        Call SyncDatabase(Me.SourceDatabase.Text, Me.TargetDatabase.Text)
-        Me.Dispose()
+
+
     End Sub
 
     Private Sub SourceBrowse_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SourceBrowse.Click

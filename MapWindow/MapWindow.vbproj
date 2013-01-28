@@ -697,6 +697,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GEM\Forms\frmGEM2KML.resx">
       <DependentUpon>frmGEM2KML.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GEM\Forms\frmGEM2SHP.resx">
       <DependentUpon>frmGEM2SHP.vb</DependentUpon>

@@ -104,6 +104,8 @@ Public Class frmGEM2ZIP
                 zip.Save(Me.KMZFilePath.Text)
             End Using
 
+            MessageBox.Show("Export Completed Successfully", "Export Completed", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
         Catch ex As Exception
             MsgBox(ex.ToString)
         End Try
