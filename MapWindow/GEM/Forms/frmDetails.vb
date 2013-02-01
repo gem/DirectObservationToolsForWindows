@@ -690,21 +690,21 @@ Public Class frmDetails
         Call ShowContextHelp()
     End Sub
 
-    Private Sub dgMedia_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgMedia.CellClick
-        If (e.ColumnIndex = -1 And e.RowIndex >= 0) Then
-            Call OpenPaint("P:\kama\test2.jpg")
-            Exit Sub
-        End If
-        'If (e.RowIndex < 0) Then Exit Sub
-        'Dim pRow As DataGridViewRow = dgMedia.Rows(e.RowIndex)
-        ''Dim mediaNumber As String = pRow.Cells("MEDIA_NUMB").Value.ToString
-        ''Dim OriginalFilename As String = pRow.Cells("ORIG_FILEN").Value.ToString
-        ''Dim gemFilename As String = pRow.Cells("FILENAME").Value.ToString
-        ''If (pRow.Cells(e.ColumnIndex).OwningColumn.Name = "MEDIA_NUMB") Then
-        '' MsgBox("media")
-        ''End If
-        ''Dim cellValue As String = pRow.Cells(e.ColumnIndex).Value.ToString
-    End Sub
+    'Private Sub dgMedia_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgMedia.CellClick
+    '    If (e.ColumnIndex = -1 And e.RowIndex >= 0) Then
+    '        Call OpenPaint("P:\kama\test2.jpg")
+    '        Exit Sub
+    '    End If
+    '    'If (e.RowIndex < 0) Then Exit Sub
+    '    'Dim pRow As DataGridViewRow = dgMedia.Rows(e.RowIndex)
+    '    ''Dim mediaNumber As String = pRow.Cells("MEDIA_NUMB").Value.ToString
+    '    ''Dim OriginalFilename As String = pRow.Cells("ORIG_FILEN").Value.ToString
+    '    ''Dim gemFilename As String = pRow.Cells("FILENAME").Value.ToString
+    '    ''If (pRow.Cells(e.ColumnIndex).OwningColumn.Name = "MEDIA_NUMB") Then
+    '    '' MsgBox("media")
+    '    ''End If
+    '    ''Dim cellValue As String = pRow.Cells(e.ColumnIndex).Value.ToString
+    'End Sub
 
     Sub OpenPaint(ByVal strFileName As String)
         '
@@ -751,63 +751,123 @@ Public Class frmDetails
     End Sub
 
 
-    Private Sub CopyPhotoAsSketchToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CopyPhotoAsSketchToolStripMenuItem.Click
-        Call CopyPhotoAsSketch()
-    End Sub
+    'Private Sub CopyPhotoAsSketchToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CopyPhotoAsSketchToolStripMenuItem.Click
+    '    Call CopyPhotoAsSketch()
+    'End Sub
 
-    Private Sub CopyPhotoAsSketch()
-        '
-        ' Name:
-        ' Purpose: To copy the selected photo to the Sketches folder and start up Paint
-        ' Written: K.Adlam, 
-        '
-        ' Get source photo file and check it exists
-        '
-        Dim projectPath As String = "E:\EXIF"
-        Dim photoFile As String ' = dgMedia.CurrentRow.Cells("Comments").Value.ToString
-        'MsgBox(dgMedia.Columns.Item(3).Name)
-        photoFile = "Test.jpg"
-        Dim sourceFile As String = projectPath & "\PHOTOGRAPHS\" & photoFile
-        '
-        If (Not IO.File.Exists(sourceFile)) Then
-            MsgBox("Source photograph " & sourceFile & " cannot be found")
-            Exit Sub
-        End If
-        '
-        ' Get destination file and check folder exists
-        '
-        Dim destFolder As String = projectPath & "\SKETCHES"
-        If (Not IO.Directory.Exists(destFolder)) Then IO.Directory.CreateDirectory(destFolder)
-        '
-        ' Get new ID for the sketch and set destination path
-        '
-        Dim strUID As String = System.Guid.NewGuid.ToString
-        Dim destFile As String = destFolder & "\" & strUID & "." & IO.Path.GetExtension(photoFile)
-        '
-        ' Copy the file from the Photos folder to the Sketches folder and open paint
-        '
-        IO.File.Copy(sourceFile, destFile)
-        '
-        ' Create new row in the MEDIA_DETAILS table for the Sketch
-        '
-        Dim newMediaDetailRow As GEMDataset.MEDIA_DETAILRow = GEMDataset.MEDIA_DETAIL.NewMEDIA_DETAILRow
-        newMediaDetailRow.MEDIA_UID = strUID
-        newMediaDetailRow.GEMOBJ_UID = mOBJECT_UID
-        newMediaDetailRow.FILENAME = "test"
-        newMediaDetailRow.MEDIA_TYPE = "SKETCH"
-        newMediaDetailRow.COMMENTS = "Sketch on Photo"
-        GEMDataset.MEDIA_DETAIL.Rows.Add(newMediaDetailRow)
-        '
-        ' Open Paint
-        '
-        Call OpenPaint(destFile)
-        '
-    End Sub
+    'Private Sub CopyPhotoAsSketch()
+    '    '
+    '    ' Name:
+    '    ' Purpose: To copy the selected photo to the Sketches folder and start up Paint
+    '    ' Written: K.Adlam, 
+    '    '
+    '    ' Get source photo file and check it exists
+    '    '
+    '    Dim projectPath As String = "E:\EXIF"
+    '    Dim photoFile As String ' = dgMedia.CurrentRow.Cells("Comments").Value.ToString
+    '    'MsgBox(dgMedia.Columns.Item(3).Name)
+    '    photoFile = "Test.jpg"
+    '    Dim sourceFile As String = projectPath & "\PHOTOGRAPHS\" & photoFile
+    '    '
+    '    If (Not IO.File.Exists(sourceFile)) Then
+    '        MsgBox("Source photograph " & sourceFile & " cannot be found")
+    '        Exit Sub
+    '    End If
+    '    '
+    '    ' Get destination file and check folder exists
+    '    '
+    '    Dim destFolder As String = projectPath & "\SKETCHES"
+    '    If (Not IO.Directory.Exists(destFolder)) Then IO.Directory.CreateDirectory(destFolder)
+    '    '
+    '    ' Get new ID for the sketch and set destination path
+    '    '
+    '    Dim strUID As String = System.Guid.NewGuid.ToString
+    '    Dim destFile As String = destFolder & "\" & strUID & "." & IO.Path.GetExtension(photoFile)
+    '    '
+    '    ' Copy the file from the Photos folder to the Sketches folder and open paint
+    '    '
+    '    IO.File.Copy(sourceFile, destFile)
+    '    '
+    '    ' Create new row in the MEDIA_DETAILS table for the Sketch
+    '    '
+    '    Dim newMediaDetailRow As GEMDataset.MEDIA_DETAILRow = GEMDataset.MEDIA_DETAIL.NewMEDIA_DETAILRow
+    '    newMediaDetailRow.MEDIA_UID = strUID
+    '    newMediaDetailRow.GEMOBJ_UID = mOBJECT_UID
+    '    newMediaDetailRow.FILENAME = "test"
+    '    newMediaDetailRow.MEDIA_TYPE = "SKETCH"
+    '    newMediaDetailRow.COMMENTS = "Sketch on Photo"
+    '    GEMDataset.MEDIA_DETAIL.Rows.Add(newMediaDetailRow)
+    '    '
+    '    ' Open Paint
+    '    '
+    '    Call OpenPaint(destFile)
+    '    '
+    'End Sub
 
 
     Private Sub ShowMediaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ShowMediaToolStripMenuItem.Click
-        MsgBox("Show media file")
-        Dim pDataTable As DataTable = Me.GEMDataset.MEDIA_DETAIL
-        MsgBox(pDataTable.Rows.Count)
+        'SHOW MEDIA
+        Call updateMediaTable()
+        Dim currentrow As GEMDataset.MEDIA_DETAILRow = getMediaRowFromUID(getMediaUIDFromSelectedMediaRow)
+        If Not currentrow.IsFILENAMENull AndAlso currentrow.FILENAME <> "" Then
+            If IO.File.Exists(currentrow.FILENAME) Then
+                If currentrow.MEDIA_TYPE = "SKETCH" Then
+                    Call OpenPaint(currentrow.FILENAME)
+                Else
+                    System.Diagnostics.Process.Start(currentrow.FILENAME)
+                End If
+            End If
+        End If
     End Sub
+
+
+    Private Sub LinkToMediaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LinkToMediaToolStripMenuItem.Click
+        'ADD MEDIA
+        Dim currentuid As String = getMediaUIDFromSelectedMediaRow()
+        Call updateMediaTable()
+        Dim currentrow As GEMDataset.MEDIA_DETAILRow = getMediaRowFromUID(currentuid)
+        With New OpenFileDialog
+            .FileName = ""
+            .Filter = "All files|*.*"
+            If (.ShowDialog() = Windows.Forms.DialogResult.OK) Then
+
+                Dim newFilepath As String = gemdb.MediaPath & "\" & currentrow.MEDIA_UID & IO.Path.GetExtension(.FileName)
+                If IO.File.Exists(newFilepath) Then
+                    If MessageBox.Show("The current record already has a media file associated with it, do you want to overwrite it?", "Overwrite file - " & currentrow.MEDIA_UID & "." & IO.Path.GetExtension(.FileName), MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) = vbNo Then
+                        Exit Sub
+                    End If
+                End If
+
+                IO.File.Copy(.FileName, newFilepath, True)
+                currentrow.ORIG_FILEN = .FileName
+                currentrow.FILENAME = newFilepath
+                MEDIA_DETAILTableAdapter.Update(Me.GEMDataset.MEDIA_DETAIL)
+            End If
+        End With
+
+    End Sub
+
+    Private Sub AddMediaToAllRecordsToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AddMediaToAllRecordsToolStripMenuItem.Click
+        'AUTO MATCH MEDIA
+
+
+    End Sub
+
+    Private Function getMediaRowFromUID(ByVal mediauid As String) As GEMDataset.MEDIA_DETAILRow
+        Return (From row In Me.GEMDataset.MEDIA_DETAIL Where row.MEDIA_UID = mediauid Select row).First
+    End Function
+
+    Private Function getMediaUIDFromSelectedMediaRow() As String
+        Return dgMedia.CurrentRow.Cells.Item(1).Value.ToString
+    End Function
+
+    Private Sub updateMediaTable()
+
+        Me.Validate()
+        dgMedia.EndEdit()
+        dgMedia.Update()
+        MEDIA_DETAILTableAdapter.Update(Me.GEMDataset.MEDIA_DETAIL)
+        MEDIA_DETAILTableAdapter.Fill(Me.GEMDataset.MEDIA_DETAIL)
+    End Sub
+
 End Class

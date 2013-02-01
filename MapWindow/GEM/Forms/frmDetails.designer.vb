@@ -146,24 +146,33 @@ Partial Class frmDetails
         Me.Label13 = New System.Windows.Forms.Label()
         Me.cbPOSITION = New System.Windows.Forms.ComboBox()
         Me.DICPOSITIONBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.tbSLOPE = New MapWindow.NumericTextBox()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.GroupBox13 = New System.Windows.Forms.GroupBox()
         Me.cbHT_ABOVEGRADE_GRND_FLOOR_QUAL = New System.Windows.Forms.ComboBox()
         Me.DICHEIGHTQUALIFIERBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label17 = New System.Windows.Forms.Label()
+        Me.tbHT_ABOVEGRADE_GRND_FLOOR_2 = New MapWindow.NumericTextBox()
+        Me.tbHT_ABOVEGRADE_GRND_FLOOR_1 = New MapWindow.NumericTextBox()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.cbNO_STOREYS_BELOW_GROUND_QUAL = New System.Windows.Forms.ComboBox()
         Me.DICHEIGHTQUALIFIERBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label14 = New System.Windows.Forms.Label()
+        Me.tbNO_STOREYS_BELOW_GROUND_2 = New MapWindow.NumericTextBox()
+        Me.tbNO_STOREYS_BELOW_GROUND_1 = New MapWindow.NumericTextBox()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.cbNO_STOREYS_ABOVE_GROUND_QUAL = New System.Windows.Forms.ComboBox()
         Me.DICHEIGHTQUALIFIERBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.tbNO_STOREYS_ABOVE_GROUND_2 = New MapWindow.NumericTextBox()
+        Me.tbNO_STOREYS_ABOVE_GROUND_1 = New MapWindow.NumericTextBox()
         Me.lblH1 = New System.Windows.Forms.Label()
         Me.GroupBox7 = New System.Windows.Forms.GroupBox()
+        Me.tbYEAR_BUILT_2 = New MapWindow.NumericTextBox()
         Me.cbYEAR_BUILT_QUAL = New System.Windows.Forms.ComboBox()
         Me.DICYEARBUILTQUALBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.lblAge_Qualifier = New System.Windows.Forms.Label()
+        Me.tbYEAR_BUILT_1 = New MapWindow.NumericTextBox()
         Me.lblD1 = New System.Windows.Forms.Label()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.GroupBox16 = New System.Windows.Forms.GroupBox()
@@ -172,6 +181,9 @@ Partial Class frmDetails
         Me.CONSEQUENCESBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.cbDAMAGE_CODE = New System.Windows.Forms.ComboBox()
         Me.DICDAMAGEBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.tbNUM_MISSING = New MapWindow.NumericTextBox()
+        Me.tbNUM_INJURED = New MapWindow.NumericTextBox()
+        Me.tbNUM_FATALITIES = New MapWindow.NumericTextBox()
         Me.Label28 = New System.Windows.Forms.Label()
         Me.Label29 = New System.Windows.Forms.Label()
         Me.Label30 = New System.Windows.Forms.Label()
@@ -180,11 +192,17 @@ Partial Class frmDetails
         Me.Label34 = New System.Windows.Forms.Label()
         Me.tbEXPOSURE_COMMENTS = New System.Windows.Forms.TextBox()
         Me.GEDBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.tbREPLACEMENT_COST = New MapWindow.NumericTextBox()
+        Me.tbPLAN_AREA = New MapWindow.NumericTextBox()
         Me.Label33 = New System.Windows.Forms.Label()
         Me.Label32 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.cbCURRENCY = New System.Windows.Forms.ComboBox()
         Me.DICCURRENCYBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.tbNUM_DWELLINGS = New MapWindow.NumericTextBox()
+        Me.tbNUM_TRANSIT_OCCUPANTS = New MapWindow.NumericTextBox()
+        Me.tbNUM_NIGHT_OCCUPANTS = New MapWindow.NumericTextBox()
+        Me.tbNUM_DAY_OCCUPANTS = New MapWindow.NumericTextBox()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
@@ -192,14 +210,7 @@ Partial Class frmDetails
         Me.TabPage5 = New System.Windows.Forms.TabPage()
         Me.GroupBox17 = New System.Windows.Forms.GroupBox()
         Me.dgMedia = New System.Windows.Forms.DataGridView()
-        Me.MEDIATYPEDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewComboBoxColumn()
         Me.DICMEDIATYPEBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.MEDIANUMBDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ORIGFILENDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.COMMENTSDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FILENAMEDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GEMOBJUIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MEDIAUIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.MEDIADETAILBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TabPage6 = New System.Windows.Forms.TabPage()
         Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
@@ -238,26 +249,16 @@ Partial Class frmDetails
         Me.DIC_DAMAGETableAdapter = New MapWindow.GEMDatasetTableAdapters.DIC_DAMAGETableAdapter()
         Me.DIC_HEIGHT_QUALIFIERTableAdapter = New MapWindow.GEMDatasetTableAdapters.DIC_HEIGHT_QUALIFIERTableAdapter()
         Me.mnuRow = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.CopyPhotoAsSketchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.tbSLOPE = New MapWindow.NumericTextBox()
-        Me.tbHT_ABOVEGRADE_GRND_FLOOR_2 = New MapWindow.NumericTextBox()
-        Me.tbHT_ABOVEGRADE_GRND_FLOOR_1 = New MapWindow.NumericTextBox()
-        Me.tbNO_STOREYS_BELOW_GROUND_2 = New MapWindow.NumericTextBox()
-        Me.tbNO_STOREYS_BELOW_GROUND_1 = New MapWindow.NumericTextBox()
-        Me.tbNO_STOREYS_ABOVE_GROUND_2 = New MapWindow.NumericTextBox()
-        Me.tbNO_STOREYS_ABOVE_GROUND_1 = New MapWindow.NumericTextBox()
-        Me.tbYEAR_BUILT_2 = New MapWindow.NumericTextBox()
-        Me.tbYEAR_BUILT_1 = New MapWindow.NumericTextBox()
-        Me.tbNUM_MISSING = New MapWindow.NumericTextBox()
-        Me.tbNUM_INJURED = New MapWindow.NumericTextBox()
-        Me.tbNUM_FATALITIES = New MapWindow.NumericTextBox()
-        Me.tbREPLACEMENT_COST = New MapWindow.NumericTextBox()
-        Me.tbPLAN_AREA = New MapWindow.NumericTextBox()
-        Me.tbNUM_DWELLINGS = New MapWindow.NumericTextBox()
-        Me.tbNUM_TRANSIT_OCCUPANTS = New MapWindow.NumericTextBox()
-        Me.tbNUM_NIGHT_OCCUPANTS = New MapWindow.NumericTextBox()
-        Me.tbNUM_DAY_OCCUPANTS = New MapWindow.NumericTextBox()
         Me.ShowMediaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LinkToMediaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AddMediaToAllRecordsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MEDIATYPEDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.MEDIAUIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.MEDIANUMBDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ORIGFILENDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FILENAMEDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.COMMENTSDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GEMOBJUIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.GEMOBJECTBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GEMDataset, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DICMATERIALTYPEBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1059,7 +1060,7 @@ Partial Class frmDetails
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.BackColor = System.Drawing.Color.Salmon
+        Me.Label15.BackColor = System.Drawing.Color.Transparent
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.Location = New System.Drawing.Point(50, 19)
         Me.Label15.Name = "Label15"
@@ -1106,7 +1107,7 @@ Partial Class frmDetails
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.BackColor = System.Drawing.Color.Salmon
+        Me.Label12.BackColor = System.Drawing.Color.Transparent
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.Location = New System.Drawing.Point(20, 81)
         Me.Label12.Name = "Label12"
@@ -1138,7 +1139,7 @@ Partial Class frmDetails
         'lblFTYPE
         '
         Me.lblFTYPE.AutoSize = True
-        Me.lblFTYPE.BackColor = System.Drawing.Color.Salmon
+        Me.lblFTYPE.BackColor = System.Drawing.Color.Transparent
         Me.lblFTYPE.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblFTYPE.Location = New System.Drawing.Point(70, 53)
         Me.lblFTYPE.Name = "lblFTYPE"
@@ -1149,7 +1150,7 @@ Partial Class frmDetails
         'lblFMAT
         '
         Me.lblFMAT.AutoSize = True
-        Me.lblFMAT.BackColor = System.Drawing.Color.Salmon
+        Me.lblFMAT.BackColor = System.Drawing.Color.Transparent
         Me.lblFMAT.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblFMAT.Location = New System.Drawing.Point(55, 26)
         Me.lblFMAT.Name = "lblFMAT"
@@ -1240,7 +1241,7 @@ Partial Class frmDetails
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.BackColor = System.Drawing.Color.Salmon
+        Me.Label10.BackColor = System.Drawing.Color.Transparent
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.Location = New System.Drawing.Point(65, 21)
         Me.Label10.Name = "Label10"
@@ -1251,7 +1252,7 @@ Partial Class frmDetails
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.BackColor = System.Drawing.Color.Salmon
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.Location = New System.Drawing.Point(25, 105)
         Me.Label9.Name = "Label9"
@@ -1283,7 +1284,7 @@ Partial Class frmDetails
         'lblRTYPE
         '
         Me.lblRTYPE.AutoSize = True
-        Me.lblRTYPE.BackColor = System.Drawing.Color.Salmon
+        Me.lblRTYPE.BackColor = System.Drawing.Color.Transparent
         Me.lblRTYPE.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblRTYPE.Location = New System.Drawing.Point(9, 78)
         Me.lblRTYPE.Name = "lblRTYPE"
@@ -1294,7 +1295,7 @@ Partial Class frmDetails
         'lblRMAT
         '
         Me.lblRMAT.AutoSize = True
-        Me.lblRMAT.BackColor = System.Drawing.Color.Salmon
+        Me.lblRMAT.BackColor = System.Drawing.Color.Transparent
         Me.lblRMAT.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblRMAT.Location = New System.Drawing.Point(18, 48)
         Me.lblRMAT.Name = "lblRMAT"
@@ -1592,7 +1593,7 @@ Partial Class frmDetails
         'Label35
         '
         Me.Label35.AutoSize = True
-        Me.Label35.BackColor = System.Drawing.Color.Salmon
+        Me.Label35.BackColor = System.Drawing.Color.Transparent
         Me.Label35.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label35.Location = New System.Drawing.Point(28, 104)
         Me.Label35.Name = "Label35"
@@ -1624,7 +1625,7 @@ Partial Class frmDetails
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.BackColor = System.Drawing.Color.Salmon
+        Me.Label13.BackColor = System.Drawing.Color.Transparent
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.Location = New System.Drawing.Point(21, 67)
         Me.Label13.Name = "Label13"
@@ -1652,6 +1653,15 @@ Partial Class frmDetails
         '
         Me.DICPOSITIONBindingSource.DataMember = "DIC_POSITION"
         Me.DICPOSITIONBindingSource.DataSource = Me.GEMDataset
+        '
+        'tbSLOPE
+        '
+        Me.tbSLOPE.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "SLOPE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbSLOPE.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbSLOPE.Location = New System.Drawing.Point(141, 28)
+        Me.tbSLOPE.Name = "tbSLOPE"
+        Me.tbSLOPE.Size = New System.Drawing.Size(88, 22)
+        Me.tbSLOPE.TabIndex = 109
         '
         'Label22
         '
@@ -1718,6 +1728,24 @@ Partial Class frmDetails
         Me.Label17.TabIndex = 107
         Me.Label17.Text = "Qualifier"
         '
+        'tbHT_ABOVEGRADE_GRND_FLOOR_2
+        '
+        Me.tbHT_ABOVEGRADE_GRND_FLOOR_2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "HT_GR_GF_2", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbHT_ABOVEGRADE_GRND_FLOOR_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbHT_ABOVEGRADE_GRND_FLOOR_2.Location = New System.Drawing.Point(297, 94)
+        Me.tbHT_ABOVEGRADE_GRND_FLOOR_2.Name = "tbHT_ABOVEGRADE_GRND_FLOOR_2"
+        Me.tbHT_ABOVEGRADE_GRND_FLOOR_2.Size = New System.Drawing.Size(88, 22)
+        Me.tbHT_ABOVEGRADE_GRND_FLOOR_2.TabIndex = 106
+        '
+        'tbHT_ABOVEGRADE_GRND_FLOOR_1
+        '
+        Me.tbHT_ABOVEGRADE_GRND_FLOOR_1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "HT_GR_GF_1", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbHT_ABOVEGRADE_GRND_FLOOR_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbHT_ABOVEGRADE_GRND_FLOOR_1.Location = New System.Drawing.Point(203, 94)
+        Me.tbHT_ABOVEGRADE_GRND_FLOOR_1.Name = "tbHT_ABOVEGRADE_GRND_FLOOR_1"
+        Me.tbHT_ABOVEGRADE_GRND_FLOOR_1.Size = New System.Drawing.Size(88, 22)
+        Me.tbHT_ABOVEGRADE_GRND_FLOOR_1.TabIndex = 105
+        '
         'Label18
         '
         Me.Label18.AutoSize = True
@@ -1758,6 +1786,24 @@ Partial Class frmDetails
         Me.Label14.Size = New System.Drawing.Size(57, 16)
         Me.Label14.TabIndex = 102
         Me.Label14.Text = "Qualifier"
+        '
+        'tbNO_STOREYS_BELOW_GROUND_2
+        '
+        Me.tbNO_STOREYS_BELOW_GROUND_2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "STORY_BG_2", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbNO_STOREYS_BELOW_GROUND_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbNO_STOREYS_BELOW_GROUND_2.Location = New System.Drawing.Point(297, 62)
+        Me.tbNO_STOREYS_BELOW_GROUND_2.Name = "tbNO_STOREYS_BELOW_GROUND_2"
+        Me.tbNO_STOREYS_BELOW_GROUND_2.Size = New System.Drawing.Size(88, 22)
+        Me.tbNO_STOREYS_BELOW_GROUND_2.TabIndex = 101
+        '
+        'tbNO_STOREYS_BELOW_GROUND_1
+        '
+        Me.tbNO_STOREYS_BELOW_GROUND_1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "STORY_BG_1", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbNO_STOREYS_BELOW_GROUND_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbNO_STOREYS_BELOW_GROUND_1.Location = New System.Drawing.Point(203, 62)
+        Me.tbNO_STOREYS_BELOW_GROUND_1.Name = "tbNO_STOREYS_BELOW_GROUND_1"
+        Me.tbNO_STOREYS_BELOW_GROUND_1.Size = New System.Drawing.Size(88, 22)
+        Me.tbNO_STOREYS_BELOW_GROUND_1.TabIndex = 100
         '
         'Label16
         '
@@ -1800,6 +1846,24 @@ Partial Class frmDetails
         Me.Label1.TabIndex = 97
         Me.Label1.Text = "Qualifier"
         '
+        'tbNO_STOREYS_ABOVE_GROUND_2
+        '
+        Me.tbNO_STOREYS_ABOVE_GROUND_2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "STORY_AG_2", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbNO_STOREYS_ABOVE_GROUND_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbNO_STOREYS_ABOVE_GROUND_2.Location = New System.Drawing.Point(297, 27)
+        Me.tbNO_STOREYS_ABOVE_GROUND_2.Name = "tbNO_STOREYS_ABOVE_GROUND_2"
+        Me.tbNO_STOREYS_ABOVE_GROUND_2.Size = New System.Drawing.Size(88, 22)
+        Me.tbNO_STOREYS_ABOVE_GROUND_2.TabIndex = 96
+        '
+        'tbNO_STOREYS_ABOVE_GROUND_1
+        '
+        Me.tbNO_STOREYS_ABOVE_GROUND_1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "STORY_AG_1", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbNO_STOREYS_ABOVE_GROUND_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbNO_STOREYS_ABOVE_GROUND_1.Location = New System.Drawing.Point(203, 27)
+        Me.tbNO_STOREYS_ABOVE_GROUND_1.Name = "tbNO_STOREYS_ABOVE_GROUND_1"
+        Me.tbNO_STOREYS_ABOVE_GROUND_1.Size = New System.Drawing.Size(88, 22)
+        Me.tbNO_STOREYS_ABOVE_GROUND_1.TabIndex = 95
+        '
         'lblH1
         '
         Me.lblH1.AutoSize = True
@@ -1823,6 +1887,15 @@ Partial Class frmDetails
         Me.GroupBox7.TabIndex = 88
         Me.GroupBox7.TabStop = False
         Me.GroupBox7.Text = "Date"
+        '
+        'tbYEAR_BUILT_2
+        '
+        Me.tbYEAR_BUILT_2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "YR_BUILT_2", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbYEAR_BUILT_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbYEAR_BUILT_2.Location = New System.Drawing.Point(297, 28)
+        Me.tbYEAR_BUILT_2.Name = "tbYEAR_BUILT_2"
+        Me.tbYEAR_BUILT_2.Size = New System.Drawing.Size(87, 22)
+        Me.tbYEAR_BUILT_2.TabIndex = 58
         '
         'cbYEAR_BUILT_QUAL
         '
@@ -1854,6 +1927,15 @@ Partial Class frmDetails
         Me.lblAge_Qualifier.Size = New System.Drawing.Size(57, 16)
         Me.lblAge_Qualifier.TabIndex = 54
         Me.lblAge_Qualifier.Text = "Qualifier"
+        '
+        'tbYEAR_BUILT_1
+        '
+        Me.tbYEAR_BUILT_1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "YR_BUILT_1", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbYEAR_BUILT_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbYEAR_BUILT_1.Location = New System.Drawing.Point(203, 28)
+        Me.tbYEAR_BUILT_1.Name = "tbYEAR_BUILT_1"
+        Me.tbYEAR_BUILT_1.Size = New System.Drawing.Size(88, 22)
+        Me.tbYEAR_BUILT_1.TabIndex = 48
         '
         'lblD1
         '
@@ -1941,6 +2023,33 @@ Partial Class frmDetails
         '
         Me.DICDAMAGEBindingSource.DataMember = "DIC_DAMAGE"
         Me.DICDAMAGEBindingSource.DataSource = Me.GEMDataset
+        '
+        'tbNUM_MISSING
+        '
+        Me.tbNUM_MISSING.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CONSEQUENCESBindingSource, "MISSING", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbNUM_MISSING.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbNUM_MISSING.Location = New System.Drawing.Point(206, 83)
+        Me.tbNUM_MISSING.Name = "tbNUM_MISSING"
+        Me.tbNUM_MISSING.Size = New System.Drawing.Size(96, 22)
+        Me.tbNUM_MISSING.TabIndex = 99
+        '
+        'tbNUM_INJURED
+        '
+        Me.tbNUM_INJURED.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CONSEQUENCESBindingSource, "INJURED", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbNUM_INJURED.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbNUM_INJURED.Location = New System.Drawing.Point(206, 56)
+        Me.tbNUM_INJURED.Name = "tbNUM_INJURED"
+        Me.tbNUM_INJURED.Size = New System.Drawing.Size(96, 22)
+        Me.tbNUM_INJURED.TabIndex = 98
+        '
+        'tbNUM_FATALITIES
+        '
+        Me.tbNUM_FATALITIES.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CONSEQUENCESBindingSource, "FATALITIES", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbNUM_FATALITIES.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbNUM_FATALITIES.Location = New System.Drawing.Point(206, 28)
+        Me.tbNUM_FATALITIES.Name = "tbNUM_FATALITIES"
+        Me.tbNUM_FATALITIES.Size = New System.Drawing.Size(96, 22)
+        Me.tbNUM_FATALITIES.TabIndex = 97
         '
         'Label28
         '
@@ -2032,6 +2141,24 @@ Partial Class frmDetails
         Me.GEDBindingSource.DataMember = "GED"
         Me.GEDBindingSource.DataSource = Me.GEMDataset
         '
+        'tbREPLACEMENT_COST
+        '
+        Me.tbREPLACEMENT_COST.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEDBindingSource, "REPLC_COST", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbREPLACEMENT_COST.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbREPLACEMENT_COST.Location = New System.Drawing.Point(208, 165)
+        Me.tbREPLACEMENT_COST.Name = "tbREPLACEMENT_COST"
+        Me.tbREPLACEMENT_COST.Size = New System.Drawing.Size(128, 22)
+        Me.tbREPLACEMENT_COST.TabIndex = 105
+        '
+        'tbPLAN_AREA
+        '
+        Me.tbPLAN_AREA.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEDBindingSource, "PLAN_AREA", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbPLAN_AREA.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbPLAN_AREA.Location = New System.Drawing.Point(208, 137)
+        Me.tbPLAN_AREA.Name = "tbPLAN_AREA"
+        Me.tbPLAN_AREA.Size = New System.Drawing.Size(128, 22)
+        Me.tbPLAN_AREA.TabIndex = 104
+        '
         'Label33
         '
         Me.Label33.AutoSize = True
@@ -2082,6 +2209,42 @@ Partial Class frmDetails
         '
         Me.DICCURRENCYBindingSource.DataMember = "DIC_CURRENCY"
         Me.DICCURRENCYBindingSource.DataSource = Me.GEMDataset
+        '
+        'tbNUM_DWELLINGS
+        '
+        Me.tbNUM_DWELLINGS.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEDBindingSource, "NUM_DWELL", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbNUM_DWELLINGS.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbNUM_DWELLINGS.Location = New System.Drawing.Point(208, 109)
+        Me.tbNUM_DWELLINGS.Name = "tbNUM_DWELLINGS"
+        Me.tbNUM_DWELLINGS.Size = New System.Drawing.Size(128, 22)
+        Me.tbNUM_DWELLINGS.TabIndex = 99
+        '
+        'tbNUM_TRANSIT_OCCUPANTS
+        '
+        Me.tbNUM_TRANSIT_OCCUPANTS.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEDBindingSource, "TRANS_OCC", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbNUM_TRANSIT_OCCUPANTS.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbNUM_TRANSIT_OCCUPANTS.Location = New System.Drawing.Point(208, 81)
+        Me.tbNUM_TRANSIT_OCCUPANTS.Name = "tbNUM_TRANSIT_OCCUPANTS"
+        Me.tbNUM_TRANSIT_OCCUPANTS.Size = New System.Drawing.Size(128, 22)
+        Me.tbNUM_TRANSIT_OCCUPANTS.TabIndex = 98
+        '
+        'tbNUM_NIGHT_OCCUPANTS
+        '
+        Me.tbNUM_NIGHT_OCCUPANTS.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEDBindingSource, "NIGHT_OCC", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbNUM_NIGHT_OCCUPANTS.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbNUM_NIGHT_OCCUPANTS.Location = New System.Drawing.Point(208, 53)
+        Me.tbNUM_NIGHT_OCCUPANTS.Name = "tbNUM_NIGHT_OCCUPANTS"
+        Me.tbNUM_NIGHT_OCCUPANTS.Size = New System.Drawing.Size(128, 22)
+        Me.tbNUM_NIGHT_OCCUPANTS.TabIndex = 97
+        '
+        'tbNUM_DAY_OCCUPANTS
+        '
+        Me.tbNUM_DAY_OCCUPANTS.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEDBindingSource, "DAY_OCC", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbNUM_DAY_OCCUPANTS.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbNUM_DAY_OCCUPANTS.Location = New System.Drawing.Point(208, 25)
+        Me.tbNUM_DAY_OCCUPANTS.Name = "tbNUM_DAY_OCCUPANTS"
+        Me.tbNUM_DAY_OCCUPANTS.Size = New System.Drawing.Size(128, 22)
+        Me.tbNUM_DAY_OCCUPANTS.TabIndex = 96
         '
         'Label25
         '
@@ -2149,70 +2312,17 @@ Partial Class frmDetails
         Me.dgMedia.AutoGenerateColumns = False
         Me.dgMedia.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgMedia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgMedia.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.MEDIATYPEDataGridViewTextBoxColumn, Me.MEDIANUMBDataGridViewTextBoxColumn, Me.ORIGFILENDataGridViewTextBoxColumn, Me.COMMENTSDataGridViewTextBoxColumn, Me.FILENAMEDataGridViewTextBoxColumn, Me.GEMOBJUIDDataGridViewTextBoxColumn, Me.MEDIAUIDDataGridViewTextBoxColumn})
+        Me.dgMedia.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.MEDIATYPEDataGridViewTextBoxColumn, Me.MEDIAUIDDataGridViewTextBoxColumn, Me.MEDIANUMBDataGridViewTextBoxColumn, Me.ORIGFILENDataGridViewTextBoxColumn, Me.FILENAMEDataGridViewTextBoxColumn, Me.COMMENTSDataGridViewTextBoxColumn, Me.GEMOBJUIDDataGridViewTextBoxColumn})
         Me.dgMedia.DataSource = Me.MEDIADETAILBindingSource
         Me.dgMedia.Location = New System.Drawing.Point(6, 19)
         Me.dgMedia.Name = "dgMedia"
         Me.dgMedia.Size = New System.Drawing.Size(791, 520)
         Me.dgMedia.TabIndex = 0
         '
-        'MEDIATYPEDataGridViewTextBoxColumn
-        '
-        Me.MEDIATYPEDataGridViewTextBoxColumn.DataPropertyName = "MEDIA_TYPE"
-        Me.MEDIATYPEDataGridViewTextBoxColumn.DataSource = Me.DICMEDIATYPEBindingSource
-        Me.MEDIATYPEDataGridViewTextBoxColumn.DisplayMember = "DESCRIPTION"
-        Me.MEDIATYPEDataGridViewTextBoxColumn.FillWeight = 25.0!
-        Me.MEDIATYPEDataGridViewTextBoxColumn.HeaderText = "Media Type"
-        Me.MEDIATYPEDataGridViewTextBoxColumn.Name = "MEDIATYPEDataGridViewTextBoxColumn"
-        Me.MEDIATYPEDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.MEDIATYPEDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        Me.MEDIATYPEDataGridViewTextBoxColumn.ValueMember = "CODE"
-        '
         'DICMEDIATYPEBindingSource
         '
         Me.DICMEDIATYPEBindingSource.DataMember = "DIC_MEDIA_TYPE"
         Me.DICMEDIATYPEBindingSource.DataSource = Me.GEMDataset
-        '
-        'MEDIANUMBDataGridViewTextBoxColumn
-        '
-        Me.MEDIANUMBDataGridViewTextBoxColumn.DataPropertyName = "MEDIA_NUMB"
-        Me.MEDIANUMBDataGridViewTextBoxColumn.FillWeight = 15.0!
-        Me.MEDIANUMBDataGridViewTextBoxColumn.HeaderText = "Frame Number"
-        Me.MEDIANUMBDataGridViewTextBoxColumn.Name = "MEDIANUMBDataGridViewTextBoxColumn"
-        '
-        'ORIGFILENDataGridViewTextBoxColumn
-        '
-        Me.ORIGFILENDataGridViewTextBoxColumn.DataPropertyName = "ORIG_FILEN"
-        Me.ORIGFILENDataGridViewTextBoxColumn.FillWeight = 20.0!
-        Me.ORIGFILENDataGridViewTextBoxColumn.HeaderText = "Original Filename"
-        Me.ORIGFILENDataGridViewTextBoxColumn.Name = "ORIGFILENDataGridViewTextBoxColumn"
-        '
-        'COMMENTSDataGridViewTextBoxColumn
-        '
-        Me.COMMENTSDataGridViewTextBoxColumn.DataPropertyName = "COMMENTS"
-        Me.COMMENTSDataGridViewTextBoxColumn.HeaderText = "Comments"
-        Me.COMMENTSDataGridViewTextBoxColumn.Name = "COMMENTSDataGridViewTextBoxColumn"
-        '
-        'FILENAMEDataGridViewTextBoxColumn
-        '
-        Me.FILENAMEDataGridViewTextBoxColumn.DataPropertyName = "FILENAME"
-        Me.FILENAMEDataGridViewTextBoxColumn.HeaderText = "FILENAME"
-        Me.FILENAMEDataGridViewTextBoxColumn.Name = "FILENAMEDataGridViewTextBoxColumn"
-        Me.FILENAMEDataGridViewTextBoxColumn.Visible = False
-        '
-        'GEMOBJUIDDataGridViewTextBoxColumn
-        '
-        Me.GEMOBJUIDDataGridViewTextBoxColumn.DataPropertyName = "GEMOBJ_UID"
-        Me.GEMOBJUIDDataGridViewTextBoxColumn.HeaderText = "GEMOBJ_UID"
-        Me.GEMOBJUIDDataGridViewTextBoxColumn.Name = "GEMOBJUIDDataGridViewTextBoxColumn"
-        Me.GEMOBJUIDDataGridViewTextBoxColumn.Visible = False
-        '
-        'MEDIAUIDDataGridViewTextBoxColumn
-        '
-        Me.MEDIAUIDDataGridViewTextBoxColumn.DataPropertyName = "MEDIA_UID"
-        Me.MEDIAUIDDataGridViewTextBoxColumn.HeaderText = "MEDIA_UID"
-        Me.MEDIAUIDDataGridViewTextBoxColumn.Name = "MEDIAUIDDataGridViewTextBoxColumn"
-        Me.MEDIAUIDDataGridViewTextBoxColumn.Visible = False
         '
         'MEDIADETAILBindingSource
         '
@@ -2393,183 +2503,80 @@ Partial Class frmDetails
         '
         'mnuRow
         '
-        Me.mnuRow.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CopyPhotoAsSketchToolStripMenuItem, Me.ShowMediaToolStripMenuItem})
+        Me.mnuRow.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ShowMediaToolStripMenuItem, Me.LinkToMediaToolStripMenuItem, Me.AddMediaToAllRecordsToolStripMenuItem})
         Me.mnuRow.Name = "mnuRow"
-        Me.mnuRow.Size = New System.Drawing.Size(189, 70)
-        '
-        'CopyPhotoAsSketchToolStripMenuItem
-        '
-        Me.CopyPhotoAsSketchToolStripMenuItem.Name = "CopyPhotoAsSketchToolStripMenuItem"
-        Me.CopyPhotoAsSketchToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
-        Me.CopyPhotoAsSketchToolStripMenuItem.Text = "Copy photo as sketch"
-        '
-        'tbSLOPE
-        '
-        Me.tbSLOPE.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "SLOPE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.tbSLOPE.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbSLOPE.Location = New System.Drawing.Point(141, 28)
-        Me.tbSLOPE.Name = "tbSLOPE"
-        Me.tbSLOPE.Size = New System.Drawing.Size(88, 22)
-        Me.tbSLOPE.TabIndex = 109
-        '
-        'tbHT_ABOVEGRADE_GRND_FLOOR_2
-        '
-        Me.tbHT_ABOVEGRADE_GRND_FLOOR_2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "HT_GR_GF_2", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.tbHT_ABOVEGRADE_GRND_FLOOR_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbHT_ABOVEGRADE_GRND_FLOOR_2.Location = New System.Drawing.Point(297, 94)
-        Me.tbHT_ABOVEGRADE_GRND_FLOOR_2.Name = "tbHT_ABOVEGRADE_GRND_FLOOR_2"
-        Me.tbHT_ABOVEGRADE_GRND_FLOOR_2.Size = New System.Drawing.Size(88, 22)
-        Me.tbHT_ABOVEGRADE_GRND_FLOOR_2.TabIndex = 106
-        '
-        'tbHT_ABOVEGRADE_GRND_FLOOR_1
-        '
-        Me.tbHT_ABOVEGRADE_GRND_FLOOR_1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "HT_GR_GF_1", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.tbHT_ABOVEGRADE_GRND_FLOOR_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbHT_ABOVEGRADE_GRND_FLOOR_1.Location = New System.Drawing.Point(203, 94)
-        Me.tbHT_ABOVEGRADE_GRND_FLOOR_1.Name = "tbHT_ABOVEGRADE_GRND_FLOOR_1"
-        Me.tbHT_ABOVEGRADE_GRND_FLOOR_1.Size = New System.Drawing.Size(88, 22)
-        Me.tbHT_ABOVEGRADE_GRND_FLOOR_1.TabIndex = 105
-        '
-        'tbNO_STOREYS_BELOW_GROUND_2
-        '
-        Me.tbNO_STOREYS_BELOW_GROUND_2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "STORY_BG_2", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.tbNO_STOREYS_BELOW_GROUND_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbNO_STOREYS_BELOW_GROUND_2.Location = New System.Drawing.Point(297, 62)
-        Me.tbNO_STOREYS_BELOW_GROUND_2.Name = "tbNO_STOREYS_BELOW_GROUND_2"
-        Me.tbNO_STOREYS_BELOW_GROUND_2.Size = New System.Drawing.Size(88, 22)
-        Me.tbNO_STOREYS_BELOW_GROUND_2.TabIndex = 101
-        '
-        'tbNO_STOREYS_BELOW_GROUND_1
-        '
-        Me.tbNO_STOREYS_BELOW_GROUND_1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "STORY_BG_1", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.tbNO_STOREYS_BELOW_GROUND_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbNO_STOREYS_BELOW_GROUND_1.Location = New System.Drawing.Point(203, 62)
-        Me.tbNO_STOREYS_BELOW_GROUND_1.Name = "tbNO_STOREYS_BELOW_GROUND_1"
-        Me.tbNO_STOREYS_BELOW_GROUND_1.Size = New System.Drawing.Size(88, 22)
-        Me.tbNO_STOREYS_BELOW_GROUND_1.TabIndex = 100
-        '
-        'tbNO_STOREYS_ABOVE_GROUND_2
-        '
-        Me.tbNO_STOREYS_ABOVE_GROUND_2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "STORY_AG_2", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.tbNO_STOREYS_ABOVE_GROUND_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbNO_STOREYS_ABOVE_GROUND_2.Location = New System.Drawing.Point(297, 27)
-        Me.tbNO_STOREYS_ABOVE_GROUND_2.Name = "tbNO_STOREYS_ABOVE_GROUND_2"
-        Me.tbNO_STOREYS_ABOVE_GROUND_2.Size = New System.Drawing.Size(88, 22)
-        Me.tbNO_STOREYS_ABOVE_GROUND_2.TabIndex = 96
-        '
-        'tbNO_STOREYS_ABOVE_GROUND_1
-        '
-        Me.tbNO_STOREYS_ABOVE_GROUND_1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "STORY_AG_1", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.tbNO_STOREYS_ABOVE_GROUND_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbNO_STOREYS_ABOVE_GROUND_1.Location = New System.Drawing.Point(203, 27)
-        Me.tbNO_STOREYS_ABOVE_GROUND_1.Name = "tbNO_STOREYS_ABOVE_GROUND_1"
-        Me.tbNO_STOREYS_ABOVE_GROUND_1.Size = New System.Drawing.Size(88, 22)
-        Me.tbNO_STOREYS_ABOVE_GROUND_1.TabIndex = 95
-        '
-        'tbYEAR_BUILT_2
-        '
-        Me.tbYEAR_BUILT_2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "YR_BUILT_2", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.tbYEAR_BUILT_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbYEAR_BUILT_2.Location = New System.Drawing.Point(297, 28)
-        Me.tbYEAR_BUILT_2.Name = "tbYEAR_BUILT_2"
-        Me.tbYEAR_BUILT_2.Size = New System.Drawing.Size(87, 22)
-        Me.tbYEAR_BUILT_2.TabIndex = 58
-        '
-        'tbYEAR_BUILT_1
-        '
-        Me.tbYEAR_BUILT_1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "YR_BUILT_1", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.tbYEAR_BUILT_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbYEAR_BUILT_1.Location = New System.Drawing.Point(203, 28)
-        Me.tbYEAR_BUILT_1.Name = "tbYEAR_BUILT_1"
-        Me.tbYEAR_BUILT_1.Size = New System.Drawing.Size(88, 22)
-        Me.tbYEAR_BUILT_1.TabIndex = 48
-        '
-        'tbNUM_MISSING
-        '
-        Me.tbNUM_MISSING.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CONSEQUENCESBindingSource, "MISSING", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.tbNUM_MISSING.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbNUM_MISSING.Location = New System.Drawing.Point(206, 83)
-        Me.tbNUM_MISSING.Name = "tbNUM_MISSING"
-        Me.tbNUM_MISSING.Size = New System.Drawing.Size(96, 22)
-        Me.tbNUM_MISSING.TabIndex = 99
-        '
-        'tbNUM_INJURED
-        '
-        Me.tbNUM_INJURED.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CONSEQUENCESBindingSource, "INJURED", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.tbNUM_INJURED.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbNUM_INJURED.Location = New System.Drawing.Point(206, 56)
-        Me.tbNUM_INJURED.Name = "tbNUM_INJURED"
-        Me.tbNUM_INJURED.Size = New System.Drawing.Size(96, 22)
-        Me.tbNUM_INJURED.TabIndex = 98
-        '
-        'tbNUM_FATALITIES
-        '
-        Me.tbNUM_FATALITIES.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CONSEQUENCESBindingSource, "FATALITIES", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.tbNUM_FATALITIES.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbNUM_FATALITIES.Location = New System.Drawing.Point(206, 28)
-        Me.tbNUM_FATALITIES.Name = "tbNUM_FATALITIES"
-        Me.tbNUM_FATALITIES.Size = New System.Drawing.Size(96, 22)
-        Me.tbNUM_FATALITIES.TabIndex = 97
-        '
-        'tbREPLACEMENT_COST
-        '
-        Me.tbREPLACEMENT_COST.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEDBindingSource, "REPLC_COST", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.tbREPLACEMENT_COST.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbREPLACEMENT_COST.Location = New System.Drawing.Point(208, 165)
-        Me.tbREPLACEMENT_COST.Name = "tbREPLACEMENT_COST"
-        Me.tbREPLACEMENT_COST.Size = New System.Drawing.Size(128, 22)
-        Me.tbREPLACEMENT_COST.TabIndex = 105
-        '
-        'tbPLAN_AREA
-        '
-        Me.tbPLAN_AREA.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEDBindingSource, "PLAN_AREA", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.tbPLAN_AREA.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbPLAN_AREA.Location = New System.Drawing.Point(208, 137)
-        Me.tbPLAN_AREA.Name = "tbPLAN_AREA"
-        Me.tbPLAN_AREA.Size = New System.Drawing.Size(128, 22)
-        Me.tbPLAN_AREA.TabIndex = 104
-        '
-        'tbNUM_DWELLINGS
-        '
-        Me.tbNUM_DWELLINGS.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEDBindingSource, "NUM_DWELL", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.tbNUM_DWELLINGS.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbNUM_DWELLINGS.Location = New System.Drawing.Point(208, 109)
-        Me.tbNUM_DWELLINGS.Name = "tbNUM_DWELLINGS"
-        Me.tbNUM_DWELLINGS.Size = New System.Drawing.Size(128, 22)
-        Me.tbNUM_DWELLINGS.TabIndex = 99
-        '
-        'tbNUM_TRANSIT_OCCUPANTS
-        '
-        Me.tbNUM_TRANSIT_OCCUPANTS.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEDBindingSource, "TRANS_OCC", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.tbNUM_TRANSIT_OCCUPANTS.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbNUM_TRANSIT_OCCUPANTS.Location = New System.Drawing.Point(208, 81)
-        Me.tbNUM_TRANSIT_OCCUPANTS.Name = "tbNUM_TRANSIT_OCCUPANTS"
-        Me.tbNUM_TRANSIT_OCCUPANTS.Size = New System.Drawing.Size(128, 22)
-        Me.tbNUM_TRANSIT_OCCUPANTS.TabIndex = 98
-        '
-        'tbNUM_NIGHT_OCCUPANTS
-        '
-        Me.tbNUM_NIGHT_OCCUPANTS.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEDBindingSource, "NIGHT_OCC", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.tbNUM_NIGHT_OCCUPANTS.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbNUM_NIGHT_OCCUPANTS.Location = New System.Drawing.Point(208, 53)
-        Me.tbNUM_NIGHT_OCCUPANTS.Name = "tbNUM_NIGHT_OCCUPANTS"
-        Me.tbNUM_NIGHT_OCCUPANTS.Size = New System.Drawing.Size(128, 22)
-        Me.tbNUM_NIGHT_OCCUPANTS.TabIndex = 97
-        '
-        'tbNUM_DAY_OCCUPANTS
-        '
-        Me.tbNUM_DAY_OCCUPANTS.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEDBindingSource, "DAY_OCC", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.tbNUM_DAY_OCCUPANTS.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbNUM_DAY_OCCUPANTS.Location = New System.Drawing.Point(208, 25)
-        Me.tbNUM_DAY_OCCUPANTS.Name = "tbNUM_DAY_OCCUPANTS"
-        Me.tbNUM_DAY_OCCUPANTS.Size = New System.Drawing.Size(128, 22)
-        Me.tbNUM_DAY_OCCUPANTS.TabIndex = 96
+        Me.mnuRow.Size = New System.Drawing.Size(174, 70)
         '
         'ShowMediaToolStripMenuItem
         '
         Me.ShowMediaToolStripMenuItem.Name = "ShowMediaToolStripMenuItem"
-        Me.ShowMediaToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
+        Me.ShowMediaToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
         Me.ShowMediaToolStripMenuItem.Text = "Show Media"
+        '
+        'LinkToMediaToolStripMenuItem
+        '
+        Me.LinkToMediaToolStripMenuItem.Name = "LinkToMediaToolStripMenuItem"
+        Me.LinkToMediaToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
+        Me.LinkToMediaToolStripMenuItem.Text = "Add Media"
+        '
+        'AddMediaToAllRecordsToolStripMenuItem
+        '
+        Me.AddMediaToAllRecordsToolStripMenuItem.Name = "AddMediaToAllRecordsToolStripMenuItem"
+        Me.AddMediaToAllRecordsToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
+        Me.AddMediaToAllRecordsToolStripMenuItem.Text = "Auto Match Media"
+        '
+        'MEDIATYPEDataGridViewTextBoxColumn
+        '
+        Me.MEDIATYPEDataGridViewTextBoxColumn.DataPropertyName = "MEDIA_TYPE"
+        Me.MEDIATYPEDataGridViewTextBoxColumn.DataSource = Me.DICMEDIATYPEBindingSource
+        Me.MEDIATYPEDataGridViewTextBoxColumn.DisplayMember = "DESCRIPTION"
+        Me.MEDIATYPEDataGridViewTextBoxColumn.FillWeight = 25.0!
+        Me.MEDIATYPEDataGridViewTextBoxColumn.HeaderText = "Media Type"
+        Me.MEDIATYPEDataGridViewTextBoxColumn.Name = "MEDIATYPEDataGridViewTextBoxColumn"
+        Me.MEDIATYPEDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.MEDIATYPEDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.MEDIATYPEDataGridViewTextBoxColumn.ValueMember = "CODE"
+        '
+        'MEDIAUIDDataGridViewTextBoxColumn
+        '
+        Me.MEDIAUIDDataGridViewTextBoxColumn.DataPropertyName = "MEDIA_UID"
+        Me.MEDIAUIDDataGridViewTextBoxColumn.HeaderText = "MEDIA_UID"
+        Me.MEDIAUIDDataGridViewTextBoxColumn.Name = "MEDIAUIDDataGridViewTextBoxColumn"
+        Me.MEDIAUIDDataGridViewTextBoxColumn.Visible = False
+        '
+        'MEDIANUMBDataGridViewTextBoxColumn
+        '
+        Me.MEDIANUMBDataGridViewTextBoxColumn.DataPropertyName = "MEDIA_NUMB"
+        Me.MEDIANUMBDataGridViewTextBoxColumn.FillWeight = 15.0!
+        Me.MEDIANUMBDataGridViewTextBoxColumn.HeaderText = "Frame Number"
+        Me.MEDIANUMBDataGridViewTextBoxColumn.Name = "MEDIANUMBDataGridViewTextBoxColumn"
+        '
+        'ORIGFILENDataGridViewTextBoxColumn
+        '
+        Me.ORIGFILENDataGridViewTextBoxColumn.DataPropertyName = "ORIG_FILEN"
+        Me.ORIGFILENDataGridViewTextBoxColumn.FillWeight = 20.0!
+        Me.ORIGFILENDataGridViewTextBoxColumn.HeaderText = "Original Filename"
+        Me.ORIGFILENDataGridViewTextBoxColumn.Name = "ORIGFILENDataGridViewTextBoxColumn"
+        '
+        'FILENAMEDataGridViewTextBoxColumn
+        '
+        Me.FILENAMEDataGridViewTextBoxColumn.DataPropertyName = "FILENAME"
+        Me.FILENAMEDataGridViewTextBoxColumn.FillWeight = 20.0!
+        Me.FILENAMEDataGridViewTextBoxColumn.HeaderText = "GEM Filename"
+        Me.FILENAMEDataGridViewTextBoxColumn.Name = "FILENAMEDataGridViewTextBoxColumn"
+        '
+        'COMMENTSDataGridViewTextBoxColumn
+        '
+        Me.COMMENTSDataGridViewTextBoxColumn.DataPropertyName = "COMMENTS"
+        Me.COMMENTSDataGridViewTextBoxColumn.HeaderText = "Comments"
+        Me.COMMENTSDataGridViewTextBoxColumn.Name = "COMMENTSDataGridViewTextBoxColumn"
+        '
+        'GEMOBJUIDDataGridViewTextBoxColumn
+        '
+        Me.GEMOBJUIDDataGridViewTextBoxColumn.DataPropertyName = "GEMOBJ_UID"
+        Me.GEMOBJUIDDataGridViewTextBoxColumn.HeaderText = "GEMOBJ_UID"
+        Me.GEMOBJUIDDataGridViewTextBoxColumn.Name = "GEMOBJUIDDataGridViewTextBoxColumn"
+        Me.GEMOBJUIDDataGridViewTextBoxColumn.Visible = False
         '
         'frmDetails
         '
@@ -2899,17 +2906,18 @@ Partial Class frmDetails
     Friend WithEvents DIC_HEIGHT_QUALIFIERTableAdapter As MapWindow.GEMDatasetTableAdapters.DIC_HEIGHT_QUALIFIERTableAdapter
     Friend WithEvents DICHEIGHTQUALIFIERBindingSource2 As System.Windows.Forms.BindingSource
     Friend WithEvents DICHEIGHTQUALIFIERBindingSource1 As System.Windows.Forms.BindingSource
-    Friend WithEvents MEDIATYPEDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewComboBoxColumn
-    Friend WithEvents MEDIANUMBDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ORIGFILENDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents COMMENTSDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents FILENAMEDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents GEMOBJUIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents MEDIAUIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents TabPage6 As System.Windows.Forms.TabPage
     Friend WithEvents WebBrowser1 As System.Windows.Forms.WebBrowser
     Friend WithEvents mnuRow As System.Windows.Forms.ContextMenuStrip
-    Friend WithEvents CopyPhotoAsSketchToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ShowMediaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents LinkToMediaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents AddMediaToAllRecordsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MEDIATYPEDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewComboBoxColumn
+    Friend WithEvents MEDIAUIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents MEDIANUMBDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ORIGFILENDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents FILENAMEDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents COMMENTSDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents GEMOBJUIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
 
 End Class

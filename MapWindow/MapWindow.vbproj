@@ -458,6 +458,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>GEMDataset.xsd</DependentUpon>
     </Compile>
+    <Compile Include="GEMDataset.vb">
+      <DependentUpon>GEMDataset.xsd</DependentUpon>
+    </Compile>
     <Compile Include="GEM\Classes\GEMDatabase.vb" />
     <Compile Include="GEM\Classes\ListItem.vb" />
     <Compile Include="GEM\Classes\NumericTextBox.vb">

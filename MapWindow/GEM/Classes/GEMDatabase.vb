@@ -12,6 +12,7 @@ Public Class GEMDatabase
     Private mDatabasePath As String
     Private mDataset As New GEMDataset
     Private mCurrentProjectUID As String
+    Private mMediaPath As String
 
     Private mProjectAdapter As New GEMDatasetTableAdapters.GEM_PROJECTTableAdapter
     Private mObjectAdapter As New GEMDatasetTableAdapters.GEM_OBJECTTableAdapter
@@ -35,6 +36,16 @@ Public Class GEMDatabase
             mDatabasePath = value
         End Set
     End Property
+
+    Public Property MediaPath() As String
+        Get
+            Return mMediaPath
+        End Get
+        Set(ByVal value As String)
+            mMediaPath = value
+        End Set
+    End Property
+
 
     Public Property Dataset() As GEMDataset
         Get
@@ -63,15 +74,16 @@ Public Class GEMDatabase
 
     Public Sub New(ByVal strDBPath As String)
 
+        mMediaPath = IO.Path.GetDirectoryName(strDBPath) & "\" & IO.Path.GetFileNameWithoutExtension(strDBPath) & "_gemmedia"
+
         'Create GEM database on disk if it does not exist
         If Not IO.File.Exists(strDBPath) Then
-            If CreateNewGEMSQLiteDatabase(strDBPath) = False Then
+               If CreateNewGEMSQLiteDatabase(strDBPath) = False Then
                 'Error created database
                 Exit Sub
             Else
-                Dim mediaDIR As String = IO.Path.GetDirectoryName(strDBPath) & "\" & IO.Path.GetFileNameWithoutExtension(strDBPath) & "_gemmedia"
-                If Not IO.Directory.Exists(mediaDIR) Then
-                    IO.Directory.CreateDirectory(mediaDIR)
+                If Not IO.Directory.Exists(mMediaPath) Then
+                    IO.Directory.CreateDirectory(mMediaPath)
                 End If
             End If
         End If
