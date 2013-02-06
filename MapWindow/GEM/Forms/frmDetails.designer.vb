@@ -210,7 +210,14 @@ Partial Class frmDetails
         Me.TabPage5 = New System.Windows.Forms.TabPage()
         Me.GroupBox17 = New System.Windows.Forms.GroupBox()
         Me.dgMedia = New System.Windows.Forms.DataGridView()
+        Me.MEDIATYPEDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewComboBoxColumn()
         Me.DICMEDIATYPEBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.MEDIAUIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.MEDIANUMBDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ORIGFILENDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FILENAMEDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.COMMENTSDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GEMOBJUIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.MEDIADETAILBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TabPage6 = New System.Windows.Forms.TabPage()
         Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
@@ -252,13 +259,6 @@ Partial Class frmDetails
         Me.ShowMediaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LinkToMediaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AddMediaToAllRecordsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MEDIATYPEDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.MEDIAUIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MEDIANUMBDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ORIGFILENDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FILENAMEDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.COMMENTSDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GEMOBJUIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.GEMOBJECTBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GEMDataset, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DICMATERIALTYPEBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -2319,10 +2319,63 @@ Partial Class frmDetails
         Me.dgMedia.Size = New System.Drawing.Size(791, 520)
         Me.dgMedia.TabIndex = 0
         '
+        'MEDIATYPEDataGridViewTextBoxColumn
+        '
+        Me.MEDIATYPEDataGridViewTextBoxColumn.DataPropertyName = "MEDIA_TYPE"
+        Me.MEDIATYPEDataGridViewTextBoxColumn.DataSource = Me.DICMEDIATYPEBindingSource
+        Me.MEDIATYPEDataGridViewTextBoxColumn.DisplayMember = "DESCRIPTION"
+        Me.MEDIATYPEDataGridViewTextBoxColumn.FillWeight = 25.0!
+        Me.MEDIATYPEDataGridViewTextBoxColumn.HeaderText = "Media Type"
+        Me.MEDIATYPEDataGridViewTextBoxColumn.Name = "MEDIATYPEDataGridViewTextBoxColumn"
+        Me.MEDIATYPEDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.MEDIATYPEDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.MEDIATYPEDataGridViewTextBoxColumn.ValueMember = "CODE"
+        '
         'DICMEDIATYPEBindingSource
         '
         Me.DICMEDIATYPEBindingSource.DataMember = "DIC_MEDIA_TYPE"
         Me.DICMEDIATYPEBindingSource.DataSource = Me.GEMDataset
+        '
+        'MEDIAUIDDataGridViewTextBoxColumn
+        '
+        Me.MEDIAUIDDataGridViewTextBoxColumn.DataPropertyName = "MEDIA_UID"
+        Me.MEDIAUIDDataGridViewTextBoxColumn.HeaderText = "MEDIA_UID"
+        Me.MEDIAUIDDataGridViewTextBoxColumn.Name = "MEDIAUIDDataGridViewTextBoxColumn"
+        Me.MEDIAUIDDataGridViewTextBoxColumn.Visible = False
+        '
+        'MEDIANUMBDataGridViewTextBoxColumn
+        '
+        Me.MEDIANUMBDataGridViewTextBoxColumn.DataPropertyName = "MEDIA_NUMB"
+        Me.MEDIANUMBDataGridViewTextBoxColumn.FillWeight = 15.0!
+        Me.MEDIANUMBDataGridViewTextBoxColumn.HeaderText = "Frame Number"
+        Me.MEDIANUMBDataGridViewTextBoxColumn.Name = "MEDIANUMBDataGridViewTextBoxColumn"
+        '
+        'ORIGFILENDataGridViewTextBoxColumn
+        '
+        Me.ORIGFILENDataGridViewTextBoxColumn.DataPropertyName = "ORIG_FILEN"
+        Me.ORIGFILENDataGridViewTextBoxColumn.FillWeight = 20.0!
+        Me.ORIGFILENDataGridViewTextBoxColumn.HeaderText = "Original Filename"
+        Me.ORIGFILENDataGridViewTextBoxColumn.Name = "ORIGFILENDataGridViewTextBoxColumn"
+        '
+        'FILENAMEDataGridViewTextBoxColumn
+        '
+        Me.FILENAMEDataGridViewTextBoxColumn.DataPropertyName = "FILENAME"
+        Me.FILENAMEDataGridViewTextBoxColumn.FillWeight = 20.0!
+        Me.FILENAMEDataGridViewTextBoxColumn.HeaderText = "GEM Filename"
+        Me.FILENAMEDataGridViewTextBoxColumn.Name = "FILENAMEDataGridViewTextBoxColumn"
+        '
+        'COMMENTSDataGridViewTextBoxColumn
+        '
+        Me.COMMENTSDataGridViewTextBoxColumn.DataPropertyName = "COMMENTS"
+        Me.COMMENTSDataGridViewTextBoxColumn.HeaderText = "Comments"
+        Me.COMMENTSDataGridViewTextBoxColumn.Name = "COMMENTSDataGridViewTextBoxColumn"
+        '
+        'GEMOBJUIDDataGridViewTextBoxColumn
+        '
+        Me.GEMOBJUIDDataGridViewTextBoxColumn.DataPropertyName = "GEMOBJ_UID"
+        Me.GEMOBJUIDDataGridViewTextBoxColumn.HeaderText = "GEMOBJ_UID"
+        Me.GEMOBJUIDDataGridViewTextBoxColumn.Name = "GEMOBJUIDDataGridViewTextBoxColumn"
+        Me.GEMOBJUIDDataGridViewTextBoxColumn.Visible = False
         '
         'MEDIADETAILBindingSource
         '
@@ -2505,7 +2558,7 @@ Partial Class frmDetails
         '
         Me.mnuRow.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ShowMediaToolStripMenuItem, Me.LinkToMediaToolStripMenuItem, Me.AddMediaToAllRecordsToolStripMenuItem})
         Me.mnuRow.Name = "mnuRow"
-        Me.mnuRow.Size = New System.Drawing.Size(174, 70)
+        Me.mnuRow.Size = New System.Drawing.Size(174, 92)
         '
         'ShowMediaToolStripMenuItem
         '
@@ -2524,59 +2577,7 @@ Partial Class frmDetails
         Me.AddMediaToAllRecordsToolStripMenuItem.Name = "AddMediaToAllRecordsToolStripMenuItem"
         Me.AddMediaToAllRecordsToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
         Me.AddMediaToAllRecordsToolStripMenuItem.Text = "Auto Match Media"
-        '
-        'MEDIATYPEDataGridViewTextBoxColumn
-        '
-        Me.MEDIATYPEDataGridViewTextBoxColumn.DataPropertyName = "MEDIA_TYPE"
-        Me.MEDIATYPEDataGridViewTextBoxColumn.DataSource = Me.DICMEDIATYPEBindingSource
-        Me.MEDIATYPEDataGridViewTextBoxColumn.DisplayMember = "DESCRIPTION"
-        Me.MEDIATYPEDataGridViewTextBoxColumn.FillWeight = 25.0!
-        Me.MEDIATYPEDataGridViewTextBoxColumn.HeaderText = "Media Type"
-        Me.MEDIATYPEDataGridViewTextBoxColumn.Name = "MEDIATYPEDataGridViewTextBoxColumn"
-        Me.MEDIATYPEDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.MEDIATYPEDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        Me.MEDIATYPEDataGridViewTextBoxColumn.ValueMember = "CODE"
-        '
-        'MEDIAUIDDataGridViewTextBoxColumn
-        '
-        Me.MEDIAUIDDataGridViewTextBoxColumn.DataPropertyName = "MEDIA_UID"
-        Me.MEDIAUIDDataGridViewTextBoxColumn.HeaderText = "MEDIA_UID"
-        Me.MEDIAUIDDataGridViewTextBoxColumn.Name = "MEDIAUIDDataGridViewTextBoxColumn"
-        Me.MEDIAUIDDataGridViewTextBoxColumn.Visible = False
-        '
-        'MEDIANUMBDataGridViewTextBoxColumn
-        '
-        Me.MEDIANUMBDataGridViewTextBoxColumn.DataPropertyName = "MEDIA_NUMB"
-        Me.MEDIANUMBDataGridViewTextBoxColumn.FillWeight = 15.0!
-        Me.MEDIANUMBDataGridViewTextBoxColumn.HeaderText = "Frame Number"
-        Me.MEDIANUMBDataGridViewTextBoxColumn.Name = "MEDIANUMBDataGridViewTextBoxColumn"
-        '
-        'ORIGFILENDataGridViewTextBoxColumn
-        '
-        Me.ORIGFILENDataGridViewTextBoxColumn.DataPropertyName = "ORIG_FILEN"
-        Me.ORIGFILENDataGridViewTextBoxColumn.FillWeight = 20.0!
-        Me.ORIGFILENDataGridViewTextBoxColumn.HeaderText = "Original Filename"
-        Me.ORIGFILENDataGridViewTextBoxColumn.Name = "ORIGFILENDataGridViewTextBoxColumn"
-        '
-        'FILENAMEDataGridViewTextBoxColumn
-        '
-        Me.FILENAMEDataGridViewTextBoxColumn.DataPropertyName = "FILENAME"
-        Me.FILENAMEDataGridViewTextBoxColumn.FillWeight = 20.0!
-        Me.FILENAMEDataGridViewTextBoxColumn.HeaderText = "GEM Filename"
-        Me.FILENAMEDataGridViewTextBoxColumn.Name = "FILENAMEDataGridViewTextBoxColumn"
-        '
-        'COMMENTSDataGridViewTextBoxColumn
-        '
-        Me.COMMENTSDataGridViewTextBoxColumn.DataPropertyName = "COMMENTS"
-        Me.COMMENTSDataGridViewTextBoxColumn.HeaderText = "Comments"
-        Me.COMMENTSDataGridViewTextBoxColumn.Name = "COMMENTSDataGridViewTextBoxColumn"
-        '
-        'GEMOBJUIDDataGridViewTextBoxColumn
-        '
-        Me.GEMOBJUIDDataGridViewTextBoxColumn.DataPropertyName = "GEMOBJ_UID"
-        Me.GEMOBJUIDDataGridViewTextBoxColumn.HeaderText = "GEMOBJ_UID"
-        Me.GEMOBJUIDDataGridViewTextBoxColumn.Name = "GEMOBJUIDDataGridViewTextBoxColumn"
-        Me.GEMOBJUIDDataGridViewTextBoxColumn.Visible = False
+        Me.AddMediaToAllRecordsToolStripMenuItem.Visible = False
         '
         'frmDetails
         '

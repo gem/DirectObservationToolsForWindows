@@ -10,6 +10,7 @@ Imports System.Data.SQLite
 
 Public Class frmGEM2KML
 
+    Private pStrDB As String
     Private counter As Long = 0 ' to ensure and ids as unique
 
     Private Sub Gem2KML_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -21,7 +22,7 @@ Public Class frmGEM2KML
     End Sub
 
     Sub MakeKMZ(ByVal strGEMDatabase As String, ByVal kmzFilePath As String)
-
+        pStrDB = strGEMDatabase
         Dim strImagePath As String = "FILENAME"
         '
         ' Create KML document
@@ -31,13 +32,13 @@ Public Class frmGEM2KML
         Dim pDescription As SharpKml.Dom.Description = New SharpKml.Dom.Description
         pDescription.Text="GEM layers"
         pDocument.Description = pDescription
-        '
-        ' Create kml for photographs
-        '
+        ''
+        '' Create kml for photographs
+        ''
         Dim strSQL As String = "SELECT * FROM MEDIA_DETAIL_DECODE WHERE MEDIA_TYPE='Photograph'"
         Dim pPhotosDataTable As DataTable = GetDataTableFromDatabase(strGEMDatabase, strSQL, "Photographs")
-        Dim pFolder As Folder = DataTablePlusImage2KML(pDocument, pPhotosDataTable, "Photographs", "FILENAME", "X", "Y")
-        pDocument.AddFeature(pFolder)
+        'Dim pFolder As Folder = DataTablePlusImage2KML(pDocument, pPhotosDataTable, "Photographs", "FILENAME", "X", "Y")
+        'pDocument.AddFeature(pFolder)
         '
         ' Create KML for Buildings
         '
@@ -72,7 +73,7 @@ Public Class frmGEM2KML
         '
         ' Add images to kmz file
         '
-        Dim photosFolder As String = IO.Path.GetDirectoryName(strGEMDatabase) & "\Photographs"
+        Dim photosFolder As String = IO.Path.GetDirectoryName(strGEMDatabase) & "\" & IO.Path.GetFileNameWithoutExtension(strGEMDatabase) & "_gemmedia"
         Call AddImagesToKMZ(pKmzFile, pPhotosDataTable, strImagePath, photosFolder, Me.IncludeImages.Checked)
         pKmzFile.Save(kmzFilePath)
 
@@ -186,7 +187,7 @@ Public Class frmGEM2KML
                     ' description
                     '
                     Dim pdescription As Description = New Description
-                    pdescription.Text = MakeDescription(row, strImageField, Me.IncludeImages.Checked)
+                    pdescription.Text = MakeTableDescription(row, strImageField, Me.IncludeImages.Checked)
                     placemark.Description = pdescription
                     '
                     ' Create icon
@@ -275,7 +276,7 @@ Public Class frmGEM2KML
                     ' description
                     '
                     Dim pdescription As Description = New Description
-                    pdescription.Text = MakeTableDescription(row)
+                    pdescription.Text = MakeTableDescription(row, "FILENAME", Me.IncludeImages.Checked)
                     placemark.Description = pdescription
                     '
                     ' Add placemark to the folder
@@ -381,7 +382,7 @@ Public Class frmGEM2KML
         Return pSimpleField
     End Function
 
-    Function MakeDescription(ByVal pRow As DataRow, ByVal strImageField As String, ByVal embedImages As Boolean) As String
+    Function MakeTableDescription(ByVal pRow As DataRow, ByVal strImageField As String, ByVal embedImages As Boolean) As String
         '
         ' Name: MakeDescription
         ' Purpose: To create a description from the contents of a DataTable
@@ -392,69 +393,83 @@ Public Class frmGEM2KML
         '
         ' Image if present
         '
-        If (strImageField <> "") Then
-            If (embedImages) Then
-                html.Append("<img src=""./Images/" & IO.Path.GetFileName(pRow(strImageField)).ToString.ToLower)
-            Else
-                html.Append("<img src=""../Photographs/" & IO.Path.GetFileName(pRow(strImageField)).ToString.ToLower)
+
+
+        '
+        ' Attribute table
+        '
+        html.Append("<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr>")
+        '
+        ' Loop through columns and add attributes to extended data
+        '
+        For Each col As DataColumn In pRow.Table.Columns
+            If pRow(col).ToString <> "" Then
+                html.Append("<tr bgcolor=""#E3E3F3"">")
+                html.Append("<th>")
+                html.Append(col.ColumnName)
+                html.Append("</th>")
+                html.Append("<td>")
+                html.Append(pRow(col).ToString)
+                html.Append("</td>")
+                html.Append("</tr>")
             End If
-            html.Append(""" width=""600""/>")
-        End If
-        '
-        ' Attribute table
-        '
-        html.Append("<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr>")
-        '
-        ' Loop through columns and add attributes to extended data
-        '
-        For Each col As DataColumn In pRow.Table.Columns
-            html.Append("<tr bgcolor=""#E3E3F3"">")
-            html.Append("<th>")
-            html.Append(col.ColumnName)
-            html.Append("</th>")
-            html.Append("<td>")
-            html.Append(pRow(col).ToString)
-            html.Append("</td>")
-            html.Append("</tr>")
         Next
 
-        html.Append("</table></center>]]>")
+        html.Append("</table></center>")
 
+        Dim strSQL As String = "SELECT * FROM MEDIA_DETAIL_DECODE WHERE MEDIA_TYPE='Photograph' AND GEMOBJ_UID='" & pRow("OBJ_UID").ToString & "'"
+        Dim pPhotosDataTable As DataTable = GetDataTableFromDatabase(pStrDB, strSQL, "Photographs")
+        strImageField = "FILENAME"
+        For Each row As DataRow In pPhotosDataTable.Rows
+            If (strImageField <> "") Then
+                html.Append("<p/>")
+                If (embedImages) Then
+                    html.Append("<img src=""./Images/" & IO.Path.GetFileName(row(strImageField)).ToString.ToLower)
+                Else
+                    html.Append("<img src=""../Photographs/" & IO.Path.GetFileName(row(strImageField)).ToString.ToLower)
+                End If
+                html.Append(""" width=""300""/>")
+                html.Append("<br/>" & row("COMMENTS").ToString)
+            End If
+        Next
+        html.Append("]]>")
         Return html.ToString
 
     End Function
 
-    Function MakeTableDescription(ByVal pRow As DataRow) As String
-        '
-        ' Name: MakeTableDescription
-        ' Purpose: To create a description from the contents of a DataTable
-        ' Written: K. Adlam, 14/12/2011
-        '
-        Dim html As StringBuilder = New StringBuilder
-        html.Append("<![CDATA[")
-        '
-        ' Attribute table
-        '
-        html.Append("<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr>")
-        '
-        ' Loop through columns and add attributes to extended data
-        '
-        For Each col As DataColumn In pRow.Table.Columns
-            html.Append("<tr bgcolor=""#E3E3F3"">")
-            html.Append("<th>")
-            html.Append(col.ColumnName)
-            html.Append("</th>")
-            html.Append("<td>")
-            html.Append(pRow(col).ToString)
-            html.Append("</td>")
-            html.Append("</tr>")
-        Next
+    'Function MakeTableDescription(ByVal pRow As DataRow) As String
+    '    '
+    '    ' Name: MakeTableDescription
+    '    ' Purpose: To create a description from the contents of a DataTable
+    '    ' Written: K. Adlam, 14/12/2011
+    '    '
+    '    Dim html As StringBuilder = New StringBuilder
+    '    html.Append("<![CDATA[")
+    '    '
+    '    ' Attribute table
+    '    '
+    '    html.Append("<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr>")
+    '    '
+    '    ' Loop through columns and add attributes to extended data
+    '    '
+    '    For Each col As DataColumn In pRow.Table.Columns
+    '        If pRow(col).ToString <> "" Then
+    '            html.Append("<tr bgcolor=""#E3E3F3"">")
+    '            html.Append("<th>")
+    '            html.Append(col.ColumnName)
+    '            html.Append("</th>")
+    '            html.Append("<td>")
+    '            html.Append(pRow(col).ToString)
+    '            html.Append("</td>")
+    '            html.Append("</tr>")
+    '        End If
+    '    Next
 
-        html.Append("</table></center>]]>")
+    '    html.Append("</table></center>]]>")
 
-        Return html.ToString
+    '    Return html.ToString
 
-    End Function
+    'End Function
 
     Private Function ImageToByte(ByVal img As Image) As Byte()
 

@@ -832,6 +832,7 @@ Public Class frmDetails
             If (.ShowDialog() = Windows.Forms.DialogResult.OK) Then
 
                 Dim newFilepath As String = gemdb.MediaPath & "\" & currentrow.MEDIA_UID & IO.Path.GetExtension(.FileName)
+                Dim newFilepathShort As String = currentrow.MEDIA_UID & IO.Path.GetExtension(.FileName)
                 If IO.File.Exists(newFilepath) Then
                     If MessageBox.Show("The current record already has a media file associated with it, do you want to overwrite it?", "Overwrite file - " & currentrow.MEDIA_UID & "." & IO.Path.GetExtension(.FileName), MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) = vbNo Then
                         Exit Sub
@@ -840,7 +841,7 @@ Public Class frmDetails
 
                 IO.File.Copy(.FileName, newFilepath, True)
                 currentrow.ORIG_FILEN = .FileName
-                currentrow.FILENAME = newFilepath
+                currentrow.FILENAME = newFilepathShort
                 MEDIA_DETAILTableAdapter.Update(Me.GEMDataset.MEDIA_DETAIL)
             End If
         End With

@@ -458,9 +458,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>GEMDataset.xsd</DependentUpon>
     </Compile>
-    <Compile Include="GEMDataset.vb">
-      <DependentUpon>GEMDataset.xsd</DependentUpon>
-    </Compile>
     <Compile Include="GEM\Classes\GEMDatabase.vb" />
     <Compile Include="GEM\Classes\ListItem.vb" />
     <Compile Include="GEM\Classes\NumericTextBox.vb">
@@ -1323,7 +1320,6 @@
     <None Include="GEMDataset.xss">
       <DependentUpon>GEMDataset.xsd</DependentUpon>
     </None>
-    <None Include="GEM\LocalResources\MapWindow486Help.pdf" />
     <None Include="My Project\Settings.settings">
       <CustomToolNamespace>My</CustomToolNamespace>
       <Generator>SettingsSingleFileGenerator</Generator>
