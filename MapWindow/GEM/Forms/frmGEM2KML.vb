@@ -35,7 +35,7 @@ Public Class frmGEM2KML
         ''
         '' Create kml for photographs
         ''
-        Dim strSQL As String = "SELECT * FROM MEDIA_DETAIL_DECODE WHERE MEDIA_TYPE='Photograph'"
+        Dim strSQL As String = "SELECT * FROM MEDIA_DETAIL_DECODE WHERE (MEDIA_TYPE='Photograph' OR MEDIA_TYPE='Sketch')"
         Dim pPhotosDataTable As DataTable = GetDataTableFromDatabase(strGEMDatabase, strSQL, "Photographs")
         'Dim pFolder As Folder = DataTablePlusImage2KML(pDocument, pPhotosDataTable, "Photographs", "FILENAME", "X", "Y")
         'pDocument.AddFeature(pFolder)
@@ -137,84 +137,84 @@ Public Class frmGEM2KML
 
     End Sub
 
-    Function DataTablePlusImage2KML(ByVal document As Document, ByVal pDataTable As DataTable, ByVal strFolder As String, ByVal strImageField As String, ByVal xField As String, ByVal yField As String, Optional ByVal nameField As String = "", Optional ByVal idField As String = "") As Folder
-        '
-        ' Name: DataTablePlusImage2KML
-        ' Purpose: To convert a datatable containing x,y coordinates and other attributes and image
-        '          To a KML file containing placemarks
-        ' Written: K. Adlam, 14/12/2011
-        '
-        Try
-            '
-            ' Get Schema from Datatable and add to document
-            '
-            Dim pSchema As Schema = CreateKMLSchemaFromDataTable(pDataTable)
-            document.AddSchema(pSchema)
-            '
-            ' Create Folder
-            '
-            Dim pFolder As Folder = New Folder
-            pFolder.Name = strFolder
-            '
-            ' Loop through each row in the DataTable and create Placemarks
-            '
-            For Each row As DataRow In pDataTable.Rows
-                counter = counter + 1
-                '
-                ' Get x,y,name etc
-                '
-                If (Not (IsDBNull(row(xField)) Or IsDBNull(row(yField)))) Then
-                    Dim xc As Double = row(xField)
-                    Dim yc As Double = row(yField)
-                    Dim name As String = ""
-                    If (nameField <> "") Then name = row(nameField).ToString
+    'Function DataTablePlusImage2KML(ByVal document As Document, ByVal pDataTable As DataTable, ByVal strFolder As String, ByVal strImageField As String, ByVal xField As String, ByVal yField As String, Optional ByVal nameField As String = "", Optional ByVal idField As String = "") As Folder
+    '    '
+    '    ' Name: DataTablePlusImage2KML
+    '    ' Purpose: To convert a datatable containing x,y coordinates and other attributes and image
+    '    '          To a KML file containing placemarks
+    '    ' Written: K. Adlam, 14/12/2011
+    '    '
+    '    Try
+    '        '
+    '        ' Get Schema from Datatable and add to document
+    '        '
+    '        Dim pSchema As Schema = CreateKMLSchemaFromDataTable(pDataTable)
+    '        document.AddSchema(pSchema)
+    '        '
+    '        ' Create Folder
+    '        '
+    '        Dim pFolder As Folder = New Folder
+    '        pFolder.Name = strFolder
+    '        '
+    '        ' Loop through each row in the DataTable and create Placemarks
+    '        '
+    '        For Each row As DataRow In pDataTable.Rows
+    '            counter = counter + 1
+    '            '
+    '            ' Get x,y,name etc
+    '            '
+    '            If (Not (IsDBNull(row(xField)) Or IsDBNull(row(yField)))) Then
+    '                Dim xc As Double = row(xField)
+    '                Dim yc As Double = row(yField)
+    '                Dim name As String = ""
+    '                If (nameField <> "") Then name = row(nameField).ToString
 
-                    Dim id As String = ""
-                    If (idField <> "") Then id = row(idField).ToString
-                    '
-                    ' Create point
-                    '
-                    Dim point As New Point()
-                    point.Coordinate = New Vector(yc, xc)
-                    '
-                    ' Create placemark
-                    '
-                    Dim placemark As New Placemark()
-                    placemark.Geometry = point
-                    If (name <> "") Then placemark.Name = name
-                    If (id <> "") Then placemark.Id = id
-                    '
-                    ' description
-                    '
-                    Dim pdescription As Description = New Description
-                    pdescription.Text = MakeTableDescription(row, strImageField, Me.IncludeImages.Checked)
-                    placemark.Description = pdescription
-                    '
-                    ' Create icon
-                    '
-                    Dim thumbnailPath As String = "Thumbnails/" & IO.Path.GetFileName(row(strImageField).ToString)
-                    Dim pStyle As Style = New Style
-                    pStyle.Id = "Thumbnail" & CStr(counter)
-                    pStyle.Icon = New IconStyle()
-                    pStyle.Icon.Icon = New IconStyle.IconLink(New Uri(thumbnailPath, UriKind.Relative))
-                    pStyle.Icon.Scale = 1.0
-                    placemark.StyleUrl = New Uri("#Thumbnail" & CStr(counter), UriKind.Relative)
-                    document.AddStyle(pStyle)
-                    '
-                    ' Add placemark to the folder
-                    '
-                    pFolder.AddFeature(placemark)
-                    '
-                End If
-            Next
-            Return pFolder
+    '                Dim id As String = ""
+    '                If (idField <> "") Then id = row(idField).ToString
+    '                '
+    '                ' Create point
+    '                '
+    '                Dim point As New Point()
+    '                point.Coordinate = New Vector(yc, xc)
+    '                '
+    '                ' Create placemark
+    '                '
+    '                Dim placemark As New Placemark()
+    '                placemark.Geometry = point
+    '                If (name <> "") Then placemark.Name = name
+    '                If (id <> "") Then placemark.Id = id
+    '                '
+    '                ' description
+    '                '
+    '                Dim pdescription As Description = New Description
+    '                pdescription.Text = MakeTableDescription(row, strImageField, Me.IncludeImages.Checked)
+    '                placemark.Description = pdescription
+    '                '
+    '                ' Create icon
+    '                '
+    '                Dim thumbnailPath As String = "Thumbnails/" & IO.Path.GetFileName(row(strImageField).ToString)
+    '                Dim pStyle As Style = New Style
+    '                pStyle.Id = "Thumbnail" & CStr(counter)
+    '                pStyle.Icon = New IconStyle()
+    '                pStyle.Icon.Icon = New IconStyle.IconLink(New Uri(thumbnailPath, UriKind.Relative))
+    '                pStyle.Icon.Scale = 1.0
+    '                placemark.StyleUrl = New Uri("#Thumbnail" & CStr(counter), UriKind.Relative)
+    '                document.AddStyle(pStyle)
+    '                '
+    '                ' Add placemark to the folder
+    '                '
+    '                pFolder.AddFeature(placemark)
+    '                '
+    '            End If
+    '        Next
+    '        Return pFolder
 
-        Catch ex As Exception
-            MsgBox(ex.ToString)
-            Return Nothing
-        End Try
-        '
-    End Function
+    '    Catch ex As Exception
+    '        MsgBox(ex.ToString)
+    '        Return Nothing
+    '    End Try
+    '    '
+    'End Function
 
 
     Function DataTable2KML(ByVal document As Document, ByVal pDataTable As DataTable, ByVal strFolder As String, ByVal xField As String, ByVal yField As String, Optional ByVal nameField As String = "", Optional ByVal idField As String = "", Optional ByVal iconURL As String = "") As Folder
@@ -276,7 +276,7 @@ Public Class frmGEM2KML
                     ' description
                     '
                     Dim pdescription As Description = New Description
-                    pdescription.Text = MakeTableDescription(row, "FILENAME", Me.IncludeImages.Checked)
+                    pdescription.Text = MakeTableDescription(row, "FILENAME", Me.IncludeImages.Checked, strFolder)
                     placemark.Description = pdescription
                     '
                     ' Add placemark to the folder
@@ -382,7 +382,7 @@ Public Class frmGEM2KML
         Return pSimpleField
     End Function
 
-    Function MakeTableDescription(ByVal pRow As DataRow, ByVal strImageField As String, ByVal embedImages As Boolean) As String
+    Function MakeTableDescription(ByVal pRow As DataRow, ByVal strImageField As String, ByVal embedImages As Boolean, ByVal strFolder As String) As String
         '
         ' Name: MakeDescription
         ' Purpose: To create a description from the contents of a DataTable
@@ -403,35 +403,43 @@ Public Class frmGEM2KML
         ' Loop through columns and add attributes to extended data
         '
         For Each col As DataColumn In pRow.Table.Columns
-            If pRow(col).ToString <> "" Then
-                html.Append("<tr bgcolor=""#E3E3F3"">")
-                html.Append("<th>")
-                html.Append(col.ColumnName)
-                html.Append("</th>")
-                html.Append("<td>")
-                html.Append(pRow(col).ToString)
-                html.Append("</td>")
-                html.Append("</tr>")
+            If Not IsDBNull(pRow(col)) Then
+                If pRow(col).ToString <> "" Then
+                    If Not col.ColumnName.EndsWith("_UID") Then
+                        html.Append("<tr bgcolor=""#E3E3F3"">")
+                        html.Append("<th>")
+                        html.Append(col.ColumnName)
+                        html.Append("</th>")
+                        html.Append("<td>")
+                        html.Append(pRow(col).ToString)
+                        html.Append("</td>")
+                        html.Append("</tr>")
+                    End If
+                End If
             End If
         Next
 
         html.Append("</table></center>")
 
-        Dim strSQL As String = "SELECT * FROM MEDIA_DETAIL_DECODE WHERE MEDIA_TYPE='Photograph' AND GEMOBJ_UID='" & pRow("OBJ_UID").ToString & "'"
-        Dim pPhotosDataTable As DataTable = GetDataTableFromDatabase(pStrDB, strSQL, "Photographs")
-        strImageField = "FILENAME"
-        For Each row As DataRow In pPhotosDataTable.Rows
-            If (strImageField <> "") Then
-                html.Append("<p/>")
-                If (embedImages) Then
-                    html.Append("<img src=""./Images/" & IO.Path.GetFileName(row(strImageField)).ToString.ToLower)
-                Else
-                    html.Append("<img src=""../Photographs/" & IO.Path.GetFileName(row(strImageField)).ToString.ToLower)
+        If strFolder = "Buildings" Then
+            Dim strSQL As String = "SELECT * FROM MEDIA_DETAIL_DECODE WHERE (MEDIA_TYPE='Photograph' OR MEDIA_TYPE='Sketch') AND GEMOBJ_UID='" & pRow("OBJ_UID").ToString & "'"
+            Dim pPhotosDataTable As DataTable = GetDataTableFromDatabase(pStrDB, strSQL, "Photographs")
+            strImageField = "FILENAME"
+            For Each row As DataRow In pPhotosDataTable.Rows
+                If (strImageField <> "") Then
+                    html.Append("<p/>")
+                    If Not IsDBNull(row(strImageField)) Then
+                        If (embedImages) Then
+                            html.Append("<img src=""./Images/" & IO.Path.GetFileName(row(strImageField)).ToString.ToLower)
+                        Else
+                            html.Append("<img src=""../Photographs/" & IO.Path.GetFileName(row(strImageField)).ToString.ToLower)
+                        End If
+                        html.Append(""" width=""300""/>")
+                        html.Append("<br/>" & row("COMMENTS").ToString)
+                    End If
                 End If
-                html.Append(""" width=""300""/>")
-                html.Append("<br/>" & row("COMMENTS").ToString)
-            End If
-        Next
+            Next
+        End If
         html.Append("]]>")
         Return html.ToString
 

@@ -151,19 +151,16 @@ Partial Class frmDetails
         Me.GroupBox13 = New System.Windows.Forms.GroupBox()
         Me.cbHT_ABOVEGRADE_GRND_FLOOR_QUAL = New System.Windows.Forms.ComboBox()
         Me.DICHEIGHTQUALIFIERBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Label17 = New System.Windows.Forms.Label()
         Me.tbHT_ABOVEGRADE_GRND_FLOOR_2 = New MapWindow.NumericTextBox()
         Me.tbHT_ABOVEGRADE_GRND_FLOOR_1 = New MapWindow.NumericTextBox()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.cbNO_STOREYS_BELOW_GROUND_QUAL = New System.Windows.Forms.ComboBox()
         Me.DICHEIGHTQUALIFIERBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Label14 = New System.Windows.Forms.Label()
         Me.tbNO_STOREYS_BELOW_GROUND_2 = New MapWindow.NumericTextBox()
         Me.tbNO_STOREYS_BELOW_GROUND_1 = New MapWindow.NumericTextBox()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.cbNO_STOREYS_ABOVE_GROUND_QUAL = New System.Windows.Forms.ComboBox()
         Me.DICHEIGHTQUALIFIERBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.tbNO_STOREYS_ABOVE_GROUND_2 = New MapWindow.NumericTextBox()
         Me.tbNO_STOREYS_ABOVE_GROUND_1 = New MapWindow.NumericTextBox()
         Me.lblH1 = New System.Windows.Forms.Label()
@@ -171,7 +168,6 @@ Partial Class frmDetails
         Me.tbYEAR_BUILT_2 = New MapWindow.NumericTextBox()
         Me.cbYEAR_BUILT_QUAL = New System.Windows.Forms.ComboBox()
         Me.DICYEARBUILTQUALBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.lblAge_Qualifier = New System.Windows.Forms.Label()
         Me.tbYEAR_BUILT_1 = New MapWindow.NumericTextBox()
         Me.lblD1 = New System.Windows.Forms.Label()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
@@ -1583,7 +1579,7 @@ Partial Class frmDetails
         Me.GroupBox14.Controls.Add(Me.cbPOSITION)
         Me.GroupBox14.Controls.Add(Me.tbSLOPE)
         Me.GroupBox14.Controls.Add(Me.Label22)
-        Me.GroupBox14.Location = New System.Drawing.Point(8, 354)
+        Me.GroupBox14.Location = New System.Drawing.Point(9, 331)
         Me.GroupBox14.Name = "GroupBox14"
         Me.GroupBox14.Size = New System.Drawing.Size(803, 145)
         Me.GroupBox14.TabIndex = 89
@@ -1676,23 +1672,20 @@ Partial Class frmDetails
         'GroupBox13
         '
         Me.GroupBox13.Controls.Add(Me.cbHT_ABOVEGRADE_GRND_FLOOR_QUAL)
-        Me.GroupBox13.Controls.Add(Me.Label17)
         Me.GroupBox13.Controls.Add(Me.tbHT_ABOVEGRADE_GRND_FLOOR_2)
         Me.GroupBox13.Controls.Add(Me.tbHT_ABOVEGRADE_GRND_FLOOR_1)
         Me.GroupBox13.Controls.Add(Me.Label18)
         Me.GroupBox13.Controls.Add(Me.cbNO_STOREYS_BELOW_GROUND_QUAL)
-        Me.GroupBox13.Controls.Add(Me.Label14)
         Me.GroupBox13.Controls.Add(Me.tbNO_STOREYS_BELOW_GROUND_2)
         Me.GroupBox13.Controls.Add(Me.tbNO_STOREYS_BELOW_GROUND_1)
         Me.GroupBox13.Controls.Add(Me.Label16)
         Me.GroupBox13.Controls.Add(Me.cbNO_STOREYS_ABOVE_GROUND_QUAL)
-        Me.GroupBox13.Controls.Add(Me.Label1)
         Me.GroupBox13.Controls.Add(Me.tbNO_STOREYS_ABOVE_GROUND_2)
         Me.GroupBox13.Controls.Add(Me.tbNO_STOREYS_ABOVE_GROUND_1)
         Me.GroupBox13.Controls.Add(Me.lblH1)
         Me.GroupBox13.Location = New System.Drawing.Point(8, 179)
         Me.GroupBox13.Name = "GroupBox13"
-        Me.GroupBox13.Size = New System.Drawing.Size(803, 167)
+        Me.GroupBox13.Size = New System.Drawing.Size(803, 137)
         Me.GroupBox13.TabIndex = 89
         Me.GroupBox13.TabStop = False
         Me.GroupBox13.Text = "Height"
@@ -1707,7 +1700,7 @@ Partial Class frmDetails
         Me.cbHT_ABOVEGRADE_GRND_FLOOR_QUAL.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbHT_ABOVEGRADE_GRND_FLOOR_QUAL.FormattingEnabled = True
         Me.cbHT_ABOVEGRADE_GRND_FLOOR_QUAL.IntegralHeight = False
-        Me.cbHT_ABOVEGRADE_GRND_FLOOR_QUAL.Location = New System.Drawing.Point(479, 97)
+        Me.cbHT_ABOVEGRADE_GRND_FLOOR_QUAL.Location = New System.Drawing.Point(190, 90)
         Me.cbHT_ABOVEGRADE_GRND_FLOOR_QUAL.Name = "cbHT_ABOVEGRADE_GRND_FLOOR_QUAL"
         Me.cbHT_ABOVEGRADE_GRND_FLOOR_QUAL.Size = New System.Drawing.Size(153, 24)
         Me.cbHT_ABOVEGRADE_GRND_FLOOR_QUAL.TabIndex = 108
@@ -1718,30 +1711,21 @@ Partial Class frmDetails
         Me.DICHEIGHTQUALIFIERBindingSource2.DataMember = "DIC_HEIGHT_QUALIFIER"
         Me.DICHEIGHTQUALIFIERBindingSource2.DataSource = Me.GEMDataset
         '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(416, 100)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(57, 16)
-        Me.Label17.TabIndex = 107
-        Me.Label17.Text = "Qualifier"
-        '
         'tbHT_ABOVEGRADE_GRND_FLOOR_2
         '
         Me.tbHT_ABOVEGRADE_GRND_FLOOR_2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "HT_GR_GF_2", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.tbHT_ABOVEGRADE_GRND_FLOOR_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbHT_ABOVEGRADE_GRND_FLOOR_2.Location = New System.Drawing.Point(297, 94)
+        Me.tbHT_ABOVEGRADE_GRND_FLOOR_2.Location = New System.Drawing.Point(447, 92)
         Me.tbHT_ABOVEGRADE_GRND_FLOOR_2.Name = "tbHT_ABOVEGRADE_GRND_FLOOR_2"
         Me.tbHT_ABOVEGRADE_GRND_FLOOR_2.Size = New System.Drawing.Size(88, 22)
         Me.tbHT_ABOVEGRADE_GRND_FLOOR_2.TabIndex = 106
+        Me.tbHT_ABOVEGRADE_GRND_FLOOR_2.Visible = False
         '
         'tbHT_ABOVEGRADE_GRND_FLOOR_1
         '
         Me.tbHT_ABOVEGRADE_GRND_FLOOR_1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "HT_GR_GF_1", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.tbHT_ABOVEGRADE_GRND_FLOOR_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbHT_ABOVEGRADE_GRND_FLOOR_1.Location = New System.Drawing.Point(203, 94)
+        Me.tbHT_ABOVEGRADE_GRND_FLOOR_1.Location = New System.Drawing.Point(353, 92)
         Me.tbHT_ABOVEGRADE_GRND_FLOOR_1.Name = "tbHT_ABOVEGRADE_GRND_FLOOR_1"
         Me.tbHT_ABOVEGRADE_GRND_FLOOR_1.Size = New System.Drawing.Size(88, 22)
         Me.tbHT_ABOVEGRADE_GRND_FLOOR_1.TabIndex = 105
@@ -1750,7 +1734,7 @@ Partial Class frmDetails
         '
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(48, 100)
+        Me.Label18.Location = New System.Drawing.Point(43, 90)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(141, 32)
         Me.Label18.TabIndex = 104
@@ -1766,7 +1750,7 @@ Partial Class frmDetails
         Me.cbNO_STOREYS_BELOW_GROUND_QUAL.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbNO_STOREYS_BELOW_GROUND_QUAL.FormattingEnabled = True
         Me.cbNO_STOREYS_BELOW_GROUND_QUAL.IntegralHeight = False
-        Me.cbNO_STOREYS_BELOW_GROUND_QUAL.Location = New System.Drawing.Point(479, 65)
+        Me.cbNO_STOREYS_BELOW_GROUND_QUAL.Location = New System.Drawing.Point(190, 60)
         Me.cbNO_STOREYS_BELOW_GROUND_QUAL.Name = "cbNO_STOREYS_BELOW_GROUND_QUAL"
         Me.cbNO_STOREYS_BELOW_GROUND_QUAL.Size = New System.Drawing.Size(153, 24)
         Me.cbNO_STOREYS_BELOW_GROUND_QUAL.TabIndex = 103
@@ -1777,30 +1761,21 @@ Partial Class frmDetails
         Me.DICHEIGHTQUALIFIERBindingSource1.DataMember = "DIC_HEIGHT_QUALIFIER"
         Me.DICHEIGHTQUALIFIERBindingSource1.DataSource = Me.GEMDataset
         '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(416, 68)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(57, 16)
-        Me.Label14.TabIndex = 102
-        Me.Label14.Text = "Qualifier"
-        '
         'tbNO_STOREYS_BELOW_GROUND_2
         '
         Me.tbNO_STOREYS_BELOW_GROUND_2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "STORY_BG_2", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.tbNO_STOREYS_BELOW_GROUND_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbNO_STOREYS_BELOW_GROUND_2.Location = New System.Drawing.Point(297, 62)
+        Me.tbNO_STOREYS_BELOW_GROUND_2.Location = New System.Drawing.Point(447, 60)
         Me.tbNO_STOREYS_BELOW_GROUND_2.Name = "tbNO_STOREYS_BELOW_GROUND_2"
         Me.tbNO_STOREYS_BELOW_GROUND_2.Size = New System.Drawing.Size(88, 22)
         Me.tbNO_STOREYS_BELOW_GROUND_2.TabIndex = 101
+        Me.tbNO_STOREYS_BELOW_GROUND_2.Visible = False
         '
         'tbNO_STOREYS_BELOW_GROUND_1
         '
         Me.tbNO_STOREYS_BELOW_GROUND_1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "STORY_BG_1", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.tbNO_STOREYS_BELOW_GROUND_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbNO_STOREYS_BELOW_GROUND_1.Location = New System.Drawing.Point(203, 62)
+        Me.tbNO_STOREYS_BELOW_GROUND_1.Location = New System.Drawing.Point(353, 60)
         Me.tbNO_STOREYS_BELOW_GROUND_1.Name = "tbNO_STOREYS_BELOW_GROUND_1"
         Me.tbNO_STOREYS_BELOW_GROUND_1.Size = New System.Drawing.Size(88, 22)
         Me.tbNO_STOREYS_BELOW_GROUND_1.TabIndex = 100
@@ -1809,7 +1784,7 @@ Partial Class frmDetails
         '
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(24, 65)
+        Me.Label16.Location = New System.Drawing.Point(19, 60)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(165, 16)
         Me.Label16.TabIndex = 99
@@ -1825,7 +1800,7 @@ Partial Class frmDetails
         Me.cbNO_STOREYS_ABOVE_GROUND_QUAL.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbNO_STOREYS_ABOVE_GROUND_QUAL.FormattingEnabled = True
         Me.cbNO_STOREYS_ABOVE_GROUND_QUAL.IntegralHeight = False
-        Me.cbNO_STOREYS_ABOVE_GROUND_QUAL.Location = New System.Drawing.Point(479, 30)
+        Me.cbNO_STOREYS_ABOVE_GROUND_QUAL.Location = New System.Drawing.Point(190, 30)
         Me.cbNO_STOREYS_ABOVE_GROUND_QUAL.Name = "cbNO_STOREYS_ABOVE_GROUND_QUAL"
         Me.cbNO_STOREYS_ABOVE_GROUND_QUAL.Size = New System.Drawing.Size(153, 24)
         Me.cbNO_STOREYS_ABOVE_GROUND_QUAL.TabIndex = 98
@@ -1836,30 +1811,21 @@ Partial Class frmDetails
         Me.DICHEIGHTQUALIFIERBindingSource.DataMember = "DIC_HEIGHT_QUALIFIER"
         Me.DICHEIGHTQUALIFIERBindingSource.DataSource = Me.GEMDataset
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(416, 33)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(57, 16)
-        Me.Label1.TabIndex = 97
-        Me.Label1.Text = "Qualifier"
-        '
         'tbNO_STOREYS_ABOVE_GROUND_2
         '
         Me.tbNO_STOREYS_ABOVE_GROUND_2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "STORY_AG_2", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.tbNO_STOREYS_ABOVE_GROUND_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbNO_STOREYS_ABOVE_GROUND_2.Location = New System.Drawing.Point(297, 27)
+        Me.tbNO_STOREYS_ABOVE_GROUND_2.Location = New System.Drawing.Point(447, 30)
         Me.tbNO_STOREYS_ABOVE_GROUND_2.Name = "tbNO_STOREYS_ABOVE_GROUND_2"
         Me.tbNO_STOREYS_ABOVE_GROUND_2.Size = New System.Drawing.Size(88, 22)
         Me.tbNO_STOREYS_ABOVE_GROUND_2.TabIndex = 96
+        Me.tbNO_STOREYS_ABOVE_GROUND_2.Visible = False
         '
         'tbNO_STOREYS_ABOVE_GROUND_1
         '
         Me.tbNO_STOREYS_ABOVE_GROUND_1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "STORY_AG_1", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.tbNO_STOREYS_ABOVE_GROUND_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbNO_STOREYS_ABOVE_GROUND_1.Location = New System.Drawing.Point(203, 27)
+        Me.tbNO_STOREYS_ABOVE_GROUND_1.Location = New System.Drawing.Point(353, 30)
         Me.tbNO_STOREYS_ABOVE_GROUND_1.Name = "tbNO_STOREYS_ABOVE_GROUND_1"
         Me.tbNO_STOREYS_ABOVE_GROUND_1.Size = New System.Drawing.Size(88, 22)
         Me.tbNO_STOREYS_ABOVE_GROUND_1.TabIndex = 95
@@ -1868,7 +1834,7 @@ Partial Class frmDetails
         '
         Me.lblH1.AutoSize = True
         Me.lblH1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblH1.Location = New System.Drawing.Point(21, 30)
+        Me.lblH1.Location = New System.Drawing.Point(16, 33)
         Me.lblH1.Name = "lblH1"
         Me.lblH1.Size = New System.Drawing.Size(168, 16)
         Me.lblH1.TabIndex = 94
@@ -1878,7 +1844,6 @@ Partial Class frmDetails
         '
         Me.GroupBox7.Controls.Add(Me.tbYEAR_BUILT_2)
         Me.GroupBox7.Controls.Add(Me.cbYEAR_BUILT_QUAL)
-        Me.GroupBox7.Controls.Add(Me.lblAge_Qualifier)
         Me.GroupBox7.Controls.Add(Me.tbYEAR_BUILT_1)
         Me.GroupBox7.Controls.Add(Me.lblD1)
         Me.GroupBox7.Location = New System.Drawing.Point(8, 103)
@@ -1892,9 +1857,9 @@ Partial Class frmDetails
         '
         Me.tbYEAR_BUILT_2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "YR_BUILT_2", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.tbYEAR_BUILT_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbYEAR_BUILT_2.Location = New System.Drawing.Point(297, 28)
+        Me.tbYEAR_BUILT_2.Location = New System.Drawing.Point(447, 28)
         Me.tbYEAR_BUILT_2.Name = "tbYEAR_BUILT_2"
-        Me.tbYEAR_BUILT_2.Size = New System.Drawing.Size(87, 22)
+        Me.tbYEAR_BUILT_2.Size = New System.Drawing.Size(88, 22)
         Me.tbYEAR_BUILT_2.TabIndex = 58
         '
         'cbYEAR_BUILT_QUAL
@@ -1907,9 +1872,9 @@ Partial Class frmDetails
         Me.cbYEAR_BUILT_QUAL.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbYEAR_BUILT_QUAL.FormattingEnabled = True
         Me.cbYEAR_BUILT_QUAL.IntegralHeight = False
-        Me.cbYEAR_BUILT_QUAL.Location = New System.Drawing.Point(479, 28)
+        Me.cbYEAR_BUILT_QUAL.Location = New System.Drawing.Point(190, 26)
         Me.cbYEAR_BUILT_QUAL.Name = "cbYEAR_BUILT_QUAL"
-        Me.cbYEAR_BUILT_QUAL.Size = New System.Drawing.Size(153, 24)
+        Me.cbYEAR_BUILT_QUAL.Size = New System.Drawing.Size(157, 24)
         Me.cbYEAR_BUILT_QUAL.TabIndex = 56
         Me.cbYEAR_BUILT_QUAL.ValueMember = "CODE"
         '
@@ -1918,30 +1883,20 @@ Partial Class frmDetails
         Me.DICYEARBUILTQUALBindingSource.DataMember = "DIC_YEAR_BUILT_QUAL"
         Me.DICYEARBUILTQUALBindingSource.DataSource = Me.GEMDataset
         '
-        'lblAge_Qualifier
-        '
-        Me.lblAge_Qualifier.AutoSize = True
-        Me.lblAge_Qualifier.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAge_Qualifier.Location = New System.Drawing.Point(416, 31)
-        Me.lblAge_Qualifier.Name = "lblAge_Qualifier"
-        Me.lblAge_Qualifier.Size = New System.Drawing.Size(57, 16)
-        Me.lblAge_Qualifier.TabIndex = 54
-        Me.lblAge_Qualifier.Text = "Qualifier"
-        '
         'tbYEAR_BUILT_1
         '
         Me.tbYEAR_BUILT_1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "YR_BUILT_1", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.tbYEAR_BUILT_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbYEAR_BUILT_1.Location = New System.Drawing.Point(203, 28)
+        Me.tbYEAR_BUILT_1.Location = New System.Drawing.Point(353, 28)
         Me.tbYEAR_BUILT_1.Name = "tbYEAR_BUILT_1"
-        Me.tbYEAR_BUILT_1.Size = New System.Drawing.Size(88, 22)
+        Me.tbYEAR_BUILT_1.Size = New System.Drawing.Size(89, 22)
         Me.tbYEAR_BUILT_1.TabIndex = 48
         '
         'lblD1
         '
         Me.lblD1.AutoSize = True
         Me.lblD1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblD1.Location = New System.Drawing.Point(24, 31)
+        Me.lblD1.Location = New System.Drawing.Point(18, 31)
         Me.lblD1.Name = "lblD1"
         Me.lblD1.Size = New System.Drawing.Size(166, 16)
         Me.lblD1.TabIndex = 44
@@ -2558,7 +2513,7 @@ Partial Class frmDetails
         '
         Me.mnuRow.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ShowMediaToolStripMenuItem, Me.LinkToMediaToolStripMenuItem, Me.AddMediaToAllRecordsToolStripMenuItem})
         Me.mnuRow.Name = "mnuRow"
-        Me.mnuRow.Size = New System.Drawing.Size(174, 92)
+        Me.mnuRow.Size = New System.Drawing.Size(174, 70)
         '
         'ShowMediaToolStripMenuItem
         '
@@ -2770,17 +2725,13 @@ Partial Class frmDetails
     Friend WithEvents Label22 As System.Windows.Forms.Label
     Friend WithEvents GroupBox13 As System.Windows.Forms.GroupBox
     Friend WithEvents cbHT_ABOVEGRADE_GRND_FLOOR_QUAL As System.Windows.Forms.ComboBox
-    Friend WithEvents Label17 As System.Windows.Forms.Label
     Friend WithEvents Label18 As System.Windows.Forms.Label
     Friend WithEvents cbNO_STOREYS_BELOW_GROUND_QUAL As System.Windows.Forms.ComboBox
-    Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents Label16 As System.Windows.Forms.Label
     Friend WithEvents cbNO_STOREYS_ABOVE_GROUND_QUAL As System.Windows.Forms.ComboBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents lblH1 As System.Windows.Forms.Label
     Friend WithEvents GroupBox7 As System.Windows.Forms.GroupBox
     Friend WithEvents cbYEAR_BUILT_QUAL As System.Windows.Forms.ComboBox
-    Friend WithEvents lblAge_Qualifier As System.Windows.Forms.Label
     Friend WithEvents lblD1 As System.Windows.Forms.Label
     Friend WithEvents TabPage4 As System.Windows.Forms.TabPage
     Friend WithEvents GroupBox16 As System.Windows.Forms.GroupBox

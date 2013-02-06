@@ -636,53 +636,34 @@ Public Class frmDetails
         '
         ' Get help directory and check it exists
         '
-        Dim helpDir As String = Application.StartupPath & "\LocalResources\Help"
+        Dim helpDir As String = Application.StartupPath & "\LocalResources\Help\HelpDocs\glossary"
         If (Not IO.Directory.Exists(helpDir)) Then
             MsgBox("Help Folder " & helpDir & " does not exist")
             Exit Sub
         End If
         '
-        ' Get path to help file assume that it is an mht file and see if it exists 
+        ' Get path to help file assume that it is an file and see if it exists 
         '
-        Dim helpFile As String = helpDir & "\" & currentHelpTopic & ".mht"
+
+        Dim fuz As New FuzzySearch
+        Dim matchedpage As String = fuz.Search(currentHelpTopic, IO.Directory.GetFiles(helpDir).ToList, 0.5)
+
+        Dim helpFile As String = matchedpage
         If (IO.File.Exists(helpFile)) Then
             WebBrowser1.Navigate(helpFile)
             Exit Sub
+        Else
+            ' If this fails show default htm file
+            helpFile = helpDir & "\default.html"
+            If (IO.File.Exists(helpFile)) Then
+                WebBrowser1.Navigate(helpFile)
+                Exit Sub
+            Else 'If all else fails let the user know that there are no help files
+                MsgBox("No help file exists for topic """ & currentHelpTopic & """. To add a help file create an htm file with the same name as the topic and place it in the Help folder.")
+            End If
         End If
-        '
-        ' try for htm file
-        '
-        helpFile = helpDir & "\" & currentHelpTopic & ".htm"
-        If (IO.File.Exists(helpFile)) Then
-            WebBrowser1.Navigate(helpFile)
-            Exit Sub
-        End If
-        '
-        ' Try for any other type of file in top and subdirectories
-        '
-        Dim helpDirInfo As New IO.DirectoryInfo(helpDir)
-        Dim searchPattern As String = IO.Path.GetFileNameWithoutExtension(helpFile) & ".*"
-        Dim helpFiles As IO.FileInfo() = helpDirInfo.GetFiles(searchPattern, IO.SearchOption.AllDirectories)
-        '
-        ' Get first file if there is more than one
-        '
-        If (helpFiles.Length > 0) Then
-            helpFile = helpFiles(0).FullName
-        End If
-        If (IO.File.Exists(helpFile)) Then
-            WebBrowser1.Navigate(helpFile)
-            Exit Sub
-        End If
-        '
-        ' If this fails show default htm file
-        '
-        helpFile = helpDir & "\default.htm"
-        If (IO.File.Exists(helpFile)) Then
-            WebBrowser1.Navigate(helpFile)
-            Exit Sub
-        Else 'If all else fails let the user know that there are no help files
-            MsgBox("No help file exists for topic """ & currentHelpTopic & """. To add a help file create an htm file with the same name as the topic and place it in the Help folder.")
-        End If
+
+
 
     End Sub
 
@@ -807,16 +788,26 @@ Public Class frmDetails
 
     Private Sub ShowMediaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ShowMediaToolStripMenuItem.Click
         'SHOW MEDIA
+        Dim currentuid As String = getMediaUIDFromSelectedMediaRow()
+
         Call updateMediaTable()
-        Dim currentrow As GEMDataset.MEDIA_DETAILRow = getMediaRowFromUID(getMediaUIDFromSelectedMediaRow)
+        Dim currentrow As GEMDataset.MEDIA_DETAILRow = getMediaRowFromUID(currentuid)
+        If currentrow Is Nothing Then
+            MessageBox.Show("Cannot find the media file, check the GEM media folder exists", "Media file missing", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Exit Sub
+        End If
         If Not currentrow.IsFILENAMENull AndAlso currentrow.FILENAME <> "" Then
-            If IO.File.Exists(currentrow.FILENAME) Then
+            If IO.File.Exists(gemdb.MediaPath & "\" & currentrow.FILENAME) Then
                 If currentrow.MEDIA_TYPE = "SKETCH" Then
-                    Call OpenPaint(currentrow.FILENAME)
+                    Call OpenPaint(gemdb.MediaPath & "\" & currentrow.FILENAME)
                 Else
-                    System.Diagnostics.Process.Start(currentrow.FILENAME)
+                    System.Diagnostics.Process.Start(gemdb.MediaPath & "\" & currentrow.FILENAME)
                 End If
+            Else
+                MessageBox.Show("Cannot find the media file, check the GEM media folder exists", "Media file missing", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
+        Else
+            MessageBox.Show("Cannot find the media file, check the GEM media folder exists", "Media file missing", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
     End Sub
 
@@ -826,26 +817,37 @@ Public Class frmDetails
         Dim currentuid As String = getMediaUIDFromSelectedMediaRow()
         Call updateMediaTable()
         Dim currentrow As GEMDataset.MEDIA_DETAILRow = getMediaRowFromUID(currentuid)
-        With New OpenFileDialog
-            .FileName = ""
-            .Filter = "All files|*.*"
-            If (.ShowDialog() = Windows.Forms.DialogResult.OK) Then
+        If currentrow Is Nothing Then
+            MessageBox.Show("Please create a record before adding media", "Add record first", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Exit Sub
+        End If
 
-                Dim newFilepath As String = gemdb.MediaPath & "\" & currentrow.MEDIA_UID & IO.Path.GetExtension(.FileName)
-                Dim newFilepathShort As String = currentrow.MEDIA_UID & IO.Path.GetExtension(.FileName)
-                If IO.File.Exists(newFilepath) Then
-                    If MessageBox.Show("The current record already has a media file associated with it, do you want to overwrite it?", "Overwrite file - " & currentrow.MEDIA_UID & "." & IO.Path.GetExtension(.FileName), MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) = vbNo Then
-                        Exit Sub
+        If currentrow.MEDIA_TYPE = "SKETCH" Then
+            Call OpenPaint(gemdb.MediaPath & "\" & currentrow.MEDIA_UID & ".jpg")
+            currentrow.ORIG_FILEN = gemdb.MediaPath & "\" & currentrow.MEDIA_UID & ".jpg"
+            currentrow.FILENAME = currentrow.MEDIA_UID & ".jpg"
+            MEDIA_DETAILTableAdapter.Update(Me.GEMDataset.MEDIA_DETAIL)
+        Else
+            With New OpenFileDialog
+                .FileName = ""
+                .Filter = "All files|*.*"
+                If (.ShowDialog() = Windows.Forms.DialogResult.OK) Then
+
+                    Dim newFilepath As String = gemdb.MediaPath & "\" & currentrow.MEDIA_UID & IO.Path.GetExtension(.FileName)
+                    Dim newFilepathShort As String = currentrow.MEDIA_UID & IO.Path.GetExtension(.FileName)
+                    If IO.File.Exists(newFilepath) Then
+                        If MessageBox.Show("The current record already has a media file associated with it, do you want to overwrite it?", "Overwrite file - " & currentrow.MEDIA_UID & "." & IO.Path.GetExtension(.FileName), MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) = vbNo Then
+                            Exit Sub
+                        End If
                     End If
+
+                    IO.File.Copy(.FileName, newFilepath, True)
+                    currentrow.ORIG_FILEN = .FileName
+                    currentrow.FILENAME = newFilepathShort
+                    MEDIA_DETAILTableAdapter.Update(Me.GEMDataset.MEDIA_DETAIL)
                 End If
-
-                IO.File.Copy(.FileName, newFilepath, True)
-                currentrow.ORIG_FILEN = .FileName
-                currentrow.FILENAME = newFilepathShort
-                MEDIA_DETAILTableAdapter.Update(Me.GEMDataset.MEDIA_DETAIL)
-            End If
-        End With
-
+            End With
+        End If
     End Sub
 
     Private Sub AddMediaToAllRecordsToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AddMediaToAllRecordsToolStripMenuItem.Click
@@ -855,11 +857,11 @@ Public Class frmDetails
     End Sub
 
     Private Function getMediaRowFromUID(ByVal mediauid As String) As GEMDataset.MEDIA_DETAILRow
-        Return (From row In Me.GEMDataset.MEDIA_DETAIL Where row.MEDIA_UID = mediauid Select row).First
+        Return (From row In Me.GEMDataset.MEDIA_DETAIL Where row.MEDIA_UID = mediauid Select row).FirstOrDefault
     End Function
 
     Private Function getMediaUIDFromSelectedMediaRow() As String
-        Return dgMedia.CurrentRow.Cells.Item(1).Value.ToString
+            Return dgMedia.CurrentRow.Cells.Item(1).Value.ToString
     End Function
 
     Private Sub updateMediaTable()
@@ -871,4 +873,39 @@ Public Class frmDetails
         MEDIA_DETAILTableAdapter.Fill(Me.GEMDataset.MEDIA_DETAIL)
     End Sub
 
+    Private Sub cbNO_STOREYS_ABOVE_GROUND_QUAL_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbNO_STOREYS_ABOVE_GROUND_QUAL.SelectedIndexChanged
+        If cbNO_STOREYS_ABOVE_GROUND_QUAL.Text = "Between" Then
+            tbNO_STOREYS_ABOVE_GROUND_2.Visible = True
+        Else
+            tbNO_STOREYS_ABOVE_GROUND_2.Visible = False
+            tbNO_STOREYS_ABOVE_GROUND_2.Text = ""
+        End If
+    End Sub
+
+    Private Sub cbHT_ABOVEGRADE_GRND_FLOOR_QUAL_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbHT_ABOVEGRADE_GRND_FLOOR_QUAL.SelectedIndexChanged
+        If cbHT_ABOVEGRADE_GRND_FLOOR_QUAL.Text = "Between" Then
+            tbHT_ABOVEGRADE_GRND_FLOOR_2.Visible = True
+        Else
+            tbHT_ABOVEGRADE_GRND_FLOOR_2.Visible = False
+            tbHT_ABOVEGRADE_GRND_FLOOR_2.Text = ""
+        End If
+    End Sub
+
+    Private Sub cbNO_STOREYS_BELOW_GROUND_QUAL_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbNO_STOREYS_BELOW_GROUND_QUAL.SelectedIndexChanged
+        If cbNO_STOREYS_BELOW_GROUND_QUAL.Text = "Between" Then
+            tbNO_STOREYS_BELOW_GROUND_2.Visible = True
+        Else
+            tbNO_STOREYS_BELOW_GROUND_2.Visible = False
+            tbNO_STOREYS_BELOW_GROUND_2.Text = ""
+        End If
+    End Sub
+
+    Private Sub cbYEAR_BUILT_QUAL_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbYEAR_BUILT_QUAL.SelectedIndexChanged
+        If cbYEAR_BUILT_QUAL.Text = "Between" Then
+            tbYEAR_BUILT_2.Visible = True
+        Else
+            tbYEAR_BUILT_2.Visible = False
+            tbYEAR_BUILT_2.Text = ""
+        End If
+    End Sub
 End Class
