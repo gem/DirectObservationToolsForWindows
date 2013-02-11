@@ -20869,7 +20869,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:GEM - Direct Observation Tools"
         "ProductCode" = "8:{F428D878-A830-40FA-BE98-927622CF75A3}"
-        "PackageCode" = "8:{99D29BD6-A3B5-4BC2-A0AD-103E657A35B1}"
+        "PackageCode" = "8:{4B760EF0-B634-4C52-8286-61AD3D462E6A}"
         "UpgradeCode" = "8:{55F38009-5437-45BF-BA08-619CD8DD8D91}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -20991,7 +20991,7 @@
         {
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_A3A37F9FFF2D45D7BA6D6E7A60413794"
             {
-            "Name" = "8:GEM - Direct Observation Tools [BETA]"
+            "Name" = "8:GEM - Direct Observation Tools"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
@@ -21005,7 +21005,7 @@
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_D3A71EC2E70749A48AB3FF70D2E5BA25"
             {
-            "Name" = "8:Global Earthquake Model - Direct Observation Tools [BETA]"
+            "Name" = "8:Global Earthquake Model - Direct Observation Tools"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"

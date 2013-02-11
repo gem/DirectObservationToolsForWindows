@@ -135,7 +135,7 @@ Friend Class ErrorDialogNoSend
 
     Private Sub lblReportError_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles lblAltLink.LinkClicked
         Try
-            System.Diagnostics.Process.Start("http://bugs.MapWindow.org")
+            System.Diagnostics.Process.Start("https://github.com/IDCT/DirectObservationToolsForWindows/issues")
         Catch
         End Try
     End Sub

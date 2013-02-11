@@ -129,7 +129,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnSend.Location" type="System.Drawing.Point, System.Drawing">
-    <value>302, 241</value>
+    <value>302, 216</value>
   </data>
   <data name="btnSend.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 23</value>
@@ -160,16 +160,16 @@
     <value>0, 100</value>
   </data>
   <data name="lblAltLink.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 220</value>
+    <value>17, 248</value>
   </data>
   <data name="lblAltLink.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 44</value>
+    <value>358, 29</value>
   </data>
   <data name="lblAltLink.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
   <data name="lblAltLink.Text" xml:space="preserve">
-    <value>Problems may be reported at bugs.MapWindow.org</value>
+    <value>Problems may be reported at: https://github.com/IDCT/DirectObservationToolsForWindows/issues</value>
   </data>
   <data name="lblAltLink.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomLeft</value>
@@ -190,15 +190,15 @@
     <value>14, 18</value>
   </data>
   <data name="lblErr.Size" type="System.Drawing.Size, System.Drawing">
-    <value>291, 55</value>
+    <value>361, 55</value>
   </data>
   <data name="lblErr.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
   <data name="lblErr.Text" xml:space="preserve">
-    <value>An error has occurred in MapWindow or in a plug-in.
+    <value>An error has occurred in the Global Earthquake Model - Direct Observation Tools or MapWindow.
 
-The full error text appears in the box below.</value>
+The full error text appears in the box below:</value>
   </data>
   <data name="&gt;&gt;lblErr.Name" xml:space="preserve">
     <value>lblErr</value>
@@ -240,7 +240,7 @@ The full error text appears in the box below.</value>
     <value>1</value>
   </data>
   <data name="btnCopy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>211, 241</value>
+    <value>17, 216</value>
   </data>
   <data name="btnCopy.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 23</value>
@@ -270,7 +270,7 @@ The full error text appears in the box below.</value>
     <value>5, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>393, 273</value>
+    <value>393, 290</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
