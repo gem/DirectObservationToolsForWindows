@@ -141,7 +141,19 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_08796EB35F344952A927946A8881ACFB"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_08A683D8DF7B472AA66BC4F31A08B2E6"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_08BAC4749BA741BCAE0012D4A6EEFCA4"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -321,6 +333,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_140576C71FDD40349ED51A19F1E8C585"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_14254D8A8B2549EB88FC29CD26A2CB39"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -393,6 +411,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_194A54B0F6564EA88FFA7821C9D1F9C3"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_19FB59ADA9E24D11A90EE44591320428"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -401,6 +425,12 @@
         {
         "MsmKey" = "8:_1A073602172E6486717E5E96C39457A4"
         "OwnerKey" = "8:_831E615D76092B633538D8A4BFD0A5BB"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_1A425F4FD26F497ABCBC01E4E8CD612D"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -627,6 +657,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_295C836DF3D741DCA643C505C50F5F23"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_29C63D9E1ACF452282D520FB1634A0BD"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -759,6 +795,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_31A012471C414CFEAD05B973AF905B6F"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_31B028AB0D2044C5E1A899D1D9484D5E"
         "OwnerKey" = "8:_CF6089216211F3ABA9568CA9F4DB13DD"
         "MsmSig" = "8:_UNDEFINED"
@@ -880,12 +922,6 @@
         "Entry"
         {
         "MsmKey" = "8:_387D6A389F03410C98A6CE10A578B376"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_397753B7A5F84AD28FAB3D162B21BE2B"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -1377,14 +1413,14 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_58A3FAA4942C4F709F124C7739DCFAEC"
+        "MsmKey" = "8:_586ED8F5F28C4D1A8F680D9A3B6AB4C6"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_58CE6B527208D9F48B5E0E04057E905E"
-        "OwnerKey" = "8:_713CC1C5B8BC84316C5D5E590874D174"
+        "MsmKey" = "8:_58A3FAA4942C4F709F124C7739DCFAEC"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1408,6 +1444,12 @@
         "Entry"
         {
         "MsmKey" = "8:_59F62267AB054C04A3B7B59E0BFC3117"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_5A26F68021894906A8AC29C159580863"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -1462,6 +1504,12 @@
         "Entry"
         {
         "MsmKey" = "8:_5EA06E17224648A29B1E2C04F3A8E20A"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_5F565CEE3AD241578CBF34B813D43A14"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -2013,12 +2061,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_7656B58FA76743D59C698C1787C80019"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_76928C4AF53D4ED6BB5BE07C044B84E1"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -2140,6 +2182,12 @@
         "Entry"
         {
         "MsmKey" = "8:_7F5FB14DE3A14CA2BCB3D579BB8583B5"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_7FA941DA96E14A33B7EB301936C27F64"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -2889,6 +2937,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_AFF9E8D01722447CB62A8303F9B61451"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_B0576914412F4BD5A6F21E8CB945DDC8"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -3045,6 +3099,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_BA2B2A6DDA784173A354D8F918D88376"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_BB0BA3A1C57E4166B4054542ED3C11B4"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -3171,6 +3231,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_C2A935BFD16A4DADBACB4722BA70E328"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_C343B36456824D7FBF74689B1B7D6C01"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -3184,6 +3250,12 @@
         "Entry"
         {
         "MsmKey" = "8:_C435A99D0BA74B96A495919F5A6270E0"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C46062EAEBBB45FAA5183C471DEC4FF8"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -3244,6 +3316,12 @@
         "Entry"
         {
         "MsmKey" = "8:_C84DC15CAA2A41AB8FB2260C3B467F56"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C87813CB087C40F5B8305714AADA4951"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -3472,6 +3550,12 @@
         "Entry"
         {
         "MsmKey" = "8:_DA1C028381694B5FA4939D19D10E73DD"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_DABE6331B4EF49D8B5F3CCAD30D9AF08"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -3729,6 +3813,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_E711BCA9B316762D4A1CF743A018D965"
+        "OwnerKey" = "8:_713CC1C5B8BC84316C5D5E590874D174"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_E718C832836448B08E238922B13FEFBE"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -3916,6 +4006,18 @@
         "Entry"
         {
         "MsmKey" = "8:_F287FFBFD17D4CFF98D4433A520DDD2C"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F2A5200E8B62432496B7054F23ABF734"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F2D516DF600B4955B2E1E11B11099495"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -4743,7 +4845,7 @@
         "DisplayName" = "8:Debug"
         "IsDebugOnly" = "11:TRUE"
         "IsReleaseOnly" = "11:FALSE"
-        "OutputFilename" = "8:Debug\\GEM - Direct Observation Tools [BETA].msi"
+        "OutputFilename" = "8:Debug\\GEM - Direct Observation Tools v1.1.2.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -4928,7 +5030,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.1.0, Culture=th, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.2.0, Culture=th, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_00963731018E458AAEF1AB382214C0AC"
@@ -5317,12 +5419,52 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_08796EB35F344952A927946A8881ACFB"
+            {
+            "SourcePath" = "8:..\\Bin\\Sqliteman\\sqlite3.exe"
+            "TargetName" = "8:sqlite3.exe"
+            "Tag" = "8:"
+            "Folder" = "8:_B2844FA312154FADA52E2BAC43002A07"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_08A683D8DF7B472AA66BC4F31A08B2E6"
             {
             "SourcePath" = "8:..\\Bin\\LocalResources\\Help\\images-1\\adobe-building-reinforced-with-fibre-reinforced-mesh-geogrid-peru-s.-brzev\\image_preview.jpg"
             "TargetName" = "8:image_preview.jpg"
             "Tag" = "8:"
             "Folder" = "8:_31B93507C4D0419A83731045462D940D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_08BAC4749BA741BCAE0012D4A6EEFCA4"
+            {
+            "SourcePath" = "8:..\\Bin\\LocalResources\\Help\\HelpDocs\\glossary\\LLRS.html"
+            "TargetName" = "8:LLRS.html"
+            "Tag" = "8:"
+            "Folder" = "8:_8419B0608FDF44EF870C291878D3E8A4"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -5928,6 +6070,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_140576C71FDD40349ED51A19F1E8C585"
+            {
+            "SourcePath" = "8:..\\Bin\\Sqliteman\\mingwm10.dll"
+            "TargetName" = "8:mingwm10.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_B2844FA312154FADA52E2BAC43002A07"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_14254D8A8B2549EB88FC29CD26A2CB39"
             {
             "SourcePath" = "8:..\\Bin\\LocalResources\\Help\\images-1\\masonry-jack-arch-construction-a.-pomonis\\image_preview.jpg"
@@ -6168,6 +6330,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_194A54B0F6564EA88FFA7821C9D1F9C3"
+            {
+            "SourcePath" = "8:..\\Bin\\Sqliteman\\imageformats\\qmng4.dll"
+            "TargetName" = "8:qmng4.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_B4584D6B9FD848EAB0FA64FAAD73B62F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_19FB59ADA9E24D11A90EE44591320428"
             {
             "SourcePath" = "8:..\\Bin\\LocalResources\\Help\\HelpDocs\\glossary\\residential-unknown-type.html"
@@ -6208,11 +6390,31 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1A425F4FD26F497ABCBC01E4E8CD612D"
+            {
+            "SourcePath" = "8:..\\Bin\\Sqliteman\\README"
+            "TargetName" = "8:README"
+            "Tag" = "8:"
+            "Folder" = "8:_B2844FA312154FADA52E2BAC43002A07"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_1A6C7F85CF934D4DB2B64FEEB3942DD6"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.1.0, Culture=de, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.2.0, Culture=de, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_1A6C7F85CF934D4DB2B64FEEB3942DD6"
@@ -6363,7 +6565,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.1.0, Culture=el, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.2.0, Culture=el, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_1E3F16A3491E4606A1A1E13407E20E98"
@@ -6936,7 +7138,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.1.0, Culture=cs, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.2.0, Culture=cs, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_27A94644F8C8456A9BC3E07CBB6D0B0B"
@@ -6989,6 +7191,26 @@
             "TargetName" = "8:image_preview.jpg"
             "Tag" = "8:"
             "Folder" = "8:_019280EFD2004CC59AB2FB63B09F241A"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_295C836DF3D741DCA643C505C50F5F23"
+            {
+            "SourcePath" = "8:..\\Bin\\Sqliteman\\QtSql4.dll"
+            "TargetName" = "8:QtSql4.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_B2844FA312154FADA52E2BAC43002A07"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -7276,6 +7498,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_31A012471C414CFEAD05B973AF905B6F"
+            {
+            "SourcePath" = "8:..\\Bin\\Sqliteman\\sqliteman.exe"
+            "TargetName" = "8:sqliteman.exe"
+            "Tag" = "8:"
+            "Folder" = "8:_B2844FA312154FADA52E2BAC43002A07"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_31B028AB0D2044C5E1A899D1D9484D5E"
             {
             "AssemblyRegister" = "3:1"
@@ -7371,7 +7613,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.1.0, Culture=ro, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.2.0, Culture=ro, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_332B718A258A4D68BBFCB8FE5DEADB3D"
@@ -7602,7 +7844,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.1.0, Culture=zh-CN, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.2.0, Culture=zh-CN, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_36CEAA5608434DD59418658404F1F200"
@@ -7713,26 +7955,6 @@
             {
             "SourcePath" = "8:..\\Bin\\LocalResources\\Help\\HelpDocs\\glossary\\school.html"
             "TargetName" = "8:school.html"
-            "Tag" = "8:"
-            "Folder" = "8:_8419B0608FDF44EF870C291878D3E8A4"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_397753B7A5F84AD28FAB3D162B21BE2B"
-            {
-            "SourcePath" = "8:..\\Bin\\LocalResources\\Help\\HelpDocs\\glossary\\11111111USEFUL.html"
-            "TargetName" = "8:11111111USEFUL.html"
             "Tag" = "8:"
             "Folder" = "8:_8419B0608FDF44EF870C291878D3E8A4"
             "Condition" = "8:"
@@ -7904,7 +8126,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.1.0, Culture=ja-JP, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.2.0, Culture=ja-JP, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_3DA0AE804A6442E1BBB98B75B64CC3A3"
@@ -8006,7 +8228,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.1.0, Culture=pt, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.2.0, Culture=pt, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_40B1A2F5A7DE4622B53FB872488129F2"
@@ -9101,6 +9323,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_586ED8F5F28C4D1A8F680D9A3B6AB4C6"
+            {
+            "SourcePath" = "8:..\\Bin\\Sqliteman\\AUTHORS"
+            "TargetName" = "8:AUTHORS"
+            "Tag" = "8:"
+            "Folder" = "8:_B2844FA312154FADA52E2BAC43002A07"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_58A3FAA4942C4F709F124C7739DCFAEC"
             {
             "SourcePath" = "8:..\\Bin\\LocalResources\\Help\\HelpDocs\\glossary\\hollow-concrete-blocks.html"
@@ -9119,26 +9361,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_58CE6B527208D9F48B5E0E04057E905E"
-            {
-            "SourcePath" = "8:MapWinGIS.ocx"
-            "TargetName" = "8:MapWinGIS.ocx"
-            "Tag" = "8:"
-            "Folder" = "8:_6FB6502F00074F06925F79ECA27DD580"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_590074C4B9224443A6EAD8EC73407658"
@@ -9207,6 +9429,26 @@
             "TargetName" = "8:reinforced-concrete-slabs-flat-slabs-or-plates-fc1.html"
             "Tag" = "8:"
             "Folder" = "8:_8419B0608FDF44EF870C291878D3E8A4"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5A26F68021894906A8AC29C159580863"
+            {
+            "SourcePath" = "8:..\\Bin\\Sqliteman\\imageformats\\qtiff4.dll"
+            "TargetName" = "8:qtiff4.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_B4584D6B9FD848EAB0FA64FAAD73B62F"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -9325,7 +9567,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.1.0, Culture=nl, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.2.0, Culture=nl, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_5D5D680E1D6042228C54870066494D70"
@@ -9412,6 +9654,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5F565CEE3AD241578CBF34B813D43A14"
+            {
+            "SourcePath" = "8:..\\Bin\\Sqliteman\\sqldrivers\\qsqlite4.dll"
+            "TargetName" = "8:qsqlite4.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_72DC8FAD838D492C86980C51F8F226CE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5F70C9A4E6F8419EA18D74B08F33F0E6"
             {
             "SourcePath" = "8:..\\Bin\\msvcr90.dll"
@@ -9476,7 +9738,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.1.0, Culture=zh-CHS, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.2.0, Culture=zh-CHS, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_60192BB15E684F57BF6938EE693C1608"
@@ -10031,7 +10293,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.1.0, Culture=vi-VN, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.2.0, Culture=vi-VN, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_6986DB6B1D554EF4898B1585CEED83F4"
@@ -10804,26 +11066,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7656B58FA76743D59C698C1787C80019"
-            {
-            "SourcePath" = "8:..\\Bin\\LocalResources\\Help\\HelpDocs\\glossary\\lateral-load-resisting-system.html"
-            "TargetName" = "8:lateral-load-resisting-system.html"
-            "Tag" = "8:"
-            "Folder" = "8:_8419B0608FDF44EF870C291878D3E8A4"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_76928C4AF53D4ED6BB5BE07C044B84E1"
             {
             "AssemblyRegister" = "3:1"
@@ -11188,6 +11430,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7FA941DA96E14A33B7EB301936C27F64"
+            {
+            "SourcePath" = "8:..\\Bin\\Sqliteman\\QtCore4.dll"
+            "TargetName" = "8:QtCore4.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_B2844FA312154FADA52E2BAC43002A07"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7FC002C759C248708B113FC0BD710C7C"
             {
             "SourcePath" = "8:..\\Bin\\LocalResources\\Help\\HelpDocs\\glossary\\mortar.html"
@@ -11414,7 +11676,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.1.0, Culture=it, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.2.0, Culture=it, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_819F43DCE9BF492B8C0A6DB67DDA4854"
@@ -13731,6 +13993,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_AFF9E8D01722447CB62A8303F9B61451"
+            {
+            "SourcePath" = "8:..\\Bin\\Sqliteman\\imageformats\\qsvg4.dll"
+            "TargetName" = "8:qsvg4.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_B4584D6B9FD848EAB0FA64FAAD73B62F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B0576914412F4BD5A6F21E8CB945DDC8"
             {
             "SourcePath" = "8:..\\Bin\\PROJ_NAD\\alaska"
@@ -13895,7 +14177,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.1.0, Culture=fa, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.2.0, Culture=fa, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_B2820557CBF448B4800D7F59C9058F53"
@@ -14159,6 +14441,26 @@
             "TargetName" = "8:vaulted-earthen-roofs.html"
             "Tag" = "8:"
             "Folder" = "8:_8419B0608FDF44EF870C291878D3E8A4"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_BA2B2A6DDA784173A354D8F918D88376"
+            {
+            "SourcePath" = "8:..\\Bin\\Sqliteman\\imageformats\\qgif4.dll"
+            "TargetName" = "8:qgif4.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_B4584D6B9FD848EAB0FA64FAAD73B62F"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -14648,6 +14950,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C2A935BFD16A4DADBACB4722BA70E328"
+            {
+            "SourcePath" = "8:..\\Bin\\Sqliteman\\libgcc_s_dw2-1.dll"
+            "TargetName" = "8:libgcc_s_dw2-1.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_B2844FA312154FADA52E2BAC43002A07"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C343B36456824D7FBF74689B1B7D6C01"
             {
             "SourcePath" = "8:..\\Bin\\LocalResources\\Help\\HelpDocs\\glossary\\solid-concrete-blocks.html"
@@ -14694,6 +15016,26 @@
             "TargetName" = "8:concrete-rc.html"
             "Tag" = "8:"
             "Folder" = "8:_8419B0608FDF44EF870C291878D3E8A4"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C46062EAEBBB45FAA5183C471DEC4FF8"
+            {
+            "SourcePath" = "8:..\\Bin\\Sqliteman\\imageformats\\qjpeg4.dll"
+            "TargetName" = "8:qjpeg4.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_B4584D6B9FD848EAB0FA64FAAD73B62F"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -14903,7 +15245,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.1.0, Culture=fr, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.2.0, Culture=fr, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_C84DC15CAA2A41AB8FB2260C3B467F56"
@@ -14916,6 +15258,26 @@
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_BC09C27CBB2F42ADBBC9D89C8EB9525E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C87813CB087C40F5B8305714AADA4951"
+            {
+            "SourcePath" = "8:..\\Bin\\Sqliteman\\QtGui4.dll"
+            "TargetName" = "8:QtGui4.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_B2844FA312154FADA52E2BAC43002A07"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -15378,7 +15740,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.1.0, Culture=en, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.2.0, Culture=en, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_D401D9CEC4D74C97A9FBD1B89722BEAE"
@@ -15745,6 +16107,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_DABE6331B4EF49D8B5F3CCAD30D9AF08"
+            {
+            "SourcePath" = "8:..\\Bin\\Sqliteman\\QtXml4.dll"
+            "TargetName" = "8:QtXml4.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_B2844FA312154FADA52E2BAC43002A07"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_DAC67E7A0DD94B74998C5CEC83350709"
             {
             "SourcePath" = "8:..\\Bin\\LocalResources\\Help\\HelpDocs\\glossary\\floor-material.html"
@@ -15800,7 +16182,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.1.0, Culture=es-ES, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.2.0, Culture=es-ES, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_DBB4EAF39EAF49218BCC08FD4F91A15F"
@@ -16604,6 +16986,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E711BCA9B316762D4A1CF743A018D965"
+            {
+            "SourcePath" = "8:MapWinGIS.ocx"
+            "TargetName" = "8:MapWinGIS.ocx"
+            "Tag" = "8:"
+            "Folder" = "8:_6FB6502F00074F06925F79ECA27DD580"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E718C832836448B08E238922B13FEFBE"
             {
             "SourcePath" = "8:..\\Bin\\LocalResources\\Help\\HelpDocs\\glossary\\vaulted-masonry-fm1.html"
@@ -17228,6 +17630,46 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F2A5200E8B62432496B7054F23ABF734"
+            {
+            "SourcePath" = "8:..\\Bin\\Sqliteman\\COPYING"
+            "TargetName" = "8:COPYING"
+            "Tag" = "8:"
+            "Folder" = "8:_B2844FA312154FADA52E2BAC43002A07"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F2D516DF600B4955B2E1E11B11099495"
+            {
+            "SourcePath" = "8:..\\Bin\\Sqliteman\\imageformats\\qico4.dll"
+            "TargetName" = "8:qico4.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_B4584D6B9FD848EAB0FA64FAAD73B62F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F2E5DE007FD943E5A5218F1BF5DF2F43"
             {
             "AssemblyRegister" = "3:1"
@@ -17303,7 +17745,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.1.0, Culture=lt, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.2.0, Culture=lt, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_F3EEC23264BE4BBAB5DEEF2419368196"
@@ -18007,7 +18449,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.1.0, Culture=pt-BR, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.2.0, Culture=pt-BR, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_FECD97CC61B94AF7A4D32DD704B00DDD"
@@ -18481,6 +18923,39 @@
                     "Property" = "8:_EAF5C9E583034A5DB16D87B6EA24A91E"
                         "Folders"
                         {
+                        }
+                    }
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_B2844FA312154FADA52E2BAC43002A07"
+                    {
+                    "Name" = "8:Sqliteman"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_C7E866AD85AB48659D9A0DD4FC960A4F"
+                        "Folders"
+                        {
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_72DC8FAD838D492C86980C51F8F226CE"
+                            {
+                            "Name" = "8:sqldrivers"
+                            "AlwaysCreate" = "11:FALSE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_9B1478DA2C3C4776BF3DFB9ABBFBD4EB"
+                                "Folders"
+                                {
+                                }
+                            }
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_B4584D6B9FD848EAB0FA64FAAD73B62F"
+                            {
+                            "Name" = "8:imageformats"
+                            "AlwaysCreate" = "11:FALSE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_1C3B3009E1044B5DA29010144EAB40F6"
+                                "Folders"
+                                {
+                                }
+                            }
                         }
                     }
                     "{9EF0B969-E518-4E46-987F-47570745A589}:_B5007AE3E70E4C6BAEED72C6A1757D87"
@@ -20392,20 +20867,20 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:GEM - Direct Observation Tools [BETA]"
-        "ProductCode" = "8:{8782A27A-E9DE-420F-81EA-97F6D02936AE}"
-        "PackageCode" = "8:{8ACA520C-2F4A-4E50-AD2C-E4FFA77C8317}"
+        "ProductName" = "8:GEM - Direct Observation Tools"
+        "ProductCode" = "8:{F428D878-A830-40FA-BE98-927622CF75A3}"
+        "PackageCode" = "8:{99D29BD6-A3B5-4BC2-A0AD-103E657A35B1}"
         "UpgradeCode" = "8:{55F38009-5437-45BF-BA08-619CD8DD8D91}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.1.1"
+        "ProductVersion" = "8:1.1.2"
         "Manufacturer" = "8:GEM"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:GEM - Direct Observation Tools [BETA]"
+        "Title" = "8:GEM - Direct Observation Tools"
         "Subject" = "8:"
         "ARPCONTACT" = "8:GEM"
         "Keywords" = "8:"
