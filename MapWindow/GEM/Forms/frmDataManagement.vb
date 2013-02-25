@@ -40,4 +40,15 @@ Public Class frmDataManagement
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         System.Diagnostics.Process.Start(App.Path & "\Sqliteman\sqliteman.exe")
     End Sub
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        If Not gemdb Is Nothing Then
+            Dim pForm As New frmPhotoMan
+            pForm.ShowDialog()
+        Else
+            MessageBox.Show("You can only manage photographs if you have an active GEM database loaded into your project", "Database not loaded")
+        End If
+    End Sub
+
+
 End Class

@@ -464,7 +464,6 @@
     <Compile Include="GEM\Classes\NumericTextBox.vb">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="GEM\Classes\TempShared.vb" />
     <Compile Include="GEM\Forms\frmGEM2ZIP.Designer.vb">
       <DependentUpon>frmGEM2ZIP.vb</DependentUpon>
     </Compile>
@@ -499,6 +498,12 @@
       <DependentUpon>frmGEM2SHP.vb</DependentUpon>
     </Compile>
     <Compile Include="GEM\Forms\frmGEM2SHP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GEM\Forms\frmPhotoMan.Designer.vb">
+      <DependentUpon>frmPhotoMan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GEM\Forms\frmPhotoMan.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GEM\Forms\frmProjectDetails.Designer.vb">
@@ -702,6 +707,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GEM\Forms\frmGEM2SHP.resx">
       <DependentUpon>frmGEM2SHP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GEM\Forms\frmPhotoMan.resx">
+      <DependentUpon>frmPhotoMan.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GEM\Forms\frmProjectDetails.resx">
       <DependentUpon>frmProjectDetails.vb</DependentUpon>

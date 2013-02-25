@@ -254,7 +254,6 @@ Partial Class frmDetails
         Me.mnuRow = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ShowMediaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LinkToMediaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AddMediaToAllRecordsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.GEMOBJECTBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GEMDataset, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DICMATERIALTYPEBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -2511,28 +2510,21 @@ Partial Class frmDetails
         '
         'mnuRow
         '
-        Me.mnuRow.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ShowMediaToolStripMenuItem, Me.LinkToMediaToolStripMenuItem, Me.AddMediaToAllRecordsToolStripMenuItem})
+        Me.mnuRow.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ShowMediaToolStripMenuItem, Me.LinkToMediaToolStripMenuItem})
         Me.mnuRow.Name = "mnuRow"
-        Me.mnuRow.Size = New System.Drawing.Size(174, 70)
+        Me.mnuRow.Size = New System.Drawing.Size(153, 70)
         '
         'ShowMediaToolStripMenuItem
         '
         Me.ShowMediaToolStripMenuItem.Name = "ShowMediaToolStripMenuItem"
-        Me.ShowMediaToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
+        Me.ShowMediaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ShowMediaToolStripMenuItem.Text = "Show Media"
         '
         'LinkToMediaToolStripMenuItem
         '
         Me.LinkToMediaToolStripMenuItem.Name = "LinkToMediaToolStripMenuItem"
-        Me.LinkToMediaToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
+        Me.LinkToMediaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.LinkToMediaToolStripMenuItem.Text = "Add Media"
-        '
-        'AddMediaToAllRecordsToolStripMenuItem
-        '
-        Me.AddMediaToAllRecordsToolStripMenuItem.Name = "AddMediaToAllRecordsToolStripMenuItem"
-        Me.AddMediaToAllRecordsToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
-        Me.AddMediaToAllRecordsToolStripMenuItem.Text = "Auto Match Media"
-        Me.AddMediaToAllRecordsToolStripMenuItem.Visible = False
         '
         'frmDetails
         '
@@ -2863,7 +2855,6 @@ Partial Class frmDetails
     Friend WithEvents mnuRow As System.Windows.Forms.ContextMenuStrip
     Friend WithEvents ShowMediaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents LinkToMediaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents AddMediaToAllRecordsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents MEDIATYPEDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewComboBoxColumn
     Friend WithEvents MEDIAUIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents MEDIANUMBDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn

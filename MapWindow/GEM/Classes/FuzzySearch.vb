@@ -31,7 +31,7 @@ Public Class FuzzySearch
     ''' http://en.wikipedia.org/wiki/Levenshtein_distance
     ''' </a>
     ''' </remarks>
-    Public Shared Function LevenshteinDistance(ByVal src As String, ByVal dest As String) As Integer
+    Public Function LevenshteinDistance(ByVal src As String, ByVal dest As String) As Integer
         Dim d As Integer(,) = New Integer(src.Length, dest.Length) {}
         Dim i As Integer, j As Integer, cost As Integer
         Dim str1 As Char() = src.ToCharArray()
@@ -85,7 +85,7 @@ Public Class FuzzySearch
     ''' <example>
     ''' 
     ''' </example>
-    Public Shared Function Search(ByVal word As String, ByVal wordList As List(Of String), ByVal fuzzyness As Double) As String
+    Public Function Search(ByVal word As String, ByVal wordList As List(Of String), ByVal fuzzyness As Double) As String
         Dim foundWords As New List(Of MatchedWord)()
 
         For Each s As String In wordList
@@ -121,5 +121,19 @@ Public Class FuzzySearch
 
         Return topWord
     End Function
+
+
+    Public Function SearchImages(ByVal searchNumber As Long, ByVal wordList As List(Of String)) As String
+        For Each s As String In wordList
+            Dim f As String = IO.Path.GetFileNameWithoutExtension(s)
+            Dim Result As System.Text.RegularExpressions.Match = System.Text.RegularExpressions.Regex.Match(f, "\d+")
+            If searchNumber = Val(Result.Value) Then
+                Return s
+            End If
+        Next
+        Return ""
+    End Function
+
+
 End Class
 
