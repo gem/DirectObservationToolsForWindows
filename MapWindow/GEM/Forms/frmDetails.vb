@@ -189,6 +189,19 @@ Public Class frmDetails
         'Filter media for datagrid
         MEDIADETAILBindingSource.Filter = "GEMOBJ_UID = '" & mOBJECT_UID & "'"
 
+        'Min and Max
+        'Longitude()
+        '180:    W = -180
+        '180:    E = 180
+
+        'Latitude()
+        '90:     N = 90
+        '90:     S = -90
+
+        If x > 200 Or x < -200 Or y > 200 Or y < -200 Then
+            MessageBox.Show("The X and Y values are not valid latitude and longitude values. This usually happens when there is a problem re-projecting the point. Try re-creating your project using the correct projection.")
+        End If
+
     End Sub
 
     Public Sub New(ByVal currentRecordUID As String)
@@ -412,11 +425,7 @@ Public Class frmDetails
         Me.CONSEQUENCESBindingSource.EndEdit()
         dgMedia.EndEdit()
 
-        If Me.GEMDataset.HasChanges Then
-            If MessageBox.Show("Are you sure you want to close this form and lose any changes?", "Close form", MessageBoxButtons.YesNo) = vbYes Then
-                Me.Close()
-            End If
-        End If
+        Me.Close()
 
 
     End Sub
@@ -645,10 +654,12 @@ Public Class frmDetails
         ' Get path to help file assume that it is an file and see if it exists 
         '
 
-        Dim fuz As New FuzzySearch
-        Dim matchedpage As String = fuz.Search(currentHelpTopic, IO.Directory.GetFiles(helpDir).ToList, 0.5)
+        Dim helpFile As String = helpDir & "\default.html"
+        If currentHelpTopic <> "" Then
+            Dim fuz As New FuzzySearch
+            helpFile = fuz.Search(currentHelpTopic, IO.Directory.GetFiles(helpDir).ToList, 0.5)
+        End If
 
-        Dim helpFile As String = matchedpage
         If (IO.File.Exists(helpFile)) Then
             WebBrowser1.Navigate(helpFile)
             Exit Sub
@@ -710,7 +721,7 @@ Public Class frmDetails
         '
         ' Open file in Paint
         '
-        System.Diagnostics.Process.Start("mspaint", strFileName)
+        System.Diagnostics.Process.Start("mspaint", """" & strFileName & """")
         '
     End Sub
 
@@ -748,7 +759,7 @@ Public Class frmDetails
                 If currentrow.MEDIA_TYPE = "SKETCH" Then
                     Call OpenPaint(gemdb.MediaPath & "\" & currentrow.FILENAME)
                 Else
-                    System.Diagnostics.Process.Start(gemdb.MediaPath & "\" & currentrow.FILENAME)
+                    System.Diagnostics.Process.Start("""" & gemdb.MediaPath & "\" & currentrow.FILENAME & """")
                 End If
             Else
                 MessageBox.Show("Cannot find the media file, check the GEM media folder exists", "Media file missing", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -817,37 +828,46 @@ Public Class frmDetails
     End Sub
 
     Private Sub cbNO_STOREYS_ABOVE_GROUND_QUAL_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbNO_STOREYS_ABOVE_GROUND_QUAL.SelectedIndexChanged
+
+        tbNO_STOREYS_ABOVE_GROUND_1.Enabled = cbNO_STOREYS_ABOVE_GROUND_QUAL.Text <> ""
+
         If cbNO_STOREYS_ABOVE_GROUND_QUAL.Text = "Between" Then
-            tbNO_STOREYS_ABOVE_GROUND_2.Visible = True
+            tbNO_STOREYS_ABOVE_GROUND_2.Enabled = True
         Else
-            tbNO_STOREYS_ABOVE_GROUND_2.Visible = False
+            tbNO_STOREYS_ABOVE_GROUND_2.Enabled = False
             tbNO_STOREYS_ABOVE_GROUND_2.Text = ""
         End If
     End Sub
 
     Private Sub cbHT_ABOVEGRADE_GRND_FLOOR_QUAL_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbHT_ABOVEGRADE_GRND_FLOOR_QUAL.SelectedIndexChanged
+        tbHT_ABOVEGRADE_GRND_FLOOR_1.Enabled = cbHT_ABOVEGRADE_GRND_FLOOR_QUAL.Text <> ""
+
         If cbHT_ABOVEGRADE_GRND_FLOOR_QUAL.Text = "Between" Then
-            tbHT_ABOVEGRADE_GRND_FLOOR_2.Visible = True
+            tbHT_ABOVEGRADE_GRND_FLOOR_2.Enabled = True
         Else
-            tbHT_ABOVEGRADE_GRND_FLOOR_2.Visible = False
+            tbHT_ABOVEGRADE_GRND_FLOOR_2.Enabled = False
             tbHT_ABOVEGRADE_GRND_FLOOR_2.Text = ""
         End If
     End Sub
 
     Private Sub cbNO_STOREYS_BELOW_GROUND_QUAL_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbNO_STOREYS_BELOW_GROUND_QUAL.SelectedIndexChanged
+        tbNO_STOREYS_BELOW_GROUND_1.Enabled = cbNO_STOREYS_BELOW_GROUND_QUAL.Text <> ""
+
         If cbNO_STOREYS_BELOW_GROUND_QUAL.Text = "Between" Then
-            tbNO_STOREYS_BELOW_GROUND_2.Visible = True
+            tbNO_STOREYS_BELOW_GROUND_2.Enabled = True
         Else
-            tbNO_STOREYS_BELOW_GROUND_2.Visible = False
+            tbNO_STOREYS_BELOW_GROUND_2.Enabled = False
             tbNO_STOREYS_BELOW_GROUND_2.Text = ""
         End If
     End Sub
 
     Private Sub cbYEAR_BUILT_QUAL_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbYEAR_BUILT_QUAL.SelectedIndexChanged
+        tbYEAR_BUILT_1.Enabled = cbYEAR_BUILT_QUAL.Text <> ""
+
         If cbYEAR_BUILT_QUAL.Text = "Between" Then
-            tbYEAR_BUILT_2.Visible = True
+            tbYEAR_BUILT_2.Enabled = True
         Else
-            tbYEAR_BUILT_2.Visible = False
+            tbYEAR_BUILT_2.Enabled = False
             tbYEAR_BUILT_2.Text = ""
         End If
     End Sub
@@ -910,4 +930,9 @@ Public Class frmDetails
     'End Sub
 
 
+    Private Sub tbSLOPE_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tbSLOPE.TextChanged
+        If tbSLOPE.Text > 360 Then
+            MessageBox.Show("Invalid Value")
+        End If
+    End Sub
 End Class

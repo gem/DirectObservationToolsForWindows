@@ -100,6 +100,9 @@ Partial Friend Class MapWindowForm
         Me.tbbSave = New System.Windows.Forms.ToolStripButton()
         Me.tbbPrint = New System.Windows.Forms.ToolStripButton()
         Me.tbbProjectSettings = New System.Windows.Forms.ToolStripButton()
+        Me.tlbMain = New MapWindow.ToolStripExtensions.ToolStripEx()
+        Me.tbbSelect = New System.Windows.Forms.ToolStripButton()
+        Me.tbbDeSelectLayer = New System.Windows.Forms.ToolStripButton()
         Me.tlbZoom = New MapWindow.ToolStripExtensions.ToolStripEx()
         Me.tbbPan = New System.Windows.Forms.ToolStripButton()
         Me.tbbZoomIn = New System.Windows.Forms.ToolStripButton()
@@ -112,9 +115,6 @@ Partial Friend Class MapWindowForm
         Me.tbbAddPoint = New System.Windows.Forms.ToolStripButton()
         Me.tbbQueryPoint = New System.Windows.Forms.ToolStripButton()
         Me.tbbExportData = New System.Windows.Forms.ToolStripButton()
-        Me.tlbMain = New MapWindow.ToolStripExtensions.ToolStripEx()
-        Me.tbbSelect = New System.Windows.Forms.ToolStripButton()
-        Me.tbbDeSelectLayer = New System.Windows.Forms.ToolStripButton()
         Me.mnuLegend = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
@@ -160,8 +160,8 @@ Partial Friend Class MapWindowForm
         Me.tlbLayers.SuspendLayout()
         Me.ContextToolstrip.SuspendLayout()
         Me.tlbStandard.SuspendLayout()
-        Me.tlbZoom.SuspendLayout()
         Me.tlbMain.SuspendLayout()
+        Me.tlbZoom.SuspendLayout()
         Me.mnuLegend.SuspendLayout()
         Me.mnuLayerButton.SuspendLayout()
         Me.mnuZoom.SuspendLayout()
@@ -311,6 +311,32 @@ Partial Friend Class MapWindowForm
         Me.tbbProjectSettings.Name = "tbbProjectSettings"
         resources.ApplyResources(Me.tbbProjectSettings, "tbbProjectSettings")
         '
+        'tlbMain
+        '
+        Me.tlbMain.AllowItemReorder = True
+        Me.tlbMain.ClickThrough = True
+        Me.tlbMain.ContextMenuStrip = Me.ContextToolstrip
+        resources.ApplyResources(Me.tlbMain, "tlbMain")
+        Me.tlbMain.ImageList = Me.ilsToolbar
+        Me.tlbMain.ImageScalingSize = New System.Drawing.Size(24, 24)
+        Me.tlbMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tbbSelect, Me.tbbDeSelectLayer})
+        Me.tlbMain.Name = "tlbMain"
+        Me.tlbMain.SuppressHighlighting = True
+        '
+        'tbbSelect
+        '
+        Me.tbbSelect.ForeColor = System.Drawing.Color.DarkBlue
+        Me.tbbSelect.Image = Global.MapWindow.GlobalResource.selectNew
+        Me.tbbSelect.Name = "tbbSelect"
+        resources.ApplyResources(Me.tbbSelect, "tbbSelect")
+        '
+        'tbbDeSelectLayer
+        '
+        Me.tbbDeSelectLayer.ForeColor = System.Drawing.Color.DarkBlue
+        Me.tbbDeSelectLayer.Image = Global.MapWindow.GlobalResource.deselect
+        Me.tbbDeSelectLayer.Name = "tbbDeSelectLayer"
+        resources.ApplyResources(Me.tbbDeSelectLayer, "tbbDeSelectLayer")
+        '
         'tlbZoom
         '
         Me.tlbZoom.AllowItemReorder = True
@@ -396,32 +422,6 @@ Partial Friend Class MapWindowForm
         Me.tbbExportData.ForeColor = System.Drawing.Color.DarkBlue
         resources.ApplyResources(Me.tbbExportData, "tbbExportData")
         Me.tbbExportData.Name = "tbbExportData"
-        '
-        'tlbMain
-        '
-        Me.tlbMain.AllowItemReorder = True
-        Me.tlbMain.ClickThrough = True
-        Me.tlbMain.ContextMenuStrip = Me.ContextToolstrip
-        resources.ApplyResources(Me.tlbMain, "tlbMain")
-        Me.tlbMain.ImageList = Me.ilsToolbar
-        Me.tlbMain.ImageScalingSize = New System.Drawing.Size(24, 24)
-        Me.tlbMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tbbSelect, Me.tbbDeSelectLayer})
-        Me.tlbMain.Name = "tlbMain"
-        Me.tlbMain.SuppressHighlighting = True
-        '
-        'tbbSelect
-        '
-        Me.tbbSelect.ForeColor = System.Drawing.Color.DarkBlue
-        Me.tbbSelect.Image = Global.MapWindow.GlobalResource.selectNew
-        Me.tbbSelect.Name = "tbbSelect"
-        resources.ApplyResources(Me.tbbSelect, "tbbSelect")
-        '
-        'tbbDeSelectLayer
-        '
-        Me.tbbDeSelectLayer.ForeColor = System.Drawing.Color.DarkBlue
-        Me.tbbDeSelectLayer.Image = Global.MapWindow.GlobalResource.deselect
-        Me.tbbDeSelectLayer.Name = "tbbDeSelectLayer"
-        resources.ApplyResources(Me.tbbDeSelectLayer, "tbbDeSelectLayer")
         '
         'mnuLegend
         '
@@ -665,10 +665,10 @@ Partial Friend Class MapWindowForm
         Me.ContextToolstrip.ResumeLayout(False)
         Me.tlbStandard.ResumeLayout(False)
         Me.tlbStandard.PerformLayout()
-        Me.tlbZoom.ResumeLayout(False)
-        Me.tlbZoom.PerformLayout()
         Me.tlbMain.ResumeLayout(False)
         Me.tlbMain.PerformLayout()
+        Me.tlbZoom.ResumeLayout(False)
+        Me.tlbZoom.PerformLayout()
         Me.mnuLegend.ResumeLayout(False)
         Me.mnuLayerButton.ResumeLayout(False)
         Me.mnuZoom.ResumeLayout(False)

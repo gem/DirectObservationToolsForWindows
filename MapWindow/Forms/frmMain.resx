@@ -328,7 +328,7 @@
     <value>tlbLayers</value>
   </data>
   <data name="&gt;&gt;tlbLayers.Type" xml:space="preserve">
-    <value>MapWindow.ToolStripExtensions.ToolStripEx, GEM_DO_Tools, Version=1.1.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MapWindow.ToolStripExtensions.ToolStripEx, GEM_DO_Tools, Version=1.1.2.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;tlbLayers.Parent" xml:space="preserve">
     <value>StripDocker.TopToolStripPanel</value>
@@ -424,7 +424,7 @@
     <value>tlbStandard</value>
   </data>
   <data name="&gt;&gt;tlbStandard.Type" xml:space="preserve">
-    <value>MapWindow.ToolStripExtensions.ToolStripEx, GEM_DO_Tools, Version=1.1.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MapWindow.ToolStripExtensions.ToolStripEx, GEM_DO_Tools, Version=1.1.2.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;tlbStandard.Parent" xml:space="preserve">
     <value>StripDocker.TopToolStripPanel</value>
@@ -481,7 +481,7 @@
     <value>tlbMain</value>
   </data>
   <data name="&gt;&gt;tlbMain.Type" xml:space="preserve">
-    <value>MapWindow.ToolStripExtensions.ToolStripEx, GEM_DO_Tools, Version=1.1.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MapWindow.ToolStripExtensions.ToolStripEx, GEM_DO_Tools, Version=1.1.2.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;tlbMain.Parent" xml:space="preserve">
     <value>StripDocker.TopToolStripPanel</value>
@@ -639,8 +639,8 @@
   <data name="tbbAddPoint.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALBQAA
-        CwUByY3ISQAABUZJREFUSEu9VXtMU2cUv0Af90JbypvSXlooULQ8SqFbK5OqULRQEFtgylsMe4nLYpyo
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALBAAA
+        CwQBG8oqrQAABUZJREFUSEu9VXtMU2cUv0Af90JbypvSXlooULQ8SqFbK5OqULRQEFtgylsMe4nLYpyo
         iLzBx0S3mQ03H8mmZA7m1LHoHy5b9oeZbpnLkpmRGBNj9sjmczFzi4tn53zQUnDbnyP55dxzzu+c3znf
         V+7luP/jT1cscP8EZYGUR/0izsX1t+5IubR1T/6NXW+4gCz5FKe8yibl/60Hm39+UiwWQri8UJuxnj+y
         e6zw3psXSmDyJzd8ctcLF/9cxyz5FKd8ap38CPGpbn6vxwQSnHKOs3JdHYeybk5cLYOz91fCid/KYPTO
@@ -794,7 +794,7 @@
     <value>tlbZoom</value>
   </data>
   <data name="&gt;&gt;tlbZoom.Type" xml:space="preserve">
-    <value>MapWindow.ToolStripExtensions.ToolStripEx, GEM_DO_Tools, Version=1.1.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MapWindow.ToolStripExtensions.ToolStripEx, GEM_DO_Tools, Version=1.1.2.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;tlbZoom.Parent" xml:space="preserve">
     <value>StripDocker.TopToolStripPanel</value>
@@ -1142,7 +1142,7 @@
     <value>MenuStrip1</value>
   </data>
   <data name="&gt;&gt;MenuStrip1.Type" xml:space="preserve">
-    <value>MapWindow.ToolStripExtensions.MenuStripEx, GEM_DO_Tools, Version=1.1.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MapWindow.ToolStripExtensions.MenuStripEx, GEM_DO_Tools, Version=1.1.2.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;MenuStrip1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1246,6 +1246,18 @@
   <data name="&gt;&gt;tbbProjectSettings.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;tbbSelect.Name" xml:space="preserve">
+    <value>tbbSelect</value>
+  </data>
+  <data name="&gt;&gt;tbbSelect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbbDeSelectLayer.Name" xml:space="preserve">
+    <value>tbbDeSelectLayer</value>
+  </data>
+  <data name="&gt;&gt;tbbDeSelectLayer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;tbbPan.Name" xml:space="preserve">
     <value>tbbPan</value>
   </data>
@@ -1310,18 +1322,6 @@
     <value>tbbExportData</value>
   </data>
   <data name="&gt;&gt;tbbExportData.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbbSelect.Name" xml:space="preserve">
-    <value>tbbSelect</value>
-  </data>
-  <data name="&gt;&gt;tbbSelect.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbbDeSelectLayer.Name" xml:space="preserve">
-    <value>tbbDeSelectLayer</value>
-  </data>
-  <data name="&gt;&gt;tbbDeSelectLayer.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ToolStripMenuItem2.Name" xml:space="preserve">

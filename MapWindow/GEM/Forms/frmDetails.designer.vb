@@ -509,21 +509,21 @@ Partial Class frmDetails
         '
         Me.lblMORT.AutoSize = True
         Me.lblMORT.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMORT.Location = New System.Drawing.Point(53, 92)
+        Me.lblMORT.Location = New System.Drawing.Point(61, 92)
         Me.lblMORT.Name = "lblMORT"
-        Me.lblMORT.Size = New System.Drawing.Size(144, 16)
+        Me.lblMORT.Size = New System.Drawing.Size(136, 16)
         Me.lblMORT.TabIndex = 22
-        Me.lblMORT.Text = "Masonary Mortar Type"
+        Me.lblMORT.Text = "Masonry Mortar Type"
         '
         'lblMREIN
         '
         Me.lblMREIN.AutoSize = True
         Me.lblMREIN.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMREIN.Location = New System.Drawing.Point(39, 119)
+        Me.lblMREIN.Location = New System.Drawing.Point(47, 119)
         Me.lblMREIN.Name = "lblMREIN"
-        Me.lblMREIN.Size = New System.Drawing.Size(158, 16)
+        Me.lblMREIN.Size = New System.Drawing.Size(150, 16)
         Me.lblMREIN.TabIndex = 23
-        Me.lblMREIN.Text = "Masonary Reinforcement"
+        Me.lblMREIN.Text = "Masonry Reinforcement"
         '
         'lblSCONN
         '
@@ -1713,16 +1713,17 @@ Partial Class frmDetails
         'tbHT_ABOVEGRADE_GRND_FLOOR_2
         '
         Me.tbHT_ABOVEGRADE_GRND_FLOOR_2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "HT_GR_GF_2", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbHT_ABOVEGRADE_GRND_FLOOR_2.Enabled = False
         Me.tbHT_ABOVEGRADE_GRND_FLOOR_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbHT_ABOVEGRADE_GRND_FLOOR_2.Location = New System.Drawing.Point(447, 92)
         Me.tbHT_ABOVEGRADE_GRND_FLOOR_2.Name = "tbHT_ABOVEGRADE_GRND_FLOOR_2"
         Me.tbHT_ABOVEGRADE_GRND_FLOOR_2.Size = New System.Drawing.Size(88, 22)
         Me.tbHT_ABOVEGRADE_GRND_FLOOR_2.TabIndex = 106
-        Me.tbHT_ABOVEGRADE_GRND_FLOOR_2.Visible = False
         '
         'tbHT_ABOVEGRADE_GRND_FLOOR_1
         '
         Me.tbHT_ABOVEGRADE_GRND_FLOOR_1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "HT_GR_GF_1", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbHT_ABOVEGRADE_GRND_FLOOR_1.Enabled = False
         Me.tbHT_ABOVEGRADE_GRND_FLOOR_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbHT_ABOVEGRADE_GRND_FLOOR_1.Location = New System.Drawing.Point(353, 92)
         Me.tbHT_ABOVEGRADE_GRND_FLOOR_1.Name = "tbHT_ABOVEGRADE_GRND_FLOOR_1"
@@ -1763,16 +1764,17 @@ Partial Class frmDetails
         'tbNO_STOREYS_BELOW_GROUND_2
         '
         Me.tbNO_STOREYS_BELOW_GROUND_2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "STORY_BG_2", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbNO_STOREYS_BELOW_GROUND_2.Enabled = False
         Me.tbNO_STOREYS_BELOW_GROUND_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbNO_STOREYS_BELOW_GROUND_2.Location = New System.Drawing.Point(447, 60)
         Me.tbNO_STOREYS_BELOW_GROUND_2.Name = "tbNO_STOREYS_BELOW_GROUND_2"
         Me.tbNO_STOREYS_BELOW_GROUND_2.Size = New System.Drawing.Size(88, 22)
         Me.tbNO_STOREYS_BELOW_GROUND_2.TabIndex = 101
-        Me.tbNO_STOREYS_BELOW_GROUND_2.Visible = False
         '
         'tbNO_STOREYS_BELOW_GROUND_1
         '
         Me.tbNO_STOREYS_BELOW_GROUND_1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "STORY_BG_1", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbNO_STOREYS_BELOW_GROUND_1.Enabled = False
         Me.tbNO_STOREYS_BELOW_GROUND_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbNO_STOREYS_BELOW_GROUND_1.Location = New System.Drawing.Point(353, 60)
         Me.tbNO_STOREYS_BELOW_GROUND_1.Name = "tbNO_STOREYS_BELOW_GROUND_1"
@@ -1813,16 +1815,17 @@ Partial Class frmDetails
         'tbNO_STOREYS_ABOVE_GROUND_2
         '
         Me.tbNO_STOREYS_ABOVE_GROUND_2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "STORY_AG_2", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbNO_STOREYS_ABOVE_GROUND_2.Enabled = False
         Me.tbNO_STOREYS_ABOVE_GROUND_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbNO_STOREYS_ABOVE_GROUND_2.Location = New System.Drawing.Point(447, 30)
         Me.tbNO_STOREYS_ABOVE_GROUND_2.Name = "tbNO_STOREYS_ABOVE_GROUND_2"
         Me.tbNO_STOREYS_ABOVE_GROUND_2.Size = New System.Drawing.Size(88, 22)
         Me.tbNO_STOREYS_ABOVE_GROUND_2.TabIndex = 96
-        Me.tbNO_STOREYS_ABOVE_GROUND_2.Visible = False
         '
         'tbNO_STOREYS_ABOVE_GROUND_1
         '
         Me.tbNO_STOREYS_ABOVE_GROUND_1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "STORY_AG_1", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbNO_STOREYS_ABOVE_GROUND_1.Enabled = False
         Me.tbNO_STOREYS_ABOVE_GROUND_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbNO_STOREYS_ABOVE_GROUND_1.Location = New System.Drawing.Point(353, 30)
         Me.tbNO_STOREYS_ABOVE_GROUND_1.Name = "tbNO_STOREYS_ABOVE_GROUND_1"
@@ -1855,6 +1858,7 @@ Partial Class frmDetails
         'tbYEAR_BUILT_2
         '
         Me.tbYEAR_BUILT_2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "YR_BUILT_2", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbYEAR_BUILT_2.Enabled = False
         Me.tbYEAR_BUILT_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbYEAR_BUILT_2.Location = New System.Drawing.Point(447, 28)
         Me.tbYEAR_BUILT_2.Name = "tbYEAR_BUILT_2"
@@ -1885,6 +1889,7 @@ Partial Class frmDetails
         'tbYEAR_BUILT_1
         '
         Me.tbYEAR_BUILT_1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "YR_BUILT_1", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbYEAR_BUILT_1.Enabled = False
         Me.tbYEAR_BUILT_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbYEAR_BUILT_1.Location = New System.Drawing.Point(353, 28)
         Me.tbYEAR_BUILT_1.Name = "tbYEAR_BUILT_1"
@@ -2228,7 +2233,7 @@ Partial Class frmDetails
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(131, 16)
         Me.Label20.TabIndex = 42
-        Me.Label20.Text = "Number fo Dwellings"
+        Me.Label20.Text = "Number of Dwellings"
         '
         'Label23
         '
