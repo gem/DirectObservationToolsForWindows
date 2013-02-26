@@ -4174,6 +4174,7 @@ Partial Friend Class MapWindowForm
             m_HasBeenSaved = False
             SetModified(False)
         End If
+        Call UpdateButtons()
     End Sub
 
     Friend Sub DoOpen(Optional ByVal Filename As String = "")
@@ -4240,6 +4241,7 @@ Partial Friend Class MapWindowForm
                 End If
             End If
         End If
+        Call UpdateButtons()
     End Sub
 
     Friend Sub DoSave()
@@ -4287,6 +4289,7 @@ Partial Friend Class MapWindowForm
         Finally ' exceptions still propagate up, but we will NEVER leave the hourglass on
             Me.Cursor = Cursors.Default
         End Try
+        Call UpdateButtons()
     End Sub
 
     Private Sub DoSaveAs()
@@ -4328,6 +4331,7 @@ Partial Friend Class MapWindowForm
                 End If
             End If
         End If
+        Call UpdateButtons()
     End Sub
 
     Private Sub DoAddLayer()
@@ -4336,6 +4340,7 @@ Partial Friend Class MapWindowForm
             'Set the modified flag if successful
             SetModified(True)
         End If
+        Call UpdateButtons()
     End Sub
 
     ''' <summary>
@@ -5560,6 +5565,7 @@ Partial Friend Class MapWindowForm
                     Dim Result = memoryShape.SelectShapes(extents, tolerance, MapWinGIS.SelectMode.INTERSECTION, ids)
 
                     If ids.Length Then
+                        tbbQueryPoint.Checked = False
                         Dim clickedObj_UID As String = memoryShape.Table.CellValue(memoryShape.Table.FieldIndexByName("OBJ_UID"), ids(0))
                         Dim detailsForm As New frmDetails(clickedObj_UID)
                         detailsForm.ShowDialog()

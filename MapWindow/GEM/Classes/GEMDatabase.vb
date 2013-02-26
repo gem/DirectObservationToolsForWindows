@@ -197,7 +197,7 @@ Public Class GEMDatabase
 
     Public Sub addUser(ByVal name As String)
 
-        Dim sett As GEMDataset.SETTINGSRow = (From proj In gemdb.Dataset.SETTINGS Select proj).FirstOrDefault
+        Dim sett As GEMDataset.SETTINGSRow = (From proj In gemdb.Dataset.SETTINGS Where proj.KEY = "CURRENT_USER" Select proj).FirstOrDefault
         If sett Is Nothing Then
             Dim row As GEMDataset.SETTINGSRow = Me.Dataset.SETTINGS.NewSETTINGSRow
             row.KEY = "CURRENT_USER"
@@ -206,6 +206,15 @@ Public Class GEMDatabase
             mSettingsAdapter.Update(gemdb.Dataset.SETTINGS)
         Else
             sett.VALUE = name
+            mSettingsAdapter.Update(gemdb.Dataset.SETTINGS)
+        End If
+
+        Dim version As GEMDataset.SETTINGSRow = (From proj In gemdb.Dataset.SETTINGS Where proj.KEY = "GEM_VERSION" Select proj).FirstOrDefault
+        If version Is Nothing Then
+            Dim row As GEMDataset.SETTINGSRow = Me.Dataset.SETTINGS.NewSETTINGSRow
+            row.KEY = "GEM_VERSION"
+            row.VALUE = App.VersionString
+            Me.Dataset.SETTINGS.Rows.Add(row)
             mSettingsAdapter.Update(gemdb.Dataset.SETTINGS)
         End If
         RefreshGEMDataTableContents()

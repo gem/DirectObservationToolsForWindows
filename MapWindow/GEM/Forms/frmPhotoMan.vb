@@ -180,5 +180,10 @@ Public Class frmPhotoMan
                 End If
             End If
         End With
+
+        updateMediaTable()
+
     End Sub
+
+
 End Class
