@@ -10,30 +10,115 @@ Public Class frmSync
 
     Private Sub Ok_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Ok.Click
         Try
-            If Me.SourceDatabase.Text = "" Or Me.TargetDatabase.Text = "" Then Exit Sub
-            Call SyncDatabase(Me.SourceDatabase.Text, Me.TargetDatabase.Text)
+            '
+            ' Checks
+            '
+            If Me.TargetDatabase.Text = "" Then Exit Sub
+            '
+            ' Check Folder exists
+            '
+            Dim dirPath As String = IO.Path.GetDirectoryName(Me.TargetDatabase.Text)
+            If (Not Directory.Exists(dirPath)) Then
+                IO.Directory.CreateDirectory(dirPath)
+            End If
+            '
+            ' Check target database does not exist
+            '
+            If (IO.File.Exists(Me.TargetDatabase.Text)) Then
+                MsgBox("Target database already exists")
+                Exit Sub
+            End If
+            '
+            ' Check we have at least two databases
+            '
+            If (Me.SourceDatabases.CheckedItems.Count < 2) Then
+                MsgBox("At least two databases must be selected to merge")
+                Exit Sub
+            End If
+            '
+            ' Copy First Database
+            '
+            IO.File.Copy(SourceDatabases.CheckedItems.Item(0), Me.TargetDatabase.Text)
+            '
+            ' Append the other databases
+            '
+            For i As Integer = 1 To Me.SourceDatabases.CheckedItems.Count - 1
+                Call SyncDatabase(Me.SourceDatabases.CheckedItems.Item(i), Me.TargetDatabase.Text)
+            Next
+            '
+            ' Completion message
+            '
             MessageBox.Show("Export Completed Successfully", "Export Completed", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Me.Dispose()
+
         Catch ex As Exception
             MsgBox(ex.ToString)
         End Try
 
-
-
     End Sub
 
-    Private Sub SourceBrowse_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SourceBrowse.Click
-        With OpenFileDialog1
-            .FileName = ""
-            .Filter = "GEM database files (*.gemdb)|*.gemdb|" & "All files|*.*"
-            If (.ShowDialog() = Windows.Forms.DialogResult.OK) Then
-                Me.SourceDatabase.Text = .FileName
+
+    Private Sub SelectFiles_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SelectFiles.Click
+
+        Dim openFileDialog1 As New OpenFileDialog
+
+        With openFileDialog1
+
+            .Filter = "gemdb files (*.gemdb)|*.gemdb|All files (*.*)|*.*"
+            .FilterIndex = 1
+            .RestoreDirectory = True
+            .Multiselect = True
+
+            If .ShowDialog() = DialogResult.OK Then
+                '
+                ' Add selected file paths to Checked list box
+                '
+                For Each fName As String In openFileDialog1.FileNames
+                    Me.SourceDatabases.Items.Add(fName)
+                Next
+                '
+                ' Check all items by default
+                '
+                For i As Integer = 0 To SourceDatabases.Items.Count - 1
+                    SourceDatabases.SetItemChecked(i, True)
+                Next
             End If
+
         End With
+
     End Sub
 
+    Private Sub SelectFolder_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SelectFolder.Click
+
+        Dim MyFolderBrowser As New System.Windows.Forms.FolderBrowserDialog
+        MyFolderBrowser.Description = "Select the folder containg GEM databases to be merged"
+        MyFolderBrowser.RootFolder = Environment.SpecialFolder.MyComputer
+        If MyFolderBrowser.ShowDialog() = Windows.Forms.DialogResult.OK Then
+
+            Dim diSource As DirectoryInfo = New DirectoryInfo(MyFolderBrowser.SelectedPath)
+
+            For Each fi As FileInfo In diSource.GetFiles("*.gemdb", SearchOption.TopDirectoryOnly)
+                Me.SourceDatabases.Items.Add(fi.FullName)
+            Next
+            '
+            ' Check all items by default
+            '
+            For i As Integer = 0 To SourceDatabases.Items.Count - 1
+                SourceDatabases.SetItemChecked(i, True)
+            Next
+
+        End If
+
+    End Sub
+
+    Private Sub ClearList_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ClearList.Click
+        Me.SourceDatabases.Items.Clear()
+    End Sub
+
+ 
     Private Sub TargetBrowse_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TargetBrowse.Click
-        With OpenFileDialog1
+        Dim SaveFileDialog1 As New SaveFileDialog
+        With SaveFileDialog1
             .FileName = ""
             .Filter = "Gem database files (*.gemdb)|*.gemdb|" & "All files|*.*"
             If (.ShowDialog() = Windows.Forms.DialogResult.OK) Then
@@ -133,8 +218,4 @@ Public Class frmSync
 
     End Sub
 
-
-    Private Sub frmSync_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        Me.Icon = frmMain.Icon
-    End Sub
 End Class

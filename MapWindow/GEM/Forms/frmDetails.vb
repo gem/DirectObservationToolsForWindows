@@ -929,9 +929,8 @@ Public Class frmDetails
     '    '
     'End Sub
 
-
     Private Sub tbSLOPE_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tbSLOPE.TextChanged
-        If tbSLOPE.Text > 360 Then
+        If Val(tbSLOPE.Text) > 90 Then
             MessageBox.Show("Invalid Value")
         End If
     End Sub

@@ -5616,7 +5616,10 @@ Partial Friend Class MapWindowForm
             End If
         Else
             'TODO: what if the tmpfile doesn't exist anymore?!
-            memoryShape = MapMain.get_GetObject(gemLayerID)
+            ' Modified KAMA, uncertian of consequences so needs testing
+            memoryShape = CreateShapefileAndImportData()
+            memoryShape.GeoProjection = Project.GeoProjection
+            ' memoryShape = MapMain.get_GetObject(gemLayerID)
         End If
 
         UpdateButtons()

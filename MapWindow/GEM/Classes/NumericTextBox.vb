@@ -19,7 +19,9 @@
         If IsNumeric(tb.Text) Then
             Exit Sub
         Else
-            tb.Text = ""
+            If (tb.Text <> "") Then
+                tb.Text = Val(tb.Text)
+            End If
         End If
     End Sub
 

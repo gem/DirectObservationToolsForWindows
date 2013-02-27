@@ -6,335 +6,7 @@ mwGPS
 </name>
 </assembly>
 <members>
-<member name="M:mwGPS.frmGPSSettings.frmLogManager_Load(System.Object,System.EventArgs)">
-	<summary>
- A handler to initialize the log manager form when laoding
- </summary>
-	<param name="sender"></param>
-	<param name="e"></param>
-	<remarks></remarks>
-</member><member name="M:mwGPS.frmGPSSettings.btnClose_Click(System.Object,System.EventArgs)">
-	<summary>
- Event handler for closing the form and saving settings
- </summary>
-	<param name="sender"></param>
-	<param name="e"></param>
-	<remarks></remarks>
-</member><member name="M:mwGPS.frmGPSSettings.chkbxSelectAllTrack_CheckedChanged(System.Object,System.EventArgs)">
-	<summary>
- A handler to select all the track setting checkboxes at once
- </summary>
-	<param name="sender"></param>
-	<param name="e"></param>
-	<remarks></remarks>
-</member><member name="M:mwGPS.frmGPSSettings.btnBrowseTrack_Click(System.Object,System.EventArgs)">
-	<summary>
- A handler to browse to a shape file for logging of GPS location tracks
- </summary>
-	<param name="sender"></param>
-	<param name="e"></param>
-	<remarks></remarks>
-</member><member name="M:mwGPS.frmGPSSettings.btnBrowseTrackLine_Click(System.Object,System.EventArgs)">
-	<summary>
- A handler to browse to a shape file for logging of GPS location path lines
- </summary>
-	<param name="sender"></param>
-	<param name="e"></param>
-	<remarks></remarks>
-</member><member name="M:mwGPS.frmGPSSettings.btnBrowseNMEA_Click(System.Object,System.EventArgs)">
-	<summary>
- A handler to browse to a txt file for logging of NMEA sentences
- </summary>
-	<param name="sender"></param>
-	<param name="e"></param>
-	<remarks></remarks>
-</member><member name="M:mwGPS.frmCOMSettings.frmCOMSettings_Load(System.Object,System.EventArgs)">
-	<summary>
- Handler to initialize form settings to current port settings on load
- </summary>
-	<param name="sender"></param>
-	<param name="e"></param>
-	<remarks></remarks>
-</member><member name="M:mwGPS.frmCOMSettings.cmbxBaud_SelectedIndexChanged(System.Object,System.EventArgs)">
-	<summary>
- Handler for the baud being changed
- </summary>
-	<param name="sender"></param>
-	<param name="e"></param>
-	<remarks></remarks>
-</member><member name="M:mwGPS.frmCOMSettings.cmbxPort_SelectedIndexChanged(System.Object,System.EventArgs)">
-	<summary>
- Handler for the port being changed
- </summary>
-	<param name="sender"></param>
-	<param name="e"></param>
-	<remarks></remarks>
-</member><member name="M:mwGPS.frmCOMSettings.btnConnect_Click(System.Object,System.EventArgs)">
-	<summary>
- Handler for the connect button pressed, which tests the connection with current settings
- </summary>
-	<param name="sender"></param>
-	<param name="e"></param>
-	<remarks></remarks>
-</member><member name="M:mwGPS.frmCOMSettings.btnAutoconnect_Click(System.Object,System.EventArgs)">
-	<summary>
- Handler for the autoconnect button, which tries every combination of ports and bauds til it finds a GPS connection or runs out of combinations
- </summary>
-	<param name="sender"></param>
-	<param name="e"></param>
-	<remarks></remarks>
-</member><member name="M:mwGPS.frmCOMSettings.testConnect(System.Boolean)">
-	<summary>
- Function which tests the current connections and captures GPS controller exceptions
- </summary>
-	<param name="showMessage"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:mwGPS.frmCOMSettings.setConnecting">
-	<summary>
- sets the form into a connecting mode
- </summary>
-	<remarks></remarks>
-</member><member name="M:mwGPS.frmCOMSettings.setFinished">
-	<summary>
- Sets the form into a finished mode
- </summary>
-	<remarks></remarks>
-</member><member name="M:mwGPS.Globals.getShapefileFieldByName(MapWinGIS.Shapefile,System.String)">
-	<summary>
- Gets a field index from a shapefile by its name
- </summary>
-	<param name="sf"></param>
-	<param name="currField"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:mwGPS.Globals.getLayerIndexByPath(System.String)">
-	<summary>
- Gets a layer index by a given path
- </summary>
-	<param name="currPath"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:mwGPS.Globals.getLayerPathByName(System.String)">
-	<summary>
- Function used to get a layer path by its name
- </summary>
-	<param name="strName"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:mwGPS.Globals.getLayerNameByPath(System.String)">
-	<summary>
- Function used to get a layer name by its path
- </summary>
-	<param name="strPath"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:mwGPS.Globals.getLayerIndexByName(System.String)">
-	<summary>
- Function used to get a layer index by its name
- </summary>
-	<param name="strName"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:mwGPS.Globals.layerExists(System.String)">
-	<summary>
- Function used to check if a layer of a given path exists
- </summary>
-	<param name="strPath"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:mwGPS.clsGPSController.InitializeCom">
-	<summary>
- A module used to initialize the serial port communications
- </summary>
-	<remarks></remarks>
-</member><member name="M:mwGPS.clsGPSController.TestConnectSettings(System.Boolean)">
-	<summary>
- A function used to test the current COM port settings, with or with exceptions thrown
- </summary>
-	<param name="ThrowExceptions"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:mwGPS.clsGPSController.StartReceiving">
-	<summary>
- A module used to start the GPS communicating with the COM connected GPS unit
- </summary>
-	<remarks></remarks>
-</member><member name="M:mwGPS.clsGPSController.StopReceiving">
-	<summary>
- A module used to stop the GPS communicating with the COM connected GPS unit
- </summary>
-	<remarks></remarks>
-</member><member name="M:mwGPS.clsGPSController.ClosePort">
-	<summary>
- A module used to close the serial port open to the GPS unit
- </summary>
-	<remarks></remarks>
-</member><member name="M:mwGPS.clsGPSController.FeedNmeaFile(System.String,System.Int32)">
-	<summary>
- A module used to spawn a thread which will read a NMEA input text file and force the GPS contoller to act as if it is receiving real GPS data. Used for debugging primarily.
- </summary>
-	<param name="InputPath"></param>
-	<param name="delay"></param>
-	<remarks></remarks>
-</member><member name="M:mwGPS.clsGPSController.FeedNmeaThread">
-	<summary>
- The thread function spawned to feed the NMEA input. Running on a separate thread is the closest to receiving real GPS data
- </summary>
-	<remarks></remarks>
-</member><member name="M:mwGPS.clsGPSController.srlprtGPS_DataReceived(System.Object,System.IO.Ports.SerialDataReceivedEventArgs)">
-	<summary>
- The event handler for the Serial port data received event. Used to drive all processes of the GPS controller
- </summary>
-	<param name="sender"></param>
-	<param name="e"></param>
-	<remarks></remarks>
-</member><member name="M:mwGPS.clsGPSController.parseNMEA(System.String)">
-	<summary>
- A module used to parse NMEA-0183 sentences
- </summary>
-	<param name="currline"></param>
-	<remarks></remarks>
-</member><member name="M:mwGPS.clsGPSController.parseLocAndSpeedRMC(System.String[])">
-	<summary>
- Parses the RMC string for location, bearing, and speed from the GPS
- </summary>
-	<param name="tokens"></param>
-	<remarks></remarks>
-</member><member name="M:mwGPS.clsGPSController.parseActiveSatAndDopGSA(System.String[])">
-	<summary>
- Parses the GSA string for satellite and DOP information
- </summary>
-	<param name="tokens"></param>
-	<remarks></remarks>
-</member><member name="M:mwGPS.clsGPSController.parseFixGGA(System.String[])">
-	<summary>
- Parses the GGA string for fix information
- </summary>
-	<param name="tokens"></param>
-	<remarks></remarks>
-</member><member name="M:mwGPS.clsGPSController.parseSatInfoGSV(System.String[])">
-	<summary>
- Parses the GSV string for satellite positions and signal
- </summary>
-	<param name="tokens"></param>
-	<remarks></remarks>
-</member><member name="M:mwGPS.frmDisplayGPS.frmDisplayNmea_Load(System.Object,System.EventArgs)">
-	<summary>
- Handler to intitiailize the form when loading
- </summary>
-	<param name="sender"></param>
-	<param name="e"></param>
-	<remarks></remarks>
-</member><member name="M:mwGPS.frmDisplayGPS.frmDisplayNmea_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
-	<summary>
- Handler to close off the gps com handlers and clean up after simulated input
- </summary>
-	<param name="sender"></param>
-	<param name="e"></param>
-	<remarks></remarks>
-</member><member name="M:mwGPS.frmDisplayGPS.btnFeedFile_Click(System.Object,System.EventArgs)">
-	<summary>
- Handler to a button which only shows in debug, that allows the feeding of a NMEA log text file for simulated GPS data
- </summary>
-	<param name="sender"></param>
-	<param name="e"></param>
-	<remarks></remarks>
-</member><member name="M:mwGPS.frmDisplayGPS.btnClose_Click(System.Object,System.EventArgs)">
-	<summary>
- Handler for close button
- </summary>
-	<param name="sender"></param>
-	<param name="e"></param>
-	<remarks></remarks>
-</member><member name="M:mwGPS.frmDisplayGPS.tbctrlTabs_SelectedIndexChanged(System.Object,System.EventArgs)">
-	<summary>
- handler for changing the selected tabs. Generally used to force redraw of dynamic elements 
- </summary>
-	<param name="sender"></param>
-	<param name="e"></param>
-	<remarks></remarks>
-</member><member name="M:mwGPS.frmDisplayGPS.chkbxShowBorder_CheckedChanged(System.Object,System.EventArgs)">
-	<summary>
- Handler for the lock window checkbox that gets rid of the border or returns it
- </summary>
-	<param name="sender"></param>
-	<param name="e"></param>
-	<remarks></remarks>
-</member><member name="M:mwGPS.frmDisplayGPS.chkbxCompassMode_CheckedChanged(System.Object,System.EventArgs)">
-	<summary>
- Handler for the Compass mode that compresses the form to show only the GPS compass or returns it to normal
- </summary>
-	<param name="sender"></param>
-	<param name="e"></param>
-	<remarks></remarks>
-</member><member name="M:mwGPS.frmDisplayGPS.GPSControllerNMEASentenceReceived(System.String)">
-	<summary>
- Handler which captures NMEA sentence updates from the GPS controller
- </summary>
-	<param name="Sentence"></param>
-	<remarks></remarks>
-</member><member name="M:mwGPS.frmDisplayGPS.GPSControllerBasicInfoUpdated">
-	<summary>
- Handler which captures Basic info updates from the GPS controller
- </summary>
-	<remarks></remarks>
-</member><member name="M:mwGPS.frmDisplayGPS.GPSControllerSatInfoFound(System.Int32,System.String[],System.String[],System.String[],System.String[])">
-	<summary>
- Handler which handles sat info updates from the GPS controller
- </summary>
-	<param name="CurrSequence"></param>
-	<param name="SatsID"></param>
-	<param name="SatsAzi"></param>
-	<param name="SatsElev"></param>
-	<param name="SatsSNR"></param>
-	<remarks></remarks>
-</member><member name="M:mwGPS.frmDisplayGPS.HandleNMEAThread(System.String)">
-	<summary>
- Module which handles the display of NMEA sentences in the listbox if on that tab
- </summary>
-	<param name="Sentence"></param>
-	<remarks></remarks>
-</member><member name="M:mwGPS.frmDisplayGPS.HandleBasicInfoUpdated">
-	<summary>
- Module which handles the basic label updates on the main tab
- </summary>
-	<remarks></remarks>
-</member><member name="M:mwGPS.frmDisplayGPS.drawArrow(System.Double)">
-	<summary>
- Module which handles the drawing of the compass arrow when on the main tab
- </summary>
-	<param name="Bearing"></param>
-	<remarks></remarks>
-</member><member name="M:mwGPS.frmDisplayGPS.HandleSatInfoThread(System.Int32,System.String[],System.String[],System.String[],System.String[])">
-	<summary>
- Module which handles labels and display when on the satellite tab
- </summary>
-	<param name="CurrSequence"></param>
-	<param name="SatsID"></param>
-	<param name="SatsAzi"></param>
-	<param name="SatsElev"></param>
-	<param name="SatsSNR"></param>
-	<remarks></remarks>
-</member><member name="M:mwGPS.frmDisplayGPS.drawSatData">
-	<summary>
- Module which handles drawing of the satellite position and signal to noise graphs
- </summary>
-	<remarks></remarks>
-</member><member name="P:mwGPS.My.Resources.Resources.ResourceManager">
-	<summary>
-  Returns the cached ResourceManager instance used by this class.
-</summary>
-</member><member name="P:mwGPS.My.Resources.Resources.Culture">
-	<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
-</summary>
-</member><member name="T:mwGPS.My.Resources.Resources">
-	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
-</summary>
-</member><member name="M:mwGPS.mwGPS.Initialize(MapWindow.Interfaces.IMapWin,System.Int32)">
+<member name="M:mwGPS.mwGPS.Initialize(MapWindow.Interfaces.IMapWin,System.Int32)">
 	<summary>
  Event triggered on execution of the plugin
  </summary>
@@ -487,6 +159,334 @@ mwGPS
 	<summary>
  A public function allowing another plugin or code to obtain the GPS controller object created in this plugin so that they can access the same COM-driven events raised by it.
  </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mwGPS.frmCOMSettings.frmCOMSettings_Load(System.Object,System.EventArgs)">
+	<summary>
+ Handler to initialize form settings to current port settings on load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:mwGPS.frmCOMSettings.cmbxBaud_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ Handler for the baud being changed
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:mwGPS.frmCOMSettings.cmbxPort_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ Handler for the port being changed
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:mwGPS.frmCOMSettings.btnConnect_Click(System.Object,System.EventArgs)">
+	<summary>
+ Handler for the connect button pressed, which tests the connection with current settings
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:mwGPS.frmCOMSettings.btnAutoconnect_Click(System.Object,System.EventArgs)">
+	<summary>
+ Handler for the autoconnect button, which tries every combination of ports and bauds til it finds a GPS connection or runs out of combinations
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:mwGPS.frmCOMSettings.testConnect(System.Boolean)">
+	<summary>
+ Function which tests the current connections and captures GPS controller exceptions
+ </summary>
+	<param name="showMessage"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mwGPS.frmCOMSettings.setConnecting">
+	<summary>
+ sets the form into a connecting mode
+ </summary>
+	<remarks></remarks>
+</member><member name="M:mwGPS.frmCOMSettings.setFinished">
+	<summary>
+ Sets the form into a finished mode
+ </summary>
+	<remarks></remarks>
+</member><member name="M:mwGPS.frmDisplayGPS.frmDisplayNmea_Load(System.Object,System.EventArgs)">
+	<summary>
+ Handler to intitiailize the form when loading
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:mwGPS.frmDisplayGPS.frmDisplayNmea_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+	<summary>
+ Handler to close off the gps com handlers and clean up after simulated input
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:mwGPS.frmDisplayGPS.btnFeedFile_Click(System.Object,System.EventArgs)">
+	<summary>
+ Handler to a button which only shows in debug, that allows the feeding of a NMEA log text file for simulated GPS data
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:mwGPS.frmDisplayGPS.btnClose_Click(System.Object,System.EventArgs)">
+	<summary>
+ Handler for close button
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:mwGPS.frmDisplayGPS.tbctrlTabs_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ handler for changing the selected tabs. Generally used to force redraw of dynamic elements 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:mwGPS.frmDisplayGPS.chkbxShowBorder_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ Handler for the lock window checkbox that gets rid of the border or returns it
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:mwGPS.frmDisplayGPS.chkbxCompassMode_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ Handler for the Compass mode that compresses the form to show only the GPS compass or returns it to normal
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:mwGPS.frmDisplayGPS.GPSControllerNMEASentenceReceived(System.String)">
+	<summary>
+ Handler which captures NMEA sentence updates from the GPS controller
+ </summary>
+	<param name="Sentence"></param>
+	<remarks></remarks>
+</member><member name="M:mwGPS.frmDisplayGPS.GPSControllerBasicInfoUpdated">
+	<summary>
+ Handler which captures Basic info updates from the GPS controller
+ </summary>
+	<remarks></remarks>
+</member><member name="M:mwGPS.frmDisplayGPS.GPSControllerSatInfoFound(System.Int32,System.String[],System.String[],System.String[],System.String[])">
+	<summary>
+ Handler which handles sat info updates from the GPS controller
+ </summary>
+	<param name="CurrSequence"></param>
+	<param name="SatsID"></param>
+	<param name="SatsAzi"></param>
+	<param name="SatsElev"></param>
+	<param name="SatsSNR"></param>
+	<remarks></remarks>
+</member><member name="M:mwGPS.frmDisplayGPS.HandleNMEAThread(System.String)">
+	<summary>
+ Module which handles the display of NMEA sentences in the listbox if on that tab
+ </summary>
+	<param name="Sentence"></param>
+	<remarks></remarks>
+</member><member name="M:mwGPS.frmDisplayGPS.HandleBasicInfoUpdated">
+	<summary>
+ Module which handles the basic label updates on the main tab
+ </summary>
+	<remarks></remarks>
+</member><member name="M:mwGPS.frmDisplayGPS.drawArrow(System.Double)">
+	<summary>
+ Module which handles the drawing of the compass arrow when on the main tab
+ </summary>
+	<param name="Bearing"></param>
+	<remarks></remarks>
+</member><member name="M:mwGPS.frmDisplayGPS.HandleSatInfoThread(System.Int32,System.String[],System.String[],System.String[],System.String[])">
+	<summary>
+ Module which handles labels and display when on the satellite tab
+ </summary>
+	<param name="CurrSequence"></param>
+	<param name="SatsID"></param>
+	<param name="SatsAzi"></param>
+	<param name="SatsElev"></param>
+	<param name="SatsSNR"></param>
+	<remarks></remarks>
+</member><member name="M:mwGPS.frmDisplayGPS.drawSatData">
+	<summary>
+ Module which handles drawing of the satellite position and signal to noise graphs
+ </summary>
+	<remarks></remarks>
+</member><member name="P:mwGPS.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:mwGPS.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:mwGPS.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:mwGPS.clsGPSController.InitializeCom">
+	<summary>
+ A module used to initialize the serial port communications
+ </summary>
+	<remarks></remarks>
+</member><member name="M:mwGPS.clsGPSController.TestConnectSettings(System.Boolean)">
+	<summary>
+ A function used to test the current COM port settings, with or with exceptions thrown
+ </summary>
+	<param name="ThrowExceptions"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mwGPS.clsGPSController.StartReceiving">
+	<summary>
+ A module used to start the GPS communicating with the COM connected GPS unit
+ </summary>
+	<remarks></remarks>
+</member><member name="M:mwGPS.clsGPSController.StopReceiving">
+	<summary>
+ A module used to stop the GPS communicating with the COM connected GPS unit
+ </summary>
+	<remarks></remarks>
+</member><member name="M:mwGPS.clsGPSController.ClosePort">
+	<summary>
+ A module used to close the serial port open to the GPS unit
+ </summary>
+	<remarks></remarks>
+</member><member name="M:mwGPS.clsGPSController.FeedNmeaFile(System.String,System.Int32)">
+	<summary>
+ A module used to spawn a thread which will read a NMEA input text file and force the GPS contoller to act as if it is receiving real GPS data. Used for debugging primarily.
+ </summary>
+	<param name="InputPath"></param>
+	<param name="delay"></param>
+	<remarks></remarks>
+</member><member name="M:mwGPS.clsGPSController.FeedNmeaThread">
+	<summary>
+ The thread function spawned to feed the NMEA input. Running on a separate thread is the closest to receiving real GPS data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:mwGPS.clsGPSController.srlprtGPS_DataReceived(System.Object,System.IO.Ports.SerialDataReceivedEventArgs)">
+	<summary>
+ The event handler for the Serial port data received event. Used to drive all processes of the GPS controller
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:mwGPS.clsGPSController.parseNMEA(System.String)">
+	<summary>
+ A module used to parse NMEA-0183 sentences
+ </summary>
+	<param name="currline"></param>
+	<remarks></remarks>
+</member><member name="M:mwGPS.clsGPSController.parseLocAndSpeedRMC(System.String[])">
+	<summary>
+ Parses the RMC string for location, bearing, and speed from the GPS
+ </summary>
+	<param name="tokens"></param>
+	<remarks></remarks>
+</member><member name="M:mwGPS.clsGPSController.parseActiveSatAndDopGSA(System.String[])">
+	<summary>
+ Parses the GSA string for satellite and DOP information
+ </summary>
+	<param name="tokens"></param>
+	<remarks></remarks>
+</member><member name="M:mwGPS.clsGPSController.parseFixGGA(System.String[])">
+	<summary>
+ Parses the GGA string for fix information
+ </summary>
+	<param name="tokens"></param>
+	<remarks></remarks>
+</member><member name="M:mwGPS.clsGPSController.parseSatInfoGSV(System.String[])">
+	<summary>
+ Parses the GSV string for satellite positions and signal
+ </summary>
+	<param name="tokens"></param>
+	<remarks></remarks>
+</member><member name="M:mwGPS.frmGPSSettings.frmLogManager_Load(System.Object,System.EventArgs)">
+	<summary>
+ A handler to initialize the log manager form when laoding
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:mwGPS.frmGPSSettings.btnClose_Click(System.Object,System.EventArgs)">
+	<summary>
+ Event handler for closing the form and saving settings
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:mwGPS.frmGPSSettings.chkbxSelectAllTrack_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ A handler to select all the track setting checkboxes at once
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:mwGPS.frmGPSSettings.btnBrowseTrack_Click(System.Object,System.EventArgs)">
+	<summary>
+ A handler to browse to a shape file for logging of GPS location tracks
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:mwGPS.frmGPSSettings.btnBrowseTrackLine_Click(System.Object,System.EventArgs)">
+	<summary>
+ A handler to browse to a shape file for logging of GPS location path lines
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:mwGPS.frmGPSSettings.btnBrowseNMEA_Click(System.Object,System.EventArgs)">
+	<summary>
+ A handler to browse to a txt file for logging of NMEA sentences
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:mwGPS.Globals.getShapefileFieldByName(MapWinGIS.Shapefile,System.String)">
+	<summary>
+ Gets a field index from a shapefile by its name
+ </summary>
+	<param name="sf"></param>
+	<param name="currField"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mwGPS.Globals.getLayerIndexByPath(System.String)">
+	<summary>
+ Gets a layer index by a given path
+ </summary>
+	<param name="currPath"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mwGPS.Globals.getLayerPathByName(System.String)">
+	<summary>
+ Function used to get a layer path by its name
+ </summary>
+	<param name="strName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mwGPS.Globals.getLayerNameByPath(System.String)">
+	<summary>
+ Function used to get a layer name by its path
+ </summary>
+	<param name="strPath"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mwGPS.Globals.getLayerIndexByName(System.String)">
+	<summary>
+ Function used to get a layer index by its name
+ </summary>
+	<param name="strName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mwGPS.Globals.layerExists(System.String)">
+	<summary>
+ Function used to check if a layer of a given path exists
+ </summary>
+	<param name="strPath"></param>
 	<returns></returns>
 	<remarks></remarks>
 </member>

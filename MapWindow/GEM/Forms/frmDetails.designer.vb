@@ -2535,6 +2535,7 @@ Partial Class frmDetails
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange
         Me.ClientSize = New System.Drawing.Size(822, 653)
         Me.Controls.Add(Me.btDeleteRecord)
         Me.Controls.Add(Me.btCancelChanges)
