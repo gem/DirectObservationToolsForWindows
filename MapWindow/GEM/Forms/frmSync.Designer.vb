@@ -35,14 +35,18 @@ Partial Class frmSync
         Me.SourceDatabases = New System.Windows.Forms.CheckedListBox()
         Me.SelectFolder = New System.Windows.Forms.Button()
         Me.ClearList = New System.Windows.Forms.Button()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.SourceProject = New System.Windows.Forms.ComboBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TargetDatabase
         '
         Me.TargetDatabase.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TargetDatabase.Location = New System.Drawing.Point(80, 238)
+        Me.TargetDatabase.Location = New System.Drawing.Point(80, 300)
         Me.TargetDatabase.Name = "TargetDatabase"
         Me.TargetDatabase.Size = New System.Drawing.Size(444, 22)
         Me.TargetDatabase.TabIndex = 1
@@ -60,7 +64,7 @@ Partial Class frmSync
         'TargetBrowse
         '
         Me.TargetBrowse.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TargetBrowse.Location = New System.Drawing.Point(530, 238)
+        Me.TargetBrowse.Location = New System.Drawing.Point(530, 300)
         Me.TargetBrowse.Name = "TargetBrowse"
         Me.TargetBrowse.Size = New System.Drawing.Size(109, 24)
         Me.TargetBrowse.TabIndex = 5
@@ -70,7 +74,7 @@ Partial Class frmSync
         'Cancel
         '
         Me.Cancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Cancel.Location = New System.Drawing.Point(415, 293)
+        Me.Cancel.Location = New System.Drawing.Point(415, 350)
         Me.Cancel.Name = "Cancel"
         Me.Cancel.Size = New System.Drawing.Size(109, 24)
         Me.Cancel.TabIndex = 6
@@ -80,7 +84,7 @@ Partial Class frmSync
         'Ok
         '
         Me.Ok.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Ok.Location = New System.Drawing.Point(530, 293)
+        Me.Ok.Location = New System.Drawing.Point(530, 350)
         Me.Ok.Name = "Ok"
         Me.Ok.Size = New System.Drawing.Size(109, 24)
         Me.Ok.TabIndex = 7
@@ -99,7 +103,7 @@ Partial Class frmSync
         'PictureBox4
         '
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(23, 212)
+        Me.PictureBox4.Location = New System.Drawing.Point(23, 274)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox4.TabIndex = 21
@@ -109,7 +113,7 @@ Partial Class frmSync
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(77, 212)
+        Me.Label3.Location = New System.Drawing.Point(77, 274)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(182, 16)
         Me.Label3.TabIndex = 16
@@ -154,11 +158,41 @@ Partial Class frmSync
         Me.ClearList.Text = "Clear List"
         Me.ClearList.UseVisualStyleBackColor = True
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(23, 198)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(48, 48)
+        Me.PictureBox2.TabIndex = 28
+        Me.PictureBox2.TabStop = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(77, 198)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(132, 16)
+        Me.Label1.TabIndex = 27
+        Me.Label1.Text = "Source GEM Project:"
+        '
+        'SourceProject
+        '
+        Me.SourceProject.FormattingEnabled = True
+        Me.SourceProject.Location = New System.Drawing.Point(80, 225)
+        Me.SourceProject.Name = "SourceProject"
+        Me.SourceProject.Size = New System.Drawing.Size(444, 21)
+        Me.SourceProject.TabIndex = 29
+        '
         'frmSync
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(664, 340)
+        Me.ClientSize = New System.Drawing.Size(652, 399)
+        Me.Controls.Add(Me.SourceProject)
+        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ClearList)
         Me.Controls.Add(Me.SelectFolder)
         Me.Controls.Add(Me.SourceDatabases)
@@ -179,6 +213,7 @@ Partial Class frmSync
         Me.Text = "Merge GEM Databases"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -195,4 +230,7 @@ Partial Class frmSync
     Friend WithEvents SourceDatabases As System.Windows.Forms.CheckedListBox
     Friend WithEvents SelectFolder As System.Windows.Forms.Button
     Friend WithEvents ClearList As System.Windows.Forms.Button
+    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents SourceProject As System.Windows.Forms.ComboBox
 End Class

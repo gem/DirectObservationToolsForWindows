@@ -11,6 +11,11 @@ Public Class frmSync
     Private Sub Ok_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Ok.Click
         Try
             '
+            ' Name: Ok_Click
+            ' Purpose: To Merge multiple GEM Projects
+            ' Written: K.Adlam, 2013
+            '
+            '
             ' Checks
             '
             If Me.TargetDatabase.Text = "" Then Exit Sub
@@ -20,6 +25,12 @@ Public Class frmSync
             Dim dirPath As String = IO.Path.GetDirectoryName(Me.TargetDatabase.Text)
             If (Not Directory.Exists(dirPath)) Then
                 IO.Directory.CreateDirectory(dirPath)
+            End If
+            '
+            ' Check Target database has correct extension
+            '
+            If (IO.Path.GetExtension(Me.TargetDatabase.Text) <> ".gemdb") Then
+                Me.TargetDatabase.Text = IO.Path.ChangeExtension(Me.TargetDatabase.Text, ".gemdb")
             End If
             '
             ' Check target database does not exist
@@ -46,6 +57,10 @@ Public Class frmSync
                 Call SyncDatabase(Me.SourceDatabases.CheckedItems.Item(i), Me.TargetDatabase.Text)
             Next
             '
+            ' Copy Project file
+            '
+            IO.File.Copy(Me.SourceProject.Text, IO.Path.ChangeExtension(Me.TargetDatabase.Text, ".gemprj"))
+            '
             ' Completion message
             '
             MessageBox.Show("Export Completed Successfully", "Export Completed", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -59,7 +74,12 @@ Public Class frmSync
 
 
     Private Sub SelectFiles_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SelectFiles.Click
-
+        '
+        ' Name: SelectFiles_Click
+        ' Purpose: To allow the user to select GEM database from the file system and add them to
+        '          the source database list
+        ' Written: K.Adlam, 2013
+        '
         Dim openFileDialog1 As New OpenFileDialog
 
         With openFileDialog1
@@ -71,11 +91,21 @@ Public Class frmSync
 
             If .ShowDialog() = DialogResult.OK Then
                 '
-                ' Add selected file paths to Checked list box
+                ' Add selected file paths to Checked list box 
+                ' and associated project files to Combobox
                 '
                 For Each fName As String In openFileDialog1.FileNames
                     Me.SourceDatabases.Items.Add(fName)
+                    If (IO.File.Exists(IO.Path.ChangeExtension(fName, ".gemprj"))) Then
+                        Me.SourceProject.Items.Add(IO.Path.ChangeExtension(fName, ".gemprj"))
+                    End If
                 Next
+                '
+                ' Default Source Project
+                '
+                If (Me.SourceProject.Items.Count > 0) Then
+                    Me.SourceProject.Text = Me.SourceProject.Items.Item(0)
+                End If
                 '
                 ' Check all items by default
                 '
@@ -89,17 +119,34 @@ Public Class frmSync
     End Sub
 
     Private Sub SelectFolder_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SelectFolder.Click
-
+        '
+        ' Name: SelectFolder_Click
+        ' Purpose: To allow the user to select a folder containing GEM databases and add them to
+        '           the source database list
+        ' Written: K.Adlam, 2013
+        '
         Dim MyFolderBrowser As New System.Windows.Forms.FolderBrowserDialog
         MyFolderBrowser.Description = "Select the folder containg GEM databases to be merged"
         MyFolderBrowser.RootFolder = Environment.SpecialFolder.MyComputer
         If MyFolderBrowser.ShowDialog() = Windows.Forms.DialogResult.OK Then
 
             Dim diSource As DirectoryInfo = New DirectoryInfo(MyFolderBrowser.SelectedPath)
-
+            '
+            ' Add selected file paths to Checked list box 
+            ' and associated project files to Combobox
+            '
             For Each fi As FileInfo In diSource.GetFiles("*.gemdb", SearchOption.TopDirectoryOnly)
                 Me.SourceDatabases.Items.Add(fi.FullName)
+                If (IO.File.Exists(IO.Path.ChangeExtension(fi.FullName, ".gemprj"))) Then
+                    Me.SourceProject.Items.Add(IO.Path.ChangeExtension(fi.FullName, ".gemprj"))
+                End If
             Next
+            '
+            ' Default Source Project
+            '
+            If (Me.SourceProject.Items.Count > 0) Then
+                Me.SourceProject.Text = Me.SourceProject.Items.Item(0)
+            End If
             '
             ' Check all items by default
             '
@@ -113,6 +160,7 @@ Public Class frmSync
 
     Private Sub ClearList_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ClearList.Click
         Me.SourceDatabases.Items.Clear()
+        Me.SourceProject.Items.Clear()
     End Sub
 
  
@@ -189,6 +237,11 @@ Public Class frmSync
     End Sub
 
     Sub Sync(ByVal SQLcommand As SQLiteCommand)
+        '
+        ' Name: Sync
+        ' Purpose: To synchronize specified tables
+        ' Written: K.Adlam, 2013
+        '
         Call SyncTable(SQLcommand, "GEM_PROJECT", "PROJ_UID")
         Call SyncTable(SQLcommand, "GEM_OBJECT", "OBJ_UID")
         Call SyncTable(SQLcommand, "MEDIA_DETAIL", "MEDIA_UID")
@@ -197,7 +250,11 @@ Public Class frmSync
     End Sub
 
     Sub SyncTable(ByVal SQLcommand As SQLiteCommand, ByVal strTable As String, ByVal strKeyField As String)
-
+        '
+        ' Name: SyncTable
+        ' Purpose: To synchronize a table
+        ' Written: K.Adlam, 2013
+        '
         Dim strSql As String = _
         "DELETE FROM MAIN." & strTable & " WHERE MAIN." & strTable & "." & strKeyField & _
         " IN (SELECT SOURCE." & strTable & "." & strKeyField & " FROM SOURCE." & strTable & _
