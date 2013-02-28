@@ -61,6 +61,20 @@ Public Class frmSync
             '
             IO.File.Copy(Me.SourceProject.Text, IO.Path.ChangeExtension(Me.TargetDatabase.Text, ".gemprj"))
             '
+            ' Create media Folder
+            '
+            Dim strFile As String = IO.Path.GetFileNameWithoutExtension(Me.TargetDatabase.Text) & "_gemmedia"
+            Dim mediaDir As String = IO.Path.Combine(dirPath, strFile)
+            If (Not Directory.Exists(mediaDir)) Then
+                IO.Directory.CreateDirectory(mediaDir)
+            End If
+            '
+            ' Copy media files from separate Gem media folders into the target media folder
+            '
+            For i As Integer = 0 To Me.SourceDatabases.CheckedItems.Count - 1
+                Call CopyMediaFiles(Me.SourceDatabases.CheckedItems.Item(i), mediaDir)
+            Next
+            '
             ' Completion message
             '
             MessageBox.Show("Export Completed Successfully", "Export Completed", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -72,6 +86,33 @@ Public Class frmSync
 
     End Sub
 
+
+    Private Sub CopyMediaFiles(ByVal strSourceDatabase As String, ByVal strTargetFolder As String)
+        '
+        ' Name: CopyMediaFiles
+        ' Purpose: To copy media files from separate projects to target media folder
+        ' Written: K.Adlam, 26/2/2013
+        '
+        '
+        ' Get media folder for source database
+        '
+        Dim dirPath As String = IO.Path.GetDirectoryName(strSourceDatabase)
+        Dim strFolder As String = IO.Path.GetFileNameWithoutExtension(strSourceDatabase) & "_gemmedia"
+        Dim mediaDir As String = IO.Path.Combine(dirPath, strFolder)
+        '
+        ' Copy files from source to target
+        '
+        Dim di As DirectoryInfo = New DirectoryInfo(mediaDir)
+
+        For Each fi As FileInfo In di.GetFiles
+            Dim strFile As String = IO.Path.GetFileName(fi.FullName)
+            Dim targetFile As String = IO.Path.Combine(strTargetFolder, strFile)
+            If (Not IO.File.Exists(targetFile)) Then
+                IO.File.Copy(fi.FullName, targetFile)
+            End If
+        Next
+
+    End Sub
 
     Private Sub SelectFiles_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SelectFiles.Click
         '
@@ -163,7 +204,7 @@ Public Class frmSync
         Me.SourceProject.Items.Clear()
     End Sub
 
- 
+
     Private Sub TargetBrowse_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TargetBrowse.Click
         Dim SaveFileDialog1 As New SaveFileDialog
         With SaveFileDialog1

@@ -798,7 +798,7 @@ Public Class frmDetails
                             Exit Sub
                         End If
                     End If
-
+                    '##TODO Folder may not exist
                     IO.File.Copy(.FileName, newFilepath, True)
                     currentrow.ORIG_FILEN = .FileName
                     currentrow.FILENAME = newFilepathShort
