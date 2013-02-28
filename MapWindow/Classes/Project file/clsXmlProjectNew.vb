@@ -440,6 +440,15 @@ Partial Friend Class XmlProjectFile
     Private Function AddLayerFromPath(ByVal filepath As String, ByVal name As String, Optional ByVal ExistingLayerHandle As Integer = -1) As Integer
         Dim handle As Integer = -1
         Try
+            '
+            ' If Layer is GEM Observations then create a new shapefile from the database
+            ' and set layer to point at new shapefile
+            '
+            If name = "GEM Observations" Then
+                memoryShape = frmMain.CreateShapefileAndImportData()
+                filepath = memoryshape.Filename
+            End If
+
             'If ExistingLayerHandle = -1 Then
             'the order is specified by project file
             If (System.IO.File.Exists(filepath) = False) Then

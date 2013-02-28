@@ -64,7 +64,6 @@ Module modMain
     '''  Entry point for MapWindow 
     ''' </summary>
     Public Sub Main()
-
         Dim identity = WindowsIdentity.GetCurrent()
         Dim principal = New WindowsPrincipal(identity)
         Dim isElevated As Boolean = principal.IsInRole(WindowsBuiltInRole.Administrator)
@@ -468,12 +467,17 @@ Module modMain
                     ' End modification, Paul Meems, 23 Oct 2009
                     AppInfo.DefaultDir = System.IO.Path.GetDirectoryName(CommandLine)
                     ProjInfo.ProjectFileName = CommandLine
+                    '
+                    ' Create GEM database
+                    '
+                    gemdb = New GEMDatabase(System.IO.Path.ChangeExtension(ProjInfo.ProjectFileName, ".gemdb"))
+
                     If Not ProjInfo.LoadProject(CommandLine) Then
                         ' Paul Meems 10 Aug 2010: moved error box to here from LoadProject():
                         ' TODO Needs localization:
                         MapWinUtility.Logger.Msg("Errors occured while opening this project file", MsgBoxStyle.Exclamation, "Project File Error Report")
                     End If
-
+ 
                 ElseIf Not ext = "" And Not grd.CdlgFilter().IndexOf(ext) = -1 Then
                     'This is a layer that's supported by our Grid object. cdm 12-21-2005
                     AppInfo.DefaultDir = System.IO.Path.GetDirectoryName(CommandLine)

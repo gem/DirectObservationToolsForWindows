@@ -2486,9 +2486,8 @@ Partial Friend Class XmlProjectFile
 
         If displayName = "GEM Observations" Then
             'If the tmp shapefile is missing create a new one
-            Dim shp As MapWinGIS.Shapefile = frmMain.CreateShapefileAndImportData()
-            filePath = shp.Filename
-            shp = Nothing
+            memoryShape = frmMain.CreateShapefileAndImportData()
+            filePath = memoryShape.Filename
             Return True
         End If
 

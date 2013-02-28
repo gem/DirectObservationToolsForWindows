@@ -5608,7 +5608,6 @@ Partial Friend Class MapWindowForm
         If gemLayerID = -1 Then
             'GEM Layer not found so load a new one
             memoryShape = CreateShapefileAndImportData()
-            memoryShape.GeoProjection = Project.GeoProjection
             m_layers.AddLayer(memoryShape, "GEM Observations")
             gemLayerID = GetGEMLayerID()
             If gemLayerID <> -1 Then
@@ -5616,10 +5615,7 @@ Partial Friend Class MapWindowForm
             End If
         Else
             'TODO: what if the tmpfile doesn't exist anymore?!
-            ' Modified KAMA, uncertian of consequences so needs testing
-            memoryShape = CreateShapefileAndImportData()
-            memoryShape.GeoProjection = Project.GeoProjection
-            ' memoryShape = MapMain.get_GetObject(gemLayerID)
+            memoryShape = MapMain.get_GetObject(gemLayerID)
         End If
 
         UpdateButtons()
@@ -5649,16 +5645,18 @@ Partial Friend Class MapWindowForm
         '
         ' Create point shapefile (now temp shapefile as memory shapefile caused issues with attribute editor
         '
-        Dim tempShapefile As String = IO.Path.GetTempFileName()
-        tempShapefile = IO.Path.ChangeExtension(tempShapefile, ".shp")
+        Dim tempShapefile As String = IO.Path.Combine(IO.Path.GetTempPath, "gem_temp.shp")
+        If (Not DeleteShapefile(tempShapefile)) Then ' In case of failure to delete
+            tempShapefile = IO.Path.GetTempFileName()
+            tempShapefile = IO.Path.ChangeExtension(tempShapefile, ".shp")
+        End If
         '
         ' Create new shapefile
         '
         memoryShape = New MapWinGIS.Shapefile
         memoryShape.CreateNew(tempShapefile, MapWinGIS.ShpfileType.SHP_POINT)
-        'Dim proj As MapWinGIS.GeoProjection = New MapWinGIS.GeoProjection
-        'proj.ImportFromEPSG(4326)
         memoryShape.GeoProjection = ProjInfo.GeoProjection
+        'memoryShape.GeoProjection = Project.GeoProjection
 
 
         'memoryShape.FastMode = True
@@ -5679,7 +5677,7 @@ Partial Friend Class MapWindowForm
             '
             ' Loop through the GEM objects
             '
-            Dim irow As Long = 0
+            Dim irow As Integer = 0
             For Each row As GEMDataset.GEM_OBJECTRow In gemdb.Dataset.GEM_OBJECT
                 Dim shp As MapWinGIS.Shape = MakePointShape(row.X, row.Y)
                 memoryShape.EditInsertShape(shp, memoryShape.NumShapes) 'Insert shape
@@ -5697,12 +5695,31 @@ Partial Friend Class MapWindowForm
             '
             memoryShape.StopEditingShapes(True, True)
 
+
         Catch ex As Exception
             MsgBox(ex.ToString)
         End Try
 
+
         Return memoryShape
         '
+    End Function
+
+    Function DeleteShapefile(ByVal strPath As String) As Boolean
+
+        Try
+            Dim strDirectory As String = IO.Path.GetDirectoryName(strPath)
+            Dim strFile As String = IO.Path.GetFileNameWithoutExtension(strPath)
+            Dim di As IO.DirectoryInfo = New DirectoryInfo(strDirectory)
+            For Each fi As FileInfo In di.GetFiles(strFile & ".*", SearchOption.TopDirectoryOnly)
+                IO.File.Delete(fi.FullName)
+            Next
+            Return True
+        Catch ex As Exception
+            Return False
+        End Try
+
+
     End Function
 
     'Public Sub Modify_GEM_Object_Feature_To_Shapefile(ByVal strObjectUid As String)
