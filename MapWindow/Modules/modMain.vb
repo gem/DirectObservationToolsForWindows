@@ -256,8 +256,14 @@ Module modMain
                 Debug.WriteLine("Failed to delete temp file: " & s & " " & e.Message)
             End Try
         Next
+        '
+        ' Delete temp GEM shapefile
+        '
+        memoryShape = Nothing
+        GC.Collect()
+        GC.WaitForPendingFinalizers()
+        DeleteShapefile(tempShapeFile) ' End GEM
 
-        DeleteShapefile(tempShapeFile) ' GEM
         g_KillList.Clear()
 
         'Show a survey on the first run if the user has elected to take it.
