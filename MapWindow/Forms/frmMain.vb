@@ -5645,11 +5645,14 @@ Partial Friend Class MapWindowForm
         '
         ' Create point shapefile (now temp shapefile as memory shapefile caused issues with attribute editor
         '
-        Dim tempShapefile As String = IO.Path.Combine(IO.Path.GetTempPath, "gem_temp.shp")
-        If (Not DeleteShapefile(tempShapefile)) Then ' In case of failure to delete
-            tempShapefile = IO.Path.GetTempFileName()
-            tempShapefile = IO.Path.ChangeExtension(tempShapefile, ".shp")
-        End If
+        'Dim tempShapefile As String = IO.Path.Combine(IO.Path.GetTempPath, "gem_temp.shp")
+        'If (Not DeleteShapefile(tempShapefile)) Then ' In case of failure to delete
+        '    tempShapefile = IO.Path.GetTempFileName()
+        '    tempShapefile = IO.Path.ChangeExtension(tempShapefile, ".shp")
+        'End If
+
+        tempShapeFile = IO.Path.Combine(IO.Path.GetTempPath, IO.Path.GetRandomFileName)
+        tempShapeFile = IO.Path.ChangeExtension(tempShapeFile, ".shp")
         '
         ' Create new shapefile
         '
@@ -5705,22 +5708,22 @@ Partial Friend Class MapWindowForm
         '
     End Function
 
-    Function DeleteShapefile(ByVal strPath As String) As Boolean
+    'Private Function DeleteShapefile(ByVal strPath As String) As Boolean
 
-        Try
-            Dim strDirectory As String = IO.Path.GetDirectoryName(strPath)
-            Dim strFile As String = IO.Path.GetFileNameWithoutExtension(strPath)
-            Dim di As IO.DirectoryInfo = New DirectoryInfo(strDirectory)
-            For Each fi As FileInfo In di.GetFiles(strFile & ".*", SearchOption.TopDirectoryOnly)
-                IO.File.Delete(fi.FullName)
-            Next
-            Return True
-        Catch ex As Exception
-            Return False
-        End Try
+    '    Try
+    '        Dim strDirectory As String = IO.Path.GetDirectoryName(strPath)
+    '        Dim strFile As String = IO.Path.GetFileNameWithoutExtension(strPath)
+    '        Dim di As IO.DirectoryInfo = New DirectoryInfo(strDirectory)
+    '        For Each fi As FileInfo In di.GetFiles(strFile & ".*", SearchOption.TopDirectoryOnly)
+    '            IO.File.Delete(fi.FullName)
+    '        Next
+    '        Return True
+    '    Catch ex As Exception
+    '        Return False
+    '    End Try
 
 
-    End Function
+    'End Function
 
     'Public Sub Modify_GEM_Object_Feature_To_Shapefile(ByVal strObjectUid As String)
     '    '

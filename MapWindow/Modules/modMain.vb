@@ -34,11 +34,13 @@
 
 Imports System.Threading
 Imports System.Security.Principal
+Imports System.IO
 
 Module modMain
     'Global friend variables go here...
     Friend gemdb As GEMDatabase
     Friend memoryShape As MapWinGIS.Shapefile
+    Friend tempShapeFile As String
 
     Friend frmMain As MapWindowForm
     Friend ProjInfo As New XmlProjectFile   'stores info about the current MapWindow project
@@ -254,6 +256,8 @@ Module modMain
                 Debug.WriteLine("Failed to delete temp file: " & s & " " & e.Message)
             End Try
         Next
+
+        DeleteShapefile(tempShapeFile) ' GEM
         g_KillList.Clear()
 
         'Show a survey on the first run if the user has elected to take it.
@@ -267,6 +271,23 @@ Module modMain
             MapWinUtility.Logger.Dbg("DEBUG: " + e.ToString())
         End Try
     End Sub
+
+    Private Function DeleteShapefile(ByVal strPath As String) As Boolean
+
+        Try
+            Dim strDirectory As String = IO.Path.GetDirectoryName(strPath)
+            Dim strFile As String = IO.Path.GetFileNameWithoutExtension(strPath)
+            Dim di As IO.DirectoryInfo = New DirectoryInfo(strDirectory)
+            For Each fi As FileInfo In di.GetFiles(strFile & ".*", SearchOption.TopDirectoryOnly)
+                IO.File.Delete(fi.FullName)
+            Next
+            Return True
+        Catch ex As Exception
+            Return False
+        End Try
+
+
+    End Function
 
     ''' <summary>
     ''' Creates main form. Registers MapWinGis if needed

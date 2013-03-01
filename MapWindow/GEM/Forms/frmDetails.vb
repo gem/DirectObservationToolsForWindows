@@ -382,12 +382,12 @@ Public Class frmDetails
         If Not Me.GEMDataset.GEM_OBJECT.GetChanges Is Nothing Then
             GEM_OBJECTTableAdapter.Update(Me.GEMDataset.GEM_OBJECT)
             newOBJ = False
-        Else
-            If newOBJ And close Then
-                Dim row As GEMDataset.GEM_OBJECTRow = (From obj In Me.GEMDataset.GEM_OBJECT Where obj.OBJ_UID = mOBJECT_UID).First
-                row.Delete()
-                GEM_OBJECTTableAdapter.Update(Me.GEMDataset.GEM_OBJECT)
-            End If
+            'Else
+            '    If newOBJ And close Then
+            '        Dim row As GEMDataset.GEM_OBJECTRow = (From obj In Me.GEMDataset.GEM_OBJECT Where obj.OBJ_UID = mOBJECT_UID).First
+            '        row.Delete()
+            '        GEM_OBJECTTableAdapter.Update(Me.GEMDataset.GEM_OBJECT)
+            '    End If
         End If
 
         If Not Me.GEMDataset.GED.GetChanges Is Nothing Then
