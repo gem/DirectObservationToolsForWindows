@@ -47,14 +47,21 @@ Public Class frmSync
                 Exit Sub
             End If
             '
-            ' Copy First Database
+            ' Copy Database matching the project if it is checked otherwise use the first database
+            ' in the Checked items list
             '
-            IO.File.Copy(SourceDatabases.CheckedItems.Item(0), Me.TargetDatabase.Text)
+            Dim sourceDatabase As String = IO.Path.ChangeExtension(Me.SourceProject.Text, "gemdb")
+            If (Not Me.SourceDatabases.CheckedItems.Contains(sourceDatabase)) Then
+                sourceDatabase = Me.SourceDatabases.CheckedItems.Item(0)
+            End If
+            IO.File.Copy(sourceDatabase, Me.TargetDatabase.Text)
             '
             ' Append the other databases
             '
             For i As Integer = 1 To Me.SourceDatabases.CheckedItems.Count - 1
-                Call SyncDatabase(Me.SourceDatabases.CheckedItems.Item(i), Me.TargetDatabase.Text)
+                If (Me.SourceDatabases.CheckedItems.Item(i) <> sourceDatabase) Then
+                    Call SyncDatabase(Me.SourceDatabases.CheckedItems.Item(i), Me.TargetDatabase.Text)
+                End If
             Next
             '
             ' Copy Project file

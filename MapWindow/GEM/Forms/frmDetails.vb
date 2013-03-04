@@ -617,9 +617,9 @@ Public Class frmDetails
         For Each ctrl As Control In parentCtr.Controls
 
             If TypeOf ctrl Is ComboBox Then
-                AddHandler (ctrl.Leave), AddressOf TrackHelpTopicCombo
+                AddHandler (ctrl.TextChanged), AddressOf TrackHelpTopicCombo
             ElseIf TypeOf ctrl Is Label Then
-                AddHandler (ctrl.Click), AddressOf TrackHelpTopicLabel
+                AddHandler (ctrl.MouseDown), AddressOf TrackHelpTopicLabel
             End If
             SetHandlers(ctrl)
         Next
