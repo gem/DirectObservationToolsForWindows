@@ -5555,7 +5555,7 @@ Partial Friend Class MapWindowForm
 
                     extents.SetBounds(a, b, 0, a, b, 0)
 
-                    'Calculate the tolerance of 20 pixels in meters
+                    'Calculate the tolerance of 20 pixels in meters. i.e. 40 metres diameter
                     Dim X1 As Double, Y1 As Double, X2 As Double, Y2 As Double, tolerance As Double
                     MapMain.PixelToProj(0, 0, X1, Y1)
                     MapMain.PixelToProj(40, 40, X2, Y2)
@@ -5565,8 +5565,21 @@ Partial Friend Class MapWindowForm
                     Dim Result = memoryShape.SelectShapes(extents, tolerance, MapWinGIS.SelectMode.INTERSECTION, ids)
 
                     If ids.Length Then
+                        '
+                        ' find the closest point
+                        '
+                        Dim ind As Long = ids(0), mindist As Double = -1
+                        For Each id As Long In ids
+                            Dim pShape As MapWinGIS.Shape = memoryShape.Shape(id)
+                            Dim theDist As Double = Dist(a, b, pShape.Point(0).x, pShape.Point(0).y)
+                            If ((theDist < mindist) Or (mindist = -1)) Then
+                                mindist = theDist
+                                ind = id
+                            End If
+                        Next
+
                         tbbQueryPoint.Checked = False
-                        Dim clickedObj_UID As String = memoryShape.Table.CellValue(memoryShape.Table.FieldIndexByName("OBJ_UID"), ids(0))
+                        Dim clickedObj_UID As String = memoryShape.Table.CellValue(memoryShape.Table.FieldIndexByName("OBJ_UID"), ind)
                         Dim detailsForm As New frmDetails(clickedObj_UID)
                         detailsForm.ShowDialog()
                         MapMain.Redraw()
