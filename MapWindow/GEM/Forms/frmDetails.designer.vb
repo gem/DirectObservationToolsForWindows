@@ -254,6 +254,8 @@ Partial Class frmDetails
         Me.mnuRow = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ShowMediaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LinkToMediaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.GEMOBJECTBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GEMDataset, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DICMATERIALTYPEBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -2052,6 +2054,8 @@ Partial Class frmDetails
         '
         'GroupBox15
         '
+        Me.GroupBox15.Controls.Add(Me.Label2)
+        Me.GroupBox15.Controls.Add(Me.Label1)
         Me.GroupBox15.Controls.Add(Me.Label34)
         Me.GroupBox15.Controls.Add(Me.tbEXPOSURE_COMMENTS)
         Me.GroupBox15.Controls.Add(Me.tbREPLACEMENT_COST)
@@ -2219,11 +2223,11 @@ Partial Class frmDetails
         '
         Me.Label24.AutoSize = True
         Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label24.Location = New System.Drawing.Point(129, 140)
+        Me.Label24.Location = New System.Drawing.Point(97, 140)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(67, 16)
+        Me.Label24.Size = New System.Drawing.Size(85, 16)
         Me.Label24.TabIndex = 43
-        Me.Label24.Text = "Plan Area"
+        Me.Label24.Text = "Plan Area (m"
         '
         'Label20
         '
@@ -2530,6 +2534,25 @@ Partial Class frmDetails
         Me.LinkToMediaToolStripMenuItem.Name = "LinkToMediaToolStripMenuItem"
         Me.LinkToMediaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.LinkToMediaToolStripMenuItem.Text = "Add Media"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(176, 139)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(10, 12)
+        Me.Label1.TabIndex = 106
+        Me.Label1.Text = "2"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(183, 140)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(12, 16)
+        Me.Label2.TabIndex = 107
+        Me.Label2.Text = ")"
         '
         'frmDetails
         '
@@ -2868,5 +2891,7 @@ Partial Class frmDetails
     Friend WithEvents FILENAMEDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents COMMENTSDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents GEMOBJUIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label1 As System.Windows.Forms.Label
 
 End Class
