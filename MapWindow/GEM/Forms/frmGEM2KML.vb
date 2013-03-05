@@ -7,6 +7,7 @@ Imports System.Linq
 Imports System.Text
 Imports System.Data
 Imports System.Data.SQLite
+Imports System.Net
 
 Public Class frmGEM2KML
 
@@ -411,7 +412,7 @@ Public Class frmGEM2KML
                         html.Append(col.ColumnName)
                         html.Append("</th>")
                         html.Append("<td>")
-                        html.Append(pRow(col).ToString)
+                        html.Append(WebUtility.HtmlEncode(pRow(col).ToString))
                         html.Append("</td>")
                         html.Append("</tr>")
                     End If
@@ -577,9 +578,10 @@ Public Class frmGEM2KML
                 IO.Directory.CreateDirectory(outFolder)
             End If
             '
-            ' Make the KML file
+            ' Make the KMZ file
             '
-            Call MakeKMZ(Me.GEMDatabase.Text, Me.KMZFilePath.Text)
+            Dim kmzPath As String = IO.Path.ChangeExtension(Me.KMZFilePath.Text, ".kmz") 'force extension
+            Call MakeKMZ(Me.GEMDatabase.Text, kmzPath)
 
             MessageBox.Show("Export Completed Successfully", "Export Completed", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
