@@ -7,6 +7,7 @@ Imports System.Linq
 Imports System.Text
 Imports System.Data
 Imports System.Data.SQLite
+Imports MapWinGIS
 
 Public Class frmGEM2SHP
 
@@ -167,9 +168,12 @@ Public Class frmGEM2SHP
                 Next
             Else
                 '
-                ' Create New shapefile
+                ' Create New shapefile, set projection to WGS84 and start editing
                 '
                 sf.CreateNew(strPath, MapWinGIS.ShpfileType.SHP_POINT)
+                Dim proj As geoprojection = New geoprojection
+                proj.importfromepsg(4326)
+                sf.GeoProjection = proj
                 sf.StartEditingShapes(True)
             End If
             '
