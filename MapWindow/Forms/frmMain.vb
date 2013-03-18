@@ -4122,8 +4122,11 @@ Partial Friend Class MapWindowForm
         'Create GEM Database
         If Not fromOpen Then
             DoSaveAs()
+
+            gemdb = New GEMDatabase(System.IO.Path.ChangeExtension(ProjInfo.ProjectFileName, ".gemdb"))
             If gemdb Is Nothing Then Exit Sub
 
+            AddGEMLayerIfNotPresent()
             Dim f As New frmProjectDetails
             f.ShowDialog()
 
