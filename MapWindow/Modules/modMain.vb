@@ -504,6 +504,10 @@ Module modMain
                         ' TODO Needs localization:
                         MapWinUtility.Logger.Msg("Errors occured while opening this project file", MsgBoxStyle.Exclamation, "Project File Error Report")
                     End If
+
+                    frmMain.AddGEMLayerIfNotPresent()
+                    Dim f As New frmProjectDetails
+                    f.ShowDialog()
  
                 ElseIf Not ext = "" And Not grd.CdlgFilter().IndexOf(ext) = -1 Then
                     'This is a layer that's supported by our Grid object. cdm 12-21-2005
