@@ -73,7 +73,7 @@ Public Class frmGEM2SHP
     Private Sub SourceBrowse_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SourceBrowse.Click
         With OpenFileDialog1
             .FileName = ""
-            .Filter = "GEM database files (*.gemdb)|*.gemdb|" & "All files|*.*"
+            .Filter = "GEM database files (*.db3)|*.db3|" & "All files|*.*"
             If (.ShowDialog() = Windows.Forms.DialogResult.OK) Then
                 Me.GEMDatabase.Text = .FileName
             End If

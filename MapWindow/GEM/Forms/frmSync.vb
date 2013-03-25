@@ -137,7 +137,7 @@ Public Class frmSync
 
         With openFileDialog1
 
-            .Filter = "gemdb files (*.gemdb)|*.gemdb|All files (*.*)|*.*"
+            .Filter = "gemdb files (*.db3)|*.db3|All files (*.*)|*.*"
             .FilterIndex = 1
             .RestoreDirectory = True
             .Multiselect = True
@@ -188,7 +188,7 @@ Public Class frmSync
             ' Add selected file paths to Checked list box 
             ' and associated project files to Combobox
             '
-            For Each fi As FileInfo In diSource.GetFiles("*.gemdb", SearchOption.TopDirectoryOnly)
+            For Each fi As FileInfo In diSource.GetFiles("*.db3", SearchOption.TopDirectoryOnly)
                 Me.SourceDatabases.Items.Add(fi.FullName)
                 If (IO.File.Exists(IO.Path.ChangeExtension(fi.FullName, ".gemprj"))) Then
                     Me.SourceProject.Items.Add(IO.Path.ChangeExtension(fi.FullName, ".gemprj"))
@@ -221,7 +221,7 @@ Public Class frmSync
         Dim SaveFileDialog1 As New SaveFileDialog
         With SaveFileDialog1
             .FileName = ""
-            .Filter = "Gem database files (*.gemdb)|*.gemdb|" & "All files|*.*"
+            .Filter = "Gem database files (*.db3)|*.db3|" & "All files|*.*"
             If (.ShowDialog() = Windows.Forms.DialogResult.OK) Then
                 Me.TargetDatabase.Text = .FileName
             End If
