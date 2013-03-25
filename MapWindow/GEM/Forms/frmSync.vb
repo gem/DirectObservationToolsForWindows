@@ -29,8 +29,8 @@ Public Class frmSync
             '
             ' Check Target database has correct extension
             '
-            If (IO.Path.GetExtension(Me.TargetDatabase.Text) <> ".gemdb") Then
-                Me.TargetDatabase.Text = IO.Path.ChangeExtension(Me.TargetDatabase.Text, ".gemdb")
+            If (IO.Path.GetExtension(Me.TargetDatabase.Text) <> ".db3") Then
+                Me.TargetDatabase.Text = IO.Path.ChangeExtension(Me.TargetDatabase.Text, ".db3")
             End If
             '
             ' Check target database does not exist
@@ -50,7 +50,8 @@ Public Class frmSync
             ' Copy Database matching the project if it is checked otherwise use the first database
             ' in the Checked items list
             '
-            Dim sourceDatabase As String = IO.Path.ChangeExtension(Me.SourceProject.Text, "gemdb")
+            Dim sourceDatabase As String = IO.Path.ChangeExtension(Me.SourceProject.Text, "db3")
+
             If (Not Me.SourceDatabases.CheckedItems.Contains(sourceDatabase)) Then
                 sourceDatabase = Me.SourceDatabases.CheckedItems.Item(0)
             End If
@@ -106,6 +107,10 @@ Public Class frmSync
         Dim dirPath As String = IO.Path.GetDirectoryName(strSourceDatabase)
         Dim strFolder As String = IO.Path.GetFileNameWithoutExtension(strSourceDatabase) & "_gemmedia"
         Dim mediaDir As String = IO.Path.Combine(dirPath, strFolder)
+        If (Not IO.Directory.Exists(mediaDir)) Then
+            MsgBox("WARNING: Media folder " & mediaDir & " does not exist")
+            Exit Sub
+        End If
         '
         ' Copy files from source to target
         '
