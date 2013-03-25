@@ -142,6 +142,11 @@ Public Class frmDetails
         End If
 
         Call SetHandlers(Me)
+        '
+        ' Read Form labels from file if it exists
+        '
+        Dim formLabelsFile As String = IO.Path.GetDirectoryName(gemdb.DatabasePath) & "\FormLabels.txt"
+        Call SetLabels(formLabelsFile)
 
     End Sub
 
@@ -934,4 +939,63 @@ Public Class frmDetails
             MessageBox.Show("Invalid Value")
         End If
     End Sub
+
+    Sub SetLabels(ByVal strLanguageFile As String)
+        '
+        ' Name: SetLabels
+        ' Purpose: To set the Labels on Form at runtime. Labels read from specified file
+        ' Written: K.Adlam, 6/3/13
+        '
+        Try
+            If (Not IO.File.Exists(strLanguageFile)) Then Exit Sub
+            '
+            ' Load Language file into Hashtable
+            '
+            '
+            ' Check if language file exists
+            '
+            Dim sr As New IO.StreamReader(strLanguageFile)
+            '
+            ' Loop through each line in language file and replace Names on the form
+            '
+            Do Until sr.EndOfStream
+                Dim arr() As String = sr.ReadLine.Split("|")
+                '
+                ' Change Control Names
+                '
+                If (arr.Count = 2) Then
+                    Try
+                        Dim pControl As Control = Me.Controls.Find(arr(0).Trim, True)(0)
+
+                        If (Not pControl Is Nothing) Then
+                            '
+                            ' Deal with DataGridView as a special case
+                            '
+                            If (TypeOf pControl Is DataGridView) Then
+                                Dim arr2() As String = arr(1).Trim.Split("#")
+                                If (arr2.Length = 2) Then
+                                    Dim pDataGridView As DataGridView = pControl
+                                    pDataGridView.Columns(arr2(0).Trim).HeaderText = arr2(1).Trim
+                                End If
+
+                            Else ' All other controls
+                                pControl.Text = arr(1).Trim
+
+                            End If
+                        End If
+                    Catch
+                    End Try
+                End If
+                '
+                ' Change form name
+                '
+                If (Me.Name = arr(0).Trim) Then Me.Text = arr(1).Trim
+
+            Loop
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
+
+    End Sub
+
 End Class

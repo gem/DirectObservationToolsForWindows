@@ -185,6 +185,8 @@ Partial Class frmDetails
         Me.Label30 = New System.Windows.Forms.Label()
         Me.Label31 = New System.Windows.Forms.Label()
         Me.GroupBox15 = New System.Windows.Forms.GroupBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Label34 = New System.Windows.Forms.Label()
         Me.tbEXPOSURE_COMMENTS = New System.Windows.Forms.TextBox()
         Me.GEDBindingSource = New System.Windows.Forms.BindingSource(Me.components)
@@ -254,8 +256,6 @@ Partial Class frmDetails
         Me.mnuRow = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ShowMediaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LinkToMediaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.GEMOBJECTBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GEMDataset, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DICMATERIALTYPEBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -614,11 +614,11 @@ Partial Class frmDetails
         '
         Me.lblSTRHI.AutoSize = True
         Me.lblSTRHI.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSTRHI.Location = New System.Drawing.Point(8, 70)
+        Me.lblSTRHI.Location = New System.Drawing.Point(39, 67)
         Me.lblSTRHI.Name = "lblSTRHI"
-        Me.lblSTRHI.Size = New System.Drawing.Size(191, 16)
+        Me.lblSTRHI.Size = New System.Drawing.Size(158, 16)
         Me.lblSTRHI.TabIndex = 39
-        Me.lblSTRHI.Text = "Structural Horizontal Irregularity"
+        Me.lblSTRHI.Text = "Structural Plan Irregularity"
         '
         'lblSTRHVI
         '
@@ -1056,14 +1056,13 @@ Partial Class frmDetails
         '
         'Label15
         '
-        Me.Label15.AutoSize = True
         Me.Label15.BackColor = System.Drawing.Color.Transparent
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(50, 19)
+        Me.Label15.Location = New System.Drawing.Point(7, 20)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(93, 32)
+        Me.Label15.Size = New System.Drawing.Size(150, 38)
         Me.Label15.TabIndex = 31
-        Me.Label15.Text = "Non Structural" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "External Walls"
+        Me.Label15.Text = "Material of exterior walls (non-structural)"
         '
         'cbNONSTRUCTURAL_EXTERIOR_WALLS
         '
@@ -1075,7 +1074,7 @@ Partial Class frmDetails
         Me.cbNONSTRUCTURAL_EXTERIOR_WALLS.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbNONSTRUCTURAL_EXTERIOR_WALLS.FormattingEnabled = True
         Me.cbNONSTRUCTURAL_EXTERIOR_WALLS.IntegralHeight = False
-        Me.cbNONSTRUCTURAL_EXTERIOR_WALLS.Location = New System.Drawing.Point(158, 26)
+        Me.cbNONSTRUCTURAL_EXTERIOR_WALLS.Location = New System.Drawing.Point(170, 26)
         Me.cbNONSTRUCTURAL_EXTERIOR_WALLS.Name = "cbNONSTRUCTURAL_EXTERIOR_WALLS"
         Me.cbNONSTRUCTURAL_EXTERIOR_WALLS.Size = New System.Drawing.Size(386, 24)
         Me.cbNONSTRUCTURAL_EXTERIOR_WALLS.TabIndex = 29
@@ -1106,7 +1105,7 @@ Partial Class frmDetails
         Me.Label12.AutoSize = True
         Me.Label12.BackColor = System.Drawing.Color.Transparent
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(20, 81)
+        Me.Label12.Location = New System.Drawing.Point(32, 81)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(123, 16)
         Me.Label12.TabIndex = 34
@@ -1122,7 +1121,7 @@ Partial Class frmDetails
         Me.cbFOUNDATION_SYSTEM.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbFOUNDATION_SYSTEM.FormattingEnabled = True
         Me.cbFOUNDATION_SYSTEM.IntegralHeight = False
-        Me.cbFOUNDATION_SYSTEM.Location = New System.Drawing.Point(158, 78)
+        Me.cbFOUNDATION_SYSTEM.Location = New System.Drawing.Point(170, 78)
         Me.cbFOUNDATION_SYSTEM.Name = "cbFOUNDATION_SYSTEM"
         Me.cbFOUNDATION_SYSTEM.Size = New System.Drawing.Size(386, 24)
         Me.cbFOUNDATION_SYSTEM.TabIndex = 33
@@ -1138,18 +1137,18 @@ Partial Class frmDetails
         Me.lblFTYPE.AutoSize = True
         Me.lblFTYPE.BackColor = System.Drawing.Color.Transparent
         Me.lblFTYPE.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFTYPE.Location = New System.Drawing.Point(70, 53)
+        Me.lblFTYPE.Location = New System.Drawing.Point(67, 53)
         Me.lblFTYPE.Name = "lblFTYPE"
-        Me.lblFTYPE.Size = New System.Drawing.Size(74, 16)
+        Me.lblFTYPE.Size = New System.Drawing.Size(87, 16)
         Me.lblFTYPE.TabIndex = 32
-        Me.lblFTYPE.Text = "Floor Type"
+        Me.lblFTYPE.Text = "Floor System"
         '
         'lblFMAT
         '
         Me.lblFMAT.AutoSize = True
         Me.lblFMAT.BackColor = System.Drawing.Color.Transparent
         Me.lblFMAT.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFMAT.Location = New System.Drawing.Point(55, 26)
+        Me.lblFMAT.Location = New System.Drawing.Point(67, 26)
         Me.lblFMAT.Name = "lblFMAT"
         Me.lblFMAT.Size = New System.Drawing.Size(90, 16)
         Me.lblFMAT.TabIndex = 31
@@ -1165,7 +1164,7 @@ Partial Class frmDetails
         Me.cbFLOOR_TYPE.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbFLOOR_TYPE.FormattingEnabled = True
         Me.cbFLOOR_TYPE.IntegralHeight = False
-        Me.cbFLOOR_TYPE.Location = New System.Drawing.Point(158, 50)
+        Me.cbFLOOR_TYPE.Location = New System.Drawing.Point(170, 50)
         Me.cbFLOOR_TYPE.Name = "cbFLOOR_TYPE"
         Me.cbFLOOR_TYPE.Size = New System.Drawing.Size(386, 24)
         Me.cbFLOOR_TYPE.TabIndex = 30
@@ -1186,7 +1185,7 @@ Partial Class frmDetails
         Me.cbFLOOR_MATERIAL.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbFLOOR_MATERIAL.FormattingEnabled = True
         Me.cbFLOOR_MATERIAL.IntegralHeight = False
-        Me.cbFLOOR_MATERIAL.Location = New System.Drawing.Point(158, 23)
+        Me.cbFLOOR_MATERIAL.Location = New System.Drawing.Point(170, 23)
         Me.cbFLOOR_MATERIAL.Name = "cbFLOOR_MATERIAL"
         Me.cbFLOOR_MATERIAL.Size = New System.Drawing.Size(386, 24)
         Me.cbFLOOR_MATERIAL.TabIndex = 29
@@ -1224,7 +1223,7 @@ Partial Class frmDetails
         Me.cbROOF_SHAPE.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbROOF_SHAPE.FormattingEnabled = True
         Me.cbROOF_SHAPE.IntegralHeight = False
-        Me.cbROOF_SHAPE.Location = New System.Drawing.Point(158, 14)
+        Me.cbROOF_SHAPE.Location = New System.Drawing.Point(170, 14)
         Me.cbROOF_SHAPE.Name = "cbROOF_SHAPE"
         Me.cbROOF_SHAPE.Size = New System.Drawing.Size(386, 24)
         Me.cbROOF_SHAPE.TabIndex = 32
@@ -1240,7 +1239,7 @@ Partial Class frmDetails
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.Transparent
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(65, 21)
+        Me.Label10.Location = New System.Drawing.Point(77, 21)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(80, 16)
         Me.Label10.TabIndex = 31
@@ -1251,7 +1250,7 @@ Partial Class frmDetails
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.Transparent
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(25, 105)
+        Me.Label9.Location = New System.Drawing.Point(37, 105)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(120, 16)
         Me.Label9.TabIndex = 30
@@ -1267,7 +1266,7 @@ Partial Class frmDetails
         Me.cbROOF_SYSTEM_TYPE.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbROOF_SYSTEM_TYPE.FormattingEnabled = True
         Me.cbROOF_SYSTEM_TYPE.IntegralHeight = False
-        Me.cbROOF_SYSTEM_TYPE.Location = New System.Drawing.Point(158, 106)
+        Me.cbROOF_SYSTEM_TYPE.Location = New System.Drawing.Point(170, 106)
         Me.cbROOF_SYSTEM_TYPE.Name = "cbROOF_SYSTEM_TYPE"
         Me.cbROOF_SYSTEM_TYPE.Size = New System.Drawing.Size(386, 24)
         Me.cbROOF_SYSTEM_TYPE.TabIndex = 29
@@ -1283,7 +1282,7 @@ Partial Class frmDetails
         Me.lblRTYPE.AutoSize = True
         Me.lblRTYPE.BackColor = System.Drawing.Color.Transparent
         Me.lblRTYPE.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRTYPE.Location = New System.Drawing.Point(9, 78)
+        Me.lblRTYPE.Location = New System.Drawing.Point(21, 78)
         Me.lblRTYPE.Name = "lblRTYPE"
         Me.lblRTYPE.Size = New System.Drawing.Size(136, 16)
         Me.lblRTYPE.TabIndex = 28
@@ -1294,7 +1293,7 @@ Partial Class frmDetails
         Me.lblRMAT.AutoSize = True
         Me.lblRMAT.BackColor = System.Drawing.Color.Transparent
         Me.lblRMAT.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRMAT.Location = New System.Drawing.Point(18, 48)
+        Me.lblRMAT.Location = New System.Drawing.Point(30, 48)
         Me.lblRMAT.Name = "lblRMAT"
         Me.lblRMAT.Size = New System.Drawing.Size(127, 16)
         Me.lblRMAT.TabIndex = 27
@@ -1310,7 +1309,7 @@ Partial Class frmDetails
         Me.cbROOF_SYSTEM_MATERIAL.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbROOF_SYSTEM_MATERIAL.FormattingEnabled = True
         Me.cbROOF_SYSTEM_MATERIAL.IntegralHeight = False
-        Me.cbROOF_SYSTEM_MATERIAL.Location = New System.Drawing.Point(158, 76)
+        Me.cbROOF_SYSTEM_MATERIAL.Location = New System.Drawing.Point(170, 76)
         Me.cbROOF_SYSTEM_MATERIAL.Name = "cbROOF_SYSTEM_MATERIAL"
         Me.cbROOF_SYSTEM_MATERIAL.Size = New System.Drawing.Size(386, 24)
         Me.cbROOF_SYSTEM_MATERIAL.TabIndex = 19
@@ -1331,7 +1330,7 @@ Partial Class frmDetails
         Me.cbROOF_COVER_MATERIAL.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbROOF_COVER_MATERIAL.FormattingEnabled = True
         Me.cbROOF_COVER_MATERIAL.IntegralHeight = False
-        Me.cbROOF_COVER_MATERIAL.Location = New System.Drawing.Point(158, 46)
+        Me.cbROOF_COVER_MATERIAL.Location = New System.Drawing.Point(170, 46)
         Me.cbROOF_COVER_MATERIAL.Name = "cbROOF_COVER_MATERIAL"
         Me.cbROOF_COVER_MATERIAL.Size = New System.Drawing.Size(386, 24)
         Me.cbROOF_COVER_MATERIAL.TabIndex = 18
@@ -1369,7 +1368,7 @@ Partial Class frmDetails
         Me.cbLLRS_DUCTILITY_T.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbLLRS_DUCTILITY_T.FormattingEnabled = True
         Me.cbLLRS_DUCTILITY_T.IntegralHeight = False
-        Me.cbLLRS_DUCTILITY_T.Location = New System.Drawing.Point(485, 61)
+        Me.cbLLRS_DUCTILITY_T.Location = New System.Drawing.Point(493, 61)
         Me.cbLLRS_DUCTILITY_T.Name = "cbLLRS_DUCTILITY_T"
         Me.cbLLRS_DUCTILITY_T.Size = New System.Drawing.Size(295, 24)
         Me.cbLLRS_DUCTILITY_T.TabIndex = 44
@@ -1390,7 +1389,7 @@ Partial Class frmDetails
         Me.cbLLRS_T.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbLLRS_T.FormattingEnabled = True
         Me.cbLLRS_T.IntegralHeight = False
-        Me.cbLLRS_T.Location = New System.Drawing.Point(485, 34)
+        Me.cbLLRS_T.Location = New System.Drawing.Point(493, 34)
         Me.cbLLRS_T.Name = "cbLLRS_T"
         Me.cbLLRS_T.Size = New System.Drawing.Size(295, 24)
         Me.cbLLRS_T.TabIndex = 43
@@ -1405,7 +1404,7 @@ Partial Class frmDetails
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(65, 64)
+        Me.Label7.Location = New System.Drawing.Point(77, 64)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(90, 16)
         Me.Label7.TabIndex = 42
@@ -1415,7 +1414,7 @@ Partial Class frmDetails
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(113, 37)
+        Me.Label8.Location = New System.Drawing.Point(125, 37)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(41, 16)
         Me.Label8.TabIndex = 41
@@ -1431,7 +1430,7 @@ Partial Class frmDetails
         Me.cbLLRS_DUCTILITY_L.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbLLRS_DUCTILITY_L.FormattingEnabled = True
         Me.cbLLRS_DUCTILITY_L.IntegralHeight = False
-        Me.cbLLRS_DUCTILITY_L.Location = New System.Drawing.Point(160, 61)
+        Me.cbLLRS_DUCTILITY_L.Location = New System.Drawing.Point(172, 61)
         Me.cbLLRS_DUCTILITY_L.Name = "cbLLRS_DUCTILITY_L"
         Me.cbLLRS_DUCTILITY_L.Size = New System.Drawing.Size(301, 24)
         Me.cbLLRS_DUCTILITY_L.TabIndex = 40
@@ -1452,7 +1451,7 @@ Partial Class frmDetails
         Me.cbLLRS_L.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbLLRS_L.FormattingEnabled = True
         Me.cbLLRS_L.IntegralHeight = False
-        Me.cbLLRS_L.Location = New System.Drawing.Point(160, 34)
+        Me.cbLLRS_L.Location = New System.Drawing.Point(172, 34)
         Me.cbLLRS_L.Name = "cbLLRS_L"
         Me.cbLLRS_L.Size = New System.Drawing.Size(301, 24)
         Me.cbLLRS_L.TabIndex = 39
@@ -1467,7 +1466,7 @@ Partial Class frmDetails
         '
         Me.lblTrans2.AutoSize = True
         Me.lblTrans2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTrans2.Location = New System.Drawing.Point(601, 15)
+        Me.lblTrans2.Location = New System.Drawing.Point(609, 15)
         Me.lblTrans2.Name = "lblTrans2"
         Me.lblTrans2.Size = New System.Drawing.Size(77, 16)
         Me.lblTrans2.TabIndex = 38
@@ -1477,7 +1476,7 @@ Partial Class frmDetails
         '
         Me.lblLong2.AutoSize = True
         Me.lblLong2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLong2.Location = New System.Drawing.Point(267, 15)
+        Me.lblLong2.Location = New System.Drawing.Point(279, 15)
         Me.lblLong2.Name = "lblLong2"
         Me.lblLong2.Size = New System.Drawing.Size(80, 16)
         Me.lblLong2.TabIndex = 37
@@ -1592,11 +1591,11 @@ Partial Class frmDetails
         Me.Label35.AutoSize = True
         Me.Label35.BackColor = System.Drawing.Color.Transparent
         Me.Label35.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label35.Location = New System.Drawing.Point(28, 104)
+        Me.Label35.Location = New System.Drawing.Point(60, 104)
         Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(99, 16)
+        Me.Label35.Size = New System.Drawing.Size(78, 16)
         Me.Label35.TabIndex = 111
-        Me.Label35.Text = "Building Shape"
+        Me.Label35.Text = "Plan Shape"
         '
         'cbPLAN_SHAPE
         '
@@ -1608,7 +1607,7 @@ Partial Class frmDetails
         Me.cbPLAN_SHAPE.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbPLAN_SHAPE.FormattingEnabled = True
         Me.cbPLAN_SHAPE.IntegralHeight = False
-        Me.cbPLAN_SHAPE.Location = New System.Drawing.Point(141, 101)
+        Me.cbPLAN_SHAPE.Location = New System.Drawing.Point(152, 101)
         Me.cbPLAN_SHAPE.Name = "cbPLAN_SHAPE"
         Me.cbPLAN_SHAPE.Size = New System.Drawing.Size(376, 24)
         Me.cbPLAN_SHAPE.TabIndex = 110
@@ -1624,11 +1623,11 @@ Partial Class frmDetails
         Me.Label13.AutoSize = True
         Me.Label13.BackColor = System.Drawing.Color.Transparent
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(21, 67)
+        Me.Label13.Location = New System.Drawing.Point(10, 67)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(106, 16)
+        Me.Label13.Size = New System.Drawing.Size(128, 16)
         Me.Label13.TabIndex = 31
-        Me.Label13.Text = "Position in Block"
+        Me.Label13.Text = "Position within Block"
         '
         'cbPOSITION
         '
@@ -1640,7 +1639,7 @@ Partial Class frmDetails
         Me.cbPOSITION.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbPOSITION.FormattingEnabled = True
         Me.cbPOSITION.IntegralHeight = False
-        Me.cbPOSITION.Location = New System.Drawing.Point(141, 64)
+        Me.cbPOSITION.Location = New System.Drawing.Point(152, 64)
         Me.cbPOSITION.Name = "cbPOSITION"
         Me.cbPOSITION.Size = New System.Drawing.Size(376, 24)
         Me.cbPOSITION.TabIndex = 29
@@ -1655,7 +1654,7 @@ Partial Class frmDetails
         '
         Me.tbSLOPE.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "SLOPE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.tbSLOPE.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbSLOPE.Location = New System.Drawing.Point(141, 28)
+        Me.tbSLOPE.Location = New System.Drawing.Point(152, 28)
         Me.tbSLOPE.Name = "tbSLOPE"
         Me.tbSLOPE.Size = New System.Drawing.Size(88, 22)
         Me.tbSLOPE.TabIndex = 109
@@ -1664,7 +1663,7 @@ Partial Class frmDetails
         '
         Me.Label22.AutoSize = True
         Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label22.Location = New System.Drawing.Point(21, 31)
+        Me.Label22.Location = New System.Drawing.Point(32, 31)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(106, 16)
         Me.Label22.TabIndex = 44
@@ -2078,6 +2077,25 @@ Partial Class frmDetails
         Me.GroupBox15.TabIndex = 87
         Me.GroupBox15.TabStop = False
         Me.GroupBox15.Text = "Exposure"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(183, 140)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(12, 16)
+        Me.Label2.TabIndex = 107
+        Me.Label2.Text = ")"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(176, 139)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(10, 12)
+        Me.Label1.TabIndex = 106
+        Me.Label1.Text = "2"
         '
         'Label34
         '
@@ -2535,25 +2553,6 @@ Partial Class frmDetails
         Me.LinkToMediaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.LinkToMediaToolStripMenuItem.Text = "Add Media"
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(176, 139)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(10, 12)
-        Me.Label1.TabIndex = 106
-        Me.Label1.Text = "2"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(183, 140)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(12, 16)
-        Me.Label2.TabIndex = 107
-        Me.Label2.Text = ")"
-        '
         'frmDetails
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -2606,7 +2605,6 @@ Partial Class frmDetails
         Me.GroupBox10.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
         Me.GroupBox11.ResumeLayout(False)
-        Me.GroupBox11.PerformLayout()
         CType(Me.DICNONSTRUCTURALEXTERIORWALLSBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox6.ResumeLayout(False)
         Me.GroupBox6.PerformLayout()
