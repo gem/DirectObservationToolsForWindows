@@ -497,7 +497,7 @@ Module modMain
                     '
                     ' Create GEM database
                     '
-                    gemdb = New GEMDatabase(System.IO.Path.ChangeExtension(ProjInfo.ProjectFileName, ".gemdb"))
+                    gemdb = New GEMDatabase(System.IO.Path.ChangeExtension(ProjInfo.ProjectFileName, ".db3"))
 
                     If Not ProjInfo.LoadProject(CommandLine) Then
                         ' Paul Meems 10 Aug 2010: moved error box to here from LoadProject():
