@@ -38,7 +38,9 @@ Public Class frmDataManagement
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        System.Diagnostics.Process.Start(App.Path & "\Sqliteman\sqliteman.exe")
+        If (MessageBox.Show("WARNING: Changing the database should only be carried out by a qualified person who understand the structure of the database. Do you want to continue to modify the database?", "SQLite Management", MessageBoxButtons.YesNo) = DialogResult.Yes) Then
+            System.Diagnostics.Process.Start(App.Path & "\Sqliteman\sqliteman.exe")
+        End If
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
