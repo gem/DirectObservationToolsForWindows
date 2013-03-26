@@ -256,6 +256,8 @@ Partial Class frmDetails
         Me.mnuRow = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ShowMediaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LinkToMediaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.GEMOBJECTBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GEMDataset, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DICMATERIALTYPEBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -2053,6 +2055,8 @@ Partial Class frmDetails
         '
         'GroupBox15
         '
+        Me.GroupBox15.Controls.Add(Me.Label3)
+        Me.GroupBox15.Controls.Add(Me.Label4)
         Me.GroupBox15.Controls.Add(Me.Label2)
         Me.GroupBox15.Controls.Add(Me.Label1)
         Me.GroupBox15.Controls.Add(Me.Label34)
@@ -2231,11 +2235,11 @@ Partial Class frmDetails
         '
         Me.Label25.AutoSize = True
         Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.Location = New System.Drawing.Point(76, 168)
+        Me.Label25.Location = New System.Drawing.Point(21, 168)
         Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(119, 16)
+        Me.Label25.Size = New System.Drawing.Size(160, 16)
         Me.Label25.TabIndex = 44
-        Me.Label25.Text = "Replacement Cost"
+        Me.Label25.Text = "Replacement Cost (per m"
         '
         'Label24
         '
@@ -2539,19 +2543,38 @@ Partial Class frmDetails
         '
         Me.mnuRow.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ShowMediaToolStripMenuItem, Me.LinkToMediaToolStripMenuItem})
         Me.mnuRow.Name = "mnuRow"
-        Me.mnuRow.Size = New System.Drawing.Size(153, 70)
+        Me.mnuRow.Size = New System.Drawing.Size(140, 48)
         '
         'ShowMediaToolStripMenuItem
         '
         Me.ShowMediaToolStripMenuItem.Name = "ShowMediaToolStripMenuItem"
-        Me.ShowMediaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ShowMediaToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
         Me.ShowMediaToolStripMenuItem.Text = "Show Media"
         '
         'LinkToMediaToolStripMenuItem
         '
         Me.LinkToMediaToolStripMenuItem.Name = "LinkToMediaToolStripMenuItem"
-        Me.LinkToMediaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.LinkToMediaToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
         Me.LinkToMediaToolStripMenuItem.Text = "Add Media"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(182, 168)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(12, 16)
+        Me.Label3.TabIndex = 110
+        Me.Label3.Text = ")"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(175, 167)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(10, 12)
+        Me.Label4.TabIndex = 109
+        Me.Label4.Text = "2"
         '
         'frmDetails
         '
@@ -2891,5 +2914,7 @@ Partial Class frmDetails
     Friend WithEvents GEMOBJUIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
 
 End Class

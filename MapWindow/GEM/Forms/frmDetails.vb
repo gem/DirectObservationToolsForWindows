@@ -529,7 +529,6 @@ Public Class frmDetails
         End If
     End Sub
 
-
     Private Sub cbOCCUPANCY_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles cbOCCUPANCY.TextChanged
         filterComboBoxBinding(cbOCCUPANCY, cbOCCUPANCY_DETAIL, DICOCCUPANCYDETAILBindingSource)
     End Sub
@@ -998,4 +997,27 @@ Public Class frmDetails
 
     End Sub
 
+    Private Sub cbROOF_SYSTEM_MATERIAL_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles cbROOF_SYSTEM_MATERIAL.TextChanged
+        filterComboBoxBinding(cbROOF_SYSTEM_MATERIAL, cbROOF_SYSTEM_TYPE, DICROOFSYSTEMTYPEBindingSource)
+    End Sub
+
+    Private Sub cbFLOOR_MATERIAL_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles cbFLOOR_MATERIAL.TextChanged
+        filterComboBoxBinding(cbFLOOR_MATERIAL, cbFLOOR_TYPE, DICFLOORTYPEBindingSource)
+    End Sub
+
+    Private Sub GroupBox15_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GroupBox15.Enter
+
+    End Sub
+
+    Private Sub Label3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label3.Click
+
+    End Sub
+
+    Private Sub Label4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label4.Click
+
+    End Sub
+
+    Private Sub Label5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
 End Class
