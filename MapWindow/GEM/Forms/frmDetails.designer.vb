@@ -185,6 +185,8 @@ Partial Class frmDetails
         Me.Label30 = New System.Windows.Forms.Label()
         Me.Label31 = New System.Windows.Forms.Label()
         Me.GroupBox15 = New System.Windows.Forms.GroupBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label34 = New System.Windows.Forms.Label()
@@ -256,8 +258,6 @@ Partial Class frmDetails
         Me.mnuRow = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ShowMediaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LinkToMediaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.GEMOBJECTBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GEMDataset, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DICMATERIALTYPEBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1060,11 +1060,11 @@ Partial Class frmDetails
         '
         Me.Label15.BackColor = System.Drawing.Color.Transparent
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(7, 20)
+        Me.Label15.Location = New System.Drawing.Point(25, 18)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(150, 38)
+        Me.Label15.Size = New System.Drawing.Size(139, 38)
         Me.Label15.TabIndex = 31
-        Me.Label15.Text = "Material of exterior walls (non-structural)"
+        Me.Label15.Text = "Material of Exterior Walls (non-structural)"
         '
         'cbNONSTRUCTURAL_EXTERIOR_WALLS
         '
@@ -2082,6 +2082,25 @@ Partial Class frmDetails
         Me.GroupBox15.TabStop = False
         Me.GroupBox15.Text = "Exposure"
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(182, 168)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(12, 16)
+        Me.Label3.TabIndex = 110
+        Me.Label3.Text = ")"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(175, 167)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(10, 12)
+        Me.Label4.TabIndex = 109
+        Me.Label4.Text = "2"
+        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -2556,25 +2575,6 @@ Partial Class frmDetails
         Me.LinkToMediaToolStripMenuItem.Name = "LinkToMediaToolStripMenuItem"
         Me.LinkToMediaToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
         Me.LinkToMediaToolStripMenuItem.Text = "Add Media"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(182, 168)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(12, 16)
-        Me.Label3.TabIndex = 110
-        Me.Label3.Text = ")"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(175, 167)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(10, 12)
-        Me.Label4.TabIndex = 109
-        Me.Label4.Text = "2"
         '
         'frmDetails
         '
