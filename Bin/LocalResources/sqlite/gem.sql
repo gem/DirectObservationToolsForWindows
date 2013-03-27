@@ -166,7 +166,7 @@ USER_CHNG VARCHAR(50)  NULL DEFAULT NULL);
 
 INSERT INTO "DIC_PLAN_SHAPE" VALUES('PLF99','Unknown plan shape','Unknown plan shape',NULL,'C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
 INSERT INTO "DIC_PLAN_SHAPE" VALUES('PLFSQ','Square, solid','Square, solid',NULL,'C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
-INSERT INTO "DIC_PLAN_SHAPE" VALUES('PLFSQO','Square, with an interior opening (e.g. a "donut")','Square, with an interior opening (e.g. a "donut")',NULL,'C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
+INSERT INTO "DIC_PLAN_SHAPE" VALUES('PLFSQO','Square, with interior opening (e.g. a "doughnut")','Square, with interior opening (e.g. a "doughnut")',NULL,'C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
 INSERT INTO "DIC_PLAN_SHAPE" VALUES('PLFR','Rectangular, solid','Rectangular, solid',NULL,'C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
 INSERT INTO "DIC_PLAN_SHAPE" VALUES('PLFRO','Rectangular, with an opening','Rectangular, with an opening',NULL,'C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
 INSERT INTO "DIC_PLAN_SHAPE" VALUES('PLFL','L-shape','L-shape',NULL,'C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
@@ -184,7 +184,7 @@ INSERT INTO "DIC_PLAN_SHAPE" VALUES('PLFT','T-shape','T-shape',NULL,'C','2012-04
 INSERT INTO "DIC_PLAN_SHAPE" VALUES('PLFU','U-shape','U-shape',NULL,'C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
 INSERT INTO "DIC_PLAN_SHAPE" VALUES('PLFX','X-shape','X-shape',NULL,'C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
 INSERT INTO "DIC_PLAN_SHAPE" VALUES('PLFY','Y-shape','Y-shape',NULL,'C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
-INSERT INTO "DIC_PLAN_SHAPE" VALUES('PLFI','Irregular plan shape','Irregular plan shape',NULL,'C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
+INSERT INTO "DIC_PLAN_SHAPE" VALUES('PLFI','Irregular shape','Irregular shape',NULL,'C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
 
 --
 -- DIC_POSITION
@@ -200,9 +200,9 @@ USER_MADE VARCHAR(50)  NULL DEFAULT NULL,
 DATE_CHNG DATETIME  NULL DEFAULT NULL,
 USER_CHNG VARCHAR(50)  NULL DEFAULT NULL);
 
-INSERT INTO "DIC_POSITION" VALUES('BPD','Detached building','Not attached to any other building (free); this applies to buildings that are spaced apart a distance equal to or more than 4% of the height of the lower building','BP','C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
-INSERT INTO "DIC_POSITION" VALUES('BP1','Adjoining buildings on one side','One adjacent building (semi-detached building in North America), e.g. end of a row','BP','C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
-INSERT INTO "DIC_POSITION" VALUES('BP2','Adjoining buildings on two sides','Corner building with two adjacent buildings (on adjacent sides)','BP','C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
+INSERT INTO "DIC_POSITION" VALUES('BPD','Detached building','Detached building','BP','C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
+INSERT INTO "DIC_POSITION" VALUES('BP1','Adjoining building(s) on one side','Adjoining building(s) on one side','BP','C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
+INSERT INTO "DIC_POSITION" VALUES('BP2','Adjoining buildings on two sides','Adjoining buildings on two sides','BP','C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
 INSERT INTO "DIC_POSITION" VALUES('BP3','Adjoining buildings on three sides','Adjoining buildings on three sides','BP','C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
 
 --
@@ -220,17 +220,17 @@ DATE_CHNG DATETIME  NULL DEFAULT NULL,
 USER_CHNG VARCHAR(50)  NULL DEFAULT NULL);
 
 INSERT INTO "DIC_NONSTRUCTURAL_EXTERIOR_WALLS" VALUES('EW99','Unknown material','Unknown material','EW','C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
-INSERT INTO "DIC_NONSTRUCTURAL_EXTERIOR_WALLS" VALUES('EWC','Concrete','Cast in-place or precast concrete panels','EW','C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
-INSERT INTO "DIC_NONSTRUCTURAL_EXTERIOR_WALLS" VALUES('EWG','Glass','Glass curtain walls, storefront glass systems','EW','C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
-INSERT INTO "DIC_NONSTRUCTURAL_EXTERIOR_WALLS" VALUES('EWE','Earth','Adobe, cob, rammed earth, bajareque, quincha, sod, banco, etc.','EW','C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
-INSERT INTO "DIC_NONSTRUCTURAL_EXTERIOR_WALLS" VALUES('EWMA','Masonry','Various masonry units (clay bricks/blocks/stone/ceramic tile) in the form of veneers, cavity walls, infill walls','EW','C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
-INSERT INTO "DIC_NONSTRUCTURAL_EXTERIOR_WALLS" VALUES('EWME','Metal','Aluminum planks, corrugated iron or steel sheets (CGI)','EW','C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
-INSERT INTO "DIC_NONSTRUCTURAL_EXTERIOR_WALLS" VALUES('EWV','Vegetative','Matting, palm, thatch, straw, etc.','EW','C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
-INSERT INTO "DIC_NONSTRUCTURAL_EXTERIOR_WALLS" VALUES('EWW','Wood','Wood planks, wood shingles','EW','C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
-INSERT INTO "DIC_NONSTRUCTURAL_EXTERIOR_WALLS" VALUES('EWSL','Stucco finish on light framing','Metal or wood studs with wood or insulated underlay','EW','C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
-INSERT INTO "DIC_NONSTRUCTURAL_EXTERIOR_WALLS" VALUES('EWPL','Plastic/vinyl, various','Plastic siding; plastic sheet','EW','C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
-INSERT INTO "DIC_NONSTRUCTURAL_EXTERIOR_WALLS" VALUES('EWCB','Cement-based boards','Fibre cement or asbestos boards, e.g. GRC, FRC','EW','C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
-INSERT INTO "DIC_NONSTRUCTURAL_EXTERIOR_WALLS" VALUES('EWO','Material of exterior wall, other','Material of exterior wall, other','EW','C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
+INSERT INTO "DIC_NONSTRUCTURAL_EXTERIOR_WALLS" VALUES('EWC','Concrete','Concrete','EW','C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
+INSERT INTO "DIC_NONSTRUCTURAL_EXTERIOR_WALLS" VALUES('EWG','Glass','Glass','EW','C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
+INSERT INTO "DIC_NONSTRUCTURAL_EXTERIOR_WALLS" VALUES('EWE','Earth','Earth','EW','C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
+INSERT INTO "DIC_NONSTRUCTURAL_EXTERIOR_WALLS" VALUES('EWMA','Masonry','Masonry','EW','C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
+INSERT INTO "DIC_NONSTRUCTURAL_EXTERIOR_WALLS" VALUES('EWME','Metal','Metal','EW','C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
+INSERT INTO "DIC_NONSTRUCTURAL_EXTERIOR_WALLS" VALUES('EWV','Vegetative','Vegetative','EW','C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
+INSERT INTO "DIC_NONSTRUCTURAL_EXTERIOR_WALLS" VALUES('EWW','Wood','Wood','EW','C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
+INSERT INTO "DIC_NONSTRUCTURAL_EXTERIOR_WALLS" VALUES('EWSL','Stucco finish on light framing','Stucco finish on light framing','EW','C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
+INSERT INTO "DIC_NONSTRUCTURAL_EXTERIOR_WALLS" VALUES('EWPL','Plastic/vinyl, various','Plastic/vinyl, various','EW','C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
+INSERT INTO "DIC_NONSTRUCTURAL_EXTERIOR_WALLS" VALUES('EWCB','Cement-based boards','Cement-based boards','EW','C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
+INSERT INTO "DIC_NONSTRUCTURAL_EXTERIOR_WALLS" VALUES('EWO','Other material','Other material','EW','C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
 
 --
 -- DIC_ROOF_CONNECTION
@@ -246,12 +246,12 @@ USER_MADE VARCHAR(50)  NULL DEFAULT NULL,
 DATE_CHNG DATETIME  NULL DEFAULT NULL,
 USER_CHNG VARCHAR(50)  NULL DEFAULT NULL);
 
-INSERT INTO "DIC_ROOF_CONNECTION" VALUES('RWC99','Roof-wall diaphragm connection unknown','Roof-wall diaphragm connection unknown',NULL,'C','2012-04-18 00:00:00.000','KAMA','2013-03-21 00:00:00.000','KAMA');
-INSERT INTO "DIC_ROOF_CONNECTION" VALUES('RWCN','Roof-wall diaphragm connection not provided','Roof-wall diaphragm connection not provided',NULL,'C','2012-04-18 00:00:00.000','KAMA','2013-03-21 00:00:00.000','KAMA');
-INSERT INTO "DIC_ROOF_CONNECTION" VALUES('RWCP','Roof-wall diaphragm connection present (the connection transfers in-plane forces from floor to wall and restrains wall outward displacements)','Roof-wall diaphragm connection present',NULL,'C','2012-04-18 00:00:00.000','KAMA','2013-03-21 00:00:00.000','KAMA');
+INSERT INTO "DIC_ROOF_CONNECTION" VALUES('RWC99','Unknown roof-wall diaphragm connection','Unknown roof-wall diaphragm connection',NULL,'C','2012-04-18 00:00:00.000','KAMA','2013-03-21 00:00:00.000','KAMA');
+INSERT INTO "DIC_ROOF_CONNECTION" VALUES('RWCN','Connection not provided','Connection not provided',NULL,'C','2012-04-18 00:00:00.000','KAMA','2013-03-21 00:00:00.000','KAMA');
+INSERT INTO "DIC_ROOF_CONNECTION" VALUES('RWCP','Connection present','Connection present',NULL,'C','2012-04-18 00:00:00.000','KAMA','2013-03-21 00:00:00.000','KAMA');
 INSERT INTO "DIC_ROOF_CONNECTION" VALUES('RTD99','Roof tie-down unknown','Roof tie-down unknown',NULL,'C','2012-04-18 00:00:00.000','KAMA','2013-03-21 00:00:00.000','KAMA');
 INSERT INTO "DIC_ROOF_CONNECTION" VALUES('RTDN','Roof tie-down not provided','Roof tie-down not provided',NULL,'C','2012-04-18 00:00:00.000','KAMA','2013-03-21 00:00:00.000','KAMA');
-INSERT INTO "DIC_ROOF_CONNECTION" VALUES('RTDP','Roof tie-down present (a connection that provides vertical attachment of roof to wall in order to restrain roof from upward displacement, lift-off due to wind)','Roof tie-down present',NULL,'C','2012-04-18 00:00:00.000','KAMA','2013-03-21 00:00:00.000','KAMA');
+INSERT INTO "DIC_ROOF_CONNECTION" VALUES('RTDP','Roof tie-down present','Roof tie-down present',NULL,'C','2012-04-18 00:00:00.000','KAMA','2013-03-21 00:00:00.000','KAMA');
 
 
 --
@@ -268,9 +268,9 @@ USER_MADE VARCHAR(50)  NULL DEFAULT NULL,
 DATE_CHNG DATETIME  NULL DEFAULT NULL,
 USER_CHNG VARCHAR(50)  NULL DEFAULT NULL);
 
-INSERT INTO "DIC_FLOOR_CONNECTION" VALUES('FWC99','Floor-wall diaphram connection unknown','Floor-wall diaphram connection unknown',NULL,'C','2013-03-22 00:00:00.000','KAMA','2013-03-22 00:00:00.000','KAMA');
-INSERT INTO "DIC_FLOOR_CONNECTION" VALUES('FWCN','Floor-wall diaphram connection not provided','Floor-wall diaphram connection not provided',NULL,'C','2013-03-22 00:00:00.000','KAMA','2013-03-22 00:00:00.000','KAMA');
-INSERT INTO "DIC_FLOOR_CONNECTION" VALUES('FWCP','Floor-wall diaphragm connection present (the role of the connection is to restrain wall out-of-plane forces and to transfer in-plane forces to wall)','Floor-wall diaphragm connection present',NULL,'C','2013-03-22 00:00:00.000','KAMA','2013-03-22 00:00:00.000','KAMA');
+INSERT INTO "DIC_FLOOR_CONNECTION" VALUES('FWC99','Unknown floor-wall diaphram connection','Unknown floor-wall diaphram connection',NULL,'C','2013-03-22 00:00:00.000','KAMA','2013-03-22 00:00:00.000','KAMA');
+INSERT INTO "DIC_FLOOR_CONNECTION" VALUES('FWCN','Connection not provided','Connection not provided',NULL,'C','2013-03-22 00:00:00.000','KAMA','2013-03-22 00:00:00.000','KAMA');
+INSERT INTO "DIC_FLOOR_CONNECTION" VALUES('FWCP','Connection present','Connection present',NULL,'C','2013-03-22 00:00:00.000','KAMA','2013-03-22 00:00:00.000','KAMA');
 
 --
 -- DIC_ROOF_SYSTEM_MATERIAL
@@ -286,14 +286,14 @@ USER_MADE VARCHAR(50)  NULL DEFAULT NULL,
 DATE_CHNG DATETIME  NULL DEFAULT NULL,
 USER_CHNG VARCHAR(50)  NULL DEFAULT NULL);
 
-INSERT INTO "DIC_ROOF_SYSTEM_MATERIAL" VALUES('R99','Roof material, unknown','Roof material, unknown','X','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_ROOF_SYSTEM_MATERIAL" VALUES('R99','Unknown roof material','Unknown roof material','X','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_ROOF_SYSTEM_MATERIAL" VALUES('RM','Masonry','Masonry','RM','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_ROOF_SYSTEM_MATERIAL" VALUES('RE','Earthen','Earthen','RE','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_ROOF_SYSTEM_MATERIAL" VALUES('RC','Concrete','Concrete','RC','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_ROOF_SYSTEM_MATERIAL" VALUES('RME','Metal','Metal','RME','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_ROOF_SYSTEM_MATERIAL" VALUES('RWO','Wood','Wood','RWO','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_ROOF_SYSTEM_MATERIAL" VALUES('RFA','Fabric','Fabric','RFA','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_ROOF_SYSTEM_MATERIAL" VALUES('RO','Roof material, other','Roof material, other','RO','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_ROOF_SYSTEM_MATERIAL" VALUES('RO','Other roof material','Other roof material','RO','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 
 --
 -- DIC_ROOF_COVER_MATERIAL
@@ -322,7 +322,7 @@ INSERT INTO "DIC_ROOF_COVER_MATERIAL" VALUES('RMT8','Vegetative','Vegetative',NU
 INSERT INTO "DIC_ROOF_COVER_MATERIAL" VALUES('RMT9','Earthen','Earthen',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_ROOF_COVER_MATERIAL" VALUES('RMT10','Solar panelled roofs','Solar panelled roofs',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_ROOF_COVER_MATERIAL" VALUES('RMT11','Tensile membrane or fabric roof','Tensile membrane or fabric roof',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_ROOF_COVER_MATERIAL" VALUES('RMTO','Roof coverering, other','Roof coverering, other',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_ROOF_COVER_MATERIAL" VALUES('RMTO','Roof covering, other','Roof covering, other',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 
 --
 -- DIC_ROOF_SHAPE
@@ -364,17 +364,17 @@ USER_MADE VARCHAR(50)  NULL DEFAULT NULL,
 DATE_CHNG DATETIME  NULL DEFAULT NULL,
 USER_CHNG VARCHAR(50)  NULL DEFAULT NULL);
 
-INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RM99','Masonry, unknown','Masonry, unknown','RM','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('Connection present','Masonry, unknown','Masonry, unknown','RM','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RM1','Vaulted masonry','Vaulted masonry','RM','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RM2','Shallow-arched masonry','Shallow-arched masonry','RM','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RM3','Composite masonry and concrete roof system','Composite masonry and concrete roof system','RM','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RE99','Earthen, unknown','Earthen, unknown','RE','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RE1','Vaulted earthen roof','Vaulted earthen roof','RE','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RC99','Concrete, unknown','Concrete, unknown','RC','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RC1','Cast-in-place beamless reinforced concrete roof','Cast-in-place beamless reinforced concrete roof','RC','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RC1','Cast-in-place beamless RC roof','Cast-in-place beamless RC roof','RC','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RC2','Cast-in-place beam-supported reinforced concrete roof','Cast-in-place beam-supported reinforced concrete roof','RC','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RC3','Precast concrete roof with reinforced concrete topping','Precast concrete roof with reinforced concrete topping','RC','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RC4','Precast concrete roof system without reinforced concrete topping','Precast concrete roof system without reinforced concrete topping','RC','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RC3','Precast concrete roof with RC topping','Precast concrete roof with RC topping','RC','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RC4','Precast concrete roof system without RC topping','Precast concrete roof system without RC topping','RC','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RME99','Metal, unknown','Metal, unknown','RME','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RME1','Metal beams or trusses supporting light roofing','Metal beams or trusses supporting light roofing','RME','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RME2','Metal beams supporting precast concrete slabs','Metal beams supporting precast concrete slabs','RME','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
@@ -401,14 +401,14 @@ USER_MADE VARCHAR(50)  NULL DEFAULT NULL,
 DATE_CHNG DATETIME  NULL DEFAULT NULL,
 USER_CHNG VARCHAR(50)  NULL DEFAULT NULL);
 
-INSERT INTO "DIC_MASONARY_MORTAR_TYPE" VALUES('MO99','Mortar type unknown','Mortar type unknown','M','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_MASONARY_MORTAR_TYPE" VALUES('MO99','Unknown mortar type','Unknown mortar type','M','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_MASONARY_MORTAR_TYPE" VALUES('MON','No mortar','No mortar','M','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_MASONARY_MORTAR_TYPE" VALUES('MOM','Mud mortar','Mud mortar','M','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_MASONARY_MORTAR_TYPE" VALUES('MOL','Lime mortar','Lime mortar','M','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_MASONARY_MORTAR_TYPE" VALUES('MOC','Cement mortar','Cement mortar','M','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_MASONARY_MORTAR_TYPE" VALUES('MOCL','Cement lime mortar','Cement lime mortar','M','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_MASONARY_MORTAR_TYPE" VALUES('MOCL','Cement:lime mortar','Cement lime mortar','M','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 
-INSERT INTO "DIC_MASONARY_MORTAR_TYPE" VALUES('SP99','Stone, unknown type','Stone, unknown type','M','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_MASONARY_MORTAR_TYPE" VALUES('SP99','Unknown stone type','Unknown stone type','M','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_MASONARY_MORTAR_TYPE" VALUES('SPLI','Limestone','Limestone','M','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_MASONARY_MORTAR_TYPE" VALUES('SPSA','Sandstone','Sandstone','M','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_MASONARY_MORTAR_TYPE" VALUES('SPTU','Tuff','Tuff','M','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
@@ -431,7 +431,7 @@ USER_MADE VARCHAR(50)  NULL DEFAULT NULL,
 DATE_CHNG DATETIME  NULL DEFAULT NULL,
 USER_CHNG VARCHAR(50)  NULL DEFAULT NULL);
 
-INSERT INTO "DIC_MASONRY_REINFORCEMENT" VALUES('MR99','Masonry reinforcement, unknown','Masonry reinforcement, unknown','M','C','2013-03-21 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_MASONRY_REINFORCEMENT" VALUES('MR99','Unknown reinforcement','Unknown reinforcement','M','C','2013-03-21 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_MASONRY_REINFORCEMENT" VALUES('RS','Steel-reinforced','Steel-reinforced','M','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_MASONRY_REINFORCEMENT" VALUES('RW','Wood-reinforced','Wood-reinforced','M','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_MASONRY_REINFORCEMENT" VALUES('RB','Bamboo-, cane- or rope-reinforced','Bamboo-, cane- or rope-reinforced','M','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
@@ -452,7 +452,7 @@ USER_MADE VARCHAR(50)  NULL DEFAULT NULL,
 DATE_CHNG DATETIME  NULL DEFAULT NULL,
 USER_CHNG VARCHAR(50)  NULL DEFAULT NULL);
 
-INSERT INTO "DIC_MATERIAL_TECHNOLOGY" VALUES('CT99','Unknown concrete technology','Unknown concrete technology','C','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_MATERIAL_TECHNOLOGY" VALUES('CT99','Concrete, unknown','Concrete, unknown','C','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_MATERIAL_TECHNOLOGY" VALUES('CIP','Cast-in-place concrete','Cast-in-place concrete','C','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_MATERIAL_TECHNOLOGY" VALUES('PC','Precast concrete','Precast concrete','C','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_MATERIAL_TECHNOLOGY" VALUES('CIPPS','Cast-in-place prestressed concrete','Cast-in-place prestressed concrete','C','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
@@ -477,7 +477,7 @@ INSERT INTO "DIC_MATERIAL_TECHNOLOGY" VALUES('CB99','Concrete blocks, unknown ty
 INSERT INTO "DIC_MATERIAL_TECHNOLOGY" VALUES('CBS','Concrete blocks, solid','Concrete blocks, solid','M','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_MATERIAL_TECHNOLOGY" VALUES('CBH','Concrete blocks, hollow','Concrete blocks, hollow','M','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_MATERIAL_TECHNOLOGY" VALUES('MO','Masonry unit, other','Masonry unit, other','M','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_MATERIAL_TECHNOLOGY" VALUES('ET99','Unknown earth technology','Unknown earth technology','E','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_MATERIAL_TECHNOLOGY" VALUES('ET99','Earth technology, unknown','Earth technology, unknown','E','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_MATERIAL_TECHNOLOGY" VALUES('ETR','Rammed earth','Rammed earth','E','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_MATERIAL_TECHNOLOGY" VALUES('ETC','Cob or wet construction','Cob or wet construction','E','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_MATERIAL_TECHNOLOGY" VALUES('ETO','Earth technology, other','Earth technology, other','E','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
@@ -534,7 +534,7 @@ USER_MADE VARCHAR(50)  NULL DEFAULT NULL,
 DATE_CHNG DATETIME  NULL DEFAULT NULL,
 USER_CHNG VARCHAR(50)  NULL DEFAULT NULL);
 
-INSERT INTO "DIC_STEEL_CONNECTION_TYPE" VALUES('SC99','Steel connections, unknown','Steel connections, unknown','S','C','2013-03-21 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_STEEL_CONNECTION_TYPE" VALUES('SC99','Unknown connections','Unknown connections','S','C','2013-03-21 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_STEEL_CONNECTION_TYPE" VALUES('WEL','Welded connections','Welded connections','S','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_STEEL_CONNECTION_TYPE" VALUES('RIV','Riveted connections','Riveted connections','S','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_STEEL_CONNECTION_TYPE" VALUES('BOL','Bolted connections','Bolted connections','S','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
@@ -553,9 +553,9 @@ USER_MADE VARCHAR(50)  NULL DEFAULT NULL,
 DATE_CHNG DATETIME  NULL DEFAULT NULL,
 USER_CHNG VARCHAR(50)  NULL DEFAULT NULL);
 
-INSERT INTO "DIC_LLRS_QUAL" VALUES('D99','Unspecified direction','Unspecified direction',NULL,'C','2012-05-10 00:00:00','KAMA','2013-03-22 00:00:00','KAMA');
-INSERT INTO "DIC_LLRS_QUAL" VALUES('PF','Parallel to street','Parallel to street',NULL,'C','2012-05-10 00:00:00','KAMA','2013-03-22 00:00:00','KAMA');
-INSERT INTO "DIC_LLRS_QUAL" VALUES('OF','Perpendicular to street','Perpendicular to street',NULL,'C','2012-05-10 00:00:00','KAMA','2013-03-22 00:00:00','KAMA');
+INSERT INTO "DIC_LLRS_QUAL" VALUES('D99','Unknown or undetermined direction','Unknown or undetermined direction',NULL,'C','2012-05-10 00:00:00','KAMA','2013-03-22 00:00:00','KAMA');
+INSERT INTO "DIC_LLRS_QUAL" VALUES('PF','Direction is parallel to street','Direction is parallel to street',NULL,'C','2012-05-10 00:00:00','KAMA','2013-03-22 00:00:00','KAMA');
+INSERT INTO "DIC_LLRS_QUAL" VALUES('OF','Direction is perpendicular to street','Direction is perpendicular to street',NULL,'C','2012-05-10 00:00:00','KAMA','2013-03-22 00:00:00','KAMA');
 
 --
 -- DIC_LLRS
@@ -571,8 +571,8 @@ USER_MADE VARCHAR(50)  NULL DEFAULT NULL,
 DATE_CHNG DATETIME  NULL DEFAULT NULL,
 USER_CHNG VARCHAR(50)  NULL DEFAULT NULL);
 
-INSERT INTO "DIC_LLRS" VALUES('L99','Unknown lateral load-resisting system','Unknown lateral load-resisting system',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_LLRS" VALUES('LN','No lateral load-resisting system','No lateral load-resisting system',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_LLRS" VALUES('L99','Unknown LLRS','Unknown LLRS',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_LLRS" VALUES('LN','No LLRS','No LLRS',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_LLRS" VALUES('LFM','Moment frame','Moment frame',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_LLRS" VALUES('LFINF','Infilled frame','Infilled frame',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_LLRS" VALUES('LFBR','Braced frame','Braced frame',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
@@ -581,8 +581,8 @@ INSERT INTO "DIC_LLRS" VALUES('LWAL','Wall','Wall',NULL,'C','2012-09-24 00:00:00
 INSERT INTO "DIC_LLRS" VALUES('LDUAL','Dual frame-wall system','Dual frame-wall system',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_LLRS" VALUES('LFLS','Flat slab/plate or waffle slab','Flat slab/plate or waffle slab',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_LLRS" VALUES('LFLSINF','Infilled flat slab/plate or infilled waffle slab','Infilled flat slab/plate or infilled waffle slab',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_LLRS" VALUES('LH','Hybrid lateral load-resisting system','Hybrid lateral load-resisting system',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_LLRS" VALUES('LO','Other lateral load-resisting system','Other lateral load-resisting system',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_LLRS" VALUES('LH','Hybrid LLRS','Hybrid LLRS',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_LLRS" VALUES('LO','Other LLRS','Other LLRS',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 
 --
 -- DIC_LLRS_DUCTILITY
@@ -598,10 +598,10 @@ USER_MADE VARCHAR(50)  NULL DEFAULT NULL,
 DATE_CHNG DATETIME  NULL DEFAULT NULL,
 USER_CHNG VARCHAR(50)  NULL DEFAULT NULL);
 
-INSERT INTO "DIC_LLRS_DUCTILITY" VALUES('D99','Ductility unknown','Ductility unknown',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_LLRS_DUCTILITY" VALUES('D99','Unknown ductility','Unknown ductility',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_LLRS_DUCTILITY" VALUES('DU','Ductile','Ductile',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_LLRS_DUCTILITY" VALUES('DNO','Non-ductile','Non-ductile',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_LLRS_DUCTILITY" VALUES('DBD','Equipped with base isolation and/or energy dissipation devices','Equipped with base isolation and/or energy dissipation devices',NULL,'C','2013-03-21 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_LLRS_DUCTILITY" VALUES('DBD','Has base isolation and/or energy dissipation device','Has base isolation and/or energy dissipation device',NULL,'C','2013-03-21 00:00:00.000','KAMA',NULL,NULL);
 
 --
 -- DIC_STRUCTURAL_HORIZ_IRREG (Plan Irregularity)
@@ -642,7 +642,7 @@ INSERT INTO "DIC_STRUCTURAL_VERT_IRREG" VALUES('CRW','Cripple wall','Cripple wal
 INSERT INTO "DIC_STRUCTURAL_VERT_IRREG" VALUES('SHC','Short column','Short column','IR','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_STRUCTURAL_VERT_IRREG" VALUES('POP','Pounding potential','Pounding potential','IR','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_STRUCTURAL_VERT_IRREG" VALUES('SET','Setback','Setback','IR','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_STRUCTURAL_VERT_IRREG" VALUES('CHV','Change in vertical structure (includes large overhangs)','Change in vertical structure (includes large overhangs)','IR','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_STRUCTURAL_VERT_IRREG" VALUES('CHV','Change in vertical structure','Change in vertical structure','IR','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_STRUCTURAL_VERT_IRREG" VALUES('IRVO','Other vertical irregularity','Other vertical irregularity','IR','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 
 --
@@ -677,14 +677,14 @@ USER_MADE VARCHAR(50)  NULL DEFAULT NULL,
 DATE_CHNG DATETIME  NULL DEFAULT NULL,
 USER_CHNG VARCHAR(50)  NULL DEFAULT NULL);
 
-INSERT INTO "DIC_FLOOR_MATERIAL" VALUES('FN','No elevated or suspended floor material (single storey building)','No elevated or suspended floor material (single storey building)','X','C','2013-03-21 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_FLOOR_MATERIAL" VALUES('F99','Floor material, unknown','Floor material, unknown','X','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_FLOOR_MATERIAL" VALUES('FN','No elevated/suspended floor material','No elevated/suspended floor material','X','C','2013-03-21 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_FLOOR_MATERIAL" VALUES('F99','Unknown floor material','Unknown floor material','X','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_FLOOR_MATERIAL" VALUES('FM','Masonry','Masonry','FM','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_FLOOR_MATERIAL" VALUES('FE','Earthen','Earthen','FE','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_FLOOR_MATERIAL" VALUES('FC','Concrete','Concrete','FC','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_FLOOR_MATERIAL" VALUES('FME','Metal','Metal','FME','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_FLOOR_MATERIAL" VALUES('FW','Wood','Wood','FW','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_FLOOR_MATERIAL" VALUES('FO','Floor material, other','Floor material, other','FO','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_FLOOR_MATERIAL" VALUES('FO','Other floor material','Other floor material','FO','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 
 --
 -- DIC_FLOOR_TYPE
@@ -703,13 +703,13 @@ USER_CHNG VARCHAR(50)  NULL DEFAULT NULL);
 INSERT INTO "DIC_FLOOR_TYPE" VALUES('FM99','Masonry, unknown','Masonry, unknown','FM','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_FLOOR_TYPE" VALUES('FM1','Vaulted masonry','Vaulted masonry','FM','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_FLOOR_TYPE" VALUES('FM2','Shallow-arched masonry','Shallow-arched masonry','FM','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_FLOOR_TYPE" VALUES('FM3','Composite cast-in-place reinforced concrete and masonry floor system','Composite cast-in-place reinforced concrete and masonry floor system','FM','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_FLOOR_TYPE" VALUES('FM3','Composite cast-in-place RC and masonry floor system','Composite cast-in-place RC and masonry floor system','FM','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_FLOOR_TYPE" VALUES('FE99','Earthen, unknown','Earthen, unknown','FE','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_FLOOR_TYPE" VALUES('FC99','Concrete, unknown','Concrete, unknown','FC','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_FLOOR_TYPE" VALUES('FC1','Cast-in-place beamless reinforced concrete floor','Cast-in-place beamless reinforced concrete floor','FC','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_FLOOR_TYPE" VALUES('FC2','Cast-in-place beam-supported reinforced concrete floor','Cast-in-place beam-supported reinforced concrete floor','FC','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_FLOOR_TYPE" VALUES('FC3','Precast concrete floor system with reinforced concrete topping','Precast concrete floor system with reinforced concrete topping','FC','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_FLOOR_TYPE" VALUES('FC4','Precast concrete floor system without reinforced concrete topping','Precast concrete floor system without reinforced concrete topping','FC','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_FLOOR_TYPE" VALUES('FC1','Cast-in-place beamless RC floor','Cast-in-place beamless RC floor','FC','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_FLOOR_TYPE" VALUES('FC2','Cast-in-place beam-supported RC floor','Cast-in-place beam-supported RC floor','FC','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_FLOOR_TYPE" VALUES('FC3','Precast concrete floor system with RC topping','Precast concrete floor system with RC topping','FC','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_FLOOR_TYPE" VALUES('FC4','Precast concrete floor system without RC topping','Precast concrete floor system without RC topping','FC','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_FLOOR_TYPE" VALUES('FME99','Metal, unknown','Metal, unknown','FME','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_FLOOR_TYPE" VALUES('FME1','Metal beams, trusses, or joists supporting light flooring','Metal beams, trusses, or joists supporting light flooring','FME','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_FLOOR_TYPE" VALUES('FME2','Metal beams supporting precast concrete slabs','Metal beams supporting precast concrete slabs','FME','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
@@ -739,7 +739,7 @@ INSERT INTO "DIC_FOUNDATION_SYSTEM" VALUES('FOSSL','Shallow foundation, with lat
 INSERT INTO "DIC_FOUNDATION_SYSTEM" VALUES('FOSN','Shallow foundation, no lateral capacity','Shallow foundation, no lateral capacity',NULL,'C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
 INSERT INTO "DIC_FOUNDATION_SYSTEM" VALUES('FOSDL','Deep foundation, with lateral capacity','Deep foundation, with lateral capacity',NULL,'C','2012-05-09 00:00:00.000','KAMA','2012-05-09 00:00:00.000','KAMA');
 INSERT INTO "DIC_FOUNDATION_SYSTEM" VALUES('FODN','Deep foundation, no lateral capacity','Deep foundation, no lateral capacity',NULL,'C','2012-05-09 00:00:00.000','KAMA','2012-05-09 00:00:00.000','KAMA');
-INSERT INTO "DIC_FOUNDATION_SYSTEM" VALUES('FOS17','Foundation, other','Foundation, other',NULL,'C','2012-05-09 00:00:00.000','KAMA','2012-05-09 00:00:00.000','KAMA');
+INSERT INTO "DIC_FOUNDATION_SYSTEM" VALUES('FOS17','Other foundation','Other foundation',NULL,'C','2012-05-09 00:00:00.000','KAMA','2012-05-09 00:00:00.000','KAMA');
 
 --
 -- DIC_HEIGHT_QUALIFIER
@@ -755,7 +755,7 @@ USER_MADE VARCHAR(50)  NULL DEFAULT NULL,
 DATE_CHNG DATETIME  NULL DEFAULT NULL,
 USER_CHNG VARCHAR(50)  NULL DEFAULT NULL);
 
-INSERT INTO "DIC_HEIGHT_QUALIFIER" VALUES('H99','Unknown','Number of storeys unknown',NULL,'C','2012-05-10 00:00:00','KAMA','2012-05-10 00:00:00','KAMA');
+INSERT INTO "DIC_HEIGHT_QUALIFIER" VALUES('H99','Unknown','Unknown',NULL,'C','2012-05-10 00:00:00','KAMA','2012-05-10 00:00:00','KAMA');
 INSERT INTO "DIC_HEIGHT_QUALIFIER" VALUES('HBET','Between','Between',NULL,'C','2012-05-10 00:00:00','KAMA','2012-05-10 00:00:00','KAMA');
 INSERT INTO "DIC_HEIGHT_QUALIFIER" VALUES('HEX','Exactly','Exactly',NULL,'C','2012-05-10 00:00:00','KAMA','2012-05-10 00:00:00','KAMA');
 INSERT INTO "DIC_HEIGHT_QUALIFIER" VALUES('HAPP','Approximately','Approximately',NULL,'C','2012-05-10 00:00:00','KAMA','2012-05-10 00:00:00','KAMA');
@@ -774,11 +774,11 @@ USER_MADE VARCHAR(50)  NULL DEFAULT NULL,
 DATE_CHNG DATETIME  NULL DEFAULT NULL,
 USER_CHNG VARCHAR(50)  NULL DEFAULT NULL);
 
-INSERT INTO "DIC_YEAR_BUILT_QUAL" VALUES('Y99','Year unknown','Year unknown',NULL,'C','2013-03-22 00:00:00','KAMA','2013-03-22 00:00:00','KAMA');
-INSERT INTO "DIC_YEAR_BUILT_QUAL" VALUES('YEX','Exact date of construction or retrofit','Year during which the construction was completed or retrofitted.',NULL,'C','2013-03-22 00:00:00','KAMA','2013-03-22 00:00:00','KAMA');
-INSERT INTO "DIC_YEAR_BUILT_QUAL" VALUES('YBET','Upper and lower bound for the date of construction or retrofit','The construction likely took place between 1930 and 1940.',NULL,'C','2013-03-22 00:00:00','KAMA','2013-03-22 00:00:00','KAMA');
-INSERT INTO "DIC_YEAR_BUILT_QUAL" VALUES('YPRE','Latest possible date of construction or retrofit','The construction was completed before the World War II, thus the year entered is 1939.',NULL,'C','2013-03-22 00:00:00','KAMA','2013-03-22 00:00:00','KAMA');
-INSERT INTO "DIC_YEAR_BUILT_QUAL" VALUES('YAPP','Approximate date of construction or retrofit','The construction was completed approximately in 1935',NULL,'C','2013-03-22 00:00:00','KAMA','2013-03-22 00:00:00','KAMA');
+INSERT INTO "DIC_YEAR_BUILT_QUAL" VALUES('Y99','Unknown date of construction/retrofit','Unknown date of construction/retrofit',NULL,'C','2013-03-22 00:00:00','KAMA','2013-03-22 00:00:00','KAMA');
+INSERT INTO "DIC_YEAR_BUILT_QUAL" VALUES('YEX','Exactly','Exactly',NULL,'C','2013-03-22 00:00:00','KAMA','2013-03-22 00:00:00','KAMA');
+INSERT INTO "DIC_YEAR_BUILT_QUAL" VALUES('YBET','Between','Between',NULL,'C','2013-03-22 00:00:00','KAMA','2013-03-22 00:00:00','KAMA');
+INSERT INTO "DIC_YEAR_BUILT_QUAL" VALUES('YPRE','Pre','Pre',NULL,'C','2013-03-22 00:00:00','KAMA','2013-03-22 00:00:00','KAMA');
+INSERT INTO "DIC_YEAR_BUILT_QUAL" VALUES('YAPP','Approximately','Approximately',NULL,'C','2013-03-22 00:00:00','KAMA','2013-03-22 00:00:00','KAMA');
 
 --
 -- DIC_OCCUPANCY
@@ -794,7 +794,7 @@ USER_MADE VARCHAR(50)  NULL DEFAULT NULL,
 DATE_CHNG DATETIME  NULL DEFAULT NULL,
 USER_CHNG VARCHAR(50)  NULL DEFAULT NULL);
 
-INSERT INTO "DIC_OCCUPANCY" VALUES('OC99','Unknown occupancy type','Unknown occupancy type','X','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_OCCUPANCY" VALUES('OC99','Unknown occupancy','Unknown occupancy','X','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_OCCUPANCY" VALUES('RES','Residential','Residential','RES','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_OCCUPANCY" VALUES('COM','Commercial and public','Commercial and public','COM','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_OCCUPANCY" VALUES('MIX','Mixed use','Mixed use','MIX','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
@@ -803,7 +803,7 @@ INSERT INTO "DIC_OCCUPANCY" VALUES('AGR','Agriculture','Agriculture','AGR','C','
 INSERT INTO "DIC_OCCUPANCY" VALUES('ASS','Assembley','Assembley','ASS','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_OCCUPANCY" VALUES('GOV','Government','Government','GOV','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_OCCUPANCY" VALUES('EDU','Education','Education','EDU','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_OCCUPANCY" VALUES('OCO','Other occupancy type','Other occupancy type','OCO','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_OCCUPANCY" VALUES('OCO','Other occupancy','Other occupancy','OCO','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 
 --
 -- DIC_OCCUPANCY_DETAIL
@@ -876,7 +876,7 @@ INSERT INTO "DIC_OCCUPANCY_DETAIL" VALUES('EDU99','Education, unknown type','Edu
 INSERT INTO "DIC_OCCUPANCY_DETAIL" VALUES('EDU1','Pre-school facility','Pre-school facility','EDU','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_OCCUPANCY_DETAIL" VALUES('EDU2','School','School','EDU','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_OCCUPANCY_DETAIL" VALUES('EDU3','College/university, offices and/or classrooms','College/university, offices and/or classrooms','EDU','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_OCCUPANCY_DETAIL" VALUES('EDU4','College/university, research facilities and/or labs','College/university, research facilities and/or labs','EDU','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_OCCUPANCY_DETAIL" VALUES('EDU4','College/university, research facilities/labs','College/university, research facilities/labs','EDU','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 
 --
 -- DIC_SAMPLING_GROUP

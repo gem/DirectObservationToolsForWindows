@@ -34,9 +34,11 @@ Public Class frmGEM2CSV
         With SaveFileDialog1
             .FileName = ""
             .Filter = "CSV files (*.csv)|*.csv|" & "All files|*.*"
+
             If (.ShowDialog() = Windows.Forms.DialogResult.OK) Then
                 Me.CSVFilename.Text = .FileName
             End If
+
         End With
 
     End Sub
@@ -50,7 +52,7 @@ Public Class frmGEM2CSV
             Call gemdb.RefreshGEMDataTableContents()
 
             If Me.CSVFilename.Text <> "" Then
-                Dim s As New StreamWriter(Me.CSVFilename.Text)
+                Dim s As New StreamWriter(IO.Path.ChangeExtension(Me.CSVFilename.Text, ".csv"))
                 Dim colString As String = ""
 
                 'TODO: ask for short or long fieldnames
@@ -81,9 +83,9 @@ Public Class frmGEM2CSV
                     For Each col As DataColumn In gemdb.Dataset.GEM_OBJECT.Columns
                         If Not IsDBNull(row.Item(col.ColumnName)) Then
                             If counter = 0 Then
-                                rowString = Replace(row.Item(col.ColumnName), ",", "..")
+                                rowString = Replace(Replace(row.Item(col.ColumnName), ",", ".."), vbCrLf, " ")
                             Else
-                                rowString = rowString & "," & Replace(row.Item(col.ColumnName), ",", "..")
+                                rowString = rowString & "," & Replace(Replace(row.Item(col.ColumnName), ",", ".."), vbCrLf, " ")
                             End If
                         Else
                             If counter > 0 Then
