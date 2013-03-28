@@ -364,7 +364,7 @@ USER_MADE VARCHAR(50)  NULL DEFAULT NULL,
 DATE_CHNG DATETIME  NULL DEFAULT NULL,
 USER_CHNG VARCHAR(50)  NULL DEFAULT NULL);
 
-INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('Connection present','Masonry, unknown','Masonry, unknown','RM','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RM99','Masonry, unknown','Masonry, unknown','RM','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RM1','Vaulted masonry','Vaulted masonry','RM','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RM2','Shallow-arched masonry','Shallow-arched masonry','RM','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RM3','Composite masonry and concrete roof system','Composite masonry and concrete roof system','RM','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
@@ -386,7 +386,7 @@ INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RWO3','Wood-based sheets on rafters o
 INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RWO4','Plywood panels or other light-weight panels for roof','Plywood panels or other light-weight panels for roof','RWO','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RWO5','Bamboo, straw or thatch roof','Bamboo, straw or thatch roof','RWO','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RFA1','Inflatable or tensile membrane roof','Inflatable or tensile membrane roof','RFA','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RFA0','Fabric, other','Fabric, other','RFA','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RFAO','Fabric, other','Fabric, other','RFA','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 --
 -- DIC_MASONARY_MORTAR_TYPE
 --
@@ -571,18 +571,18 @@ USER_MADE VARCHAR(50)  NULL DEFAULT NULL,
 DATE_CHNG DATETIME  NULL DEFAULT NULL,
 USER_CHNG VARCHAR(50)  NULL DEFAULT NULL);
 
-INSERT INTO "DIC_LLRS" VALUES('L99','Unknown LLRS','Unknown LLRS',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_LLRS" VALUES('LN','No LLRS','No LLRS',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_LLRS" VALUES('LFM','Moment frame','Moment frame',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_LLRS" VALUES('LFINF','Infilled frame','Infilled frame',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_LLRS" VALUES('LFBR','Braced frame','Braced frame',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_LLRS" VALUES('LPB','Post and beam','Post and beam',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_LLRS" VALUES('LWAL','Wall','Wall',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_LLRS" VALUES('LDUAL','Dual frame-wall system','Dual frame-wall system',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_LLRS" VALUES('LFLS','Flat slab/plate or waffle slab','Flat slab/plate or waffle slab',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_LLRS" VALUES('LFLSINF','Infilled flat slab/plate or infilled waffle slab','Infilled flat slab/plate or infilled waffle slab',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_LLRS" VALUES('L99','Unknown LLRS','Unknown LLRS','X','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_LLRS" VALUES('LN','No LLRS','No LLRS','X','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_LLRS" VALUES('LFM','Moment frame','Moment frame','LLRS','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_LLRS" VALUES('LFINF','Infilled frame','Infilled frame','LLRS','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_LLRS" VALUES('LFBR','Braced frame','Braced frame','LLRS','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_LLRS" VALUES('LPB','Post and beam','Post and beam','LLRS','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_LLRS" VALUES('LWAL','Wall','Wall','LLRS','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_LLRS" VALUES('LDUAL','Dual frame-wall system','Dual frame-wall system','LLRS','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_LLRS" VALUES('LFLS','Flat slab/plate or waffle slab','Flat slab/plate or waffle slab','LLRS','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_LLRS" VALUES('LFLSINF','Infilled flat slab/plate or infilled waffle slab','Infilled flat slab/plate or infilled waffle slab','LLRS','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_LLRS" VALUES('LH','Hybrid LLRS','Hybrid LLRS',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_LLRS" VALUES('LO','Other LLRS','Other LLRS',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_LLRS" VALUES('LO','Other LLRS','Other LLRS','LLRS','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 
 --
 -- DIC_LLRS_DUCTILITY
@@ -598,10 +598,10 @@ USER_MADE VARCHAR(50)  NULL DEFAULT NULL,
 DATE_CHNG DATETIME  NULL DEFAULT NULL,
 USER_CHNG VARCHAR(50)  NULL DEFAULT NULL);
 
-INSERT INTO "DIC_LLRS_DUCTILITY" VALUES('D99','Unknown ductility','Unknown ductility',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_LLRS_DUCTILITY" VALUES('DU','Ductile','Ductile',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_LLRS_DUCTILITY" VALUES('DNO','Non-ductile','Non-ductile',NULL,'C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_LLRS_DUCTILITY" VALUES('DBD','Has base isolation and/or energy dissipation device','Has base isolation and/or energy dissipation device',NULL,'C','2013-03-21 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_LLRS_DUCTILITY" VALUES('D99','Unknown ductility','Unknown ductility','LLRS','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_LLRS_DUCTILITY" VALUES('DUC','Ductile','Ductile','LLRS','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_LLRS_DUCTILITY" VALUES('DNO','Non-ductile','Non-ductile','LLRS','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_LLRS_DUCTILITY" VALUES('DBD','Has base isolation and/or energy dissipation device','Has base isolation and/or energy dissipation device','LLRS','C','2013-03-21 00:00:00.000','KAMA',NULL,NULL);
 
 --
 -- DIC_STRUCTURAL_HORIZ_IRREG (Plan Irregularity)
@@ -739,7 +739,7 @@ INSERT INTO "DIC_FOUNDATION_SYSTEM" VALUES('FOSSL','Shallow foundation, with lat
 INSERT INTO "DIC_FOUNDATION_SYSTEM" VALUES('FOSN','Shallow foundation, no lateral capacity','Shallow foundation, no lateral capacity',NULL,'C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
 INSERT INTO "DIC_FOUNDATION_SYSTEM" VALUES('FOSDL','Deep foundation, with lateral capacity','Deep foundation, with lateral capacity',NULL,'C','2012-05-09 00:00:00.000','KAMA','2012-05-09 00:00:00.000','KAMA');
 INSERT INTO "DIC_FOUNDATION_SYSTEM" VALUES('FODN','Deep foundation, no lateral capacity','Deep foundation, no lateral capacity',NULL,'C','2012-05-09 00:00:00.000','KAMA','2012-05-09 00:00:00.000','KAMA');
-INSERT INTO "DIC_FOUNDATION_SYSTEM" VALUES('FOS17','Other foundation','Other foundation',NULL,'C','2012-05-09 00:00:00.000','KAMA','2012-05-09 00:00:00.000','KAMA');
+INSERT INTO "DIC_FOUNDATION_SYSTEM" VALUES('FOSO','Other foundation','Other foundation',NULL,'C','2012-05-09 00:00:00.000','KAMA','2012-05-09 00:00:00.000','KAMA');
 
 --
 -- DIC_HEIGHT_QUALIFIER

@@ -122,6 +122,9 @@ Public Class frmDetails
         Me.CONSEQUENCESTableAdapter.Fill(Me.GEMDataset.CONSEQUENCES)
         Me.GEDTableAdapter.Fill(Me.GEMDataset.GED)
 
+        Me.DiC_ROOF_CONNECTIONTableAdapter.Fill(Me.GEMDataset.DIC_ROOF_CONNECTION)
+        Me.DiC_FLOOR_CONNECTIONTableAdapter.Fill(Me.GEMDataset.DIC_FLOOR_CONNECTION)
+
         Call loadFavsCombo()
 
         Dim advancedSetting As GEMDataset.SETTINGSRow = (From obj In gemdb.Dataset.SETTINGS Where obj.KEY = "ADVANCED_VIEW").FirstOrDefault
@@ -1018,6 +1021,10 @@ Public Class frmDetails
     End Sub
 
     Private Sub Label5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Private Sub GroupBox3_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GroupBox3.Enter
 
     End Sub
 End Class
