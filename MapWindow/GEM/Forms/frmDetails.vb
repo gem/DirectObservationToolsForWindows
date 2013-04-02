@@ -367,6 +367,54 @@ Public Class frmDetails
         End If
     End Sub
 
+    'Private Sub filterComboBoxBinding(ByVal firstCombo As ComboBox, ByVal secondCombo As ComboBox, ByVal secondComboBinder As BindingSource)
+    '    If Not firstCombo.SelectedValue Is Nothing And firstCombo.SelectedValue <> "" Then
+    '        Dim previousValue As String = secondCombo.SelectedValue
+    '        If previousValue Is Nothing Then
+    '            previousValue = ""
+    '        End If
+
+    '        'Get Allowed Values form GEM_RULES
+
+    '        Dim allowedValues As String = "'ZZZZ'"
+    '        Try
+    '            ' Dim dt As DataTable = CType(Me.GEMDataset.Tables("GEM_RULES"), DataTable)
+    '            Dim dt As DataTable = Me.GEMDataset.GEM_RULES
+    '            If dt Is Nothing Then Exit Sub 'If constraints table cannot be found then go ahead without constraints
+
+    '            ' Dim dr As DataRow = (From rec In dt.Rows Where rec("PARENT_CODE") = firstCombo.SelectedValue Select rec)
+    '            ' Dim matchingRows = (From rec In dt.Rows Where rec("PARENT_CODE") = firstCombo.SelectedValue Select rec).AsEnumerable
+
+    '            ' Dim matchingRows = (From rec In dt.Rows Where rec("PARENT_CODE") = firstCombo.SelectedValue Select rec).AsEnumerable
+    '            '
+    '            ' Build list of allowed values
+    '            '
+    '            MsgBox(dt.Rows.Count)
+    '            For Each matchingRow As DataRow In dt.Rows
+    '                If (allowedValues = "") Then
+    '                    allowedValues = "'" & matchingRow("CHILD_CODE") & "'"
+    '                Else
+    '                    allowedValues = allowedValues & ",'" & matchingRow("CHILD_CODE") & "'"
+    '                End If
+    '            Next
+    '            MsgBox(allowedValues)
+    '        Catch ex As Exception
+    '            MsgBox(ex.ToString)
+    '        End Try
+    '        'allowedValues = "'CT99','SL','ETR'" 'temp override while testing
+    '        secondComboBinder.Filter = "CODE IN (" & allowedValues & ")"
+    '        secondCombo.SelectedValue = previousValue
+    '        If secondComboBinder.Count = 0 Then
+    '            secondCombo.Enabled = False
+    '        Else
+    '            secondCombo.Enabled = True
+    '        End If
+    '    Else
+    '        secondCombo.Enabled = False
+    '        secondCombo.SelectedValue = ""
+    '    End If
+    'End Sub
+
 
     Private Sub btInsertRecord_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btInsertRecord.Click
 
