@@ -112,18 +112,19 @@ Public Class frmDetails
         'TODO: This line of code loads data into the 'GEMDataset.DIC_MATERIAL_TYPE' table. You can move, or remove it, as needed.
         Me.DIC_MATERIAL_TYPETableAdapter.Fill(Me.GEMDataset.DIC_MATERIAL_TYPE)
 
-        Me.DIC_OCCUPANCY_DETAILTableAdapter.Fill(Me.GEMDataset.DIC_OCCUPANCY_DETAIL)
-        Me.DIC_OCCUPANCYTableAdapter.Fill(Me.GEMDataset.DIC_OCCUPANCY)
-        Me.DIC_MATERIAL_TYPETableAdapter.Fill(Me.GEMDataset.DIC_MATERIAL_TYPE)
-        Me.DIC_MEDIA_TYPETableAdapter.Fill(Me.GEMDataset.DIC_MEDIA_TYPE)
+        'Me.DIC_OCCUPANCY_DETAILTableAdapter.Fill(Me.GEMDataset.DIC_OCCUPANCY_DETAIL)
+        'Me.DIC_OCCUPANCYTableAdapter.Fill(Me.GEMDataset.DIC_OCCUPANCY)
+        'Me.DIC_MATERIAL_TYPETableAdapter.Fill(Me.GEMDataset.DIC_MATERIAL_TYPE)
+        'Me.DIC_MEDIA_TYPETableAdapter.Fill(Me.GEMDataset.DIC_MEDIA_TYPE)
+        'Me.MEDIA_DETAILTableAdapter.Fill(Me.GEMDataset.MEDIA_DETAIL)
+        ' Me.CONSEQUENCESTableAdapter.Fill(Me.GEMDataset.CONSEQUENCES)
 
-        Me.MEDIA_DETAILTableAdapter.Fill(Me.GEMDataset.MEDIA_DETAIL)
         Me.GEM_OBJECTTableAdapter.Fill(Me.GEMDataset.GEM_OBJECT)
-        Me.CONSEQUENCESTableAdapter.Fill(Me.GEMDataset.CONSEQUENCES)
         Me.GEDTableAdapter.Fill(Me.GEMDataset.GED)
 
         Me.DiC_ROOF_CONNECTIONTableAdapter.Fill(Me.GEMDataset.DIC_ROOF_CONNECTION)
         Me.DiC_FLOOR_CONNECTIONTableAdapter.Fill(Me.GEMDataset.DIC_FLOOR_CONNECTION)
+        Me.GEM_RULESTableAdapter.Fill(Me.GEMDataset.GEM_RULES)
 
         Call loadFavsCombo()
 
@@ -150,6 +151,14 @@ Public Class frmDetails
         '
         Dim formLabelsFile As String = IO.Path.GetDirectoryName(gemdb.DatabasePath) & "\FormLabels.txt"
         Call SetLabels(formLabelsFile)
+        '
+        ' Disable controls that depend on other controls
+        '
+        cbOCCUPANCY_DETAIL.Enabled = False
+        cbFLOOR_TYPE.Enabled = False
+        cbROOF_SYSTEM_TYPE.Enabled = False
+        cbLLRS_DUCTILITY_L.Enabled = False
+        cbLLRS_DUCTILITY_T.Enabled = False
 
     End Sub
 
@@ -338,35 +347,6 @@ Public Class frmDetails
     End Sub
 
 
-    Private Sub filterComboBoxBinding(ByVal firstCombo As ComboBox, ByVal secondCombo As ComboBox, ByVal secondComboBinder As BindingSource)
-        If Not firstCombo.SelectedValue Is Nothing And firstCombo.SelectedValue <> "" Then
-            Dim previousValue As String = secondCombo.SelectedValue
-            If previousValue Is Nothing Then
-                previousValue = ""
-            End If
-
-            'Get Scope from dictionary
-            Dim scopeValue As String = ""
-            Try
-                Dim dt As DataTable = CType(Me.GEMDataset.Tables(firstCombo.DataSource.DataMember), DataTable)
-                Dim dr As DataRow = (From rec In dt.Rows Where rec("CODE") = firstCombo.SelectedValue Select rec).FirstOrDefault
-                scopeValue = dr("SCOPE")
-            Catch ex As Exception
-            End Try
-
-            secondComboBinder.Filter = "SCOPE = '" & scopeValue & "'"
-            secondCombo.SelectedValue = previousValue
-            If secondComboBinder.Count = 0 Then
-                secondCombo.Enabled = False
-            Else
-                secondCombo.Enabled = True
-            End If
-        Else
-            secondCombo.Enabled = False
-            secondCombo.SelectedValue = ""
-        End If
-    End Sub
-
     'Private Sub filterComboBoxBinding(ByVal firstCombo As ComboBox, ByVal secondCombo As ComboBox, ByVal secondComboBinder As BindingSource)
     '    If Not firstCombo.SelectedValue Is Nothing And firstCombo.SelectedValue <> "" Then
     '        Dim previousValue As String = secondCombo.SelectedValue
@@ -374,35 +354,16 @@ Public Class frmDetails
     '            previousValue = ""
     '        End If
 
-    '        'Get Allowed Values form GEM_RULES
-
-    '        Dim allowedValues As String = "'ZZZZ'"
+    '        'Get Scope from dictionary
+    '        Dim scopeValue As String = ""
     '        Try
-    '            ' Dim dt As DataTable = CType(Me.GEMDataset.Tables("GEM_RULES"), DataTable)
-    '            Dim dt As DataTable = Me.GEMDataset.GEM_RULES
-    '            If dt Is Nothing Then Exit Sub 'If constraints table cannot be found then go ahead without constraints
-
-    '            ' Dim dr As DataRow = (From rec In dt.Rows Where rec("PARENT_CODE") = firstCombo.SelectedValue Select rec)
-    '            ' Dim matchingRows = (From rec In dt.Rows Where rec("PARENT_CODE") = firstCombo.SelectedValue Select rec).AsEnumerable
-
-    '            ' Dim matchingRows = (From rec In dt.Rows Where rec("PARENT_CODE") = firstCombo.SelectedValue Select rec).AsEnumerable
-    '            '
-    '            ' Build list of allowed values
-    '            '
-    '            MsgBox(dt.Rows.Count)
-    '            For Each matchingRow As DataRow In dt.Rows
-    '                If (allowedValues = "") Then
-    '                    allowedValues = "'" & matchingRow("CHILD_CODE") & "'"
-    '                Else
-    '                    allowedValues = allowedValues & ",'" & matchingRow("CHILD_CODE") & "'"
-    '                End If
-    '            Next
-    '            MsgBox(allowedValues)
+    '            Dim dt As DataTable = CType(Me.GEMDataset.Tables(firstCombo.DataSource.DataMember), DataTable)
+    '            Dim dr As DataRow = (From rec In dt.Rows Where rec("CODE") = firstCombo.SelectedValue Select rec).FirstOrDefault
+    '            scopeValue = dr("SCOPE")
     '        Catch ex As Exception
-    '            MsgBox(ex.ToString)
     '        End Try
-    '        'allowedValues = "'CT99','SL','ETR'" 'temp override while testing
-    '        secondComboBinder.Filter = "CODE IN (" & allowedValues & ")"
+
+    '        secondComboBinder.Filter = "SCOPE = '" & scopeValue & "'"
     '        secondCombo.SelectedValue = previousValue
     '        If secondComboBinder.Count = 0 Then
     '            secondCombo.Enabled = False
@@ -414,6 +375,46 @@ Public Class frmDetails
     '        secondCombo.SelectedValue = ""
     '    End If
     'End Sub
+
+    Private Sub filterComboBoxBinding(ByVal firstCombo As ComboBox, ByVal secondCombo As ComboBox, ByVal secondComboBinder As BindingSource)
+        If Not firstCombo.SelectedValue Is Nothing And firstCombo.SelectedValue <> "" Then
+            Dim previousValue As String = secondCombo.SelectedValue
+            If previousValue Is Nothing Then
+                previousValue = ""
+            End If
+            '
+            'Get Allowed Values from GEM_RULES
+            '
+            Dim allowedValues As String = "'DUMMY'" ' Dummy value to ensure there is always a value sepecified in the where clause
+            Try
+                Dim dt As DataTable = Me.GEMDataset.GEM_RULES
+                If dt Is Nothing Then Exit Sub 'If constraints table cannot be found then go ahead without constraints
+                '
+                ' Get rows from GEM_RULES where PARENT_CODE matches the selected value
+                '
+                Dim matchingRows = (From rec In dt.Rows Where rec("PARENT_CODE") = firstCombo.SelectedValue Select rec).AsEnumerable
+                '
+                ' Build list of allowed values
+                '
+                For Each matchingRow As DataRow In matchingRows
+                    allowedValues = allowedValues & ",'" & matchingRow("CHILD_CODE") & "'"
+                Next
+
+            Catch ex As Exception
+            End Try
+
+            secondComboBinder.Filter = "CODE IN (" & allowedValues & ")"
+            secondCombo.SelectedValue = previousValue
+            If secondComboBinder.Count = 0 Then
+                secondCombo.Enabled = False
+            Else
+                secondCombo.Enabled = True
+            End If
+        Else
+            secondCombo.Enabled = False
+            secondCombo.SelectedValue = ""
+        End If
+    End Sub
 
 
     Private Sub btInsertRecord_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btInsertRecord.Click
@@ -589,6 +590,7 @@ Public Class frmDetails
         filterComboBoxBinding(cbMATERIAL_TYPE_L, cbMASONRY_REINFORCEMENT_L, DICMASONRYREINFORCEMENTBindingSource)
         filterComboBoxBinding(cbMATERIAL_TYPE_L, cbMASONRY_MORTAR_TYPE_L, DICMASONARYMORTARTYPEBindingSource)
         filterComboBoxBinding(cbMATERIAL_TYPE_L, cbSTEEL_CONNECTION_TYPE_L, DICSTEELCONNECTIONTYPEBindingSource)
+        filterComboBoxBinding(cbMATERIAL_TYPE_L, cbLLRS_L, DICLLRSBindingSource)
     End Sub
 
     Private Sub cbMATERIAL_TYPE_T_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles cbMATERIAL_TYPE_T.TextChanged
@@ -596,6 +598,30 @@ Public Class frmDetails
         filterComboBoxBinding(cbMATERIAL_TYPE_T, cbMASONRY_REINFORCEMENT_T, DICMASONRYREINFORCEMENTBindingSource1)
         filterComboBoxBinding(cbMATERIAL_TYPE_T, cbMASONRY_MORTAR_TYPE_T, DICMASONARYMORTARTYPEBindingSource1)
         filterComboBoxBinding(cbMATERIAL_TYPE_T, cbSTEEL_CONNECTION_TYPE_T, DICSTEELCONNECTIONTYPEBindingSource1)
+        filterComboBoxBinding(cbMATERIAL_TYPE_T, cbLLRS_T, DICLLRSBindingSource1)
+    End Sub
+
+    Private Sub cbROOF_SYSTEM_MATERIAL_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles cbROOF_SYSTEM_MATERIAL.TextChanged
+        filterComboBoxBinding(cbROOF_SYSTEM_MATERIAL, cbROOF_SYSTEM_TYPE, DICROOFSYSTEMTYPEBindingSource)
+    End Sub
+
+    Private Sub cbFLOOR_MATERIAL_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles cbFLOOR_MATERIAL.TextChanged
+        filterComboBoxBinding(cbFLOOR_MATERIAL, cbFLOOR_TYPE, DICFLOORTYPEBindingSource)
+    End Sub
+
+    Private Sub cbLLRS_L_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles cbLLRS_L.TextChanged
+        filterComboBoxBinding(cbLLRS_L, cbLLRS_DUCTILITY_L, DICLLRSDUCTILITYBindingSource)
+    End Sub
+
+    Private Sub cbLLRS_T_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles cbLLRS_T.TextChanged
+        filterComboBoxBinding(cbLLRS_T, cbLLRS_DUCTILITY_T, DICLLRSDUCTILITYBindingSource1)
+    End Sub
+
+    Private Sub cbSTRUCTURAL_IRREGULARITY_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles cbSTRUCTURAL_IRREGULARITY.TextChanged
+        filterComboBoxBinding(cbSTRUCTURAL_IRREGULARITY, cbSTRUCTURAL_HORIZ_IRREG_P, DICSTRUCTURALHORIZIRREGBindingSource)
+        filterComboBoxBinding(cbSTRUCTURAL_IRREGULARITY, cbSTRUCTURAL_HORIZ_IRREG_S, DICSTRUCTURALHORIZIRREGBindingSource1)
+        filterComboBoxBinding(cbSTRUCTURAL_IRREGULARITY, cbSTRUCTURAL_VERT_IRREG_P, DICSTRUCTURALVERTIRREGBindingSource)
+        filterComboBoxBinding(cbSTRUCTURAL_IRREGULARITY, cbSTRUCTURAL_VERT_IRREG_S, DICSTRUCTURALVERTIRREGBindingSource1)
     End Sub
 
     Private Sub chbAdvancedView_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chbAdvancedView.CheckedChanged
@@ -1048,31 +1074,5 @@ Public Class frmDetails
 
     End Sub
 
-    Private Sub cbROOF_SYSTEM_MATERIAL_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles cbROOF_SYSTEM_MATERIAL.TextChanged
-        filterComboBoxBinding(cbROOF_SYSTEM_MATERIAL, cbROOF_SYSTEM_TYPE, DICROOFSYSTEMTYPEBindingSource)
-    End Sub
 
-    Private Sub cbFLOOR_MATERIAL_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles cbFLOOR_MATERIAL.TextChanged
-        filterComboBoxBinding(cbFLOOR_MATERIAL, cbFLOOR_TYPE, DICFLOORTYPEBindingSource)
-    End Sub
-
-    Private Sub GroupBox15_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GroupBox15.Enter
-
-    End Sub
-
-    Private Sub Label3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label3.Click
-
-    End Sub
-
-    Private Sub Label4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label4.Click
-
-    End Sub
-
-    Private Sub Label5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-    End Sub
-
-    Private Sub GroupBox3_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GroupBox3.Enter
-
-    End Sub
 End Class

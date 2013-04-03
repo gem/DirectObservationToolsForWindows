@@ -566,11 +566,31 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
+</member><member name="T:MapWindow.GEMDataset.GEM_RULESDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
 </member><member name="T:MapWindow.GEMDataset.MEDIA_DETAILDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
 </member><member name="T:MapWindow.GEMDataset.SETTINGSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MapWindow.GEMDataset.BUILDING_DECODEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MapWindow.GEMDataset.CONSEQUENCES_DECODEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MapWindow.GEMDataset.GED_DECODEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MapWindow.GEMDataset.MEDIA_DETAIL_DECODEDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -726,11 +746,31 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
+</member><member name="T:MapWindow.GEMDataset.GEM_RULESRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
 </member><member name="T:MapWindow.GEMDataset.MEDIA_DETAILRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
 </member><member name="T:MapWindow.GEMDataset.SETTINGSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MapWindow.GEMDataset.BUILDING_DECODERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MapWindow.GEMDataset.CONSEQUENCES_DECODERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MapWindow.GEMDataset.GED_DECODERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MapWindow.GEMDataset.MEDIA_DETAIL_DECODERow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
@@ -886,11 +926,31 @@ Row event argument class
 	<summary>
 Row event argument class
 </summary>
+</member><member name="T:MapWindow.GEMDataset.GEM_RULESRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
 </member><member name="T:MapWindow.GEMDataset.MEDIA_DETAILRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
 </member><member name="T:MapWindow.GEMDataset.SETTINGSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MapWindow.GEMDataset.BUILDING_DECODERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MapWindow.GEMDataset.CONSEQUENCES_DECODERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MapWindow.GEMDataset.GED_DECODERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MapWindow.GEMDataset.MEDIA_DETAIL_DECODERowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -1050,11 +1110,31 @@ Represents the connection and commands used to retrieve and save data.
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
+</member><member name="T:MapWindow.GEMDatasetTableAdapters.GEM_RULESTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
 </member><member name="T:MapWindow.GEMDatasetTableAdapters.MEDIA_DETAILTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member><member name="T:MapWindow.GEMDatasetTableAdapters.SETTINGSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MapWindow.GEMDatasetTableAdapters.BUILDING_DECODETableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MapWindow.GEMDatasetTableAdapters.CONSEQUENCES_DECODETableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MapWindow.GEMDatasetTableAdapters.GED_DECODETableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MapWindow.GEMDatasetTableAdapters.MEDIA_DETAIL_DECODETableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
