@@ -524,7 +524,7 @@ Partial Class frmDetails
         '
         Me.lblMORT.AutoSize = True
         Me.lblMORT.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMORT.Location = New System.Drawing.Point(78, 97)
+        Me.lblMORT.Location = New System.Drawing.Point(78, 92)
         Me.lblMORT.Name = "lblMORT"
         Me.lblMORT.Size = New System.Drawing.Size(120, 16)
         Me.lblMORT.TabIndex = 22
@@ -637,7 +637,7 @@ Partial Class frmDetails
         '
         Me.lblSTRHVI.AutoSize = True
         Me.lblSTRHVI.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSTRHVI.Location = New System.Drawing.Point(78, 94)
+        Me.lblSTRHVI.Location = New System.Drawing.Point(81, 94)
         Me.lblSTRHVI.Name = "lblSTRHVI"
         Me.lblSTRHVI.Size = New System.Drawing.Size(118, 16)
         Me.lblSTRHVI.TabIndex = 40
