@@ -232,7 +232,7 @@ Public Class frmGEM2SHP
                     '
                     For field As Integer = 0 To dt.Columns.Count - 1
                         If (Not IsDBNull(dr(field))) Then
-                            sf.EditCellValue(field, irow, CStr(dr(field)))
+                            sf.EditCellValue(field, irow, Strings.Left(dr(field).ToString, 254))
                         End If
                     Next
                 End If

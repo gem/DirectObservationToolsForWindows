@@ -1817,11 +1817,11 @@ Partial Class frmDetails
         '
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(43, 88)
+        Me.Label18.Location = New System.Drawing.Point(15, 82)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(145, 32)
+        Me.Label18.Size = New System.Drawing.Size(169, 32)
         Me.Label18.TabIndex = 104
-        Me.Label18.Text = "Height of Ground Floor " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Above Grade (metres)"
+        Me.Label18.Text = "Height of Ground Floor " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Above Grade (centimetres)"
         '
         'cbNO_STOREYS_BELOW_GROUND_QUAL
         '
