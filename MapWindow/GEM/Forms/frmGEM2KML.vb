@@ -113,6 +113,8 @@ Public Class frmGEM2KML
         '
         Dim pHashTable As New Hashtable
         For Each pRow As DataRow In pDataTable.Rows
+            GC.Collect()
+            GC.WaitForPendingFinalizers()
             Dim strPath As String = photosFolder & "\" & pRow(strField).ToString
             If (File.Exists(strPath)) Then
                 Dim fname As String = IO.Path.GetFileName(strPath)
