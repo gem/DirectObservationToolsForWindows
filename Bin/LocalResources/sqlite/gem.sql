@@ -378,7 +378,7 @@ INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RME1','Metal beams or trusses support
 INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RME2','Metal beams supporting precast concrete slabs','Metal beams supporting precast concrete slabs','RME','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RME3','Composite steel deck and concrete slab','Composite steel deck and concrete slab','RME','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RWO99','Wood, unknown','Wood, unknown','RWO','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
-INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RWO1','Wooden light roof covering','Wooden light roof covering','RWO','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RWO1','Wooden structure with light roof covering','Wooden structure with light roof covering','RWO','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RWO2','Wooden beams or trusses with heavy roof covering','Wooden beams or trusses with heavy roof covering','RWO','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RWO3','Wood-based sheets on rafters or purlins','Wood-based sheets on rafters or purlins','RWO','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_ROOF_SYSTEM_TYPE" VALUES('RWO4','Plywood panels or other light-weight panels for roof','Plywood panels or other light-weight panels for roof','RWO','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
