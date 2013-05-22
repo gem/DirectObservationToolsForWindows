@@ -1,8 +1,8 @@
 /*
 Name: GEM.SQL
 Purpose: To create GEM SQLite database
-Version: 16
-Version Date: 09/04/2013
+Version: 17
+Version Date: 22/05/2013
 */
 PRAGMA foreign_keys=ON;
 BEGIN TRANSACTION;
