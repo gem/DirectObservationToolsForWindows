@@ -1196,11 +1196,11 @@ Partial Class frmDetails
         Me.lblFMAT.AutoSize = True
         Me.lblFMAT.BackColor = System.Drawing.Color.Transparent
         Me.lblFMAT.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFMAT.Location = New System.Drawing.Point(67, 26)
+        Me.lblFMAT.Location = New System.Drawing.Point(26, 26)
         Me.lblFMAT.Name = "lblFMAT"
-        Me.lblFMAT.Size = New System.Drawing.Size(90, 16)
+        Me.lblFMAT.Size = New System.Drawing.Size(138, 16)
         Me.lblFMAT.TabIndex = 31
-        Me.lblFMAT.Text = "Floor Material"
+        Me.lblFMAT.Text = "Floor System Material"
         '
         'cbFLOOR_TYPE
         '
@@ -1595,11 +1595,11 @@ Partial Class frmDetails
         '
         Me.lblOCCD.AutoSize = True
         Me.lblOCCD.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblOCCD.Location = New System.Drawing.Point(33, 50)
+        Me.lblOCCD.Location = New System.Drawing.Point(10, 50)
         Me.lblOCCD.Name = "lblOCCD"
-        Me.lblOCCD.Size = New System.Drawing.Size(114, 16)
+        Me.lblOCCD.Size = New System.Drawing.Size(137, 16)
         Me.lblOCCD.TabIndex = 42
-        Me.lblOCCD.Text = "Occupancy Detail"
+        Me.lblOCCD.Text = "Occupancy - Detailed"
         '
         'lblOCC
         '
