@@ -25,5 +25,11 @@
         End If
     End Sub
 
+    'Tells binding to convert empty string to DBNull
+    Protected Overrides Sub OnCreateControl()
+        MyBase.OnCreateControl()
+        Me.DataBindings(0).NullValue = String.Empty
+    End Sub
+
 End Class
 
