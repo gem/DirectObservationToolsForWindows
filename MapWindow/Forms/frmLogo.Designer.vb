@@ -33,20 +33,19 @@ Partial Class frmLogo
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(493, 157)
+        Me.PictureBox1.Size = New System.Drawing.Size(407, 180)
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
         'lblStatus
         '
         Me.lblStatus.AutoSize = True
-        Me.lblStatus.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
-        Me.lblStatus.ForeColor = System.Drawing.Color.White
-        Me.lblStatus.Location = New System.Drawing.Point(15, 135)
+        Me.lblStatus.BackColor = System.Drawing.Color.White
+        Me.lblStatus.ForeColor = System.Drawing.Color.FromArgb(CType(CType(86, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.lblStatus.Location = New System.Drawing.Point(8, 160)
         Me.lblStatus.Name = "lblStatus"
         Me.lblStatus.Size = New System.Drawing.Size(54, 13)
         Me.lblStatus.TabIndex = 1
@@ -54,12 +53,12 @@ Partial Class frmLogo
         '
         'lblVersion
         '
-        Me.lblVersion.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
-        Me.lblVersion.ForeColor = System.Drawing.Color.White
-        Me.lblVersion.Location = New System.Drawing.Point(218, 136)
+        Me.lblVersion.BackColor = System.Drawing.Color.White
+        Me.lblVersion.ForeColor = System.Drawing.Color.FromArgb(CType(CType(86, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.lblVersion.Location = New System.Drawing.Point(278, 159)
         Me.lblVersion.Name = "lblVersion"
         Me.lblVersion.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lblVersion.Size = New System.Drawing.Size(266, 13)
+        Me.lblVersion.Size = New System.Drawing.Size(120, 16)
         Me.lblVersion.TabIndex = 2
         Me.lblVersion.Text = "Version"
         Me.lblVersion.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -69,7 +68,7 @@ Partial Class frmLogo
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(493, 157)
+        Me.ClientSize = New System.Drawing.Size(407, 180)
         Me.ControlBox = False
         Me.Controls.Add(Me.lblVersion)
         Me.Controls.Add(Me.lblStatus)
