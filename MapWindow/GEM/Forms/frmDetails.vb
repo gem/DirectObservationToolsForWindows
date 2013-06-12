@@ -112,15 +112,19 @@ Public Class frmDetails
         'TODO: This line of code loads data into the 'GEMDataset.DIC_MATERIAL_TYPE' table. You can move, or remove it, as needed.
         Me.DIC_MATERIAL_TYPETableAdapter.Fill(Me.GEMDataset.DIC_MATERIAL_TYPE)
 
-        Me.DIC_OCCUPANCY_DETAILTableAdapter.Fill(Me.GEMDataset.DIC_OCCUPANCY_DETAIL)
-        Me.DIC_OCCUPANCYTableAdapter.Fill(Me.GEMDataset.DIC_OCCUPANCY)
-        Me.DIC_MATERIAL_TYPETableAdapter.Fill(Me.GEMDataset.DIC_MATERIAL_TYPE)
-        Me.DIC_MEDIA_TYPETableAdapter.Fill(Me.GEMDataset.DIC_MEDIA_TYPE)
+        'Me.DIC_OCCUPANCY_DETAILTableAdapter.Fill(Me.GEMDataset.DIC_OCCUPANCY_DETAIL)
+        'Me.DIC_OCCUPANCYTableAdapter.Fill(Me.GEMDataset.DIC_OCCUPANCY)
+        'Me.DIC_MATERIAL_TYPETableAdapter.Fill(Me.GEMDataset.DIC_MATERIAL_TYPE)
+        'Me.DIC_MEDIA_TYPETableAdapter.Fill(Me.GEMDataset.DIC_MEDIA_TYPE)
+        'Me.MEDIA_DETAILTableAdapter.Fill(Me.GEMDataset.MEDIA_DETAIL)
+        ' Me.CONSEQUENCESTableAdapter.Fill(Me.GEMDataset.CONSEQUENCES)
 
-        Me.MEDIA_DETAILTableAdapter.Fill(Me.GEMDataset.MEDIA_DETAIL)
         Me.GEM_OBJECTTableAdapter.Fill(Me.GEMDataset.GEM_OBJECT)
-        Me.CONSEQUENCESTableAdapter.Fill(Me.GEMDataset.CONSEQUENCES)
         Me.GEDTableAdapter.Fill(Me.GEMDataset.GED)
+
+        Me.DiC_ROOF_CONNECTIONTableAdapter.Fill(Me.GEMDataset.DIC_ROOF_CONNECTION)
+        Me.DiC_FLOOR_CONNECTIONTableAdapter.Fill(Me.GEMDataset.DIC_FLOOR_CONNECTION)
+        Me.GEM_RULESTableAdapter.Fill(Me.GEMDataset.GEM_RULES)
 
         Call loadFavsCombo()
 
@@ -142,6 +146,19 @@ Public Class frmDetails
         End If
 
         Call SetHandlers(Me)
+        '
+        ' Read Form labels from file if it exists
+        '
+        Dim formLabelsFile As String = IO.Path.GetDirectoryName(gemdb.DatabasePath) & "\FormLabels.txt"
+        Call SetLabels(formLabelsFile)
+        '
+        ' Disable controls that depend on other controls
+        '
+        cbOCCUPANCY_DETAIL.Enabled = False
+        cbFLOOR_TYPE.Enabled = False
+        cbROOF_SYSTEM_TYPE.Enabled = False
+        cbLLRS_DUCTILITY_L.Enabled = False
+        cbLLRS_DUCTILITY_T.Enabled = False
 
     End Sub
 
@@ -330,23 +347,63 @@ Public Class frmDetails
     End Sub
 
 
+    'Private Sub filterComboBoxBinding(ByVal firstCombo As ComboBox, ByVal secondCombo As ComboBox, ByVal secondComboBinder As BindingSource)
+    '    If Not firstCombo.SelectedValue Is Nothing And firstCombo.SelectedValue <> "" Then
+    '        Dim previousValue As String = secondCombo.SelectedValue
+    '        If previousValue Is Nothing Then
+    '            previousValue = ""
+    '        End If
+
+    '        'Get Scope from dictionary
+    '        Dim scopeValue As String = ""
+    '        Try
+    '            Dim dt As DataTable = CType(Me.GEMDataset.Tables(firstCombo.DataSource.DataMember), DataTable)
+    '            Dim dr As DataRow = (From rec In dt.Rows Where rec("CODE") = firstCombo.SelectedValue Select rec).FirstOrDefault
+    '            scopeValue = dr("SCOPE")
+    '        Catch ex As Exception
+    '        End Try
+
+    '        secondComboBinder.Filter = "SCOPE = '" & scopeValue & "'"
+    '        secondCombo.SelectedValue = previousValue
+    '        If secondComboBinder.Count = 0 Then
+    '            secondCombo.Enabled = False
+    '        Else
+    '            secondCombo.Enabled = True
+    '        End If
+    '    Else
+    '        secondCombo.Enabled = False
+    '        secondCombo.SelectedValue = ""
+    '    End If
+    'End Sub
+
     Private Sub filterComboBoxBinding(ByVal firstCombo As ComboBox, ByVal secondCombo As ComboBox, ByVal secondComboBinder As BindingSource)
         If Not firstCombo.SelectedValue Is Nothing And firstCombo.SelectedValue <> "" Then
             Dim previousValue As String = secondCombo.SelectedValue
             If previousValue Is Nothing Then
                 previousValue = ""
             End If
-
-            'Get Scope from dictionary
-            Dim scopeValue As String = ""
+            '
+            'Get Allowed Values from GEM_RULES
+            '
+            Dim allowedValues As String = "'DUMMY'" ' Dummy value to ensure there is always a value sepecified in the where clause
             Try
-                Dim dt As DataTable = CType(Me.GEMDataset.Tables(firstCombo.DataSource.DataMember), DataTable)
-                Dim dr As DataRow = (From rec In dt.Rows Where rec("CODE") = firstCombo.SelectedValue Select rec).FirstOrDefault
-                scopeValue = dr("SCOPE")
+                Dim dt As DataTable = Me.GEMDataset.GEM_RULES
+                If dt Is Nothing Then Exit Sub 'If constraints table cannot be found then go ahead without constraints
+                '
+                ' Get rows from GEM_RULES where PARENT_CODE matches the selected value
+                '
+                Dim matchingRows = (From rec In dt.Rows Where rec("PARENT_CODE") = firstCombo.SelectedValue Select rec).AsEnumerable
+                '
+                ' Build list of allowed values
+                '
+                For Each matchingRow As DataRow In matchingRows
+                    allowedValues = allowedValues & ",'" & matchingRow("CHILD_CODE") & "'"
+                Next
+
             Catch ex As Exception
             End Try
 
-            secondComboBinder.Filter = "SCOPE = '" & scopeValue & "'"
+            secondComboBinder.Filter = "CODE IN (" & allowedValues & ")"
             secondCombo.SelectedValue = previousValue
             If secondComboBinder.Count = 0 Then
                 secondCombo.Enabled = False
@@ -524,7 +581,6 @@ Public Class frmDetails
         End If
     End Sub
 
-
     Private Sub cbOCCUPANCY_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles cbOCCUPANCY.TextChanged
         filterComboBoxBinding(cbOCCUPANCY, cbOCCUPANCY_DETAIL, DICOCCUPANCYDETAILBindingSource)
     End Sub
@@ -534,6 +590,7 @@ Public Class frmDetails
         filterComboBoxBinding(cbMATERIAL_TYPE_L, cbMASONRY_REINFORCEMENT_L, DICMASONRYREINFORCEMENTBindingSource)
         filterComboBoxBinding(cbMATERIAL_TYPE_L, cbMASONRY_MORTAR_TYPE_L, DICMASONARYMORTARTYPEBindingSource)
         filterComboBoxBinding(cbMATERIAL_TYPE_L, cbSTEEL_CONNECTION_TYPE_L, DICSTEELCONNECTIONTYPEBindingSource)
+        filterComboBoxBinding(cbMATERIAL_TYPE_L, cbLLRS_L, DICLLRSBindingSource)
     End Sub
 
     Private Sub cbMATERIAL_TYPE_T_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles cbMATERIAL_TYPE_T.TextChanged
@@ -541,6 +598,30 @@ Public Class frmDetails
         filterComboBoxBinding(cbMATERIAL_TYPE_T, cbMASONRY_REINFORCEMENT_T, DICMASONRYREINFORCEMENTBindingSource1)
         filterComboBoxBinding(cbMATERIAL_TYPE_T, cbMASONRY_MORTAR_TYPE_T, DICMASONARYMORTARTYPEBindingSource1)
         filterComboBoxBinding(cbMATERIAL_TYPE_T, cbSTEEL_CONNECTION_TYPE_T, DICSTEELCONNECTIONTYPEBindingSource1)
+        filterComboBoxBinding(cbMATERIAL_TYPE_T, cbLLRS_T, DICLLRSBindingSource1)
+    End Sub
+
+    Private Sub cbROOF_SYSTEM_MATERIAL_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles cbROOF_SYSTEM_MATERIAL.TextChanged
+        filterComboBoxBinding(cbROOF_SYSTEM_MATERIAL, cbROOF_SYSTEM_TYPE, DICROOFSYSTEMTYPEBindingSource)
+    End Sub
+
+    Private Sub cbFLOOR_MATERIAL_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles cbFLOOR_MATERIAL.TextChanged
+        filterComboBoxBinding(cbFLOOR_MATERIAL, cbFLOOR_TYPE, DICFLOORTYPEBindingSource)
+    End Sub
+
+    Private Sub cbLLRS_L_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles cbLLRS_L.TextChanged
+        filterComboBoxBinding(cbLLRS_L, cbLLRS_DUCTILITY_L, DICLLRSDUCTILITYBindingSource)
+    End Sub
+
+    Private Sub cbLLRS_T_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles cbLLRS_T.TextChanged
+        filterComboBoxBinding(cbLLRS_T, cbLLRS_DUCTILITY_T, DICLLRSDUCTILITYBindingSource1)
+    End Sub
+
+    Private Sub cbSTRUCTURAL_IRREGULARITY_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles cbSTRUCTURAL_IRREGULARITY.TextChanged
+        filterComboBoxBinding(cbSTRUCTURAL_IRREGULARITY, cbSTRUCTURAL_HORIZ_IRREG_P, DICSTRUCTURALHORIZIRREGBindingSource)
+        filterComboBoxBinding(cbSTRUCTURAL_IRREGULARITY, cbSTRUCTURAL_HORIZ_IRREG_S, DICSTRUCTURALHORIZIRREGBindingSource1)
+        filterComboBoxBinding(cbSTRUCTURAL_IRREGULARITY, cbSTRUCTURAL_VERT_IRREG_P, DICSTRUCTURALVERTIRREGBindingSource)
+        filterComboBoxBinding(cbSTRUCTURAL_IRREGULARITY, cbSTRUCTURAL_VERT_IRREG_S, DICSTRUCTURALVERTIRREGBindingSource1)
     End Sub
 
     Private Sub chbAdvancedView_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chbAdvancedView.CheckedChanged
@@ -934,4 +1015,64 @@ Public Class frmDetails
             MessageBox.Show("Invalid Value")
         End If
     End Sub
+
+    Sub SetLabels(ByVal strLanguageFile As String)
+        '
+        ' Name: SetLabels
+        ' Purpose: To set the Labels on Form at runtime. Labels read from specified file
+        ' Written: K.Adlam, 6/3/13
+        '
+        Try
+            If (Not IO.File.Exists(strLanguageFile)) Then Exit Sub
+            '
+            ' Load Language file into Hashtable
+            '
+            '
+            ' Check if language file exists
+            '
+            Dim sr As New IO.StreamReader(strLanguageFile)
+            '
+            ' Loop through each line in language file and replace Names on the form
+            '
+            Do Until sr.EndOfStream
+                Dim arr() As String = sr.ReadLine.Split("|")
+                '
+                ' Change Control Names
+                '
+                If (arr.Count = 2) Then
+                    Try
+                        Dim pControl As Control = Me.Controls.Find(arr(0).Trim, True)(0)
+
+                        If (Not pControl Is Nothing) Then
+                            '
+                            ' Deal with DataGridView as a special case
+                            '
+                            If (TypeOf pControl Is DataGridView) Then
+                                Dim arr2() As String = arr(1).Trim.Split("#")
+                                If (arr2.Length = 2) Then
+                                    Dim pDataGridView As DataGridView = pControl
+                                    pDataGridView.Columns(arr2(0).Trim).HeaderText = arr2(1).Trim
+                                End If
+
+                            Else ' All other controls
+                                pControl.Text = arr(1).Trim
+
+                            End If
+                        End If
+                    Catch
+                    End Try
+                End If
+                '
+                ' Change form name
+                '
+                If (Me.Name = arr(0).Trim) Then Me.Text = arr(1).Trim
+
+            Loop
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
+
+    End Sub
+
+
 End Class

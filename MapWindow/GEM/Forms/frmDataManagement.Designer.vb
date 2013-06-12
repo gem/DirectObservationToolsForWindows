@@ -63,7 +63,7 @@ Partial Class frmDataManagement
         Me.ExportToKML.Name = "ExportToKML"
         Me.ExportToKML.Size = New System.Drawing.Size(250, 40)
         Me.ExportToKML.TabIndex = 3
-        Me.ExportToKML.Text = "Export GEM database to KML file"
+        Me.ExportToKML.Text = "Export GEM database to KMZ file"
         Me.ExportToKML.UseVisualStyleBackColor = True
         '
         'ExportToShapefile

@@ -113,6 +113,8 @@ Public Class frmGEM2KML
         '
         Dim pHashTable As New Hashtable
         For Each pRow As DataRow In pDataTable.Rows
+            GC.Collect()
+            GC.WaitForPendingFinalizers()
             Dim strPath As String = photosFolder & "\" & pRow(strField).ToString
             If (File.Exists(strPath)) Then
                 Dim fname As String = IO.Path.GetFileName(strPath)
@@ -530,7 +532,7 @@ Public Class frmGEM2KML
     Private Sub SourceBrowse_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SourceBrowse.Click
         With OpenFileDialog1
             .FileName = ""
-            .Filter = "GEM database files (*.gemdb)|*.gemdb|" & "All files|*.*"
+            .Filter = "GEM database files (*.db3)|*.db3|" & "All files|*.*"
             If (.ShowDialog() = Windows.Forms.DialogResult.OK) Then
                 Me.GEMDatabase.Text = .FileName
             End If

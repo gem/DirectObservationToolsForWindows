@@ -7,6 +7,7 @@ Imports System.Linq
 Imports System.Text
 Imports System.Data
 Imports System.Data.SQLite
+Imports MapWinGIS
 
 Public Class frmGEM2SHP
 
@@ -72,7 +73,7 @@ Public Class frmGEM2SHP
     Private Sub SourceBrowse_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SourceBrowse.Click
         With OpenFileDialog1
             .FileName = ""
-            .Filter = "GEM database files (*.gemdb)|*.gemdb|" & "All files|*.*"
+            .Filter = "GEM database files (*.db3)|*.db3|" & "All files|*.*"
             If (.ShowDialog() = Windows.Forms.DialogResult.OK) Then
                 Me.GEMDatabase.Text = .FileName
             End If
@@ -167,9 +168,12 @@ Public Class frmGEM2SHP
                 Next
             Else
                 '
-                ' Create New shapefile
+                ' Create New shapefile, set projection to WGS84 and start editing
                 '
                 sf.CreateNew(strPath, MapWinGIS.ShpfileType.SHP_POINT)
+                Dim proj As geoprojection = New geoprojection
+                proj.importfromepsg(4326)
+                sf.GeoProjection = proj
                 sf.StartEditingShapes(True)
             End If
             '
@@ -228,7 +232,7 @@ Public Class frmGEM2SHP
                     '
                     For field As Integer = 0 To dt.Columns.Count - 1
                         If (Not IsDBNull(dr(field))) Then
-                            sf.EditCellValue(field, irow, CStr(dr(field)))
+                            sf.EditCellValue(field, irow, Strings.Left(dr(field).ToString, 254))
                         End If
                     Next
                 End If

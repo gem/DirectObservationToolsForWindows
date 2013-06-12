@@ -497,13 +497,17 @@ Module modMain
                     '
                     ' Create GEM database
                     '
-                    gemdb = New GEMDatabase(System.IO.Path.ChangeExtension(ProjInfo.ProjectFileName, ".gemdb"))
+                    gemdb = New GEMDatabase(System.IO.Path.ChangeExtension(ProjInfo.ProjectFileName, ".db3"))
 
                     If Not ProjInfo.LoadProject(CommandLine) Then
                         ' Paul Meems 10 Aug 2010: moved error box to here from LoadProject():
                         ' TODO Needs localization:
                         MapWinUtility.Logger.Msg("Errors occured while opening this project file", MsgBoxStyle.Exclamation, "Project File Error Report")
                     End If
+
+                    frmMain.AddGEMLayerIfNotPresent()
+                    Dim f As New frmProjectDetails
+                    f.ShowDialog()
  
                 ElseIf Not ext = "" And Not grd.CdlgFilter().IndexOf(ext) = -1 Then
                     'This is a layer that's supported by our Grid object. cdm 12-21-2005

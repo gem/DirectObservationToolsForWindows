@@ -518,12 +518,6 @@
     <Compile Include="GEM\Forms\frmSync.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GEM\Forms\frmSync_Old.Designer.vb">
-      <DependentUpon>frmSync_Old.vb</DependentUpon>
-    </Compile>
-    <Compile Include="GEM\Forms\frmSync_Old.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="GlobalResource.cs.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -722,9 +716,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GEM\Forms\frmSync.resx">
       <DependentUpon>frmSync.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GEM\Forms\frmSync_Old.resx">
-      <DependentUpon>frmSync_Old.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Legend Editor\Forms\ColorPicker.vi-VN.resx">
       <DependentUpon>ColorPicker.vb</DependentUpon>

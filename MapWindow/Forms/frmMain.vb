@@ -4122,8 +4122,11 @@ Partial Friend Class MapWindowForm
         'Create GEM Database
         If Not fromOpen Then
             DoSaveAs()
+
+            gemdb = New GEMDatabase(System.IO.Path.ChangeExtension(ProjInfo.ProjectFileName, ".db3"))
             If gemdb Is Nothing Then Exit Sub
 
+            AddGEMLayerIfNotPresent()
             Dim f As New frmProjectDetails
             f.ShowDialog()
 
@@ -4155,7 +4158,7 @@ Partial Friend Class MapWindowForm
 
             DoNew(True)
             ProjInfo.ProjectFileName = Filename
-            gemdb = New GEMDatabase(System.IO.Path.ChangeExtension(ProjInfo.ProjectFileName, ".gemdb"))
+            gemdb = New GEMDatabase(System.IO.Path.ChangeExtension(ProjInfo.ProjectFileName, ".db3"))
 
 
             'Load the project into the current project (the first true)
@@ -4217,7 +4220,7 @@ Partial Friend Class MapWindowForm
                 'GEM Open Existing database
                 DoNew(True)
                 ProjInfo.ProjectFileName = Filename
-                gemdb = New GEMDatabase(System.IO.Path.ChangeExtension(ProjInfo.ProjectFileName, ".gemdb"))
+                gemdb = New GEMDatabase(System.IO.Path.ChangeExtension(ProjInfo.ProjectFileName, ".db3"))
 
 
                 If Not ProjInfo.LoadProject(Filename) Then
@@ -4268,7 +4271,7 @@ Partial Friend Class MapWindowForm
                     SetModified(False)
                     If gemdb Is Nothing Then
                         'GEM - save database
-                        gemdb = New GEMDatabase(System.IO.Path.ChangeExtension(ProjInfo.ProjectFileName, ".gemdb"))
+                        gemdb = New GEMDatabase(System.IO.Path.ChangeExtension(ProjInfo.ProjectFileName, ".db3"))
                         Dim f As New frmProjectDetails
                         f.ShowDialog()
                     End If
@@ -4280,7 +4283,7 @@ Partial Friend Class MapWindowForm
                     SetModified(False)
                     If gemdb Is Nothing Then
                         'GEM - save database
-                        gemdb = New GEMDatabase(System.IO.Path.ChangeExtension(ProjInfo.ProjectFileName, ".gemdb"))
+                        gemdb = New GEMDatabase(System.IO.Path.ChangeExtension(ProjInfo.ProjectFileName, ".db3"))
                         Dim f As New frmProjectDetails
                         f.ShowDialog()
                     End If
@@ -4318,11 +4321,11 @@ Partial Friend Class MapWindowForm
             'GEM - save database
             If gemdb Is Nothing Then
                 'Create new data
-                gemdb = New GEMDatabase(System.IO.Path.ChangeExtension(ProjInfo.ProjectFileName, ".gemdb"))
+                gemdb = New GEMDatabase(System.IO.Path.ChangeExtension(ProjInfo.ProjectFileName, ".db3"))
             Else
                 'Copy existing data base
                 Dim existingDB As String = gemdb.DatabasePath
-                Dim newDB As String = System.IO.Path.ChangeExtension(ProjInfo.ProjectFileName, ".gemdb")
+                Dim newDB As String = System.IO.Path.ChangeExtension(ProjInfo.ProjectFileName, ".db3")
                 If Not IO.File.Exists(newDB) And IO.File.Exists(existingDB) Then
                     System.IO.File.Copy(existingDB, newDB)
                     gemdb = New GEMDatabase(newDB)

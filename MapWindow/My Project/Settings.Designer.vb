@@ -57,8 +57,8 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("data source=E:\Work\VisualStudioProjects\GEM\MapWindow\GEM\LocalResources\sqlite\"& _ 
-            "gem.db3")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("data source=E:\GEM\GEM_GIT\DirectObservationToolsForWindows\Bin\LocalResources\sq"& _ 
+            "lite\gem.db3")>  _
         Public ReadOnly Property GEMConnectionString() As String
             Get
                 Return CType(Me("GEMConnectionString"),String)

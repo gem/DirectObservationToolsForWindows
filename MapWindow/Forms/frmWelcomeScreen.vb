@@ -248,7 +248,7 @@ Public Class frmWelcomeScreen
 
     Private Sub frmWelcomeScreen_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-        ' gemdb = New GEMDatabase("c:\test.gemdb")
+        ' gemdb = New GEMDatabase("c:\test.db3")
         ' Dim detailsForm As New frmDetails(1, 2)
         '  detailsForm.ShowDialog()
 
