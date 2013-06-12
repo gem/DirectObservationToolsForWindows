@@ -713,7 +713,11 @@ Public Class frmDetails
 
     Sub TrackHelpTopicLabel(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim ctrl As Control = sender
-        currentHelpTopic = ctrl.Text
+        If (ctrl.Tag = "") Then
+            currentHelpTopic = ctrl.Text
+        Else
+            currentHelpTopic = ctrl.Tag
+        End If
         Me.TabControl1.SelectTab(5) 'select the Help Tab
     End Sub
 
@@ -737,8 +741,27 @@ Public Class frmDetails
 
         Dim helpFile As String = helpDir & "\default.html"
         If currentHelpTopic <> "" Then
-            Dim fuz As New FuzzySearch
-            helpFile = fuz.Search(currentHelpTopic, IO.Directory.GetFiles(helpDir).ToList, 0.5)
+            '
+            ' Check for code match
+            '
+            Dim di As IO.DirectoryInfo = New IO.DirectoryInfo(helpDir)
+            Dim fi() As IO.FileInfo = di.GetFiles("*--" & (currentHelpTopic.ToLower) & ".html")
+            If (fi.Count = 1) Then helpFile = fi(0).FullName
+            '
+            ' Check for text match if code match fails
+            '
+            If (fi.Count = 0) Then
+                fi = di.GetFiles((currentHelpTopic.ToLower.Replace(" ", "-")) & "--*")
+            End If
+            If (fi.Count = 1) Then helpFile = fi(0).FullName
+            '
+            ' Check for fuzzy match if text match fails
+            '
+            If (fi.Count = 0) Then
+                Dim fuz As New FuzzySearch
+                helpFile = fuz.Search(currentHelpTopic, IO.Directory.GetFiles(helpDir).ToList, 0.5)
+            End If
+
         End If
 
         If (IO.File.Exists(helpFile)) Then
