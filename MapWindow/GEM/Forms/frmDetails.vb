@@ -699,7 +699,7 @@ Public Class frmDetails
 
             If TypeOf ctrl Is ComboBox Then
                 AddHandler (ctrl.TextChanged), AddressOf TrackHelpTopicCombo
-            ElseIf TypeOf ctrl Is Label Then
+            ElseIf TypeOf ctrl Is Label Or TypeOf ctrl Is GroupBox Then
                 AddHandler (ctrl.MouseDown), AddressOf TrackHelpTopicLabel
             End If
             SetHandlers(ctrl)
