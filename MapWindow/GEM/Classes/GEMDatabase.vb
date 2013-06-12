@@ -247,6 +247,20 @@ Public Class GEMDatabase
     End Sub
 
 
+    Public Sub updateObjectXY(ByVal objUUID As String, ByVal x As Double, ByVal y As Double)
+        Call gemdb.RefreshGEMDataTableContents()
+        If (From obj In gemdb.Dataset.GEM_OBJECT Where obj.OBJ_UID = objUUID Select obj).Count > 0 Then
+            'Update user setting
+            Dim updateObj As GEMDataset.GEM_OBJECTRow = (From obj In gemdb.Dataset.GEM_OBJECT Where obj.OBJ_UID = objUUID Select obj).First
+            updateObj.X = x
+            updateObj.Y = y
+            mObjectAdapter.Update(gemdb.Dataset.GEM_OBJECT)
+            Call gemdb.RefreshGEMDataTableContents()
+        Else
+            MessageBox.Show("Error updating x, y location. Can't find record.")
+        End If
+    End Sub
+
     'Public Sub addObject(ByVal name As String, ByVal summary As String, ByVal dateval As Date)
 
     '    Dim row As GEMDataset.GEM_OBJECTRow = Me.Dataset.GEM_OBJECT.NewGEM_OBJECTRow

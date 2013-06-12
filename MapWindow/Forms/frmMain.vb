@@ -2725,8 +2725,10 @@ Partial Friend Class MapWindowForm
         Select Case BtnName
             Case "tbbAddPoint"
                 MapMain.CursorMode = MapWinGIS.tkCursorMode.cmNone
+                Handled = m_PluginManager.ItemClicked(BtnName)
             Case "tbbQueryPoint"
                 MapMain.CursorMode = MapWinGIS.tkCursorMode.cmNone
+                Handled = m_PluginManager.ItemClicked(BtnName)
             Case "tbbPan"
                 MapMain.CursorMode = MapWinGIS.tkCursorMode.cmPan
                 UpdateButtons()
@@ -5609,6 +5611,86 @@ Partial Friend Class MapWindowForm
         End If
 
         m_PluginManager.MapMouseUp(e.button, e.shift, e.x, e.y)
+
+
+        If MapMain.NumLayers <> 0 Then
+
+            ' WS - The shapefile point has been moved, now move the db point
+            If Not Me.Toolbar.ButtonItem("MoveShapesButton") Is Nothing And Not Me.Toolbar.ButtonItem("MoveVertexButton") Is Nothing Then
+                If Me.Toolbar.ButtonItem("MoveShapesButton").Pressed Or Me.Toolbar.ButtonItem("MoveVertexButton").Pressed Then
+
+                    'check projection set
+                    If m_Project.ProjectProjection = "" Then
+                        MessageBox.Show("Please set a projection on the project file", "Set Projection", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                        m_Project.SetProjectProjectionByDialog()
+                        If m_Project.ProjectProjection = "" Then
+                            Exit Sub
+                        End If
+                        SetModified(True)
+                    End If
+
+                    Dim a As Double
+                    Dim b As Double
+                    MapMain.PixelToProj(CDbl(e.x), CDbl(e.y), a, b)
+
+                    'query location of new point
+                    If GetGEMLayerID() <> -1 And Not memoryShape Is Nothing Then
+
+                        Dim extents As New MapWinGIS.Extents
+
+                        extents.SetBounds(a, b, 0, a, b, 0)
+
+                        'Calculate the tolerance of 20 pixels in meters. i.e. 40 metres diameter
+                        Dim X1 As Double, Y1 As Double, X2 As Double, Y2 As Double, tolerance As Double
+                        MapMain.PixelToProj(0, 0, X1, Y1)
+                        MapMain.PixelToProj(40, 40, X2, Y2)
+                        tolerance = Math.Abs(X2 - X1)
+
+                        Dim ids As New Object
+                        Dim Result = memoryShape.SelectShapes(extents, tolerance, MapWinGIS.SelectMode.INTERSECTION, ids)
+
+                        If ids.Length Then
+                            '
+                            ' find the closest point
+                            '
+                            Dim ind As Long = ids(0), mindist As Double = -1
+                            For Each id As Long In ids
+                                Dim pShape As MapWinGIS.Shape = memoryShape.Shape(id)
+                                Dim theDist As Double = Dist(a, b, pShape.Point(0).x, pShape.Point(0).y)
+                                If ((theDist < mindist) Or (mindist = -1)) Then
+                                    mindist = theDist
+                                    ind = id
+                                End If
+                            Next
+
+                            Dim clickedObj_UID As String = memoryShape.Table.CellValue(memoryShape.Table.FieldIndexByName("OBJ_UID"), ind)
+
+                            'MessageBox.Show(clickedObj_UID)
+
+                            If clickedObj_UID <> "" Then
+                                'reproject to wgs84
+                                MapWinGeoProc.SpatialReference.ProjectPoint(a, b, ProjInfo.ProjectProjection, "+proj=latlong +ellps=WGS84 +datum=WGS84")
+
+                                'show xy loc
+                                'MessageBox.Show(a & "," & b)
+
+                                'Update User Information
+                                gemdb.updateObjectXY(clickedObj_UID, a, b)
+                            Else
+                                MessageBox.Show("Error updating x, y location. Can't find shape.")
+                            End If
+
+                        End If
+                    End If
+
+
+
+                End If
+            End If
+        End If
+
+
+
         ' End If
     End Sub
 
