@@ -508,6 +508,7 @@ Partial Class frmDetails
         Me.lblMTYPE.Name = "lblMTYPE"
         Me.lblMTYPE.Size = New System.Drawing.Size(91, 16)
         Me.lblMTYPE.TabIndex = 20
+        Me.lblMTYPE.Tag = "material-of-the-lateral-load-resisting-system"
         Me.lblMTYPE.Text = "Material Type"
         '
         'lblMTECH
@@ -850,6 +851,7 @@ Partial Class frmDetails
         Me.GroupBox2.Size = New System.Drawing.Size(796, 129)
         Me.GroupBox2.TabIndex = 63
         Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Tag = "structural-irregularity"
         Me.GroupBox2.Text = "Structural Irregularity"
         '
         'lblSec1
@@ -1113,6 +1115,7 @@ Partial Class frmDetails
         Me.GroupBox6.Size = New System.Drawing.Size(797, 147)
         Me.GroupBox6.TabIndex = 82
         Me.GroupBox6.TabStop = False
+        Me.GroupBox6.Tag = "floor"
         Me.GroupBox6.Text = "Floor and Foundations"
         '
         'Label6
@@ -1157,6 +1160,7 @@ Partial Class frmDetails
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(109, 16)
         Me.Label12.TabIndex = 34
+        Me.Label12.Tag = "floor-connections"
         Me.Label12.Text = "Floor Connection"
         '
         'cbFOUNDATION_SYSTEM
@@ -1189,6 +1193,7 @@ Partial Class frmDetails
         Me.lblFTYPE.Name = "lblFTYPE"
         Me.lblFTYPE.Size = New System.Drawing.Size(122, 16)
         Me.lblFTYPE.TabIndex = 32
+        Me.lblFTYPE.Tag = "floor-type"
         Me.lblFTYPE.Text = "Floor System Type"
         '
         'lblFMAT
@@ -1200,6 +1205,7 @@ Partial Class frmDetails
         Me.lblFMAT.Name = "lblFMAT"
         Me.lblFMAT.Size = New System.Drawing.Size(138, 16)
         Me.lblFMAT.TabIndex = 31
+        Me.lblFMAT.Tag = "floor-material"
         Me.lblFMAT.Text = "Floor System Material"
         '
         'cbFLOOR_TYPE
@@ -1261,6 +1267,7 @@ Partial Class frmDetails
         Me.GroupBox5.Size = New System.Drawing.Size(797, 172)
         Me.GroupBox5.TabIndex = 81
         Me.GroupBox5.TabStop = False
+        Me.GroupBox5.Tag = "roof"
         Me.GroupBox5.Text = "Roof"
         '
         'Label5
@@ -1490,6 +1497,7 @@ Partial Class frmDetails
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(95, 16)
         Me.Label7.TabIndex = 42
+        Me.Label7.Tag = "system-ductility"
         Me.Label7.Text = "Sytem Ductility"
         '
         'Label8
@@ -1500,6 +1508,7 @@ Partial Class frmDetails
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(41, 16)
         Me.Label8.TabIndex = 41
+        Me.Label8.Tag = "lateral-load-resisting-system"
         Me.Label8.Text = "LLRS"
         '
         'cbLLRS_DUCTILITY_L
@@ -1734,7 +1743,7 @@ Partial Class frmDetails
         '
         'tbSLOPE
         '
-        Me.tbSLOPE.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "SLOPE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbSLOPE.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "SLOPE", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, ""))
         Me.tbSLOPE.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbSLOPE.Location = New System.Drawing.Point(152, 28)
         Me.tbSLOPE.Name = "tbSLOPE"
@@ -1770,6 +1779,7 @@ Partial Class frmDetails
         Me.GroupBox13.Size = New System.Drawing.Size(803, 137)
         Me.GroupBox13.TabIndex = 89
         Me.GroupBox13.TabStop = False
+        Me.GroupBox13.Tag = "height"
         Me.GroupBox13.Text = "Height"
         '
         'cbHT_ABOVEGRADE_GRND_FLOOR_QUAL
@@ -1795,7 +1805,7 @@ Partial Class frmDetails
         '
         'tbHT_ABOVEGRADE_GRND_FLOOR_2
         '
-        Me.tbHT_ABOVEGRADE_GRND_FLOOR_2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "HT_GR_GF_2", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbHT_ABOVEGRADE_GRND_FLOOR_2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "HT_GR_GF_2", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, ""))
         Me.tbHT_ABOVEGRADE_GRND_FLOOR_2.Enabled = False
         Me.tbHT_ABOVEGRADE_GRND_FLOOR_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbHT_ABOVEGRADE_GRND_FLOOR_2.Location = New System.Drawing.Point(447, 92)
@@ -1805,7 +1815,7 @@ Partial Class frmDetails
         '
         'tbHT_ABOVEGRADE_GRND_FLOOR_1
         '
-        Me.tbHT_ABOVEGRADE_GRND_FLOOR_1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "HT_GR_GF_1", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbHT_ABOVEGRADE_GRND_FLOOR_1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "HT_GR_GF_1", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, ""))
         Me.tbHT_ABOVEGRADE_GRND_FLOOR_1.Enabled = False
         Me.tbHT_ABOVEGRADE_GRND_FLOOR_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbHT_ABOVEGRADE_GRND_FLOOR_1.Location = New System.Drawing.Point(353, 92)
@@ -1846,7 +1856,7 @@ Partial Class frmDetails
         '
         'tbNO_STOREYS_BELOW_GROUND_2
         '
-        Me.tbNO_STOREYS_BELOW_GROUND_2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "STORY_BG_2", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbNO_STOREYS_BELOW_GROUND_2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "STORY_BG_2", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, ""))
         Me.tbNO_STOREYS_BELOW_GROUND_2.Enabled = False
         Me.tbNO_STOREYS_BELOW_GROUND_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbNO_STOREYS_BELOW_GROUND_2.Location = New System.Drawing.Point(447, 60)
@@ -1856,7 +1866,7 @@ Partial Class frmDetails
         '
         'tbNO_STOREYS_BELOW_GROUND_1
         '
-        Me.tbNO_STOREYS_BELOW_GROUND_1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "STORY_BG_1", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbNO_STOREYS_BELOW_GROUND_1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "STORY_BG_1", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, ""))
         Me.tbNO_STOREYS_BELOW_GROUND_1.Enabled = False
         Me.tbNO_STOREYS_BELOW_GROUND_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbNO_STOREYS_BELOW_GROUND_1.Location = New System.Drawing.Point(353, 60)
@@ -1897,7 +1907,7 @@ Partial Class frmDetails
         '
         'tbNO_STOREYS_ABOVE_GROUND_2
         '
-        Me.tbNO_STOREYS_ABOVE_GROUND_2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "STORY_AG_2", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbNO_STOREYS_ABOVE_GROUND_2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "STORY_AG_2", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, ""))
         Me.tbNO_STOREYS_ABOVE_GROUND_2.Enabled = False
         Me.tbNO_STOREYS_ABOVE_GROUND_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbNO_STOREYS_ABOVE_GROUND_2.Location = New System.Drawing.Point(447, 30)
@@ -1907,7 +1917,7 @@ Partial Class frmDetails
         '
         'tbNO_STOREYS_ABOVE_GROUND_1
         '
-        Me.tbNO_STOREYS_ABOVE_GROUND_1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "STORY_AG_1", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbNO_STOREYS_ABOVE_GROUND_1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "STORY_AG_1", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, ""))
         Me.tbNO_STOREYS_ABOVE_GROUND_1.Enabled = False
         Me.tbNO_STOREYS_ABOVE_GROUND_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbNO_STOREYS_ABOVE_GROUND_1.Location = New System.Drawing.Point(353, 30)
@@ -1923,6 +1933,7 @@ Partial Class frmDetails
         Me.lblH1.Name = "lblH1"
         Me.lblH1.Size = New System.Drawing.Size(168, 16)
         Me.lblH1.TabIndex = 94
+        Me.lblH1.Tag = "approximate-number-of-storeys-above-ground"
         Me.lblH1.Text = "No. Storeys Above Ground"
         '
         'GroupBox7
@@ -1940,7 +1951,7 @@ Partial Class frmDetails
         '
         'tbYEAR_BUILT_2
         '
-        Me.tbYEAR_BUILT_2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "YR_BUILT_2", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbYEAR_BUILT_2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "YR_BUILT_2", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, ""))
         Me.tbYEAR_BUILT_2.Enabled = False
         Me.tbYEAR_BUILT_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbYEAR_BUILT_2.Location = New System.Drawing.Point(447, 28)
@@ -1971,7 +1982,7 @@ Partial Class frmDetails
         '
         'tbYEAR_BUILT_1
         '
-        Me.tbYEAR_BUILT_1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "YR_BUILT_1", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbYEAR_BUILT_1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEMOBJECTBindingSource, "YR_BUILT_1", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, ""))
         Me.tbYEAR_BUILT_1.Enabled = False
         Me.tbYEAR_BUILT_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbYEAR_BUILT_1.Location = New System.Drawing.Point(353, 28)
@@ -1986,6 +1997,7 @@ Partial Class frmDetails
         Me.lblD1.Name = "lblD1"
         Me.lblD1.Size = New System.Drawing.Size(178, 34)
         Me.lblD1.TabIndex = 44
+        Me.lblD1.Tag = "date-of-construction"
         Me.lblD1.Text = "Year of Construction/Retrofit (yyyy)"
         '
         'TabPage4
@@ -2067,7 +2079,7 @@ Partial Class frmDetails
         '
         'tbNUM_MISSING
         '
-        Me.tbNUM_MISSING.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CONSEQUENCESBindingSource, "MISSING", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbNUM_MISSING.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CONSEQUENCESBindingSource, "MISSING", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, ""))
         Me.tbNUM_MISSING.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbNUM_MISSING.Location = New System.Drawing.Point(206, 83)
         Me.tbNUM_MISSING.Name = "tbNUM_MISSING"
@@ -2076,7 +2088,7 @@ Partial Class frmDetails
         '
         'tbNUM_INJURED
         '
-        Me.tbNUM_INJURED.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CONSEQUENCESBindingSource, "INJURED", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbNUM_INJURED.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CONSEQUENCESBindingSource, "INJURED", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, ""))
         Me.tbNUM_INJURED.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbNUM_INJURED.Location = New System.Drawing.Point(206, 56)
         Me.tbNUM_INJURED.Name = "tbNUM_INJURED"
@@ -2085,7 +2097,7 @@ Partial Class frmDetails
         '
         'tbNUM_FATALITIES
         '
-        Me.tbNUM_FATALITIES.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CONSEQUENCESBindingSource, "FATALITIES", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbNUM_FATALITIES.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CONSEQUENCESBindingSource, "FATALITIES", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, ""))
         Me.tbNUM_FATALITIES.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbNUM_FATALITIES.Location = New System.Drawing.Point(206, 28)
         Me.tbNUM_FATALITIES.Name = "tbNUM_FATALITIES"
@@ -2226,7 +2238,7 @@ Partial Class frmDetails
         '
         'tbREPLACEMENT_COST
         '
-        Me.tbREPLACEMENT_COST.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEDBindingSource, "REPLC_COST", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbREPLACEMENT_COST.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEDBindingSource, "REPLC_COST", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, ""))
         Me.tbREPLACEMENT_COST.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbREPLACEMENT_COST.Location = New System.Drawing.Point(208, 165)
         Me.tbREPLACEMENT_COST.Name = "tbREPLACEMENT_COST"
@@ -2235,7 +2247,7 @@ Partial Class frmDetails
         '
         'tbPLAN_AREA
         '
-        Me.tbPLAN_AREA.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEDBindingSource, "PLAN_AREA", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbPLAN_AREA.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEDBindingSource, "PLAN_AREA", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, ""))
         Me.tbPLAN_AREA.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbPLAN_AREA.Location = New System.Drawing.Point(208, 137)
         Me.tbPLAN_AREA.Name = "tbPLAN_AREA"
@@ -2295,7 +2307,7 @@ Partial Class frmDetails
         '
         'tbNUM_DWELLINGS
         '
-        Me.tbNUM_DWELLINGS.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEDBindingSource, "NUM_DWELL", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbNUM_DWELLINGS.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEDBindingSource, "NUM_DWELL", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, ""))
         Me.tbNUM_DWELLINGS.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbNUM_DWELLINGS.Location = New System.Drawing.Point(208, 109)
         Me.tbNUM_DWELLINGS.Name = "tbNUM_DWELLINGS"
@@ -2304,7 +2316,7 @@ Partial Class frmDetails
         '
         'tbNUM_TRANSIT_OCCUPANTS
         '
-        Me.tbNUM_TRANSIT_OCCUPANTS.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEDBindingSource, "TRANS_OCC", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbNUM_TRANSIT_OCCUPANTS.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEDBindingSource, "TRANS_OCC", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, ""))
         Me.tbNUM_TRANSIT_OCCUPANTS.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbNUM_TRANSIT_OCCUPANTS.Location = New System.Drawing.Point(208, 81)
         Me.tbNUM_TRANSIT_OCCUPANTS.Name = "tbNUM_TRANSIT_OCCUPANTS"
@@ -2313,7 +2325,7 @@ Partial Class frmDetails
         '
         'tbNUM_NIGHT_OCCUPANTS
         '
-        Me.tbNUM_NIGHT_OCCUPANTS.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEDBindingSource, "NIGHT_OCC", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbNUM_NIGHT_OCCUPANTS.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEDBindingSource, "NIGHT_OCC", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, ""))
         Me.tbNUM_NIGHT_OCCUPANTS.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbNUM_NIGHT_OCCUPANTS.Location = New System.Drawing.Point(208, 53)
         Me.tbNUM_NIGHT_OCCUPANTS.Name = "tbNUM_NIGHT_OCCUPANTS"
@@ -2322,7 +2334,7 @@ Partial Class frmDetails
         '
         'tbNUM_DAY_OCCUPANTS
         '
-        Me.tbNUM_DAY_OCCUPANTS.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEDBindingSource, "DAY_OCC", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.tbNUM_DAY_OCCUPANTS.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GEDBindingSource, "DAY_OCC", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, ""))
         Me.tbNUM_DAY_OCCUPANTS.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbNUM_DAY_OCCUPANTS.Location = New System.Drawing.Point(208, 25)
         Me.tbNUM_DAY_OCCUPANTS.Name = "tbNUM_DAY_OCCUPANTS"
