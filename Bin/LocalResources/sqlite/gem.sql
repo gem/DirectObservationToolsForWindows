@@ -1,8 +1,8 @@
 /*
 Name: GEM.SQL
 Purpose: To create GEM SQLite database
-Version: 17
-Version Date: 22/05/2013
+Version: 18
+Version Date: 13/06/2013
 */
 PRAGMA foreign_keys=ON;
 BEGIN TRANSACTION;
@@ -736,7 +736,7 @@ INSERT INTO "DIC_FOUNDATION_SYSTEM" VALUES('FOS99','Unknown foundation system','
 INSERT INTO "DIC_FOUNDATION_SYSTEM" VALUES('FOSSL','Shallow foundation, with lateral capacity','Shallow foundation, with lateral capacity',NULL,'C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
 INSERT INTO "DIC_FOUNDATION_SYSTEM" VALUES('FOSN','Shallow foundation, no lateral capacity','Shallow foundation, no lateral capacity',NULL,'C','2012-04-18 00:00:00.000','KAMA','2012-04-18 00:00:00.000','KAMA');
 INSERT INTO "DIC_FOUNDATION_SYSTEM" VALUES('FOSDL','Deep foundation, with lateral capacity','Deep foundation, with lateral capacity',NULL,'C','2012-05-09 00:00:00.000','KAMA','2012-05-09 00:00:00.000','KAMA');
-INSERT INTO "DIC_FOUNDATION_SYSTEM" VALUES('FODN','Deep foundation, no lateral capacity','Deep foundation, no lateral capacity',NULL,'C','2012-05-09 00:00:00.000','KAMA','2012-05-09 00:00:00.000','KAMA');
+INSERT INTO "DIC_FOUNDATION_SYSTEM" VALUES('FOSDN','Deep foundation, no lateral capacity','Deep foundation, no lateral capacity',NULL,'C','2012-05-09 00:00:00.000','KAMA','2012-05-09 00:00:00.000','KAMA');
 INSERT INTO "DIC_FOUNDATION_SYSTEM" VALUES('FOSO','Other foundation','Other foundation',NULL,'C','2012-05-09 00:00:00.000','KAMA','2012-05-09 00:00:00.000','KAMA');
 
 --
