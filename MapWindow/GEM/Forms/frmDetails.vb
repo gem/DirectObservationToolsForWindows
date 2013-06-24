@@ -707,8 +707,8 @@ Public Class frmDetails
     End Sub
 
     Sub TrackHelpTopicCombo(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Dim ctrl As Control = sender
-        currentHelpTopic = ctrl.Text
+        Dim ctrl As ComboBox = sender
+        currentHelpTopic = ctrl.SelectedValue
     End Sub
 
     Sub TrackHelpTopicLabel(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -742,10 +742,17 @@ Public Class frmDetails
         Dim helpFile As String = helpDir & "\default.html"
         If currentHelpTopic <> "" Then
             '
-            ' Check for code match
+            ' Check for direct match
             '
             Dim di As IO.DirectoryInfo = New IO.DirectoryInfo(helpDir)
-            Dim fi() As IO.FileInfo = di.GetFiles("*--" & (currentHelpTopic.ToLower) & ".html")
+            Dim fi() As IO.FileInfo = di.GetFiles(currentHelpTopic.ToLower & ".html")
+            If (fi.Count = 1) Then helpFile = fi(0).FullName
+            '
+            ' Check for code match
+            '
+            If (fi.Count = 0) Then
+                fi = di.GetFiles("*--" & (currentHelpTopic.ToLower) & ".html")
+            End If
             If (fi.Count = 1) Then helpFile = fi(0).FullName
             '
             ' Check for text match if code match fails
@@ -774,7 +781,7 @@ Public Class frmDetails
                 WebBrowser1.Navigate(helpFile)
                 Exit Sub
             Else 'If all else fails let the user know that there are no help files
-                MsgBox("No help file exists for topic """ & currentHelpTopic & """. To add a help file create an htm file with the same name as the topic and place it in the Help folder.")
+                MsgBox("No help file exists for topic """ & currentHelpTopic & """. To add a help file create an html file with the same name as the topic and place it in the Help folder.")
             End If
         End If
 
