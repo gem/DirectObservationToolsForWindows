@@ -519,6 +519,7 @@ Partial Class frmDetails
         Me.lblMTECH.Name = "lblMTECH"
         Me.lblMTECH.Size = New System.Drawing.Size(131, 16)
         Me.lblMTECH.TabIndex = 21
+        Me.lblMTECH.Tag = "material-technology"
         Me.lblMTECH.Text = "Material Technology"
         '
         'lblMORT
@@ -529,16 +530,18 @@ Partial Class frmDetails
         Me.lblMORT.Name = "lblMORT"
         Me.lblMORT.Size = New System.Drawing.Size(120, 16)
         Me.lblMORT.TabIndex = 22
+        Me.lblMORT.Tag = "mortar"
         Me.lblMORT.Text = "Mortar/Stone Type"
         '
         'lblMREIN
         '
         Me.lblMREIN.AutoSize = True
         Me.lblMREIN.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMREIN.Location = New System.Drawing.Point(48, 119)
+        Me.lblMREIN.Location = New System.Drawing.Point(52, 119)
         Me.lblMREIN.Name = "lblMREIN"
         Me.lblMREIN.Size = New System.Drawing.Size(150, 16)
         Me.lblMREIN.TabIndex = 23
+        Me.lblMREIN.Tag = "masonry-reinforced"
         Me.lblMREIN.Text = "Masonry Reinforcement"
         '
         'lblSCONN
@@ -618,10 +621,11 @@ Partial Class frmDetails
         '
         Me.lblSTRI.AutoSize = True
         Me.lblSTRI.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSTRI.Location = New System.Drawing.Point(71, 40)
+        Me.lblSTRI.Location = New System.Drawing.Point(74, 40)
         Me.lblSTRI.Name = "lblSTRI"
         Me.lblSTRI.Size = New System.Drawing.Size(128, 16)
         Me.lblSTRI.TabIndex = 38
+        Me.lblSTRI.Tag = "regular-or-irregular"
         Me.lblSTRI.Text = "Structural Irregularity"
         '
         'lblSTRHI
@@ -632,16 +636,18 @@ Partial Class frmDetails
         Me.lblSTRHI.Name = "lblSTRHI"
         Me.lblSTRHI.Size = New System.Drawing.Size(100, 16)
         Me.lblSTRHI.TabIndex = 39
+        Me.lblSTRHI.Tag = "plan-irregularity-primary"
         Me.lblSTRHI.Text = "Plan Irregularity"
         '
         'lblSTRHVI
         '
         Me.lblSTRHVI.AutoSize = True
         Me.lblSTRHVI.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSTRHVI.Location = New System.Drawing.Point(81, 94)
+        Me.lblSTRHVI.Location = New System.Drawing.Point(80, 94)
         Me.lblSTRHVI.Name = "lblSTRHVI"
         Me.lblSTRHVI.Size = New System.Drawing.Size(118, 16)
         Me.lblSTRHVI.TabIndex = 40
+        Me.lblSTRHVI.Tag = "vertical-structural-irregularity-primary"
         Me.lblSTRHVI.Text = "Vertical Irregularity"
         '
         'Label19
@@ -707,7 +713,8 @@ Partial Class frmDetails
         Me.GroupBox1.Size = New System.Drawing.Size(796, 189)
         Me.GroupBox1.TabIndex = 62
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Building Materials"
+        Me.GroupBox1.Tag = "lateral-load-resisting-system"
+        Me.GroupBox1.Text = "Lateral Load Resisting System Materials"
         '
         'lblTrans1
         '
@@ -862,6 +869,7 @@ Partial Class frmDetails
         Me.lblSec1.Name = "lblSec1"
         Me.lblSec1.Size = New System.Drawing.Size(74, 16)
         Me.lblSec1.TabIndex = 32
+        Me.lblSec1.Tag = "plan-irregularity-secondary"
         Me.lblSec1.Text = "Secondary"
         '
         'cbSTRUCTURAL_VERT_IRREG_S
@@ -893,6 +901,7 @@ Partial Class frmDetails
         Me.lblPrim1.Name = "lblPrim1"
         Me.lblPrim1.Size = New System.Drawing.Size(54, 16)
         Me.lblPrim1.TabIndex = 31
+        Me.lblPrim1.Tag = "plan-irregularity-primary"
         Me.lblPrim1.Text = "Primary"
         '
         'cbSTRUCTURAL_HORIZ_IRREG_S
@@ -1067,6 +1076,7 @@ Partial Class frmDetails
         Me.GroupBox11.Size = New System.Drawing.Size(797, 70)
         Me.GroupBox11.TabIndex = 83
         Me.GroupBox11.TabStop = False
+        Me.GroupBox11.Tag = "exterior-walls"
         Me.GroupBox11.Text = "Exterior Walls"
         '
         'Label15
@@ -1077,6 +1087,7 @@ Partial Class frmDetails
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(139, 38)
         Me.Label15.TabIndex = 31
+        Me.Label15.Tag = "exterior-walls"
         Me.Label15.Text = "Material of Exterior Walls (non-structural)"
         '
         'cbNONSTRUCTURAL_EXTERIOR_WALLS
@@ -1127,6 +1138,7 @@ Partial Class frmDetails
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(123, 16)
         Me.Label6.TabIndex = 36
+        Me.Label6.Tag = "foundation-system"
         Me.Label6.Text = "Foundation System"
         '
         'cbFLOOR_CONNECTION_TYPE
@@ -1193,7 +1205,7 @@ Partial Class frmDetails
         Me.lblFTYPE.Name = "lblFTYPE"
         Me.lblFTYPE.Size = New System.Drawing.Size(122, 16)
         Me.lblFTYPE.TabIndex = 32
-        Me.lblFTYPE.Tag = "floor-type"
+        Me.lblFTYPE.Tag = "floor-system-type"
         Me.lblFTYPE.Text = "Floor System Type"
         '
         'lblFMAT
@@ -1205,7 +1217,7 @@ Partial Class frmDetails
         Me.lblFMAT.Name = "lblFMAT"
         Me.lblFMAT.Size = New System.Drawing.Size(138, 16)
         Me.lblFMAT.TabIndex = 31
-        Me.lblFMAT.Tag = "floor-material"
+        Me.lblFMAT.Tag = "floor-system-material"
         Me.lblFMAT.Text = "Floor System Material"
         '
         'cbFLOOR_TYPE
@@ -1279,6 +1291,7 @@ Partial Class frmDetails
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(107, 16)
         Me.Label5.TabIndex = 34
+        Me.Label5.Tag = "roof-connections"
         Me.Label5.Text = "Roof Connection"
         '
         'cbROOF_CONNECTION_TYPE
@@ -1332,6 +1345,7 @@ Partial Class frmDetails
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(80, 16)
         Me.Label10.TabIndex = 31
+        Me.Label10.Tag = "roof-shape"
         Me.Label10.Text = "Roof Shape"
         '
         'Label9
@@ -1343,6 +1357,7 @@ Partial Class frmDetails
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(120, 16)
         Me.Label9.TabIndex = 30
+        Me.Label9.Tag = "roof-system-type"
         Me.Label9.Text = "Roof System Type"
         '
         'cbROOF_SYSTEM_TYPE
@@ -1375,6 +1390,7 @@ Partial Class frmDetails
         Me.lblRTYPE.Name = "lblRTYPE"
         Me.lblRTYPE.Size = New System.Drawing.Size(136, 16)
         Me.lblRTYPE.TabIndex = 28
+        Me.lblRTYPE.Tag = "roof-system-material"
         Me.lblRTYPE.Text = "Roof System Material"
         '
         'lblRMAT
@@ -1386,6 +1402,7 @@ Partial Class frmDetails
         Me.lblRMAT.Name = "lblRMAT"
         Me.lblRMAT.Size = New System.Drawing.Size(127, 16)
         Me.lblRMAT.TabIndex = 27
+        Me.lblRMAT.Tag = "roof-covering"
         Me.lblRMAT.Text = "Roof Cover Material"
         '
         'cbROOF_SYSTEM_MATERIAL
@@ -1445,6 +1462,7 @@ Partial Class frmDetails
         Me.GroupBox4.Size = New System.Drawing.Size(798, 102)
         Me.GroupBox4.TabIndex = 80
         Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Tag = "lateral-load-resisting-system"
         Me.GroupBox4.Text = "Lateral Load Resisting System(LLRS)"
         '
         'cbLLRS_DUCTILITY_T
@@ -1508,7 +1526,7 @@ Partial Class frmDetails
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(41, 16)
         Me.Label8.TabIndex = 41
-        Me.Label8.Tag = "lateral-load-resisting-system"
+        Me.Label8.Tag = "type-of-lateral-load-resisting-system"
         Me.Label8.Text = "LLRS"
         '
         'cbLLRS_DUCTILITY_L
@@ -1598,6 +1616,7 @@ Partial Class frmDetails
         Me.GroupBox3.Size = New System.Drawing.Size(798, 81)
         Me.GroupBox3.TabIndex = 90
         Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Tag = "occupancy"
         Me.GroupBox3.Text = "Building Occupancy"
         '
         'lblOCCD
@@ -1608,6 +1627,7 @@ Partial Class frmDetails
         Me.lblOCCD.Name = "lblOCCD"
         Me.lblOCCD.Size = New System.Drawing.Size(137, 16)
         Me.lblOCCD.TabIndex = 42
+        Me.lblOCCD.Tag = "building-occupancy-class-detail"
         Me.lblOCCD.Text = "Occupancy - Detailed"
         '
         'lblOCC
@@ -1618,6 +1638,7 @@ Partial Class frmDetails
         Me.lblOCC.Name = "lblOCC"
         Me.lblOCC.Size = New System.Drawing.Size(76, 16)
         Me.lblOCC.TabIndex = 41
+        Me.lblOCC.Tag = "building-occupancy-class-general"
         Me.lblOCC.Text = "Occupancy"
         '
         'cbOCCUPANCY_DETAIL
@@ -1686,6 +1707,7 @@ Partial Class frmDetails
         Me.Label35.Name = "Label35"
         Me.Label35.Size = New System.Drawing.Size(78, 16)
         Me.Label35.TabIndex = 111
+        Me.Label35.Tag = "shape-of-the-building-plan"
         Me.Label35.Text = "Plan Shape"
         '
         'cbPLAN_SHAPE
@@ -1718,6 +1740,7 @@ Partial Class frmDetails
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(139, 16)
         Me.Label13.TabIndex = 31
+        Me.Label13.Tag = "building-position-within-a-block"
         Me.Label13.Text = "Position within a Block"
         '
         'cbPOSITION
@@ -1758,6 +1781,7 @@ Partial Class frmDetails
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(106, 16)
         Me.Label22.TabIndex = 44
+        Me.Label22.Tag = "slope-of-the-ground"
         Me.Label22.Text = "Slope (degrees)"
         '
         'GroupBox13
@@ -1831,6 +1855,7 @@ Partial Class frmDetails
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(169, 32)
         Me.Label18.TabIndex = 104
+        Me.Label18.Tag = "height-of-ground-floor-level-above-grade"
         Me.Label18.Text = "Height of Ground Floor " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Above Grade (centimetres)"
         '
         'cbNO_STOREYS_BELOW_GROUND_QUAL
@@ -1882,6 +1907,7 @@ Partial Class frmDetails
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(165, 16)
         Me.Label16.TabIndex = 99
+        Me.Label16.Tag = "approximate-number-of-storeys-below-ground"
         Me.Label16.Text = "No. Storeys Below Ground"
         '
         'cbNO_STOREYS_ABOVE_GROUND_QUAL
@@ -1947,6 +1973,7 @@ Partial Class frmDetails
         Me.GroupBox7.Size = New System.Drawing.Size(803, 68)
         Me.GroupBox7.TabIndex = 88
         Me.GroupBox7.TabStop = False
+        Me.GroupBox7.Tag = "date-of-construction"
         Me.GroupBox7.Text = "Date"
         '
         'tbYEAR_BUILT_2
@@ -2142,6 +2169,7 @@ Partial Class frmDetails
         Me.Label31.Name = "Label31"
         Me.Label31.Size = New System.Drawing.Size(102, 16)
         Me.Label31.TabIndex = 41
+        Me.Label31.Tag = "Damage_Classification"
         Me.Label31.Text = "Damage Grade"
         '
         'GroupBox15
