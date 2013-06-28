@@ -1,8 +1,8 @@
 /*
 Name: GEM.SQL
 Purpose: To create GEM SQLite database
-Version: 18
-Version Date: 13/06/2013
+Version: 19
+Version Date: 28/06/2013
 */
 PRAGMA foreign_keys=ON;
 BEGIN TRANSACTION;
@@ -596,7 +596,7 @@ USER_MADE VARCHAR(50)  NULL DEFAULT NULL,
 DATE_CHNG DATETIME  NULL DEFAULT NULL,
 USER_CHNG VARCHAR(50)  NULL DEFAULT NULL);
 
-INSERT INTO "DIC_LLRS_DUCTILITY" VALUES('D99','Unknown ductility','Unknown ductility','LLRS','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
+INSERT INTO "DIC_LLRS_DUCTILITY" VALUES('DU99','Unknown ductility','Unknown ductility','LLRS','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_LLRS_DUCTILITY" VALUES('DUC','Ductile','Ductile','LLRS','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_LLRS_DUCTILITY" VALUES('DNO','Non-ductile','Non-ductile','LLRS','C','2012-09-24 00:00:00.000','KAMA',NULL,NULL);
 INSERT INTO "DIC_LLRS_DUCTILITY" VALUES('DBD','Has base isolation and/or energy dissipation device','Has base isolation and/or energy dissipation device','LLRS','C','2013-03-21 00:00:00.000','KAMA',NULL,NULL);
