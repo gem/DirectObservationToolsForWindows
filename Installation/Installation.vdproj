@@ -2397,6 +2397,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_459B7AB0DA9E452CA03465BC31E00E86"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_45A1D72D7E3E41E08191193DBD2A8D88"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -3976,12 +3982,6 @@
         "Entry"
         {
         "MsmKey" = "8:_7774E94C350E4EA793CA095428AE6651"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_77B9539CDE694269A4D3AC8FC850049B"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -9259,7 +9259,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.9.0, Culture=th, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.2.0.0, Culture=th, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_00963731018E458AAEF1AB382214C0AC"
@@ -12205,7 +12205,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.9.0, Culture=de, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.2.0.0, Culture=de, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_1A6C7F85CF934D4DB2B64FEEB3942DD6"
@@ -12716,7 +12716,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.9.0, Culture=el, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.2.0.0, Culture=el, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_1E3F16A3491E4606A1A1E13407E20E98"
@@ -13718,7 +13718,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.9.0, Culture=cs, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.2.0.0, Culture=cs, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_27A94644F8C8456A9BC3E07CBB6D0B0B"
@@ -14982,7 +14982,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.9.0, Culture=ro, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.2.0.0, Culture=ro, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_332B718A258A4D68BBFCB8FE5DEADB3D"
@@ -15444,7 +15444,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.9.0, Culture=zh-CN, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.2.0.0, Culture=zh-CN, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_36CEAA5608434DD59418658404F1F200"
@@ -16046,7 +16046,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.9.0, Culture=ja-JP, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.2.0.0, Culture=ja-JP, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_3DA0AE804A6442E1BBB98B75B64CC3A3"
@@ -16359,7 +16359,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.9.0, Culture=pt, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.2.0.0, Culture=pt, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_40B1A2F5A7DE4622B53FB872488129F2"
@@ -16872,6 +16872,26 @@
             "TargetName" = "8:null"
             "Tag" = "8:"
             "Folder" = "8:_83F2701BB85B48B4BADD2CC36B35F621"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_459B7AB0DA9E452CA03465BC31E00E86"
+            {
+            "SourcePath" = "8:..\\Bin\\LocalResources\\Help\\HelpDocs\\glossary\\ductility-unknown--du99.html"
+            "TargetName" = "8:ductility-unknown--du99.html"
+            "Tag" = "8:"
+            "Folder" = "8:_6B7FCAD60E98408A94644EF125187AC2"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -19396,7 +19416,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.9.0, Culture=nl, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.2.0.0, Culture=nl, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_5D5D680E1D6042228C54870066494D70"
@@ -19687,7 +19707,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.9.0, Culture=zh-CHS, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.2.0.0, Culture=zh-CHS, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_60192BB15E684F57BF6938EE693C1608"
@@ -20591,7 +20611,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.9.0, Culture=vi-VN, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.2.0.0, Culture=vi-VN, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_6986DB6B1D554EF4898B1585CEED83F4"
@@ -21806,26 +21826,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_77B9539CDE694269A4D3AC8FC850049B"
-            {
-            "SourcePath" = "8:..\\Bin\\LocalResources\\Help\\HelpDocs\\glossary\\ductility-unknown--d99.html"
-            "TargetName" = "8:ductility-unknown--d99.html"
-            "Tag" = "8:"
-            "Folder" = "8:_6B7FCAD60E98408A94644EF125187AC2"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_77CC285D7E47408CB5BC0A506C848C03"
             {
             "AssemblyRegister" = "3:1"
@@ -22874,7 +22874,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.9.0, Culture=it, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.2.0.0, Culture=it, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_819F43DCE9BF492B8C0A6DB67DDA4854"
@@ -27926,7 +27926,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.9.0, Culture=fa, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.2.0.0, Culture=fa, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_B2820557CBF448B4800D7F59C9058F53"
@@ -30276,7 +30276,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.9.0, Culture=fr, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.2.0.0, Culture=fr, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_C84DC15CAA2A41AB8FB2260C3B467F56"
@@ -31769,7 +31769,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.9.0, Culture=en, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.2.0.0, Culture=en, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_D401D9CEC4D74C97A9FBD1B89722BEAE"
@@ -32522,7 +32522,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.9.0, Culture=es-ES, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.2.0.0, Culture=es-ES, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_DBB4EAF39EAF49218BCC08FD4F91A15F"
@@ -35336,7 +35336,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.9.0, Culture=lt, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.2.0.0, Culture=lt, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_F3EEC23264BE4BBAB5DEEF2419368196"
@@ -36589,7 +36589,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.1.9.0, Culture=pt-BR, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:GEM_DO_Tools.resources, Version=1.2.0.0, Culture=pt-BR, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_FECD97CC61B94AF7A4D32DD704B00DDD"
