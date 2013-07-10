@@ -98,7 +98,7 @@ Partial Class frmDetails
         Me.GroupBox6 = New System.Windows.Forms.GroupBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.cbFLOOR_CONNECTION_TYPE = New System.Windows.Forms.ComboBox()
-        Me.DICFOOORCONECTIONBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DICFLOORCONNECTIONBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label12 = New System.Windows.Forms.Label()
         Me.cbFOUNDATION_SYSTEM = New System.Windows.Forms.ComboBox()
         Me.DICFOUNDATIONSYSTEMBindingSource = New System.Windows.Forms.BindingSource(Me.components)
@@ -264,9 +264,9 @@ Partial Class frmDetails
         Me.mnuRow = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ShowMediaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LinkToMediaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DiC_ROOF_CONNECTIONTableAdapter = New MapWindow.GEMDatasetTableAdapters.DIC_ROOF_CONNECTIONTableAdapter()
-        Me.DiC_FLOOR_CONNECTIONTableAdapter = New MapWindow.GEMDatasetTableAdapters.DIC_FLOOR_CONNECTIONTableAdapter()
         Me.GEM_RULESTableAdapter = New MapWindow.GEMDatasetTableAdapters.GEM_RULESTableAdapter()
+        Me.DIC_ROOF_CONNECTIONTableAdapter = New MapWindow.GEMDatasetTableAdapters.DIC_ROOF_CONNECTIONTableAdapter()
+        Me.DIC_FLOOR_CONNECTIONTableAdapter = New MapWindow.GEMDatasetTableAdapters.DIC_FLOOR_CONNECTIONTableAdapter()
         CType(Me.GEMOBJECTBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GEMDataset, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DICMATERIALTYPEBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -296,7 +296,7 @@ Partial Class frmDetails
         Me.GroupBox11.SuspendLayout()
         CType(Me.DICNONSTRUCTURALEXTERIORWALLSBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox6.SuspendLayout()
-        CType(Me.DICFOOORCONECTIONBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DICFLOORCONNECTIONBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DICFOUNDATIONSYSTEMBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DICFLOORTYPEBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DICFLOORMATERIALBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1143,8 +1143,8 @@ Partial Class frmDetails
         '
         'cbFLOOR_CONNECTION_TYPE
         '
-        Me.cbFLOOR_CONNECTION_TYPE.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.GEMOBJECTBindingSource, "FOUNDN_SYS", True))
-        Me.cbFLOOR_CONNECTION_TYPE.DataSource = Me.DICFOOORCONECTIONBindingSource
+        Me.cbFLOOR_CONNECTION_TYPE.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.GEMOBJECTBindingSource, "FLOOR_CONN", True))
+        Me.cbFLOOR_CONNECTION_TYPE.DataSource = Me.DICFLOORCONNECTIONBindingSource
         Me.cbFLOOR_CONNECTION_TYPE.DisplayMember = "DESCRIPTION"
         Me.cbFLOOR_CONNECTION_TYPE.DropDownHeight = 400
         Me.cbFLOOR_CONNECTION_TYPE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
@@ -1157,11 +1157,10 @@ Partial Class frmDetails
         Me.cbFLOOR_CONNECTION_TYPE.TabIndex = 35
         Me.cbFLOOR_CONNECTION_TYPE.ValueMember = "CODE"
         '
-        'DICFOOORCONECTIONBindingSource
+        'DICFLOORCONNECTIONBindingSource
         '
-        Me.DICFOOORCONECTIONBindingSource.AllowNew = True
-        Me.DICFOOORCONECTIONBindingSource.DataMember = "DIC_FLOOR_CONNECTION"
-        Me.DICFOOORCONECTIONBindingSource.DataSource = Me.GEMDataset
+        Me.DICFLOORCONNECTIONBindingSource.DataMember = "DIC_FLOOR_CONNECTION"
+        Me.DICFLOORCONNECTIONBindingSource.DataSource = Me.GEMDataset
         '
         'Label12
         '
@@ -1296,7 +1295,7 @@ Partial Class frmDetails
         '
         'cbROOF_CONNECTION_TYPE
         '
-        Me.cbROOF_CONNECTION_TYPE.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.GEMOBJECTBindingSource, "ROOFSYSTYP", True))
+        Me.cbROOF_CONNECTION_TYPE.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.GEMOBJECTBindingSource, "ROOF_CONN", True))
         Me.cbROOF_CONNECTION_TYPE.DataSource = Me.DICROOFCONNECTIONBindingSource
         Me.cbROOF_CONNECTION_TYPE.DisplayMember = "DESCRIPTION"
         Me.cbROOF_CONNECTION_TYPE.DropDownHeight = 400
@@ -2695,17 +2694,17 @@ Partial Class frmDetails
         Me.LinkToMediaToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
         Me.LinkToMediaToolStripMenuItem.Text = "Add Media"
         '
-        'DiC_ROOF_CONNECTIONTableAdapter
-        '
-        Me.DiC_ROOF_CONNECTIONTableAdapter.ClearBeforeFill = True
-        '
-        'DiC_FLOOR_CONNECTIONTableAdapter
-        '
-        Me.DiC_FLOOR_CONNECTIONTableAdapter.ClearBeforeFill = True
-        '
         'GEM_RULESTableAdapter
         '
         Me.GEM_RULESTableAdapter.ClearBeforeFill = True
+        '
+        'DIC_ROOF_CONNECTIONTableAdapter
+        '
+        Me.DIC_ROOF_CONNECTIONTableAdapter.ClearBeforeFill = True
+        '
+        'DIC_FLOOR_CONNECTIONTableAdapter
+        '
+        Me.DIC_FLOOR_CONNECTIONTableAdapter.ClearBeforeFill = True
         '
         'frmDetails
         '
@@ -2762,7 +2761,7 @@ Partial Class frmDetails
         CType(Me.DICNONSTRUCTURALEXTERIORWALLSBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox6.ResumeLayout(False)
         Me.GroupBox6.PerformLayout()
-        CType(Me.DICFOOORCONECTIONBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DICFLOORCONNECTIONBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DICFOUNDATIONSYSTEMBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DICFLOORTYPEBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DICFLOORMATERIALBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3053,10 +3052,10 @@ Partial Class frmDetails
     Friend WithEvents cbFLOOR_CONNECTION_TYPE As System.Windows.Forms.ComboBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents cbROOF_CONNECTION_TYPE As System.Windows.Forms.ComboBox
-    Friend WithEvents DICFOOORCONECTIONBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents DICROOFCONNECTIONBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents DiC_ROOF_CONNECTIONTableAdapter As MapWindow.GEMDatasetTableAdapters.DIC_ROOF_CONNECTIONTableAdapter
-    Friend WithEvents DiC_FLOOR_CONNECTIONTableAdapter As MapWindow.GEMDatasetTableAdapters.DIC_FLOOR_CONNECTIONTableAdapter
     Friend WithEvents GEM_RULESTableAdapter As MapWindow.GEMDatasetTableAdapters.GEM_RULESTableAdapter
+    Friend WithEvents DICROOFCONNECTIONBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents DIC_ROOF_CONNECTIONTableAdapter As MapWindow.GEMDatasetTableAdapters.DIC_ROOF_CONNECTIONTableAdapter
+    Friend WithEvents DICFLOORCONNECTIONBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents DIC_FLOOR_CONNECTIONTableAdapter As MapWindow.GEMDatasetTableAdapters.DIC_FLOOR_CONNECTIONTableAdapter
 
 End Class

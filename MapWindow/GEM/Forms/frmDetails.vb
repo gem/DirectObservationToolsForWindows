@@ -51,6 +51,10 @@ Public Class frmDetails
 
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'GEMDataset.DIC_FLOOR_CONNECTION' table. You can move, or remove it, as needed.
+        Me.DIC_FLOOR_CONNECTIONTableAdapter.Fill(Me.GEMDataset.DIC_FLOOR_CONNECTION)
+        'TODO: This line of code loads data into the 'GEMDataset.DIC_ROOF_CONNECTION' table. You can move, or remove it, as needed.
+        Me.DIC_ROOF_CONNECTIONTableAdapter.Fill(Me.GEMDataset.DIC_ROOF_CONNECTION)
         'TODO: This line of code loads data into the 'GEMDataset.DIC_HEIGHT_QUALIFIER' table. You can move, or remove it, as needed.
         Me.DIC_HEIGHT_QUALIFIERTableAdapter.Fill(Me.GEMDataset.DIC_HEIGHT_QUALIFIER)
         'TODO: This line of code loads data into the 'GEMDataset.DIC_DAMAGE' table. You can move, or remove it, as needed.
@@ -122,8 +126,6 @@ Public Class frmDetails
         Me.GEM_OBJECTTableAdapter.Fill(Me.GEMDataset.GEM_OBJECT)
         Me.GEDTableAdapter.Fill(Me.GEMDataset.GED)
 
-        Me.DiC_ROOF_CONNECTIONTableAdapter.Fill(Me.GEMDataset.DIC_ROOF_CONNECTION)
-        Me.DiC_FLOOR_CONNECTIONTableAdapter.Fill(Me.GEMDataset.DIC_FLOOR_CONNECTION)
         Me.GEM_RULESTableAdapter.Fill(Me.GEMDataset.GEM_RULES)
 
         Call loadFavsCombo()
@@ -154,11 +156,11 @@ Public Class frmDetails
         '
         ' Disable controls that depend on other controls
         '
-        cbOCCUPANCY_DETAIL.Enabled = False
-        cbFLOOR_TYPE.Enabled = False
-        cbROOF_SYSTEM_TYPE.Enabled = False
-        cbLLRS_DUCTILITY_L.Enabled = False
-        cbLLRS_DUCTILITY_T.Enabled = False
+        'cbOCCUPANCY_DETAIL.Enabled = False
+        'cbFLOOR_TYPE.Enabled = False
+        'cbROOF_SYSTEM_TYPE.Enabled = False
+        'cbLLRS_DUCTILITY_L.Enabled = False
+        'cbLLRS_DUCTILITY_T.Enabled = False
 
     End Sub
 
@@ -1105,4 +1107,7 @@ Public Class frmDetails
     End Sub
 
 
+    Private Sub TabPage1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TabPage1.Click
+
+    End Sub
 End Class
