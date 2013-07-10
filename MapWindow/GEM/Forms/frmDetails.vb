@@ -123,10 +123,10 @@ Public Class frmDetails
         'Me.MEDIA_DETAILTableAdapter.Fill(Me.GEMDataset.MEDIA_DETAIL)
         ' Me.CONSEQUENCESTableAdapter.Fill(Me.GEMDataset.CONSEQUENCES)
 
+        Me.GEM_RULESTableAdapter.Fill(Me.GEMDataset.GEM_RULES)
+
         Me.GEM_OBJECTTableAdapter.Fill(Me.GEMDataset.GEM_OBJECT)
         Me.GEDTableAdapter.Fill(Me.GEMDataset.GED)
-
-        Me.GEM_RULESTableAdapter.Fill(Me.GEMDataset.GEM_RULES)
 
         Call loadFavsCombo()
 
