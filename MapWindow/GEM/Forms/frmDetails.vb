@@ -51,6 +51,10 @@ Public Class frmDetails
 
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'GEMDataset.DIC_FLOOR_CONNECTION' table. You can move, or remove it, as needed.
+        Me.DIC_FLOOR_CONNECTIONTableAdapter.Fill(Me.GEMDataset.DIC_FLOOR_CONNECTION)
+        'TODO: This line of code loads data into the 'GEMDataset.DIC_ROOF_CONNECTION' table. You can move, or remove it, as needed.
+        Me.DIC_ROOF_CONNECTIONTableAdapter.Fill(Me.GEMDataset.DIC_ROOF_CONNECTION)
         'TODO: This line of code loads data into the 'GEMDataset.DIC_HEIGHT_QUALIFIER' table. You can move, or remove it, as needed.
         Me.DIC_HEIGHT_QUALIFIERTableAdapter.Fill(Me.GEMDataset.DIC_HEIGHT_QUALIFIER)
         'TODO: This line of code loads data into the 'GEMDataset.DIC_DAMAGE' table. You can move, or remove it, as needed.
@@ -119,12 +123,10 @@ Public Class frmDetails
         'Me.MEDIA_DETAILTableAdapter.Fill(Me.GEMDataset.MEDIA_DETAIL)
         ' Me.CONSEQUENCESTableAdapter.Fill(Me.GEMDataset.CONSEQUENCES)
 
+        Me.GEM_RULESTableAdapter.Fill(Me.GEMDataset.GEM_RULES)
+
         Me.GEM_OBJECTTableAdapter.Fill(Me.GEMDataset.GEM_OBJECT)
         Me.GEDTableAdapter.Fill(Me.GEMDataset.GED)
-
-        Me.DiC_ROOF_CONNECTIONTableAdapter.Fill(Me.GEMDataset.DIC_ROOF_CONNECTION)
-        Me.DiC_FLOOR_CONNECTIONTableAdapter.Fill(Me.GEMDataset.DIC_FLOOR_CONNECTION)
-        Me.GEM_RULESTableAdapter.Fill(Me.GEMDataset.GEM_RULES)
 
         Call loadFavsCombo()
 
@@ -154,11 +156,11 @@ Public Class frmDetails
         '
         ' Disable controls that depend on other controls
         '
-        cbOCCUPANCY_DETAIL.Enabled = False
-        cbFLOOR_TYPE.Enabled = False
-        cbROOF_SYSTEM_TYPE.Enabled = False
-        cbLLRS_DUCTILITY_L.Enabled = False
-        cbLLRS_DUCTILITY_T.Enabled = False
+        'cbOCCUPANCY_DETAIL.Enabled = False
+        'cbFLOOR_TYPE.Enabled = False
+        'cbROOF_SYSTEM_TYPE.Enabled = False
+        'cbLLRS_DUCTILITY_L.Enabled = False
+        'cbLLRS_DUCTILITY_T.Enabled = False
 
     End Sub
 
@@ -707,8 +709,8 @@ Public Class frmDetails
     End Sub
 
     Sub TrackHelpTopicCombo(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Dim ctrl As Control = sender
-        currentHelpTopic = ctrl.Text
+        Dim ctrl As ComboBox = sender
+        currentHelpTopic = ctrl.SelectedValue
     End Sub
 
     Sub TrackHelpTopicLabel(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -742,10 +744,17 @@ Public Class frmDetails
         Dim helpFile As String = helpDir & "\default.html"
         If currentHelpTopic <> "" Then
             '
-            ' Check for code match
+            ' Check for direct match
             '
             Dim di As IO.DirectoryInfo = New IO.DirectoryInfo(helpDir)
-            Dim fi() As IO.FileInfo = di.GetFiles("*--" & (currentHelpTopic.ToLower) & ".html")
+            Dim fi() As IO.FileInfo = di.GetFiles(currentHelpTopic.ToLower & ".html")
+            If (fi.Count = 1) Then helpFile = fi(0).FullName
+            '
+            ' Check for code match
+            '
+            If (fi.Count = 0) Then
+                fi = di.GetFiles("*--" & (currentHelpTopic.ToLower) & ".html")
+            End If
             If (fi.Count = 1) Then helpFile = fi(0).FullName
             '
             ' Check for text match if code match fails
@@ -774,7 +783,7 @@ Public Class frmDetails
                 WebBrowser1.Navigate(helpFile)
                 Exit Sub
             Else 'If all else fails let the user know that there are no help files
-                MsgBox("No help file exists for topic """ & currentHelpTopic & """. To add a help file create an htm file with the same name as the topic and place it in the Help folder.")
+                MsgBox("No help file exists for topic """ & currentHelpTopic & """. To add a help file create an html file with the same name as the topic and place it in the Help folder.")
             End If
         End If
 
@@ -1098,4 +1107,7 @@ Public Class frmDetails
     End Sub
 
 
+    Private Sub TabPage1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TabPage1.Click
+
+    End Sub
 End Class

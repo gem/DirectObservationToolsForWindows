@@ -4124,7 +4124,7 @@ Partial Friend Class MapWindowForm
         'Create GEM Database
         If Not fromOpen Then
             DoSaveAs()
-
+            If (ProjInfo.ProjectFileName = "") Then Exit Sub
             gemdb = New GEMDatabase(System.IO.Path.ChangeExtension(ProjInfo.ProjectFileName, ".db3"))
             If gemdb Is Nothing Then Exit Sub
 
@@ -4303,6 +4303,7 @@ Partial Friend Class MapWindowForm
         'Saves the project under a new file name
         Dim cdlSave As New SaveFileDialog
         cdlSave.Filter = "GEM Project (*.gemprj)|*.gemprj"
+
         If (cdlSave.ShowDialog = DialogResult.Cancel) Then
             If gemdb Is Nothing Then
                 MessageBox.Show("You need to save the project before you can insert into the GEM database", "Save Project", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
