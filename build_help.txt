@@ -1,0 +1,15 @@
+Updating Version Number:
+MapWindow Project Properties > Assembly Info > Update Version Number
+Installation Project Properties > Update Version Number
+
+Build and Compile:
+Run Visual Studio as Admin
+Build all projects in the solution MapWindow10.sln solution file
+The installation project might fail to build the first time - "Unable to update dependancies".
+Just simply re-build the installation again!
+
+To tidy up the appearence of installation using Orca MSI editor:
+Control Table > Remove BannerText.
+Control Table > Remove RemoveBannerText.
+Control Table > Copy Banner Bitmap from welcome page to all other pages.
+Save

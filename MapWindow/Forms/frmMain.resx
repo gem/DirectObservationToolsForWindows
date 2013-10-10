@@ -328,7 +328,7 @@
     <value>tlbLayers</value>
   </data>
   <data name="&gt;&gt;tlbLayers.Type" xml:space="preserve">
-    <value>MapWindow.ToolStripExtensions.ToolStripEx, GEM_DO_Tools, Version=1.2.3.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MapWindow.ToolStripExtensions.ToolStripEx, GEM_DO_Tools, Version=1.2.4.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;tlbLayers.Parent" xml:space="preserve">
     <value>StripDocker.TopToolStripPanel</value>
@@ -424,7 +424,7 @@
     <value>tlbStandard</value>
   </data>
   <data name="&gt;&gt;tlbStandard.Type" xml:space="preserve">
-    <value>MapWindow.ToolStripExtensions.ToolStripEx, GEM_DO_Tools, Version=1.2.3.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MapWindow.ToolStripExtensions.ToolStripEx, GEM_DO_Tools, Version=1.2.4.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;tlbStandard.Parent" xml:space="preserve">
     <value>StripDocker.TopToolStripPanel</value>
@@ -481,7 +481,7 @@
     <value>tlbMain</value>
   </data>
   <data name="&gt;&gt;tlbMain.Type" xml:space="preserve">
-    <value>MapWindow.ToolStripExtensions.ToolStripEx, GEM_DO_Tools, Version=1.2.3.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MapWindow.ToolStripExtensions.ToolStripEx, GEM_DO_Tools, Version=1.2.4.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;tlbMain.Parent" xml:space="preserve">
     <value>StripDocker.TopToolStripPanel</value>
@@ -639,8 +639,8 @@
   <data name="tbbAddPoint.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALAAAA
-        CwAB5DetvwAABT1JREFUSEu9VXlMk3cY/jhK+0GBilyl/WihQFFAoNANZFKVQ8sltsCUWww7dVmMExWR
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAK/wAA
+        Cv8BNGKaggAABT1JREFUSEu9VXlMk3cY/jhK+0GBilyl/WihQFFAoNANZFKVQ8sltsCUWww7dVmMExWR
         Gzzmsc1suHkkm5I5mFPHon+4bNkfZrplLktmZmJMjNmRzXMxc4uLz973h62Fkf25L3ny9n3f532e39H2
         k/6Xx1gkz4jQXJWG2oVSidTftjXhwqadOde3v1kCjpxznfthdpVmpnmGeKYXlSLZT8r2t1saNId2jBbc
         fetcMSZ+duLTOy6c/2u1iJxznfuJ9epDzOe56Vr/MohxqCXJJnV1HEi/MX6lDKfvLcOx38swcnshdt/M
@@ -793,7 +793,7 @@
     <value>tlbZoom</value>
   </data>
   <data name="&gt;&gt;tlbZoom.Type" xml:space="preserve">
-    <value>MapWindow.ToolStripExtensions.ToolStripEx, GEM_DO_Tools, Version=1.2.3.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MapWindow.ToolStripExtensions.ToolStripEx, GEM_DO_Tools, Version=1.2.4.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;tlbZoom.Parent" xml:space="preserve">
     <value>StripDocker.TopToolStripPanel</value>
@@ -1141,7 +1141,7 @@
     <value>MenuStrip1</value>
   </data>
   <data name="&gt;&gt;MenuStrip1.Type" xml:space="preserve">
-    <value>MapWindow.ToolStripExtensions.MenuStripEx, GEM_DO_Tools, Version=1.2.3.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MapWindow.ToolStripExtensions.MenuStripEx, GEM_DO_Tools, Version=1.2.4.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;MenuStrip1.Parent" xml:space="preserve">
     <value>$this</value>
